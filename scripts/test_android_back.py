@@ -33,7 +33,7 @@ for(const [name,v,m,expected,action] of cases){
  };
  const result=vm.runInNewContext(script,ctx);
  if(result!==expected || (action!=='none'&&!calls.includes(action)))
-   throw new Error(name+': '+result+' / '+calls.join(','));
+   throw new Error(name+': '+result+' / '+calls.join(',')+' state '+ctx.view+'/'+ctx.mode+' script '+script);
  console.log('PASS',name);
 }
 """

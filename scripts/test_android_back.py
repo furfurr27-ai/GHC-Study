@@ -7,7 +7,7 @@ from pathlib import Path
 java=Path("app/src/main/java/org/ghcstudy/offline/MainActivity.java").read_text()
 block=java.split('final String script = ',1)[1].split(';\n\n        webView.evaluateJavascript',1)[0]
 fragments=re.findall(r'"(?:\\.|[^"\\])*"',block)
-script=''.join(json.loads(x) for x in fragments)
+script=''.join(json.loads(x) for x in fragments if x != '\"handled\"')
 cases=[
   ("modal","study","home","handled","modal"),
   ("study card","studymode","studycard","handled","category"),

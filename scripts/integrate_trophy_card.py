@@ -28,6 +28,10 @@ card = {
 cards.append(card)
 replacement = json.dumps(cards, ensure_ascii=False, separators=(",", ":"))
 html = html[:start] + replacement + html[start + consumed:]
+vocab = json.loads((root / "german-vocabulary-quiz.json").read_text())
+runtime = Path("scripts/german_vocab_runtime.js").read_text()
+payload = '<script>window.GHC_GERMAN_VOCAB=' + json.dumps(vocab, ensure_ascii=False) + ';</script><script>' + runtime + '</script>'
+html = html.replace("</body>", payload + "</body>", 1)
 html_path.write_text(html, encoding="utf-8")
 assert source["id"] in html
 print("Inserted trophy study card in Traditions; total cards:", len(cards))

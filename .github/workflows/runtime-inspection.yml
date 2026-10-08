@@ -4,6 +4,8 @@ on:
     branches: [audit/v145-source-recovery]
     paths:
       - 'scripts/inspect_runtime_surfaces.py'
+      - 'scripts/test_android_back.py'
+      - 'app/src/main/java/org/ghcstudy/offline/MainActivity.java'
       - '.github/workflows/runtime-inspection.yml'
   workflow_dispatch:
 permissions:
@@ -15,3 +17,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Inspect navigation and persistence implementation
         run: python3 scripts/inspect_runtime_surfaces.py
+      - name: Test Android Back transitions against Java embedded script
+        run: python3 scripts/test_android_back.py

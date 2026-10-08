@@ -6,8 +6,8 @@ android {
   applicationId 'org.ghcstudy.v141'
   minSdk 24
   targetSdk 35
-  versionCode 142
-  versionName '1.4.2'
+  versionCode 145
+  versionName '1.4.5'
  }
  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }

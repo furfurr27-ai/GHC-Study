@@ -1,0 +1,40 @@
+name: One-time v1.4.5 source recovery
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  recover:
+    if: github.ref == 'refs/heads/audit/v145-source-recovery'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Restore exact packaged files and original launcher icon
+        run: python3 scripts/restore_source_from_apk.py --apply
+      - name: Verify restored source matches baseline APK
+        run: python3 scripts/audit_baseline.py --compare --manifest build/verified-baseline-manifest.json
+      - name: Remove old APK dependency and commit source assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f app/src/main/res/drawable/ic_launcher.png
+          test -f app/src/main/assets/index.html
+          test -d app/src/main/assets/media
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f app/src/main/assets/index.html app/src/main/assets/media app/src/main/res/drawable/ic_launcher.png
+          git rm app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk
+          git commit -m "Restore byte-identical v1.4.5 assets and launcher as tracked source"
+          git push origin HEAD:audit/v145-source-recovery
+      - name: Upload baseline report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-v145-source-recovery-report
+          path: |
+            build/source-recovery-report.json
+            build/verified-baseline-manifest.json
+          if-no-files-found: warn

@@ -22,6 +22,17 @@ jobs:
           TMP_DIR="$(mktemp -d)"
           unzip -q app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk 'assets/*' -d "$TMP_DIR"
           python3 scripts/audit_baseline.py --assets "$TMP_DIR/assets" --compare --manifest build/verified-baseline-manifest.json
+      - name: Check checked-in HTML against original APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          unzip -p app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk assets/index.html > build/original-index.html
+          if cmp -s build/original-index.html app/src/main/assets/index.html; then
+            echo 'Checked-in HTML matches original APK byte-for-byte'
+          else
+            echo 'NOTICE: Checked-in HTML differs from original APK; inspect before source migration' >&2
+            sha256sum build/original-index.html app/src/main/assets/index.html
+          fi
       - name: Upload source audit inventories
         uses: actions/upload-artifact@v4
         with:

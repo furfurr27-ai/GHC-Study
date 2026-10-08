@@ -1,0 +1,30 @@
+name: Audit original v1.4.5 APK
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/audit_baseline.py'
+      - '.github/workflows/audit-baseline.yml'
+      - 'app/src/main/assets/**'
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect immutable baseline APK
+        run: python3 scripts/audit_baseline.py --manifest build/baseline-asset-manifest.json
+      - name: Verify original APK media and HTML match recovered source
+        shell: bash
+        run: |
+          set -euo pipefail
+          TMP_DIR="$(mktemp -d)"
+          unzip -q app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk 'assets/*' -d "$TMP_DIR"
+          python3 scripts/audit_baseline.py --assets "$TMP_DIR/assets" --compare --manifest build/verified-baseline-manifest.json
+      - name: Upload source audit inventories
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-v145-baseline-asset-inventory
+          path: build/*manifest.json
+          if-no-files-found: error

@@ -1,11 +1,15 @@
-name: Audit original v1.4.5 APK
+name: Audit recovered v1.4.5 against historical APK
 on:
-  workflow_dispatch:
-  pull_request:
+  push:
+    branches: [audit/v145-source-recovery]
     paths:
-      - 'scripts/audit_baseline.py'
       - '.github/workflows/audit-baseline.yml'
+      - 'scripts/audit_baseline.py'
       - 'app/src/main/assets/**'
+      - 'app/src/main/res/drawable/ic_launcher.png'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -13,29 +17,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect immutable baseline APK
-        run: python3 scripts/audit_baseline.py --manifest build/baseline-asset-manifest.json
-      - name: Verify original APK media and HTML match recovered source
+        with:
+          fetch-depth: 0
+      - name: Recover immutable reference APK from historical commit
         shell: bash
         run: |
           set -euo pipefail
-          TMP_DIR="$(mktemp -d)"
-          unzip -q app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk 'assets/*' -d "$TMP_DIR"
-          python3 scripts/audit_baseline.py --assets "$TMP_DIR/assets" --compare --manifest build/verified-baseline-manifest.json
-      - name: Check checked-in HTML against original APK
+          BASELINE=9ce4b3037af3b1a9af5f88ef645265bb06d6f245
+          APK=app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk
+          mkdir -p build/baseline
+          git cat-file -e "$BASELINE:$APK"
+          git show "$BASELINE:$APK" > "build/baseline/reference.apk"
+          unzip -tq build/baseline/reference.apk | tail -1
+      - name: Verify every tracked source asset against baseline
+        run: |
+          python3 scripts/audit_baseline.py --apk build/baseline/reference.apk --assets app/src/main/assets --compare --manifest build/baseline-asset-manifest.json
+      - name: Verify launcher icon bytes
         shell: bash
         run: |
           set -euo pipefail
-          unzip -p app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk assets/index.html > build/original-index.html
-          if cmp -s build/original-index.html app/src/main/assets/index.html; then
-            echo 'Checked-in HTML matches original APK byte-for-byte'
-          else
-            echo 'NOTICE: Checked-in HTML differs from original APK; inspect before source migration' >&2
-            sha256sum build/original-index.html app/src/main/assets/index.html
-          fi
-      - name: Upload source audit inventories
+          unzip -p build/baseline/reference.apk res/drawable/ic_launcher.png > build/baseline/reference-icon.png
+          cmp build/baseline/reference-icon.png app/src/main/res/drawable/ic_launcher.png
+          echo 'Launcher icon matches original APK byte-for-byte'
+      - name: Verify no nested legacy APK
+        run: test ! -f app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk
+      - name: Upload source audit inventory
         uses: actions/upload-artifact@v4
         with:
-          name: ghc-v145-baseline-asset-inventory
-          path: build/*manifest.json
+          name: ghc-v145-source-parity-report
+          path: build/baseline-asset-manifest.json
           if-no-files-found: error

@@ -34,4 +34,6 @@ payload = '<script>window.GHC_GERMAN_VOCAB=' + json.dumps(vocab, ensure_ascii=Fa
 html = html.replace("</body>", payload + "</body>", 1)
 html_path.write_text(html, encoding="utf-8")
 assert source["id"] in html
+assert "German Vocabulary Quiz" in html
+assert "window.GHC_GERMAN_VOCAB=" in html
 print("Inserted trophy study card in Traditions; total cards:", len(cards))

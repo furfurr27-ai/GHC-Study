@@ -50,11 +50,19 @@ public final class MainActivity extends Activity {
         // Prefer app-provided navigation when present; do not overwrite view/mode
         // globals with hard-coded guesses. Modal dismissal is safe and reversible.
         final String script = "(function(){try{"
-                + "if(typeof window.ghcGoBack==='function'){return window.ghcGoBack()?'handled':'root';}"
                 + "var m=document.getElementById('modal');"
                 + "if(m&&!m.classList.contains('hidden')){"
                 + "var c=document.getElementById('closeModal');"
                 + "if(c){c.click();return 'handled';}}"
+                + "if(typeof view==='undefined'||typeof mode==='undefined')return 'error';"
+                + "if(view==='studymode'){"
+                + "if(mode==='studycard'&&typeof renderStudyCategory==='function'){"
+                + "var card=typeof STUDY_CARDS!=='undefined'?STUDY_CARDS.find(function(x){return x.id===studyCardId;}):null;"
+                + "if(card){renderStudyCategory(card.category);return 'handled';}}"
+                + "if(mode==='studycategory'&&typeof renderStudyHub==='function'){renderStudyHub();return 'handled';}"
+                + "view='study';mode='home';render();return 'handled';}"
+                + "if(view==='reference'){view='study';mode='home';render();return 'handled';}"
+                + "if(view==='study'&&mode!=='home'){mode='home';render();return 'handled';}"
                 + "return 'root';"
                 + "}catch(e){return 'error';}})();";
         webView.evaluateJavascript(script, result -> {

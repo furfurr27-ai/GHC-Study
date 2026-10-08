@@ -1,4 +1,4 @@
-# v1.4.2 packaging verification
+# v1.4.5 packaging from recovered standalone APK baseline
 name: Build Android APK
 on:
   push:
@@ -13,6 +13,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Recover audited v1.4.5 web assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_APK="app/src/main/assets/GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk"
+          test -f "$SOURCE_APK"
+          rm -f app/src/main/assets/index.html
+          rm -rf app/src/main/assets/media
+          TMP_DIR="$(mktemp -d)"
+          unzip -q "$SOURCE_APK" 'assets/*' -d "$TMP_DIR"
+          test -f "$TMP_DIR/assets/index.html"
+          mkdir -p app/src/main/assets
+          cp -a "$TMP_DIR/assets/." app/src/main/assets/
+          rm -f "$SOURCE_APK"
+          test ! -f "$SOURCE_APK"
+          test -f app/src/main/assets/index.html
+          test -d app/src/main/assets/media
+          echo "Recovered $(find app/src/main/assets/media -type f | wc -l) media files"
+          echo "index.html bytes: $(wc -c < app/src/main/assets/index.html)"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -29,9 +48,21 @@ jobs:
           gradle-version: '8.9'
       - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug
+      - name: Verify packaged v1.4.5 assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
+          test -n "$APK"
+          unzip -l "$APK" | grep -q 'assets/index.html'
+          unzip -l "$APK" | grep -q 'assets/media/'
+          if unzip -l "$APK" | grep -q 'GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk'; then
+            echo "Source APK was incorrectly nested in output" >&2
+            exit 1
+          fi
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.2-debug-apk
+          name: GHC-Study-v1.4.5-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error

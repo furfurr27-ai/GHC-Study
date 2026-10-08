@@ -31,7 +31,7 @@ html = html[:start] + replacement + html[start + consumed:]
 vocab = json.loads((root / "german-vocabulary-quiz.json").read_text())
 runtime = Path("scripts/german_vocab_runtime.js").read_text()\n# Install the quiz integration before the original app script executes.
 payload = '<script>window.GHC_GERMAN_VOCAB=' + json.dumps(vocab, ensure_ascii=False) + ';</script><script>' + runtime + '</script>'
-html = html.replace("</head>", payload + "</head>", 1)
+html = html.replace("</body>", payload + "</body>", 1)
 html_path.write_text(html, encoding="utf-8")
 assert source["id"] in html
 print("Inserted trophy study card in Traditions; total cards:", len(cards))

@@ -1,0 +1,50 @@
+name: Build standalone GHC Study APK
+on:
+  push:
+    branches: [audit/v145-source-recovery]
+    paths:
+      - 'app/**'
+      - '.github/workflows/android-standalone-apk.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  standalone:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check standalone source assets
+        run: |
+          test -s app/src/main/assets/index.html
+          test -d app/src/main/assets/media
+          test -s app/src/main/res/drawable/ic_launcher.png
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: ''
+      - name: Install Android SDK 35
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Build separately installable APK
+        run: gradle --no-daemon -PghcStandalone=true :app:assembleDebug
+      - name: Validate standalone package and media
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          unzip -l "$APK" | grep -q 'assets/index.html'
+          unzip -l "$APK" | grep -q 'assets/media/'
+          unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v145.standalone'"
+          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.5-Standalone-Install.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GHC-Study-v1.4.5-STANDALONE-APK
+          path: app/build/outputs/apk/debug/GHC-Study-v1.4.5-Standalone-Install.apk
+          if-no-files-found: error

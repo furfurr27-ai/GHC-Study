@@ -1,6 +1,7 @@
 {
   "source": "Jaegersprache1.xlsx; History - Traditions.pdf; GHC species and Trophy class decks",
   "quizDirection": "German term to English meaning",
+  "launchFix": "Show vocabulary entry on initial Quiz Mode render",
   "entries": [
     {
       "word": "Rehwild",

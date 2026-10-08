@@ -1,9 +1,5 @@
 name: One-time v1.4.5 source recovery
 on:
-  push:
-    branches: [audit/v145-source-recovery]
-    paths:
-      - '.github/workflows/restore-v145-source.yml'
   workflow_dispatch:
 permissions:
   contents: write

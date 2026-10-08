@@ -13,3 +13,9 @@ for term in ("function render(", "function goBack(", "function show", "let view=
 for pattern in (r"function\s+([A-Za-z_$][\w$]*)\s*\(",r"(?:let|const|var)\s+(view|mode|screen|page|section|selected\w+)\s*="):
     vals=re.findall(pattern,s)
     print("SYMBOLS",pattern,vals[:160],"total",len(vals))
+
+for term in ("var view=", "var mode=", "mode='", "view='", "studyHubBack", "studyCatBack", "function renderHome(", "function renderStudyHub(", "function renderStudyCategory(", "function renderStudyCard(", "function renderQuestion(", "function startStudy(", "function renderReference(", "function bindGlobal("):
+    hits=list(re.finditer(re.escape(term),s))
+    print("NAV",repr(term),"count",len(hits))
+    for hit in hits[:6]:
+        print("NAV_SNIPPET",re.sub(r"\\s+"," ",s[max(0,hit.start()-100):min(len(s),hit.end()+600)])[:700])

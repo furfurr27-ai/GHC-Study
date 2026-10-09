@@ -38,7 +38,7 @@ jobs:
           gradle-version: '8.9'
       - name: Add trophy terminology study card
         run: python3 scripts/integrate_trophy_card.py
-      - name: Build debug APK
+      - name: Verify assembled vocabulary quiz\n        run: python3 scripts/test_vocabulary_assembly.py\n      - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify packaged HTML, media and icon
         shell: bash

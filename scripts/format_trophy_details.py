@@ -15,6 +15,7 @@ card["detailsRows"]=[
     [section["heading"],"".join("<div class='trophy-fact'>• "+fact.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")+"</div>" for fact in section["facts"])]
     for section in source["details"]
 ]
+s=s.replace("Jägersprache1","Jägersprache")
 replacement=json.dumps(cards,ensure_ascii=False,separators=(",",":"))
 p.write_text(s[:start]+replacement+s[start+n:],encoding="utf-8")
 print("Trophy details grouped in",len(card["detailsRows"]),"section panels")

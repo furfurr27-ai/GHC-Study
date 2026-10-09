@@ -8,8 +8,8 @@ assert len(bank["entries"])>=70
 assert "window.GHC_GERMAN_VOCAB=" in s
 assert "German Vocabulary Quiz" in s
 assert "data-vocab-group" in s and "data-vocab" in s
-assert "var old=renderHome;" in s
-assert "hero.appendChild(b)" in s
+assert "window.GHC_VOCAB_OPEN" in s
+assert "app.appendChild(vocabButton)" in s
 assert "function renderHome()" in s
 assert s.count("</body>")==1
 print("PASS: assembled vocabulary entry, categories, answers and feedback are present; terms:",len(bank["entries"]))

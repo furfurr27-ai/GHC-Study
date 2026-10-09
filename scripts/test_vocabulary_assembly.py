@@ -13,7 +13,7 @@ assert len(bank) == len(source["entries"]) >= 70
 assert all(q["sourceGroup"] == "vocabulary" and len(q["choices"]) == 4 for q in bank)
 assert all(len({c["text"] for c in q["choices"]}) == 4 for q in bank)
 assert set(q["topic"] for q in bank) == set(e["group"] for e in source["entries"])
-assert "row('vocabulary','Jägersprache1'" in s
+assert "row('vocabulary','Jägersprache'" in s
 assert "function renderVocabularyScope()" in s
 assert "function bindVocabularyScope()" in s
 assert "sourceMode()==='vocabulary'?renderVocabularyScope()" in s

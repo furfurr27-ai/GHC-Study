@@ -40,6 +40,8 @@ jobs:
         run: python3 scripts/integrate_trophy_card.py
       - name: Format trophy detail bullets
         run: python3 scripts/format_trophy_details.py
+      - name: Verify trophy grouping and vocabulary label
+        run: python3 scripts/test_trophy_layout.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Build debug APK

@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
-"""Check the assembled vocabulary quiz in the actual offline HTML."""
+"""Verify Jaegersprache1 is an actual selectable Quiz Mode bank, not a footer link."""
 import json
 from pathlib import Path
-s=Path("app/src/main/assets/index.html").read_text(encoding="utf-8")
-bank=json.loads(Path("app/src/main/assets/german-vocabulary-quiz.json").read_text())
-assert len(bank["entries"])>=70
-assert "window.GHC_GERMAN_VOCAB=" in s
-assert "German Vocabulary Quiz" in s
-assert "data-vocab-group" in s and "data-vocab" in s
-assert "window.GHC_VOCAB_OPEN" in s
-assert "app.appendChild(vocabButton)" in s
-assert "function renderHome()" in s
-assert s.count("</body>")==1
-print("PASS: assembled vocabulary entry, categories, answers and feedback are present; terms:",len(bank["entries"]))
+
+root = Path("app/src/main/assets")
+s = (root / "index.html").read_text(encoding="utf-8")
+source = json.loads((root / "german-vocabulary-quiz.json").read_text(encoding="utf-8"))
+marker = "window.GHC_VOCAB_QUESTIONS="
+pos = s.index(marker) + len(marker)
+bank, _ = json.JSONDecoder().raw_decode(s[pos:])
+assert len(bank) == len(source["entries"]) >= 70
+assert all(q["sourceGroup"] == "vocabulary" and len(q["choices"]) == 4 for q in bank)
+assert all(len({c["text"] for c in q["choices"]}) == 4 for q in bank)
+assert set(q["topic"] for q in bank) == set(e["group"] for e in source["entries"])
+assert "row('vocabulary','Jägersprache1'" in s
+assert "function renderVocabularyScope()" in s
+assert "function bindVocabularyScope()" in s
+assert "sourceMode()==='vocabulary'?renderVocabularyScope()" in s
+assert "sourceMode()==='vocabulary'?VOCAB_QS" in s
+assert "kind==='vocab-section'" in s
+assert s.count("</body>") == 1
+print("PASS: integrated Quiz Mode bank, 4-way answers, five scopes, progress and reset; terms:", len(bank))

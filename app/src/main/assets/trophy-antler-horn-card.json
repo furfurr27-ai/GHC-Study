@@ -1,14 +1,51 @@
 {
   "id": "trophy-antler-horn-terminology",
-  "title": "Trophies – Antlers and Horns",
+  "title": "Trophy Anatomy",
   "category": "Trophy",
-  "status": "source-reviewed-content-pending-ui-integration",
+  "status": "integrated-into-offline-study-mode",
   "details": [
-    {"heading":"Grundbegriffe (Basic terms)","facts":["Geweih (antlers): trophy of Rotwild (red deer), Rehwild (roe deer), and Damwild (fallow deer).","Schnecken (curved horns): trophy of Muffelwild (mouflon).","Rosen (antler coronets): present on mature deer antlers; distinguish from Rosenstock (pedicle).","Rosenstock (pedicle): the bony antler base; its thickness and shape are discussed in roe deer age assessment."]},
-    {"heading":"Rotwild (Red deer)","facts":["Mittelsprosse (middle tine): a reference point in the antler terminology.","Eissprosse (bez tine): often absent according to the class slides.","Krone (crown): the class describes three or more points above the Mittelsprosse.","Rosen (coronets) and Rosenstock (pedicle): used in class antler development and age discussions."]},
-    {"heading":"Rehwild (Roe deer)","facts":["Stangen (beams) and Enden (tines): length and mass are discussed in antler development.","Perlen (pearling) and Rosen (coronets): visible antler features.","Sechser (six-pointer): may already occur in the first year.","Rosenstock (pedicle): its thickness is an age-related indicator in the slides.","Peak antler development is given as about five to six years."]},
-    {"heading":"Damwild (Fallow deer)","facts":["Schaufeln (palms): broad palmated sections of developed fallow deer antlers.","Young stags initially grow spikes without Rosen (coronets); later antlers develop coronets and may form Schaufeln (palms)."]},
-    {"heading":"Muffelwild (Mouflon)","facts":["Schnecken (curved horns): the horn trophy.","The class covers abnormal or poor horn growth."]}
+    {
+      "heading": "Grundbegriffe (Basic terms)",
+      "facts": [
+        "Geweih (antlers): trophy of Rotwild (red deer), Rehwild (roe deer), and Damwild (fallow deer).",
+        "Schnecken (curved horns): trophy of Muffelwild (mouflon).",
+        "Rosen (antler coronets): present on mature deer antlers; distinguish from Rosenstock (pedicle).",
+        "Rosenstock (pedicle): the bony antler base; its thickness and shape are discussed in roe deer age assessment."
+      ]
+    },
+    {
+      "heading": "Rotwild (Red deer)",
+      "facts": [
+        "Mittelsprosse (middle tine): a reference point in the antler terminology.",
+        "Eissprosse (bez tine): often absent according to the class slides.",
+        "Krone (crown): the class describes three or more points above the Mittelsprosse.",
+        "Rosen (coronets) and Rosenstock (pedicle): used in class antler development and age discussions."
+      ]
+    },
+    {
+      "heading": "Rehwild (Roe deer)",
+      "facts": [
+        "Stangen (beams) and Enden (tines): length and mass are discussed in antler development.",
+        "Perlen (pearling) and Rosen (coronets): visible antler features.",
+        "Sechser (six-pointer): may already occur in the first year.",
+        "Rosenstock (pedicle): its thickness is an age-related indicator in the slides.",
+        "Peak antler development is given as about five to six years."
+      ]
+    },
+    {
+      "heading": "Damwild (Fallow deer)",
+      "facts": [
+        "Schaufeln (palms): broad palmated sections of developed fallow deer antlers.",
+        "Young stags initially grow spikes without Rosen (coronets); later antlers develop coronets and may form Schaufeln (palms)."
+      ]
+    },
+    {
+      "heading": "Muffelwild (Mouflon)",
+      "facts": [
+        "Schnecken (curved horns): the horn trophy.",
+        "The class covers abnormal or poor horn growth."
+      ]
+    }
   ],
   "otherFacts": [
     "The class connects trophy and antler development with species recognition and age assessment.",
@@ -23,5 +60,7 @@
     "Google Drive: Game - Mufflewild (2015).pdf",
     "Google Drive: Trophy Part 1 (2025).pdf",
     "Google Drive: Trophy Part 2 (2025).pdf"
-  ]
+  ],
+  "imageFile": "media/rotwild-antler-parts-labeled.jpg",
+  "imageSource": "Game - Rotwild.pdf — labeled antler diagram, page 14"
 }

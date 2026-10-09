@@ -1,52 +1,24 @@
 #!/usr/bin/env python3
-"""Insert source-reviewed trophy terminology into the existing offline Study Mode data."""
+"""Validate the source-reviewed trophy card stays integrated with its labeled class figure."""
 import json
 from pathlib import Path
 
 root = Path("app/src/main/assets")
-html_path = root / "index.html"
-source = json.loads((root / "trophy-antler-horn-card.json").read_text())
-html = html_path.read_text(encoding="utf-8")
-marker = "window.GHC_STUDY_CARDS="
-start = html.index(marker) + len(marker)
-cards, consumed = json.JSONDecoder().raw_decode(html[start:])
-assert isinstance(cards, list) and len(cards) > 10
-if any(c.get("id") == source["id"] for c in cards):
-    raise SystemExit("Trophy card already exists; refusing duplicate")
-card = {
-    "id": source["id"],
-    "category": "traditions",
-    "title": source["title"],
-    "english": "Trophies – Antlers and Horns",
-    "priority": "!",
-    "source": "Trophy Part 1 & 2 (2025); Game – Rotwild, Rehwild, Damwild, Mufflewild",
-    "pages": "Class decks (see source list)",
-    "detailsRows": [[section["heading"], " · ".join(section["facts"])] for section in source["details"]],
-    "otherFacts": source["otherFacts"],
-    "visualId": "roe_buck_summer"
-}
-cards.append(card)
-replacement = json.dumps(cards, ensure_ascii=False, separators=(",", ":"))
-html = html[:start] + replacement + html[start + consumed:]
-vocab = json.loads((root / "german-vocabulary-quiz.json").read_text())
-runtime = Path("scripts/german_vocab_runtime.js").read_text()
-payload = '<script>window.GHC_GERMAN_VOCAB=' + json.dumps(vocab, ensure_ascii=False) + ';</script><script>' + runtime + '</script>'
-html = html.replace("</body>", payload + "</body>", 1)
-# The legacy app keeps renderHome in a private closure: an external script cannot monkey-patch it.
-# Integrate the visible entry point at the native render location.
-anchor = "bindSourceChooser();bindFocusChooser();bindPracticeScope()"
-assert html.count(anchor) == 1, "Legacy Quiz Mode render anchor changed"
-native = """bindSourceChooser();bindFocusChooser();bindPracticeScope();
-var vocabButton=document.createElement('button');
-vocabButton.className='btn main';
-vocabButton.textContent='German Vocabulary Quiz';
-vocabButton.id='germanVocabularyQuiz';
-vocabButton.onclick=function(){window.GHC_VOCAB_OPEN()};
-app.appendChild(vocabButton);
-window.GHC_VOCAB_BACK=function(){view='study';mode='home';render()};"""
-html = html.replace(anchor, native, 1)
-html_path.write_text(html, encoding="utf-8")
-assert source["id"] in html
-assert "German Vocabulary Quiz" in html
-assert "window.GHC_GERMAN_VOCAB=" in html
-print("Inserted trophy study card in Traditions; total cards:", len(cards))
+source = json.loads((root / "trophy-antler-horn-card.json").read_text(encoding="utf-8"))
+html = (root / "index.html").read_text(encoding="utf-8")
+prefix = "window.GHC_STUDY_CARDS="
+pos = html.index(prefix) + len(prefix)
+cards, _ = json.JSONDecoder().raw_decode(html[pos:])
+matching = [card for card in cards if card.get("id") == source["id"]]
+assert len(matching) == 1, "Trophy card must appear exactly once in Study Mode"
+card = matching[0]
+assert card["title"] == source["title"] == "Trophy Anatomy"
+assert card["imageKey"] == "rotwild_antler_parts"
+assert card["category"] == "traditions"
+assert all(t in str(card["detailsRows"]) for t in ("Krone", "Rosenstock", "Eissprosse"))
+images_start = html.index("window.GHC_STUDY_IMAGES=") + len("window.GHC_STUDY_IMAGES=")
+images, _ = json.JSONDecoder().raw_decode(html[images_start:])
+asset = images["rotwild_antler_parts"]["src"]
+assert asset == source["imageFile"]
+assert (root / asset).is_file(), "Course antler diagram missing from tracked media"
+print("PASS: integrated English trophy title, complete class content, and labeled Rotwild image")

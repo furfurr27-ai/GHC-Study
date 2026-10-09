@@ -12,6 +12,10 @@ GitHub Actions: **Build Android APK from tracked source** (`.github/workflows/an
 - `Static app and repository audit` scans asset sizes, media references, duplicate files, external dependencies, and inline JavaScript syntax. Its reports are diagnostic; unreferenced assets are not automatically deleted.
 - `docs/SOURCE_INVENTORY.md` maps course sources; `docs/AUDIT_V145.md` records original app parity constraints.
 
+## Quiz and Study Mode additions
+- **Jägersprache1** is the third native Quiz Mode bank with 77 German-to-English vocabulary questions in five topic groups. It shares the existing mastery-progress, backup, and reset machinery.
+- **Trophy Anatomy** is the English-only Study Mode title. The card retains the class-based deer and horn facts, and uses the original labeled Rotwild antler image from *Game - Rotwild.pdf*, page 14.
+
 ## Non-negotiable regression requirements
 - Android system Back returns to the previous app screen; root exits only intentionally.
 - Quizzes, direct/related pools, study cards, references, and progress/reset scope retain behavior.

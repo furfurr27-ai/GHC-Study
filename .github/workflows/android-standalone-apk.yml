@@ -31,7 +31,9 @@ jobs:
         with:
           gradle-version: '8.9'
       - name: Add trophy terminology study card
-        run: python3 scripts/integrate_trophy_card.py\n      - name: Format trophy detail bullets\n        run: python3 scripts/format_trophy_details.py
+        run: python3 scripts/integrate_trophy_card.py
+      - name: Format trophy detail bullets
+        run: python3 scripts/format_trophy_details.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Build separately installable APK

@@ -32,6 +32,19 @@ vocab = json.loads((root / "german-vocabulary-quiz.json").read_text())
 runtime = Path("scripts/german_vocab_runtime.js").read_text()
 payload = '<script>window.GHC_GERMAN_VOCAB=' + json.dumps(vocab, ensure_ascii=False) + ';</script><script>' + runtime + '</script>'
 html = html.replace("</body>", payload + "</body>", 1)
+# The legacy app keeps renderHome in a private closure: an external script cannot monkey-patch it.
+# Integrate the visible entry point at the native render location.
+anchor = "bindSourceChooser();bindFocusChooser();bindPracticeScope()"
+assert html.count(anchor) == 1, "Legacy Quiz Mode render anchor changed"
+native = """bindSourceChooser();bindFocusChooser();bindPracticeScope();
+var vocabButton=document.createElement('button');
+vocabButton.className='btn main';
+vocabButton.textContent='German Vocabulary Quiz';
+vocabButton.id='germanVocabularyQuiz';
+vocabButton.onclick=function(){window.GHC_VOCAB_OPEN()};
+app.appendChild(vocabButton);
+window.GHC_VOCAB_BACK=function(){view='study';mode='home';render()};"""
+html = html.replace(anchor, native, 1)
 html_path.write_text(html, encoding="utf-8")
 assert source["id"] in html
 assert "German Vocabulary Quiz" in html

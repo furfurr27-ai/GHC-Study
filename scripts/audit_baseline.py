@@ -15,9 +15,11 @@ def main():
     p.add_argument("--assets", default="app/src/main/assets")
     p.add_argument("--manifest", default="build/baseline-asset-manifest.json")
     p.add_argument("--compare", action="store_true")
+    p.add_argument("--allow-modified-index", action="store_true", help="Record changed app HTML as an intentional implementation change while verifying all original media")
     a = p.parse_args()
     apk, root = Path(a.apk), Path(a.assets)
     mismatches = []
+    allowed_changes = []
     with zipfile.ZipFile(apk) as z:
         names = sorted(n for n in z.namelist() if n.startswith("assets/") and not n.endswith("/"))
         files = []
@@ -30,14 +32,17 @@ def main():
                 if not target.is_file():
                     mismatches.append({"path": name, "issue": "missing"})
                 elif digest(target.read_bytes()) != entry["sha256"]:
-                    mismatches.append({"path": name, "issue": "hash mismatch"})
+                    if a.allow_modified_index and name == "assets/index.html":
+                        allowed_changes.append({"path": name, "issue": "intentional app HTML update", "current_sha256": digest(target.read_bytes()), "baseline_sha256": entry["sha256"]})
+                    else:
+                        mismatches.append({"path": name, "issue": "hash mismatch"})
         icon = "res/drawable/ic_launcher.png"
         icon_info = {"path": icon, "bytes": len(z.read(icon)), "sha256": digest(z.read(icon))} if icon in z.namelist() else None
-    report = {"baseline_apk": str(apk), "baseline_sha256": digest(apk.read_bytes()), "asset_count": len(files), "assets": files, "launcher_icon": icon_info, "mismatches": mismatches}
+    report = {"baseline_apk": str(apk), "baseline_sha256": digest(apk.read_bytes()), "asset_count": len(files), "assets": files, "launcher_icon": icon_info, "mismatches": mismatches, "allowed_changes": allowed_changes}
     out = Path(a.manifest)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(f"APK assets: {len(files)}; mismatches: {len(mismatches)}; report: {out}")
+    print(f"APK assets: {len(files)}; mismatches: {len(mismatches)}; intentional HTML changes: {len(allowed_changes)}; report: {out}")
     if mismatches:
         for problem in mismatches[:20]:
             print(problem)

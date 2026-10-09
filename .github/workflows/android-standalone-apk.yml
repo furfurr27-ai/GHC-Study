@@ -32,7 +32,9 @@ jobs:
           gradle-version: '8.9'
       - name: Add trophy terminology study card
         run: python3 scripts/integrate_trophy_card.py
-      - name: Verify assembled vocabulary quiz\n        run: python3 scripts/test_vocabulary_assembly.py\n      - name: Build separately installable APK
+      - name: Verify assembled vocabulary quiz
+        run: python3 scripts/test_vocabulary_assembly.py
+      - name: Build separately installable APK
         run: gradle --no-daemon -PghcStandalone=true :app:assembleDebug
       - name: Validate standalone package and media
         shell: bash

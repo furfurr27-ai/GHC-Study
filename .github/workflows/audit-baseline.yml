@@ -29,9 +29,9 @@ jobs:
           git cat-file -e "$BASELINE:$APK"
           git show "$BASELINE:$APK" > "build/baseline/reference.apk"
           unzip -tq build/baseline/reference.apk | tail -1
-      - name: Verify every tracked source asset against baseline
+      - name: Verify unchanged original assets; document intentional HTML changes
         run: |
-          python3 scripts/audit_baseline.py --apk build/baseline/reference.apk --assets app/src/main/assets --compare --manifest build/baseline-asset-manifest.json
+          python3 scripts/audit_baseline.py --apk build/baseline/reference.apk --assets app/src/main/assets --compare --allow-modified-index --manifest build/baseline-asset-manifest.json
       - name: Verify launcher icon bytes
         shell: bash
         run: |

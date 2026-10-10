@@ -12,7 +12,7 @@ matching=[c for c in cards if c.get("id")==source["id"]]
 assert len(matching)==1
 card=matching[0]
 card["detailsRows"]=[
-    [section["heading"],"".join("<div class='trophy-fact'>• "+fact.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")+"</div>" for fact in section["facts"])]
+    [section["heading"],"  •  ".join("• "+fact for fact in section["facts"])]
     for section in source["details"]
 ]
 replacement=json.dumps(cards,ensure_ascii=False,separators=(",",":"))

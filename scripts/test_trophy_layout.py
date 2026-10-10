@@ -16,5 +16,5 @@ for row,section in zip(rows,source["details"]):
     assert all(fact.replace("&","&amp;") in row[1] for fact in section["facts"])
 assert "Jägersprache1" not in html
 assert "Jägersprache" in html
-assert "row(" + chr(39) + "vocabulary" + String.fromCharCode(39) + "," + String.fromCharCode(39) + "Jägersprache" + String.fromCharCode(39) in html
+assert "row(" + chr(39) + "vocabulary" + chr(39) + "," + chr(39) + "Jägersprache" + chr(39) in html
 print("PASS: grouped trophy sections and vocabulary label")

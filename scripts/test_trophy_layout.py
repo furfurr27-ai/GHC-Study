@@ -12,8 +12,8 @@ rows=card["detailsRows"]
 assert len(rows)==len(source["details"]), "Each trophy section needs exactly one shared panel"
 for row,section in zip(rows,source["details"]):
     assert row[0]==section["heading"]
-    assert row[1].count("trophy-fact")==len(section["facts"])
-    assert all(fact.replace("&","&amp;") in row[1] for fact in section["facts"])
+    assert row[1].count("• ")==len(section["facts"])
+    assert all(fact in row[1] for fact in section["facts"])
 assert "Jägersprache1" not in html
 assert "Jägersprache" in html
 assert "row(" + chr(39) + "vocabulary" + chr(39) + "," + chr(39) + "Jägersprache" + chr(39) in html

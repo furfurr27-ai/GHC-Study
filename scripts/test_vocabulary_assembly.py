@@ -19,5 +19,6 @@ assert "function bindVocabularyScope()" in s
 assert "sourceMode()==='vocabulary'?renderVocabularyScope()" in s
 assert "sourceMode()==='vocabulary'?VOCAB_QS" in s
 assert "kind==='vocab-section'" in s
+assert all("Etymology and word meaning:" in q.get("learningWhy", "") for q in bank), "Missing etymology in Understanding field"
 assert s.count("</body>") == 1
 print("PASS: integrated Quiz Mode bank, 4-way answers, five scopes, progress and reset; terms:", len(bank))

@@ -211,7 +211,8 @@
       "word": "Schnecken",
       "english": "Mouflon horns",
       "group": "Antlers and trophies",
-      "explanation": "Literally 'snails'; describes the curled horns of mouflon."
+      "explanation": "Literally 'snails'; describes the curled horns of mouflon.",
+      "etymology": "Literally 'snails'; the curling horns of a mouflon resemble snail shells."
     },
     {
       "word": "Rosen",
@@ -271,7 +272,8 @@
       "word": "Waffen",
       "english": "Wild boar tusks",
       "group": "Antlers and trophies",
-      "explanation": "Wild boar tusks; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Wild boar tusks; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Literally 'weapons'; wild boar tusks function as defensive weapons."
     },
     {
       "word": "Gamsbart",
@@ -283,43 +285,50 @@
       "word": "Schweiß",
       "english": "Blood of wounded or harvested game",
       "group": "Hunting language",
-      "explanation": "Literally 'sweat'; in Jägersprache it means blood from game, especially when tracking a wounded animal."
+      "explanation": "Literally 'sweat'; in Jägersprache it means blood from game, especially when tracking a wounded animal.",
+      "etymology": "Literally 'sweat'; in hunting language, blood from game, particularly a wound trail. A secret-code origin is not established."
     },
     {
       "word": "Decke",
       "english": "Hide of cloven-hoofed game",
       "group": "Hunting language",
-      "explanation": "Hide of cloven-hoofed game; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Hide of cloven-hoofed game; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Literally 'cover' or 'blanket'; the animal's hide covers its body."
     },
     {
       "word": "Schwarte",
       "english": "Wild boar hide",
       "group": "Hunting language",
-      "explanation": "Wild boar hide; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Wild boar hide; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Ordinarily a rind or thick skin; the specialized hunting word for wild boar hide."
     },
     {
       "word": "Balg",
       "english": "Fur-bearing animal pelt",
       "group": "Hunting language",
-      "explanation": "Fur-bearing animal pelt; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Fur-bearing animal pelt; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "An established German word for an animal skin or pelt, especially fur-bearing small game."
     },
     {
       "word": "Lunte",
       "english": "Fox tail",
       "group": "Hunting language",
-      "explanation": "A fox's tail; a species-specific hunting term."
+      "explanation": "A fox's tail; a species-specific hunting term.",
+      "etymology": "Literally a fuse or slow match; in hunting language a fox's tail. The resemblance is a memory aid, not proof of historical origin."
     },
     {
       "word": "Blume",
       "english": "Rabbit tail",
       "group": "Hunting language",
-      "explanation": "Literally 'flower'; hunters use it for a rabbit's tail."
+      "explanation": "Literally 'flower'; hunters use it for a rabbit's tail.",
+      "etymology": "Literally 'flower'; a traditional hunting term for a rabbit or hare tail."
     },
     {
       "word": "Spiegel",
       "english": "Rump patch",
       "group": "Hunting language",
-      "explanation": "Literally 'mirror'; the pale rump patch used to identify deer."
+      "explanation": "Literally 'mirror'; the pale rump patch used to identify deer.",
+      "etymology": "Literally 'mirror'; the conspicuous pale rump patch."
     },
     {
       "word": "Blatt",
@@ -385,7 +394,8 @@
       "word": "Schweißhund",
       "english": "Blood-tracking dog",
       "group": "Hunting language",
-      "explanation": "Blood-tracking dog; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Blood-tracking dog; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Schweiß (blood in hunting language) + Hund (dog): a dog trained to track wounded game."
     },
     {
       "word": "Waidgerechtigkeit",

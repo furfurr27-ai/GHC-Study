@@ -63,25 +63,29 @@
       "word": "Kaninchen",
       "english": "Rabbit",
       "group": "Game animals",
-      "explanation": "Rabbit; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Rabbit; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Ordinary German for rabbit; the word came into German through older European rabbit names."
     },
     {
       "word": "Fuchs",
       "english": "Fox",
       "group": "Game animals",
-      "explanation": "Fox; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Fox; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Ordinary German for fox; an inherited Germanic animal name."
     },
     {
       "word": "Dachs",
       "english": "Badger",
       "group": "Game animals",
-      "explanation": "Badger; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Badger; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Ordinary German for badger; an old Germanic animal name."
     },
     {
       "word": "Marder",
       "english": "Marten",
       "group": "Game animals",
-      "explanation": "Marten; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Marten; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Ordinary German for marten; an inherited animal name."
     },
     {
       "word": "Waschbär",
@@ -101,19 +105,22 @@
       "word": "Murmeltier",
       "english": "Marmot",
       "group": "Game animals",
-      "explanation": "Marmot; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Marmot; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "The traditional German marmot name, reshaped from older forms; not a transparent compound of modern words."
     },
     {
       "word": "Fasan",
       "english": "Pheasant",
       "group": "Game animals",
-      "explanation": "Pheasant; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Pheasant; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "The pheasant name was borrowed through European languages; it is not a hunting disguise word."
     },
     {
       "word": "Rebhuhn",
       "english": "Partridge",
       "group": "Game animals",
-      "explanation": "Partridge; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Partridge; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "A traditional compound ending in Huhn (fowl); the first element's origin is not established here."
     },
     {
       "word": "Graugans",
@@ -133,25 +140,29 @@
       "word": "Uhu",
       "english": "Eagle owl",
       "group": "Game animals",
-      "explanation": "Eagle owl; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Eagle owl; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "An onomatopoeic name resembling the owl's call."
     },
     {
       "word": "Bussard",
       "english": "Buzzard",
       "group": "Game animals",
-      "explanation": "Buzzard; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Buzzard; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "The ordinary German bird name; its historical origin is not established here."
     },
     {
       "word": "Bache",
       "english": "Female wild boar (sow)",
       "group": "Animal terms",
-      "explanation": "Female wild boar (sow); used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Female wild boar (sow); used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Traditional name for a female wild boar; no historical origin asserted."
     },
     {
       "word": "Keiler",
       "english": "Male wild boar (boar)",
       "group": "Animal terms",
-      "explanation": "Male wild boar (boar); used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Male wild boar (boar); used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Male wild boar; resemblance to Keil (wedge) is a mnemonic, not a verified derivation."
     },
     {
       "word": "Frischling",
@@ -171,7 +182,8 @@
       "word": "Hirsch",
       "english": "Male deer (stag)",
       "group": "Animal terms",
-      "explanation": "Male deer (stag); used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Male deer (stag); used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Old Germanic word for a deer or stag."
     },
     {
       "word": "Bock",
@@ -275,7 +287,8 @@
       "word": "Eissprosse",
       "english": "Bez tine",
       "group": "Antlers and trophies",
-      "explanation": "Bez tine; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Bez tine; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "A traditional antler-tine name; do not assume Eis (ice) gives its historical origin."
     },
     {
       "word": "Sechser",
@@ -295,7 +308,8 @@
       "word": "Grandeln",
       "english": "Vestigial canine teeth of deer",
       "group": "Antlers and trophies",
-      "explanation": "Vestigial canine teeth of deer; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Vestigial canine teeth of deer; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Hunting term for red-deer canine teeth; no modern literal translation is established here."
     },
     {
       "word": "Waffen",
@@ -385,7 +399,8 @@
       "word": "Pirsch",
       "english": "Stalking hunt",
       "group": "Hunting language",
-      "explanation": "Stalking hunt; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Stalking hunt; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Traditional hunting word for stalking quietly; its historical origin is not established here."
     },
     {
       "word": "Nachsuche",
@@ -503,7 +518,8 @@
       "word": "Halali",
       "english": "End-of-hunt horn signal",
       "group": "Traditions",
-      "explanation": "End-of-hunt horn signal; used in German hunting terminology and class discussions of traditions."
+      "explanation": "End-of-hunt horn signal; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Traditional hunting-horn cry or signal; historical derivation is not established here."
     },
     {
       "word": "Totenwacht",
@@ -526,5 +542,6 @@
       "explanation": "King of the hunt; used in German hunting terminology and class discussions of traditions.",
       "etymology": "Jagd (hunt) + König (king)."
     }
-  ]
+  ],
+  "etymologyScope": "Literal meaning and word structure are not proof of historical derivation. Do not present Jägersprache as uniformly originating in poachers' secret language."
 }

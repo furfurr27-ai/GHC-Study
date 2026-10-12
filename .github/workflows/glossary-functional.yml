@@ -1,0 +1,71 @@
+name: GHC glossary and functional regression
+on:
+  push:
+    branches: [feature/slide-audit-glossary-tests-20261012]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install DOM test harness
+        run: npm install --no-save --ignore-scripts jsdom@24.1.3
+      - name: JavaScript syntax
+        run: |
+          node --check app/src/main/assets/glossary-data.js
+          node --check tests/functional-smoke.cjs
+      - name: Run GHC study UI smoke tests
+        run: node tests/functional-smoke.cjs
+      - name: Test Android system Back bridge
+        run: python3 scripts/test_android_back.py
+      - name: Check existing integration tests
+        run: |
+          python3 scripts/inspect_runtime_surfaces.py
+          python3 scripts/inspect_study_integration.py
+          python3 scripts/test_trophy_layout.py
+          python3 scripts/test_vocabulary_assembly.py
+  android-apk:
+    runs-on: ubuntu-latest
+    needs: smoke
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: ''
+      - name: Install Android SDK 35
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Check bundled offline assets
+        run: |
+          test -s app/src/main/assets/index.html
+          test -s app/src/main/assets/glossary.html
+          test -s app/src/main/assets/glossary-data.js
+          test -d app/src/main/assets/media
+          test -s app/src/main/res/drawable/ic_launcher.png
+      - name: Build installable Android APK
+        run: gradle --no-daemon :app:assembleDebug
+      - name: Verify glossary packaged into APK
+        run: |
+          APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
+          test -n "$APK"
+          unzip -Z1 "$APK" | grep -Fx 'assets/index.html'
+          unzip -Z1 "$APK" | grep -Fx 'assets/glossary.html'
+          unzip -Z1 "$APK" | grep -Fx 'assets/glossary-data.js'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GHC-Study-v1.4.5-glossary-tested-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error

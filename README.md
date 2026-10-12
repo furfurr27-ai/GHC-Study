@@ -1,6 +1,6 @@
 # GHC Study Android
 
-Version **1.4.5** (versionCode 145), package `org.ghcstudy.v141`. Target: Samsung Galaxy S23 Ultra. Android minSdk 24, compile/target SDK 35.
+Version **1.4.6** (versionCode 146), package `org.ghcstudy.v141`. Target: Samsung Galaxy S23 Ultra. Android minSdk 24, compile/target SDK 35.
 
 The project is currently **public on GitHub**. Do not commit private class slides, copyrighted PDFs, credentials, or personal data.
 
@@ -24,3 +24,7 @@ GitHub Actions: **Build Android APK from tracked source** (`.github/workflows/an
 
 ## Change policy
 Do not bulk-minify or remove assets without measured savings, an explicit source diff, a successful parity/build audit, and behavior regression evidence. A successful build is not proof of runtime correctness.
+
+## October 2026 glossary and verification work
+
+The v1.4.6 feature branch adds 162 offline searchable Jägersprache terms (77 defined and 85 term-only pending verification), topic/verification filters, and cross-reference links. A class-source audit register inventories 117 study cards and 819 displayed fact blocks from the prior v1.4.5 source. Twelve blocks have individually checked text evidence; 807 remain unverified and must not be described as fact-audited. See `docs/STUDY_CARD_SOURCE_AUDIT_20261012.md` and `NEXT_ACTION.md`. GitHub Actions regression includes DOM behavior, Android Back script tests, APK assembly and an Android emulator test.

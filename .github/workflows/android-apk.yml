@@ -42,7 +42,7 @@ jobs:
         run: python3 scripts/format_trophy_details.py
       - name: Verify trophy grouping and vocabulary label
         run: python3 scripts/test_trophy_layout.py
-      - name: Verify assembled vocabulary quiz
+      - name: Add vocabulary etymology understanding\n        run: python3 scripts/inject_vocabulary_etymology.py\n      - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug

@@ -25,10 +25,17 @@ jobs:
         run: node tests/functional-smoke.cjs
       - name: Test Android system Back bridge
         run: python3 scripts/test_android_back.py
-      - name: Check existing integration tests
+      - name: Inspect runtime and study integration
         run: |
           python3 scripts/inspect_runtime_surfaces.py
           python3 scripts/inspect_study_integration.py
+      - name: Assemble original trophy/vocabulary overlays for regression checks
+        run: |
+          python3 scripts/integrate_trophy_card.py
+          python3 scripts/format_trophy_details.py
+          python3 scripts/inject_vocabulary_etymology.py
+      - name: Verify assembled sections
+        run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
   android-apk:
@@ -55,6 +62,13 @@ jobs:
           test -s app/src/main/assets/glossary-data.js
           test -d app/src/main/assets/media
           test -s app/src/main/res/drawable/ic_launcher.png
+      - name: Apply existing verified assembly overlays
+        run: |
+          python3 scripts/integrate_trophy_card.py
+          python3 scripts/format_trophy_details.py
+          python3 scripts/inject_vocabulary_etymology.py
+          python3 scripts/test_trophy_layout.py
+          python3 scripts/test_vocabulary_assembly.py
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify glossary packaged into APK

@@ -19,7 +19,7 @@
 ## Outstanding critical verification
 
 1. The 38 PDF responses did not preserve reliable **individual slide/page boundaries** or extract all text from illustrations; page-specific attribution cannot yet be certified.
-2. **819 fact blocks were inventoried, not independently semantically verified one by one.** Only the specific points above underwent direct source-to-claim reading in this turn. Numerical source-term screening is merely a queue for manual investigation.
+2. **819 fact blocks were inventoried, not independently semantically verified one by one.** Rehwild was directly reviewed across 29 of its 30 fact blocks, Rotwild across 15 of 18, and Türkentaube across 2 of 3, for **46 blocks checked against complete corresponding slide-deck text**. The remaining 773 blocks were inventoried and screened but not fully checked. The excluded blocks include compound statements not wholly traceable to the source text. Numerical source-term screening is merely a queue for manual investigation.
 3. **Murmeltier and Seehund/Robbe** use an `Other Game` guide not in the 38-deck primary-source inventory. Verify that guide before treating these two cards as class-sourced.
 4. Nine firearm-reference cards trace to a 2020 overview; even accurate old slides must not be treated as current weapons-law advice without checking updated law.
 5. Full animal-photo identification, image labeling and Android screen-reader accessibility are not proven by text extraction.

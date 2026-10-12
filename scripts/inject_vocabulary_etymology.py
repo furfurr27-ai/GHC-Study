@@ -14,11 +14,10 @@ questions, length = json.JSONDecoder().raw_decode(html[start:])
 assert len(questions) == len(entries), "Vocabulary source and quiz bank have diverged"
 used = set()
 for q in questions:
-    serialized = json.dumps(q, ensure_ascii=False)
-    hits = [e for e in entries if re.search(r"(?<!\\w)" + re.escape(e["word"]) + r"(?!\\w)", serialized)]
-    if len(hits) != 1:
-        raise ValueError("Cannot uniquely identify term in quiz question: " + serialized[:200])
-    entry = hits[0]
+    index = int(q["sourceQuestion"]) - 1
+    assert 0 <= index < len(entries), "Invalid vocabulary source question index"
+    entry = entries[index]
+    assert entry["word"] in q["stem"], "Vocabulary ordering differs from source file"
     assert entry["word"] not in used, "Duplicate vocabulary term"
     used.add(entry["word"])
     note = "Etymology and word meaning: " + entry["etymology"]

@@ -17,8 +17,8 @@ Updated: 2026-10-12
 
 ## Class factual source intake
 - All 38 listed GHC primary class deck PDFs were directly fetched and readable text retrieved (batch documents under `docs/`).
-- Exactly 117 study cards have 819 source-coded fact blocks; the register `audit/study-card-claim-register-20261012.json` explicitly marks 12 blocks checked against slides and **807 requiring semantic/page-level verification**.
-- Review each pending claim directly against its original PDF. Do not promote inferred or simply numeric-matched facts to verified.
+- Exactly 117 study cards have 819 source-coded fact blocks; the register `audit/study-card-claim-register-20261012.json` explicitly marks 46 blocks checked against slides and **807 requiring semantic/page-level verification**.
+- Review each of the remaining 773 pending claims directly against its original PDF. Do not promote inferred or simply numeric-matched facts to verified.
 - The `Murmeltier` and `Seehund/Robbe` cards refer to an additional Other Game guide not present in the primary deck inventory (the separate hunting-law deck is available).
 - Source PDFs' simple text extraction did not preserve reliable slide boundaries or all visual facts; inspect original pages and graphics.
 - Correct any actual contradictions with a citation to filename/page; preserve original factual intent and separate current legal facts from historic class facts.

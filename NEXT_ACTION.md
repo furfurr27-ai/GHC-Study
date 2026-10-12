@@ -6,7 +6,7 @@ Updated: 2026-10-12
 - Active changes: `feature/slide-audit-glossary-tests-20261012`.
 - Comparison/review target: `audit/v145-source-recovery` (not older `main`).
 - Draft pull request: https://github.com/furfurr27-ai/GHC-Study/pull/3
-- This remains based on v1.4.5, Android applicationId `org.ghcstudy.v141`, versionCode 145.
+- Baseline source: v1.4.5. Candidate build: **v1.4.6, versionCode 146**. The main upgrade package remains `org.ghcstudy.v141`; side-by-side tester is `org.ghcstudy.v146.standalone`.
 
 ## Verified implementation
 - The application has an offline `glossary.html` and `glossary-data.js` linked in navigation and Reference.

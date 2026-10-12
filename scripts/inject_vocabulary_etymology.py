@@ -21,13 +21,8 @@ for q in questions:
     assert entry["word"] not in used, "Duplicate vocabulary term"
     used.add(entry["word"])
     note = "Etymology and word meaning: " + entry["etymology"]
-    print("VOCAB_FIELDS", q["sourceQuestion"], sorted(q.keys()) if q["sourceQuestion"] == 1 else "")
-    for field in ("explanation", "understanding", "whyCorrect"):
-        if field in q and isinstance(q[field], str):
-            q[field] += "\n\n" + note
-            break
-    else:
-        q["explanation"] = entry["explanation"] + "\\n\\n" + note
+    assert isinstance(q.get("learningWhy"), str), "Vocabulary Understanding text missing"
+    q["learningWhy"] = q["learningWhy"].rstrip() + "\n\n" + note
 assert len(used) == len(entries) == 77
 replacement = json.dumps(questions, ensure_ascii=False, separators=(",", ":"))
 p.write_text(html[:start] + replacement + html[start + length:], encoding="utf-8")

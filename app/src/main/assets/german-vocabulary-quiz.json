@@ -7,49 +7,57 @@
       "word": "Rehwild",
       "english": "Roe deer",
       "group": "Game animals",
-      "explanation": "Roe deer; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Roe deer; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Reh (roe deer) + Wild (game)."
     },
     {
       "word": "Rotwild",
       "english": "Red deer",
       "group": "Game animals",
-      "explanation": "Red deer; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Red deer; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Rot (red) + Wild (game)."
     },
     {
       "word": "Damwild",
       "english": "Fallow deer",
       "group": "Game animals",
-      "explanation": "Fallow deer; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Fallow deer; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Dam (fallow deer) + Wild (game)."
     },
     {
       "word": "Sikawild",
       "english": "Sika deer",
       "group": "Game animals",
-      "explanation": "Sika deer; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Sika deer; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Sika (deer name of Japanese origin) + Wild (game)."
     },
     {
       "word": "Muffelwild",
       "english": "Mouflon",
       "group": "Game animals",
-      "explanation": "Mouflon; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Mouflon; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Muffel (mouflon) + Wild (game)."
     },
     {
       "word": "Gamswild",
       "english": "Chamois",
       "group": "Game animals",
-      "explanation": "Chamois; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Chamois; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Gams (chamois) + Wild (game)."
     },
     {
       "word": "Schwarzwild",
       "english": "Wild boar",
       "group": "Game animals",
-      "explanation": "Wild boar; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Wild boar; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Schwarz (black) + Wild (game)."
     },
     {
       "word": "Feldhase",
       "english": "Brown hare",
       "group": "Game animals",
-      "explanation": "Brown hare; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Brown hare; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Feld (field) + Hase (hare)."
     },
     {
       "word": "Kaninchen",
@@ -79,13 +87,15 @@
       "word": "Waschbär",
       "english": "Raccoon",
       "group": "Game animals",
-      "explanation": "Raccoon; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Raccoon; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Wasch- (washing) + Bär (bear), from its handling of food."
     },
     {
       "word": "Wildkatze",
       "english": "Wildcat",
       "group": "Game animals",
-      "explanation": "Wildcat; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Wildcat; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Wild (wild) + Katze (cat)."
     },
     {
       "word": "Murmeltier",
@@ -109,13 +119,15 @@
       "word": "Graugans",
       "english": "Greylag goose",
       "group": "Game animals",
-      "explanation": "Greylag goose; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Greylag goose; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Grau (gray) + Gans (goose)."
     },
     {
       "word": "Ringeltaube",
       "english": "Wood pigeon",
       "group": "Game animals",
-      "explanation": "Wood pigeon; used in German hunting terminology and class discussions of game animals."
+      "explanation": "Wood pigeon; used in German hunting terminology and class discussions of game animals.",
+      "etymology": "Ringel (ring) + Taube (pigeon)."
     },
     {
       "word": "Uhu",
@@ -145,13 +157,15 @@
       "word": "Frischling",
       "english": "Wild boar piglet",
       "group": "Animal terms",
-      "explanation": "Wild boar piglet; used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Wild boar piglet; used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Related to frisch (fresh or new): young wild boar."
     },
     {
       "word": "Überläufer",
       "english": "Yearling wild boar",
       "group": "Animal terms",
-      "explanation": "Yearling wild boar; used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Yearling wild boar; used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Über (over) + laufen (run); a young boar in its next year."
     },
     {
       "word": "Hirsch",
@@ -163,49 +177,57 @@
       "word": "Bock",
       "english": "Male roe deer (buck)",
       "group": "Animal terms",
-      "explanation": "Male roe deer (buck); used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Male roe deer (buck); used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Ordinary German for buck or male goat; also a male of several game species."
     },
     {
       "word": "Geiß",
       "english": "Female roe deer (doe)",
       "group": "Animal terms",
-      "explanation": "Female roe deer (doe); used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Female roe deer (doe); used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Ordinary German for female goat; hunting term for a roe-deer doe."
     },
     {
       "word": "Kitz",
       "english": "Young roe deer (fawn)",
       "group": "Animal terms",
-      "explanation": "Young roe deer (fawn); used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Young roe deer (fawn); used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Young goat or fawn; a juvenile game animal."
     },
     {
       "word": "Kahlwild",
       "english": "Antlerless female and young red deer",
       "group": "Animal terms",
-      "explanation": "Antlerless female and young red deer; used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Antlerless female and young red deer; used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Kahl (bare) + Wild (game), for antlerless red deer."
     },
     {
       "word": "Rotte",
       "english": "Group of wild boar",
       "group": "Animal terms",
-      "explanation": "Group of wild boar; used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Group of wild boar; used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "An old word for a group or troop; a wild boar sounder."
     },
     {
       "word": "Sprung",
       "english": "Group of roe deer",
       "group": "Animal terms",
-      "explanation": "Group of roe deer; used in German hunting terminology and class discussions of animal terms."
+      "explanation": "Group of roe deer; used in German hunting terminology and class discussions of animal terms.",
+      "etymology": "Literally jump or leap; specialized term for a roe-deer group."
     },
     {
       "word": "Geweih",
       "english": "Antlers",
       "group": "Antlers and trophies",
-      "explanation": "Antlers; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Antlers; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "The established German word for antlers, shed and regrown by deer."
     },
     {
       "word": "Gehörn",
       "english": "Roe deer antlers",
       "group": "Antlers and trophies",
-      "explanation": "Roe deer antlers; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Roe deer antlers; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "From Horn (horn); specialized hunting usage can refer to roe-deer antlers."
     },
     {
       "word": "Schnecken",
@@ -218,31 +240,36 @@
       "word": "Rosen",
       "english": "Antler coronets",
       "group": "Antlers and trophies",
-      "explanation": "Literally 'roses'; the rough coronets at the base of antlers."
+      "explanation": "Literally 'roses'; the rough coronets at the base of antlers.",
+      "etymology": "Literally roses; hunting term for antler coronets."
     },
     {
       "word": "Rosenstock",
       "english": "Antler pedicle",
       "group": "Antlers and trophies",
-      "explanation": "Antler pedicle; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Antler pedicle; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Rosen (antler coronet) + Stock (stem/base)."
     },
     {
       "word": "Perlen",
       "english": "Pearling on antlers",
       "group": "Antlers and trophies",
-      "explanation": "Pearling on antlers; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Pearling on antlers; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Literally pearls; small bead-like antler bumps."
     },
     {
       "word": "Schaufeln",
       "english": "Palmated antler sections",
       "group": "Antlers and trophies",
-      "explanation": "Palmated antler sections; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Palmated antler sections; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Literally shovels; broad flattened antler palms."
     },
     {
       "word": "Mittelsprosse",
       "english": "Middle antler tine",
       "group": "Antlers and trophies",
-      "explanation": "Middle antler tine; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Middle antler tine; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Mittel (middle) + Sprosse (tine or shoot)."
     },
     {
       "word": "Eissprosse",
@@ -254,13 +281,15 @@
       "word": "Sechser",
       "english": "Six-point antlered buck",
       "group": "Antlers and trophies",
-      "explanation": "Six-point antlered buck; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Six-point antlered buck; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Sechs (six) + -er: a six-pointed buck."
     },
     {
       "word": "Spießer",
       "english": "Spike-antlered male",
       "group": "Antlers and trophies",
-      "explanation": "Spike-antlered male; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Spike-antlered male; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Spieß (spear or spike) + -er: spike-antlered male."
     },
     {
       "word": "Grandeln",
@@ -279,7 +308,8 @@
       "word": "Gamsbart",
       "english": "Chamois-hair hat ornament",
       "group": "Antlers and trophies",
-      "explanation": "Chamois-hair hat ornament; used in German hunting terminology and class discussions of antlers and trophies."
+      "explanation": "Chamois-hair hat ornament; used in German hunting terminology and class discussions of antlers and trophies.",
+      "etymology": "Gams (chamois) + Bart (beard)."
     },
     {
       "word": "Schweiß",
@@ -334,19 +364,22 @@
       "word": "Blatt",
       "english": "Heart-lung shot area",
       "group": "Hunting language",
-      "explanation": "Heart-lung shot area; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Heart-lung shot area; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Literally leaf or sheet; in hunting language the shoulder area."
     },
     {
       "word": "Anschuss",
       "english": "Location of shot impact",
       "group": "Hunting language",
-      "explanation": "Location of shot impact; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Location of shot impact; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "An (at) + Schuss (shot): shot site."
     },
     {
       "word": "Ansitz",
       "english": "Stationary hunting from a stand",
       "group": "Hunting language",
-      "explanation": "Stationary hunting from a stand; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Stationary hunting from a stand; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "An (at) + Sitz (seat): stationary hunt."
     },
     {
       "word": "Pirsch",
@@ -358,37 +391,43 @@
       "word": "Nachsuche",
       "english": "Follow-up tracking of wounded game",
       "group": "Hunting language",
-      "explanation": "Follow-up tracking of wounded game; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Follow-up tracking of wounded game; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Nach (after) + Suche (search): follow-up tracking."
     },
     {
       "word": "Revier",
       "english": "Hunting district",
       "group": "Hunting language",
-      "explanation": "Hunting district; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Hunting district; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "District or territory; the managed hunting area."
     },
     {
       "word": "Kirrung",
       "english": "Baiting or feeding site",
       "group": "Hunting language",
-      "explanation": "Baiting or feeding site; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Baiting or feeding site; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "From kirren, to attract game with feed."
     },
     {
       "word": "Wechsel",
       "english": "Game trail or passage",
       "group": "Hunting language",
-      "explanation": "Game trail or passage; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Game trail or passage; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Literally change or alternation; a regular animal passage."
     },
     {
       "word": "Hochwild",
       "english": "Higher-status game category",
       "group": "Hunting language",
-      "explanation": "Higher-status game category; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Higher-status game category; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Hoch (high) + Wild (game): historically privileged game."
     },
     {
       "word": "Niederwild",
       "english": "Small or lower-status game category",
       "group": "Hunting language",
-      "explanation": "Small or lower-status game category; used in German hunting terminology and class discussions of hunting language."
+      "explanation": "Small or lower-status game category; used in German hunting terminology and class discussions of hunting language.",
+      "etymology": "Nieder (low) + Wild (game): historically lower-status game."
     },
     {
       "word": "Schweißhund",
@@ -401,55 +440,64 @@
       "word": "Waidgerechtigkeit",
       "english": "Ethical and proper hunting conduct",
       "group": "Traditions",
-      "explanation": "Ethical and proper hunting conduct; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Ethical and proper hunting conduct; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Waid (traditional hunting element) + Gerechtigkeit (rightness or justice)."
     },
     {
       "word": "Waidmannsheil",
       "english": "Hunter's greeting or congratulations",
       "group": "Traditions",
-      "explanation": "Traditional greeting or congratulations between hunters; the response is Waidmannsdank."
+      "explanation": "Traditional greeting or congratulations between hunters; the response is Waidmannsdank.",
+      "etymology": "Waidmann (hunter) + Heil (good fortune)."
     },
     {
       "word": "Waidmannsdank",
       "english": "Response of thanks to a hunter",
       "group": "Traditions",
-      "explanation": "Response of thanks to a hunter; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Response of thanks to a hunter; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Waidmann (hunter) + Dank (thanks)."
     },
     {
       "word": "Schützenbruch",
       "english": "Shooter's ceremonial branch",
       "group": "Traditions",
-      "explanation": "Shooter's ceremonial branch; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Shooter's ceremonial branch; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Schütze (shooter) + Bruch (broken branch)."
     },
     {
       "word": "Letzter Bissen",
       "english": "Last bite placed in game animal's mouth",
       "group": "Traditions",
-      "explanation": "Literally 'last bite'; a branch placed in the mouth of male cloven-hoofed game as a mark of respect."
+      "explanation": "Literally 'last bite'; a branch placed in the mouth of male cloven-hoofed game as a mark of respect.",
+      "etymology": "Literally 'last bite': a ceremonial final twig."
     },
     {
       "word": "Anschussbruch",
       "english": "Branch marking the shot location",
       "group": "Traditions",
-      "explanation": "Branch marking the shot location; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Branch marking the shot location; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Anschuss (shot site) + Bruch (branch)."
     },
     {
       "word": "Warnbruch",
       "english": "Warning branch",
       "group": "Traditions",
-      "explanation": "Warning branch; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Warning branch; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Warn- (warning) + Bruch (branch)."
     },
     {
       "word": "Inbesitznahmebruch",
       "english": "Ownership branch",
       "group": "Traditions",
-      "explanation": "Ownership branch; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Ownership branch; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Inbesitznahme (taking possession) + Bruch (branch)."
     },
     {
       "word": "Streckelegen",
       "english": "Ceremonial laying out of harvested game",
       "group": "Traditions",
-      "explanation": "Ceremonial laying out of harvested game; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Ceremonial laying out of harvested game; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Strecke (laid-out bag) + legen (to lay)."
     },
     {
       "word": "Halali",
@@ -461,19 +509,22 @@
       "word": "Totenwacht",
       "english": "Respectful wait after a shot",
       "group": "Traditions",
-      "explanation": "Respectful wait after a shot; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Respectful wait after a shot; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Toten (dead) + Wacht (vigil); historical hunting usage needs verification."
     },
     {
       "word": "Treibjagd",
       "english": "Driven hunt",
       "group": "Traditions",
-      "explanation": "Driven hunt; used in German hunting terminology and class discussions of traditions."
+      "explanation": "Driven hunt; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Treiben (drive) + Jagd (hunt)."
     },
     {
       "word": "Jagd­könig",
       "english": "King of the hunt",
       "group": "Traditions",
-      "explanation": "King of the hunt; used in German hunting terminology and class discussions of traditions."
+      "explanation": "King of the hunt; used in German hunting terminology and class discussions of traditions.",
+      "etymology": "Jagd (hunt) + König (king)."
     }
   ]
 }

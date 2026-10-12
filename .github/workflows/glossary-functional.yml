@@ -2,6 +2,11 @@ name: GHC glossary and functional regression
 on:
   push:
     branches: [feature/slide-audit-glossary-tests-20261012]
+    paths:
+      - 'app/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - '.github/workflows/glossary-functional.yml'
   pull_request:
     branches: [main]
   workflow_dispatch:

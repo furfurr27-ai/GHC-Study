@@ -1,7 +1,7 @@
 name: Build standalone GHC Study APK
 on:
   push:
-    branches: [audit/v145-source-recovery]
+    branches: [audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
     paths:
       - 'app/**'
       - '.github/workflows/android-standalone-apk.yml'
@@ -49,12 +49,14 @@ jobs:
           APK=app/build/outputs/apk/debug/app-debug.apk
           test -s "$APK"
           unzip -l "$APK" | grep -q 'assets/index.html'
+          unzip -l "$APK" | grep -q 'assets/glossary.html'
+          unzip -l "$APK" | grep -q 'assets/glossary-data.js'
           unzip -l "$APK" | grep -q 'assets/media/'
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
-          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v145.standalone'"
-          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.5-Standalone-Install.apk
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"
+          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.6-Standalone-Install.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.5-STANDALONE-APK
-          path: app/build/outputs/apk/debug/GHC-Study-v1.4.5-Standalone-Install.apk
+          name: GHC-Study-v1.4.6-STANDALONE-APK
+          path: app/build/outputs/apk/debug/GHC-Study-v1.4.6-Standalone-Install.apk
           if-no-files-found: error

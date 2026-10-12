@@ -5,9 +5,9 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 819,
-  "verifiedBlockCount": 12,
-  "pendingBlockCount": 807,
-  "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions.",
+  "verifiedBlockCount": 46,
+  "pendingBlockCount": 773,
+  "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
       "id": "roe-R1",
@@ -31,7 +31,7 @@
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R3",
@@ -43,7 +43,7 @@
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R4",
@@ -55,7 +55,7 @@
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R5",
@@ -67,7 +67,7 @@
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R6",
@@ -79,7 +79,7 @@
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R7",
@@ -90,8 +90,8 @@
       "claim": "Most widespread European deer; Scandinavia to Mediterranean and east into Siberia",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R8",
@@ -102,8 +102,8 @@
       "claim": "Almost any cover or terrain; forest, field, mountains, plains, wetlands; often near towns",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R9",
@@ -114,8 +114,8 @@
       "claim": "Browser: trees, shrubs, new growth and some grass; can damage young plantings",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R10",
@@ -126,8 +126,8 @@
       "claim": "About 30 in / 76 cm at shoulder; ~3.5 ft / 1.1 m long; locally ~15–18 kg",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R11",
@@ -138,8 +138,8 @@
       "claim": "Fawns spotted until first winter coat; adults reddish-brown summer, gray-brown winter",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R12",
@@ -150,8 +150,8 @@
       "claim": "Spiegel (rump patch): male kidney-shaped, female heart-shaped; Schürze (female apron tuft) identifies doe",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R13",
@@ -162,8 +162,8 @@
       "claim": "Older bucks may show a Muffelfleck (grey/white facial patch); black or white color variants occur",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R14",
@@ -174,8 +174,8 @@
       "claim": "Hearing and smell very good; eyesight weaker for detail/color but excellent at detecting movement",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R15",
@@ -186,8 +186,8 @@
       "claim": "Buck forehead gland; hock glands; interdigital glands between hooves",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R16",
@@ -198,8 +198,8 @@
       "claim": "Wild life span up to about 14–15 years; peak antler development about 5–6 years",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R17",
@@ -210,8 +210,8 @@
       "claim": "Gehörn (antlers) · Rosen (coronets) · Rosenstock (pedicle) · Perlen (pearling) · Bast (velvet)",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R18",
@@ -222,8 +222,8 @@
       "claim": "Knopfbock (button buck) · Spießer (spike) · Gabler (fork/four-pointer) · Sechser (six-pointer) · Achter (eight-pointer, rare)",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R19",
@@ -234,8 +234,8 @@
       "claim": "Older bucks grow Jan–Mar, rub clean Mar–Apr, shed Nov–Dec; older bucks shed first",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R20",
@@ -246,8 +246,8 @@
       "claim": "Doe + young family groups; both sexes territorial; bucks mark with rubs/scrapes",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R21",
@@ -258,8 +258,8 @@
       "claim": "Bark = alarm/territorial; high whistle = doe breeding call; peep = fawn to doe",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-R22",
@@ -270,8 +270,8 @@
       "claim": "Buck chases doe in circles/figure-eights; doe controls breeding timing",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O23",
@@ -282,8 +282,8 @@
       "claim": "Antler scoring considers color, mass/weight, beam/tine length, Perlen (pearling) and Rosen (coronets).",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O24",
@@ -294,8 +294,8 @@
       "claim": "Abnormal antlers can follow testicle injury, frost, trauma, disease or poor nutrition. Named forms include Murderer, corkscrew, pendulum and Perückenbock (wig buck).",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O25",
@@ -306,8 +306,8 @@
       "claim": "Course hunting methods: Ansitz (stand hunting), Pirsch (stalking), Treibjagd (drive hunt) and Lockjagd (calling/decoy hunting).",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O26",
@@ -319,7 +319,7 @@
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
       "status": "checked_against_deck_text",
-      "evidence": "The Rehwild deck expressly states the 1,000 J/100 m (.222) classroom example; this is not an independent current-law check"
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O27",
@@ -330,8 +330,8 @@
       "claim": "Preferred placement is a Blatt (shoulder/heart-lung area)/Blattschuss (shoulder/heart-lung shot) to reduce meat damage and support a clean kill.",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O28",
@@ -342,8 +342,8 @@
       "claim": "Selective harvest follows the Abschussplan (harvest/cull plan): sick/wounded first, then weak/small animals; take Kitz (fawn) before the doe to avoid orphaning.",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O29",
@@ -354,8 +354,8 @@
       "claim": "Trophies shown: Gehörn (antlers), Decke (hide), and rarely Grandeln (upper canine teeth).",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "roe-O30",
@@ -366,8 +366,8 @@
       "claim": "Course season dates are examples and can vary by German state; use current law for actual hunting.",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rehwild (2026).pdf extracted text on 2026-10-12; statement agrees with the corresponding passage (image-only/page verification still pending)."
     },
     {
       "id": "boar-R1",
@@ -667,7 +667,7 @@
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R3",
@@ -679,7 +679,7 @@
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R4",
@@ -691,7 +691,7 @@
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R5",
@@ -703,7 +703,7 @@
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R6",
@@ -715,7 +715,7 @@
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R7",
@@ -726,8 +726,8 @@
       "claim": "Large forest landscapes with water, cover and open feeding areas",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R8",
@@ -750,8 +750,8 @@
       "claim": "Largest huntable game highlighted in the class; males much larger/heavier than females",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R10",
@@ -762,8 +762,8 @@
       "claim": "Seasonal reddish-to-gray coat; mature stag develops Mähne (mane)/Brunftkragen (mane/rut collar)",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R11",
@@ -774,8 +774,8 @@
       "claim": "Male only; antlers shed and regrow annually; naming is based on total points",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R12",
@@ -786,8 +786,8 @@
       "claim": "Class III, II and I are age classes—not simply antler-point classes",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R13",
@@ -798,8 +798,8 @@
       "claim": "Kahlwildrudel (female/calf herd) is led by the Leittier (lead hind); sexes separate much of the year",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-R14",
@@ -810,8 +810,8 @@
       "claim": "Feistzeit (pre-rut fattening period) precedes Brunft (rut); stags use Röhren (roaring) calls during rut",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-O15",
@@ -822,8 +822,8 @@
       "claim": "The class divides management animals into conservation/selection categories; use age, condition and management goals rather than antler points alone.",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-O16",
@@ -834,8 +834,8 @@
       "claim": "Hunting methods include Ansitz (stand hunting), Pirsch (stalking) and organized drives where legal/appropriate.",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "reddeer-O17",
@@ -858,8 +858,8 @@
       "claim": "Trophies include antlers, Grandeln (upper canine teeth), Decke (hide) and other traditional preparations.",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Rotwild.pdf extracted text on 2026-10-12; statement agrees with course passage (image-only/page verification still pending)."
     },
     {
       "id": "fallow-R1",
@@ -3800,7 +3800,7 @@
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19, 23",
       "status": "checked_against_deck_text",
-      "evidence": "Directly read matching terms/measurements in the corresponding course PDF's extracted text on 2026-10-12"
+      "evidence": "Direct reading of Game - Federwild.pdf, Türkentaube passage on 2026-10-12, including 5–7 breeding events, <1/4 kg and #7.5 shot."
     },
     {
       "id": "collareddove-D3",
@@ -3822,8 +3822,8 @@
       "claim": "The course deck identifies this as a huntable dove and gives #7.5 shot or smaller.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19, 23",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct reading of Game - Federwild.pdf, Türkentaube passage on 2026-10-12, including 5–7 breeding events, <1/4 kg and #7.5 shot."
     },
     {
       "id": "mallard-R1",

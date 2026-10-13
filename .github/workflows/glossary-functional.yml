@@ -119,7 +119,9 @@ jobs:
         with:
           api-level: 35
           arch: x86_64
-          target: google_apis
+          # AOSP image avoids an unrelated Pixel Launcher ANR which hides app controls in CI.
+          # It still exercises Android 35 WebView and the actual system Back dispatcher.
+          target: default
           profile: pixel_6
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim

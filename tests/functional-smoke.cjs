@@ -41,13 +41,15 @@ const search=g.document.querySelector('#search');search.value='Rehwild';search.d
 assert(g.document.querySelectorAll('article').length>=1,'search finds German term');
 const results=g.document.querySelectorAll('article');assert([...results].some(x=>x.textContent.includes('Roe deer')));
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
-const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,109,'defined filter');
-filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,53,'pending filter');
+const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,118,'defined filter');
+filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,44,'pending filter');
 filter.value='all';filter.dispatchEvent(new g.Event('change',{bubbles:true}));
 search.value='Affe';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Young marmot')),'historical Affe sense');
 search.value='Katz';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Female marmot')),'historical Katz sense');
+search.value='Drilling';search.dispatchEvent(new g.Event('input',{bubbles:true}));
+assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Three-barrel combination gun')),'class-backed Drilling definition');
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('.related a').length>0,'cross-links rendered');
 assert.equal(b.errors.length,0,'glossary script errors: '+b.errors.join(' | '));b.dom.window.close();

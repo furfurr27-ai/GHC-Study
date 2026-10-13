@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 424,
-  "pendingBlockCount": 392,
+  "verifiedBlockCount": 446,
+  "pendingBlockCount": 370,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -375,11 +375,11 @@
       "title": "Schwarzwild",
       "section": "Details",
       "label": "Class",
-      "claim": "Hochwild (high game) · native · cloven-hoofed · NOT a ruminant",
+      "claim": "Hochwild (high game) · native · cloven-hoofed",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R2",
@@ -390,8 +390,8 @@
       "claim": "Keiler (male boar) · Bache (sow) · Leitbache (lead sow) · Frischling (piglet) · Überläufer (yearling) · Rotte (sounder/group) · Rauschzeit (rut)",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R3",
@@ -402,8 +402,8 @@
       "claim": "Main rut usually Dec–Jan; gestation = 3 months + 3 weeks + 3 days",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R4",
@@ -414,8 +414,8 @@
       "claim": "Mostly Mar–Apr; commonly 3–9 piglets; reproduction can occur outside the main cycle",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R5",
@@ -426,8 +426,8 @@
       "claim": "44 adult teeth",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R6",
@@ -438,8 +438,8 @@
       "claim": "Gewaff (tusk set): Haderer (upper tusks) + Hauer (lower tusks)/Gewehre (lower tusks)",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R7",
@@ -450,8 +450,8 @@
       "claim": "Highly adaptable; forests, fields, wetlands and increasingly urban edges",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R8",
@@ -462,8 +462,8 @@
       "claim": "Omnivore; roots, crops, mast, plants, invertebrates, carrion and animal food",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R9",
@@ -474,8 +474,8 @@
       "claim": "Males roughly 110 cm at shoulder, 140–180 cm long and commonly 60–150 kg in the course examples",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R10",
@@ -486,8 +486,8 @@
       "claim": "Teller (ears) · Pinsel (penile tuft) · Pürzel (tail) · Schwarte (hide) · Geäfter (dewclaws)",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R11",
@@ -498,8 +498,8 @@
       "claim": "Frischlinge (piglets) are striped; older animals become brown/black with coarse bristles",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R12",
@@ -510,8 +510,8 @@
       "claim": "Smell and hearing excellent; eyesight relatively poor; no sweat glands",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R13",
@@ -522,8 +522,8 @@
       "claim": "Matriarchal Rotte (sounder/group) led by Leitbache (lead sow); mature Keiler (male boar) usually solitary outside rut",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-R14",
@@ -531,11 +531,11 @@
       "title": "Schwarzwild",
       "section": "Details",
       "label": "Sign",
-      "claim": "Suhle (wallow) for cooling; Malbaum (rubbing tree); strong rooting sign",
+      "claim": "Suhle (wallow), Malbaum (rubbing tree) and characteristic rooting signs",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O15",
@@ -546,8 +546,8 @@
       "claim": "Schwarzwild is a major agricultural-damage species because of rooting and crop feeding.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O16",
@@ -558,8 +558,8 @@
       "claim": "Trichinella testing is mandatory before consumption where required; the class also discusses radiocesium/Cesium-137 concerns in wild boar.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O17",
@@ -570,8 +570,8 @@
       "claim": "Afrikanische Schweinepest (African swine fever) is a major pig/boar disease; contaminated meat, gear, vehicles and food waste can spread it.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O18",
@@ -582,8 +582,8 @@
       "claim": "Do not shoot the Leitbache (lead sow); disrupting the sounder can worsen management problems.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O19",
@@ -594,8 +594,8 @@
       "claim": "Course firearm rule shown: at least 2,000 J at 100 m and at least 6.5 mm bullet diameter for the applicable large-game rule taught in class.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O20",
@@ -607,7 +607,8 @@
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "App's caution to verify current state rules is editorial legal guidance, not a source-verifiable slide fact."
     },
     {
       "id": "boar-O21",
@@ -618,8 +619,8 @@
       "claim": "Drive hunts are a major population-control method; Schwarzwild does not use a normal Abschussplan (harvest/cull plan) in the same way as some deer.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O22",
@@ -630,8 +631,8 @@
       "claim": "Trophies shown include Waffen/Gewaff (tusks), Saubart (boar bristles) and Schwarte (hide).",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "boar-O23",
@@ -642,8 +643,8 @@
       "claim": "Saufeder (boar spear) is the traditional boar spear and appears in the course as a historical/close-range tool.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct statement-by-statement comparison with GHC Game - Schwarzwild (202502).pdf extracted PDF text on 2026-10-13. Historic class law/weapon rules and disease-status figures must be checked independently before field use."
     },
     {
       "id": "reddeer-R1",
@@ -9742,6 +9743,11 @@
       "source": "Game - Federwild.pdf",
       "date": "2026-10-13",
       "details": "Checked 110 bird-card factual blocks against directly read 2020 GHC bird deck; held 5 image-only or inference claims for follow-up. Corrected Mallard 'Spiegel' from incorrectly labeled rump patch to iridescent wing patch. These season/huntability claims represent historical course instruction, not current German law."
+    },
+    {
+      "source": "Game - Schwarzwild (202502).pdf",
+      "date": "2026-10-13",
+      "details": "Compared 23 wild-boar card blocks against 2025 game-species deck: 22 matched after removing two nonslide additions (ruminant classification, assumed reason for wallowing); one state-law caution left not source-verifiable."
     }
   ]
 }

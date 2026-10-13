@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 484,
-  "pendingBlockCount": 332,
+  "verifiedBlockCount": 508,
+  "pendingBlockCount": 308,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -6879,8 +6879,8 @@
       "claim": "Move quietly toward game",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "methods-R2",
@@ -6891,8 +6891,8 @@
       "claim": "Wait and observe from a fixed position",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "methods-R3",
@@ -6903,8 +6903,8 @@
       "claim": "Attract game with call/decoy",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "methods-R4",
@@ -6915,8 +6915,8 @@
       "claim": "Take game with legal traps",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "methods-D5",
@@ -6927,7 +6927,8 @@
       "claim": "Pirsch (stalking) depends on wind, terrain, concealment and a safe backstop.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "methods-D6",
@@ -6938,7 +6939,8 @@
       "claim": "Ansitz (stand hunting) gives more time to identify/select game and provides a stable firing position.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "methods-O7",
@@ -6949,8 +6951,8 @@
       "claim": "Pirsch (stalking) equipment highlighted in class includes a Pirschstock/shooting stick; wind direction is a central concern.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "2–4",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-R1",
@@ -6961,8 +6963,8 @@
       "claim": "Species, sex, age",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-R2",
@@ -6973,8 +6975,8 @@
       "claim": "Stand sectors, start/stop times, signals",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-R3",
@@ -6985,8 +6987,8 @@
       "claim": "Gutting/handling + documents",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-D4",
@@ -6997,7 +6999,8 @@
       "claim": "Before a drive hunt: open game, safety, signals, stands, gutting, documents.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-D5",
@@ -7008,7 +7011,8 @@
       "claim": "If anything is unclear, ask before the hunt starts.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-D6",
@@ -7019,7 +7023,8 @@
       "claim": "Dogs may be close to moving game; target/foreground/backstop must be safe.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "drivebrief-O7",
@@ -7030,8 +7035,8 @@
       "claim": "The Jagdleiter may inspect Jagdschein (hunting license), WBK, Schießbuch/training proof, invitation and insurance documentation.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "shotplacement-R1",
@@ -7039,11 +7044,11 @@
       "title": "Shot Placement",
       "section": "Details",
       "label": "Preferred",
-      "claim": "Broadside or similarly clear angle",
+      "claim": "Broadside angle (class default)",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "23",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "shotplacement-R2",
@@ -7054,8 +7059,8 @@
       "claim": "Blatt (shoulder/heart-lung area) / heart-lung area",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "23",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "shotplacement-D3",
@@ -7066,7 +7071,8 @@
       "claim": "Best default: broadside Blatt (shoulder/heart-lung area)—Herz (heart)/Lunge (lung) area—with a real backstop.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "23",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "shotplacement-D4",
@@ -7077,7 +7083,8 @@
       "claim": "Avoid low-percentage angles and shots into paunch, haunch, hip or rear.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "23",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "shotplacement-D5",
@@ -7088,7 +7095,8 @@
       "claim": "Use a stable rest and stay within proven effective range.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "23",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "shotplacement-O6",
@@ -7099,8 +7107,8 @@
       "claim": "The slide defines the Blattschuss (shoulder/heart-lung shot) area as above the front leg, roughly one-third to halfway up the body.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "23",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "followup-R1",
@@ -7111,8 +7119,8 @@
       "claim": "Reload and keep watching",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "followup-R2",
@@ -7123,8 +7131,8 @@
       "claim": "Anschuss (exact shot site) and where the animal disappeared",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "followup-R3",
@@ -7135,8 +7143,8 @@
       "claim": "Nachsuche (wounded-game follow-up); use a trained dog when needed",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "followup-D4",
@@ -7147,7 +7155,8 @@
       "claim": "Anschuss (exact shot site) is where the animal stood at the shot; Anschussbruch (shot-site branch) marks it.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Compound hunting-language definition or trail-preservation advice not expressly established by this one slide's extracted text; requires class cross-source/page verification."
     },
     {
       "id": "followup-D5",
@@ -7158,7 +7167,8 @@
       "claim": "Nachsuche (wounded-game follow-up) is the organized search; preserve the trail for the dog/handler.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Compound hunting-language definition or trail-preservation advice not expressly established by this one slide's extracted text; requires class cross-source/page verification."
     },
     {
       "id": "followup-O6",
@@ -7169,8 +7179,8 @@
       "claim": "At the Anschuss (exact shot site): light-red foamy blood suggests heart/lung; dark-red blood can suggest liver/kidney; stomach contents point to a gut hit.",
       "courseSource": "Hunting_Techniques_V3.1_16FEB26.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Techniques (20260216).pdf extracted class-deck text on 2026-10-13; 2026 slide fidelity, not legal or safety authorization."
     },
     {
       "id": "firearmactions-R1",
@@ -9778,6 +9788,11 @@
       "source": "Weapons - Overview (2020).pdf",
       "date": "2026-10-13",
       "details": "The deck internally identifies as September 2019. Reviewed 47 weapon card blocks; 38 explicitly traceable to text or the independently retrieved boar course slide; 9 diagram/mechanism/technical-inference claims pending. Added historical date to safe-storage and hunter handgun wording."
+    },
+    {
+      "source": "Hunting Techniques (20260216).pdf",
+      "date": "2026-10-13",
+      "details": "Review of 26 method, drive-hunt, shot-placement and follow-up fact blocks: 24 checked against class slide text, 2 additional etymological/operational inferences withheld. Reworded preferred shooting angle to broadside as taught."
     }
   ]
 }

@@ -27,4 +27,8 @@ Do not bulk-minify or remove assets without measured savings, an explicit source
 
 ## October 2026 glossary and verification work
 
-The v1.4.6 feature branch adds 162 offline searchable Jägersprache terms (77 defined and 85 term-only pending verification), topic/verification filters, and cross-reference links. A class-source audit register inventories 117 study cards and 819 displayed fact blocks from the prior v1.4.5 source. Forty-six blocks have individually checked text evidence; 807 remain unverified and must not be described as fact-audited. See `docs/STUDY_CARD_SOURCE_AUDIT_20261012.md` and `NEXT_ACTION.md`. GitHub Actions regression includes DOM behavior, Android Back script tests, APK assembly and an Android emulator test.
+The v1.4.6 branch includes **162 offline searchable Jägersprache entries**: 107 have meanings (77 from the prior quiz bank, plus 30 additional definitions directly checked against course-deck text); 55 worksheet terms await source verification. The original 77 historical/etymology explanations themselves are not yet independently validated. The searchable glossary has linked terminology, topic/verification filters, and an offline Android entry point.
+
+**Audit status (2026-10-13):** all 38 primary PDF decks were previously text-retrieved; source-fidelity review now covers **446 of 816 study-card fact blocks**, leaving **370 pending**. Three unsupported slide-only instructor-note blocks were deleted; original document counts were 819. Verified means the claim agrees with extracted course material, **not** independently verified legal/scientific truth or image/page-layout fidelity. See `audit/study-card-claim-register-20261012.json` and `docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md`.
+
+GitHub Actions regression covers quiz/navigation/glossary, the Android Back bridge, APK packaging, and Android emulator smoke checks. Installation/upgrade retention on the actual Galaxy S23 Ultra remains to be checked.

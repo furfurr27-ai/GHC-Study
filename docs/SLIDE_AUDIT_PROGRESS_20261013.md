@@ -64,7 +64,7 @@ This document replaces outdated numeric handoffs. Values are derived from `audit
 
 ## Jägersprache glossary source status
 
-The searchable offline glossary contains **162 terms**, with **133 defined and 29 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 48 additional source-context-supported terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
+The searchable offline glossary contains **162 terms**, with **135 defined and 27 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 48 additional source-context-supported terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
 
 ## Remaining engineering and factual gates
 
@@ -83,3 +83,7 @@ Nine further terms mapped from the worksheet to class-deck evidence (Brucellose,
 ### Second glossary batch (2026-10-13)
 
 Six further worksheet terms now have source-attributed definitions (Absehen, Kugelfang, Objektiv, Okular, Streckeplatz and Visier). **133 defined / 29 pending**. The one direct bilingual match is Kugelfang; five others are distinguished as worksheet-to-English-slide contextual equivalents. The separate historical origins have not been validated. See `docs/GLOSSARY_DEFINITIONS_BATCH2_20261013.md`.
+
+### Third glossary batch (2026-10-13)
+
+Leberegel and jagende Hunde added from direct German–English class-slide wording; 135 defined / 27 pending. The 803/814 source-text block register was **not** changed. Separate etymology and factual exams remain unfinished. Evidence: `docs/GLOSSARY_DEFINITIONS_BATCH3_20261013.md`.

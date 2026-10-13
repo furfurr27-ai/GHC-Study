@@ -1,38 +1,29 @@
-# GHC Study — next verified work
+# GHC Study — verified continuation handoff
 
-Updated: 2026-10-13
+Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-20261012` (draft PR #3 to `audit/v145-source-recovery`). Do **not** restart or overwrite the older `main` branch.
 
-## Working branch / review
-- Active changes: `feature/slide-audit-glossary-tests-20261012`.
-- Comparison/review target: `audit/v145-source-recovery` (not older `main`).
-- Draft pull request: https://github.com/furfurr27-ai/GHC-Study/pull/3
-- Baseline source: v1.4.5. Candidate build: **v1.4.6, versionCode 146**. The main upgrade package remains `org.ghcstudy.v141`; side-by-side tester is `org.ghcstudy.v146.standalone`.
+## Build and app invariants
 
-## Verified implementation
-- The application has an offline `glossary.html` and `glossary-data.js` linked in navigation and Reference.
-- Exactly 162 glossary entries: 107 now have meanings (77 original bank meanings plus 30 verified against original class PDF text), while 55 worksheet terms remain definition-pending. Legacy 77 etymologies are still not independently checked.
-- JavaScript/DOM regression covers Quiz Mode question selection, answer/feedback, Study Mode category/card/back, Reference reset modal, glossary search/filters/crosslinks.
-- Android Back bridge's existing Python regression cases pass, and a source-driven Android APK build with the glossary packaged has passed in GitHub Actions.
-- The emulator job tests Android 35 installation, launch, glossary navigation and Back; consult latest workflow results before calling it passed.
+- v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the source-backed 162-term Jägersprache glossary (107 with meanings / 55 pending).
+- Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
-## Class factual source intake
-- All 38 listed GHC primary class deck PDFs were directly fetched and readable text retrieved (batch documents under `docs/`).
-- Exactly 117 study cards now have 816 source-coded fact blocks after 3 unsupported non-slide notes were deleted. Claim register `audit/study-card-claim-register-20261012.json` marks **508 checked against actual class PDF text** and **308 requiring source-semantic or image/page review**. Class/text agreement is not independent current-law correctness.
-- Review each of the remaining 308 pending claims directly against its original PDF. Do not promote inferred or simply numeric-matched facts to verified.
-- The `Murmeltier` and `Seehund/Robbe` cards refer to an additional Other Game guide not present in the primary deck inventory (the separate hunting-law deck is available).
-- Source PDFs' simple text extraction did not preserve reliable slide boundaries or all visual facts; inspect original pages and graphics.
-- Correct any actual contradictions with a citation to filename/page; preserve original factual intent and separate current legal facts from historic class facts.
-- The original 867 practice/Hessen questions and 77 existing vocabulary definitions were **not** comprehensively semantically audited in this pass.
+## Source research completed and remaining
 
-## Next actions
-1. Complete the 807 pending fact-block checks using original PDF page/image inspection. For each block record deck, actual page, supporting text/image, and correction if needed.
-2. Verify 55 remaining worksheet-only vocabulary definitions and etymologies; never invent provenance. Review the existing 77 etymology notes separately.
-3. Check Android emulator CI evidence; then install on Samsung Galaxy S23 Ultra and test login-free offline operation, saved progress backup/restore, images, Android Back, and progress persistence after update.
-4. Pay attention to debug APK signing: independent GitHub Actions jobs may generate different debug keys, so users may not be able to update an existing debug installation in place. Back up saved progress before considering uninstall/reinstall; offer a side-by-side applicationId build if appropriate.
-5. Only after verified functional parity and factual review should source changes be promoted into older `main`.
+- Readable text for all 38 inventoried class PDFs was fetched in preceding audits; additional `Guide_08n1-5_Other_Game_2013-08.pdf` was directly located and re-read in Drive today.
+- Study-card audit register: **803 text-checked / 11 pending class-slide verification / 814 displayed blocks**. Five unsupported/editorial blocks removed from the original 819. Counts derived from `audit/study-card-claim-register-20261012.json`, not stale chat summaries.
+- The 11 pending fact blocks all belong to the Murmeltier (6) and Seehund/Robbe (5) cards. Their historical guide text is now separately traced in each claim's `supplementalSource` field; do **not** mark these as checked against 2026 class slides or as current legal facts. Two individual blocks have only partial support from the guide.
+- New 2026-10-13 audit updates verified source wording for wolf, wildcat, bear, Rehwild, Rotwild and Schwarzwild; removed editorial/unattributed material from wolf/trophy cards. See `docs/SLIDE_AUDIT_PROGRESS_20261013.md`.
+- Text-checked does **not** certify embedded photo diagrams, genuine page numbering, legal currency, historical etymology or all assertions within compound fact blocks. The 867 examination explanations and original 77 vocabulary etymologies are separate unfinished audits.
 
-## New verified corrections
-- Rechecked Fall 2026 predator class cards and 2026 bird-of-prey cards, dog deck, 2020 Federwild and 2025 wild boar. Corrected peregrine diving speed (up to ~300 km/h), Stockente wing Spiegel, unclear dog group names, and wild boar signs. Three unsupported instructor notes were deleted.
-- Current German wolf law may permit **conditional**, strictly managed hunting although the class slide says 'no season'; this is not a general hunt authorization. The class 'small bear' raccoon description is not literal taxonomy. Primary independent references and exact limitations: `docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md`.
-- Glossary now also uses restored German diacritics for source-backed terms, with reciprocal cross-references; the original 77 question-bank terms are preserved.
-- Verify the most recent GitHub Actions run AFTER source changes, as successful earlier runs refer to older commits.
+## Immediate engineering next steps
+
+1. Verify CI after the latest source/claim-register synchronization. `scripts/check_claim_register_parity.py` compares all fact text, labels and counts against shipped HTML. The prior failed workflow against commit `be6ec881...` failed due to a **stale Collared Dove claim string**, but live 2026-10-13 source/claim comparison is now synchronized.
+2. Trigger the glossary/functional CI on changes to both `app/src/main/assets/index.html` and `audit/study-card-claim-register-20261012.json`; do not treat a workflow from an intermediate, not-yet-synchronized commit as final build evidence.
+3. Test the latest APK including emulator system Back, glossary and app icon, then use the standalone APK on a Galaxy S23 Ultra for physical validation and offline progress tests.
+4. Decide whether historical 2013 course-guide cards should be explicitly segregated from *class-slide-only* Study Mode material. Do not silently remove source-backed content or promote guide evidence to a 2026 slide citation.
+5. Finish photo/diagram identification review, question-by-question audit, and glossary/etymology verification before merging PR #3.
+
+## Preserve source discipline
+
+Study-card Details/Other Facts contain class-slide material only unless an exception is explicitly labeled as historical course-guide material; never insert speculative instructor commentary or unsupported internet facts. Maintain separate references to current German hunting law where relevant. No claim that an APK compiled means the installed behavior was tested on the owner's handset.

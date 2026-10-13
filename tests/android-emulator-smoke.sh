@@ -3,6 +3,26 @@ set -euo pipefail
 APK="$(find . -name '*.apk' -print -quit)"
 test -n "$APK"
 mkdir -p emulator-evidence
+# Retain forensic evidence when Android's WebView stays blank or navigation fails.
+# These diagnostics do not alter the installed app or relax pass/fail checks.
+capture_emulator_failure() {
+  local rc="$?"
+  trap - EXIT
+  if [[ "$rc" -ne 0 ]]; then
+    echo "Collecting Android 35 emulator diagnostics (original exit code $rc)"
+    adb logcat -d -v threadtime > emulator-evidence/logcat.txt 2>&1 || true
+    adb shell dumpsys webviewupdate > emulator-evidence/webview-provider.txt 2>&1 || true
+    adb shell dumpsys activity activities > emulator-evidence/activity-state.txt 2>&1 || true
+    adb shell dumpsys window > emulator-evidence/window-state.txt 2>&1 || true
+    adb shell pm list packages | grep -E 'webview|chrome|ghcstudy' > emulator-evidence/relevant-packages.txt 2>&1 || true
+    if [[ -f emulator-evidence/logcat.txt ]]; then
+      echo "--- Recent WebView / Chromium / GHC / Android runtime signals ---"
+      grep -Ei 'ghcstudy|chromium|webview|AndroidRuntime|FATAL EXCEPTION|crash|renderer|page load|Failed to load|AwContents' emulator-evidence/logcat.txt | tail -n 100 || true
+    fi
+  fi
+  exit "$rc"
+}
+trap capture_emulator_failure EXIT
 adb install -r "$APK"
 adb shell am start -W -n org.ghcstudy.v141/org.ghcstudy.offline.MainActivity
 sleep 9

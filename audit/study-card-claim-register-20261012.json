@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 602,
-  "pendingBlockCount": 214,
+  "verifiedBlockCount": 625,
+  "pendingBlockCount": 191,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -6614,8 +6614,8 @@
       "claim": "Customs, traditions and responsible hunting",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "8–9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "waidgerechtigkeit-R2",
@@ -6623,11 +6623,11 @@
       "title": "Waidgerechtigkeit",
       "section": "Details",
       "label": "Purpose",
-      "claim": "Respect game, nature, landowners and the hunting community",
+      "claim": "Respect game, nature and the hunting community; practice conservation and responsible conduct",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "8–9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "waidgerechtigkeit-D3",
@@ -6638,7 +6638,8 @@
       "claim": "Waidgerechtigkeit (ethical/fair hunting practice) is not just etiquette—it is the recognized standard of fair, responsible hunting.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "8–9",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "waidgerechtigkeit-D4",
@@ -6649,7 +6650,8 @@
       "claim": "Knowing and observing hunting customs demonstrates conservation responsibility and helps a hunter earn acceptance in the hunting community.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "8–9",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "waidgerechtigkeit-O5",
@@ -6660,8 +6662,8 @@
       "claim": "Customs vary regionally, but many are observed across Europe and are learned by watching experienced hunters.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "8–9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "hornsignals-R1",
@@ -6672,8 +6674,8 @@
       "claim": "Operational and ceremonial hunting signals",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "hornsignals-R2",
@@ -6681,11 +6683,11 @@
       "title": "Jagdhornsignale",
       "section": "Details",
       "label": "Core signals",
-      "claim": "Gather hunters · start hunt · end hunt · species death signals · Halali (ceremonial end-of-hunt signal)",
+      "claim": "Gather hunters · start hunt · end hunt · species-specific Toten signals · Halali",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "hornsignals-D3",
@@ -6693,10 +6695,11 @@
       "title": "Jagdhornsignale",
       "section": "Details",
       "label": null,
-      "claim": "Key Jagdhorn signals cover gathering, the start and end of a hunt, species-specific Toten signals and Halali (ceremonial end-of-hunt signal).",
+      "claim": "Jagdhorn signals cover gathering hunters, starting and ending a hunt, species-specific Toten signals and Halali.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "hornsignals-D4",
@@ -6707,7 +6710,8 @@
       "claim": "Signals are used both operationally on drive hunts and ceremonially.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "hornsignals-O5",
@@ -6718,8 +6722,8 @@
       "claim": "Toten signals are species-specific and are played in rank order during ceremony.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-R1",
@@ -6730,8 +6734,8 @@
       "claim": "Alder, fir, oak, pine, spruce",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-R2",
@@ -6742,8 +6746,8 @@
       "claim": "Break branches—never cut",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-D3",
@@ -6754,7 +6758,8 @@
       "claim": "Schützenbruch (successful-hunter branch) goes on the right side of the hat; native branch, broken not cut, presented with Waidmannsheil (hunter greeting/congratulation).",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-D4",
@@ -6765,7 +6770,8 @@
       "claim": "Schützenbruch (successful-hunter branch): cloven-hoofed game, dipped in blood, presented with Waidmannsheil (hunter greeting/congratulation); response Waidmannsdank (hunter response/thanks).",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-D5",
@@ -6776,7 +6782,8 @@
       "claim": "Worn on the RIGHT side of the hat, upper surface outward.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-D6",
@@ -6787,7 +6794,8 @@
       "claim": "Use branch signs before taking photographs.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "branchsigns-O7",
@@ -6798,8 +6806,8 @@
       "claim": "If a dog is used, a piece of the Schützenbruch (successful-hunter branch) may be presented to the dog handler; the branch is normally worn for the rest of the day.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "11–14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "lastbite-R1",
@@ -6810,8 +6818,8 @@
       "claim": "Branch placed crosswise in mouth of male cloven-hoofed game",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "lastbite-R2",
@@ -6822,8 +6830,8 @@
       "claim": "Ownership branch placed on the animal’s left side",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "lastbite-D3",
@@ -6831,10 +6839,11 @@
       "title": "Letzter Bissen & Inbesitznahmebruch",
       "section": "Details",
       "label": null,
-      "claim": "Letzter Bissen (last bite) is the last bite; Inbesitznahmebruch (ownership branch) shows possession and sex by branch direction.",
+      "claim": "Letzter Bissen: a branch placed crosswise in the mouth of male cloven-hoofed game. Inbesitznahmebruch: a branch placed on the animal's left side to indicate possession and sex by direction.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "lastbite-D4",
@@ -6845,7 +6854,8 @@
       "claim": "Animal is laid on its right side.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "lastbite-D5",
@@ -6856,7 +6866,8 @@
       "claim": "Male: broken end points toward Kopf (head); female: growing end points toward Kopf (head).",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "lastbite-O6",
@@ -6867,8 +6878,8 @@
       "claim": "For branch signs, use native trees and break the branch rather than cutting it. The course says branch signs come before trophy photos.",
       "courseSource": "HuntingTraditions.pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with History - Traditions.pdf (Drive ID 1Msf4rknDXkOUypyYb9xN1cv4E9ChYdP4), original class slide text read 2026-10-13. Slide-page and images still require verification."
     },
     {
       "id": "methods-R1",

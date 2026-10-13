@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 759,
-  "pendingBlockCount": 57,
+  "verifiedBlockCount": 770,
+  "pendingBlockCount": 46,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -9576,8 +9576,8 @@
       "claim": "Geweih (antlers): trophy of Rotwild (red deer), Rehwild (roe deer), and Damwild (fallow deer). · Schnecken (curved horns): trophy of Muffelwild (mouflon). · Rosen (antler coronets): present on mature deer antlers; distinguish from Rosenstock (pedicle). · Rosenstock (pedicle): the bony antler base; its thickness and shape are discussed in roe deer age assessment.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-R2",
@@ -9588,8 +9588,8 @@
       "claim": "Mittelsprosse (middle tine): a reference point in the antler terminology. · Eissprosse (bez tine): often absent according to the class slides. · Krone (crown): the class describes three or more points above the Mittelsprosse. · Rosen (coronets) and Rosenstock (pedicle): used in class antler development and age discussions.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-R3",
@@ -9600,8 +9600,8 @@
       "claim": "Stangen (beams) and Enden (tines): length and mass are discussed in antler development. · Perlen (pearling) and Rosen (coronets): visible antler features. · Sechser (six-pointer): may already occur in the first year. · Rosenstock (pedicle): its thickness is an age-related indicator in the slides. · Peak antler development is given as about five to six years.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-R4",
@@ -9612,8 +9612,8 @@
       "claim": "Schaufeln (palms): broad palmated sections of developed fallow deer antlers. · Young stags initially grow spikes without Rosen (coronets); later antlers develop coronets and may form Schaufeln (palms).",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-R5",
@@ -9624,8 +9624,8 @@
       "claim": "Schnecken (curved horns): the horn trophy. · The class covers abnormal or poor horn growth.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-R6",
@@ -9744,7 +9744,8 @@
       "claim": "Three or more tines above the middle tine (Mittelsprosse) form a crown (Krone).",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-D16",
@@ -9755,7 +9756,8 @@
       "claim": "The bay tine (Eissprosse) is often absent.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-D17",
@@ -9766,7 +9768,8 @@
       "claim": "Stags with crowns on both antlers are called Kronenhirsch.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-O18",
@@ -9777,8 +9780,8 @@
       "claim": "The class connects trophy and antler development with species recognition and age assessment.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-O19",
@@ -9789,8 +9792,8 @@
       "claim": "Trophy Part 1 lists Geweih (antlers) and horns among possible trophies and explains preservation choices.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-O20",
@@ -9801,8 +9804,8 @@
       "claim": "Trophy Part 2 covers European skull mounts; protect Rosen (coronets) during cooking and whitening.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
     },
     {
       "id": "trophy-antler-horn-terminology-O21",

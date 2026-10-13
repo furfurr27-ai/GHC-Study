@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 703,
-  "pendingBlockCount": 113,
+  "verifiedBlockCount": 736,
+  "pendingBlockCount": 80,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -7713,11 +7713,11 @@
       "title": "Trichinose",
       "section": "Details",
       "label": "Names",
-      "claim": "Trichinose (trichinosis) · Trichinosis",
+      "claim": "Trichinose (trichinosis)",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-R2",
@@ -7728,8 +7728,8 @@
       "claim": "Trichinella spiralis · parasitic worm",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-R3",
@@ -7740,8 +7740,8 @@
       "claim": "Swine is the most notorious host",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-R4",
@@ -7752,8 +7752,8 @@
       "claim": "Mandatory for carnivore/omnivore game destined for consumption (e.g. boar, Dachs (badger))",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-D5",
@@ -7761,10 +7761,11 @@
       "title": "Trichinose",
       "section": "Details",
       "label": null,
-      "claim": "Trichinose (trichinosis)/Trichinosis: Trichinella spiralis, a zoonotic worm. Think swine and mandatory testing before consumption.",
+      "claim": "Trichinose (trichinosis): Trichinella spiralis, a zoonotic worm. Think swine and mandatory testing before consumption.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-D6",
@@ -7775,7 +7776,8 @@
       "claim": "Adults occur in the Darm (intestine); larvae occur in Muskel (muscle).",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-D7",
@@ -7786,7 +7788,8 @@
       "claim": "Zoonotic: can cause Muskel (muscle) pain, eyelid swelling, fever, weakness, diarrhea and Herz (heart) problems in humans.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-D8",
@@ -7797,7 +7800,8 @@
       "claim": "Trichinella risk is controlled through required testing and thorough cooking.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "trichinella-O9",
@@ -7805,11 +7809,11 @@
       "title": "Trichinose",
       "section": "Other Facts",
       "label": null,
-      "claim": "Mandatory sampling sites taught in class are the diaphragm pillar (Zwerchfellpfeiler (diaphragm pillar)) and foreleg muscle (Vorderlaufmuskulatur (foreleg muscle)).",
+      "claim": "For Trichinenproben (mandatory testing), the class lists Zwerchfellpfeiler (diaphragm pillar) and Vorderlaufmuskulatur (foreleg muscle) as sample sites.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "24, 26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "asf-R1",
@@ -8120,8 +8124,8 @@
       "claim": "Wet fur, wear gloves",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "parasites-R2",
@@ -8132,8 +8136,8 @@
       "claim": "No eating/drinking/smoking while skinning",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "parasites-R3",
@@ -8144,8 +8148,8 @@
       "claim": "Wash hands/clothes; cook meat properly",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "parasites-D4",
@@ -8156,7 +8160,8 @@
       "claim": "Parasite prevention is mostly clean handling: gloves, wet fur, hygiene, cook meat, protect dogs.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "parasites-D5",
@@ -8167,7 +8172,8 @@
       "claim": "Do not feed dogs infected parts, raw meat or rodents.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "parasites-D6",
@@ -8178,7 +8184,8 @@
       "claim": "Deer bot fly larvae enter and leave through the nose; warble-fly larvae enter through the mouth/Haut (skin) and later exit through the Haut (skin).",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "parasites-O7",
@@ -8189,8 +8196,8 @@
       "claim": "General prevention also includes washing/cooking wild berries/vegetables and disposing of offal where other animals cannot eat it.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf",
       "sourcePages": "16, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Disease - Parasites.pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "revierrules-R1",
@@ -8293,8 +8300,8 @@
       "claim": "Dispatch promptly to prevent suffering",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "8, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "protectedwildlife-R2",
@@ -8305,8 +8312,8 @@
       "claim": "Do NOT kill; notify Pächter (hunting leaseholder)/authorities",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "8, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "protectedwildlife-D3",
@@ -8317,7 +8324,8 @@
       "claim": "Wounded huntable game: end suffering. Protected wildlife: don’t kill it—call the Pächter (hunting leaseholder)/authorities.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "8, 10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "protectedwildlife-D4",
@@ -8325,10 +8333,11 @@
       "title": "Wounded vs Protected Wildlife",
       "section": "Details",
       "label": null,
-      "claim": "An injured protected Eule (owl) should not be dispatched by the hunter; contact the Pächter (hunting leaseholder), veterinarian or appropriate wildlife help.",
+      "claim": "An injured protected Eule (owl) should not be dispatched by the hunter; contact the Pächter (hunting leaseholder) or the responsible authorities.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "8, 10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "protectedwildlife-O5",
@@ -8339,8 +8348,8 @@
       "claim": "Protected examples emphasized in class include owls, raptors and snakes. If in doubt, call the Pächter (hunting leaseholder) or authorities.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "8, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "abschussplan-R1",
@@ -8351,8 +8360,8 @@
       "claim": "Required harvest to maintain acceptable game density",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "20, 32",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "abschussplan-R2",
@@ -8363,8 +8372,8 @@
       "claim": "Accident/natural-death game can count against plan",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "20, 32",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "abschussplan-D3",
@@ -8375,7 +8384,8 @@
       "claim": "Abschussplan (harvest/cull plan) is the harvest requirement used to manage game numbers.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "20, 32",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "abschussplan-D4",
@@ -8386,7 +8396,8 @@
       "claim": "Used especially to control Hochwild (high game) numbers.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "20, 32",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "abschussplan-D5",
@@ -8397,7 +8408,8 @@
       "claim": "Selective culling supports population health and limits forestry/agricultural damage.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "20, 32",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "abschussplan-O6",
@@ -8408,8 +8420,8 @@
       "claim": "The management concept is population regulation: harvest is planned to keep game density compatible with habitat and land-use goals.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "20, 32",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "wildschaden-R1",
@@ -8420,8 +8432,8 @@
       "claim": "#1: Schwarzwild (wild boar)",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "44, 47",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf, Field & Forest (202504).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "wildschaden-R2",
@@ -8432,8 +8444,8 @@
       "claim": "Pächter (hunting leaseholder) / hunting-right holder may carry damage responsibility",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "44, 47",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf, Field & Forest (202504).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "wildschaden-D3",
@@ -8444,7 +8456,8 @@
       "claim": "For Wildschaden (game damage), think Schwarzwild first.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "44, 47",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf, Field & Forest (202504).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "wildschaden-D4",
@@ -8452,10 +8465,11 @@
       "title": "Wildschaden",
       "section": "Details",
       "label": null,
-      "claim": "Boar damage crops and habitat through omnivorous feeding and rooting.",
+      "claim": "Boar damage crops and other wildlife habitat; the class identifies Schwarzwild as a major source of Wildschaden.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "44, 47",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf, Field & Forest (202504).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "wildschaden-D5",
@@ -8463,10 +8477,11 @@
       "title": "Wildschaden",
       "section": "Details",
       "label": null,
-      "claim": "Wildschaden (game damage) claims depend on the applicable reporting deadlines and local procedure; use the current class rule set.",
+      "claim": "The 2019 class deck lists 1 May and 1 October for reporting land or agricultural game damage; actual deadlines must be checked against current law.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "44, 47",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf, Field & Forest (202504).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "wildschaden-O6",
@@ -8477,8 +8492,8 @@
       "claim": "The field/forest deck notes special agricultural situations such as tobacco, hops, vegetables, orchards and tree nurseries where normal game-damage responsibility may differ.",
       "courseSource": "Nature and animal protection feb 2019.pdf",
       "sourcePages": "44, 47",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Manual source-text comparison with Law - Nature and Animal (201902).pdf, Field & Forest (202504).pdf (live original GHC PDFs, 2026-10-13). Any legal/personal health implications must be verified with current competent authorities; not a current-law or veterinary certification."
     },
     {
       "id": "crops-R1",

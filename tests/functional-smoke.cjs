@@ -14,7 +14,7 @@ assert.equal(w.GHC_STUDY_CARDS.length,117,'study card count');
 assert.equal(w.GHC_VOCAB_QUESTIONS.length,77,'vocabulary count');
 const fixedQuestion=w.GHC_QUESTIONS.find(q=>q.id==='H2023-D19-Q042');
 assert(fixedQuestion,'fixed Hessen question must exist');
-assert.deepEqual(fixedQuestion.correct,['b'],'Hessen source answer must not change');
+assert.equal(Array.from(fixedQuestion.correct).join(','),'b','Hessen source answer must not change');
 assert(!/Jagdschein\s*\(hunting license\)/i.test(fixedQuestion.stem),'question stem must not give away license translation');
 assert(!/hunting license/i.test(fixedQuestion.stem),'correct choice must not be repeated in question stem');
 

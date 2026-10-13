@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 799,
-  "pendingBlockCount": 17,
+  "verifiedBlockCount": 703,
+  "pendingBlockCount": 113,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -2142,8 +2142,7 @@
       "claim": "Class slide: listed as game, with “no season” stated (not current legal guidance)",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated.",
+      "status": "pending_claim_level_review",
       "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
     },
     {
@@ -2155,8 +2154,7 @@
       "claim": "Largest predator highlighted in the predator class",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wolf-D3",
@@ -2167,8 +2165,7 @@
       "claim": "The Fall 2026 class slide lists Wolf (wolf) as game and states “no season”; current management authorizations must be checked separately.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated.",
+      "status": "pending_claim_level_review",
       "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
     },
     {
@@ -2180,8 +2177,7 @@
       "claim": "It is the largest predator covered in this class.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wolf-D5",
@@ -2192,8 +2188,7 @@
       "claim": "Wölfe (wolves) recolonized Germany from eastern Germany and eastern Europe after a long absence.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wolf-D6",
@@ -2204,9 +2199,8 @@
       "claim": "Treat status and season as current-law material that can change.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "checked_against_deck_text",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated.",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review",
+      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
     },
     {
       "id": "lynx-R1",
@@ -2217,8 +2211,7 @@
       "claim": "Largest native feline in Europe",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "lynx-R2",
@@ -2229,8 +2222,7 @@
       "claim": "28",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "lynx-D3",
@@ -2241,8 +2233,7 @@
       "claim": "Luchs is Europe’s largest native cat, shy, 28 Zähne (teeth), and it commonly takes Rehwild and small game.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "lynx-D4",
@@ -2253,8 +2244,7 @@
       "claim": "Shy and normally avoids humans.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "lynx-D5",
@@ -2265,8 +2255,7 @@
       "claim": "Takes Rehwild (roe deer), Feldhase (hare), other animals and birds; hunts through speed.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "lynx-D6",
@@ -2277,8 +2266,7 @@
       "claim": "Largest native feline in Europe and it uses speed to catch prey.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "lynx-O7",
@@ -2289,8 +2277,7 @@
       "claim": "The predator deck gives Luchs 28 teeth and emphasizes speed as its hunting advantage.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-R1",
@@ -2301,8 +2288,7 @@
       "claim": "30",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-R2",
@@ -2313,8 +2299,7 @@
       "claim": "Found throughout Germany",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-D3",
@@ -2325,8 +2310,7 @@
       "claim": "Wildkatze can look domestic, but the short thick striped tail is the key cue.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-D4",
@@ -2337,8 +2321,7 @@
       "claim": "It is shy, a small-game predator, and the class says: don’t shoot it.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-D5",
@@ -2349,8 +2332,7 @@
       "claim": "Looks like a house cat but has a short, thick, striped tail and heavy tiger-like striping.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-D6",
@@ -2361,8 +2343,7 @@
       "claim": "Diet: Mäuse (mice), birds and other small mammals.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-D7",
@@ -2373,8 +2354,7 @@
       "claim": "The predator class explicitly cautions: do not shoot Wildkatze (European wildcat).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "wildcat-O8",
@@ -2385,8 +2365,7 @@
       "claim": "The predator deck gives Wildkatze 30 teeth and stresses its short, thick, striped tail as the field cue.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "bear-R1",
@@ -2409,8 +2388,7 @@
       "claim": "Occasional animals may enter from neighboring countries",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "bear-D3",
@@ -2421,8 +2399,7 @@
       "claim": "Bär is not on the legal-game list in Germany.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "bear-D4",
@@ -2433,8 +2410,7 @@
       "claim": "Bären (bears) have been essentially absent from central Europe for more than a century.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "bear-O5",
@@ -2445,8 +2421,7 @@
       "claim": "The predator deck notes that bears have been essentially absent from central Europe for well over 100 years; occasional animals may enter Germany from Austria or the Czech Republic.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-R1",
@@ -2457,8 +2432,7 @@
       "claim": "Nocturnal",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-R2",
@@ -2469,8 +2443,7 @@
       "claim": "Multi-level burrow; may share with Fuchs (fox)/Kaninchen (rabbit)/Marderhund (raccoon dog)",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-D3",
@@ -2481,8 +2454,7 @@
       "claim": "Dachs is nocturnal, burrowing and can share a den with Fuchs.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-D4",
@@ -2493,8 +2465,7 @@
       "claim": "It is an omnivore and a serious hazard to earth dogs underground.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-D5",
@@ -2505,8 +2476,7 @@
       "claim": "Only burrowing member highlighted among the Marder (marten) relatives.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-D6",
@@ -2517,8 +2487,7 @@
       "claim": "Omnivore; fruit, berries, roots, insects/Schnecken (snails) and opportunistic animal prey.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-D7",
@@ -2529,8 +2498,7 @@
       "claim": "Can be dangerous to Erdhunde (earth/den dogs) because it will defend the den.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-O8",
@@ -2541,8 +2509,7 @@
       "claim": "Dachse use the lowest levels of shared multi-tier burrow systems.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "badger-O9",
@@ -2553,8 +2520,7 @@
       "claim": "Ripe corn is a favored food and badgers can cause substantial crop damage.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoon-R1",
@@ -2565,8 +2531,7 @@
       "claim": "North American newcomer",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoon-R2",
@@ -2577,8 +2542,7 @@
       "claim": "Class shorthand “small bear” (not literal taxonomy); raccoons are not dogs",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoon-D3",
@@ -2589,8 +2553,7 @@
       "claim": "The course describes Waschbär (raccoon) escaping from fur farms in eastern Germany and the Kassel area.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoon-D4",
@@ -2601,8 +2564,7 @@
       "claim": "Intelligent, omnivorous and very successful around humans as well as in the wild.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoon-O5",
@@ -2613,8 +2575,7 @@
       "claim": "The course traces Waschbär (raccoon) in Germany to escapes from fur farms, including the Kassel area.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoon-O6",
@@ -2625,8 +2586,7 @@
       "claim": "They are equally successful in wild habitat and around people.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-R1",
@@ -2637,8 +2597,7 @@
       "claim": "Dog family—not a Bär (bear)",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-R2",
@@ -2649,8 +2608,7 @@
       "claim": "Feb–Mar · about 9 weeks",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-R3",
@@ -2661,8 +2619,7 @@
       "claim": "6–8 pups · 42 Zähne (teeth)",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-D4",
@@ -2673,8 +2630,7 @@
       "claim": "Marderhund (raccoon dog) belongs to the dog family, not to bears.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-D5",
@@ -2685,8 +2641,7 @@
       "claim": "Mostly nocturnal, 42 Zähne (teeth), roughly 9-week gestation.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-D6",
@@ -2697,8 +2652,7 @@
       "claim": "Newcomer from the east; mostly nocturnal.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-D7",
@@ -2709,8 +2663,7 @@
       "claim": "Diet resembles Fuchs (fox): small animals, plants and berries.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-D8",
@@ -2721,8 +2674,7 @@
       "claim": "Uses burrows, dens and pipes, often near Füchse (foxes) and Dachse (badgers).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-O9",
@@ -2733,8 +2685,7 @@
       "claim": "Young can reach adult size at about six months; the class says breeding begins around two years.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "raccoondog-O10",
@@ -2745,8 +2696,7 @@
       "claim": "The older class slide describes them using burrows, dens and even pipes/conduits.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-R1",
@@ -2757,8 +2707,7 @@
       "claim": "Yellow throat patch · furry paw soles",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-R2",
@@ -2769,8 +2718,7 @@
       "claim": "Dense forest, hollow trees, away from people",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-R3",
@@ -2781,8 +2729,7 @@
       "claim": "Jul–Aug",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-D4",
@@ -2793,8 +2740,7 @@
       "claim": "Baummarder (pine marten) = yellow throat patch + furry soles + forest.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-D5",
@@ -2805,8 +2751,7 @@
       "claim": "Brown coat gets darker toward extremities.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-D6",
@@ -2817,8 +2762,7 @@
       "claim": "Nocturnal; eats berries, birds/eggs, insects, lizards and rodents.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-D7",
@@ -2829,8 +2773,7 @@
       "claim": "Baummarder (pine marten) has furry soles; Steinmarder (stone marten) does not.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pinemarten-O8",
@@ -2841,8 +2784,7 @@
       "claim": "Gestation is about nine months; two to five young are born and nursed for roughly eight weeks.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-R1",
@@ -2853,8 +2795,7 @@
       "claim": "White throat/chest patch extends toward Vorderläufe (front legs) · soles not hairy",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-R2",
@@ -2865,8 +2806,7 @@
       "claim": "Close to people: barns, stone/wood piles",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-D3",
@@ -2877,8 +2817,7 @@
       "claim": "Steinmarder (stone marten) = white throat patch, non-hairy soles, and lives around people.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-D4",
@@ -2889,8 +2828,7 @@
       "claim": "Grayish-brown and a little larger than Baummarder (pine marten).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-D5",
@@ -2901,8 +2839,7 @@
       "claim": "Known for chewing vehicle electrical cables.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-D6",
@@ -2913,8 +2850,7 @@
       "claim": "Steinmarder (stone marten) has a white bib, bare soles and a strong association with human habitation.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-O7",
@@ -2925,8 +2861,7 @@
       "claim": "Steinmarder (stone marten) diet and reproduction are similar to Baummarder (pine marten).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stonemarten-O8",
@@ -2937,8 +2872,7 @@
       "claim": "They are often associated with barns, stone/wood piles and vehicle cable damage.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-R1",
@@ -2949,8 +2883,7 @@
       "claim": "About 12 in + 4 in tail",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-R2",
@@ -2961,8 +2894,7 @@
       "claim": "Black tail tip year-round",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-R3",
@@ -2973,8 +2905,7 @@
       "claim": "Feb–Mar",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-D4",
@@ -2985,8 +2916,7 @@
       "claim": "Hermelin (stoat/ermine)’s giveaway is the black tail tip—even when the winter coat is white.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-D5",
@@ -2997,8 +2927,7 @@
       "claim": "Summer upperparts brown; winter coat turns white except the black tail tip.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-D6",
@@ -3009,8 +2938,7 @@
       "claim": "Mostly nocturnal; uses hedgerows, dumps and stone piles.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "stoat-O7",
@@ -3021,8 +2949,7 @@
       "claim": "Ranzzeit (mating season) is February–March; four to eight young are typically born in May.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-R1",
@@ -3033,8 +2960,7 @@
       "claim": "About 8–10 in + ~2 in tail",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-R2",
@@ -3045,8 +2971,7 @@
       "claim": "NO black tail tip",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-D3",
@@ -3057,8 +2982,7 @@
       "claim": "Mauswiesel (least weasel) is the small one: no black tail tip and usually no white winter coat here.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-D4",
@@ -3069,8 +2993,7 @@
       "claim": "Looks like Hermelin (stoat/ermine) but smaller.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-D5",
@@ -3081,8 +3004,7 @@
       "claim": "In central Europe it generally does not turn white in winter.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-D6",
@@ -3093,8 +3015,7 @@
       "claim": "More active by day, though it also has nocturnal periods.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "leastweasel-O7",
@@ -3105,8 +3026,7 @@
       "claim": "The class treats habitat, diet and reproduction as broadly similar to Hermelin (stoat/ermine), but Mauswiesel (least weasel) is more active by day.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-R1",
@@ -3117,8 +3037,7 @@
       "claim": "About 20–22 in",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-R2",
@@ -3129,8 +3048,7 @@
       "claim": "Feb–Apr · ~6 weeks gestation",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-D3",
@@ -3141,8 +3059,7 @@
       "claim": "Iltis (European polecat) is the wild Iltis (polecat) associated with the domestic Frettchen (ferret).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-D4",
@@ -3153,8 +3070,7 @@
       "claim": "Dark-brown upperparts, lighter below.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-D5",
@@ -3165,8 +3081,7 @@
       "claim": "Lives in hollow trees, underground dens and stone piles.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-D6",
@@ -3177,8 +3092,7 @@
       "claim": "Domestic ferret is believed to descend from this species.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-O7",
@@ -3189,8 +3103,7 @@
       "claim": "Gestation is about six weeks and the class gives three to seven young.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "polecat-O8",
@@ -3201,8 +3114,7 @@
       "claim": "Iltis (European polecat) hunts whenever food is available; the domestic Frettchen (ferret) is believed to descend from it.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-R1",
@@ -3213,8 +3125,7 @@
       "claim": "Marshes and rivers",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-R2",
@@ -3225,8 +3136,7 @@
       "claim": "Relatively uniform brown coat",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-D3",
@@ -3237,8 +3147,7 @@
       "claim": "Nerz (mink) = uniform brown, wet habitat, aggressive Marder (marten) relative.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-D4",
@@ -3249,8 +3158,7 @@
       "claim": "Very aggressive relative of the Marder (marten) group.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-D5",
@@ -3261,8 +3169,7 @@
       "claim": "The slide distinguishes European Nerz and American Nerz; American mink were introduced for fur farming.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-D6",
@@ -3273,8 +3180,7 @@
       "claim": "Prefers to stay away from humans.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-O7",
@@ -3285,8 +3191,7 @@
       "claim": "The deck distinguishes European mink from introduced American mink.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "mink-O8",
@@ -3297,8 +3202,7 @@
       "claim": "Diet listed in class includes berries, birds/eggs, insects, lizards and small mammals.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
+      "status": "pending_claim_level_review"
     },
     {
       "id": "pheasant-R1",

@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 419,
-  "pendingBlockCount": 397,
+  "verifiedBlockCount": 424,
+  "pendingBlockCount": 392,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -2127,11 +2127,12 @@
       "title": "Wolf (wolf)",
       "section": "Details",
       "label": "Status",
-      "claim": "Listed as legal game in the current course, but no hunting season",
+      "claim": "Class slide: listed as game, with “no season” stated (not current legal guidance)",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified.",
+      "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
     },
     {
       "id": "wolf-R2",
@@ -2151,11 +2152,12 @@
       "title": "Wolf (wolf)",
       "section": "Details",
       "label": null,
-      "claim": "Wolf (wolf) is listed as legal game but has no open season.",
+      "claim": "The Fall 2026 class slide lists Wolf (wolf) as game and states “no season”; current management authorizations must be checked separately.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified.",
+      "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
     },
     {
       "id": "wolf-D4",
@@ -2355,11 +2357,11 @@
       "title": "Wildkatze",
       "section": "Details",
       "label": null,
-      "claim": "Wildkatze is protected and must not be shot.",
+      "claim": "The predator class explicitly cautions: do not shoot Wildkatze (European wildcat).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
     },
     {
       "id": "wildcat-O8",
@@ -2559,7 +2561,7 @@
       "title": "Waschbär",
       "section": "Details",
       "label": "Family cue",
-      "claim": "Small Bär (bear)—not a dog",
+      "claim": "Class shorthand “small bear” (not literal taxonomy); raccoons are not dogs",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
@@ -2571,11 +2573,11 @@
       "title": "Waschbär",
       "section": "Details",
       "label": null,
-      "claim": "German Waschbär (raccoon) populations trace largely to releases/escapes from fur farms, including the Kassel and eastern-Germany populations.",
+      "claim": "The course describes Waschbär (raccoon) escaping from fur farms in eastern Germany and the Kassel area.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
     },
     {
       "id": "raccoon-D4",
@@ -2595,12 +2597,11 @@
       "title": "Waschbär",
       "section": "Other Facts",
       "label": null,
-      "claim": "German Waschbär populations trace largely to animals released or escaped from fur farms, including the Kassel area.",
+      "claim": "The course traces Waschbär (raccoon) in Germany to escapes from fur farms, including the Kassel area.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null,
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
     },
     {
       "id": "raccoon-O6",
@@ -2656,11 +2657,11 @@
       "title": "Marderhund",
       "section": "Details",
       "label": null,
-      "claim": "Marderhund (raccoon dog) looks like a Waschbär (raccoon) but is in the dog family.",
+      "claim": "Marderhund (raccoon dog) belongs to the dog family, not to bears.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
     },
     {
       "id": "raccoondog-D5",
@@ -3244,11 +3245,11 @@
       "title": "Nerz",
       "section": "Details",
       "label": null,
-      "claim": "Europäischer Nerz (European mink) and introduced Amerikanischer Nerz (American mink) are distinct species.",
+      "claim": "The slide distinguishes European Nerz and American Nerz; American mink were introduced for fur farming.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
-      "status": "pending_claim_level_review",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
     },
     {
       "id": "mink-D6",

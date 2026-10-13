@@ -1,3 +1,5 @@
+> **Historical snapshot (2026-10-12).** This document describes the initial 819-block inventory and should not be used as the current pass/fail tally. The current 2026-10-13 audited state is **508 text-checked / 308 pending / 816 total** (three unsupported notes removed). See [live audit progress](SLIDE_AUDIT_PROGRESS_20261013.md) and the JSON claim register.
+
 # GHC Study v1.4.5 — study-card source map and factual audit register
 
 **Date:** 2026-10-12. **Source baseline:** recoverable v1.4.5 index.html on `audit/v145-source-recovery`, as used by the feature branch.

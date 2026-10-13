@@ -29,6 +29,15 @@ jobs:
           node --check tests/functional-smoke.cjs
       - name: Run GHC study UI smoke tests
         run: node tests/functional-smoke.cjs
+      - name: Check question bank integrity and answer giveaways
+        run: python3 scripts/check_question_bank_integrity.py
+      - name: Publish question-bank audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-question-bank-integrity
+          path: build/question-bank-integrity.json
+          if-no-files-found: warn
       - name: Test Android system Back bridge
         run: python3 scripts/test_android_back.py
       - name: Inspect runtime and study integration

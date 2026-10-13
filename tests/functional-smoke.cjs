@@ -17,6 +17,16 @@ assert(fixedQuestion,'fixed Hessen question must exist');
 assert.equal(Array.from(fixedQuestion.correct).join(','),'b','Hessen source answer must not change');
 assert(!/Jagdschein\s*\(hunting license\)/i.test(fixedQuestion.stem),'question stem must not give away license translation');
 assert(!/hunting license/i.test(fixedQuestion.stem),'correct choice must not be repeated in question stem');
+for(const id of ['H2023-D04-Q151','H2023-D15-Q010']){
+ const item=w.GHC_QUESTIONS.find(q=>q.id===id);
+ assert(item,'missing duplicate range safety question '+id);
+ assert.equal(item.stem,'Must shooters follow the instructions of the person supervising the shooting range?');
+}
+for(const id of ['H2023-D09-Q083','H2023-D15-Q003']){
+ const item=w.GHC_QUESTIONS.find(q=>q.id===id);
+ assert(item,'missing duplicate trapping question '+id);
+ assert.equal(item.stem,'Which of these traps is designed to capture game alive and unharmed?');
+}
 
 click(w,'[data-source="classroomRelevant"]');
 assert(w.document.querySelector('[data-focus-support="Direct"]'));

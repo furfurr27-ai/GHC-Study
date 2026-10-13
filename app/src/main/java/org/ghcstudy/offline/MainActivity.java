@@ -3,6 +3,11 @@ package org.ghcstudy.offline;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.webkit.ConsoleMessage;
+import android.webkit.WebChromeClient;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -14,13 +19,32 @@ import android.window.OnBackInvokedDispatcher;
  */
 public final class MainActivity extends Activity {
     private static final String START_URL = "file:///android_asset/index.html";
+    private static final String LOG_TAG = "GHCWebView";
     private WebView webView;
     private boolean backPending;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
         webView = new WebView(this);
-        webView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new WebViewClient() {
+            @Override public void onPageStarted(WebView view, String url, android.graphics.Bitmap favicon) {
+                Log.i(LOG_TAG, "Page start: " + url);
+            }
+            @Override public void onPageFinished(WebView view, String url) {
+                Log.i(LOG_TAG, "Page finished: " + url);
+            }
+            @Override public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                Log.e(LOG_TAG, "WebView load error: " + request.getUrl()
+                        + " code=" + error.getErrorCode() + " " + error.getDescription());
+            }
+        });
+        webView.setWebChromeClient(new WebChromeClient() {
+            @Override public boolean onConsoleMessage(ConsoleMessage message) {
+                Log.i(LOG_TAG, "JS " + message.messageLevel() + " " + message.sourceId()
+                        + ":" + message.lineNumber() + " " + message.message());
+                return true;
+            }
+        });
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true); // Existing quiz progress uses DOM storage.

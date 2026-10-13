@@ -5,7 +5,7 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Build and app invariants
 
 - v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
-- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (127 with meanings / 35 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (133 with meanings / 29 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
 - Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
 ## Source research completed and remaining
@@ -42,3 +42,10 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - The static scanner flagged **491 questions without explicit visual-ref fields**. This is a triage statistic, **not** proof that 491 animal questions lack images. Audit animal references separately.
 - Emulator CI has been affected by a **Pixel Launcher ANR modal** in one run and by captures of **an unrendered white WebView startup frame** in another. The latest script waits for rendered screens, dismisses only the external launcher dialog, and checks foreground app state. Verify the latest complete CI run before claiming hardware Back passed.
 - Latest physical Galaxy S23 Ultra install/backup/restore/upgrade behavior remains untested in this turn.
+
+## 2026-10-13 — second glossary audit and emulator observability
+
+- Six additional class-linked worksheet terms defined: **Absehen, Kugelfang, Objektiv, Okular, Streckeplatz, Visier**. Glossary current tally: **133 defined / 29 pending / 162 total**. Kugelfang has direct bilingual wording in the range slide. The other five are worksheet-term plus English slide context, *not* exact class-slide translation statements. Etymology remains blank. Evidence: `docs/GLOSSARY_DEFINITIONS_BATCH2_20261013.md`.
+- Updated glossary JS DOM regression to assert all six definitions and the current filters. Earlier CI runs at the intermediate glossary-only commit expected 127/35 and therefore failed; evaluate the **latest tested commit** instead.
+- Added Android emulator failure artifact collection (logcat, WebView provider, activity/window focus state) and WebView page/JavaScript console diagnostics. Existing CI showed a truly blank WebView surface and unresolved system Back, *not* a verified app navigation pass. Check the latest CI run and inspect diagnostics if emulator remains blank.
+- Do **not** merge draft PR #3 into the old `main`, or claim a physical Galaxy S23 Ultra test has occurred.

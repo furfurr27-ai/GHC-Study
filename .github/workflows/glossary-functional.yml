@@ -34,6 +34,8 @@ jobs:
         run: |
           python3 scripts/inspect_runtime_surfaces.py
           python3 scripts/inspect_study_integration.py
+      - name: Check audit register matches shipped study-card source
+        run: python3 scripts/check_claim_register_parity.py
       - name: Assemble original trophy/vocabulary overlays for regression checks
         run: |
           python3 scripts/integrate_trophy_card.py

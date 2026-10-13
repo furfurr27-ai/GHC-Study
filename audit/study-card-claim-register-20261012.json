@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 311,
-  "pendingBlockCount": 505,
+  "verifiedBlockCount": 419,
+  "pendingBlockCount": 397,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -3295,8 +3295,8 @@
       "claim": "Hahn (male/rooster) / Henne (female/hen) / Gesperre (brood/covey)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-R2",
@@ -3307,8 +3307,8 @@
       "claim": "Balzeit in spring",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-R3",
@@ -3319,8 +3319,8 @@
       "claim": "10–15 green/brown eggs",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-D4",
@@ -3331,7 +3331,8 @@
       "claim": "Common types shown are Ringneck and Bohemian pheasant.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-D5",
@@ -3342,7 +3343,8 @@
       "claim": "Hahn (male/rooster) is over 2 kg in the slide example; Henne (female/hen) about 1.5 kg and lays 10–15 green/brown eggs.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-D6",
@@ -3353,7 +3355,8 @@
       "claim": "Balzzeit (courtship season) is spring; the brood/group term is Gesperre (brood/flock).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-D7",
@@ -3364,7 +3367,8 @@
       "claim": "Roosts on the ground but sleeps in trees; prefers marshy high grass and thickets.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-D8",
@@ -3375,7 +3379,8 @@
       "claim": "Diet includes insects, worms, seeds, grasses and small rodents; grit supports digestion.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-D9",
@@ -3386,7 +3391,8 @@
       "claim": "Polygamous; course example uses about 1 male : 4 females.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-O10",
@@ -3397,8 +3403,8 @@
       "claim": "Normally hunt roosters; shoot flying birds, with wounded/crippled birds as the ground exception.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "pheasant-O11",
@@ -3409,8 +3415,8 @@
       "claim": "Course shotgun guidance: #4–6 shot; dogs are useful. Spur length over about 3.5 cm is used as an age cue.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "9–11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-R1",
@@ -3421,8 +3427,8 @@
       "claim": "Hahn (male/rooster) / Henne (female/hen) / Gesperre (brood/covey) · Kette (flock/chain) = flock of coveys",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-R2",
@@ -3433,8 +3439,8 @@
       "claim": "Balzeit Mar–Apr",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-D3",
@@ -3445,7 +3451,8 @@
       "claim": "Sexes look similar; males often show an orange head, but females may also show orange.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-D4",
@@ -3456,7 +3463,8 @@
       "claim": "Prefers fields/stubble with cover.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-D5",
@@ -3467,7 +3475,8 @@
       "claim": "Hahn (male/rooster) is about 0.5–0.75 lb; Henne (female/hen) lays 10–20 green/brown unspotted eggs.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-D6",
@@ -3478,7 +3487,8 @@
       "claim": "Balzzeit (courtship season) is March/April; Gesperre (covey) and Kette (flock/chain) are group terms.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-D7",
@@ -3489,7 +3499,8 @@
       "claim": "Roosts on the ground in protective circles with beaks facing outward; rooster protects the covey.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-O8",
@@ -3500,8 +3511,8 @@
       "claim": "Very fast and challenging; course shotgun guidance: roughly #5–7.5 shot; dogs are useful.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "partridge-O9",
@@ -3512,8 +3523,8 @@
       "claim": "The slide stresses predator control to support partridge populations.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "snipe-R1",
@@ -3524,8 +3535,8 @@
       "claim": "Schnepfen / snipe-type birds",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "snipe-R2",
@@ -3536,8 +3547,8 @@
       "claim": "Moist ground and marsh",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "snipe-D3",
@@ -3548,7 +3559,8 @@
       "claim": "Waldschnepfe (woodcock), Großer Brachvogel (curlew) and Bekassine (common snipe) are compared together.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "snipe-D4",
@@ -3559,7 +3571,8 @@
       "claim": "The group favors moist ground/marshes, feeds mainly on insects/worms, and roosts on the ground.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "snipe-O5",
@@ -3570,8 +3583,8 @@
       "claim": "Bekassine (common snipe) is shown as not open to hunting in the course deck; verify current law before any real hunt.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-R1",
@@ -3582,8 +3595,8 @@
       "claim": "Up to about 12 in",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-R2",
@@ -3594,8 +3607,8 @@
       "claim": "Polygamous · 4 dirty-brown eggs",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-D3",
@@ -3606,7 +3619,8 @@
       "claim": "Migratory, small and very fast; about 12 in / 30 cm long in the slide.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-D4",
@@ -3617,7 +3631,8 @@
       "claim": "Polygamous; long thin bill probes soft ground; head stripes run crosswise.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-D5",
@@ -3628,7 +3643,8 @@
       "claim": "Usually four dirty-brown eggs; courtship includes call exchanges and a mating flight/dance.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-O6",
@@ -3639,8 +3655,8 @@
       "claim": "Course shotgun guidance: #7.5–9 shot.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodcock-O7",
@@ -3651,8 +3667,8 @@
       "claim": "Traditional trophies: Malerfeder (painter feather trophy) and Schnepfenbart (woodcock beard trophy).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "15–16",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodpigeon-R1",
@@ -3663,8 +3679,8 @@
       "claim": "Largest common dove; adult white neck patch + white wing Federn (feathers)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19–20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodpigeon-R2",
@@ -3675,8 +3691,8 @@
       "claim": "3–4 times Mar–Sep · 2 white eggs",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19–20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodpigeon-D3",
@@ -3687,7 +3703,8 @@
       "claim": "Largest dove in the course set; about 500 g.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19–20",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodpigeon-D4",
@@ -3698,7 +3715,8 @@
       "claim": "Adults over one year show the white neck patch; black tail and white wing markings are useful ID cues.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19–20",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodpigeon-D5",
@@ -3709,7 +3727,8 @@
       "claim": "Monogamous for the year; breeds 3–4 times Mar–Sep and lays two white eggs per clutch.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19–20",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "woodpigeon-O6",
@@ -3720,8 +3739,8 @@
       "claim": "Course shotgun guidance: #7.5 shot or smaller.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19–20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "stockdove-R1",
@@ -3732,8 +3751,8 @@
       "claim": "Looks similar to Ringeltaube (wood pigeon)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "stockdove-R2",
@@ -3744,8 +3763,8 @@
       "claim": "Lives/nests inside trees",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "stockdove-D3",
@@ -3756,7 +3775,8 @@
       "claim": "Also called Hohltaube (stock dove); resembles Ringeltaube (wood pigeon) but nests/lives in tree cavities.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "stockdove-O4",
@@ -3767,8 +3787,8 @@
       "claim": "The course deck shows no open season.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "turtledove-R1",
@@ -3779,8 +3799,8 @@
       "claim": "No open season",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "turtledove-R2",
@@ -3791,8 +3811,8 @@
       "claim": "Winters in South Africa",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "turtledove-D3",
@@ -3803,7 +3823,8 @@
       "claim": "Primarily migratory in Europe and winters in southern Africa.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "turtledove-O4",
@@ -3814,8 +3835,8 @@
       "claim": "The course deck shows no open season.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "collareddove-R1",
@@ -3827,7 +3848,8 @@
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19, 23",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Statement requires visual-slide inspection, additional primary evidence or tighter wording beyond the extracted PDF text."
     },
     {
       "id": "collareddove-R2",
@@ -3839,7 +3861,7 @@
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19, 23",
       "status": "checked_against_deck_text",
-      "evidence": "Direct reading of Game - Federwild.pdf, Türkentaube passage on 2026-10-12, including 5–7 breeding events, <1/4 kg and #7.5 shot."
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "collareddove-D3",
@@ -3850,7 +3872,8 @@
       "claim": "Smaller than Ringeltaube (wood pigeon), under about 0.25 kg; course says 5–7 breeding attempts and similar clutch size.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19, 23",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "collareddove-O4",
@@ -3862,7 +3885,7 @@
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "19, 23",
       "status": "checked_against_deck_text",
-      "evidence": "Direct reading of Game - Federwild.pdf, Türkentaube passage on 2026-10-12, including 5–7 breeding events, <1/4 kg and #7.5 shot."
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "mallard-R1",
@@ -3873,8 +3896,8 @@
       "claim": "Schwimmente · Schwimmente (dabbling duck)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "26–28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "mallard-R2",
@@ -3885,8 +3908,8 @@
       "claim": "Only duck the bird deck says can be hunted in Hessen",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "26–28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "mallard-D3",
@@ -3897,7 +3920,8 @@
       "claim": "Ducks are split into Schwimmenten (dabbling ducks) and Tauchenten (diving ducks).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "26–28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "mallard-D4",
@@ -3905,10 +3929,11 @@
       "title": "Stockente",
       "section": "Details",
       "label": null,
-      "claim": "Dabblers ride high, carry the tail above water and show a Spiegel (iridescent wing patch); diving ducks ride low with a small low tail and usually no Spiegel (rump patch).",
+      "claim": "Dabblers ride high, carry the tail above water and show a Spiegel (iridescent wing patch); diving ducks ride low with a small low tail and usually no Spiegel (iridescent wing patch).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "26–28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "mallard-D5",
@@ -3919,7 +3944,8 @@
       "claim": "Stockente (mallard) is the only duck the course identifies as huntable in Hessen; trophy shown is Erpellocke (drake curl trophy).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "26–28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "mallard-O6",
@@ -3930,8 +3956,8 @@
       "claim": "Course/Hessen slide says Stockente (mallard) is the only duck hunted there; verify current state law and season before hunting.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "26–28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greylag-R1",
@@ -3942,8 +3968,8 @@
       "claim": "Pink feet · orange bill",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greylag-R2",
@@ -3954,8 +3980,8 @@
       "claim": "About 3 kg",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greylag-D3",
@@ -3966,7 +3992,8 @@
       "claim": "Graugans (greylag goose) is the most common goose in the course; about 3 kg, pink feet, orange bill and a call like a domestic goose.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greylag-O4",
@@ -3977,8 +4004,8 @@
       "claim": "Course goose cue: field geese generally have yellow/orange feet and bill; sea geese have black feet and bill. Graugans (greylag goose) is the common comparison bird.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "curlew-R1",
@@ -3989,8 +4016,8 @@
       "claim": "Schnepfen / wader group",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "curlew-R2",
@@ -4001,8 +4028,8 @@
       "claim": "No open season in the bird deck",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "curlew-D3",
@@ -4013,7 +4040,8 @@
       "claim": "Compared with woodcock and snipe; size, head pattern, bill and flight are the key differences.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "curlew-D4",
@@ -4024,7 +4052,8 @@
       "claim": "Associated with moist ground/marsh habitat in the slide comparison.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "curlew-O5",
@@ -4035,8 +4064,8 @@
       "claim": "Großer Brachvogel (curlew) is shown as not open to hunting in the course deck.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "14, 17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "beangoose-R1",
@@ -4047,8 +4076,8 @@
       "claim": "Yellow feet · black bill",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "beangoose-R2",
@@ -4059,8 +4088,8 @@
       "claim": "About 3 kg",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "beangoose-D3",
@@ -4071,7 +4100,8 @@
       "claim": "Saatgans (bean goose): about 3 kg, yellow feet, black bill and darker overall than Graugans (greylag goose).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "beangoose-O4",
@@ -4082,8 +4112,8 @@
       "claim": "Saatgans (bean goose) is darker than Graugans (greylag goose) in the course comparison.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "32–33",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "whitefrontedgoose-R1",
@@ -4094,8 +4124,8 @@
       "claim": "Similar to Saatgans (bean goose); spotted chest",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "whitefrontedgoose-R2",
@@ -4106,8 +4136,8 @@
       "claim": "Gans (goose)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "whitefrontedgoose-D3",
@@ -4118,7 +4148,8 @@
       "claim": "Bläßgans (white-fronted goose) resembles Saatgans (bean goose) but has the characteristic spotted breast/front pattern.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "whitefrontedgoose-O4",
@@ -4130,7 +4161,8 @@
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Statement requires visual-slide inspection, additional primary evidence or tighter wording beyond the extracted PDF text."
     },
     {
       "id": "brantgoose-R1",
@@ -4141,8 +4173,8 @@
       "claim": "Dark bird · neck ring",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "brantgoose-R2",
@@ -4153,8 +4185,8 @@
       "claim": "Dark feet and dark bill",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "brantgoose-D3",
@@ -4165,7 +4197,8 @@
       "claim": "Ringelgans (brant goose) is dark with a neck ring, dark bill and dark feet.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "brantgoose-O4",
@@ -4176,8 +4209,8 @@
       "claim": "Ringelgans (brant goose) is a sea-goose type with dark feet and bill plus the neck ring.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "canadagoose-R1",
@@ -4188,8 +4221,8 @@
       "claim": "Prolific in Germany in the wild",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "canadagoose-R2",
@@ -4200,8 +4233,8 @@
       "claim": "Course slide describes it as re-introduced",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "canadagoose-D3",
@@ -4212,7 +4245,8 @@
       "claim": "Kanadagans (Canada goose) is a reintroduced/non-native goose that is widespread in Germany in the course deck.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Statement requires visual-slide inspection, additional primary evidence or tighter wording beyond the extracted PDF text."
     },
     {
       "id": "canadagoose-O4",
@@ -4223,8 +4257,8 @@
       "claim": "Kanadagans (Canada goose) is described as re-introduced and now prolific in Germany.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "merganser-R1",
@@ -4235,8 +4269,8 @@
       "claim": "Säger (mergansers) / merganser",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "merganser-R2",
@@ -4247,8 +4281,8 @@
       "claim": "Course: subset within duck & Gans (goose) family",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "merganser-D3",
@@ -4259,7 +4293,8 @@
       "claim": "Säger (mergansers) are placed within the duck/goose family; the slide compares Zwergsäger (smew), Mittelsäger (red-breasted merganser) and Gänsesäger (common merganser).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "merganser-O4",
@@ -4270,8 +4305,8 @@
       "claim": "The slide compares Mittelsäger (red-breasted merganser), Zwergsäger (smew) and Gänsesäger (common merganser).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "muteswan-R1",
@@ -4282,8 +4317,8 @@
       "claim": "Only Schwan (swan) the bird deck says is hunted",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "38",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "muteswan-R2",
@@ -4294,8 +4329,8 @@
       "claim": "Singschwan and Pfeifschwan are migratory in Germany",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "38",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "muteswan-D3",
@@ -4306,7 +4341,8 @@
       "claim": "The slide compares Höckerschwan (mute swan), Singschwan (whooper swan) and Pfeifschwan (tundra swan).",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "38",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "muteswan-O4",
@@ -4317,8 +4353,8 @@
       "claim": "Course slide says only Höckerschwan (mute swan) is hunted; verify current state law/season before use.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "38",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greatcrestedgrebe-R1",
@@ -4329,8 +4365,8 @@
       "claim": "Taucher (grebes) / Lappentaucher (grebe)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "39",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greatcrestedgrebe-R2",
@@ -4341,8 +4377,8 @@
       "claim": "Lappentaucher (grebes) are NOT in the duck & Gans (goose) family",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "39",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greatcrestedgrebe-D3",
@@ -4353,7 +4389,8 @@
       "claim": "Taucher (grebes), including Haubentaucher (great crested grebe), are NOT in the duck/goose family.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "39",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "greatcrestedgrebe-O4",
@@ -4364,8 +4401,8 @@
       "claim": "The same slide group also shows Zwergtaucher (little grebe); remember Taucher/Lappentaucher (grebes) are not ducks or geese.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "39",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "coot-R1",
@@ -4376,8 +4413,8 @@
       "claim": "NOT a duck",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "coot-R2",
@@ -4388,8 +4425,8 @@
       "claim": "Green-footed moorhen is NOT a Blässhuhn (coot)",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "coot-O3",
@@ -4400,8 +4437,8 @@
       "claim": "Blässhuhn (coot) is not a duck; the green-footed Teichhuhn/Moorhen comparison is also not huntable in the class slide.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "40",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "capercaillie-R1",
@@ -4412,8 +4449,8 @@
       "claim": "Capital game bird / Waldhuhn",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "capercaillie-R2",
@@ -4424,8 +4461,8 @@
       "claim": "Shown with Birkwild and Rackelwild",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "capercaillie-D3",
@@ -4436,7 +4473,8 @@
       "claim": "Auerwild (capercaillie) is one of the “capital game birds” in the course comparison.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "capercaillie-O4",
@@ -4447,8 +4485,8 @@
       "claim": "Rackelwild is the cross between Auerwild and Birkwild; the slide says about 99% are sterile.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "blackgrouse-R1",
@@ -4459,8 +4497,8 @@
       "claim": "Capital game bird / Waldhuhn",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "blackgrouse-R2",
@@ -4471,8 +4509,8 @@
       "claim": "Shown with Auerwild and Rackelwild",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "blackgrouse-D3",
@@ -4483,7 +4521,8 @@
       "claim": "Birkwild (black grouse) is one of the “capital game birds”; Rackelwild is the Auerwild × Birkwild hybrid and is usually sterile.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "blackgrouse-O4",
@@ -4494,8 +4533,8 @@
       "claim": "Rackelwild is the cross between Auerwild and Birkwild; the slide says about 99% are sterile.",
       "courseSource": "Bird Hunting.pdf",
       "sourcePages": "44",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "buzzard-R1",
@@ -9249,8 +9288,8 @@
       "claim": "Gullet, craw, cloaca, Därme (intestines)",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdanatomy-R2",
@@ -9261,8 +9300,8 @@
       "claim": "Hollow Knochen (bones)",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdanatomy-D3",
@@ -9273,7 +9312,8 @@
       "claim": "The main external bird anatomy used for field identification: beak/bill, head, neck, breast, back, wings, tail and legs/feet.",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "7",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Statement requires visual-slide inspection, additional primary evidence or tighter wording beyond the extracted PDF text."
     },
     {
       "id": "birdanatomy-O4",
@@ -9285,7 +9325,8 @@
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "7",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Statement requires visual-slide inspection, additional primary evidence or tighter wording beyond the extracted PDF text."
     },
     {
       "id": "birdchecklist-R1",
@@ -9296,8 +9337,8 @@
       "claim": "Huntable birds, mating seasons, hunting seasons",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdchecklist-R2",
@@ -9308,8 +9349,8 @@
       "claim": "Dabbling vs Tauchenten (diving ducks); Schwan (swan) huntability",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdchecklist-R3",
@@ -9320,8 +9361,8 @@
       "claim": "Eggs, Kormoran (cormorant), population decline",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdchecklist-D4",
@@ -9332,7 +9373,8 @@
       "claim": "The course review emphasizes huntable species, mating/hunting seasons, duck types, swan status, pheasant/partridge/woodcock life history, migratory-bird protection and population-decline causes.",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdchecklist-O5",
@@ -9343,8 +9385,8 @@
       "claim": "Kormoran (cormorant) is the bird the review associates with greatest fish-population damage.",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdchecklist-O6",
@@ -9355,8 +9397,8 @@
       "claim": "Eggs help the Pächter (hunting leaseholder) gauge breeding/population status and plan protection/predator control.",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "birdchecklist-O7",
@@ -9367,8 +9409,8 @@
       "claim": "Decline causes listed: monoculture farming, intensive forestry, pesticides, weather/climate and urban sprawl.",
       "courseSource": "Game - Federwild.pdf",
       "sourcePages": "46-49",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Compared with matching species/topic section from the primary 'Game - Federwild.pdf' class-deck text fetched live 2026-10-13. This is 2020 course-slide fidelity only; images and current state hunting seasons/huntability not independently verified."
     },
     {
       "id": "revierroles-R1",
@@ -9694,6 +9736,11 @@
       "source": "Hunting Dogs (202609).pdf",
       "date": "2026-10-13",
       "details": "Reviewed 64 dog-study fact blocks against direct PDF text; reworded 4 overly narrow, imprecise or nonsensical descriptions to align strictly with dog deck. Current legal and medical correctness is outside this source-fidelity check."
+    },
+    {
+      "source": "Game - Federwild.pdf",
+      "date": "2026-10-13",
+      "details": "Checked 110 bird-card factual blocks against directly read 2020 GHC bird deck; held 5 image-only or inference claims for follow-up. Corrected Mallard 'Spiegel' from incorrectly labeled rump patch to iridescent wing patch. These season/huntability claims represent historical course instruction, not current German law."
     }
   ]
 }

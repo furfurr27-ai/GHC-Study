@@ -6,7 +6,47 @@ mkdir -p emulator-evidence
 adb install -r "$APK"
 adb shell am start -W -n org.ghcstudy.v141/org.ghcstudy.offline.MainActivity
 sleep 9
+# GitHub's constrained emulator can show a Pixel Launcher ANR system dialog
+# over a healthy, already-rendered WebView. Dismiss the external launcher dialog
+# before testing GHC navigation; never count dismissing a dialog as app Back.
+dismiss_launcher_dialog() {
+  local stage="$1" pos
+  for attempt in 1 2 3; do
+    adb shell uiautomator dump /sdcard/ghc-check.xml >/dev/null
+    adb pull /sdcard/ghc-check.xml emulator-evidence/system-check.xml >/dev/null
+    if grep -q "GHC Study isn't responding" emulator-evidence/system-check.xml; then
+      echo "GHC app ANR at $stage" >&2; return 1
+    fi
+    if ! grep -q "Pixel Launcher isn't responding" emulator-evidence/system-check.xml; then
+      return 0
+    fi
+    echo "Dismissing external Pixel Launcher ANR at $stage (attempt $attempt)"
+    pos="$(python3 - <<'PY'
+import re
+import xml.etree.ElementTree as ET
+r=ET.parse("emulator-evidence/system-check.xml").getroot()
+for n in r.iter("node"):
+    if n.attrib.get("text")=="Wait":
+        b=n.attrib.get("bounds","")
+        m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",b)
+        if m:
+            x1,y1,x2,y2=map(int,m.groups())
+            print((x1+x2)//2,(y1+y2)//2)
+            break
+PY
+)"
+    if [[ -z "$pos" ]]; then
+      echo "External ANR seen but Wait control inaccessible" >&2; return 1
+    fi
+    read -r tap_x tap_y <<< "$pos"
+    adb shell input tap "$tap_x" "$tap_y"
+    sleep 3
+  done
+  echo "External launcher ANR was not cleared at $stage" >&2
+  return 1
+}
 adb shell pidof org.ghcstudy.v141
+dismiss_launcher_dialog home
 adb exec-out screencap -p > emulator-evidence/quiz-home.png
 adb shell uiautomator dump /sdcard/ghc-quiz.xml >/dev/null
 adb pull /sdcard/ghc-quiz.xml emulator-evidence/quiz-home.xml >/dev/null
@@ -23,6 +63,7 @@ SIZE="$(adb shell wm size | grep -oE '[0-9]+x[0-9]+' | tail -1)"
 W="${SIZE%x*}"; H="${SIZE#*x}"
 adb shell input tap "$((W * 7 / 8))" "$((H - 95))"
 sleep 5
+dismiss_launcher_dialog glossary
 adb exec-out screencap -p > emulator-evidence/glossary.png
 adb shell uiautomator dump /sdcard/ghc-glossary.xml >/dev/null
 adb pull /sdcard/ghc-glossary.xml emulator-evidence/glossary.xml >/dev/null
@@ -37,6 +78,7 @@ PY
 adb shell input keyevent KEYCODE_BACK
 sleep 4
 adb shell pidof org.ghcstudy.v141
+dismiss_launcher_dialog returned-after-back
 adb exec-out screencap -p > emulator-evidence/returned-after-back.png
 adb shell uiautomator dump /sdcard/ghc-return.xml >/dev/null
 adb pull /sdcard/ghc-return.xml emulator-evidence/returned.xml >/dev/null

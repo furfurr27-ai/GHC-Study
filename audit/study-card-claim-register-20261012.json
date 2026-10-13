@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 770,
-  "pendingBlockCount": 46,
+  "verifiedBlockCount": 779,
+  "pendingBlockCount": 37,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -9596,7 +9596,7 @@
       "title": "Trophy Anatomy",
       "section": "Details",
       "label": "Rotwild (Red deer)",
-      "claim": "Mittelsprosse (middle tine): a reference point in the antler terminology. · Eissprosse (bez tine): often absent according to the class slides. · Krone (crown): the class describes three or more points above the Mittelsprosse. · Rosen (coronets) and Rosenstock (pedicle): used in class antler development and age discussions.",
+      "claim": "Mittelsprosse (middle tine): a reference point in the antler terminology. · Eissprosse (tine above the brow tine): often absent according to the class slides. · Krone (crown): the class describes three or more points above the Mittelsprosse. · Rosen (coronets) and Rosenstock (pedicle): used in class antler development and age discussions.",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
       "status": "checked_against_deck_text",
@@ -9647,8 +9647,10 @@
       "claim": "Crown: upper cluster of tines",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R7",
@@ -9659,8 +9661,10 @@
       "claim": "Main antler beam",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R8",
@@ -9671,8 +9675,10 @@
       "claim": "Brow tine",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R9",
@@ -9680,11 +9686,13 @@
       "title": "Trophy Anatomy",
       "section": "Details",
       "label": "Eissprosse",
-      "claim": "Bay tine",
+      "claim": "Tine immediately above the Augsprosse (brow tine)",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R10",
@@ -9695,8 +9703,10 @@
       "claim": "Middle tine",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R11",
@@ -9707,8 +9717,10 @@
       "claim": "Wolf tine",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": 14,
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R12",
@@ -9719,8 +9731,10 @@
       "claim": "Antler burr/coronet",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R13",
@@ -9731,8 +9745,10 @@
       "claim": "Bony pedicle",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": "13–14",
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-R14",
@@ -9743,8 +9759,10 @@
       "claim": "Antler spread",
       "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Original Game - Rotwild.pdf rendered pages 13–14 were visually inspected 2026-10-13. German labels, placement, and direct English descriptive translations checked against the slide figures. Rosenstock is explicitly labeled lebender Knochen (living bone) on page 13.",
+      "evidencePage": 14,
+      "evidenceType": "original_slide_image_verified"
     },
     {
       "id": "trophy-antler-horn-terminology-D15",

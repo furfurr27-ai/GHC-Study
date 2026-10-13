@@ -5,7 +5,7 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Build and app invariants
 
 - v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
-- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (118 with meanings / 44 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (127 with meanings / 35 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
 - Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
 ## Source research completed and remaining
@@ -27,3 +27,9 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Preserve source discipline
 
 Study-card Details/Other Facts contain class-slide material only unless an exception is explicitly labeled as historical course-guide material; never insert speculative instructor commentary or unsupported internet facts. Maintain separate references to current German hunting law where relevant. No claim that an APK compiled means the installed behavior was tested on the owner's handset.
+
+## 2026-10-13 continuation — glossary batch
+
+- Nine additional worksheet terms now have source-attributed meanings: Brucellose, Schweinepest, Fuchsbandwurm, Kleiner Münsterländer, Hahn in Ruh, Untere Jagdbehörde, Jagdschein, Wiederkäuer, Frettieren. Glossary is 127 defined / 35 pending, 162 total.
+- For Frettieren, Jagdschein and Wiederkäuer, the class deck supports the context but does not explicitly translate the worksheet headword. This limited provenance is reflected in per-entry audit metadata. Etymologies remain blank where not directly verified.
+- See `docs/GLOSSARY_DEFINITIONS_BATCH_20261013.md` for evidence and open issues. Recheck latest runtime/Android CI before using the updated APK.

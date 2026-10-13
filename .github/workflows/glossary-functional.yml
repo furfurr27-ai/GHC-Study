@@ -6,6 +6,7 @@ on:
       - 'app/**'
       - 'tests/**'
       - 'scripts/**'
+      - 'audit/study-card-claim-register-20261012.json'
       - '.github/workflows/glossary-functional.yml'
   pull_request:
     branches: [main]

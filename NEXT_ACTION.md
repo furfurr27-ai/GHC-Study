@@ -5,7 +5,7 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Build and app invariants
 
 - v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
-- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (133 with meanings / 29 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (135 with meanings / 27 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
 - Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
 ## Source research completed and remaining
@@ -55,3 +55,9 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - Evidence from CI run `38413027220` demonstrated the previous gesture script tapped **Reference**, not **Glossary**, because its y-coordinate fell below the Glossary anchor. The resulting system Back exited to the launcher; this is still an unisolated Back failure, **not** evidence about glossary page history.
 - Corrected the test at commit `38e6e1b07b217bbdfde7cf61e0e1bf8d0a94b6b7` to tap the actual UIAutomator-located Glossary anchor and require the glossary heading, then exercise Android Back. Workflow `38414557677` is queued as of this handoff; verify its eventual conclusion and artifacts before interpreting the result. See `docs/ANDROID_EMULATOR_TEST_DIAGNOSIS_20261013.md`.
 - Still test Back from Reference -> prior tab and Study card -> category separately, then perform physical Samsung Galaxy S23 Ultra validation.
+
+### 2026-10-13 — third vocabulary and emulator reliability continuation
+
+- **135 glossary defined / 27 pending / 162 total.** Directly class-PDF-confirmed translations: `Leberegel` → liver flukes (`Disease - Parasites.pdf`) and `jagende Hunde` → hounds (`Hunting Dogs (202609).pdf`). Source evidence: `docs/GLOSSARY_DEFINITIONS_BATCH3_20261013.md`. No etymology inferred, no question-bank changes.
+- Android emulator screenshot/accessibility evidence from run `38414557677`: **Pixel Launcher isn't responding** dialog appeared over an otherwise rendered GHC Quiz Mode page and obscured the `Glossary` link. JS smoke + APK build passed; emulator still failed. Robust post-render and post-accessibility ANR retry added in commit `4fe87f69f0b5b6c74b31dc4b5b2481a6465f1fa3`; check its workflow conclusion and the latest after glossary edits.
+- Do not treat the prior launcher dialog as a GHC app crash, but do not certify system Back or glossary page navigation until their actual emulator evidence passes. Continue preserving old `main` and unmerged draft PR #3.

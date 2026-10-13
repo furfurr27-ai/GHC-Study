@@ -33,3 +33,12 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - Nine additional worksheet terms now have source-attributed meanings: Brucellose, Schweinepest, Fuchsbandwurm, Kleiner Münsterländer, Hahn in Ruh, Untere Jagdbehörde, Jagdschein, Wiederkäuer, Frettieren. Glossary is 127 defined / 35 pending, 162 total.
 - For Frettieren, Jagdschein and Wiederkäuer, the class deck supports the context but does not explicitly translate the worksheet headword. This limited provenance is reflected in per-entry audit metadata. Etymologies remain blank where not directly verified.
 - See `docs/GLOSSARY_DEFINITIONS_BATCH_20261013.md` for evidence and open issues. Recheck latest runtime/Android CI before using the updated APK.
+
+## 2026-10-13 — question-integrity continuation
+
+- Added `scripts/check_question_bank_integrity.py` to CI. It verifies all 867 exam items and their answers/learning explanations structurally; a passing report proves no mechanical giveaways under the current heuristic, **not** legal/biological factual truth.
+- Fixed the exact answer giveaway in `H2023-D19-Q042` (Jagdschein translated in stem, repeated as choice B), preserving the correct answer ID. Smoothed the duplicated range-supervisor questions `H2023-D04-Q151`/`H2023-D15-Q010` and live-capture questions `H2023-D09-Q083`/`H2023-D15-Q003` without altering scoring.
+- Screened 18 identical-stem pairs (11 pairs with identical normalized choice sets); no records deleted because separate sources and progress IDs matter. Full pair list: `docs/QUESTION_DUPLICATE_REVIEW_20261013.md`.
+- The static scanner flagged **491 questions without explicit visual-ref fields**. This is a triage statistic, **not** proof that 491 animal questions lack images. Audit animal references separately.
+- Emulator CI has been affected by a **Pixel Launcher ANR modal** in one run and by captures of **an unrendered white WebView startup frame** in another. The latest script waits for rendered screens, dismisses only the external launcher dialog, and checks foreground app state. Verify the latest complete CI run before claiming hardware Back passed.
+- Latest physical Galaxy S23 Ultra install/backup/restore/upgrade behavior remains untested in this turn.

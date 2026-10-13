@@ -4,9 +4,9 @@
   "baseline": "audited recovery source index.html",
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
-  "claimBlockCount": 816,
-  "verifiedBlockCount": 781,
-  "pendingBlockCount": 35,
+  "claimBlockCount": 814,
+  "verifiedBlockCount": 803,
+  "pendingBlockCount": 11,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -15,11 +15,11 @@
       "title": "Rehwild",
       "section": "Details",
       "label": "Class",
-      "claim": "Niederwild (small/low game) · native · cloven-hoofed · ruminant",
+      "claim": "Niederwild (low game) · native · cloven-hoofed",
       "courseSource": "Rehwild 2026.pdf",
       "sourcePages": "2–3, 5, 7–8, 13–14, 19, 35",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Rehwild (2026).pdf: 'Native species – Niederwild – Cloven Hoofed'. Ruminant descriptor removed because this deck does not state it."
     },
     {
       "id": "roe-R2",
@@ -603,11 +603,11 @@
       "title": "Schwarzwild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Night hunting/optics and Kirrung (baiting site) rules are regulated; follow current state law.",
+      "claim": "The class covers night hunting with optics and Kirrung (bait-site) feeding limits; verify current restrictions before hunting.",
       "courseSource": "Schwarzwild Updated February 2025.pdf",
       "sourcePages": "2, 4–5, 9–10, 22, 28, 40",
-      "status": "pending_claim_level_review",
-      "evidence": null,
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Schwarzwild (202502).pdf: Hunting Methods—night hunting/optics and Kirrungen with small prescribed feed quantity; restrictions must be checked independently.",
       "auditNote": "App's caution to verify current state rules is editorial legal guidance, not a source-verifiable slide fact."
     },
     {
@@ -652,11 +652,11 @@
       "title": "Rotwild",
       "section": "Details",
       "label": "Class",
-      "claim": "Hochwild (high game) · native · cloven-hoofed · ruminant",
+      "claim": "Hochwild (high game) · native · cloven-hoofed",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Rotwild.pdf: History/Biology 'Native species – Hochwild – Cloven Hoofed'; Diet seasonal buds, crops, mast and bark; Hunting Methods: Treibjagd important for fulfilling Abschussplan. Unsourced qualifiers removed."
     },
     {
       "id": "reddeer-R2",
@@ -736,11 +736,11 @@
       "title": "Rotwild",
       "section": "Details",
       "label": "Diet",
-      "claim": "Mixed feeder: grasses, herbs, browse, mast and agricultural food when available",
+      "claim": "Seasonal opportunist: spring buds/shoots, summer grains/crops, autumn acorns/chestnuts; may eat tree bark in winter",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Rotwild.pdf: History/Biology 'Native species – Hochwild – Cloven Hoofed'; Diet seasonal buds, crops, mast and bark; Hunting Methods: Treibjagd important for fulfilling Abschussplan. Unsourced qualifiers removed."
     },
     {
       "id": "reddeer-R9",
@@ -844,11 +844,11 @@
       "title": "Rotwild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Rotwild management commonly uses an Abschussplan (harvest/cull plan) and coordinated population control.",
+      "claim": "The class lists Treibjagd (drive hunts) as important for fulfilling the Abschussplan (harvest plan).",
       "courseSource": "Rotwildr_4r.pdf",
       "sourcePages": "2–4, 7–8, 40–41",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Rotwild.pdf: History/Biology 'Native species – Hochwild – Cloven Hoofed'; Diet seasonal buds, crops, mast and bark; Hunting Methods: Treibjagd important for fulfilling Abschussplan. Unsourced qualifiers removed."
     },
     {
       "id": "reddeer-O18",
@@ -1857,7 +1857,16 @@
       "sourcePages": "Other Game p.1; Federal law p.11",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-1",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "marmot-R2",
@@ -1870,7 +1879,16 @@
       "sourcePages": "Other Game p.1; Federal law p.11",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-1",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "partial_support",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "marmot-R3",
@@ -1883,7 +1901,16 @@
       "sourcePages": "Other Game p.1; Federal law p.11",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-1",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "marmot-R4",
@@ -1896,7 +1923,16 @@
       "sourcePages": "Other Game p.1; Federal law p.11",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-1",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "marmot-O5",
@@ -1909,7 +1945,16 @@
       "sourcePages": "Other Game p.1; Federal law p.11",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-1",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "marmot-O6",
@@ -1922,7 +1967,16 @@
       "sourcePages": "Other Game p.1; Federal law p.11",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-1",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "seal-R1",
@@ -1935,7 +1989,16 @@
       "sourcePages": "Other Game p.2; Federal law p.11, 20, 32",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-2",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "partial_support",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "seal-R2",
@@ -1948,7 +2011,16 @@
       "sourcePages": "Other Game p.2; Federal law p.11, 20, 32",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-2",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "seal-R3",
@@ -1961,7 +2033,16 @@
       "sourcePages": "Other Game p.2; Federal law p.11, 20, 32",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-2",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "seal-O4",
@@ -1974,7 +2055,16 @@
       "sourcePages": "Other Game p.2; Federal law p.11, 20, 32",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-2",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "seal-O5",
@@ -1987,7 +2077,16 @@
       "sourcePages": "Other Game p.2; Federal law p.11, 20, 32",
       "status": "pending_claim_level_review",
       "evidence": "2013 U.S. Forces Guide_08n1-5_Other_Game_2013-08.pdf fetched and checked 2026-10-13 (Drive ID 16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq). Guide content does NOT establish that the fact appears in GHC class slides; remains pending under the slide-only requirement.",
-      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only."
+      "reviewReason": "Source is historical course guide, not primary class deck. Supplementary reference only.",
+      "supplementalSource": {
+        "title": "Guide_08n1-5_Other_Game_2013-08.pdf",
+        "driveFileId": "16pNR-NEUuEed2oINx5gVKEOAiKGg1dsq",
+        "section": "08m(1)-2",
+        "category": "historical_US_Forces_course_guide",
+        "reviewedOn": "2026-10-13",
+        "status": "supported_by_guide_text",
+        "limitations": "Historical guide is not a 2026 classroom slide; not proof of current hunting law. Claim-specific terminology may need an independent source."
+      }
     },
     {
       "id": "fox-R1",
@@ -2142,8 +2241,9 @@
       "claim": "Class slide: listed as game, with “no season” stated (not current legal guidance)",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "pending_claim_level_review",
-      "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
+      "status": "checked_against_deck_text",
+      "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md.",
+      "evidence": "Game - Predators (202609).pdf, Wolf slide: 'NOW on the list of legal game but no season'; 'Largest predator'; recolonization from eastern states and eastern European countries. These are 2026 course statements, NOT a current legal authorization."
     },
     {
       "id": "wolf-R2",
@@ -2154,7 +2254,8 @@
       "claim": "Largest predator highlighted in the predator class",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wolf slide: 'NOW on the list of legal game but no season'; 'Largest predator'; recolonization from eastern states and eastern European countries. These are 2026 course statements, NOT a current legal authorization."
     },
     {
       "id": "wolf-D3",
@@ -2165,8 +2266,9 @@
       "claim": "The Fall 2026 class slide lists Wolf (wolf) as game and states “no season”; current management authorizations must be checked separately.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "pending_claim_level_review",
-      "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
+      "status": "checked_against_deck_text",
+      "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md.",
+      "evidence": "Game - Predators (202609).pdf, Wolf slide: 'NOW on the list of legal game but no season'; 'Largest predator'; recolonization from eastern states and eastern European countries. These are 2026 course statements, NOT a current legal authorization."
     },
     {
       "id": "wolf-D4",
@@ -2177,7 +2279,8 @@
       "claim": "It is the largest predator covered in this class.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wolf slide: 'NOW on the list of legal game but no season'; 'Largest predator'; recolonization from eastern states and eastern European countries. These are 2026 course statements, NOT a current legal authorization."
     },
     {
       "id": "wolf-D5",
@@ -2188,19 +2291,8 @@
       "claim": "Wölfe (wolves) recolonized Germany from eastern Germany and eastern Europe after a long absence.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "pending_claim_level_review"
-    },
-    {
-      "id": "wolf-D6",
-      "cardId": "wolf",
-      "title": "Wolf (wolf)",
-      "section": "Details",
-      "label": null,
-      "claim": "Treat status and season as current-law material that can change.",
-      "courseSource": "GHC Predators (Fall 2026).pdf",
-      "sourcePages": "4",
-      "status": "pending_claim_level_review",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wolf slide: 'NOW on the list of legal game but no season'; 'Largest predator'; recolonization from eastern states and eastern European countries. These are 2026 course statements, NOT a current legal authorization."
     },
     {
       "id": "lynx-R1",
@@ -2295,7 +2387,8 @@
       "claim": "30",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-R2",
@@ -2306,7 +2399,8 @@
       "claim": "Found throughout Germany",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-D3",
@@ -2317,7 +2411,8 @@
       "claim": "Wildkatze can look domestic, but the short thick striped tail is the key cue.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-D4",
@@ -2328,7 +2423,8 @@
       "claim": "It is shy, a small-game predator, and the class says: don’t shoot it.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-D5",
@@ -2339,7 +2435,8 @@
       "claim": "Looks like a house cat but has a short, thick, striped tail and heavy tiger-like striping.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-D6",
@@ -2350,7 +2447,8 @@
       "claim": "Diet: Mäuse (mice), birds and other small mammals.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-D7",
@@ -2361,7 +2459,8 @@
       "claim": "The predator class explicitly cautions: do not shoot Wildkatze (European wildcat).",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "wildcat-O8",
@@ -2372,7 +2471,8 @@
       "claim": "The predator deck gives Wildkatze 30 teeth and stresses its short, thick, striped tail as the field cue.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Wildkatze slide: found throughout Germany, 30 teeth, domestic-cat resemblance, short thick striped tail, shy behavior, mice/bird/mammal diet, explicit 'Don't shoot it!'."
     },
     {
       "id": "bear-R1",
@@ -2395,7 +2495,8 @@
       "claim": "Occasional animals may enter from neighboring countries",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Bär slide: not on legal-game list in course; almost extinct central Europe well over 100 years; some arrive from Austria/Czech Republic."
     },
     {
       "id": "bear-D3",
@@ -2406,7 +2507,8 @@
       "claim": "Bär is not on the legal-game list in Germany.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Bär slide: not on legal-game list in course; almost extinct central Europe well over 100 years; some arrive from Austria/Czech Republic."
     },
     {
       "id": "bear-D4",
@@ -2417,7 +2519,8 @@
       "claim": "Bären (bears) have been essentially absent from central Europe for more than a century.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Bär slide: not on legal-game list in course; almost extinct central Europe well over 100 years; some arrive from Austria/Czech Republic."
     },
     {
       "id": "bear-O5",
@@ -2428,7 +2531,8 @@
       "claim": "The predator deck notes that bears have been essentially absent from central Europe for well over 100 years; occasional animals may enter Germany from Austria or the Czech Republic.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Game - Predators (202609).pdf, Bär slide: not on legal-game list in course; almost extinct central Europe well over 100 years; some arrive from Austria/Czech Republic."
     },
     {
       "id": "badger-R1",
@@ -9869,18 +9973,6 @@
       "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
       "status": "checked_against_deck_text",
       "evidence": "Direct textual comparison 2026-10-13 with Trophy Parts 1–2 (2025), Game - Rotwild, Game - Rehwild (2026), Game - Damwild, and Game - Mufflewild (2015) classroom PDFs. The individually pictured antler-label translations are NOT checked by this evidence."
-    },
-    {
-      "id": "trophy-antler-horn-terminology-O21",
-      "cardId": "trophy-antler-horn-terminology",
-      "title": "Trophy Anatomy",
-      "section": "Other Facts",
-      "label": null,
-      "claim": "No numerical CIC trophy scoring thresholds were found in the two Trophy Preparation decks reviewed; do not invent scoring formulas or trophy grades.",
-      "courseSource": "Trophy Part 1 & 2 (2025); Game - Rotwild, Rehwild, Damwild, Mufflewild",
-      "sourcePages": "Game - Rotwild.pdf pp. 14–16; other class decks",
-      "status": "pending_claim_level_review",
-      "evidence": null
     }
   ],
   "auditFindings": [
@@ -9919,5 +10011,6 @@
       "date": "2026-10-13",
       "details": "Review of 26 method, drive-hunt, shot-placement and follow-up fact blocks: 24 checked against class slide text, 2 additional etymological/operational inferences withheld. Reworded preferred shooting angle to broadside as taught."
     }
-  ]
+  ],
+  "supplementalHistoricalGuideRecords": 11
 }

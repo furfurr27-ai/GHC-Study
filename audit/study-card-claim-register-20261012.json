@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 625,
-  "pendingBlockCount": 191,
+  "verifiedBlockCount": 647,
+  "pendingBlockCount": 169,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -7637,8 +7637,8 @@
       "claim": "Check live behavior, carcass and organs for abnormalities",
       "courseSource": "Wildkrankheiten3_KundigePerson&Practice.pdf",
       "sourcePages": "2–3",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Disease - Kundige Person.pdf (Drive ID 1ItraYYxDEfOdx-SDpl9BB_Bu_8QKe4Q6), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "kundigeperson-R2",
@@ -7649,8 +7649,8 @@
       "claim": "If it looks wrong, stop and investigate",
       "courseSource": "Wildkrankheiten3_KundigePerson&Practice.pdf",
       "sourcePages": "2–3",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Disease - Kundige Person.pdf (Drive ID 1ItraYYxDEfOdx-SDpl9BB_Bu_8QKe4Q6), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "kundigeperson-D3",
@@ -7658,10 +7658,11 @@
       "title": "Kundige Person",
       "section": "Details",
       "label": null,
-      "claim": "As Kundige Person (trained game-meat examiner), I’m looking for abnormal behavior, body condition and organs before meat enters the food chain.",
+      "claim": "A Kundige Person (knowledgeable hunter) checks behavior, body condition and internal organs for signs of illness before wild game enters the food chain.",
       "courseSource": "Wildkrankheiten3_KundigePerson&Practice.pdf",
       "sourcePages": "2–3",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Disease - Kundige Person.pdf (Drive ID 1ItraYYxDEfOdx-SDpl9BB_Bu_8QKe4Q6), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "kundigeperson-D4",
@@ -7672,7 +7673,8 @@
       "claim": "Red flags: strange behavior, unexplained death, emaciation, swollen Hoden (testicles), tumors/abscesses, abnormal organ color, bad smell, abnormal contents or gas.",
       "courseSource": "Wildkrankheiten3_KundigePerson&Practice.pdf",
       "sourcePages": "2–3",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Disease - Kundige Person.pdf (Drive ID 1ItraYYxDEfOdx-SDpl9BB_Bu_8QKe4Q6), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "kundigeperson-D5",
@@ -7683,7 +7685,8 @@
       "claim": "Hunter is the first barrier between wild game and the consumer.",
       "courseSource": "Wildkrankheiten3_KundigePerson&Practice.pdf",
       "sourcePages": "2–3",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Disease - Kundige Person.pdf (Drive ID 1ItraYYxDEfOdx-SDpl9BB_Bu_8QKe4Q6), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "kundigeperson-O6",
@@ -7691,11 +7694,11 @@
       "title": "Kundige Person",
       "section": "Other Facts",
       "label": null,
-      "claim": "A Kundige Person (trained game-meat examiner) does not need to diagnose every disease; recognize abnormalities, stop processing, and involve a veterinarian/authority when needed.",
+      "claim": "A Kundige Person does not need an exact disease diagnosis; recognize abnormalities, do not use suspect meat and involve an expert, veterinarian or authority when needed.",
       "courseSource": "Wildkrankheiten3_KundigePerson&Practice.pdf",
       "sourcePages": "2–3",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Disease - Kundige Person.pdf (Drive ID 1ItraYYxDEfOdx-SDpl9BB_Bu_8QKe4Q6), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trichinella-R1",
@@ -8469,8 +8472,8 @@
       "claim": "Weizen (wheat) · Roggen (rye) · Triticale (triticale) · Hafer (oats) · Gerste (barley) · Dinkel (spelt) · Mais (maize/corn)",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "9–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "crops-R2",
@@ -8478,11 +8481,11 @@
       "title": "Primary German Crops",
       "section": "Details",
       "label": "Tubers / roots",
-      "claim": "Kartoffeln (potatoes) · Rüben (beets)",
+      "claim": "Kartoffeln (potatoes) · Zuckerrüben (sugar beets) · Topinambur (Jerusalem artichoke)",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "9–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "crops-D3",
@@ -8490,10 +8493,11 @@
       "title": "Primary German Crops",
       "section": "Details",
       "label": null,
-      "claim": "Tubers/root crops highlighted: Kartoffeln (potatoes) and Rüben (beets).",
+      "claim": "The crop deck highlights Kartoffeln (potatoes), Zuckerrüben (sugar beets) and Topinambur (Jerusalem artichoke) as tubers.",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "9–18",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "crops-D4",
@@ -8501,10 +8505,11 @@
       "title": "Primary German Crops",
       "section": "Details",
       "label": null,
-      "claim": "Identify crops by visible field characteristics, not only by name.",
+      "claim": "The slides show labeled examples of grains, tubers, seed crops and hay for visual recognition.",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "9–18",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "crops-O5",
@@ -8515,8 +8520,8 @@
       "claim": "The course also groups crops into grains/cereals, tubers, seed crops, hay and special situations; Mais (maize/corn) is used for feed, bioenergy and some human food.",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "9–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trees-R1",
@@ -8527,8 +8532,8 @@
       "claim": "Alder",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf and History - Traditions.pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trees-R2",
@@ -8539,8 +8544,8 @@
       "claim": "Oak",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf and History - Traditions.pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trees-R3",
@@ -8551,8 +8556,8 @@
       "claim": "Spruce",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf and History - Traditions.pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trees-R4",
@@ -8563,8 +8568,8 @@
       "claim": "Pine",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf and History - Traditions.pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trees-R5",
@@ -8575,8 +8580,8 @@
       "claim": "Fir",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf and History - Traditions.pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trees-O6",
@@ -8587,8 +8592,8 @@
       "claim": "These same native trees are used in hunting branch traditions.",
       "courseSource": "GHC Field & Forest Class (APP 2025).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Field & Forest (202504).pdf and History - Traditions.pdf (Drive ID 1-iFuD90EqFdE7mxsV53XV48CCQCtuih4), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "coldweapons-R1",
@@ -9469,8 +9474,8 @@
       "claim": "Owner, Pächter (hunting leaseholder), or forestry authority",
       "courseSource": "Range - Revier (20260922).pdf",
       "sourcePages": "6-7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Range - Revier (20260922).pdf (Drive ID 1FzT5bPwpaM4q8yft5IoO00BvwXAA-kys), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "revierroles-R2",
@@ -9481,8 +9486,8 @@
       "claim": "Jagdausübende (persons exercising hunting rights), Jagdaufseher (gamekeeper/hunting supervisor), Jagdgäste",
       "courseSource": "Range - Revier (20260922).pdf",
       "sourcePages": "6-7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Range - Revier (20260922).pdf (Drive ID 1FzT5bPwpaM4q8yft5IoO00BvwXAA-kys), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "revierroles-R3",
@@ -9493,8 +9498,8 @@
       "claim": "Nature/environment, hunting authorities, police",
       "courseSource": "Range - Revier (20260922).pdf",
       "sourcePages": "6-7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Range - Revier (20260922).pdf (Drive ID 1FzT5bPwpaM4q8yft5IoO00BvwXAA-kys), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "revierroles-D4",
@@ -9502,10 +9507,11 @@
       "title": "Who Is in a Revier?",
       "section": "Details",
       "label": null,
-      "claim": "A Jagdgast (hunting guest) has temporary permission and normally hunts under the host arrangement; a Begehungsschein (written hunting permission) is a broader written permission.",
+      "claim": "A Jagdgast (hunting guest) has temporary permission and is always escorted in this course's description; a Begehungsschein (written hunting permission) may be annual or permanent.",
       "courseSource": "Range - Revier (20260922).pdf",
       "sourcePages": "6-7",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Range - Revier (20260922).pdf (Drive ID 1FzT5bPwpaM4q8yft5IoO00BvwXAA-kys), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "revierroles-O5",
@@ -9516,8 +9522,8 @@
       "claim": "A Revier also includes landowners, farmers/foresters and recreational users. The managing Pächter (hunting leaseholder) sets local hunting priorities and quotas within the law and lease.",
       "courseSource": "Range - Revier (20260922).pdf",
       "sourcePages": "6-7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct text review of Range - Revier (20260922).pdf (Drive ID 1FzT5bPwpaM4q8yft5IoO00BvwXAA-kys), 2026-10-13; text fidelity only, pending original page/image checks."
     },
     {
       "id": "trophy-antler-horn-terminology-R1",

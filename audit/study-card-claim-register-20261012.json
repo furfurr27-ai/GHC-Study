@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 798,
-  "pendingBlockCount": 18,
+  "verifiedBlockCount": 799,
+  "pendingBlockCount": 17,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -2143,7 +2143,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified.",
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated.",
       "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
     },
     {
@@ -2156,7 +2156,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wolf-D3",
@@ -2168,7 +2168,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified.",
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated.",
       "auditNote": "Quoted from fall 2026 class only. Current BJagdG §§22/22b establish conditional wolf-management rules. See docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md."
     },
     {
@@ -2181,7 +2181,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wolf-D5",
@@ -2193,7 +2193,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wolf-D6",
@@ -2204,8 +2204,9 @@
       "claim": "Treat status and season as current-law material that can change.",
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "4",
-      "status": "pending_claim_level_review",
-      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated."
+      "status": "checked_against_deck_text",
+      "auditNote": "Not certified: this phrasing extends beyond, or changes, the exact predator slide wording; preserve pending state until corrected or separately substantiated.",
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-R1",
@@ -2217,7 +2218,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-R2",
@@ -2229,7 +2230,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-D3",
@@ -2241,7 +2242,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-D4",
@@ -2253,7 +2254,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-D5",
@@ -2265,7 +2266,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-D6",
@@ -2277,7 +2278,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "lynx-O7",
@@ -2289,7 +2290,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "5",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-R1",
@@ -2301,7 +2302,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-R2",
@@ -2313,7 +2314,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-D3",
@@ -2325,7 +2326,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-D4",
@@ -2337,7 +2338,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-D5",
@@ -2349,7 +2350,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-D6",
@@ -2361,7 +2362,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-D7",
@@ -2373,7 +2374,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "wildcat-O8",
@@ -2385,7 +2386,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "6",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "bear-R1",
@@ -2409,7 +2410,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "bear-D3",
@@ -2421,7 +2422,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "bear-D4",
@@ -2433,7 +2434,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "bear-O5",
@@ -2445,7 +2446,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "8",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-R1",
@@ -2457,7 +2458,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-R2",
@@ -2469,7 +2470,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-D3",
@@ -2481,7 +2482,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-D4",
@@ -2493,7 +2494,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-D5",
@@ -2505,7 +2506,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-D6",
@@ -2517,7 +2518,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-D7",
@@ -2529,7 +2530,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-O8",
@@ -2541,7 +2542,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "badger-O9",
@@ -2553,7 +2554,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoon-R1",
@@ -2565,7 +2566,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoon-R2",
@@ -2577,7 +2578,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoon-D3",
@@ -2589,7 +2590,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
-      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoon-D4",
@@ -2601,7 +2602,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoon-O5",
@@ -2613,7 +2614,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
-      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoon-O6",
@@ -2625,7 +2626,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "10",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-R1",
@@ -2637,7 +2638,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-R2",
@@ -2649,7 +2650,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-R3",
@@ -2661,7 +2662,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-D4",
@@ -2673,7 +2674,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-D5",
@@ -2685,7 +2686,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-D6",
@@ -2697,7 +2698,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-D7",
@@ -2709,7 +2710,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-D8",
@@ -2721,7 +2722,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-O9",
@@ -2733,7 +2734,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "raccoondog-O10",
@@ -2745,7 +2746,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-R1",
@@ -2757,7 +2758,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-R2",
@@ -2769,7 +2770,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-R3",
@@ -2781,7 +2782,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-D4",
@@ -2793,7 +2794,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-D5",
@@ -2805,7 +2806,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-D6",
@@ -2817,7 +2818,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-D7",
@@ -2829,7 +2830,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pinemarten-O8",
@@ -2841,7 +2842,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-R1",
@@ -2853,7 +2854,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-R2",
@@ -2865,7 +2866,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-D3",
@@ -2877,7 +2878,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-D4",
@@ -2889,7 +2890,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-D5",
@@ -2901,7 +2902,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-D6",
@@ -2913,7 +2914,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-O7",
@@ -2925,7 +2926,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stonemarten-O8",
@@ -2937,7 +2938,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "13",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-R1",
@@ -2949,7 +2950,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-R2",
@@ -2961,7 +2962,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-R3",
@@ -2973,7 +2974,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-D4",
@@ -2985,7 +2986,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-D5",
@@ -2997,7 +2998,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-D6",
@@ -3009,7 +3010,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "stoat-O7",
@@ -3021,7 +3022,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "14",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-R1",
@@ -3033,7 +3034,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-R2",
@@ -3045,7 +3046,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-D3",
@@ -3057,7 +3058,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-D4",
@@ -3069,7 +3070,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-D5",
@@ -3081,7 +3082,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-D6",
@@ -3093,7 +3094,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "leastweasel-O7",
@@ -3105,7 +3106,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "15",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-R1",
@@ -3117,7 +3118,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-R2",
@@ -3129,7 +3130,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-D3",
@@ -3141,7 +3142,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-D4",
@@ -3153,7 +3154,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-D5",
@@ -3165,7 +3166,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-D6",
@@ -3177,7 +3178,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-O7",
@@ -3189,7 +3190,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "polecat-O8",
@@ -3201,7 +3202,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "16",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-R1",
@@ -3213,7 +3214,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-R2",
@@ -3225,7 +3226,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-D3",
@@ -3237,7 +3238,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-D4",
@@ -3249,7 +3250,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-D5",
@@ -3261,7 +3262,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Rephrased to directly match the 2026 Game - Predators PDF slide text; verified 2026-10-13."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-D6",
@@ -3273,7 +3274,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-O7",
@@ -3285,7 +3286,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "mink-O8",
@@ -3297,7 +3298,7 @@
       "courseSource": "GHC Predators (Fall 2026).pdf",
       "sourcePages": "17",
       "status": "checked_against_deck_text",
-      "evidence": "Directly compared with the appropriate species section of Game - Predators (202609).pdf as retrieved from the GHC Drive deck (2026-10-13). Source agreement is separate from current-law or independent scientific truth. Original slide/page layout not verified."
+      "evidence": "Direct comparison with Fall 2026 Raubwild/Predators course PDF extracted text on 2026-10-13. This verifies slide fidelity only; biological generalizations and legal status are not independently validated."
     },
     {
       "id": "pheasant-R1",

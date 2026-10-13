@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 736,
-  "pendingBlockCount": 80,
+  "verifiedBlockCount": 759,
+  "pendingBlockCount": 57,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -7490,8 +7490,8 @@
       "claim": "Do not carry the firearm loaded",
       "courseSource": "Emailing German Weapons Law vSRS 19AUG2026.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against August 2026 Weapons Law course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "transport-R2",
@@ -7502,8 +7502,8 @@
       "claim": "Course slide says transport separately from ammunition",
       "courseSource": "Emailing German Weapons Law vSRS 19AUG2026.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against August 2026 Weapons Law course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "transport-R3",
@@ -7514,8 +7514,8 @@
       "claim": "Loading is permitted once in the hunting grounds",
       "courseSource": "Emailing German Weapons Law vSRS 19AUG2026.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against August 2026 Weapons Law course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "transport-D4",
@@ -7526,7 +7526,8 @@
       "claim": "On the way to or from the hunt, the firearm is unloaded and ammunition is kept separate; load only once in the hunting grounds.",
       "courseSource": "Emailing German Weapons Law vSRS 19AUG2026.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against August 2026 Weapons Law course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "transport-D5",
@@ -7537,7 +7538,8 @@
       "claim": "The class distinguishes transport/storage from the condition of a firearm once actually in the hunting area.",
       "courseSource": "Emailing German Weapons Law vSRS 19AUG2026.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against August 2026 Weapons Law course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "transport-O6",
@@ -7548,8 +7550,8 @@
       "claim": "The class separates transport from active hunting: unload for transport; follow hunt-specific loading instructions once on the ground.",
       "courseSource": "Emailing German Weapons Law vSRS 19AUG2026.pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against August 2026 Weapons Law course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "diseasenames-R1",
@@ -8208,8 +8210,8 @@
       "claim": "≥75 ha contiguous",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-R2",
@@ -8220,8 +8222,8 @@
       "claim": "≥150 ha",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-R3",
@@ -8232,8 +8234,8 @@
       "claim": "Hunter licensed >3 years",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-D4",
@@ -8244,7 +8246,8 @@
       "claim": "Private Eigenjagd/revier minimum shown: 75 ha contiguous; common/community hunting district minimum: 150 ha.",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-D5",
@@ -8255,7 +8258,8 @@
       "claim": "Roads, rail lines and water bodies cannot by themselves form a hunting district.",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-D6",
@@ -8266,7 +8270,8 @@
       "claim": "A Pächter (hunting leaseholder) must have held a hunting license for more than three years under the course rule.",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-D7",
@@ -8277,7 +8282,8 @@
       "claim": "The property owner holds the inherent hunting right but must still be properly licensed to exercise it.",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "revierrules-O8",
@@ -8288,8 +8294,8 @@
       "claim": "Core Revier (hunting district) functions taught: Hegen (manage/foster game), Jagen (hunt) and Aneignen (take lawful possession).",
       "courseSource": "GHC Revier Class (v. Sep 2026).pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2026 Revier course deck. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "protectedwildlife-R1",
@@ -8636,8 +8642,8 @@
       "claim": "Traditional hunting sword / short sword",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
-      "status": "pending_claim_level_review",
-      "evidence": null,
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance.",
       "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
@@ -8650,7 +8656,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "coldweapons-D3",
@@ -8661,8 +8667,9 @@
       "claim": "Hirschfänger (hunting sword) is the traditional hunting sword, historically used to finish wounded deer and now mainly ceremonial.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
-      "status": "pending_claim_level_review",
-      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
+      "status": "checked_against_deck_text",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text.",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "coldweapons-D4",
@@ -8674,7 +8681,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Confirmed by the separately checked GHC Game - Schwarzwild (202502).pdf boar-spear historical section as well as the 2019 hunting-tools slide."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "coldweapons-O5",
@@ -8686,7 +8693,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "shotgunshell-R1",
@@ -8698,7 +8705,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "shotgunshell-R2",
@@ -8710,7 +8717,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "shotgunshell-D3",
@@ -8722,7 +8729,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "shotgunshell-D4",
@@ -8734,7 +8741,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "shotgunshell-O5",
@@ -8745,8 +8752,8 @@
       "claim": "European shotgun notation combines gauge and chamber length, e.g. 12/70; 70 mm corresponds to about 2¾ in.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
-      "status": "pending_claim_level_review",
-      "evidence": null,
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance.",
       "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
@@ -8831,7 +8838,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "stecher-R2",
@@ -8843,7 +8850,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "stecher-D3",
@@ -8854,8 +8861,9 @@
       "claim": "Stecher (set trigger) means a set trigger: a trigger system that is set before firing to reduce the pressure needed for the shot.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
+      "status": "checked_against_deck_text",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text.",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "stecher-D4",
@@ -8867,7 +8875,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "stecher-O5",
@@ -8878,8 +8886,8 @@
       "claim": "Rückstecher/Französischer Stecher (French double-set trigger): pull the rear trigger to set the front trigger. Deutscher Stecher (German single-set trigger): push the trigger forward to set it.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null,
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance.",
       "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
@@ -9012,7 +9020,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "ammotypes-R2",
@@ -9024,7 +9032,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "ammotypes-D3",
@@ -9035,8 +9043,9 @@
       "claim": "Rimfire ignition occurs at the case rim; centerfire uses a primer in the center of the case Kopf (head).",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
-      "status": "pending_claim_level_review",
-      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
+      "status": "checked_against_deck_text",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text.",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "ammotypes-D4",
@@ -9048,7 +9057,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "ammotypes-O5",
@@ -9059,8 +9068,8 @@
       "claim": "Rimmed rifle cartridges use an “R” in the designation (for example 7x65R) and are well suited to break-action extraction.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
-      "status": "pending_claim_level_review",
-      "evidence": null,
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview and 2026 Weapons Ammo. This confirms classroom presentation, not currently effective law or firearm safety compliance.",
       "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
@@ -9133,7 +9142,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "scopebasics-R2",
@@ -9145,7 +9154,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "scopebasics-D3",
@@ -9157,7 +9166,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "scopebasics-D4",
@@ -9168,8 +9177,9 @@
       "claim": "Objective diameter ÷ magnification gives the exit-pupil concept used in the slide.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review",
-      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
+      "status": "checked_against_deck_text",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text.",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "scopebasics-D5",
@@ -9181,7 +9191,7 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
       "status": "checked_against_deck_text",
-      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview. This confirms classroom presentation, not currently effective law or firearm safety compliance."
     },
     {
       "id": "scopebasics-O6",
@@ -9192,8 +9202,8 @@
       "claim": "The scope lesson compares fixed and variable magnification and uses objective diameter ÷ magnification as the exit-pupil idea.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review",
-      "evidence": null,
+      "status": "checked_against_deck_text",
+      "evidence": "Text checked 2026-10-13 against 2019-cover Weapons Overview. This confirms classroom presentation, not currently effective law or firearm safety compliance.",
       "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {

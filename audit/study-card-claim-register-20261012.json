@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 247,
-  "pendingBlockCount": 569,
+  "verifiedBlockCount": 311,
+  "pendingBlockCount": 505,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -5973,8 +5973,8 @@
       "claim": "Point game; versatile field work",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-R2",
@@ -5982,11 +5982,11 @@
       "title": "Six Hunting-Dog Groups",
       "section": "Details",
       "label": "Schweißhunde (blood-tracking hounds)",
-      "claim": "Track wounded cloven-hoofed game",
+      "claim": "Track wounded game using Schweiß (blood sign)",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-R3",
@@ -5997,8 +5997,8 @@
       "claim": "Work underground / Baujagd (den hunting)",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-R4",
@@ -6009,8 +6009,8 @@
       "claim": "Flush dense cover",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-R5",
@@ -6018,11 +6018,11 @@
       "title": "Six Hunting-Dog Groups",
       "section": "Details",
       "label": "Bracken (scent hounds)",
-      "claim": "Pursue scent and give voice",
+      "claim": "Run and drive game quickly",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-R6",
@@ -6033,8 +6033,8 @@
       "claim": "Retrieve shot game",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-D7",
@@ -6045,7 +6045,8 @@
       "claim": "Vorstehhunde (pointing dogs): Deutsch Kurz-/Draht-/Lang-/Stichelhaar, Griffon, Vizsla, Münsterländer, Weimaraner, Pudelpointer, Brittany.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-D8",
@@ -6056,7 +6057,8 @@
       "claim": "Erdhunde (earth/den dogs): Dackel/Teckel and terriers. Stöberhunde (flushing dogs): Springer/Cocker Spaniel and Wachtelhund.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-D9",
@@ -6067,7 +6069,8 @@
       "claim": "Bracken (scent hounds): Beagle, Deutsche Bracke, Dachsbracke, Brandlbracke. Schweißhunde (blood-tracking hounds): Hannoverian and Bavarian Mountain Scent Hound.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-D10",
@@ -6078,7 +6081,8 @@
       "claim": "Apportierhunde (retrievers): Labrador and Golden Retriever.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "doggroups-O11",
@@ -6089,8 +6093,8 @@
       "claim": "Pointers are useful for nearly all methods except Bauarbeit (den work). The class says Bracken (scent hounds) are used only in Reviere over 1,000 ha.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogparts-R1",
@@ -6101,8 +6105,8 @@
       "claim": "Tail",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogparts-R2",
@@ -6113,8 +6117,8 @@
       "claim": "Hair hanging from tail",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogparts-R3",
@@ -6125,8 +6129,8 @@
       "claim": "Drooping ears",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogparts-R4",
@@ -6137,8 +6141,8 @@
       "claim": "Foot / paw",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogparts-R5",
@@ -6149,8 +6153,8 @@
       "claim": "Dog coat",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogparts-O6",
@@ -6161,8 +6165,8 @@
       "claim": "These five dog-part terms are explicitly marked as testable.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "4–5",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "kennel-R1",
@@ -6173,8 +6177,8 @@
       "claim": "6 m²",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "kennel-R2",
@@ -6185,8 +6189,8 @@
       "claim": "8 m²",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "kennel-R3",
@@ -6197,8 +6201,8 @@
       "claim": "10 m²",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "kennel-R4",
@@ -6209,8 +6213,8 @@
       "claim": "+3 m²",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "kennel-D5",
@@ -6221,7 +6225,8 @@
       "claim": "At least one-third of the kennel must be covered; provide weather protection and a dog house.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "kennel-O6",
@@ -6232,8 +6237,8 @@
       "claim": "The size thresholds are based on dog height: under 50 cm = 6 m²; 50–65 cm = 8 m²; over 65 cm = 10 m² for the first dog.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dk-R1",
@@ -6244,8 +6249,8 @@
       "claim": "Vorstehhund / pointer",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dk-D2",
@@ -6256,7 +6261,8 @@
       "claim": "Deutsch Kurzhaar is a versatile Vorstehhund—pointing first, with retrieve/tracking capability.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–12",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dk-D3",
@@ -6267,7 +6273,8 @@
       "claim": "Locates and points game; may retrieve and can be trained for wounded-game tracking.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–12",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dk-O4",
@@ -6278,8 +6285,8 @@
       "claim": "The pointer lesson says climate, terrain and intended hunting matter when choosing an all-around Vorstehhund.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dl-R1",
@@ -6290,8 +6297,8 @@
       "claim": "Vorstehhund / pointer",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dl-D2",
@@ -6302,7 +6309,8 @@
       "claim": "Deutsch Langhaar = Vorstehhund: locate and point game.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dl-D3",
@@ -6313,7 +6321,8 @@
       "claim": "Deutsch Langhaar is one of the key Vorstehhund breeds.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dl-O4",
@@ -6324,8 +6333,8 @@
       "claim": "Vorstehhunde (pointing dogs) can point, retrieve on land/water and can be trained for wounded-game tracking.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dackel-R1",
@@ -6336,8 +6345,8 @@
       "claim": "Erdhund / earth dog",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dackel-R2",
@@ -6348,8 +6357,8 @@
       "claim": "Baujagd (den hunting) / den work",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dackel-D3",
@@ -6357,10 +6366,11 @@
       "title": "Dackel",
       "section": "Details",
       "label": null,
-      "claim": "Fuchs (fox) den? Dackel is one of the two key Erdhunde (earth/den dogs).",
+      "claim": "Dackel (dachshund) is a key Erdhund (earth/den dog) used for den hunting, including Fuchs (fox).",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dackel-D4",
@@ -6371,7 +6381,8 @@
       "claim": "Key breed for Fuchsbau (fox den) work; small and determined underground.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dackel-O5",
@@ -6382,8 +6393,8 @@
       "claim": "Erdhunde (earth/den dogs) are used to drive game from burrows and may be used on Kaninchen, Fuchs and Dachs.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "jagdterrier-R1",
@@ -6394,8 +6405,8 @@
       "claim": "Erdhund / earth dog",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "jagdterrier-R2",
@@ -6406,8 +6417,8 @@
       "claim": "Baujagd (den hunting) / den work",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "jagdterrier-D3",
@@ -6418,7 +6429,8 @@
       "claim": "The other key fox-den Erdhund is the Deutscher Jagdterrier.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "jagdterrier-D4",
@@ -6429,7 +6441,8 @@
       "claim": "Deutscher Jagdterrier and Dackel are key Erdhunde (earth/den dogs) for fox-den work.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "jagdterrier-O5",
@@ -6440,8 +6453,8 @@
       "claim": "Erdhunde (earth/den dogs) are small, tenacious den workers and are also used during drive hunts and some tracking work.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "hannover-R1",
@@ -6452,8 +6465,8 @@
       "claim": "Schweißhund (blood-tracking hound)",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "hannover-R2",
@@ -6464,8 +6477,8 @@
       "claim": "Nachsuche (wounded-game follow-up) / blood tracking",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "hannover-D3",
@@ -6476,7 +6489,8 @@
       "claim": "Blood trail specialist: Hannoverscher Schweißhund (Hanoverian Scent Hound).",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "hannover-D4",
@@ -6484,10 +6498,11 @@
       "title": "Hannoverscher Schweißhund",
       "section": "Details",
       "label": null,
-      "claim": "Specialist for wounded Schalenwild (cloven-hoofed game).",
+      "claim": "Specialist trained to follow Schweiß (blood sign) from wounded game.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "hannover-O5",
@@ -6498,8 +6513,8 @@
       "claim": "Schweißhunde (blood-tracking hounds) work on a special collar/harness and a long loose tracking line; the handler should let the dog work the trail.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "bavarian-R1",
@@ -6510,8 +6525,8 @@
       "claim": "Schweißhund (blood-tracking hound)",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "bavarian-R2",
@@ -6522,8 +6537,8 @@
       "claim": "Nachsuche (wounded-game follow-up) / blood tracking",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "bavarian-D3",
@@ -6534,7 +6549,8 @@
       "claim": "Blood trail specialist: Bayerischer Gebirgsschweißhund (Bavarian Mountain Scent Hound).",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "bavarian-O4",
@@ -6545,8 +6561,8 @@
       "claim": "Schweißhunde (blood-tracking hounds) work on a special collar/harness and a long loose tracking line; the handler should let the dog work the trail.",
       "courseSource": "GHC Hunting Dogs (Fall 2026).pptx.pdf",
       "sourcePages": "7, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "waidgerechtigkeit-R1",
@@ -9065,8 +9081,8 @@
       "claim": "Labrador Retriever",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "labrador-R2",
@@ -9077,8 +9093,8 @@
       "claim": "Good all-around hunting dog",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "labrador-D3",
@@ -9089,7 +9105,8 @@
       "claim": "Labrador Retriever is the expected example of a good all-around hunting dog.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "labrador-O4",
@@ -9100,8 +9117,8 @@
       "claim": "The course explicitly gives Labrador Retriever as the expected “good all-around dog” answer.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "22",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogdiseases-R1",
@@ -9112,8 +9129,8 @@
       "claim": "Rabies, Staupe (distemper), parvovirus, hepatitis, Aujeszky",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogdiseases-R2",
@@ -9124,8 +9141,8 @@
       "claim": "Leptospirosis",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogdiseases-R3",
@@ -9136,8 +9153,8 @@
       "claim": "Räude (mange)",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogdiseases-D4",
@@ -9148,7 +9165,8 @@
       "claim": "Füchse (foxes) and Fledermäuse (bats) are the primary rabies carriers highlighted in the dog lesson.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogdiseases-O5",
@@ -9159,8 +9177,8 @@
       "claim": "Vaccination emphasis: distemper, hepatitis, parvovirus, leptospirosis and rabies.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogcert-R1",
@@ -9171,8 +9189,8 @@
       "claim": "Dogs must be appropriately trained/certified",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "32",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogcert-R2",
@@ -9183,8 +9201,8 @@
       "claim": "Breed clubs control tests and conformation standards",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "32",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogcert-D3",
@@ -9195,7 +9213,8 @@
       "claim": "German hunting dogs are trained and certified for their work; dogs without the required qualification cannot be used at public hunting events.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "32",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogcert-D4",
@@ -9206,7 +9225,8 @@
       "claim": "Breed clubs set the certification standards and testing, while the handler develops the dog's inherited working traits.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "32",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "dogcert-O5",
@@ -9217,8 +9237,8 @@
       "claim": "Most hunting-dog work relies on inherited drives; training/testing develops and verifies those abilities.",
       "courseSource": "Hunting Dogs (202609).pdf",
       "sourcePages": "32",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Directly checked against relevant sections of class 'Hunting Dogs (202609).pdf' extracted text on 2026-10-13. This confirms class-slide wording, not that kennel, vaccination or hunting-dog laws are currently unchanged."
     },
     {
       "id": "birdanatomy-R1",
@@ -9669,6 +9689,11 @@
       "source": "Game - Predatory Birds (202609).pdf",
       "date": "2026-10-13",
       "details": "Detailed textual comparison of 20 raptor/corvid cards: 110 displayed fact blocks supported by source text, 12 withheld because source images or external claims require verification. Removed 2 non-slide instructor claims from study cards. Corrected peregrine 'may exceed 300 km/h' to original slide's 'up to 300 km/h'."
+    },
+    {
+      "source": "Hunting Dogs (202609).pdf",
+      "date": "2026-10-13",
+      "details": "Reviewed 64 dog-study fact blocks against direct PDF text; reworded 4 overly narrow, imprecise or nonsensical descriptions to align strictly with dog deck. Current legal and medical correctness is outside this source-fidelity check."
     }
   ]
 }

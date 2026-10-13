@@ -5,9 +5,9 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 508,
-  "pendingBlockCount": 308,
-  "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
+  "verifiedBlockCount": 572,
+  "pendingBlockCount": 244,
+  "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
       "id": "roe-R1",
@@ -868,11 +868,11 @@
       "title": "Damwild",
       "section": "Details",
       "label": "Class",
-      "claim": "Hochwild (high game) · introduced/non-native deer · cloven-hoofed · ruminant",
+      "claim": "Hochwild (high game) · non-native (Middle East/Mediterranean) · cloven-hoofed",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R2",
@@ -883,8 +883,8 @@
       "claim": "Damhirsch (fallow buck) · Tier (doe) · Kalb (calf) · Rudel (herd/group) · Brunft (rut)",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R3",
@@ -895,8 +895,8 @@
       "claim": "Late October–mid-November",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R4",
@@ -907,8 +907,8 @@
       "claim": "About 30–34 weeks",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R5",
@@ -919,8 +919,8 @@
       "claim": "Usually one calf in June; twins can occur",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R6",
@@ -931,8 +931,8 @@
       "claim": "32 adult teeth; no Grandeln (upper canine teeth)",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R7",
@@ -943,8 +943,8 @@
       "claim": "Adaptable: forest, shrubland and grassland/open feeding areas",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R8",
@@ -952,11 +952,11 @@
       "title": "Damwild",
       "section": "Details",
       "label": "Diet",
-      "claim": "Grasses, herbs, leaves, buds, shoots, mast and crops when available",
+      "claim": "Grass, herbs, leaves, nuts, berries, fungi, bark and fruit; the class notes possible tree damage",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R9",
@@ -967,8 +967,8 @@
       "claim": "Smaller than Rotwild (red deer); males larger/heavier than females",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R10",
@@ -979,8 +979,8 @@
       "claim": "Several color forms occur; spotted summer coat is common",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R11",
@@ -991,8 +991,8 @@
       "claim": "Male only; young males start with spikes; mature males develop broad Schaufeln/palmated antlers",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-R12",
@@ -1003,8 +1003,8 @@
       "claim": "Sexes often form separate groups outside the rut",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-O13",
@@ -1012,11 +1012,11 @@
       "title": "Damwild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Palmated antlers are the strongest male identification cue when comparing Damwild (fallow deer) with Sika.",
+      "claim": "The class distinguishes mature Damhirsche by their broad Schaufeln (palmated antlers); younger males first develop spikes.",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-O14",
@@ -1027,8 +1027,8 @@
       "claim": "Damwild generally has less dependence on wallowing/water than Rotwild or Schwarzwild in the class comparison.",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "fallow-O15",
@@ -1036,11 +1036,11 @@
       "title": "Damwild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Common hunting methods and trophy handling follow the general deer-management framework taught in class.",
+      "claim": "Class hunting methods: Ansitz (high-seat hunting), Pirsch (stalking during the rut) and Treibjagd (drive hunting). Trophies: Geweih (antlers) and Decke (hide).",
       "courseSource": "Damwild2.pptx.pdf",
       "sourcePages": "2–3, 5–7, 10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Damwild.pdf (Drive ID 1HYGuwUjiX-m4QQcJuZ-GLRd3lufW0fEs), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R1",
@@ -1048,11 +1048,11 @@
       "title": "Sikawild",
       "section": "Details",
       "label": "Class",
-      "claim": "Hochwild (high game) · non-native Asian deer · cloven-hoofed · ruminant",
+      "claim": "Hochwild (high game) · non-native deer from Asia · cloven-hoofed",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R2",
@@ -1063,8 +1063,8 @@
       "claim": "Sikahirsch (sika stag) · Tier/Kuh (hind) · Kalb (calf) · Rudel (herd/group) · Brunft (rut)",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R3",
@@ -1075,8 +1075,8 @@
       "claim": "Asia; introduced to Germany in the late 1800s",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R4",
@@ -1087,8 +1087,8 @@
       "claim": "October–November",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R5",
@@ -1099,8 +1099,8 @@
       "claim": "About 30–34 weeks",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R6",
@@ -1111,8 +1111,8 @@
       "claim": "Normally one calf in June; twins can occur",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R7",
@@ -1123,8 +1123,8 @@
       "claim": "34 adult teeth; has Grandeln (upper canine teeth)",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R8",
@@ -1135,8 +1135,8 @@
       "claim": "Dense forest, marsh/thick brush and nearby openings for grazing",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R9",
@@ -1147,8 +1147,8 @@
       "claim": "Grasses plus browse; uses forest and open feeding areas",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R10",
@@ -1156,11 +1156,11 @@
       "title": "Sikawild",
       "section": "Details",
       "label": "Size",
-      "claim": "Intermediate between roe/fallow and red deer",
+      "claim": "Between Damwild (fallow deer) and Rotwild (red deer) in body size",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R11",
@@ -1171,8 +1171,8 @@
       "claim": "Summer reddish-brown with white spots and dark dorsal line; winter dark chocolate/brown",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R12",
@@ -1183,8 +1183,8 @@
       "claim": "Males may show a mane; antlers usually remain relatively simple and can reach about 10 points in the course examples",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R13",
@@ -1192,11 +1192,11 @@
       "title": "Sikawild",
       "section": "Details",
       "label": "Antler cycle",
-      "claim": "Yearling spikes; velvet growth mainly spring/summer; antlers harden before autumn rut",
+      "claim": "Yearlings develop spikes; velvet (Bast) mainly May–August; older males shed first",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-R14",
@@ -1204,11 +1204,11 @@
       "title": "Sikawild",
       "section": "Details",
       "label": "Social / sign",
-      "claim": "Herd-forming; males use wallows during rut",
+      "claim": "Herds especially in winter; uses Suhle (wallows) like red deer and wild boar",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-O15",
@@ -1216,11 +1216,11 @@
       "title": "Sikawild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Sika can be confused with Damwild (fallow deer); use body size, coat/rump pattern and antler form together.",
+      "claim": "Identification in the class: white rump with black border; summer white spots, dark dorsal line and relatively simple stag antlers.",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-O16",
@@ -1231,8 +1231,8 @@
       "claim": "Adult dentition is reached at roughly 24–26 months in the class material.",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "sika-O17",
@@ -1240,11 +1240,11 @@
       "title": "Sikawild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Hunting and trophy handling follow the general deer framework taught in the course.",
+      "claim": "Class hunting methods: Ansitz (high seat), Pirsch (stalking), Lockjagd (calling) and Treibjagd (drive hunt). Trophies include Geweih (antlers), Grandeln (upper canine teeth), Hirschbart (mane-hair brush) and Decke (hide).",
       "courseSource": "Sikawild 2025.pdf",
       "sourcePages": "2–4, 6–9, 13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Sikawild (2025).pdf (Drive ID 1HLO4PeaqfMHJOB9pZDwprt2AObTNRtIK), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R1",
@@ -1255,8 +1255,8 @@
       "claim": "Hochwild (high game) · native · cloven-hoofed · ruminant",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R2",
@@ -1267,8 +1267,8 @@
       "claim": "Gamsbock (chamois buck) · Geiß (doe) · Kitz (young) · Rudel (herd/group) · Brunft (rut)",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R3",
@@ -1279,8 +1279,8 @@
       "claim": "November",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R4",
@@ -1291,8 +1291,8 @@
       "claim": "About 20–21 weeks",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R5",
@@ -1303,8 +1303,8 @@
       "claim": "Usually one Kitz (young) in May; twins can occur",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R6",
@@ -1315,8 +1315,8 @@
       "claim": "32 adult teeth",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R7",
@@ -1327,8 +1327,8 @@
       "claim": "Steep alpine/rocky terrain, commonly near or above tree line",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R8",
@@ -1336,11 +1336,11 @@
       "title": "Gamswild",
       "section": "Details",
       "label": "Diet",
-      "claim": "Grasses, herbs, leaves, buds and woody browse",
+      "claim": "Grass, leaves from trees and shrubs, buds, shoots and fungi",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R9",
@@ -1351,8 +1351,8 @@
       "claim": "Roughly 28–31 in / 71–79 cm at shoulder in the class examples",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R10",
@@ -1363,8 +1363,8 @@
       "claim": "Both sexes carry permanent Krucken (chamois horns); they grow throughout life and are never shed",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R11",
@@ -1375,8 +1375,8 @@
       "claim": "Annual growth rings help estimate age; male horns usually curve more strongly",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R12",
@@ -1384,11 +1384,11 @@
       "title": "Gamswild",
       "section": "Details",
       "label": "Senses",
-      "claim": "Strong smell/hearing and excellent mountain awareness",
+      "claim": "Very good eyesight; good smell; hearing described as OK in the class",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R13",
@@ -1399,8 +1399,8 @@
       "claim": "Females and young form herds; adult males are more solitary outside rut",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-R14",
@@ -1411,8 +1411,8 @@
       "claim": "Sharp whistle is a characteristic alarm sound",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-O15",
@@ -1423,8 +1423,8 @@
       "claim": "Important diseases discussed include chamois blindness and Räude (mange).",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-O16",
@@ -1432,11 +1432,11 @@
       "title": "Gamswild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Mountain hunting requires safe footing, suitable optics/equipment and careful recovery planning.",
+      "claim": "Mountain stalking equipment mentioned in the class includes a Bergstock (sturdy staff), well-broken-in boots with aggressive tread and a waterproof Schweißsack (game-carry pack).",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "chamois-O17",
@@ -1444,11 +1444,11 @@
       "title": "Gamswild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Trophy evaluation centers on the Krucken (chamois horns) and age/growth characteristics.",
+      "claim": "Trophies shown: Krucken (horns), Decke (hide) and Gamsbart (hair brush); permanent horn growth rings can help estimate age.",
       "courseSource": "Gamswild2c.pdf",
       "sourcePages": "2–8, 15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Gamswild.pdf (Drive ID 1shF50XQ8LEwJwfGmLdJBgXNfA3AA9QIq), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R1",
@@ -1456,11 +1456,11 @@
       "title": "Muffelwild",
       "section": "Details",
       "label": "Class",
-      "claim": "Hochwild (high game) · introduced/non-native Corsican sheep · cloven-hoofed · ruminant",
+      "claim": "Hochwild (high game) · non-native Corsican mouflon · cloven-hoofed",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R2",
@@ -1471,8 +1471,8 @@
       "claim": "Widder (ram) · Schaf (ewe) · Lamm (lamb) · Rudel (herd/group) · Brunft (rut)",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R3",
@@ -1483,8 +1483,8 @@
       "claim": "October–December",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R4",
@@ -1495,8 +1495,8 @@
       "claim": "About 22 weeks",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R5",
@@ -1507,8 +1507,8 @@
       "claim": "Born mainly March–June",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R6",
@@ -1519,8 +1519,8 @@
       "claim": "32 adult teeth",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R7",
@@ -1531,8 +1531,8 @@
       "claim": "Hilly/rocky woodland with open feeding areas; hard ground is important for hoof wear",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R8",
@@ -1543,8 +1543,8 @@
       "claim": "Mainly grasses plus leaves, buds, shoots, berries, nuts, roots, fungi and lichen",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R9",
@@ -1555,8 +1555,8 @@
       "claim": "About 28 in / 71 cm at shoulder and ~45 in / 114 cm long in the class example",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R10",
@@ -1564,11 +1564,11 @@
       "title": "Muffelwild",
       "section": "Details",
       "label": "Coat / ID",
-      "claim": "Males may show a white Sattelfleck (white saddle patch)",
+      "claim": "Sattelfleck (white saddle patch); the class explicitly says NOT to confuse it with Muffelfleck",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R11",
@@ -1579,8 +1579,8 @@
       "claim": "European males carry permanent spiral Schnecken (mouflon horn curls); horns are not shed",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-R12",
@@ -1591,8 +1591,8 @@
       "claim": "Herd-forming; mature males may separate outside rut",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-O13",
@@ -1603,8 +1603,8 @@
       "claim": "Muffelwild usually causes relatively little tree/crop damage in the class comparison.",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-O14",
@@ -1612,11 +1612,11 @@
       "title": "Muffelwild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Poor/soft habitat can lead to excessive hoof growth and hoof problems.",
+      "claim": "The class recommends dry, rocky habitat to help prevent hoof overgrowth and deterioration.",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "mouflon-O15",
@@ -1624,11 +1624,11 @@
       "title": "Muffelwild",
       "section": "Other Facts",
       "label": null,
-      "claim": "Trophy assessment centers on the Schnecken (mouflon horn curls), shape and growth.",
+      "claim": "Class horn assessment of Schnecken includes length, circumference at three locations, spread, color, rings and curvature.",
       "courseSource": "Mufflewild 2015.pdf",
       "sourcePages": "1–10, 16–18",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with complete extracted class PDF text from Game - Mufflewild (2015).pdf (Drive ID 1tXW1RQSNDj11XyL5BL_bBAx2xHpnPY5m), 2026-10-13. Evidence confirms slide wording, not independently current law or graphic-only details. Page-level inspection remains outstanding."
     },
     {
       "id": "hare-R1",

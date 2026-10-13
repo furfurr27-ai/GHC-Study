@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 446,
-  "pendingBlockCount": 370,
+  "verifiedBlockCount": 484,
+  "pendingBlockCount": 332,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -8579,7 +8579,8 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "coldweapons-R2",
@@ -8590,8 +8591,8 @@
       "claim": "Traditional boar spear",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "coldweapons-D3",
@@ -8602,7 +8603,8 @@
       "claim": "Hirschfänger (hunting sword) is the traditional hunting sword, historically used to finish wounded deer and now mainly ceremonial.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "coldweapons-D4",
@@ -8613,7 +8615,8 @@
       "claim": "Saufeder (boar spear) is the traditional boar spear, historically used at close range on Schwarzwild (wild boar).",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Confirmed by the separately checked GHC Game - Schwarzwild (202502).pdf boar-spear historical section as well as the 2019 hunting-tools slide."
     },
     {
       "id": "coldweapons-O5",
@@ -8624,8 +8627,8 @@
       "claim": "The overview explicitly flags Hirschfänger (hunting sword) and Saufeder (boar spear) as the two cold-weapon names to know.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotgunshell-R1",
@@ -8636,8 +8639,8 @@
       "claim": "Measured from the fired, expanded shell",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotgunshell-R2",
@@ -8648,8 +8651,8 @@
       "claim": "12 bore-sized lead balls equal one British pound",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotgunshell-D3",
@@ -8660,7 +8663,8 @@
       "claim": "Shotgun shell/chamber length is based on the fired, fully expanded case, not the unfired shell.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotgunshell-D4",
@@ -8671,7 +8675,8 @@
       "claim": "Gauge comes from the old lead-ball system: 12 gauge means 12 bore-sized lead balls equal one British pound.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotgunshell-O5",
@@ -8683,7 +8688,8 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "19, 45-46",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "gunmarkings-R1",
@@ -8694,8 +8700,8 @@
       "claim": "Authorized caliber/ammo, proof mark/date, manufacturer, serial number",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunmarkings-R2",
@@ -8706,8 +8712,8 @@
       "claim": "Device under 7.5 J muzzle energy",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunmarkings-D3",
@@ -8718,7 +8724,8 @@
       "claim": "Mandatory markings shown: authorized ammunition/caliber, proof mark/date, manufacturer and serial number.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunmarkings-D4",
@@ -8729,7 +8736,8 @@
       "claim": "Proof symbols shown include N = normal proof (+30%), V = magnum proof, PN = black-powder proof, and I/J-like mark = post-major-maintenance proof.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunmarkings-D5",
@@ -8740,7 +8748,8 @@
       "claim": "F mark = device under 7.5 J muzzle energy; PTB covers specified blank/signal/defensive firing devices.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunmarkings-O6",
@@ -8751,8 +8760,8 @@
       "claim": "The N proof mark is taught as the normal proof test at +30%; German guns must also show authorized ammunition/caliber, proof/date, maker and serial number.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "stecher-R1",
@@ -8763,8 +8772,8 @@
       "claim": "Set-trigger system",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "stecher-R2",
@@ -8775,8 +8784,8 @@
       "claim": "French and German",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "stecher-D3",
@@ -8787,7 +8796,8 @@
       "claim": "Stecher (set trigger) means a set trigger: a trigger system that is set before firing to reduce the pressure needed for the shot.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "stecher-D4",
@@ -8798,7 +8808,8 @@
       "claim": "French and German Stecher (set trigger) are different set-trigger arrangements.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "stecher-O5",
@@ -8810,7 +8821,8 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "31",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "gunstorage-R1",
@@ -8821,8 +8833,8 @@
       "claim": "0 or 1",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunstorage-R2",
@@ -8833,8 +8845,8 @@
       "claim": "Grandfathered under the course's stated pre-2017 condition",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunstorage-D3",
@@ -8842,10 +8854,11 @@
       "title": "German Firearm Storage",
       "section": "Details",
       "label": null,
-      "claim": "Current compliant firearm storage uses class 0 or class 1 safes.",
+      "claim": "The 2019 course slide specifies class 0 or class 1 safes for newly compliant firearm storage.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunstorage-D4",
@@ -8856,7 +8869,8 @@
       "claim": "Older A, B, and A/B safes may be grandfathered when they meet the pre-5 July 2017 condition stated in class.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "gunstorage-O5",
@@ -8864,11 +8878,11 @@
       "title": "German Firearm Storage",
       "section": "Other Facts",
       "label": null,
-      "claim": "Course slide dates the storage-law change to 5 July 2017 and says class 0/1 safes are current; older A/B safes may be grandfathered only under the stated pre-change condition.",
+      "claim": "The 2019 course slide dates the storage-law change to 5 July 2017; it says class 0/1 safes are required for new installations, while older A/B safes may be grandfathered under its pre-change condition.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "34",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "handgunquota-R1",
@@ -8879,8 +8893,8 @@
       "claim": "Up to 2 handguns",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "handgunquota-R2",
@@ -8891,8 +8905,8 @@
       "claim": "Not used to hunt game",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "handgunquota-D3",
@@ -8900,10 +8914,11 @@
       "title": "Hunter Handguns",
       "section": "Details",
       "label": null,
-      "claim": "Hunters may own up to two handguns for recognized hunting needs, but handguns are not used to hunt game in Germany.",
+      "claim": "The 2019 course teaches a two-handgun hunting allowance for recognized needs, while distinguishing these handguns from firearms used to hunt game.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "handgunquota-D4",
@@ -8914,7 +8929,8 @@
       "claim": "A truly safe firearm is completely unloaded and open.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "handgunquota-O5",
@@ -8925,8 +8941,8 @@
       "claim": "Trapping/small caliber and Fangschuss (finishing shot)/larger caliber as examples of recognized hunting needs.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "37",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "ammotypes-R1",
@@ -8937,8 +8953,8 @@
       "claim": "Rimfire and centerfire",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "ammotypes-R2",
@@ -8949,8 +8965,8 @@
       "claim": "Rimfire: manufacturer; centerfire: manufacturer + caliber",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "ammotypes-D3",
@@ -8961,7 +8977,8 @@
       "claim": "Rimfire ignition occurs at the case rim; centerfire uses a primer in the center of the case Kopf (head).",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "ammotypes-D4",
@@ -8972,7 +8989,8 @@
       "claim": "For the class examples, rimfire cases show the manufacturer, while centerfire cases show the manufacturer and caliber.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "ammotypes-O5",
@@ -8984,7 +9002,8 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "41-42",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "shotdistance-R1",
@@ -8995,8 +9014,8 @@
       "claim": "Shot size in mm x 100 m",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "50-51",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotdistance-R2",
@@ -9007,8 +9026,8 @@
       "claim": "Approximate danger distance",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "50-51",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotdistance-D3",
@@ -9019,7 +9038,8 @@
       "claim": "Approximate shotgun danger distance: shot diameter in millimeters × 100 meters.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "50-51",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotdistance-D4",
@@ -9030,7 +9050,8 @@
       "claim": "A muzzle brake increases overpressure around the muzzle.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "50-51",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "shotdistance-O5",
@@ -9041,8 +9062,8 @@
       "claim": "Rule of thumb: shot diameter in mm × 100 m = approximate danger distance. Muzzle brakes increase overpressure around the muzzle.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "50-51",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "scopebasics-R1",
@@ -9053,8 +9074,8 @@
       "claim": "8x56 = 8x magnification, 56 mm objective",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "scopebasics-R2",
@@ -9065,8 +9086,8 @@
       "claim": "Apparent point shift when the eye is off the optical axis",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "scopebasics-D3",
@@ -9077,7 +9098,8 @@
       "claim": "Fixed and variable magnification are compared; e.g. 8×56 = 8× magnification with 56 mm objective.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "scopebasics-D4",
@@ -9088,7 +9110,8 @@
       "claim": "Objective diameter ÷ magnification gives the exit-pupil concept used in the slide.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "scopebasics-D5",
@@ -9099,7 +9122,8 @@
       "claim": "Parallax is apparent target/reticle shift when viewing off the optical center or from a different angle.",
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Hunting Weaponry / Weapons - Overview (2020).pdf, which internally identifies as September 2019, extracted on 2026-10-13. Slide fidelity only, not current German weapons law."
     },
     {
       "id": "scopebasics-O6",
@@ -9111,7 +9135,8 @@
       "courseSource": "Weapons - Overview (2020).pdf",
       "sourcePages": "58, 60-61",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Wording depends on a diagram, a specific technical inference, or external source not explicitly provided by the extracted slide text."
     },
     {
       "id": "labrador-R1",
@@ -9748,6 +9773,11 @@
       "source": "Game - Schwarzwild (202502).pdf",
       "date": "2026-10-13",
       "details": "Compared 23 wild-boar card blocks against 2025 game-species deck: 22 matched after removing two nonslide additions (ruminant classification, assumed reason for wallowing); one state-law caution left not source-verifiable."
+    },
+    {
+      "source": "Weapons - Overview (2020).pdf",
+      "date": "2026-10-13",
+      "details": "The deck internally identifies as September 2019. Reviewed 47 weapon card blocks; 38 explicitly traceable to text or the independently retrieved boar course slide; 9 diagram/mechanism/technical-inference claims pending. Added historical date to safe-storage and hunter handgun wording."
     }
   ]
 }

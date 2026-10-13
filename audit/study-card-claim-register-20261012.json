@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 572,
-  "pendingBlockCount": 244,
+  "verifiedBlockCount": 602,
+  "pendingBlockCount": 214,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -1639,8 +1639,8 @@
       "claim": "Rammler (male hare) · Häsin (female hare) · Sasse (surface form/nest)",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-R2",
@@ -1651,8 +1651,8 @@
       "claim": "Monogastric herbivore; cecotrophy recycles nutrient-rich soft feces",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-R3",
@@ -1663,8 +1663,8 @@
       "claim": "Rammelzeit (mating season) roughly Jan–Aug; gestation about 42 days",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-R4",
@@ -1675,8 +1675,8 @@
       "claim": "Born above ground, furred and eyes open; mobile soon after birth",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-R5",
@@ -1687,8 +1687,8 @@
       "claim": "Larger than Wildkaninchen (wild rabbit); long black-tipped Löffel (ears) and long Hinterläufe (hind legs)",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-R6",
@@ -1696,11 +1696,11 @@
       "title": "Feldhase",
       "section": "Details",
       "label": "Habitat",
-      "claim": "Open fields/farmland with cover; rests in a Sasse (surface form/nest) rather than a burrow",
+      "claim": "Open fields; rests in a Sasse (above-ground form) instead of a burrow",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-R7",
@@ -1708,11 +1708,11 @@
       "title": "Feldhase",
       "section": "Details",
       "label": "Behavior",
-      "claim": "Mostly solitary; escapes by speed and abrupt direction changes; no hibernation",
+      "claim": "Usually solitary, not territorial; runs fast with sudden turns and does not hibernate",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-O8",
@@ -1723,8 +1723,8 @@
       "claim": "Traditional trophies: Hasenbart (hare whiskers), Blume (tail) and Balg (pelt).",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "hare-O9",
@@ -1735,8 +1735,8 @@
       "claim": "Diseases emphasized include coccidiosis, pseudotuberculosis, EBHS and tularemia/Hasenpest; do not consume obviously diseased game.",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "5–6",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R1",
@@ -1747,8 +1747,8 @@
       "claim": "Rammler (male rabbit) · Häsin (female rabbit)",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R2",
@@ -1759,8 +1759,8 @@
       "claim": "Monogastric herbivore; cecotrophy",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R3",
@@ -1771,8 +1771,8 @@
       "claim": "Rammelzeit (mating season) mainly Feb–Sep+; gestation about 28 days",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R4",
@@ -1783,8 +1783,8 @@
       "claim": "Born underground, blind and furless",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R5",
@@ -1795,8 +1795,8 @@
       "claim": "Smaller than Feldhase (hare), shorter ears/legs and a lower, scurrying run",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R6",
@@ -1807,8 +1807,8 @@
       "claim": "Colonial burrow/warren systems; social and does not hibernate",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-R7",
@@ -1816,11 +1816,11 @@
       "title": "Wildkaninchen",
       "section": "Details",
       "label": "Damage",
-      "claim": "Can cause heavy local vegetation/crop damage at high density",
+      "claim": "Can cause substantial crop and vegetation damage",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-O8",
@@ -1831,8 +1831,8 @@
       "claim": "Hunting methods shown include Frettchen (ferret), birds of prey, Dackel/Terriers, traps, shotgun and small-caliber rifle where legal.",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "rabbit-O9",
@@ -1843,8 +1843,8 @@
       "claim": "Diseases emphasized include coccidiosis, tularemia/Hasenpest, rabbit hemorrhagic disease (RHD/Chinaseuche) and Myxomatose (myxomatosis).",
       "courseSource": "Feldhasen (hares) & Kaninchen (rabbits) (vSRS APR 2022)edCBT.pdf",
       "sourcePages": "16–17",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Hares & Rabbits (202204).pdf (12HLCG-Xh-JWgvdIv_21_n1DyJ-0dBn-Z) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "marmot-R1",
@@ -1987,8 +1987,8 @@
       "claim": "Niederwild (small/low game) · Raubwild (predatory game) · native",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R2",
@@ -1996,11 +1996,11 @@
       "title": "Fuchs",
       "section": "Details",
       "label": "Terms",
-      "claim": "Rüde (male fox) · Fähe (female fox) · Welpe (pup) · Fuchsbau (fox den) · Ranz/Rollzeit (mating season)",
+      "claim": "Rotfuchskitz (fox young) · Fuchsbau (fox den) · Ranzzeit/Rollzeit (mating season)",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R3",
@@ -2011,8 +2011,8 @@
       "claim": "Ranz/Rollzeit (mating season) mainly winter; gestation about 51 days",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R4",
@@ -2023,8 +2023,8 @@
       "claim": "Usually 4–7 pups, commonly born March–April",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R5",
@@ -2035,8 +2035,8 @@
       "claim": "Very adaptable: field, forest, villages and cities; den may have several entrances and can be shared with badger",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R6",
@@ -2047,8 +2047,8 @@
       "claim": "Omnivorous but mostly animal food; mice/rodents are major prey",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R7",
@@ -2056,11 +2056,11 @@
       "title": "Fuchs",
       "section": "Details",
       "label": "Senses",
-      "claim": "Strong smell and hearing; highly adaptable nocturnal/crepuscular hunter",
+      "claim": "Very good smell and hearing; eyesight detects movement well",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-R8",
@@ -2071,8 +2071,8 @@
       "claim": "Pair/family structure during rearing; male helps feed/support pups",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-O9",
@@ -2083,8 +2083,8 @@
       "claim": "Foxes are an important predator-management species for Niederwild (small/low game) conservation.",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-O10",
@@ -2092,11 +2092,11 @@
       "title": "Fuchs",
       "section": "Other Facts",
       "label": null,
-      "claim": "Disease associations emphasized: Tollwut (rabies) and Kleiner Fuchsbandwurm (fox tapeworm).",
+      "claim": "Diseases noted in the slide: Tollwut (rabies), Fuchsbandwurm (fox tapeworm), mange and trichinosis.",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-O11",
@@ -2104,11 +2104,11 @@
       "title": "Fuchs",
       "section": "Other Facts",
       "label": null,
-      "claim": "Course hunting methods include Ansitz (stand hunting), calling, den/earthdog work and other locally legal predator-control methods.",
+      "claim": "Course hunting methods: Ansitz (stand hunting), Treibjagd (drive hunting), Lockjagd (calling), Baujagd (den hunting with Erdhunde) and Pirsch (stalking).",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "fox-O12",
@@ -2116,11 +2116,11 @@
       "title": "Fuchs",
       "section": "Other Facts",
       "label": null,
-      "claim": "Trophies/uses can include Balg (pelt) and traditional preparations.",
+      "claim": "Class trophies: Fuchspelz/Balg (fur or pelt) and canine teeth, sometimes used for jewelry.",
       "courseSource": "Fuchs (fox)_Fuchs.pdf",
       "sourcePages": "2–3, 5, 8–12",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct review of Game - Fox.pdf (12VztN1EB-17T0HdXcdCW6IUrds9doXcY) extracted original class-slide text, 2026-10-13. Course-fidelity only; original page/figure verification remains outstanding."
     },
     {
       "id": "wolf-R1",

@@ -70,6 +70,9 @@ wait_for_rendered_app() {
   for attempt in $(seq 1 16); do
     dismiss_launcher_dialog "$stage"
     adb exec-out screencap -p > "$output"
+    # A launcher error may overlay a normal-size page after the initial check.
+    # Rechecking the dialog here avoids accepting that screenshot as app UI.
+    dismiss_launcher_dialog "${stage}-after-screenshot"
     bytes="$(wc -c < "$output")"
     # A blank Android emulator frame is about 16 kB; the fully rendered GHC
     # Quiz/Glossary screens are much larger. This avoids tapping during the
@@ -102,8 +105,27 @@ assert_ghc_foreground() {
 adb shell pidof org.ghcstudy.v141
 wait_for_rendered_app home emulator-evidence/quiz-home.png
 assert_ghc_foreground home
-adb shell uiautomator dump /sdcard/ghc-quiz.xml >/dev/null
-adb pull /sdcard/ghc-quiz.xml emulator-evidence/quiz-home.xml >/dev/null
+# Pixel Launcher ANRs can appear between the initial render and a second
+# UIAutomator call. Never parse a system dialog as an application's UI.
+for attempt in $(seq 1 8); do
+  dismiss_launcher_dialog "before-quiz-accessibility-$attempt"
+  adb shell uiautomator dump /sdcard/ghc-quiz.xml >/dev/null
+  adb pull /sdcard/ghc-quiz.xml emulator-evidence/quiz-home.xml >/dev/null
+  if grep -q "Pixel Launcher isn't responding" emulator-evidence/quiz-home.xml; then
+    echo "Launcher dialog reappeared during quiz accessibility capture ($attempt)"
+    sleep 2
+    continue
+  fi
+  if grep -q 'text="Glossary"' emulator-evidence/quiz-home.xml; then
+    break
+  fi
+  echo "Glossary anchor not visible in quiz accessibility tree ($attempt)"
+  sleep 2
+done
+if ! grep -q 'text="Glossary"' emulator-evidence/quiz-home.xml; then
+  echo "Glossary anchor missing after launcher-dialog recovery attempts" >&2
+  exit 1
+fi
 python3 - <<'PY'
 from pathlib import Path
 s=Path("emulator-evidence/quiz-home.xml").read_text(errors="replace")
@@ -145,8 +167,21 @@ if cmp -s emulator-evidence/quiz-home.png emulator-evidence/glossary.png; then
   wait_for_rendered_app glossary-retry emulator-evidence/glossary.png
 fi
 assert_ghc_foreground glossary
-adb shell uiautomator dump /sdcard/ghc-glossary.xml >/dev/null
-adb pull /sdcard/ghc-glossary.xml emulator-evidence/glossary.xml >/dev/null
+for attempt in $(seq 1 8); do
+  dismiss_launcher_dialog "before-glossary-accessibility-$attempt"
+  adb shell uiautomator dump /sdcard/ghc-glossary.xml >/dev/null
+  adb pull /sdcard/ghc-glossary.xml emulator-evidence/glossary.xml >/dev/null
+  if grep -q "Pixel Launcher isn't responding" emulator-evidence/glossary.xml; then
+    echo "Launcher dialog reappeared during glossary accessibility capture ($attempt)"
+    sleep 2
+    continue
+  fi
+  if grep -Eq 'German hunting terminology|Jägersprache glossary|Search terminology' emulator-evidence/glossary.xml; then
+    break
+  fi
+  echo "Glossary content not visible in accessibility tree ($attempt)"
+  sleep 2
+done
 python3 - <<'PY'
 from pathlib import Path
 s=Path("emulator-evidence/glossary.xml").read_text(errors="replace")

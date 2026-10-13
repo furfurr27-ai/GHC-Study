@@ -64,7 +64,7 @@ This document replaces outdated numeric handoffs. Values are derived from `audit
 
 ## Jägersprache glossary source status
 
-The searchable offline glossary contains **162 terms**, with **109 defined and 53 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 30 further class-PDF-grounded terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
+The searchable offline glossary contains **162 terms**, with **118 defined and 44 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 39 further class-PDF-grounded terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
 
 ## Remaining engineering and factual gates
 

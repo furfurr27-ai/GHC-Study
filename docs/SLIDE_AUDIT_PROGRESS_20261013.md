@@ -64,7 +64,7 @@ This document replaces outdated numeric handoffs. Values are derived from `audit
 
 ## Jägersprache glossary source status
 
-The searchable offline glossary contains **162 terms**, with **118 defined and 44 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 39 further class-PDF-grounded terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
+The searchable offline glossary contains **162 terms**, with **127 defined and 35 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 48 additional source-context-supported terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
 
 ## Remaining engineering and factual gates
 
@@ -75,3 +75,7 @@ The searchable offline glossary contains **162 terms**, with **118 defined and 4
 5. Verify current hunting and weapons law separately from the class slide statements.
 
 **Important:** Three legacy issue categories must not be conflated: source-text fidelity; source illustration fidelity; current legal accuracy.
+
+### Glossary continuation (2026-10-13)
+
+Nine further terms mapped from the worksheet to class-deck evidence (Brucellose, Schweinepest, Fuchsbandwurm, Kleiner Münsterländer, Hahn in Ruh, Untere Jagdbehörde, Jagdschein, Wiederkäuer, Frettieren). Now **127 defined / 35 pending**. Contextual rather than verbatim slide-word confirmations are specifically identified in `glossary-data.js` and `docs/GLOSSARY_DEFINITIONS_BATCH_20261013.md`. The original 77 word origins were not independently reviewed.

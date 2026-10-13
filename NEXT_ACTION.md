@@ -5,7 +5,7 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Build and app invariants
 
 - v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
-- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (109 with meanings / 53 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (118 with meanings / 44 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
 - Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
 ## Source research completed and remaining

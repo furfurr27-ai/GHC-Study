@@ -112,16 +112,35 @@ if not any(x in s for x in ("Quiz Mode","Study Mode","GHC Study")):
     print("WARNING: WebView text not exposed in UIAutomator snapshot; relying on visual screenshot and activity checks")
     print(s[:1400])
 PY
-# Use fourth navigation region (Glossary tab) and then system Back.
-SIZE="$(adb shell wm size | grep -oE '[0-9]+x[0-9]+' | tail -1)"
-W="${SIZE%x*}"; H="${SIZE#*x}"
-adb shell input tap "$((W * 7 / 8))" "$((H - 95))"
+# Locate the actual Glossary anchor from the accessibility tree. The fourth
+# bottom region partly overlaps the Reference tab and is not a reliable tap.
+GLOSSARY_TAP="$(python3 - <<'PY'
+import re
+import xml.etree.ElementTree as ET
+root=ET.parse("emulator-evidence/quiz-home.xml").getroot()
+for node in root.iter("node"):
+    if node.attrib.get("text")=="Glossary":
+        bounds=node.attrib.get("bounds","")
+        m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",bounds)
+        if m:
+            x1,y1,x2,y2=map(int,m.groups())
+            print((x1+x2)//2,(y1+y2)//2)
+            break
+PY
+)"
+if [[ -z "$GLOSSARY_TAP" ]]; then
+  echo "Glossary link not located in accessibility tree" >&2
+  exit 1
+fi
+read -r GLOSSARY_X GLOSSARY_Y <<< "$GLOSSARY_TAP"
+echo "Tapping actual Glossary link at $GLOSSARY_X,$GLOSSARY_Y"
+adb shell input tap "$GLOSSARY_X" "$GLOSSARY_Y"
 sleep 5
 wait_for_rendered_app glossary emulator-evidence/glossary.png
 if cmp -s emulator-evidence/quiz-home.png emulator-evidence/glossary.png; then
   echo "First Glossary tap did not navigate; retrying after WebView settles"
   sleep 4
-  adb shell input tap "$((W * 7 / 8))" "$((H - 95))"
+  adb shell input tap "$GLOSSARY_X" "$GLOSSARY_Y"
   sleep 5
   wait_for_rendered_app glossary-retry emulator-evidence/glossary.png
 fi
@@ -133,8 +152,7 @@ from pathlib import Path
 s=Path("emulator-evidence/glossary.xml").read_text(errors="replace")
 print("Glossary accessibility snapshot length:",len(s))
 if not any(x in s for x in ("German hunting terminology","Jägersprache glossary","Search terminology")):
-    print("WARNING: Glossary content not accessible through UIAutomator; screenshot diff required")
-    print(s[:1400])
+    raise SystemExit("Glossary page title not visible after tap; did not navigate to glossary.html")
 PY
 adb shell input keyevent KEYCODE_BACK
 sleep 4

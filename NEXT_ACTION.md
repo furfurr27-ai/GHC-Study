@@ -49,3 +49,9 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - Updated glossary JS DOM regression to assert all six definitions and the current filters. Earlier CI runs at the intermediate glossary-only commit expected 127/35 and therefore failed; evaluate the **latest tested commit** instead.
 - Added Android emulator failure artifact collection (logcat, WebView provider, activity/window focus state) and WebView page/JavaScript console diagnostics. Existing CI showed a truly blank WebView surface and unresolved system Back, *not* a verified app navigation pass. Check the latest CI run and inspect diagnostics if emulator remains blank.
 - Do **not** merge draft PR #3 into the old `main`, or claim a physical Galaxy S23 Ultra test has occurred.
+
+### Emulator follow-up — corrected target selection
+
+- Evidence from CI run `38413027220` demonstrated the previous gesture script tapped **Reference**, not **Glossary**, because its y-coordinate fell below the Glossary anchor. The resulting system Back exited to the launcher; this is still an unisolated Back failure, **not** evidence about glossary page history.
+- Corrected the test at commit `38e6e1b07b217bbdfde7cf61e0e1bf8d0a94b6b7` to tap the actual UIAutomator-located Glossary anchor and require the glossary heading, then exercise Android Back. Workflow `38414557677` is queued as of this handoff; verify its eventual conclusion and artifacts before interpreting the result. See `docs/ANDROID_EMULATOR_TEST_DIAGNOSIS_20261013.md`.
+- Still test Back from Reference -> prior tab and Study card -> category separately, then perform physical Samsung Galaxy S23 Ultra validation.

@@ -4,9 +4,9 @@
   "baseline": "audited recovery source index.html",
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
-  "claimBlockCount": 818,
-  "verifiedBlockCount": 137,
-  "pendingBlockCount": 681,
+  "claimBlockCount": 816,
+  "verifiedBlockCount": 247,
+  "pendingBlockCount": 569,
   "warning": "Text-only, automated numeric-string screening does not verify facts or original cited page numbers. Each block can contain multiple propositions. Fifty percent or more of some individual fact blocks may include separate propositions requiring secondary confirmation; text checked status is fidelity to course wording, not current legal accuracy.",
   "claims": [
     {
@@ -4506,8 +4506,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "buzzard-R2",
@@ -4518,8 +4518,8 @@
       "claim": "Large, slow flight; highly variable color",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "buzzard-R3",
@@ -4530,8 +4530,8 @@
       "claim": "~80% Mäuse (mice) in the class slide",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "buzzard-D4",
@@ -4542,7 +4542,8 @@
       "claim": "Mäusebussard (common buzzard) is the most frequently seen raptor; large-bodied with a slow flight.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "buzzard-D5",
@@ -4553,7 +4554,8 @@
       "claim": "Color varies from light through intermediate to dark; the slide says about 80% of its diet is mice.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "buzzard-D6",
@@ -4564,7 +4566,8 @@
       "claim": "Buzzards in this lesson attack prey on the ground.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "buzzard-O7",
@@ -4575,8 +4578,8 @@
       "claim": "Wespenbussard (honey buzzard) is treated as its own subgroup in the deck and specializes in bee/wasp larvae.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "6–7",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goshawk-R1",
@@ -4587,8 +4590,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goshawk-R2",
@@ -4599,8 +4602,8 @@
       "claim": "Adult red; juvenile yellow",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goshawk-D3",
@@ -4611,7 +4614,8 @@
       "claim": "Adult Habicht (goshawk) has red eyes; juveniles have yellow eyes and a spotted breast.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goshawk-O4",
@@ -4622,8 +4626,8 @@
       "claim": "Sperber (sparrowhawk) is compared with Habicht (goshawk); the male Sperber is called Sprinz, while most other male raptors are called Terzel.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "redkite-R1",
@@ -4634,8 +4638,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "redkite-R2",
@@ -4646,8 +4650,8 @@
       "claim": "Milane · Milane (kites)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "redkite-D3",
@@ -4658,7 +4662,8 @@
       "claim": "Rotmilan (red kite) is the Rotmilan (red kite); identify it as a Milan and use the distinctive forked-tail silhouette.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "redkite-D4",
@@ -4669,7 +4674,8 @@
       "claim": "Rotmilan (red kite) has a strongly forked tail; Schwarzmilan has a shallower fork.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "redkite-D5",
@@ -4680,7 +4686,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "redkite-D6",
@@ -4691,7 +4698,8 @@
       "claim": "Rotmilan (red kite) has a very pronounced forked / swallow-shaped tail; use that silhouette first for identification.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "redkite-O7",
@@ -4703,7 +4711,8 @@
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "peregrine-R1",
@@ -4714,8 +4723,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "peregrine-R2",
@@ -4726,8 +4735,8 @@
       "claim": "Falcon",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "peregrine-R3",
@@ -4738,8 +4747,8 @@
       "claim": "Course: up to ~300 km/h in a dive",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "peregrine-R4",
@@ -4750,8 +4759,8 @@
       "claim": "Crescent-shaped wings; attacks from above",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "peregrine-D5",
@@ -4762,7 +4771,8 @@
       "claim": "Falcons have crescent-shaped wings for speed/agility and attack from above.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "peregrine-D6",
@@ -4770,10 +4780,11 @@
       "title": "Wanderfalke",
       "section": "Details",
       "label": null,
-      "claim": "Wanderfalke (peregrine falcon) is presented as Germany’s largest/fastest falcon and may exceed 300 km/h in a hunting dive.",
+      "claim": "Wanderfalke (peregrine falcon) is presented as Germany’s largest/fastest falcon; the course gives dive speeds up to about 300 km/h.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "peregrine-O7",
@@ -4784,8 +4795,8 @@
       "claim": "Wanderfalke (peregrine falcon) has crescent-shaped wings and the deck gives dive speeds up to about 300 km/h.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "14",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "owls-R1",
@@ -4796,8 +4807,8 @@
       "claim": "Not huntable; protected under Nature Protection Law",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "owls-R2",
@@ -4808,8 +4819,8 @@
       "claim": "Protected by Nature Protection Law, not treated as game in the course",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "owls-R3",
@@ -4820,8 +4831,8 @@
       "claim": "Darkness / low light",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "owls-D4",
@@ -4832,7 +4843,8 @@
       "claim": "Eulen (owls) hunt in darkness/low light and are protected by nature-protection law rather than treated as huntable game.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–19",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "owls-D5",
@@ -4843,7 +4855,8 @@
       "claim": "The deck separates Käuze (small/true owls), Eulen (owls) and Uhu (eagle owl).",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–19",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "owls-O6",
@@ -4854,8 +4867,8 @@
       "claim": "Owls are covered by German Nature Protection Law rather than normal game handling: do not take dead owls into possession.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "smallowls-R1",
@@ -4866,8 +4879,8 @@
       "claim": "Not huntable; protected under Nature Protection Law",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "smallowls-R2",
@@ -4878,8 +4891,8 @@
       "claim": "Waldkauz (tawny owl), Steinkauz, Sperlingskauz, Raufußkauz",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "smallowls-D3",
@@ -4890,7 +4903,8 @@
       "claim": "Käuze (small/true owls) are protected Eulen (owls) and are not huntable.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "smallowls-D4",
@@ -4901,7 +4915,8 @@
       "claim": "Use the protected-owl handling rule for all of them.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "smallowls-O5",
@@ -4912,8 +4927,8 @@
       "claim": "Owls hunt mainly in darkness or low light. The course says dead owls may not be taken into possession.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "tawnyowl-R1",
@@ -4924,8 +4939,8 @@
       "claim": "Not huntable; protected under Nature Protection Law",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "tawnyowl-R2",
@@ -4936,8 +4951,8 @@
       "claim": "Käuze (small/true owls) / Eulen (owls)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "tawnyowl-D3",
@@ -4948,7 +4963,8 @@
       "claim": "Waldkauz (tawny owl) is the Waldkauz (tawny owl). It is protected and not huntable.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "tawnyowl-D4",
@@ -4959,7 +4975,8 @@
       "claim": "Waldkauz (tawny owl) is one of the small-owl examples shown in the current raptor deck.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "tawnyowl-D5",
@@ -4970,19 +4987,8 @@
       "claim": "If injured or found dead, use the protected-wildlife rule: do not kill or take possession; notify the appropriate authority/Pächter (hunting leaseholder)/vet/bird-protection contact.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "19",
-      "status": "pending_claim_level_review"
-    },
-    {
-      "id": "tawnyowl-O6",
-      "cardId": "tawnyowl",
-      "title": "Waldkauz",
-      "section": "Other Facts",
-      "label": null,
-      "claim": "Class emphasis: an eye-color cue was emphasized in class but was not stated on the checked Fall 2026 raptor slide; treat it as instructor emphasis, not slide text.",
-      "courseSource": "Predatory Birds (Fall 2026).pdf",
-      "sourcePages": "19",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "goldeneagle-R1",
@@ -4993,8 +4999,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goldeneagle-R2",
@@ -5005,8 +5011,8 @@
       "claim": "Adler / Adler (eagle)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goldeneagle-R3",
@@ -5017,8 +5023,8 @@
       "claim": "Called the most common and strongest Adler (eagle)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goldeneagle-D4",
@@ -5029,7 +5035,8 @@
       "claim": "Steinadler (golden eagle) is the Steinadler (golden eagle); the class calls it the strongest and most common of the Adler (eagles) shown.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "goldeneagle-D5",
@@ -5040,7 +5047,8 @@
       "claim": "Steinadler (golden eagle) is the Steinadler (golden eagle); distinguish it from the spotted-eagle species shown alongside it.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "goldeneagle-D6",
@@ -5051,19 +5059,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "8",
-      "status": "pending_claim_level_review"
-    },
-    {
-      "id": "goldeneagle-O7",
-      "cardId": "goldeneagle",
-      "title": "Steinadler",
-      "section": "Other Facts",
-      "label": null,
-      "claim": "Class emphasis: “Steinadler (golden eagle) is Germany’s national eagle” was emphasized in class but was not stated on the checked Fall 2026 raptor slides.",
-      "courseSource": "Predatory Birds (Fall 2026).pdf",
-      "sourcePages": "8",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "osprey-R1",
@@ -5074,8 +5071,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "osprey-R2",
@@ -5086,8 +5083,8 @@
       "claim": "Own sub-category in the course",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "osprey-R3",
@@ -5098,8 +5095,8 @@
       "claim": "Rotating Kralle (claw)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "osprey-D4",
@@ -5110,7 +5107,8 @@
       "claim": "Fischadler (osprey) is the Fischadler (osprey); a reversible outer toe helps it grip fish.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "osprey-D5",
@@ -5121,7 +5119,8 @@
       "claim": "Fischadler (osprey) is a fish specialist and is separated from the other Adler (eagle) groups.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "osprey-D6",
@@ -5132,7 +5131,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "osprey-O7",
@@ -5144,7 +5144,8 @@
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "seaeagle-R1",
@@ -5155,8 +5156,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "seaeagle-R2",
@@ -5167,8 +5168,8 @@
       "claim": "Largest Adler (eagle) in Europe",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "seaeagle-R3",
@@ -5179,8 +5180,8 @@
       "claim": "Coasts and large bodies of water",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "seaeagle-D4",
@@ -5191,7 +5192,8 @@
       "claim": "Seeadler (white-tailed eagle) is Europe’s largest Adler (eagle) and is associated with coasts and big water.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "seaeagle-D5",
@@ -5202,7 +5204,8 @@
       "claim": "Seeadler (white-tailed eagle) is the Seeadler (white-tailed eagle) and is treated as its own Adler (eagle) subgroup alongside Fischadler (osprey).",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "seaeagle-D6",
@@ -5213,7 +5216,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "seaeagle-O7",
@@ -5224,8 +5228,8 @@
       "claim": "Seeadler (white-tailed eagle) and Fischadler (osprey) are presented as separate raptor subgroups in the class deck.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "9",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-R1",
@@ -5236,8 +5240,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-R2",
@@ -5248,8 +5252,8 @@
       "claim": "Female nearly one-third larger than male",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-R3",
@@ -5260,8 +5264,8 @@
       "claim": "Sprinz (male sparrowhawk)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-D4",
@@ -5272,7 +5276,8 @@
       "claim": "Sperber (sparrowhawk): female much larger than male; the male is called Sprinz.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-D5",
@@ -5283,7 +5288,8 @@
       "claim": "A male Sperber (sparrowhawk) is called Sprinz; males of most other raptors are called Terzel.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-D6",
@@ -5294,7 +5300,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "sparrowhawk-O7",
@@ -5305,8 +5312,8 @@
       "claim": "Sprinz is the special term for the male Sperber (sparrowhawk); most other male raptors are called Terzel.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "10",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "blackkite-R1",
@@ -5317,8 +5324,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "blackkite-R2",
@@ -5329,8 +5336,8 @@
       "claim": "Milane / Milane (kites)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "blackkite-R3",
@@ -5341,8 +5348,8 @@
       "claim": "Shown directly with Rotmilan (red kite)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "blackkite-D4",
@@ -5353,7 +5360,8 @@
       "claim": "Schwarzer Milan (black kite) is the Schwarzmilan (black kite); identify it as the darker Milan beside the Rotmilan (red kite).",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "blackkite-D5",
@@ -5364,7 +5372,8 @@
       "claim": "Use the slide silhouette and side-by-side comparison with Rotmilan (red kite) for identification.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "pending_claim_level_review",
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "blackkite-D6",
@@ -5375,7 +5384,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "blackkite-O7",
@@ -5387,7 +5397,8 @@
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "11",
       "status": "pending_claim_level_review",
-      "evidence": null
+      "evidence": null,
+      "auditNote": "Source's visual illustrations, taxonomy inference, or protective-handling wording must be individually evaluated against actual slide image/legislation, not treated as verified from extracted text alone."
     },
     {
       "id": "harriers-R1",
@@ -5398,8 +5409,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "harriers-R2",
@@ -5410,8 +5421,8 @@
       "claim": "Similar to Mäusebussard (common buzzard)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "harriers-R3",
@@ -5422,8 +5433,8 @@
       "claim": "Sail overhead with wings in V-form",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "harriers-D4",
@@ -5434,7 +5445,8 @@
       "claim": "Weihen are Weihen (harriers): buzzard-sized and they quarter overhead with the wings held in a V.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "harriers-D5",
@@ -5445,7 +5457,8 @@
       "claim": "Course examples include Wiesenweihe (Montagu’s), Rohrweihe (marsh), Kornweihe (hen/northern) and Steppenweihe (pallid).",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "harriers-D6",
@@ -5456,7 +5469,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "harriers-O7",
@@ -5467,8 +5481,8 @@
       "claim": "Wiesen-, Rohr-, Korn- and Steppenweihe and shows their V-wing quartering flight.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "12–13",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-R1",
@@ -5479,8 +5493,8 @@
       "claim": "Course: raptors are generally considered game, but are not hunted",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-R2",
@@ -5491,8 +5505,8 @@
       "claim": "Small falcon",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-R3",
@@ -5503,8 +5517,8 @@
       "claim": "Hovers over fields while watching prey",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-D4",
@@ -5515,7 +5529,8 @@
       "claim": "Turmfalke (kestrel) is the Turmfalke (kestrel)—the small falcon that hovers over fields.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-D5",
@@ -5526,7 +5541,8 @@
       "claim": "Turmfalke (kestrel) is shown with Merlin (merlin); Merlin (merlin) is the smallest falcon in the comparison.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-D6",
@@ -5537,7 +5553,8 @@
       "claim": "Raptors are generally treated as game under hunting law, but they are not hunted.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-D7",
@@ -5548,7 +5565,8 @@
       "claim": "Turmfalke (kestrel) hovers over fields while looking for prey.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "kestrel-O8",
@@ -5559,8 +5577,8 @@
       "claim": "The course pairs Turmfalke (kestrel) with Merlin/Zwergfalke (merlin); the Merlin is the smallest falcon in that comparison.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "15",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-R1",
@@ -5571,8 +5589,8 @@
       "claim": "Not huntable; protected under Nature Protection Law",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-R2",
@@ -5583,8 +5601,8 @@
       "claim": "Eule (owl)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-R3",
@@ -5595,8 +5613,8 @@
       "claim": "Protected under Nature Protection Law",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-D4",
@@ -5607,7 +5625,8 @@
       "claim": "Uhu is the Uhu (eagle owl); it falls under the protected-owl rule, not normal game handling.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-D5",
@@ -5618,7 +5637,8 @@
       "claim": "Uhu is protected and not huntable; do not take possession of a dead Eule (owl), and route injured Eulen (owls) through the Pächter (hunting leaseholder), veterinarian or bird-protection help.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-D6",
@@ -5629,7 +5649,8 @@
       "claim": "Eulen (owls) are protected wildlife and are not huntable.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "eagleowl-O7",
@@ -5640,8 +5661,8 @@
       "claim": "Owls hunt mainly in darkness or low light. If an owl is injured, the course directs you to the Pächter (hunting leaseholder), veterinarian or bird-protection group rather than treating it as normal game.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "17–18, 21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "carrioncrow-R1",
@@ -5652,8 +5673,8 @@
       "claim": "Huntable game",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "carrioncrow-R2",
@@ -5664,8 +5685,8 @@
       "claim": "Highly intelligent, aggressive, omnivorous",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "carrioncrow-D3",
@@ -5676,7 +5697,8 @@
       "claim": "Rabenkrähe (carrion crow) is the Rabenkrähe (carrion crow); it is huntable, intelligent and omnivorous.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "carrioncrow-D4",
@@ -5687,7 +5709,8 @@
       "claim": "Eats birds, eggs, chicks, small mammals and other foods.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "carrioncrow-O5",
@@ -5698,8 +5721,8 @@
       "claim": "Rabenkrähe (carrion crow) and Saatkrähe (rook) are easy to confuse; adult rooks lose feathering around the base of the bill and commonly live in colonies.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "24",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "rook-R1",
@@ -5710,8 +5733,8 @@
       "claim": "Very similar to Rabenkrähe (carrion crow)",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "25",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "rook-R2",
@@ -5722,8 +5745,8 @@
       "claim": "Loses Schnabel (beak) Federn (feathers) as it matures",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "25",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "rook-D3",
@@ -5734,7 +5757,8 @@
       "claim": "Saatkrähe (rook) is the Saatkrähe (rook); adult Schnabel (beak) Feder (feather) loss helps separate it from the Rabenkrähe (carrion crow).",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "25",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "rook-D4",
@@ -5745,7 +5769,8 @@
       "claim": "Juvenile Saatkrähen (rooks) are especially easy to mistake for carrion Krähen (crows); Saatkrähen (rooks) live in colonies.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "25",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "rook-O5",
@@ -5756,8 +5781,8 @@
       "claim": "Adult Saatkrähen lose feathers around the beak as they mature and commonly live in colonies.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "25",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "raven-R1",
@@ -5768,8 +5793,8 @@
       "claim": "Largest; more than twice crow size in the slide",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "raven-R2",
@@ -5780,8 +5805,8 @@
       "claim": "Not huntable",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "raven-D3",
@@ -5792,7 +5817,8 @@
       "claim": "Kolkrabe (raven) is the big Kolkrabe (raven)—much larger than a crow, soaring, distinctive call, not huntable.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "raven-D4",
@@ -5803,7 +5829,8 @@
       "claim": "Can live to about 40 years; soars and has a distinctive call.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "raven-O5",
@@ -5814,8 +5841,8 @@
       "claim": "Kolkrabe (common raven) is widespread in Germany, soars in flight and is presented as more than twice the size of a crow in the course deck.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "26",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "magpie-R1",
@@ -5826,8 +5853,8 @@
       "claim": "Huntable game",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "magpie-R2",
@@ -5838,8 +5865,8 @@
       "claim": "Highly alert, loud and intelligent",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "magpie-D3",
@@ -5850,7 +5877,8 @@
       "claim": "Elster (magpie) is the Elster (magpie); it is huntable, loud, alert and omnivorous.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "magpie-D4",
@@ -5861,7 +5889,8 @@
       "claim": "Poor eyesight in low light; returns to sleeping trees; omnivorous.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "magpie-O5",
@@ -5872,8 +5901,8 @@
       "claim": "The class notes poor low-light eyesight and that Elster (magpie) returns to regular sleeping trees.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "28",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "jays-R1",
@@ -5884,8 +5913,8 @@
       "claim": "Distinctive call — “Forest Police”",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "29",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "jays-R2",
@@ -5896,8 +5925,8 @@
       "claim": "Not huntable in Hessen",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "29",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "jays-D3",
@@ -5908,7 +5937,8 @@
       "claim": "Häher are the Eichelhäher (jays)—the loud ‘Forest Police’; not huntable in Hessen in this class deck.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "29",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "jays-D4",
@@ -5919,7 +5949,8 @@
       "claim": "Eichelhäher (jay) are nest predators; the current class material treats them as not huntable in Hessen.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "29",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "jays-O5",
@@ -5930,8 +5961,8 @@
       "claim": "Eichelhäher (jay) are nest predators and the deck uses their loud call as the “Forest Police” memory cue.",
       "courseSource": "Predatory Birds (Fall 2026).pdf",
       "sourcePages": "29",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct line-to-card review against original GHC PDF 'Game - Predatory Birds (202609).pdf' readable text retrieved on 2026-10-13. Course fidelity only; imagery, page numbering and contemporary legal status not thereby certified."
     },
     {
       "id": "doggroups-R1",
@@ -9633,6 +9664,11 @@
       "source": "Game - Predators (202609).pdf",
       "date": "2026-10-13",
       "details": "Reviewed predator-deck section text and card statements. 91 additional fact blocks match course source; 6 ambiguous expansions left pending; unsupported wolf 'kill for sport' item removed from app and register. An explicit matched source statement is not a current legal ruling, and text-only check does not validate images or page numbers."
+    },
+    {
+      "source": "Game - Predatory Birds (202609).pdf",
+      "date": "2026-10-13",
+      "details": "Detailed textual comparison of 20 raptor/corvid cards: 110 displayed fact blocks supported by source text, 12 withheld because source images or external claims require verification. Removed 2 non-slide instructor claims from study cards. Corrected peregrine 'may exceed 300 km/h' to original slide's 'up to 300 km/h'."
     }
   ]
 }

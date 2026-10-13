@@ -5,8 +5,8 @@
   "primaryDocumentsRetrieved": 38,
   "cardCount": 117,
   "claimBlockCount": 816,
-  "verifiedBlockCount": 647,
-  "pendingBlockCount": 169,
+  "verifiedBlockCount": 679,
+  "pendingBlockCount": 137,
   "warning": "Checked means directly compared with course-deck text only; not independently validated current law or image-only details. Original PDF slide-page mapping remains incomplete. A fact block may contain multiple propositions.",
   "claims": [
     {
@@ -7553,8 +7553,8 @@
       "claim": "Rabies · virus",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "diseasenames-R2",
@@ -7565,8 +7565,8 @@
       "claim": "Foot-and-mouth disease · virus · cloven-hoofed animals",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "diseasenames-R3",
@@ -7577,8 +7577,8 @@
       "claim": "Classical swine fever",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "diseasenames-R4",
@@ -7589,8 +7589,8 @@
       "claim": "ASF/ASP · pigs and wild boar",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "diseasenames-R5",
@@ -7601,8 +7601,8 @@
       "claim": "Myxomatosis · rabbits",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "diseasenames-R6",
@@ -7613,8 +7613,8 @@
       "claim": "Trichinosis · Trichinella parasite",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "diseasenames-O7",
@@ -7622,11 +7622,11 @@
       "title": "Disease Names",
       "section": "Other Facts",
       "label": null,
-      "claim": "For exam recall, pair the German name with the disease type/host cue rather than memorizing English alone.",
+      "claim": "The class distinguishes bacterial, viral and parasitic causes of disease and emphasizes recognizing zoonotic and reportable conditions.",
       "courseSource": "Wildkrankheiten1_Parasites.pdf; Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "Parasites p.24–26; Bacteria/Viruses disease list and ASF p.27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv) and Disease - Parasites.pdf (Drive ID 14PEhG73wKscCGv5tdJt-RlY5HIu2lzMp), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "kundigeperson-R1",
@@ -7813,8 +7813,8 @@
       "claim": "Afrikanische Schweinepest (ASP) · African swine fever (ASF)",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-R2",
@@ -7825,8 +7825,8 @@
       "claim": "Domestic pigs and Schwarzwild (wild boar)",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-R3",
@@ -7837,8 +7837,8 @@
       "claim": "Does not infect humans",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-R4",
@@ -7849,8 +7849,8 @@
       "claim": "Contaminated animal products, supplies, equipment and vehicles",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-D5",
@@ -7861,7 +7861,8 @@
       "claim": "Highly contagious.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-D6",
@@ -7872,7 +7873,8 @@
       "claim": "The class warns that discarded contaminated food can spread ASF and emphasizes sealed waste disposal.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-D7",
@@ -7883,7 +7885,8 @@
       "claim": "Major animal-health and economic impact even though it is not zoonotic.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "asf-O8",
@@ -7894,8 +7897,8 @@
       "claim": "Sealed disposal of leftover food because contaminated animal products can move ASF.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "27",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-R1",
@@ -7906,8 +7909,8 @@
       "claim": "Tollwut (rabies) · Rabies",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-R2",
@@ -7918,8 +7921,8 @@
       "claim": "Virus",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-R3",
@@ -7930,8 +7933,8 @@
       "claim": "Saliva into an open wound / bite",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-R4",
@@ -7939,11 +7942,11 @@
       "title": "Tollwut",
       "section": "Details",
       "label": "Key vector",
-      "claim": "Fuchs (fox) is the exam association",
+      "claim": "Fuchs (fox) is a significant rabies vector highlighted in the class",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-D5",
@@ -7954,7 +7957,8 @@
       "claim": "Tollwut (rabies): virus, saliva/bite, Fuchs (fox) association, neurologic signs, zoonotic—report it.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-D6",
@@ -7965,7 +7969,8 @@
       "claim": "All warm-blooded animals, including humans, can be affected.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-D7",
@@ -7976,7 +7981,8 @@
       "claim": "Neurologic signs may be furious or dumb forms, paralysis and death.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-D8",
@@ -7987,7 +7993,8 @@
       "claim": "Report and seek medical attention; do not consume suspect meat.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "rabies-O9",
@@ -7998,8 +8005,8 @@
       "claim": "Prevention includes vaccination and avoiding abnormal, dying or dead animals; suspected cases are reported and bite exposure needs medical attention.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "21",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-R1",
@@ -8007,11 +8014,11 @@
       "title": "Maul- und Klauenseuche",
       "section": "Details",
       "label": "Names",
-      "claim": "Maul- und Klauenseuche (foot-and-mouth disease) · Maul- und Klauenseuche (foot-and-mouth disease)",
+      "claim": "Maul- und Klauenseuche (foot-and-mouth disease)",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-R2",
@@ -8022,8 +8029,8 @@
       "claim": "Virus",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-R3",
@@ -8034,8 +8041,8 @@
       "claim": "Cloven-hoofed animals",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-R4",
@@ -8046,8 +8053,8 @@
       "claim": "Fever, lameness, vesicles on mouth/teats/feet",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-D5",
@@ -8058,7 +8065,8 @@
       "claim": "FMD = cloven-hoofed animals + fever/lameness + vesicles. Report it.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-D6",
@@ -8069,7 +8077,8 @@
       "claim": "One of the most contagious diseases highlighted in class.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-D7",
@@ -8080,7 +8089,8 @@
       "claim": "Report to German authorities.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review"
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "footmouth-O8",
@@ -8091,8 +8101,8 @@
       "claim": "The deck lists aerosol, saliva, nasal discharge, blood, urine, feces, semen and infected animal products as transmission routes.",
       "courseSource": "Wildkrankheiten2_BacteriaViruses.pdf",
       "sourcePages": "20",
-      "status": "pending_claim_level_review",
-      "evidence": null
+      "status": "checked_against_deck_text",
+      "evidence": "Direct comparison with Disease - Bacteria Viruses.pdf (Drive ID 1P2wpdl3BJ2-JcbHTDu_ya1hsVsSrNUQv), extracted GHC slides 2026-10-13. Course text fidelity only; not independent health/legal validation."
     },
     {
       "id": "parasites-R1",

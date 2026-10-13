@@ -45,9 +45,36 @@ PY
   echo "External launcher ANR was not cleared at $stage" >&2
   return 1
 }
+wait_for_rendered_app() {
+  local stage="$1" output="$2" bytes=0
+  for attempt in $(seq 1 16); do
+    dismiss_launcher_dialog "$stage"
+    adb exec-out screencap -p > "$output"
+    bytes="$(wc -c < "$output")"
+    # A blank Android emulator frame is about 16 kB; the fully rendered GHC
+    # Quiz/Glossary screens are much larger. This avoids tapping during the
+    # system's white startup frame, which can send Back to the launcher.
+    if [ "$bytes" -gt 70000 ]; then
+      echo "Rendered screen at $stage after attempt $attempt ($bytes bytes)"
+      return 0
+    fi
+    echo "Waiting for Android WebView at $stage ($bytes byte blank frame, attempt $attempt)"
+    sleep 4
+  done
+  echo "No rendered application screen at $stage after startup wait" >&2
+  return 1
+}
+assert_ghc_foreground() {
+  local stage="$1" focused
+  focused="$(adb shell dumpsys window windows 2>/dev/null | grep -E 'mCurrentFocus|mFocusedApp' || true)"
+  if ! grep -q 'org.ghcstudy.v141' <<< "$focused"; then
+    echo "GHC is not foreground after $stage: $focused" >&2
+    return 1
+  fi
+}
 adb shell pidof org.ghcstudy.v141
-dismiss_launcher_dialog home
-adb exec-out screencap -p > emulator-evidence/quiz-home.png
+wait_for_rendered_app home emulator-evidence/quiz-home.png
+assert_ghc_foreground home
 adb shell uiautomator dump /sdcard/ghc-quiz.xml >/dev/null
 adb pull /sdcard/ghc-quiz.xml emulator-evidence/quiz-home.xml >/dev/null
 python3 - <<'PY'
@@ -63,8 +90,15 @@ SIZE="$(adb shell wm size | grep -oE '[0-9]+x[0-9]+' | tail -1)"
 W="${SIZE%x*}"; H="${SIZE#*x}"
 adb shell input tap "$((W * 7 / 8))" "$((H - 95))"
 sleep 5
-dismiss_launcher_dialog glossary
-adb exec-out screencap -p > emulator-evidence/glossary.png
+wait_for_rendered_app glossary emulator-evidence/glossary.png
+if cmp -s emulator-evidence/quiz-home.png emulator-evidence/glossary.png; then
+  echo "First Glossary tap did not navigate; retrying after WebView settles"
+  sleep 4
+  adb shell input tap "$((W * 7 / 8))" "$((H - 95))"
+  sleep 5
+  wait_for_rendered_app glossary-retry emulator-evidence/glossary.png
+fi
+assert_ghc_foreground glossary
 adb shell uiautomator dump /sdcard/ghc-glossary.xml >/dev/null
 adb pull /sdcard/ghc-glossary.xml emulator-evidence/glossary.xml >/dev/null
 python3 - <<'PY'
@@ -78,8 +112,8 @@ PY
 adb shell input keyevent KEYCODE_BACK
 sleep 4
 adb shell pidof org.ghcstudy.v141
-dismiss_launcher_dialog returned-after-back
-adb exec-out screencap -p > emulator-evidence/returned-after-back.png
+wait_for_rendered_app returned-after-back emulator-evidence/returned-after-back.png
+assert_ghc_foreground returned-after-back
 adb shell uiautomator dump /sdcard/ghc-return.xml >/dev/null
 adb pull /sdcard/ghc-return.xml emulator-evidence/returned.xml >/dev/null
 python3 - <<'PY'

@@ -52,13 +52,14 @@ click(w,'#closeModal');assert(w.document.querySelector('#modal').classList.conta
 assert.equal(a.errors.length,0,'base app script/runtime errors: '+a.errors.join(' | '));a.dom.window.close();
 const b=domFile('glossary.html');const g=b.dom.window;await loaded(g);
 assert.equal(g.document.querySelectorAll('article').length,162,'all glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length+g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,162,'every glossary term classified');
 assert(g.document.body.textContent.includes('Rehwild'));
 const search=g.document.querySelector('#search');search.value='Rehwild';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('article').length>=1,'search finds German term');
 const results=g.document.querySelectorAll('article');assert([...results].some(x=>x.textContent.includes('Roe deer')));
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
-const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,135,'defined filter');
-filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,27,'pending filter');
+const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,'defined filter');
+filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,'pending filter');
 filter.value='all';filter.dispatchEvent(new g.Event('change',{bubbles:true}));
 search.value='Affe';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Young marmot')),'historical Affe sense');

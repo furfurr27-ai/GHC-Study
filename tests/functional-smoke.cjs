@@ -57,8 +57,8 @@ const search=g.document.querySelector('#search');search.value='Rehwild';search.d
 assert(g.document.querySelectorAll('article').length>=1,'search finds German term');
 const results=g.document.querySelectorAll('article');assert([...results].some(x=>x.textContent.includes('Roe deer')));
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
-const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,133,'defined filter');
-filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,29,'pending filter');
+const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,135,'defined filter');
+filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,27,'pending filter');
 filter.value='all';filter.dispatchEvent(new g.Event('change',{bubbles:true}));
 search.value='Affe';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Young marmot')),'historical Affe sense');
@@ -73,6 +73,10 @@ for(const [term,meaning] of [['Brucellose','Brucellosis'],['Schweinepest','Class
 for(const [term,meaning] of [['Absehen','Reticle'],['Kugelfang','Backstop'],['Objektiv','Objective lens'],['Okular','Eyepiece'],['Streckeplatz','game is laid out'],['Visier','Sight']]){
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing new source-attributed glossary definition for '+term);
+}
+for(const [term,meaning] of [['Leberegel','Liver flukes'],['Jagende Hunde','Hounds']]){
+ search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
+ assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing direct bilingual course definition for '+term);
 }
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('.related a').length>0,'cross-links rendered');

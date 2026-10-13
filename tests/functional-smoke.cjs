@@ -57,8 +57,8 @@ const search=g.document.querySelector('#search');search.value='Rehwild';search.d
 assert(g.document.querySelectorAll('article').length>=1,'search finds German term');
 const results=g.document.querySelectorAll('article');assert([...results].some(x=>x.textContent.includes('Roe deer')));
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
-const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,127,'defined filter');
-filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,35,'pending filter');
+const filter=g.document.querySelector('#status');filter.value='defined';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,133,'defined filter');
+filter.value='pending';filter.dispatchEvent(new g.Event('change',{bubbles:true}));assert.equal(g.document.querySelectorAll('article').length,29,'pending filter');
 filter.value='all';filter.dispatchEvent(new g.Event('change',{bubbles:true}));
 search.value='Affe';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Young marmot')),'historical Affe sense');
@@ -69,6 +69,10 @@ assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.include
 for(const [term,meaning] of [['Brucellose','Brucellosis'],['Schweinepest','Classical swine fever'],['Fuchsbandwurm','Fox tapeworm'],['Kleiner Muensterlaender','Small Münsterländer'],['Hahn in Ruh','Cease-fire'],['Untere Jagdbehoerde','Lower (local) hunting authority'],['Jagdschein','Hunting license'],['Wiederkäuer','Ruminant'],['Frettieren','ferreting']]){
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing class-backed glossary definition for '+term);
+}
+for(const [term,meaning] of [['Absehen','Reticle'],['Kugelfang','Backstop'],['Objektiv','Objective lens'],['Okular','Eyepiece'],['Streckeplatz','game is laid out'],['Visier','Sight']]){
+ search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
+ assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing new source-attributed glossary definition for '+term);
 }
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('.related a').length>0,'cross-links rendered');

@@ -62,6 +62,10 @@ This document replaces outdated numeric handoffs. Values are derived from `audit
 | Wildkrankheiten3_KundigePerson&Practice.pdf | 6 | 0 |
 | Range - Revier (20260922).pdf | 5 | 0 |
 
+## Jägersprache glossary source status
+
+The searchable offline glossary contains **162 terms**, with **109 defined and 53 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 30 further class-PDF-grounded terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
+
 ## Remaining engineering and factual gates
 
 1. Build and regression on the **latest commit**, including source/claim-register parity, quiz and glossary, Android Back, launcher icon and media.

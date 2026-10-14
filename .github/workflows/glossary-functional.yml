@@ -103,6 +103,8 @@ jobs:
           python3 scripts/inject_vocabulary_etymology.py
       - name: Extract standalone photos from four historical course pages
         run: python3 scripts/crop_study_slide_images.py
+      - name: Remap original classroom protected-species photo
+        run: python3 scripts/overlay_protected_owl.py
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py

@@ -286,11 +286,17 @@ assert_visible_text "Schalenwild" study-hub
 tap_visible_label "Schalenwild" hoofed-category
 assert_visible_text "Rehwild" hoofed-list
 tap_visible_label "Rehwild" roe-study-card
-assert_visible_text "Other Facts" roe-card-detail
+assert_visible_text "Details" roe-card-detail
+adb exec-out screencap -p > emulator-evidence/study-card-before-back.png
 adb shell input keyevent KEYCODE_BACK
 sleep 3
 assert_ghc_foreground back-from-study-card
 assert_visible_text "Schalenwild" back-from-study-card
 # The category should show its Rehwild tile; card detail should have been closed.
 assert_visible_text "Rehwild" returned-hoofed-list
+adb exec-out screencap -p > emulator-evidence/study-category-after-back.png
+if cmp -s emulator-evidence/study-card-before-back.png emulator-evidence/study-category-after-back.png; then
+  echo "Back did not change the Rehwild study-card screen" >&2
+  exit 1
+fi
 echo "PASS: Android system Back from Reference to Quiz and Rehwild card to Schalenwild category"

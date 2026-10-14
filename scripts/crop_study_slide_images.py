@@ -37,6 +37,14 @@ CROPS = {
     "raven": (371, 345, 846, 646),
     "magpie": (493, 356, 860, 600),
     "jays": (398, 331, 860, 658),
+    # Final bird photo crops inspected at full resolution. We favor intact
+    # identification features over feet or outer wing-tips when slide badges
+    # would otherwise intrude on the individual source picture.
+    "capercaillie": (37, 56, 270, 211),
+    "blackgrouse": (302, 107, 612, 252),
+    "blackkite": (592, 75, 886, 426),
+    "brantgoose": (625, 262, 834, 465),
+    "canadagoose": (409, 476, 792, 661),
 }
 
 def read_json(s, var):

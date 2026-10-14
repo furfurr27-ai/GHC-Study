@@ -305,6 +305,12 @@ def main():
             "1fe0bb80deb5b83598a7bdbb858a1792fdd45c3e5a92d1190a85bbfa69ca3220",
             "Actual farm crop-damage photograph from class; no claim about current legal deadlines or compensation"
         ),
+        "transport":(
+            "media/transport-original-hunting-cases.jpeg",
+            "Law - Weapons (20260819).pdf",23,120,
+            "434832c3a8490570733b563bfce5aa7b0c4b4bdd0ffe230f01f7490745803e20",
+            "Three rifle carrying cases pictured on the original class 'Cases' slide, illustrative only; not proof of current transport or locking-law compliance"
+        ),
     }
     for cid,(rel,source,page,xref,expected_sha,warning) in figures.items():
         blob=ROOT/rel

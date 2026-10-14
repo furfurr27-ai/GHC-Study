@@ -30,7 +30,7 @@ sleep 9
 # over a healthy, already-rendered WebView. Dismiss the external launcher dialog
 # before testing GHC navigation; never count dismissing a dialog as app Back.
 dismiss_launcher_dialog() {
-  local stage="$1" pos
+  local stage="$1" pos attempt
   for attempt in 1 2 3; do
     adb shell uiautomator dump /sdcard/ghc-check.xml >/dev/null
     adb pull /sdcard/ghc-check.xml emulator-evidence/system-check.xml >/dev/null
@@ -66,7 +66,7 @@ PY
   return 1
 }
 wait_for_rendered_app() {
-  local stage="$1" output="$2" bytes=0
+  local stage="$1" output="$2" bytes=0 attempt
   for attempt in $(seq 1 16); do
     dismiss_launcher_dialog "$stage"
     adb exec-out screencap -p > "$output"
@@ -82,6 +82,16 @@ wait_for_rendered_app() {
       return 0
     fi
     echo "Waiting for Android WebView at $stage ($bytes byte blank frame, attempt $attempt)"
+    # GitHub emulator images sometimes leave the WebView surface white even
+    # after the Activity starts. Retry one cold Activity launch on fresh CI
+    # installs, preserving app data; do not mask Back/navigation failures.
+    if [[ "$stage" == "home" && "$attempt" -eq 8 ]]; then
+      echo "Cold-relaunching GHC on emulator after eight blank home captures"
+      adb shell am force-stop org.ghcstudy.v141
+      sleep 2
+      adb shell am start -W -n org.ghcstudy.v141/org.ghcstudy.offline.MainActivity
+      sleep 5
+    fi
     sleep 4
   done
   echo "No rendered application screen at $stage after startup wait" >&2
@@ -221,7 +231,7 @@ PY
 # Follow-up navigation coverage. The glossary is a separate WebView page; these
 # cases exercise the native-JS Back bridge *within* index.html.
 tap_visible_label() {
-  local label="$1" stage="$2" pos=""
+  local label="$1" stage="$2" pos="" attempt
   for attempt in $(seq 1 6); do
     dismiss_launcher_dialog "$stage"
     adb shell uiautomator dump /sdcard/ghc-nav.xml >/dev/null

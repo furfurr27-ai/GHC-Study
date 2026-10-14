@@ -7,8 +7,8 @@
     "slideOrPageLike": 71,
     "semanticMismatch": 0,
     "standaloneLikely": 45,
-    "assemblyCrops": 32,
-    "remainingSlideOrPageLike": 39,
+    "assemblyCrops": 38,
+    "remainingSlideOrPageLike": 33,
     "correctedSemanticMismatch": 1
   },
   "slideOrPageLike": [
@@ -98,7 +98,8 @@
     "The original Shot Placement Hochsitz subject mismatch is corrected at APK assembly using the isolated original slide-23 roe deer heart/lung target diagram, with SHA-256 integrity check.",
     "Additional five bird/corvid cards cropped after checking the original classroom image panels: Auerwild, Birkwild, Black Kite, Brent Goose, Canada Goose. Source crops avoid red numbered badges and slide text, sometimes omitting feet or outer wing edges.",
     "Four original class photographs isolated from larger slides: Drilling three-barrel muzzle, shooting-rule rifle handling, four hunting dogs, and a dog kennel; direct photo cropping only.",
-    "Firearm Action Names replaced with an unlabeled four-photo montage from the same original course slide (lever, pump, semi-auto, combination gun); no slide typography retained."
+    "Firearm Action Names replaced with an unlabeled four-photo montage from the same original course slide (lever, pump, semi-auto, combination gun); no slide typography retained.",
+    "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -132,7 +133,13 @@
     "rangesafety",
     "doggroups",
     "kennel",
-    "firearmactions"
+    "firearmactions",
+    "labrador",
+    "dogcert",
+    "trichinella",
+    "rabies",
+    "asf",
+    "footmouth"
   ],
   "originalSemanticMismatch": {
     "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."

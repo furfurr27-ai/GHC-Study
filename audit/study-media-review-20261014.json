@@ -8,10 +8,11 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 9,
+    "remainingSlideOrPageLike": 8,
     "correctedSemanticMismatch": 1,
     "originalFigureRemaps": 8,
-    "assemblyMontages": 1
+    "assemblyMontages": 1,
+    "classPhotoReuse": 1
   },
   "slideOrPageLike": [
     "mouflon",
@@ -107,7 +108,8 @@
     "Three further exact embedded JPEG figures extracted from 2026 course PDFs and hash verified: a gun-safe cabinet (not certification), a historical example proof-mark chart (not current-law clearance), and a panel of common external parasites. PDFs themselves are not copied to repo or APK.",
     "Three source PDF image additions are a historical Erbenheim Revier map, roe-deer anatomy and an illustrative abnormal-lung class image. Separate birdchecklist image is a six-source-bird-photo montage, not a comprehensive list. Legal and disease diagnoses are not inferred from imagery.",
     "Original September 2026 Predatory Birds page-10 image xref87, identified by the class as Sperber/Sparrowhawk, directly extracted. Unlike the prior full-slide photo, the bird's entire head and body are unobstructed.",
-    "Original August 2026 Hunting Law, page 47, illustrates Wildschaden with an actual crop-damage photograph (embedded image xref241). Replaces slide text, but does not validate dated hunting compensation claims."
+    "Original August 2026 Hunting Law, page 47, illustrates Wildschaden with an actual crop-damage photograph (embedded image xref241). Replaces slide text, but does not validate dated hunting compensation claims.",
+    "Protected Wildlife reuses a photo-only original Waldkauz photograph already checked on the Tawny Owl card, as one example rather than instructions or authorization. No new outside image or legal content."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -247,6 +249,13 @@
         "kestrel"
       ],
       "note": "Six original classroom bird examples, explicitly nonexhaustive identification practice"
+    }
+  },
+  "classPhotoReuse": {
+    "protectedwildlife": {
+      "path": "media/study-photo-tawnyowl.webp",
+      "sourceCardId": "tawnyowl",
+      "note": "Classroom Waldkauz as protected-species example; not current legal advice"
     }
   }
 }

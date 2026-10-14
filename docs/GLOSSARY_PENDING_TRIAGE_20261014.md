@@ -1,13 +1,13 @@
 # GHC Study — remaining Jägersprache worksheet-term triage (2026-10-14)
 
-Status: **19 terms still pending** in the 162-term indexed offline glossary (**143 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
+Status: **15 terms still pending** in the 162-term indexed offline glossary (**147 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
 
 | Term IDs | Remaining worksheet terms | Suggested primary-source follow-up |
 |---|---|---|
 | x078, x118 | Abschussgebuehr; Jagdschuetz | Reinspect `Law - Hunting (202608).pdf`, `Law - Weapons (20260819).pdf`, `Range - Revier (20260922).pdf`, `Disease - Kundige Person.pdf` for exact authority and document wording; verify present law **separately** |
 | x085, x114, x144, x161 | Bergstutzen; Haken; Stangensulze; Wolfssprosse | Review optics/weapon and trophy anatomy decks **with embedded diagrams**, since ordinary meanings of words like Baum or Stein could be misleading in hunting jargon |
-| x087, x089, x116, x124, x129, x130, x156, x158, x160 | Blindschleiche; Borkenkaefer; Hirschlaus; Kreuzotter; Marienkaefer; Moderhinke; Wechselwild; Wildretter; Wildwechsel | Nature and animal protection, field/forest, parasitology and disease decks; species/parasite identification may require image evidence |
-| x100, x103, x111, x148 | Einwachser-Mufflon; Epagneul Breton; Fuehrende; Tiroler | Species/trophy and hunting-dog class slides, predator-pelt vocabulary and source-specific uses; avoid inferring biological status or breed labels from names alone |
+| x116, x129, x130, x156, x158, x160 | Hirschlaus; Marienkaefer; Moderhinke; Wechselwild; Wildretter; Wildwechsel | Nature and animal protection, field/forest, parasitology and disease decks; species/parasite identification may require image evidence |
+| x100, x111, x148 | Einwachser-Mufflon; Fuehrende; Tiroler | Species/trophy and hunting-dog class slides, predator-pelt vocabulary and source-specific uses; avoid inferring biological status or breed labels from names alone |
  
 ## Important direct checks from this continuation
 
@@ -31,3 +31,12 @@ Do not silently take ordinary German translations as established *Jägersprache*
 ## Official authority reference batch
 
 - x093 Bundesverwaltungsamt (BVA), x104 Europaeischen Feuerwaffenpass and x152 Veterinaeramt now have direct official German government reference meanings, explicitly `official_external_*` not class slide. See `docs/GLOSSARY_OFFICIAL_TERMS_20261014.md` for URLs and caveats. Current: **143/162 defined and 19 pending**.
+
+## Four newly verified authoritative terms, 2026-10-14
+
+- x103 Epagneul Breton → **Brittany Spaniel**: FCI breed nomenclature #95 cross-check, matching a dog listed as Brittany in the Fall 2026 class.
+- x087 Blindschleiche → **Slow worm (limbless lizard)**: Bundesamt für Naturschutz, and NHM `Anguis fragilis` English species article.
+- x124 Kreuzotter → **European adder**: EPPO `Vipera berus` bilingual species registry; classroom's older European Adder reference is contextual only.
+- x089 Borkenkäfer → **Bark beetle**: forestry-research source (Waldwissen.net).
+
+These are labeled external corroborated definitions, not verified German-headword text in the class slide decks; historical etymologies remain blank. Source URLs and exact scope in `docs/GLOSSARY_VERIFIED_DEFINITIONS_20261014_BATCH6.md`. Current totals: **147 defined, 15 pending, 162 entries**. No test keys or study-card facts changed.

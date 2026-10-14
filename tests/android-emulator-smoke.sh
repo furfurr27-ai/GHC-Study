@@ -248,7 +248,8 @@ import os,re,xml.etree.ElementTree as ET
 label=os.environ["GHC_NAV_LABEL"]
 root=ET.parse("emulator-evidence/navigation-current.xml").getroot()
 for n in root.iter("node"):
-    if n.attrib.get("text","").strip()!=label: continue
+    value=n.attrib.get("text","").strip()
+    if value!=label and not value.startswith(label+" "): continue
     m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
     if not m: continue
     x1,y1,x2,y2=map(int,m.groups())
@@ -280,7 +281,8 @@ import os,re,xml.etree.ElementTree as ET
 root=ET.parse(os.environ["GHC_NAV_XML"]).getroot()
 needle=os.environ["GHC_NAV_LABEL"]
 for n in root.iter("node"):
-    if n.attrib.get("text","").strip()!=needle: continue
+    value=n.attrib.get("text","").strip()
+    if value!=needle and not value.startswith(needle+" "): continue
     m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
     if not m: continue
     x1,y1,x2,y2=map(int,m.groups())

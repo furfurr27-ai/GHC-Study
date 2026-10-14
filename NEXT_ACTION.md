@@ -5,7 +5,7 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Build and app invariants
 
 - v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
-- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (137 with meanings / 25 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (140 with meanings / 22 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
 - Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
 ## Source research completed and remaining
@@ -93,3 +93,9 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - CI emulator startup may independently fail due blank WebView and a recurring Pixel Launcher ANR; the harness retries a single cold app launch and now selects **Close app** on the external launcher's dialog instead of recurring `Wait`. Do not label a cloud-emulator startup failure a return-navigation failure.
 - Follow-up: verify **native Reference→Quiz** and **Rehwild card→Schalenwild** on a full successful Android 35 run. Then do physical Galaxy S23 Ultra tests: install, offline images, progress backup/restore and updates. Comprehensive source fact checks and 25 glossary pending definitions remain separate.
 - See `docs/CONTINUATION_20261014_ANDROID_GLOSSARY.md` for source-based defect reproduction and scope.
+
+### 2026-10-14 — Reference Back verified, nested Study Mode selection and glossary batch 5
+
+- Android 35 emulator run [38492587017](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38492587017) directly **passed** Glossary→Quiz system Back and **Reference→Quiz system Back**, with foreground and accessibility assertions. It then failed due to a **test accessibility label assumption**: the real Study Mode label is `Schalenwild 7 cards · Cloven-hoofed game ...`, not exactly `Schalenwild`. The test selector was updated to allow a label followed by descriptive text at commit `b178fe6dab19c2037c3e8e03c7234feffb4aee3d`. Check its updated CI for **Schalenwild→Rehwild→Back** before claiming that path passed.
+- Direct class slides `Trophy Part 1 (2025).pdf` and `Trapping (202607).pdf` support **Pelz** (fur/pelt) and **Baum/Stein** *within* Baummarder/Steinmarder compounds; the bare words are not certified as independent hunters' animal slang. All three entries label evidence limits, and no etymology is asserted. **140 defined / 22 pending / 162 total**. Source register: `docs/GLOSSARY_DEFINITIONS_BATCH5_20261014.md`.
+- The standalone APK build from the new glossary data passed [run 38494935225](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38494935225). JS/test Android regression was also updated with three more term checks and is being validated separately. No new quiz/progress IDs or data migrations introduced.

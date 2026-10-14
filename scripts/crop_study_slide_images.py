@@ -100,6 +100,47 @@ def main():
         print("Cropped",cid,orig["src"],"to",dst_rel)
     if seen!=set(CROPS):
         raise RuntimeError("Missing card IDs "+str(set(CROPS)-seen))
+    # The firearms-action slide contains four distinct source photographs.
+    # Retain their exact source pixels, arranged as an unlabeled photo montage
+    # rather than displaying the original text-heavy lecture slide.
+    actions=next((c for c in cards if c["id"]=="firearmactions"),None)
+    if actions is None:
+        raise RuntimeError("Missing Firearm Action Names card")
+    action_src=vm.get(actions.get("visualId")) if actions.get("visualId") else None
+    if not action_src:
+        action_src=imgs.get(actions.get("imageKey"))
+    montage_key="study_cropped_firearmactions"
+    montage_rel="media/study-photo-firearmactions.webp"
+    if actions.get("imageKey")!=montage_key or not (ROOT/montage_rel).is_file():
+        if not action_src or not action_src.get("src"):
+            raise RuntimeError("Missing original GHC firearm-actions slide picture")
+        photo_rects=[
+            (510,90,830,174),    # Lever action
+            (508,196,837,260),   # Pump action
+            (508,284,863,331),   # Semiautomatic
+            (668,333,853,475),   # Combination firearm
+        ]
+        with Image.open(ROOT/action_src["src"]) as base:
+            base=base.convert("RGB")
+            photo_rows=Image.new("RGB",(660,580),"white")
+            for idx,rect in enumerate(photo_rects):
+                x1,y1,x2,y2=rect
+                if not (0<=x1<x2<=base.width and 0<=y1<y2<=base.height):
+                    raise RuntimeError("Invalid Firearm Action Names photo crop")
+                photo=base.crop(rect)
+                photo.thumbnail((630,135),Image.Resampling.LANCZOS)
+                photo_rows.paste(photo,((660-photo.width)//2,idx*145+(145-photo.height)//2))
+            photo_rows.save(ROOT/montage_rel,"WEBP",quality=90,method=6)
+        imgs[montage_key]={
+            "src":montage_rel,
+            "source":action_src.get("source") or actions.get("source") or "",
+            "page":action_src.get("page"),
+            "studyPhotoCropOf":action_src["src"],
+            "review":"Four original class firearm photos; unlabeled montage; verified 2026-10-14"
+        }
+        actions["visualId"]=None
+        actions["imageKey"]=montage_key
+        print("Assembled four picture-only action photos",montage_rel)
     # Correct a separate picture/subject mismatch. This is the exact roe-deer
     # anatomical illustration embedded on page 23 of the 2026 Hunting Techniques
     # class PDF (xref 149), extracted without any surrounding slide text.

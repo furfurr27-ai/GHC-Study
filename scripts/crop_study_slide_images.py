@@ -21,6 +21,15 @@ CROPS = {
     "muteswan": (359, 127, 630, 332),
     "greatcrestedgrebe": (52, 155, 488, 399),
     "coot": (483, 32, 848, 277),
+    # Bird and raptor photographs selected by inspecting each original slide.
+    # Each rectangle avoids captions, numbered badges and other photographs.
+    "curlew": (438, 243, 639, 398),
+    "whitefrontedgoose": (633, 70, 833, 243),
+    "tawnyowl": (25, 217, 259, 595),
+    "osprey": (12, 118, 429, 492),
+    "seaeagle": (498, 253, 889, 574),
+    "eagleowl": (366, 105, 642, 435),
+    "kestrel": (460, 76, 866, 343),
 }
 
 def read_json(s, var):

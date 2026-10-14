@@ -64,7 +64,7 @@ This document replaces outdated numeric handoffs. Values are derived from `audit
 
 ## Jägersprache glossary source status
 
-The searchable offline glossary contains **162 terms**, with **137 defined and 25 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 48 additional source-context-supported terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
+The searchable offline glossary contains **162 terms**, with **140 defined and 22 pending**. Definitions comprise 77 original question-bank glosses (legacy etymologies not independently reverified), 48 additional source-context-supported terms, and two historical guide terms: **Affe** (young marmot; plural *Affen* in the old guide) and **Katz** (female marmot; *Katze* in the guide). The **Bär** entry retains its ordinary 'bear' meaning and adds the separate older-course 'male marmot' sense, all linked to Murmeltier. These historical senses do not claim a verified 2026 class-slide origin.
 
 ## Remaining engineering and factual gates
 
@@ -91,3 +91,7 @@ Leberegel and jagende Hunde added from direct German–English class-slide wordi
 ### 2026-10-14 glossary continuation
 
 Two contextual worksheet-to-slide term mappings were added from directly fetched class-text: `Bestaetigter Jagdaufseher` (slide uses Jagdaufseher) and `Erleger bruch` (slide uses Schützenbruch). **137 defined / 25 pending**; neither is mislabeled a directly quoted slide translation, and neither asserts current hunting law. Detailed caveats: `docs/CONTINUATION_20261014_ANDROID_GLOSSARY.md`.
+
+### 2026-10-14 glossary batch 5
+
+Direct class-PDF text supports Pelz as fur/pelt and the compound *Baum-/Steinmarder* for pine/stone marten, with bare Baum and Stein not independently assigned hunters' slang meanings. **140 defined / 22 pending**. Scope/provenance: `docs/GLOSSARY_DEFINITIONS_BATCH5_20261014.md`. The 803/814 fact register and 867 question bank remain unchanged.

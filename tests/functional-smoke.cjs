@@ -95,8 +95,12 @@ for(const [term,meaning] of [['Epagneul Breton','Brittany Spaniel'],['Blindschle
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing externally attributed glossary definition for '+term);
 }
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,150,'150 source-defined glossary entries');
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,12,'12 unresolved glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,152,'152 source-defined glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,10,'10 unresolved glossary entries');
+for(const [term,meaning] of [['Wolfssprosse','Wolf tine'],['Fuehrende','Female game animal accompanied by dependent young']]){
+ search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
+ assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing source-attributed hunting term '+term);
+}
 search.value='Moderhinke';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Footrot')),'Missing veterinary-source footrot translation');
 

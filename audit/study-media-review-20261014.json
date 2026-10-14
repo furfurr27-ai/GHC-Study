@@ -7,8 +7,8 @@
     "slideOrPageLike": 71,
     "semanticMismatch": 0,
     "standaloneLikely": 45,
-    "assemblyCrops": 51,
-    "remainingSlideOrPageLike": 20,
+    "assemblyCrops": 53,
+    "remainingSlideOrPageLike": 18,
     "correctedSemanticMismatch": 1
   },
   "slideOrPageLike": [
@@ -100,7 +100,8 @@
     "Four original class photographs isolated from larger slides: Drilling three-barrel muzzle, shooting-rule rifle handling, four hunting dogs, and a dog kennel; direct photo cropping only.",
     "Firearm Action Names replaced with an unlabeled four-photo montage from the same original course slide (lever, pump, semi-auto, combination gun); no slide typography retained.",
     "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis.",
-    "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed."
+    "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed.",
+    "Two original technical visuals isolated: six German-labeled beak-type anatomy drawings for birdanatomy, and one revolver photo from the handgun legal-topic slide. The handgun picture is merely illustrative, and the slide's obsolete/unchecked legal quota is entirely excluded."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -153,7 +154,9 @@
     "ammotypes",
     "stecher",
     "scopebasics",
-    "trees"
+    "trees",
+    "birdanatomy",
+    "handgunquota"
   ],
   "originalSemanticMismatch": {
     "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."

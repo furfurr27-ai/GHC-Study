@@ -216,3 +216,81 @@ if hashes[1]==hashes[2]:
     raise SystemExit("Back did not change the screenshot; gallery may still be open")
 print("PASS: visual screenshots differ across home, glossary, and system Back")
 PY
+
+
+# Follow-up navigation coverage. The glossary is a separate WebView page; these
+# cases exercise the native-JS Back bridge *within* index.html.
+tap_visible_label() {
+  local label="$1" stage="$2" pos=""
+  for attempt in $(seq 1 6); do
+    dismiss_launcher_dialog "$stage"
+    adb shell uiautomator dump /sdcard/ghc-nav.xml >/dev/null
+    adb pull /sdcard/ghc-nav.xml emulator-evidence/navigation-current.xml >/dev/null
+    pos="$(GHC_NAV_LABEL="$label" python3 - <<'PY'
+import os,re,xml.etree.ElementTree as ET
+label=os.environ["GHC_NAV_LABEL"]
+root=ET.parse("emulator-evidence/navigation-current.xml").getroot()
+for n in root.iter("node"):
+    if n.attrib.get("text","").strip()!=label: continue
+    m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
+    if not m: continue
+    x1,y1,x2,y2=map(int,m.groups())
+    if x2>x1 and y2>y1 and y1<2350:
+        print((x1+x2)//2,(y1+y2)//2)
+        break
+PY
+)"
+    if [[ -n "$pos" ]]; then
+      local x y
+      read -r x y <<< "$pos"
+      echo "Tapping $label at $x,$y ($stage)"
+      adb shell input tap "$x" "$y"
+      sleep 3
+      return 0
+    fi
+    echo "Waiting for visible '$label' ($stage attempt $attempt)"
+    sleep 2
+  done
+  echo "Could not locate '$label' for $stage" >&2
+  return 1
+}
+assert_visible_text() {
+  local label="$1" stage="$2"
+  adb shell uiautomator dump /sdcard/ghc-verify.xml >/dev/null
+  adb pull /sdcard/ghc-verify.xml emulator-evidence/verify-"$stage".xml >/dev/null
+  GHC_NAV_LABEL="$label" GHC_NAV_XML="emulator-evidence/verify-$stage.xml" python3 - <<'PY'
+import os,re,xml.etree.ElementTree as ET
+root=ET.parse(os.environ["GHC_NAV_XML"]).getroot()
+needle=os.environ["GHC_NAV_LABEL"]
+for n in root.iter("node"):
+    if n.attrib.get("text","").strip()!=needle: continue
+    m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
+    if not m: continue
+    x1,y1,x2,y2=map(int,m.groups())
+    if x2>x1 and y2>y1 and y1<2150:
+        print("PASS: visible",needle)
+        break
+else:
+    raise SystemExit("Expected visible content not found: "+needle)
+PY
+}
+tap_visible_label "Reference" reference-tab
+assert_ghc_foreground reference-tab
+assert_visible_text "Reference" reference-content
+adb shell input keyevent KEYCODE_BACK
+sleep 3
+assert_ghc_foreground back-from-reference
+assert_visible_text "Quiz Mode" back-from-reference
+tap_visible_label "Study Mode" study-tab
+assert_visible_text "Schalenwild" study-hub
+tap_visible_label "Schalenwild" hoofed-category
+assert_visible_text "Rehwild" hoofed-list
+tap_visible_label "Rehwild" roe-study-card
+assert_visible_text "Other Facts" roe-card-detail
+adb shell input keyevent KEYCODE_BACK
+sleep 3
+assert_ghc_foreground back-from-study-card
+assert_visible_text "Schalenwild" back-from-study-card
+# The category should show its Rehwild tile; card detail should have been closed.
+assert_visible_text "Rehwild" returned-hoofed-list
+echo "PASS: Android system Back from Reference to Quiz and Rehwild card to Schalenwild category"

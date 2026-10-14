@@ -45,18 +45,25 @@ dismiss_launcher_dialog() {
 import re
 import xml.etree.ElementTree as ET
 r=ET.parse("emulator-evidence/system-check.xml").getroot()
-for n in r.iter("node"):
-    if n.attrib.get("text")=="Wait":
+# 'Wait' repeatedly reopens the stuck Pixel Launcher ANR on this CI image.
+# Close only the *external* launcher process; never close GHC.
+for target in ("Close app", "Wait"):
+    for n in r.iter("node"):
+        if n.attrib.get("text")!=target:
+            continue
         b=n.attrib.get("bounds","")
         m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",b)
         if m:
             x1,y1,x2,y2=map(int,m.groups())
             print((x1+x2)//2,(y1+y2)//2)
             break
+    else:
+        continue
+    break
 PY
 )"
     if [[ -z "$pos" ]]; then
-      echo "External ANR seen but Wait control inaccessible" >&2; return 1
+      echo "External Launcher ANR control inaccessible" >&2; return 1
     fi
     read -r tap_x tap_y <<< "$pos"
     adb shell input tap "$tap_x" "$tap_y"

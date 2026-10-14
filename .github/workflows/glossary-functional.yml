@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install offline image cropping dependency
+        run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -51,6 +53,8 @@ jobs:
           python3 scripts/integrate_trophy_card.py
           python3 scripts/format_trophy_details.py
           python3 scripts/inject_vocabulary_etymology.py
+      - name: Extract standalone photos from four historical course pages
+        run: python3 scripts/crop_study_slide_images.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -69,6 +73,8 @@ jobs:
     needs: smoke
     steps:
       - uses: actions/checkout@v4
+      - name: Install offline image cropping dependency
+        run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -93,6 +99,8 @@ jobs:
           python3 scripts/integrate_trophy_card.py
           python3 scripts/format_trophy_details.py
           python3 scripts/inject_vocabulary_etymology.py
+      - name: Extract standalone photos from four historical course pages
+        run: python3 scripts/crop_study_slide_images.py
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
       - name: Confirm assembled study image integrity
@@ -117,6 +125,8 @@ jobs:
     needs: android-apk
     steps:
       - uses: actions/checkout@v4
+      - name: Install offline image cropping dependency
+        run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/download-artifact@v4
         with:
           name: GHC-Study-v1.4.6-glossary-tested-debug-apk

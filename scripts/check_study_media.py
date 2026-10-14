@@ -96,8 +96,20 @@ def main():
                 example = montages[card["id"]]
                 if rel != example["path"]:
                     failures.append(card["id"] + ": expected original-image montage "+example["path"]+" but got "+str(rel))
-                if info.get("pictureExampleCardIds") != example["exampleCardIds"]:
+                if "exampleCardIds" in example and info.get("pictureExampleCardIds") != example["exampleCardIds"]:
                     failures.append(card["id"] + ": gallery example/source IDs drifted")
+                if "pictureSourcePageXrefs" in example and info.get("pictureSourcePageXrefs") != example["pictureSourcePageXrefs"]:
+                    failures.append(card["id"] + ": original PDF page and image IDs drifted")
+                if "imageSources" in example:
+                    import hashlib
+                    for source in example["imageSources"]:
+                        try:
+                            raw=read(source["path"])
+                        except (FileNotFoundError,KeyError):
+                            failures.append(card["id"] + ": source picture missing: " + source["path"])
+                            continue
+                        if hashlib.sha256(raw).hexdigest()!=source["sha256"]:
+                            failures.append(card["id"] + ": source picture hash mismatch: " + source["path"])
                 kind = "verified_class_source_picture_montage"
             elif card["id"] in exact_figures:
                 figure = exact_figures[card["id"]]

@@ -5,10 +5,11 @@
   "counts": {
     "reviewed": 117,
     "slideOrPageLike": 71,
-    "semanticMismatch": 1,
+    "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 22,
-    "remainingSlideOrPageLike": 49
+    "remainingSlideOrPageLike": 49,
+    "correctedSemanticMismatch": 1
   },
   "slideOrPageLike": [
     "mouflon",
@@ -83,9 +84,7 @@
     "birdchecklist",
     "revierroles"
   ],
-  "semanticMismatch": {
-    "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."
-  },
+  "semanticMismatch": {},
   "notes": [
     "The 71 flagged assets visibly include full slide/page layouts, classroom text, multi-photo collage panels, or slide chrome; they violate 'standalone image, never whole slide' intent and require individual replacements.",
     "No asset is missing: all 117 card image paths exist in the Android package, corresponding to 110 unique files.",
@@ -95,7 +94,8 @@
     "Four historical wildlife page images are cropped to isolated photos during APK assembly only; source assets remain unmodified. CI verifies each generated media/study-photo-ID.webp. The 71 visual flags describe the original source state; 67 remain in assembled output after this batch.",
     "Five additional standalone bird photographs cropped from original classroom slide composites after direct image inspection: Bean Goose, Merganser, Mute Swan, Great Crested Grebe and Coot; no slide text preserved in crop.",
     "Seven additional course bird/raptor images now cropped to clean photos (Curlew, White-fronted Goose, Tawny Owl, Osprey, Sea Eagle, Eagle Owl and Kestrel). Other candidate photos were rejected if cropping would retain annotations or clip identifying anatomy.",
-    "Six additional individually checked course photos were cropped for harriers, carrion crow, rook, raven, magpie, and jays, without captions or slide layout."
+    "Six additional individually checked course photos were cropped for harriers, carrion crow, rook, raven, magpie, and jays, without captions or slide layout.",
+    "The original Shot Placement Hochsitz subject mismatch is corrected at APK assembly using the isolated original slide-23 roe deer heart/lung target diagram, with SHA-256 integrity check."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -120,5 +120,18 @@
     "raven",
     "magpie",
     "jays"
-  ]
+  ],
+  "originalSemanticMismatch": {
+    "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."
+  },
+  "correctedSemanticMismatch": {
+    "shotplacement": {
+      "image": "media/shotplacement-class-diagram.png",
+      "source": "Hunting_Techniques_V3.1_16FEB26.pdf",
+      "page": 23,
+      "embeddedXref": 149,
+      "integritySha256": "c00ab76a236fc161b4594dbcd93182a4ed2b4324d5ae7ee52f0916cf6d60cb0f",
+      "note": "Roe deer broadside heart-lung target illustration from class slide; replacement for unrelated high-seat photo."
+    }
+  }
 }

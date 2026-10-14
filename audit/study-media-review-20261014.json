@@ -7,8 +7,8 @@
     "slideOrPageLike": 71,
     "semanticMismatch": 0,
     "standaloneLikely": 45,
-    "assemblyCrops": 38,
-    "remainingSlideOrPageLike": 33,
+    "assemblyCrops": 51,
+    "remainingSlideOrPageLike": 20,
     "correctedSemanticMismatch": 1
   },
   "slideOrPageLike": [
@@ -99,7 +99,8 @@
     "Additional five bird/corvid cards cropped after checking the original classroom image panels: Auerwild, Birkwild, Black Kite, Brent Goose, Canada Goose. Source crops avoid red numbered badges and slide text, sometimes omitting feet or outer wing edges.",
     "Four original class photographs isolated from larger slides: Drilling three-barrel muzzle, shooting-rule rifle handling, four hunting dogs, and a dog kennel; direct photo cropping only.",
     "Firearm Action Names replaced with an unlabeled four-photo montage from the same original course slide (lever, pump, semi-auto, combination gun); no slide typography retained.",
-    "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis."
+    "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis.",
+    "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -139,7 +140,20 @@
     "trichinella",
     "rabies",
     "asf",
-    "footmouth"
+    "footmouth",
+    "goldeneagle",
+    "hornsignals",
+    "waidgerechtigkeit",
+    "branchsigns",
+    "lastbite",
+    "methods",
+    "followup",
+    "coldweapons",
+    "shotgunshell",
+    "ammotypes",
+    "stecher",
+    "scopebasics",
+    "trees"
   ],
   "originalSemanticMismatch": {
     "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."

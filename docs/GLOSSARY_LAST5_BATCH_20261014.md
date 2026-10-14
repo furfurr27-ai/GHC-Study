@@ -29,3 +29,13 @@ After committing these entries, glossary dataset: **162 indexed, 159 source-defi
 **Other unchanged gates:** Android media audit currently 63 corrected full-slide image cards / 8 unresolved; old Shot Placement mismatch fixed. Android 35 emulator pass before this batch at [run 38541009317](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38541009317). This new glossary batch requires its **own CI result** before calling the assembled APK validated, and a Samsung Galaxy S23 Ultra physical test is not available.
 
 Reviewed source types: original Google Drive classroom PDF extracts and Jägersprache worksheet; two external hunting/wildlife authority pages and two external hunting education/press sources; live GitHub glossary and regression scripts. Not all original slide graphics were inspected for these two specific terms; the source-evidence label reflects that limitation.
+
+## 2026-10-14 addendum — documented hunting operator's Abschussgebühr
+
+The previously pending `Abschussgebuehr` is now defined in its **documented contractual sense** as a *fee per game animal harvested on a paid hunt*. [Bavaria Jagdreisen GmbH's directly checked conditions](https://www.bavaria-jagdreisen.de/de/reisebedingungen.html) distinguish the per-person trip charge from `Abschussgebühren pro Stück Wild` and describe reconciliation of an `Abschusskaution` (advance deposit) against the actual fees. Its source label is `hunting_operator_direct_contract_external`.
+
+The app explicitly says this **does not mean** a Jagdschein/license fee, a mandatory German government levy, a universal tariff, or any specific price. The class vocabulary workbook contains the term without providing this explanation, so the new English meaning is **external contextual support**, not a quoted course-slide definition. `etymology` remains blank.
+
+**Revised audited glossary:** **162 indexed / 160 defined / 2 pending**. The only pending IDs are `x118 Jagdschuetz` and `x148 Tiroler`. Their precise original class context is not established, despite documented *Jagdschütze*, *Wildschütz*, and *Tiroler Bracke* usages elsewhere. Do not silently conflate these different terms. The updated regression test checks 160/2, exact headwords, translation search and no invented Einwachser/Stangensulze etymology.
+
+The updated class image audit, in `docs/STUDY_MEDIA_TRANSPORT_FIX_20261014.md`, is independent: **64/71 source-slide images corrected / 7 pending**. No question data, card prose or app progress keys changed. This factual note is not a claim that the newest Android 35 emulator CI or physical phone test has already completed.

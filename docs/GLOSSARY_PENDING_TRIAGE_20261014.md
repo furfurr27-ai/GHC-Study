@@ -61,3 +61,11 @@ x085 Bergstutzen → **two-barrel break-action hunting rifle with rifled barrels
 ## Context-sensitive Haken source clarification
 
 x114 Haken is now indexed as a **multi-sense hunters' expression**, with a female wild boar's canine teeth as the primary trophy use, but Grandeln in some deer dictionaries and a fleeing hare's abrupt turn also documented. Specific class slide animal context is not assumed. Source limits: `docs/GLOSSARY_HAKEN_MULTIPLE_SENSES_20261014.md`. **157 defined, 5 pending**, namely x078, x100, x118, x144, x148.
+
+## 2026-10-14 final source-checked three-word batch
+
+- `x100 Einwachser-Mufflon` defined from **Deutscher Jagdverband** and the **Bavarian Wildlife Portal**: inward-growing mouflon horns, with exact class headword not established by the 2015 classroom text extract.
+- `x144 Stangensulze` defined from **JÄGER** and **Jagdschule AJN**: a post-mounted salt lick where mineral salts run down the trunk in rain.
+- `x078 Abschussgebuehr` defined from **Bavaria Jagdreisen direct contract**: fee per game animal harvested on a paid hunt, **not** a Jagdschein issue fee or uniform government charge.
+- Current authoritative count in the shipped `glossary-data.js`: **162 indexed, 160 defined, 2 pending**. The **only** pending headwords are `x118 Jagdschuetz` and `x148 Tiroler`, which remain untranslated until the instructor/worksheet context can distinguish respectively hunting-shooter versus historical protection staff/other words, and a Tyrolean person/attribute versus the hunting-dog breed. Do not guess exact meaning or etymology.
+- Tests directly assert these totals, exact pending names, new translations and still-blank etymology. Provenance: `docs/GLOSSARY_LAST5_BATCH_20261014.md`, and live `NEXT_ACTION.md`.

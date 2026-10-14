@@ -40,3 +40,19 @@ Sources actually inspected: the downloaded standalone Android APK and decoded as
 ### 2026-10-14 seal crop QA correction
 
 The first build’s seal crop included the original guide-page caption and part of its descriptive paragraph below the photograph. Manual inspection of the original source image identified the photograph bounding box at x=114–651, y=184–540; the crop script was corrected at commit `7d3ebfa1b73da1ebef1b4ec530edf22c441cf38b`. Prior batch-one APK artifact `38496380116` should **not** be distributed as picture-only-correct because it contains the older oversize seal crop. A fresh build is required for a properly caption-free seal image. No card prose, source claims or progress data changed.
+
+### Second assembly crop batch — five additional source-verified bird photos
+
+The original GHC class slide images were viewed directly, species captions cross-checked, and the actual photo rectangles manually cropped (without slide typography, composite panels or category labels). Assembly script `scripts/crop_study_slide_images.py` now handles **nine** card photos in total, not just four.
+
+| Card | Classroom photo source | Photo-only rectangle (source pixels) | Intended assembled dimensions |
+| --- | --- | --- | --- |
+| Saatgans / Bean Goose (`beangoose`) | `Gänse (Geese)` slide comparing Greylag and Bean Goose | (532,396)–(795,659) | 263×263 |
+| Säger / Merganser (`merganser`) | `Säger (Merganser)` class comparison slide; common-merganser image | (226,293)–(510,423) | 284×130 |
+| Höckerschwan / Mute Swan (`muteswan`) | `Schwäne (Swans)` class comparison slide; central Mute Swan photograph | (359,127)–(630,332) | 271×205 |
+| Haubentaucher / Great Crested Grebe (`greatcrestedgrebe`) | `Taucher (Grebes)` class slide; upper-left Great Crested Grebe photograph | (52,155)–(488,399) | 436×244 |
+| Blässhuhn / Eurasian Coot (`coot`) | `Blässhuhn (Coot)` class slide; upper-right coot photograph | (483,32)–(848,277) | 365×245 |
+
+The corrected seal photograph is now crop **(114,184)–(651,540) = 537×356**, ending before the printed `Seals (Robben)` caption. Cropped pixels were visually checked in a local preview before the second batch was committed. No species image was borrowed from a different card and the old originals remain available.
+
+Revised visual backlog after all nine assembled crops: **62 full-slide or page-like images and one confirmed shot-placement mismatch**. Source HTML continues to retain the originals; this replacement is deliberately part of the APK assembly overlay, pending a clean migration of the source media assets. Full Android emulator regression and physical Samsung validation are separate gates; do not call this a complete clean-image release merely because the build compiles.

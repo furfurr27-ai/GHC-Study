@@ -8,9 +8,10 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 15,
+    "remainingSlideOrPageLike": 11,
     "correctedSemanticMismatch": 1,
-    "originalFigureRemaps": 3
+    "originalFigureRemaps": 6,
+    "assemblyMontages": 1
   },
   "slideOrPageLike": [
     "mouflon",
@@ -103,7 +104,8 @@
     "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis.",
     "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed.",
     "Two original technical visuals isolated: six German-labeled beak-type anatomy drawings for birdanatomy, and one revolver photo from the handgun legal-topic slide. The handgun picture is merely illustrative, and the slide's obsolete/unchecked legal quota is entirely excluded.",
-    "Three further exact embedded JPEG figures extracted from 2026 course PDFs and hash verified: a gun-safe cabinet (not certification), a historical example proof-mark chart (not current-law clearance), and a panel of common external parasites. PDFs themselves are not copied to repo or APK."
+    "Three further exact embedded JPEG figures extracted from 2026 course PDFs and hash verified: a gun-safe cabinet (not certification), a historical example proof-mark chart (not current-law clearance), and a panel of common external parasites. PDFs themselves are not copied to repo or APK.",
+    "Three source PDF image additions are a historical Erbenheim Revier map, roe-deer anatomy and an illustrative abnormal-lung class image. Separate birdchecklist image is a six-source-bird-photo montage, not a comprehensive list. Legal and disease diagnoses are not inferred from imagery."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -194,6 +196,41 @@
       "source": "Disease - Parasites.pdf",
       "page": 3,
       "xref": 33
+    },
+    "revierrules": {
+      "path": "media/revierrules-erbenheim-course-map.jpeg",
+      "sha256": "e97ef9d4dc1d344bad285184988341f66d7090daef9b4abf51486305629e4d47",
+      "source": "Range - Revier (20260922).pdf",
+      "page": 20,
+      "xref": 126
+    },
+    "kundigeperson": {
+      "path": "media/kundigeperson-class-game-anatomy.jpeg",
+      "sha256": "d6f9888b8dbee450b06ceb9ce0917125eb5eba0ec116892fbc4f200a7693d7e8",
+      "source": "Disease - Kundige Person.pdf",
+      "page": 5,
+      "xref": 50
+    },
+    "diseasenames": {
+      "path": "media/diseasenames-class-lung-example.jpeg",
+      "sha256": "cd473a2bbfb11fb8cdfd05bf3d99c4036feec348a709b64cf385b2d21d887b8e",
+      "source": "Disease - Kundige Person.pdf",
+      "page": 6,
+      "xref": 53
+    }
+  },
+  "assemblyMontages": {
+    "birdchecklist": {
+      "path": "media/study-birdchecklist-examples.webp",
+      "exampleCardIds": [
+        "beangoose",
+        "muteswan",
+        "curlew",
+        "tawnyowl",
+        "capercaillie",
+        "kestrel"
+      ],
+      "note": "Six original classroom bird examples, explicitly nonexhaustive identification practice"
     }
   }
 }

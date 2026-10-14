@@ -58,6 +58,21 @@ CROPS = {
     "rabies": (652, 42, 800, 203),
     "asf": (76, 88, 700, 394),
     "footmouth": (648, 388, 880, 492),
+    # Standalone photographs or *individual technical illustrations* cut
+    # from original course slides, visually checked against source pixels.
+    # Diagram labels/leader lines intrinsic to the illustration are retained.
+    "goldeneagle": (476, 289, 890, 653),
+    "hornsignals": (547, 142, 873, 386),
+    "waidgerechtigkeit": (502, 402, 861, 632),
+    "branchsigns": (518, 158, 876, 580),
+    "lastbite": (577, 443, 871, 658),
+    "methods": (352, 69, 894, 448),
+    "followup": (315, 414, 613, 593),
+    "coldweapons": (54, 94, 653, 354),
+    "shotgunshell": (192, 72, 526, 531),
+    "ammotypes": (121, 78, 319, 498),
+    "stecher": (319, 176, 571, 515),
+    "scopebasics": (111, 234, 347, 510),
 }
 
 def read_json(s, var):
@@ -149,6 +164,48 @@ def main():
         actions["visualId"]=None
         actions["imageKey"]=montage_key
         print("Assembled four picture-only action photos",montage_rel)
+    # Extract five original tree photographs from their class comparison
+    # slide. Assemble in the same Oak/Fir/Alder/Spruce/Pine order, with no
+    # text or presentation chrome. Individual class photos remain untouched.
+    trees=next((c for c in cards if c["id"]=="trees"),None)
+    if trees is None:
+        raise RuntimeError("Missing Big 5 German Trees card")
+    trees_key="study_cropped_trees"
+    trees_rel="media/study-photo-trees.webp"
+    if trees.get("imageKey")!=trees_key or not (ROOT/trees_rel).is_file():
+        original=vm.get(trees.get("visualId")) if trees.get("visualId") else None
+        if not original:
+            original=imgs.get(trees.get("imageKey"))
+        if not original or not original.get("src"):
+            raise RuntimeError("Missing original five-tree classroom picture")
+        parts=[
+            (70,149,221,350),    # Eiche / Oak
+            (410,166,707,316),   # Tanne / Fir
+            (31,372,219,623),    # Erle / Alder
+            (303,380,536,565),  # Fichte / Spruce
+            (611,351,873,557),  # Kiefer / Pine
+        ]
+        with Image.open(ROOT/original["src"]) as base:
+            base=base.convert("RGB")
+            composite=Image.new("RGB",(900,360),"white")
+            for ix,rect in enumerate(parts):
+                x1,y1,x2,y2=rect
+                if not (0<=x1<x2<=base.width and 0<=y1<y2<=base.height):
+                    raise RuntimeError("Invalid five-trees picture crop")
+                photo=base.crop(rect)
+                photo.thumbnail((170,330),Image.Resampling.LANCZOS)
+                composite.paste(photo,(6+ix*180+(170-photo.width)//2,15+(330-photo.height)//2))
+            composite.save(ROOT/trees_rel,"WEBP",quality=90,method=6)
+        imgs[trees_key]={
+            "src":trees_rel,
+            "source":original.get("source") or trees.get("source") or "",
+            "page":original.get("page"),
+            "studyPhotoCropOf":original["src"],
+            "review":"Five original class tree photographs, unlabeled composite, visually checked 2026-10-14"
+        }
+        trees["visualId"]=None
+        trees["imageKey"]=trees_key
+        print("Assembled five original class tree photographs",trees_rel)
     # Correct a separate picture/subject mismatch. This is the exact roe-deer
     # anatomical illustration embedded on page 23 of the 2026 Hunting Techniques
     # class PDF (xref 149), extracted without any surrounding slide text.

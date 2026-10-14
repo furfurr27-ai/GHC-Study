@@ -71,22 +71,25 @@ public final class MainActivity extends Activity {
     private void navigateBack() {
         if (webView == null || backPending) return;
         backPending = true;
-        // Prefer app-provided navigation when present; do not overwrite view/mode
-        // globals with hard-coded guesses. Modal dismissal is safe and reversible.
+        // The app keeps its view/mode variables inside an IIFE. They are not
+        // global and cannot be read by evaluateJavascript from the WebView.
+        // Use the existing visible controls: their click handlers *do* have
+        // access to the closure, preserving the app's own state transitions.
         final String script = "(function(){try{"
                 + "var m=document.getElementById('modal');"
                 + "if(m&&!m.classList.contains('hidden')){"
                 + "var c=document.getElementById('closeModal');"
                 + "if(c){c.click();return 'handled';}}"
-                + "if(typeof view==='undefined'||typeof mode==='undefined')return 'error';"
-                + "if(view==='studymode'){"
-                + "if(mode==='studycard'&&typeof renderStudyCategory==='function'){"
-                + "var card=typeof STUDY_CARDS!=='undefined'?STUDY_CARDS.find(function(x){return x.id===studyCardId;}):null;"
-                + "if(card){renderStudyCategory(card.category);return 'handled';}}"
-                + "if(mode==='studycategory'&&typeof renderStudyHub==='function'){renderStudyHub();return 'handled';}"
-                + "view='study';mode='home';render();return 'handled';}"
-                + "if(view==='reference'){view='study';mode='home';render();return 'handled';}"
-                + "if(view==='study'&&mode!=='home'){mode='home';render();return 'handled';}"
+                + "var x=document.getElementById('studyCatBack');"
+                + "if(x){x.click();return 'handled';}"
+                + "x=document.getElementById('studyHubBack');"
+                + "if(x){x.click();return 'handled';}"
+                + "x=document.querySelector('#app [data-action=home]');"
+                + "if(x){x.click();return 'handled';}"
+                + "var active=document.querySelector('.navbtn.active');"
+                + "if(active&&active.getAttribute('data-tab')!=='study'){"
+                + "x=document.querySelector('.navbtn[data-tab=study]');"
+                + "if(x){x.click();return 'handled';}}"
                 + "return 'root';"
                 + "}catch(e){return 'error';}})();";
         webView.evaluateJavascript(script, result -> {

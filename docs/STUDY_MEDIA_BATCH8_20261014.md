@@ -49,3 +49,13 @@ Stand-alone APK compilation and binary/file tests verify packaging, not physical
 ### Evidence integrity
 
 The visually inspected crop previews, source-PDF page renderings and extracted-figure contact sheets were used in this pass; the proof-mark/legal, Revier-map and veterinary pictures are explicitly marked illustrative rather than current regulations or diagnoses. No external unsourced facts, new class card Details statements, weapon operating procedures or inferred word origins were added.
+
+## Source-specific addendum: actual crop-damage photograph
+
+The original `Law - Hunting (202608).pdf` was fetched directly from the linked classroom Drive folder, and its **page 47** was visually rendered. The slide explicitly captions a photograph as **Game damage (Wildschaden)**, showing actual disturbed farm soil/crop damage. The independent embedded JPEG **xref 241**, 450×280 pixels, was extracted directly without the surrounding slide text and committed as `app/src/main/assets/media/wildschaden-class-crop-damage.jpeg` (31,817 bytes, SHA-256 `1fe0bb80deb5b83598a7bdbb858a1792fdd45c3e5a92d1190a85bbfa69ca3220`). The `wildschaden` card now uses this original course photograph, not the earlier misleading generic wildlife collage.
+
+This image supports *what the class illustrated*, not a legal finding regarding who pays, claim deadlines, or actual cause of the specific disturbance. A second original `Law - Nature and Animal (201902).pdf` slide at page 52 was inspected and depicts cornfield damage on satellite photos, but the cleaner photo from the more recent 2026 Hunting Law deck was chosen instead. No legal text or timed obligations were modified. Exact page/xref/hash are enforced by source-inventory tests.
+
+**Revised media status (post-addendum):** 53 class-source picture crops, 8 exact embedded PDF figures, one six-image class bird gallery = **62 corrected slide-style images**, **9 unresolved** full-slide cards. Independent original Shot Placement error remains fixed. Last remaining IDs: `dogparts`, `drivebrief`, `misfire`, `transport`, `protectedwildlife`, `abschussplan`, `shotdistance`, `dogdiseases`, `revierroles`.
+
+Additional primary files actually inspected in this addendum: `Law - Nature and Animal (201902).pdf`, `Law - Hunting (202608).pdf`, `Weapons - Ammo (20260214).pdf` and `Range - Saftey (20260211).pdf`. Their parsed relevant sections do not supply a trustworthy standalone shot-travel-distance or misfire demonstration illustration; none was substituted. Their text is classroom course material, **not independently verified current law**.

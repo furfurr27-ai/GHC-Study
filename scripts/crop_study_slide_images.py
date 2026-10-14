@@ -45,6 +45,11 @@ CROPS = {
     "blackkite": (592, 75, 886, 426),
     "brantgoose": (625, 262, 834, 465),
     "canadagoose": (409, 476, 792, 661),
+    # Class photographs rather than the surrounding terminology/kennel slides.
+    "combinationguns": (650, 79, 879, 231),
+    "rangesafety": (436, 33, 885, 185),
+    "doggroups": (527, 491, 869, 654),
+    "kennel": (76, 73, 688, 464),
 }
 
 def read_json(s, var):

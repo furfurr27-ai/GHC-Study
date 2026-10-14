@@ -8,9 +8,9 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 11,
+    "remainingSlideOrPageLike": 10,
     "correctedSemanticMismatch": 1,
-    "originalFigureRemaps": 6,
+    "originalFigureRemaps": 7,
     "assemblyMontages": 1
   },
   "slideOrPageLike": [
@@ -105,7 +105,8 @@
     "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed.",
     "Two original technical visuals isolated: six German-labeled beak-type anatomy drawings for birdanatomy, and one revolver photo from the handgun legal-topic slide. The handgun picture is merely illustrative, and the slide's obsolete/unchecked legal quota is entirely excluded.",
     "Three further exact embedded JPEG figures extracted from 2026 course PDFs and hash verified: a gun-safe cabinet (not certification), a historical example proof-mark chart (not current-law clearance), and a panel of common external parasites. PDFs themselves are not copied to repo or APK.",
-    "Three source PDF image additions are a historical Erbenheim Revier map, roe-deer anatomy and an illustrative abnormal-lung class image. Separate birdchecklist image is a six-source-bird-photo montage, not a comprehensive list. Legal and disease diagnoses are not inferred from imagery."
+    "Three source PDF image additions are a historical Erbenheim Revier map, roe-deer anatomy and an illustrative abnormal-lung class image. Separate birdchecklist image is a six-source-bird-photo montage, not a comprehensive list. Legal and disease diagnoses are not inferred from imagery.",
+    "Original September 2026 Predatory Birds page-10 image xref87, identified by the class as Sperber/Sparrowhawk, directly extracted. Unlike the prior full-slide photo, the bird's entire head and body are unobstructed."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -217,6 +218,13 @@
       "source": "Disease - Kundige Person.pdf",
       "page": 6,
       "xref": 53
+    },
+    "sparrowhawk": {
+      "path": "media/sparrowhawk-class-original.jpeg",
+      "sha256": "ec0bbb3daf029c50d78f3ca3c4be2c28c3772bf80c96d626f5bd718e6969a088",
+      "source": "Game - Predatory Birds (202609).pdf",
+      "page": 10,
+      "xref": 87
     }
   },
   "assemblyMontages": {

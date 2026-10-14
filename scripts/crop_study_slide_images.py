@@ -30,6 +30,13 @@ CROPS = {
     "seaeagle": (498, 253, 889, 574),
     "eagleowl": (366, 105, 642, 435),
     "kestrel": (460, 76, 866, 343),
+    # Additional original course corvid/harrier photos; no slide text retained.
+    "harriers": (592, 75, 881, 287),
+    "carrioncrow": (13, 16, 251, 175),
+    "rook": (18, 278, 407, 570),
+    "raven": (371, 345, 846, 646),
+    "magpie": (493, 356, 860, 600),
+    "jays": (398, 331, 860, 658),
 }
 
 def read_json(s, var):

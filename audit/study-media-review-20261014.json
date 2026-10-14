@@ -7,8 +7,8 @@
     "slideOrPageLike": 71,
     "semanticMismatch": 1,
     "standaloneLikely": 45,
-    "assemblyCrops": 4,
-    "remainingSlideOrPageLike": 67
+    "assemblyCrops": 9,
+    "remainingSlideOrPageLike": 62
   },
   "slideOrPageLike": [
     "mouflon",
@@ -92,12 +92,18 @@
     "The other 45 card images appear photo/illustration-backed in this size-limited review; not all animals, annotations or source page references have been authenticated.",
     "The antler-anatomy diagram is retained as a standalone labeled illustration, not a full slide.",
     "Marking a slide screenshot does not imply the underlying class text is incorrect.",
-    "Four historical wildlife page images are cropped to isolated photos during APK assembly only; source assets remain unmodified. CI verifies each generated media/study-photo-ID.webp. The 71 visual flags describe the original source state; 67 remain in assembled output after this batch."
+    "Four historical wildlife page images are cropped to isolated photos during APK assembly only; source assets remain unmodified. CI verifies each generated media/study-photo-ID.webp. The 71 visual flags describe the original source state; 67 remain in assembled output after this batch.",
+    "Five additional standalone bird photographs cropped from original classroom slide composites after direct image inspection: Bean Goose, Merganser, Mute Swan, Great Crested Grebe and Coot; no slide text preserved in crop."
   ],
   "assemblyCrops": [
     "mouflon",
     "marmot",
     "seal",
-    "bear"
+    "bear",
+    "beangoose",
+    "merganser",
+    "muteswan",
+    "greatcrestedgrebe",
+    "coot"
   ]
 }

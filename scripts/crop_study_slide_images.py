@@ -73,6 +73,10 @@ CROPS = {
     "ammotypes": (121, 78, 319, 498),
     "stecher": (319, 176, 571, 515),
     "scopebasics": (111, 234, 347, 510),
+    # Source technical bird-beak plate and revolver photograph, isolated from
+    # lecture slide frames. Handgun image is illustrative, NOT legal quota data.
+    "birdanatomy": (350, 93, 506, 529),
+    "handgunquota": (460, 333, 700, 498),
 }
 
 def read_json(s, var):

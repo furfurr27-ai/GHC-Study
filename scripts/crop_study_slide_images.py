@@ -252,6 +252,47 @@ def main():
         review_card["visualId"]=None
         review_card["imageKey"]=bird_gallery_key
         print("Assembled six original class bird identification examples",bird_gallery_rel)
+    # Multiple independently checked class images illustrate *examples*
+    # of dog disease/hygiene topics. They do NOT purport to cover every
+    # virus/bacterium or diagnose an animal from its appearance.
+    # Original classroom PDF Hunting Dogs (202609).pdf pp 26-27, xrefs below.
+    dog_sources=[
+        ("media/dogdiseases-class-rabies-warning.jpeg",26,457,
+         "04b2030e8e4b02b5d043d0a660a96b7af507b3001cec3d69876ed0595dbfa9c7"),
+        ("media/dogdiseases-class-worms-example.jpeg",27,464,
+         "b98b1105633d60bb4759f9756f1deca35738d23525dc9e48774b1f97a0d9c744"),
+        ("media/dogdiseases-class-tick-diagram.jpeg",27,465,
+         "c8d67c9732912d21ac4da7a506416c5706d8f9e83158fb44af2bbebd98cf2931")
+    ]
+    diseases=next((c for c in cards if c["id"]=="dogdiseases"),None)
+    if diseases is None:
+        raise RuntimeError("Missing Dog Diseases study card")
+    import hashlib
+    for rel,page,xref,sha in dog_sources:
+        source_image=ROOT/rel
+        if not source_image.is_file() or hashlib.sha256(source_image.read_bytes()).hexdigest()!=sha:
+            raise RuntimeError("Original classroom dog-disease image missing or changed: "+rel)
+    dog_key="study_source_gallery_dogdiseases"
+    dog_rel="media/study-dogdiseases-examples.webp"
+    if diseases.get("imageKey")!=dog_key or not (ROOT/dog_rel).is_file():
+        canvas=Image.new("RGB",(1050,380),"white")
+        for ix,(rel,page,xref,sha) in enumerate(dog_sources):
+            with Image.open(ROOT/rel) as src:
+                sample=src.convert("RGB")
+                sample.thumbnail((330,350),Image.Resampling.LANCZOS)
+                x=ix*350+(350-sample.width)//2
+                y=(380-sample.height)//2
+                canvas.paste(sample,(x,y))
+        canvas.save(ROOT/dog_rel,"WEBP",quality=89,method=6)
+        imgs[dog_key]={
+            "src":dog_rel,
+            "source":"Hunting Dogs (202609).pdf",
+            "pictureSourcePageXrefs":[[page,xref] for _,page,xref,_ in dog_sources],
+            "review":"Three original class visual examples (rabies warning, worms, tick). Not a full disease list, proof of infection, or current veterinary guidance."
+        }
+        diseases["visualId"]=None
+        diseases["imageKey"]=dog_key
+        print("Assembled three source-authentic classroom dog disease examples",dog_rel)
     # These eight JPEGs are exact original PDF XObject image streams.
     # They were extracted from the connected 2026 classroom PDFs and committed
     # into the PRIVATE repo without copying slide pages or PDF documents.

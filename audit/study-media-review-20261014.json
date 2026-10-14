@@ -8,10 +8,10 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 6,
+    "remainingSlideOrPageLike": 5,
     "correctedSemanticMismatch": 1,
     "originalFigureRemaps": 10,
-    "assemblyMontages": 1,
+    "assemblyMontages": 2,
     "classPhotoReuse": 1
   },
   "slideOrPageLike": [
@@ -111,7 +111,8 @@
     "Original August 2026 Hunting Law, page 47, illustrates Wildschaden with an actual crop-damage photograph (embedded image xref241). Replaces slide text, but does not validate dated hunting compensation claims.",
     "Protected Wildlife reuses a photo-only original Waldkauz photograph already checked on the Tawny Owl card, as one example rather than instructions or authorization. No new outside image or legal content.",
     "Transport study card uses isolated three-long-gun-case JPEG xref120 from original Law - Weapons (20260819).pdf page 23. Descriptive visual only; does not validate current German rules on unloaded, locked or cased firearms.",
-    "Dog Parts restored from original Hunting Dogs (202609) course page 4 ('Jäger Latein - Dog Parts'), embedded JPEG xref98. Clear self-contained German-labeled anatomy illustration (Behang, Decke, Rute, Fahne, Pfoten etc.), without lecture chrome; course page 5 separately lists meanings."
+    "Dog Parts restored from original Hunting Dogs (202609) course page 4 ('Jäger Latein - Dog Parts'), embedded JPEG xref98. Clear self-contained German-labeled anatomy illustration (Behang, Decke, Rute, Fahne, Pfoten etc.), without lecture chrome; course page 5 separately lists meanings.",
+    "Dog Diseases uses three exact originally embedded JPEGs from Hunting Dogs (202609).pdf pages 26–27, each individually SHA-256 checked and combined as picture-only examples. Image is not comprehensive nor a diagnostic key."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -265,6 +266,39 @@
         "kestrel"
       ],
       "note": "Six original classroom bird examples, explicitly nonexhaustive identification practice"
+    },
+    "dogdiseases": {
+      "path": "media/study-dogdiseases-examples.webp",
+      "source": "Hunting Dogs (202609).pdf",
+      "pictureSourcePageXrefs": [
+        [
+          26,
+          457
+        ],
+        [
+          27,
+          464
+        ],
+        [
+          27,
+          465
+        ]
+      ],
+      "imageSources": [
+        {
+          "path": "media/dogdiseases-class-rabies-warning.jpeg",
+          "sha256": "04b2030e8e4b02b5d043d0a660a96b7af507b3001cec3d69876ed0595dbfa9c7"
+        },
+        {
+          "path": "media/dogdiseases-class-worms-example.jpeg",
+          "sha256": "b98b1105633d60bb4759f9756f1deca35738d23525dc9e48774b1f97a0d9c744"
+        },
+        {
+          "path": "media/dogdiseases-class-tick-diagram.jpeg",
+          "sha256": "c8d67c9732912d21ac4da7a506416c5706d8f9e83158fb44af2bbebd98cf2931"
+        }
+      ],
+      "note": "Original class examples of a rabies warning sign, intestinal roundworm illustration and tick diagram; not a comprehensive disease list or diagnosis."
     }
   },
   "classPhotoReuse": {

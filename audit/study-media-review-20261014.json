@@ -7,8 +7,8 @@
     "slideOrPageLike": 71,
     "semanticMismatch": 0,
     "standaloneLikely": 45,
-    "assemblyCrops": 27,
-    "remainingSlideOrPageLike": 44,
+    "assemblyCrops": 31,
+    "remainingSlideOrPageLike": 40,
     "correctedSemanticMismatch": 1
   },
   "slideOrPageLike": [
@@ -96,7 +96,8 @@
     "Seven additional course bird/raptor images now cropped to clean photos (Curlew, White-fronted Goose, Tawny Owl, Osprey, Sea Eagle, Eagle Owl and Kestrel). Other candidate photos were rejected if cropping would retain annotations or clip identifying anatomy.",
     "Six additional individually checked course photos were cropped for harriers, carrion crow, rook, raven, magpie, and jays, without captions or slide layout.",
     "The original Shot Placement Hochsitz subject mismatch is corrected at APK assembly using the isolated original slide-23 roe deer heart/lung target diagram, with SHA-256 integrity check.",
-    "Additional five bird/corvid cards cropped after checking the original classroom image panels: Auerwild, Birkwild, Black Kite, Brent Goose, Canada Goose. Source crops avoid red numbered badges and slide text, sometimes omitting feet or outer wing edges."
+    "Additional five bird/corvid cards cropped after checking the original classroom image panels: Auerwild, Birkwild, Black Kite, Brent Goose, Canada Goose. Source crops avoid red numbered badges and slide text, sometimes omitting feet or outer wing edges.",
+    "Four original class photographs isolated from larger slides: Drilling three-barrel muzzle, shooting-rule rifle handling, four hunting dogs, and a dog kennel; direct photo cropping only."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -125,7 +126,11 @@
     "blackgrouse",
     "blackkite",
     "brantgoose",
-    "canadagoose"
+    "canadagoose",
+    "combinationguns",
+    "rangesafety",
+    "doggroups",
+    "kennel"
   ],
   "originalSemanticMismatch": {
     "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."

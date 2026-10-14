@@ -4,6 +4,9 @@ on:
     branches: [audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
     paths:
       - 'app/**'
+      - 'scripts/crop_study_slide_images.py'
+      - 'scripts/check_study_media.py'
+      - 'audit/study-media-review-20261014.json'
       - '.github/workflows/android-standalone-apk.yml'
   workflow_dispatch:
 permissions:

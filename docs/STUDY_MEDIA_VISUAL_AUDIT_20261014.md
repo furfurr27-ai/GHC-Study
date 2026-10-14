@@ -19,7 +19,7 @@ The original 2013 guide images for four wildlife study cards contained an entire
 | --- | --- | --- | --- |
 | Muffelwild (`mouflon`) | `Guide_08f_Mouflon_2013-08.pdf` full page | `media/study-photo-mouflon.webp` (450×463) | (160,180)–(610,643) |
 | Murmeltier (`marmot`) | `Guide_08n1-5_Other_Game_2013-08.pdf` full page | `media/study-photo-marmot.webp` (568×257) | (104,245)–(672,502) |
-| Seehund (`seal`) | Same guide's seal page | `media/study-photo-seal.webp` (535×331) | (115,260)–(650,591) |
+| Seehund (`seal`) | Same guide's seal page | `media/study-photo-seal.webp` (537×356) | (114,184)–(651,540) |
 | Bär (`bear`) | Class slide with photo plus notes | `media/study-photo-bear.webp` (580×381) | (138,85)–(718,466) |
 
 The four crops were visually checked from the original APK pixels before implementation. `scripts/crop_study_slide_images.py` uses Pillow at APK assembly time to make the four WebP files and updates only the `STUDY_CARDS` image pointers and `GHC_STUDY_IMAGES` mapping inside the *assembled* HTML. **Text facts, notes, source labels, IDs, scoring and saved progress keys remain unchanged.** The original images stay in the repository for audit traceability.
@@ -36,3 +36,7 @@ The resulting standalone APK was successfully built in [GitHub Actions run 38496
 - The app's separate factual-audit register remains **803/814** text-checked claim blocks with 11 historical course-guide exceptions. Etymology, 867 answer/explanation truth checks, source-page accuracy and current law are separate unfinished tasks.
 
 Sources actually inspected: the downloaded standalone Android APK and decoded asset metadata; a full image-by-image visual contact sheet of all 117 current selections; connected course-source identification recorded in embedded asset provenance; GitHub branch files, pipeline scripts, and Actions build artifact evidence.
+
+### 2026-10-14 seal crop QA correction
+
+The first build’s seal crop included the original guide-page caption and part of its descriptive paragraph below the photograph. Manual inspection of the original source image identified the photograph bounding box at x=114–651, y=184–540; the crop script was corrected at commit `7d3ebfa1b73da1ebef1b4ec530edf22c441cf38b`. Prior batch-one APK artifact `38496380116` should **not** be distributed as picture-only-correct because it contains the older oversize seal crop. A fresh build is required for a properly caption-free seal image. No card prose, source claims or progress data changed.

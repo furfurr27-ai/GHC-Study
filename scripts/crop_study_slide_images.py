@@ -252,7 +252,7 @@ def main():
         review_card["visualId"]=None
         review_card["imageKey"]=bird_gallery_key
         print("Assembled six original class bird identification examples",bird_gallery_rel)
-    # These seven JPEGs are exact original PDF XObject image streams.
+    # These eight JPEGs are exact original PDF XObject image streams.
     # They were extracted from the connected 2026 classroom PDFs and committed
     # into the PRIVATE repo without copying slide pages or PDF documents.
     # SHA-256 checks are over the original binary embedded images.
@@ -297,7 +297,13 @@ def main():
             "media/sparrowhawk-class-original.jpeg",
             "Game - Predatory Birds (202609).pdf",10,87,
             "ec0bbb3daf029c50d78f3ca3c4be2c28c3772bf80c96d626f5bd718e6969a088",
-            "Entire unobstructed original Sparrrowhawk/Sperber photograph; classroom species caption verified"
+            "Entire unobstructed original Sparrowhawk/Sperber photograph; classroom species caption verified"
+        ),
+        "wildschaden":(
+            "media/wildschaden-class-crop-damage.jpeg",
+            "Law - Hunting (202608).pdf",47,241,
+            "1fe0bb80deb5b83598a7bdbb858a1792fdd45c3e5a92d1190a85bbfa69ca3220",
+            "Actual farm crop-damage photograph from class; no claim about current legal deadlines or compensation"
         ),
     }
     for cid,(rel,source,page,xref,expected_sha,warning) in figures.items():

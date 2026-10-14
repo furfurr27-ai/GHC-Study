@@ -311,6 +311,12 @@ def main():
             "434832c3a8490570733b563bfce5aa7b0c4b4bdd0ffe230f01f7490745803e20",
             "Three rifle carrying cases pictured on the original class 'Cases' slide, illustrative only; not proof of current transport or locking-law compliance"
         ),
+        "dogparts":(
+            "media/dogparts-original-course-anatomy.jpeg",
+            "Hunting Dogs (202609).pdf",4,98,
+            "cf12124d1f9d64ad7508379af8782374e479e114ebea3bd73cd275949e2a694d",
+            "Original Jäger Latein dog-anatomy illustration labeling Behang, Decke, Rute, Fahne, Pfoten and other body parts; not the entire lecture slide"
+        ),
     }
     for cid,(rel,source,page,xref,expected_sha,warning) in figures.items():
         blob=ROOT/rel

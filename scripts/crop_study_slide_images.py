@@ -50,6 +50,14 @@ CROPS = {
     "rangesafety": (436, 33, 885, 185),
     "doggroups": (527, 491, 869, 654),
     "kennel": (76, 73, 688, 464),
+    # Standalone class pictures extracted from dog and game-disease lessons.
+    # Dog/disease examples are visual references, not proof of diagnosis.
+    "labrador": (167, 113, 546, 333),
+    "dogcert": (432, 71, 686, 253),
+    "trichinella": (607, 264, 895, 439),
+    "rabies": (652, 42, 800, 203),
+    "asf": (76, 88, 700, 394),
+    "footmouth": (648, 388, 880, 492),
 }
 
 def read_json(s, var):

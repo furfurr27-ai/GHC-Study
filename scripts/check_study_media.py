@@ -42,6 +42,7 @@ def main():
         corrected_subjects = review.get("correctedSemanticMismatch", {})
         exact_figures = review.get("originalFigureRemaps", {})
         montages = review.get("assemblyMontages", {})
+        reused = review.get("classPhotoReuse", {})
         assert repaired <= flagged and len(repaired) == review["counts"].get("assemblyCrops", 0)
         ids = {c["id"] for c in cards}
         assert len(cards) == len(ids) == review["counts"]["reviewed"], "Study-card inventory changed; refresh media audit"
@@ -56,7 +57,9 @@ def main():
         assert len(exact_figures) == review["counts"].get("originalFigureRemaps", 0)
         assert len(montages) == review["counts"].get("assemblyMontages", 0)
         assert set(montages) <= flagged and set(montages).isdisjoint(repaired | set(exact_figures))
-        assert len(flagged - repaired - set(exact_figures) - set(montages)) == review["counts"].get("remainingSlideOrPageLike")
+        assert set(reused) <= flagged and set(reused).isdisjoint(repaired | set(exact_figures) | set(montages))
+        assert len(reused) == review["counts"].get("classPhotoReuse", 0)
+        assert len(flagged - repaired - set(exact_figures) - set(montages) - set(reused)) == review["counts"].get("remainingSlideOrPageLike")
         results = []
         failures = []
         for card in cards:
@@ -84,6 +87,11 @@ def main():
                     if hashlib.sha256(b).hexdigest() != corrected_subjects[card["id"]]["integritySha256"]:
                         failures.append(card["id"] + ": diagram binary differs from original verified course extraction")
                 kind = "corrected_subject_mismatch"
+            elif card["id"] in reused:
+                source = reused[card["id"]]
+                if rel != source["path"] or info.get("photoReusedFromCardId") != source["sourceCardId"]:
+                    failures.append(card["id"] + ": audited classroom species photo reuse did not match expected source")
+                kind = "reused_original_class_photo"
             elif card["id"] in montages:
                 example = montages[card["id"]]
                 if rel != example["path"]:
@@ -114,12 +122,12 @@ def main():
         Path("build").mkdir(exist_ok=True)
         Path("build/study-media-inventory.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
         print("Study media:", len(results), "/", len(cards), "resolved;", summary["uniqueImageCount"], "unique images")
-        print("Visual review:", len(flagged), "original slide/page-like;", len(repaired), "picture crops;", len(exact_figures), "direct PDF figures;", len(montages), "source montages;", len(flagged-repaired-set(exact_figures)-set(montages)), "remaining;", len(mismatches), "subject mismatches;", len(corrected_subjects), "corrected wrong-subject illustration")
+        print("Visual review:", len(flagged), "original slide/page-like;", len(repaired), "picture crops;", len(exact_figures), "direct PDF figures;", len(montages), "source montages;", len(reused), "class-photo reuses;", len(flagged-repaired-set(exact_figures)-set(montages)-set(reused)), "remaining;", len(mismatches), "subject mismatches;", len(corrected_subjects), "corrected wrong-subject illustration")
         if failures:
             for failure in failures:
                 print("ERROR:", failure, file=sys.stderr)
             return 1
-        if flagged - repaired - set(exact_figures) - set(montages) or mismatches:
+        if flagged - repaired - set(exact_figures) - set(montages) - set(reused) or mismatches:
             print("WARNING: Full-slide images and/or subject mismatch remain. See build/study-media-inventory.json")
             if a.strict:
                 return 2

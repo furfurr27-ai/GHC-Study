@@ -35,3 +35,13 @@ The assembly pipeline validates all 31 cropped card paths and the exact Shot Pla
 ## Sources actually checked
 
 The existing v1.4.6 standalone APK image files, the crop QA sheets made from those originals, the feature branch's `scripts/crop_study_slide_images.py` and `audit/study-media-review-20261014.json`. No primary source was assumed checked merely because its filename was recorded in older notes. The exact original source deck/page for each image still requires systematic cross-reference where the APK image metadata does not identify it.
+
+## Fourth-class image overlay: Firearm Action Names
+
+The existing `firearmactions` card previously displayed its entire `Firearms Terminology` lesson slide, with paragraphs describing four actions. The original source image was inspected directly. Four photographs depicting a lever-action rifle, a pump-action long gun, a semiautomatic shotgun and a break-open combination gun were extracted **from that same source image**. The assembly script lays them out in four unlabelled rows on a plain white background, preserving the photograph pixels but not the slide typography.
+
+Source pixel rectangles: lever `(510,90,830,174)`, pump `(508,196,837,260)`, semiauto `(508,284,863,331)`, and combination `(668,333,853,475)`. The assembled montage is `media/study-photo-firearmactions.webp` at 660×580 pixels. It does not add any invented schematic or explanatory text. All firearm-action names continue to be taught through the card's existing Details text.
+
+This one photo-only montage makes the count **32 corrected visual cards and 39 remaining original slide/page images**. The original `firearmactions` slide file remains in the APK for provenance until source-media packaging is cleaned up; this does not imply the user sees it on the revised card. No question-bank content, saved progress IDs or study-card facts were edited.
+
+**Validation:** Android build CI and physical device testing must be checked at the exact post-montage commit `9108b473131f8a4a5ab70cf549f84e715123942e` or later. The earlier 31-crop APK and its test success do not validate this additional montage.

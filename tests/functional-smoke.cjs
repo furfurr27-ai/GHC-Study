@@ -95,14 +95,16 @@ for(const [term,meaning] of [['Epagneul Breton','Brittany Spaniel'],['Blindschle
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing externally attributed glossary definition for '+term);
 }
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,159,'159 source-defined glossary entries');
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,3,'3 unresolved glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,160,'160 source-defined glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,2,'2 unresolved glossary entries');
 for(const [term,meaning] of [['Einwachser-Mufflon','Mouflon ram with inward-growing horns'],['Stangensulze','Post-mounted salt lick']]){
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing source-qualified hunting glossary meaning for '+term);
 }
 const undefinedTerms=Array.from(g.GHC_GLOSSARY.filter(x=>x.status==='pending'),x=>x.term).sort();
-assert.deepEqual(undefinedTerms,['Abschussgebuehr','Jagdschuetz','Tiroler'].sort(),'Only three contextual worksheet headwords should remain pending');
+assert.deepEqual(undefinedTerms,['Jagdschuetz','Tiroler'].sort(),'Only two contextual worksheet headwords should remain pending');
+search.value='Abschussgebuehr';search.dispatchEvent(new g.Event('input',{bubbles:true}));
+assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Fee charged per game animal harvested')),'Missing source-qualified contracted hunting fee translation');
 assert(g.GHC_GLOSSARY.find(x=>x.id==='x100').etymology==='', 'Do not add invented Einwachser history');
 assert(g.GHC_GLOSSARY.find(x=>x.id==='x144').etymology==='', 'Do not add invented Stangensulze history');
 search.value='Haken';search.dispatchEvent(new g.Event('input',{bubbles:true}));

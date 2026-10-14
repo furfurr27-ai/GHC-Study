@@ -87,6 +87,14 @@ def main():
     vm = {x["id"]:x for x in visuals}
     _, _, imgs = read_json(html, "GHC_STUDY_IMAGES")
     _, _, cards = read_json(html, "GHC_STUDY_CARDS")
+    # Immutable study-card facts are part of the source-audit contract:
+    # the offline photo assembly may change only imageKey/visualId.
+    original_card_facts={
+        c["id"]:{k:v for k,v in c.items() if k not in ("imageKey","visualId")}
+        for c in cards
+    }
+    if len(original_card_facts)!=len(cards):
+        raise RuntimeError("Duplicate study card ID before image assembly")
     seen=set()
     for card in cards:
         cid=card["id"]
@@ -230,6 +238,14 @@ def main():
         "studyIllustrationExtraction":"Original PDF page 23 embedded image xref 149, isolated; monochrome threshold only",
         "review":"Anatomically relevant roe-deer heart-lung target diagram, checked 2026-10-14"
     }
+    assembled_card_facts={
+        c["id"]:{k:v for k,v in c.items() if k not in ("imageKey","visualId")}
+        for c in cards
+    }
+    if assembled_card_facts!=original_card_facts:
+        raise RuntimeError("Photo overlay unexpectedly modified a study card fact, ID or note")
+    if len(cards)!=117:
+        raise RuntimeError("Study-card count changed; review before adjusting this invariant")
     for var,object_value in (("GHC_STUDY_CARDS",cards),("GHC_STUDY_IMAGES",imgs)):
         start,end,_=read_json(html,var)
         html=html[:start]+json.dumps(object_value,ensure_ascii=False,separators=(",",":"))+html[end:]

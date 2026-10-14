@@ -23,6 +23,23 @@ capture_emulator_failure() {
   exit "$rc"
 }
 trap capture_emulator_failure EXIT
+# Android's accessibility service may restart while WebView resumes. Retry a
+# failed snapshot rather than misdiagnosing it as a broken in-app Back action.
+# Persistent UIAutomator failures still fail this regression.
+dump_ui() {
+  local remote="$1" local_path="$2" attempt
+  for attempt in 1 2 3 4; do
+    if adb shell uiautomator dump "$remote" >/dev/null 2>&1 \
+        && adb pull "$remote" "$local_path" >/dev/null 2>&1 \
+        && [[ -s "$local_path" ]]; then
+      return 0
+    fi
+    echo "UIAutomator snapshot retry $attempt: $remote"
+    sleep 2
+  done
+  echo "UIAutomator unavailable after four attempts: $remote" >&2
+  return 1
+}
 adb install -r "$APK"
 adb shell am start -W -n org.ghcstudy.v141/org.ghcstudy.offline.MainActivity
 sleep 9
@@ -32,8 +49,7 @@ sleep 9
 dismiss_launcher_dialog() {
   local stage="$1" pos attempt
   for attempt in 1 2 3; do
-    adb shell uiautomator dump /sdcard/ghc-check.xml >/dev/null
-    adb pull /sdcard/ghc-check.xml emulator-evidence/system-check.xml >/dev/null
+    dump_ui /sdcard/ghc-check.xml emulator-evidence/system-check.xml
     if grep -q "GHC Study isn't responding" emulator-evidence/system-check.xml; then
       echo "GHC app ANR at $stage" >&2; return 1
     fi
@@ -126,8 +142,7 @@ assert_ghc_foreground home
 # UIAutomator call. Never parse a system dialog as an application's UI.
 for attempt in $(seq 1 8); do
   dismiss_launcher_dialog "before-quiz-accessibility-$attempt"
-  adb shell uiautomator dump /sdcard/ghc-quiz.xml >/dev/null
-  adb pull /sdcard/ghc-quiz.xml emulator-evidence/quiz-home.xml >/dev/null
+  dump_ui /sdcard/ghc-quiz.xml emulator-evidence/quiz-home.xml
   if grep -q "Pixel Launcher isn't responding" emulator-evidence/quiz-home.xml; then
     echo "Launcher dialog reappeared during quiz accessibility capture ($attempt)"
     sleep 2
@@ -186,8 +201,7 @@ fi
 assert_ghc_foreground glossary
 for attempt in $(seq 1 8); do
   dismiss_launcher_dialog "before-glossary-accessibility-$attempt"
-  adb shell uiautomator dump /sdcard/ghc-glossary.xml >/dev/null
-  adb pull /sdcard/ghc-glossary.xml emulator-evidence/glossary.xml >/dev/null
+  dump_ui /sdcard/ghc-glossary.xml emulator-evidence/glossary.xml
   if grep -q "Pixel Launcher isn't responding" emulator-evidence/glossary.xml; then
     echo "Launcher dialog reappeared during glossary accessibility capture ($attempt)"
     sleep 2
@@ -211,8 +225,7 @@ sleep 4
 adb shell pidof org.ghcstudy.v141
 wait_for_rendered_app returned-after-back emulator-evidence/returned-after-back.png
 assert_ghc_foreground returned-after-back
-adb shell uiautomator dump /sdcard/ghc-return.xml >/dev/null
-adb pull /sdcard/ghc-return.xml emulator-evidence/returned.xml >/dev/null
+dump_ui /sdcard/ghc-return.xml emulator-evidence/returned.xml
 python3 - <<'PY'
 from pathlib import Path
 s=Path("emulator-evidence/returned.xml").read_text(errors="replace")
@@ -241,8 +254,7 @@ tap_visible_label() {
   local label="$1" stage="$2" pos="" attempt
   for attempt in $(seq 1 6); do
     dismiss_launcher_dialog "$stage"
-    adb shell uiautomator dump /sdcard/ghc-nav.xml >/dev/null
-    adb pull /sdcard/ghc-nav.xml emulator-evidence/navigation-current.xml >/dev/null
+    dump_ui /sdcard/ghc-nav.xml emulator-evidence/navigation-current.xml
     pos="$(GHC_NAV_LABEL="$label" python3 - <<'PY'
 import os,re,xml.etree.ElementTree as ET
 label=os.environ["GHC_NAV_LABEL"]
@@ -274,8 +286,7 @@ PY
 }
 assert_visible_text() {
   local label="$1" stage="$2"
-  adb shell uiautomator dump /sdcard/ghc-verify.xml >/dev/null
-  adb pull /sdcard/ghc-verify.xml emulator-evidence/verify-"$stage".xml >/dev/null
+  dump_ui /sdcard/ghc-verify.xml emulator-evidence/verify-"$stage".xml
   GHC_NAV_LABEL="$label" GHC_NAV_XML="emulator-evidence/verify-$stage.xml" python3 - <<'PY'
 import os,re,xml.etree.ElementTree as ET
 root=ET.parse(os.environ["GHC_NAV_XML"]).getroot()

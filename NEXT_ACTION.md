@@ -5,7 +5,7 @@ Updated: 2026-10-13. Live source of truth: `feature/slide-audit-glossary-tests-2
 ## Build and app invariants
 
 - v1.4.6, versionCode 146; SDK 35 target/compile, minSdk 24; primary app ID `org.ghcstudy.v141`; side-by-side test app ID `org.ghcstudy.v146.standalone`.
-- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (135 with meanings / 27 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
+- Maintain 100 practice questions, 767 GHC-focused (Direct/Related) questions, 77 vocabulary quiz questions, 117 study cards, and the 162-term Jägersprache glossary (137 with meanings / 25 pending; two meanings from a historical 2013 course guide, not 2026 class slides).
 - Preserve existing quiz progress storage, selective reset and backup/restore, offline images, system Back and launcher icon. Debug APK signatures from independent builds may differ; the standalone app is safer for initial installation.
 
 ## Source research completed and remaining
@@ -68,3 +68,11 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - CI test now recovers from this external dialog and uses the Android 35 `default` (AOSP) emulator image instead of `google_apis` to avoid Pixel Launcher as an unrelated dependency. This still tests Android 35 WebView but does not reproduce Samsung One UI; the physical device test is independent and still necessary.
 - Updated glossary filter regression to compute expected Defined/Pending counts from shipped glossary data while requiring exactly 162 classified terms and checking new bilingual meanings. The exact documented snapshot remains **135 defined / 27 pending**.
 - **Validation gate:** check latest `GHC glossary and functional regression` run on commit `bd3c479634a92c2a2b00ee70d8034ff4cad0aa08` and confirm both APK and emulator jobs. If AOSP image setup fails, inspect the SDK image availability and revert that CI configuration without changing app content. Do **not** claim Android Back passes solely because static Java/JS tests pass.
+
+### 2026-10-14 — verified Android Back and source-attributed glossary additions
+
+- **Verified** Android 35 `google_apis` emulator run [38464879108](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38464879108): actual Glossary page launched, native system Back returned to main Quiz screen, app survived and the screenshots changed as expected. Physical Samsung/One UI operation is still **not** verified.
+- The proposed AOSP `default` emulator image in runs `38465059326` and `38465259390` failed with a persistent blank WebView before any Back assertion. Reverted workflow to previously working `google_apis` image.
+- Added **Reference → Quiz Mode** and **Rehwild card → Schalenwild category** native Back tests in the emulator harness, with visual transition check. These remain pending separate successful CI evidence.
+- New context-supported glossary entries: `Bestaetigter Jagdaufseher` and `Erleger bruch`. Both cite directly checked class text and explicitly distinguish exact German worksheet wording from related class terminology; no current-law or historical word-origin claim is made. **137 defined / 25 pending / 162 total**.
+- Evidence: `docs/CONTINUATION_20261014_ANDROID_GLOSSARY.md`. Continue the 25 pending terms only when class-file evidence is sufficient. Preserve all 867 question IDs, 77 legacy etymologies and 117 study cards and refrain from merging PR #3 before final gates.

@@ -91,6 +91,12 @@ for(const [term,meaning] of [['Bundesverwaltungsamt','Federal Office of Administ
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing official-authority glossary definition for '+term);
 }
+for(const [term,meaning] of [['Epagneul Breton','Brittany Spaniel'],['Blindschleiche','Slow worm'],['Kreuzotter','European adder'],['Borkenkaefer','Bark beetle']]){
+ search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
+ assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing externally attributed glossary definition for '+term);
+}
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,147,'147 source-defined glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,15,'15 unresolved glossary entries');
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('.related a').length>0,'cross-links rendered');
 assert.equal(b.errors.length,0,'glossary script errors: '+b.errors.join(' | '));b.dom.window.close();

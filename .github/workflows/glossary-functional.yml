@@ -101,6 +101,8 @@ jobs:
           python3 scripts/inject_vocabulary_etymology.py
       - name: Extract standalone photos from four historical course pages
         run: python3 scripts/crop_study_slide_images.py
+      - name: Verify assembled trophy and vocabulary sections
+        run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
       - name: Confirm assembled study image integrity

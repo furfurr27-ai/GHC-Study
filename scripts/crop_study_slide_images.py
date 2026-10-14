@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Crop original course pictures out of four full-page classroom images.
+"""Crop standalone course pictures out of full pages and composite slides.
 
 Assembly-time overlay: preserves question IDs, answer keys, fact text,
 existing progress keys and original class image assets. Idempotent.
@@ -15,6 +15,12 @@ CROPS = {
     "marmot": (104, 245, 672, 502),
     "seal": (114, 184, 651, 540),
     "bear": (138, 85, 718, 466),
+    # Photo-only regions manually checked against course slide source images.
+    "beangoose": (532, 396, 795, 659),
+    "merganser": (226, 293, 510, 423),
+    "muteswan": (359, 127, 630, 332),
+    "greatcrestedgrebe": (52, 155, 488, 399),
+    "coot": (483, 32, 848, 277),
 }
 
 def read_json(s, var):
@@ -71,7 +77,7 @@ def main():
     HTML.write_text(html,encoding="utf-8")
     for cid in CROPS:
         assert (ROOT/("media/study-photo-"+cid+".webp")).is_file()
-    print("PASS 4 original-class-source picture-only crops; all study facts preserved")
+    print("PASS " + str(len(CROPS)) + " original-class-source picture-only crops; all study facts preserved")
 
 if __name__=="__main__":
     main()

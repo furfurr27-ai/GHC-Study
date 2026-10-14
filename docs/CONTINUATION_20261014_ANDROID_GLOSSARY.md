@@ -31,3 +31,15 @@ Both entries retain blank etymologies; no unverified story about poachers or del
 - Locally inspected original app HTML inside a previously compiled Android APK for the actual Study Mode category/card navigation code, without modifying the authoritative source HTML.
 
 No field device, figure-only slide, or current legal corpus was independently validated.
+
+## Confirmed Android Back defect and code correction
+
+In full Android 35 emulator run [38492014050](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38492014050), opening Reference succeeded, but pressing Android system Back exited to Pixel Launcher. This is a **confirmed within-app navigation defect** and is separate from occasional launch-blank or launcher-ANR CI failures.
+
+Cause directly confirmed by comparing source: `index.html` defines `var view, mode` inside its startup IIFE, not on `window`. Earlier `MainActivity.navigateBack()` called `evaluateJavascript` and attempted to access these variables and functions as globals, received `error`, and fell through to `finish()` when WebView had no page history.
+
+Fix committed at `b1006b54f79fa0279988a9e7e8ae330a96f2693c`: instead of accessing private state, JavaScript uses the existing app DOM controls with bound handlers: `#studyCatBack` (card → category), `#studyHubBack` (category → hub), `[data-action=home]` (quiz question → quiz home), active navigation tab + `[data-tab=study]` (Study Mode hub/Reference → Quiz Mode), and `#closeModal` (modal dismissal). A separately loaded glossary continues to use WebView history. No question bank, progress keys, or study-card data were changed.
+
+Regression `scripts/test_android_back.py` was rewritten at `950cd4aac78a941ec900451538c26fda8dfa6b63` to **not expose app IIFE variables as globals** in its mock and instead simulate the actual DOM controls. Prior mock passed a broken implementation because it incorrectly injected global `view/mode` into the testing environment.
+
+The new native code must still pass CI and the expanded Android emulator run. This note does **not** claim the current build has passed Reference or card Back on Android hardware or the user's Samsung handset.

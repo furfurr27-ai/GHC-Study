@@ -39,6 +39,7 @@ def main():
         flagged = set(review["slideOrPageLike"])
         mismatches = set(review["semanticMismatch"])
         repaired = set(review.get("assemblyCrops", []))
+        corrected_subjects = review.get("correctedSemanticMismatch", {})
         assert repaired <= flagged and len(repaired) == review["counts"].get("assemblyCrops", 0)
         ids = {c["id"] for c in cards}
         assert len(cards) == len(ids) == review["counts"]["reviewed"], "Study-card inventory changed; refresh media audit"
@@ -46,7 +47,9 @@ def main():
         assert (flagged | mismatches) <= ids, "Media review references missing cards"
         assert len(flagged) == review["counts"]["slideOrPageLike"]
         assert len(mismatches) == review["counts"]["semanticMismatch"]
-        assert len(ids - flagged - mismatches) == review["counts"]["standaloneLikely"]
+        assert len(ids - flagged - mismatches - set(corrected_subjects)) == review["counts"]["standaloneLikely"]
+        assert len(corrected_subjects) == review["counts"].get("correctedSemanticMismatch", 0)
+        assert set(corrected_subjects).isdisjoint(flagged | mismatches)
         results = []
         failures = []
         for card in cards:
@@ -65,7 +68,16 @@ def main():
                 continue
             if len(b) < 256:
                 failures.append(card["id"] + ": suspiciously small image " + rel)
-            if card["id"] in repaired:
+            if card["id"] in corrected_subjects:
+                expected = corrected_subjects[card["id"]]["image"]
+                if rel != expected:
+                    failures.append(card["id"] + ": original class diagram not installed (" + str(rel) + ")")
+                else:
+                    import hashlib
+                    if hashlib.sha256(b).hexdigest() != corrected_subjects[card["id"]]["integritySha256"]:
+                        failures.append(card["id"] + ": diagram binary differs from original verified course extraction")
+                kind = "corrected_subject_mismatch"
+            elif card["id"] in repaired:
                 expected = "media/study-photo-" + card["id"] + ".webp"
                 if rel != expected:
                     failures.append(card["id"] + ": expected generated crop " + expected + ", got " + rel)
@@ -77,7 +89,7 @@ def main():
         Path("build").mkdir(exist_ok=True)
         Path("build/study-media-inventory.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
         print("Study media:", len(results), "/", len(cards), "resolved;", summary["uniqueImageCount"], "unique images")
-        print("Visual review:", len(flagged), "original slide/page-like;", len(repaired), "corrected in assembly;", len(flagged)-len(repaired), "remaining;", len(mismatches), "subject mismatches")
+        print("Visual review:", len(flagged), "original slide/page-like;", len(repaired), "corrected in assembly;", len(flagged)-len(repaired), "remaining;", len(mismatches), "subject mismatches;", len(corrected_subjects), "corrected wrong-subject illustration")
         if failures:
             for failure in failures:
                 print("ERROR:", failure, file=sys.stderr)

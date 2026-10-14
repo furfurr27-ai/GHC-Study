@@ -1,13 +1,13 @@
 # GHC Study — remaining Jägersprache worksheet-term triage (2026-10-14)
 
-Status: **15 terms still pending** in the 162-term indexed offline glossary (**147 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
+Status: **10 terms still pending** in the 162-term indexed offline glossary (**152 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
 
 | Term IDs | Remaining worksheet terms | Suggested primary-source follow-up |
 |---|---|---|
 | x078, x118 | Abschussgebuehr; Jagdschuetz | Reinspect `Law - Hunting (202608).pdf`, `Law - Weapons (20260819).pdf`, `Range - Revier (20260922).pdf`, `Disease - Kundige Person.pdf` for exact authority and document wording; verify present law **separately** |
-| x085, x114, x144, x161 | Bergstutzen; Haken; Stangensulze; Wolfssprosse | Review optics/weapon and trophy anatomy decks **with embedded diagrams**, since ordinary meanings of words like Baum or Stein could be misleading in hunting jargon |
-| x116, x129, x130, x156, x158, x160 | Hirschlaus; Marienkaefer; Moderhinke; Wechselwild; Wildretter; Wildwechsel | Nature and animal protection, field/forest, parasitology and disease decks; species/parasite identification may require image evidence |
-| x100, x111, x148 | Einwachser-Mufflon; Fuehrende; Tiroler | Species/trophy and hunting-dog class slides, predator-pelt vocabulary and source-specific uses; avoid inferring biological status or breed labels from names alone |
+| x085, x114, x144 | Bergstutzen; Haken; Stangensulze | Review optics/weapon and trophy anatomy decks **with embedded diagrams**, since ordinary meanings of words like Baum or Stein could be misleading in hunting jargon |
+| x116, x129, x158 | Hirschlaus; Marienkaefer; Wildretter | Nature and animal protection, field/forest, parasitology and disease decks; species/parasite identification may require image evidence |
+| x100, x148 | Einwachser-Mufflon; Tiroler | Species/trophy and hunting-dog class slides, predator-pelt vocabulary and source-specific uses; avoid inferring biological status or breed labels from names alone |
  
 ## Important direct checks from this continuation
 
@@ -40,3 +40,9 @@ Do not silently take ordinary German translations as established *Jägersprache*
 - x089 Borkenkäfer → **Bark beetle**: forestry-research source (Waldwissen.net).
 
 These are labeled external corroborated definitions, not verified German-headword text in the class slide decks; historical etymologies remain blank. Source URLs and exact scope in `docs/GLOSSARY_VERIFIED_DEFINITIONS_20261014_BATCH6.md`. Current totals: **147 defined, 15 pending, 162 entries**. No test keys or study-card facts changed.
+
+## 2026-10-14 glossary batch 7 — five separately evidenced meanings
+
+Official Hessen hunter-exam question 106 verifies **Wechselwild** as animals not permanently resident in the Revier, while Duden defines **Wildwechsel** as the regular wildlife trail; the entries are linked and not conflated. AGES veterinary data and Hessen hunter-exam questions corroborate **Moderhinke** as infectious footrot affecting Muffelwild. Swiss hunter education and Waidwissen explain the antler tine **Wolfssprosse**; Hessen exam questions 132–133 support `führende Ricke / führendes Alttier` as female deer caring for offspring. All five are labeled *external exam/dictionary/veterinary/education* rather than exact GHC slide headword translations. No etymology is invented. Full URLs and constraints: `docs/GLOSSARY_VERIFIED_DEFINITIONS_20261014_BATCH7.md`.
+
+Current: **152 of 162 defined, 10 pending**. Remaining IDs: x078, x085, x100, x114, x116, x118, x129, x144, x148, x158. No study-card text or examination keys changed.

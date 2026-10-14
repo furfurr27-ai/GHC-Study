@@ -87,6 +87,30 @@ def main():
         print("Cropped",cid,orig["src"],"to",dst_rel)
     if seen!=set(CROPS):
         raise RuntimeError("Missing card IDs "+str(set(CROPS)-seen))
+    # Correct a separate picture/subject mismatch. This is the exact roe-deer
+    # anatomical illustration embedded on page 23 of the 2026 Hunting Techniques
+    # class PDF (xref 149), extracted without any surrounding slide text.
+    # The original PNG was converted to high-contrast monochrome without
+    # moving, deleting or drawing any anatomical lines.
+    diagram_rel="media/shotplacement-class-diagram.png"
+    diagram=ROOT/diagram_rel
+    if not diagram.is_file():
+        raise RuntimeError("Missing directly extracted original shot-placement course diagram")
+    import hashlib
+    if hashlib.sha256(diagram.read_bytes()).hexdigest()!="c00ab76a236fc161b4594dbcd93182a4ed2b4324d5ae7ee52f0916cf6d60cb0f":
+        raise RuntimeError("Shot-placement original class diagram integrity check failed")
+    shot=next((c for c in cards if c["id"]=="shotplacement"),None)
+    if shot is None:
+        raise RuntimeError("Missing Shot Placement study card")
+    shot["visualId"]=None
+    shot["imageKey"]="study_extracted_shotplacement"
+    imgs["study_extracted_shotplacement"]={
+        "src":diagram_rel,
+        "source":"Hunting_Techniques_V3.1_16FEB26.pdf",
+        "page":23,
+        "studyIllustrationExtraction":"Original PDF page 23 embedded image xref 149, isolated; monochrome threshold only",
+        "review":"Anatomically relevant roe-deer heart-lung target diagram, checked 2026-10-14"
+    }
     for var,object_value in (("GHC_STUDY_CARDS",cards),("GHC_STUDY_IMAGES",imgs)):
         start,end,_=read_json(html,var)
         html=html[:start]+json.dumps(object_value,ensure_ascii=False,separators=(",",":"))+html[end:]

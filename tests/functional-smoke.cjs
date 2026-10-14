@@ -95,8 +95,11 @@ for(const [term,meaning] of [['Epagneul Breton','Brittany Spaniel'],['Blindschle
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing externally attributed glossary definition for '+term);
 }
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,155,'155 source-defined glossary entries');
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,7,'7 unresolved glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,156,'156 source-defined glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,6,'6 unresolved glossary entries');
+search.value='Bergstutzen';search.dispatchEvent(new g.Event('input',{bubbles:true}));
+assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Two-barrel break-action rifle')),'Missing externally verified Bergstutzen definition');
+
 for(const [term,meaning] of [['Wildretter','Wildlife rescuer'],['Hirschlaus','European deer ked'],['Marienkaefer','Ladybird beetle']]){
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing new DJV/university/dictionary glossary meaning for '+term);

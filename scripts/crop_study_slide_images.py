@@ -218,7 +218,7 @@ def main():
         trees["visualId"]=None
         trees["imageKey"]=trees_key
         print("Assembled five original class tree photographs",trees_rel)
-    # These three JPEGs are exact original PDF XObject image streams.
+    # These six JPEGs are exact original PDF XObject image streams.
     # They were extracted from the connected 2026 classroom PDFs and committed
     # into the PRIVATE repo without copying slide pages or PDF documents.
     # SHA-256 checks are over the original binary embedded images.
@@ -240,6 +240,24 @@ def main():
             "Disease - Parasites.pdf",3,33,
             "0bda4651c8d9aa98870c8719385f3d3011cf845d46e7fa20636c02b87d2aaa72",
             "Original class parasite identification photographs (lice, flea and tick)"
+        ),
+        "revierrules":(
+            "media/revierrules-erbenheim-course-map.jpeg",
+            "Range - Revier (20260922).pdf",20,126,
+            "e97ef9d4dc1d344bad285184988341f66d7090daef9b4abf51486305629e4d47",
+            "Erbenheim hunting-ground example map from course; NOT current verified boundaries"
+        ),
+        "kundigeperson":(
+            "media/kundigeperson-class-game-anatomy.jpeg",
+            "Disease - Kundige Person.pdf",5,50,
+            "d6f9888b8dbee450b06ceb9ce0917125eb5eba0ec116892fbc4f200a7693d7e8",
+            "Original roe deer body/organs illustration for inspection-study context; not a person's official certification"
+        ),
+        "diseasenames":(
+            "media/diseasenames-class-lung-example.jpeg",
+            "Disease - Kundige Person.pdf",6,53,
+            "cd473a2bbfb11fb8cdfd05bf3d99c4036feec348a709b64cf385b2d21d887b8e",
+            "One class example labeled abnormal lung; appearance alone is NOT a disease diagnosis"
         ),
     }
     for cid,(rel,source,page,xref,expected_sha,warning) in figures.items():

@@ -55,6 +55,15 @@ jobs:
         run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
+      - name: Audit all study-card image links and flag visual defects
+        run: python3 scripts/check_study_media.py
+      - name: Publish media integrity and visual-review backlog
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-study-media-integrity
+          path: build/study-media-inventory.json
+          if-no-files-found: warn
   android-apk:
     runs-on: ubuntu-latest
     needs: smoke
@@ -86,6 +95,8 @@ jobs:
           python3 scripts/inject_vocabulary_etymology.py
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
+      - name: Confirm assembled study image integrity
+        run: python3 scripts/check_study_media.py
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify glossary packaged into APK

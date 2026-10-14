@@ -76,3 +76,11 @@ Study-card Details/Other Facts contain class-slide material only unless an excep
 - Added **Reference → Quiz Mode** and **Rehwild card → Schalenwild category** native Back tests in the emulator harness, with visual transition check. These remain pending separate successful CI evidence.
 - New context-supported glossary entries: `Bestaetigter Jagdaufseher` and `Erleger bruch`. Both cite directly checked class text and explicitly distinguish exact German worksheet wording from related class terminology; no current-law or historical word-origin claim is made. **137 defined / 25 pending / 162 total**.
 - Evidence: `docs/CONTINUATION_20261014_ANDROID_GLOSSARY.md`. Continue the 25 pending terms only when class-file evidence is sufficient. Preserve all 867 question IDs, 77 legacy etymologies and 117 study cards and refrain from merging PR #3 before final gates.
+
+### 2026-10-14 — CI startup and external launcher-ANR hardening
+
+- Successful `google_apis` emulator run `38464879108` remains the latest **confirmed full pass** of Glossary page navigation + Android Back.
+- Intermediate Android CI for expanded Reference / study-card Back checks sometimes failed **before navigation** due to a persistent white WebView frame or an external Pixel Launcher ANR overlay. Neither failure independently proves a problem in those Back transitions.
+- CI harness now makes **one app-data-preserving cold Activity restart** after eight consecutive blank home screenshots, and retains all blank-frame failures if restart does not paint.
+- Evidence artifact `11862067973` shows the external launcher ANR dialog provided both **Close app** and **Wait**. Selecting **Wait** made the popup recur immediately eight times. Harness now selects **Close app** for Pixel Launcher first (and only for that external process), then rechecks the real GHC screen. This never dismisses a GHC app ANR.
+- Next validation: inspect run `38492308855` (commit `4dd54a1b23e26d9f4c8e5967fe8de0151d634a20`) and confirm original Glossary + added Reference/study-card Back paths. Do **not** conflate JS/API structural test passes with this final Android emulator gate.

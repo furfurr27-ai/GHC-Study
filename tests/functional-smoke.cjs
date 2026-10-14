@@ -95,8 +95,11 @@ for(const [term,meaning] of [['Epagneul Breton','Brittany Spaniel'],['Blindschle
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing externally attributed glossary definition for '+term);
 }
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,156,'156 source-defined glossary entries');
-assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,6,'6 unresolved glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='defined').length,157,'157 source-defined glossary entries');
+assert.equal(g.GHC_GLOSSARY.filter(x=>x.status==='pending').length,5,'5 unresolved glossary entries');
+search.value='Haken';search.dispatchEvent(new g.Event('input',{bubbles:true}));
+assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('female wild boar')),'Missing multi-sense Haken trophy definition');
+
 search.value='Bergstutzen';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes('Two-barrel break-action rifle')),'Missing externally verified Bergstutzen definition');
 

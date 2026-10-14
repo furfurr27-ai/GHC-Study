@@ -1,11 +1,11 @@
 # GHC Study — remaining Jägersprache worksheet-term triage (2026-10-14)
 
-Status: **6 terms still pending** in the 162-term indexed offline glossary (**156 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
+Status: **5 terms still pending** in the 162-term indexed offline glossary (**157 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
 
 | Term IDs | Remaining worksheet terms | Suggested primary-source follow-up |
 |---|---|---|
 | x078, x118 | Abschussgebuehr; Jagdschuetz | Reinspect `Law - Hunting (202608).pdf`, `Law - Weapons (20260819).pdf`, `Range - Revier (20260922).pdf`, `Disease - Kundige Person.pdf` for exact authority and document wording; verify present law **separately** |
-| x114, x144 | Haken; Stangensulze | Review optics/weapon and trophy anatomy decks **with embedded diagrams**, since ordinary meanings of words like Baum or Stein could be misleading in hunting jargon |
+| x144 | Stangensulze | Review optics/weapon and trophy anatomy decks **with embedded diagrams**, since ordinary meanings of words like Baum or Stein could be misleading in hunting jargon |
 | x100, x148 | Einwachser-Mufflon; Tiroler | Species/trophy and hunting-dog class slides, predator-pelt vocabulary and source-specific uses; avoid inferring biological status or breed labels from names alone |
  
 ## Important direct checks from this continuation
@@ -57,3 +57,7 @@ Source scope and live hyperlinks are in `docs/GLOSSARY_VERIFIED_DEFINITIONS_2026
 ## 2026-10-14 additional Bergstutzen lookup
 
 x085 Bergstutzen → **two-barrel break-action hunting rifle with rifled barrels of different calibers**; distinguish from the ordinary Stutzen and from shot/rifle combined Drilling. The specialist Jägerschmiede hunting lexicon and Sachsen-Anhalt hunter-exam questions (Parey reproduction, weapons Q41) independently support this terminology. English is an external functional translation; the GHC original slides' exact German headword was not cross-verified, and etymology remains blank. Current: **156 defined / 6 pending**, IDs **x078, x100, x114, x118, x144, x148**.
+
+## Context-sensitive Haken source clarification
+
+x114 Haken is now indexed as a **multi-sense hunters' expression**, with a female wild boar's canine teeth as the primary trophy use, but Grandeln in some deer dictionaries and a fleeing hare's abrupt turn also documented. Specific class slide animal context is not assumed. Source limits: `docs/GLOSSARY_HAKEN_MULTIPLE_SENSES_20261014.md`. **157 defined, 5 pending**, namely x078, x100, x118, x144, x148.

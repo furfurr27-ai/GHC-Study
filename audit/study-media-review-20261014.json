@@ -7,8 +7,8 @@
     "slideOrPageLike": 71,
     "semanticMismatch": 1,
     "standaloneLikely": 45,
-    "assemblyCrops": 16,
-    "remainingSlideOrPageLike": 55
+    "assemblyCrops": 22,
+    "remainingSlideOrPageLike": 49
   },
   "slideOrPageLike": [
     "mouflon",
@@ -94,7 +94,8 @@
     "Marking a slide screenshot does not imply the underlying class text is incorrect.",
     "Four historical wildlife page images are cropped to isolated photos during APK assembly only; source assets remain unmodified. CI verifies each generated media/study-photo-ID.webp. The 71 visual flags describe the original source state; 67 remain in assembled output after this batch.",
     "Five additional standalone bird photographs cropped from original classroom slide composites after direct image inspection: Bean Goose, Merganser, Mute Swan, Great Crested Grebe and Coot; no slide text preserved in crop.",
-    "Seven additional course bird/raptor images now cropped to clean photos (Curlew, White-fronted Goose, Tawny Owl, Osprey, Sea Eagle, Eagle Owl and Kestrel). Other candidate photos were rejected if cropping would retain annotations or clip identifying anatomy."
+    "Seven additional course bird/raptor images now cropped to clean photos (Curlew, White-fronted Goose, Tawny Owl, Osprey, Sea Eagle, Eagle Owl and Kestrel). Other candidate photos were rejected if cropping would retain annotations or clip identifying anatomy.",
+    "Six additional individually checked course photos were cropped for harriers, carrion crow, rook, raven, magpie, and jays, without captions or slide layout."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -112,6 +113,12 @@
     "osprey",
     "seaeagle",
     "eagleowl",
-    "kestrel"
+    "kestrel",
+    "harriers",
+    "carrioncrow",
+    "rook",
+    "raven",
+    "magpie",
+    "jays"
   ]
 }

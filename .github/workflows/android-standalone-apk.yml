@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install picture crop dependency
+        run: python3 -m pip install --user Pillow==11.3.0
       - name: Check standalone source assets
         run: |
           test -s app/src/main/assets/index.html
@@ -38,8 +40,12 @@ jobs:
         run: python3 scripts/test_trophy_layout.py
       - name: Add vocabulary etymology understanding
         run: python3 scripts/inject_vocabulary_etymology.py
+      - name: Extract photos from the historical course pages
+        run: python3 scripts/crop_study_slide_images.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
+      - name: Audit assembled study-media coverage
+        run: python3 scripts/check_study_media.py
       - name: Build separately installable APK
         run: gradle --no-daemon -PghcStandalone=true :app:assembleDebug
       - name: Validate standalone package and media

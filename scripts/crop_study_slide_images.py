@@ -218,6 +218,40 @@ def main():
         trees["visualId"]=None
         trees["imageKey"]=trees_key
         print("Assembled five original class tree photographs",trees_rel)
+    # A bird examination overview is not one species; use six different
+    # course photographs already verified above instead of showing a
+    # lecture checklist screenshot. Examples only, not the entire exam pool.
+    bird_gallery_ids=[
+        "beangoose","muteswan","curlew",
+        "tawnyowl","capercaillie","kestrel"
+    ]
+    review_card=next((c for c in cards if c["id"]=="birdchecklist"),None)
+    if review_card is None:
+        raise RuntimeError("Missing Bird Exam Checklist card")
+    bird_gallery_rel="media/study-birdchecklist-examples.webp"
+    bird_gallery_key="study_picture_examples_birdchecklist"
+    if review_card.get("imageKey")!=bird_gallery_key or not (ROOT/bird_gallery_rel).is_file():
+        canvas=Image.new("RGB",(960,540),"white")
+        for ix,bird_id in enumerate(bird_gallery_ids):
+            photo_path=ROOT/("media/study-photo-"+bird_id+".webp")
+            if not photo_path.is_file():
+                raise RuntimeError("Missing previously source-checked bird figure "+bird_id)
+            with Image.open(photo_path) as src:
+                photo=src.convert("RGB")
+                photo.thumbnail((308,255),Image.Resampling.LANCZOS)
+                x=(ix%3)*320+(320-photo.width)//2
+                y=(ix//3)*270+(270-photo.height)//2
+                canvas.paste(photo,(x,y))
+        canvas.save(ROOT/bird_gallery_rel,"WEBP",quality=89,method=6)
+        imgs[bird_gallery_key]={
+            "src":bird_gallery_rel,
+            "source":"Six previously verified, independent original classroom bird photographs",
+            "pictureExampleCardIds":bird_gallery_ids,
+            "review":"Examples for identification practice, not an exhaustive bird exam checklist"
+        }
+        review_card["visualId"]=None
+        review_card["imageKey"]=bird_gallery_key
+        print("Assembled six original class bird identification examples",bird_gallery_rel)
     # These six JPEGs are exact original PDF XObject image streams.
     # They were extracted from the connected 2026 classroom PDFs and committed
     # into the PRIVATE repo without copying slide pages or PDF documents.

@@ -8,9 +8,9 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 7,
+    "remainingSlideOrPageLike": 6,
     "correctedSemanticMismatch": 1,
-    "originalFigureRemaps": 9,
+    "originalFigureRemaps": 10,
     "assemblyMontages": 1,
     "classPhotoReuse": 1
   },
@@ -110,7 +110,8 @@
     "Original September 2026 Predatory Birds page-10 image xref87, identified by the class as Sperber/Sparrowhawk, directly extracted. Unlike the prior full-slide photo, the bird's entire head and body are unobstructed.",
     "Original August 2026 Hunting Law, page 47, illustrates Wildschaden with an actual crop-damage photograph (embedded image xref241). Replaces slide text, but does not validate dated hunting compensation claims.",
     "Protected Wildlife reuses a photo-only original Waldkauz photograph already checked on the Tawny Owl card, as one example rather than instructions or authorization. No new outside image or legal content.",
-    "Transport study card uses isolated three-long-gun-case JPEG xref120 from original Law - Weapons (20260819).pdf page 23. Descriptive visual only; does not validate current German rules on unloaded, locked or cased firearms."
+    "Transport study card uses isolated three-long-gun-case JPEG xref120 from original Law - Weapons (20260819).pdf page 23. Descriptive visual only; does not validate current German rules on unloaded, locked or cased firearms.",
+    "Dog Parts restored from original Hunting Dogs (202609) course page 4 ('Jäger Latein - Dog Parts'), embedded JPEG xref98. Clear self-contained German-labeled anatomy illustration (Behang, Decke, Rute, Fahne, Pfoten etc.), without lecture chrome; course page 5 separately lists meanings."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -243,6 +244,13 @@
       "source": "Law - Weapons (20260819).pdf",
       "page": 23,
       "xref": 120
+    },
+    "dogparts": {
+      "path": "media/dogparts-original-course-anatomy.jpeg",
+      "sha256": "cf12124d1f9d64ad7508379af8782374e479e114ebea3bd73cd275949e2a694d",
+      "source": "Hunting Dogs (202609).pdf",
+      "page": 4,
+      "xref": 98
     }
   },
   "assemblyMontages": {

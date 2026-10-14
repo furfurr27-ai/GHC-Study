@@ -8,8 +8,9 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 18,
-    "correctedSemanticMismatch": 1
+    "remainingSlideOrPageLike": 15,
+    "correctedSemanticMismatch": 1,
+    "originalFigureRemaps": 3
   },
   "slideOrPageLike": [
     "mouflon",
@@ -101,7 +102,8 @@
     "Firearm Action Names replaced with an unlabeled four-photo montage from the same original course slide (lever, pump, semi-auto, combination gun); no slide typography retained.",
     "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis.",
     "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed.",
-    "Two original technical visuals isolated: six German-labeled beak-type anatomy drawings for birdanatomy, and one revolver photo from the handgun legal-topic slide. The handgun picture is merely illustrative, and the slide's obsolete/unchecked legal quota is entirely excluded."
+    "Two original technical visuals isolated: six German-labeled beak-type anatomy drawings for birdanatomy, and one revolver photo from the handgun legal-topic slide. The handgun picture is merely illustrative, and the slide's obsolete/unchecked legal quota is entirely excluded.",
+    "Three further exact embedded JPEG figures extracted from 2026 course PDFs and hash verified: a gun-safe cabinet (not certification), a historical example proof-mark chart (not current-law clearance), and a panel of common external parasites. PDFs themselves are not copied to repo or APK."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -169,6 +171,29 @@
       "embeddedXref": 149,
       "integritySha256": "c00ab76a236fc161b4594dbcd93182a4ed2b4324d5ae7ee52f0916cf6d60cb0f",
       "note": "Roe deer broadside heart-lung target illustration from class slide; replacement for unrelated high-seat photo."
+    }
+  },
+  "originalFigureRemaps": {
+    "gunstorage": {
+      "path": "media/gunstorage-sourced-safe.jpeg",
+      "sha256": "a5acf0509eadbd289789dd39a244bd7f6497f78a8c99840bd2d7fd8fa1637d90",
+      "source": "Law - Weapons (20260819).pdf",
+      "page": 21,
+      "xref": 115
+    },
+    "gunmarkings": {
+      "path": "media/gunmarkings-proof-chart.jpeg",
+      "sha256": "69e7e941fb9be6d1f236040a2921bbddf8f1621c3be4082fd2b1eba751ec9382",
+      "source": "Law - Weapons (20260819).pdf",
+      "page": 8,
+      "xref": 62
+    },
+    "parasites": {
+      "path": "media/parasites-class-insects.jpeg",
+      "sha256": "0bda4651c8d9aa98870c8719385f3d3011cf845d46e7fa20636c02b87d2aaa72",
+      "source": "Disease - Parasites.pdf",
+      "page": 3,
+      "xref": 33
     }
   }
 }

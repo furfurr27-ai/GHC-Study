@@ -83,6 +83,10 @@ for(const [term,meaning] of [['Bestaetigter Jagdaufseher','Appointed/confirmed h
  search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
  assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing provenance-labeled contextual GHC meaning for '+term);
 }
+for(const [term,meaning] of [['Pelz','Fur or pelt'],['Baum','Baummarder'],['Stein','Steinmarder']]){
+ search.value=term;search.dispatchEvent(new g.Event('input',{bubbles:true}));
+ assert([...g.document.querySelectorAll('article')].some(a=>a.textContent.includes(meaning)),'Missing class-context glossary definition for '+term);
+}
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('.related a').length>0,'cross-links rendered');
 assert.equal(b.errors.length,0,'glossary script errors: '+b.errors.join(' | '));b.dom.window.close();

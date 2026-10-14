@@ -1,12 +1,11 @@
 # GHC Study — remaining Jägersprache worksheet-term triage (2026-10-14)
 
-Status: **10 terms still pending** in the 162-term indexed offline glossary (**152 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
+Status: **7 terms still pending** in the 162-term indexed offline glossary (**155 defined**). This is a **retrieval plan**, not evidence that every class deck was searched in this turn. It does not authorize guessed definitions or etymologies.
 
 | Term IDs | Remaining worksheet terms | Suggested primary-source follow-up |
 |---|---|---|
 | x078, x118 | Abschussgebuehr; Jagdschuetz | Reinspect `Law - Hunting (202608).pdf`, `Law - Weapons (20260819).pdf`, `Range - Revier (20260922).pdf`, `Disease - Kundige Person.pdf` for exact authority and document wording; verify present law **separately** |
 | x085, x114, x144 | Bergstutzen; Haken; Stangensulze | Review optics/weapon and trophy anatomy decks **with embedded diagrams**, since ordinary meanings of words like Baum or Stein could be misleading in hunting jargon |
-| x116, x129, x158 | Hirschlaus; Marienkaefer; Wildretter | Nature and animal protection, field/forest, parasitology and disease decks; species/parasite identification may require image evidence |
 | x100, x148 | Einwachser-Mufflon; Tiroler | Species/trophy and hunting-dog class slides, predator-pelt vocabulary and source-specific uses; avoid inferring biological status or breed labels from names alone |
  
 ## Important direct checks from this continuation
@@ -46,3 +45,11 @@ These are labeled external corroborated definitions, not verified German-headwor
 Official Hessen hunter-exam question 106 verifies **Wechselwild** as animals not permanently resident in the Revier, while Duden defines **Wildwechsel** as the regular wildlife trail; the entries are linked and not conflated. AGES veterinary data and Hessen hunter-exam questions corroborate **Moderhinke** as infectious footrot affecting Muffelwild. Swiss hunter education and Waidwissen explain the antler tine **Wolfssprosse**; Hessen exam questions 132–133 support `führende Ricke / führendes Alttier` as female deer caring for offspring. All five are labeled *external exam/dictionary/veterinary/education* rather than exact GHC slide headword translations. No etymology is invented. Full URLs and constraints: `docs/GLOSSARY_VERIFIED_DEFINITIONS_20261014_BATCH7.md`.
 
 Current: **152 of 162 defined, 10 pending**. Remaining IDs: x078, x085, x100, x114, x116, x118, x129, x144, x148, x158. No study-card text or examination keys changed.
+
+## 2026-10-14 batch 8: three externally checked English meanings
+
+- x158 Wildretter → wildlife rescuer (person) or wildlife-saving device/deterrent according to context (two Deutscher Jagdverband source articles).
+- x116 Hirschlaus → European deer ked (*Lipoptena cervi*), a blood-feeding fly, not a true louse (Penn State Extension and German term alias source).
+- x129 Marienkäfer → ladybird beetle / ladybug (Langenscheidt dictionary).
+
+Source scope and live hyperlinks are in `docs/GLOSSARY_VERIFIED_DEFINITIONS_20261014_BATCH8.md`. None of the 3 is labeled a verbatim GHC slide translation. Current **155 defined / 7 pending**. Exact remaining IDs: x078, x085, x100, x114, x118, x144, x148. Historical word origins for these and many older entries remain unverified.

@@ -218,6 +218,50 @@ def main():
         trees["visualId"]=None
         trees["imageKey"]=trees_key
         print("Assembled five original class tree photographs",trees_rel)
+    # These three JPEGs are exact original PDF XObject image streams.
+    # They were extracted from the connected 2026 classroom PDFs and committed
+    # into the PRIVATE repo without copying slide pages or PDF documents.
+    # SHA-256 checks are over the original binary embedded images.
+    figures={
+        "gunstorage":(
+            "media/gunstorage-sourced-safe.jpeg",
+            "Law - Weapons (20260819).pdf",21,115,
+            "a5acf0509eadbd289789dd39a244bd7f6497f78a8c99840bd2d7fd8fa1637d90",
+            "One photographed gun-safe cabinet; not a legal certification of class or capacity"
+        ),
+        "gunmarkings":(
+            "media/gunmarkings-proof-chart.jpeg",
+            "Law - Weapons (20260819).pdf",8,62,
+            "69e7e941fb9be6d1f236040a2921bbddf8f1621c3be4082fd2b1eba751ec9382",
+            "Historical class proof-mark sample chart; not current statutory requirements"
+        ),
+        "parasites":(
+            "media/parasites-class-insects.jpeg",
+            "Disease - Parasites.pdf",3,33,
+            "0bda4651c8d9aa98870c8719385f3d3011cf845d46e7fa20636c02b87d2aaa72",
+            "Original class parasite identification photographs (lice, flea and tick)"
+        ),
+    }
+    for cid,(rel,source,page,xref,expected_sha,warning) in figures.items():
+        blob=ROOT/rel
+        if not blob.is_file():
+            raise RuntimeError("Missing exact class figure "+str(blob))
+        import hashlib
+        if hashlib.sha256(blob.read_bytes()).hexdigest()!=expected_sha:
+            raise RuntimeError("Original class figure hash mismatch: "+cid)
+        card=next((c for c in cards if c["id"]==cid),None)
+        if card is None:
+            raise RuntimeError("Missing study-card ID for original figure "+cid)
+        key="study_original_figure_"+cid
+        card["visualId"]=None
+        card["imageKey"]=key
+        imgs[key]={
+            "src":rel,"source":source,"page":page,
+            "originalPdfEmbeddedImageXref":xref,
+            "originalFigureSHA256":expected_sha,
+            "review":warning
+        }
+        print("Mapped verified classroom PDF figure for",cid,rel)
     # Correct a separate picture/subject mismatch. This is the exact roe-deer
     # anatomical illustration embedded on page 23 of the 2026 Hunting Techniques
     # class PDF (xref 149), extracted without any surrounding slide text.

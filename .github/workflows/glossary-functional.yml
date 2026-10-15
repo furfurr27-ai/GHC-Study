@@ -120,6 +120,18 @@ jobs:
           unzip -Z1 "$APK" | grep -Fx 'assets/index.html'
           unzip -Z1 "$APK" | grep -Fx 'assets/glossary.html'
           unzip -Z1 "$APK" | grep -Fx 'assets/glossary-data.js'
+      - name: Inspect actual APK glossary and offline card media
+        run: |
+          APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
+          test -s "$APK"
+          python3 scripts/check_packaged_glossary.py "$APK"
+          python3 scripts/check_study_media.py --apk "$APK"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ghc-packaged-glossary-verification
+          path: build/packaged-glossary-audit.json
+          if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
           name: GHC-Study-v1.4.6-glossary-tested-debug-apk

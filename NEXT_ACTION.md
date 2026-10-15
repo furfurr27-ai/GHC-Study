@@ -1,3 +1,22 @@
+## CURRENT ACTIONABLE RELEASE GATE — 2026-10-15 (SUPERSEDES STALE HEADINGS BELOW)
+
+**READ FIRST:** [Finite v1.4.6 release criteria](docs/RELEASE_GATE_V1_4_6_20261015.md). The prior "LATEST PHOTO-BATCH — 50/125" heading directly below is **obsolete** and retained only as project history. Practice Test 2 is now **125/125 captured** in the existing native Quiz Mode; it is an untimed drill. Separate timed exam branch remains **isolated optional future work**.
+
+**Active development branch:** `feature/slide-audit-glossary-tests-20261012`. Draft PR #3 still open, against `audit/v145-source-recovery`. Version **1.4.6** / code **146** from `app/build.gradle` (the root `VERSION` file does **not** exist). Preserve the primary app ID `org.ghcstudy.v141`; standalone `org.ghcstudy.v146.standalone` does not share its progress.
+
+**CURRENT VERIFIED IMPLEMENTATION / NO RE-DO:**
+- 117 study cards / 117 offline image paths and 71/71 slide-like image remaps completed. Dog Parts original illustration is already mapped in `scripts/crop_study_slide_images.py` to `media/dogparts-original-course-anatomy.jpeg`. The existing strict source/image checks passed.
+- 162 searchable glossary entries, 160 with meaningful definitions, 2 deliberately pending; 75 inherited unverified historical etymologies correctly labeled.
+- Original 867 exam items remain, plus 77 vocabulary quiz entries, plus all **125** new Practice Test 2 questions.
+- Historical audit of original 867 questions: 18 source-qualified, 8 flagged historical/dated, 841 not individually audited — **long-term research backlog, NOT required for the scoped installable-study-app release**. No current-law endorsement implied.
+- Full Android CI [#38805095533](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38805095533) **SUCCESS all smoke/APK/emulator jobs**, source-code SHA `66ab2971d9421bdcac7142d48308d55797938d37`. Separate [standalone APK build #38805028682](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38805028682) **SUCCESS**, source-code SHA `f0c89e0aa9ce83f49aeda960188811a9a72b9d09`. Documentation-only commits followed. **No physical S23 Ultra test**.
+
+**IMMEDIATE NEXT ACTION (FINITE):** Work on the five release gates in `docs/RELEASE_GATE_V1_4_6_20261015.md` only: freeze scope, verify exact final code CI, flag any specific high-consequence historical claim missing an appropriate warning, hand off physical Galaxy S23 Ultra acceptance checklist, and prepare release decision WITHOUT merging `main`. Do not keep auditing 841 additional old questions simply because a continuation prompt says "Continue." Do not create additional duplicate Practice Test 2 entry points. Do not make unrelated feature changes.
+
+Sources checked during this release-gate update: GitHub live code/status, CI jobs and artifacts; no new direct Google Drive files or legal references this turn.
+
+---
+
 ## LATEST PHOTO-BATCH CHECKPOINT — 2026-10-15 · Practice Test 2, 50 of 125 highlighted answers
 
 New separate practice bank on feature branch `feature/slide-audit-glossary-tests-20261012`, draft PR #3 still open and **unmerged**. Ten user-uploaded images supplied: exam cover + Parts I and II, 25 questions each. All questions and all choices captured, correctly marked from **yellow highlighting only**, NOT blue student circles or handwritten checks. Six-pair Part II Q25 preserved as one scored matching question. IDs `P2022-S1-Q01..25` and `P2022-S2-Q01..25`, `practice2022` bank independent of prior 867 exam questions and 77 vocabulary items. The ⓘ info modal reproduces closed-book, ink-pen, circle one or more letters, 5×25, ≥13 per part, 1 point per question, 150-minute limit. 2021/22 date approximate from user; paper cover undated. Current app quiz is untimed; no simulated pass certificate or modern-current-law verification. Original photos not checked into public GitHub. Saved progress, backups and selective reset include new bank, but existing progress keys remain intact.

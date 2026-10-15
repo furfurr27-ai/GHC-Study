@@ -22,6 +22,8 @@ assert(navEntries.every(el=>el.querySelectorAll('span').length===2),'each entry 
 const glossaryButton=nav.querySelector('a.navbtn.glossary-nav[href="glossary.html"]');
 assert(glossaryButton,'Glossary remains an offline link rather than breaking navigation');
 assert.equal(glossaryButton.getAttribute('aria-label'),'Open Jägersprache glossary');
+assert.equal(glossaryButton.onclick,null,'offline Glossary link must not get an in-app tab click handler');
+assert(nav.querySelectorAll('.navbtn[data-tab]').length===3,'only three buttons should be in-app tabs');
 const referenceButton=nav.querySelector('button.navbtn[data-tab="reference"]');
 const gs=w.getComputedStyle(glossaryButton),rs=w.getComputedStyle(referenceButton);
 for(const property of ['display','flexDirection','alignItems','justifyContent','fontSize','fontWeight','gap','color']){

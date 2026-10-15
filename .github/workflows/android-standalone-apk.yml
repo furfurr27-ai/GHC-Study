@@ -24,6 +24,7 @@ on:
       - 'scripts/check_2013_us_forces_import_animal_welfare.py'
       - 'scripts/qualify_2013_austria_hunting_38_special.py'
       - 'scripts/check_2013_austria_hunting_38_special.py'
+      - 'scripts/integrate_practice_test_2.py'
       - 'scripts/check_study_media.py'
       - 'scripts/check_packaged_glossary.py'
       - 'audit/study-media-review-20261014.json'
@@ -87,6 +88,8 @@ jobs:
         run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
       - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Integrate Practice Test 2 from highlighted photo answers
+        run: python3 scripts/integrate_practice_test_2.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage

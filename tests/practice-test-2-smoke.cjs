@@ -1,0 +1,96 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const {JSDOM,VirtualConsole} = require('jsdom');
+const html=fs.readFileSync(path.resolve('app/src/main/assets/index.html'),'utf8');
+const parts=[1,2,3,4,5].map(n=>JSON.parse(fs.readFileSync('app/src/main/assets/practice-test-2-part'+n+'.json','utf8')));
+const [quiz1,quiz2,quiz3,quiz4,quiz5]=parts.map(x=>x.questions);
+for(const s of parts)assert.equal(s.questions.length,25);
+const all=parts.flatMap(x=>x.questions);
+assert.equal(new Set(all.map(x=>x.id)).size,125);
+assert.deepEqual(parts.map(p=>p.part),[1,2,3,4,5]);
+for(const q of all){assert.equal(q.answerBasis,'yellow-highlight-only');assert(q.correct.length);assert.equal(q.sourceGroup,'practice2022')}
+assert.deepEqual(quiz1.find(x=>x.number===7).correct,['a','d']);
+assert.deepEqual(quiz1.find(x=>x.number===18).correct,['b','c','d']);
+assert.deepEqual(quiz2.find(x=>x.number===1).correct,['a','b','d','e']);
+assert.deepEqual(quiz2.find(x=>x.number===16).correct,['a','c','d']);
+assert.deepEqual(quiz2.find(x=>x.number===25).correct,['a:5','b:4','c:6','d:2','e:1','f:3']);
+assert.deepEqual(quiz3.find(x=>x.number===4).correct,['a','b']);
+assert.deepEqual(quiz3.find(x=>x.number===25).correct,['a','b','d','e','f']);
+assert.deepEqual(quiz4.find(x=>x.number===20).correct,['a','b','c']);
+assert.deepEqual(quiz5.find(x=>x.number===20).correct,['c']);
+assert.deepEqual(quiz5.find(x=>x.number===25).correct,['b','c','d']);
+function makeDom(preload={},exposeExact=false) {
+ const errors=[], vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(String(e)));
+ const paperHtml=exposeExact?html.replace('function renderQuestion(){',
+ "window.__ghcTestPaperQuestion=function(id){selected={};checked=false;current=(window.GHC_PRACTICE2_QUESTIONS||[]).find(q=>q.id===id);if(!current)throw Error('paper ID missing');renderQuestion()};\nfunction renderQuestion(){"):html;
+ const d=new JSDOM(paperHtml,{url:'https://ghc.local/',runScripts:'dangerously',resources:'usable',pretendToBeVisual:true,virtualConsole:vc,beforeParse(w){
+  w.scrollTo=()=>{};w.matchMedia=()=>({matches:false,addListener(){},removeListener(){}});
+  w.HTMLElement.prototype.scrollIntoView=function(){};
+  if(Object.keys(preload).length)w.localStorage.setItem('ghc-study-progress-v1',JSON.stringify({progress:preload,settings:{sourceMode:'practice2022',focusSupport:'Direct'}}))
+ }});
+ assert.equal(errors.length,0,errors.join('\n'));
+ return d.window;
+}
+function click(w,selector){const el=w.document.querySelector(selector);assert(el,'Missing: '+selector);el.click();return el;}
+const w=makeDom();
+assert.equal(w.GHC_QUESTIONS.length,867,'untouched legacy question count');
+assert.equal(w.GHC_PRACTICE2_QUESTIONS.length,125,'all five photographed parts');
+assert(w.document.querySelector('[data-source="practice2022"]'),'new source card');
+click(w,'[data-source="practice2022"]');
+const scope=w.document.body.textContent;
+assert.match(scope,/Practice Test 2/);
+assert.match(scope,/125 of 125 questions/);
+for(const n of [1,2,3,4,5])assert(w.document.querySelector('[data-practice2-section="'+n+'"]'),'Part '+n+' selector available');
+click(w,'[data-practice2-info]');
+const modal=w.document.querySelector('#modalBody').textContent;
+for(const s of ['closed-book','150 minutes','13 correct answers','yellow highlighted'])assert(modal.toLowerCase().includes(s.toLowerCase()),'Exam cover info missing: '+s);
+click(w,'#closeModal');click(w,'[data-practice2-section="1"]');
+assert.match(w.document.querySelector('.crumb').textContent,/Practice Test 2 · Part 1/);
+assert(w.document.querySelector('.choice input'),'normal quiz controls');
+assert.equal(w.document.querySelectorAll('.choice input').length>=2,true);
+click(w,'.choice input');click(w,'#checkBtn');
+assert.match(w.document.querySelector('#feedback').textContent,/Correct|Incorrect/);
+click(w,'.backlink');assert(w.document.querySelector('[data-practice2-section="2"]'));
+click(w,'.navbtn[data-tab="reference"]');click(w,'[data-action="resetmenu"]');
+assert.match(w.document.querySelector('#modalBody').textContent,/Practice Test 2/);
+const preload={};
+for(const q of all){if(q.id!=='P2022-S2-Q25')preload[q.id]={stage:'mastered',mastery:4,attempts:4,correct:4}}
+const m=makeDom(preload);
+assert(m.document.querySelector('[data-practice2-section="2"]'),'previously selected Practice Test 2 mode restored');
+click(m,'[data-practice2-section="2"]');
+assert.match(m.document.querySelector('.crumb').textContent,/Part 2 · Q25/);
+const inputs=[...m.document.querySelectorAll('select[data-match]')];
+assert.equal(inputs.length,6);
+const matching=all.find(q=>q.id==='P2022-S2-Q25');
+for(const pair of matching.correct){const [left,right]=pair.split(':');const sel=m.document.querySelector('select[data-match="'+left+'"]');assert(sel);sel.value=right;}
+click(m,'#checkBtn');
+assert.match(m.document.querySelector('#feedback').textContent,/Correct · all six matches/);
+assert.equal(inputs.every(el=>el.disabled),true);
+assert(m.document.querySelector('#nextBtn:not(.hidden)'));
+// Verify the actual native renderer presents all six safety-sensitive historical
+// source cautions BEFORE answering, never modifying yellow-only answers.
+const sensitive = [
+ ['P2022-S3-Q04',['a','b'],/Historical self-defense question/],
+ ['P2022-S4-Q16',['a'],/Historical emergency animal-dispatch question/],
+ ['P2022-S5-Q09',['b'],/Historical meat-inspection question/],
+ ['P2022-S5-Q16',['a'],/Historical botfly\/meat-inspection question/],
+ ['P2022-S5-Q19',['a'],/Historical cold-chain question/],
+ ['P2022-S5-Q20',['c'],/Historical gut-contamination question/]
+];
+assert.equal(html.split('function renderQuestion(){').length,2);
+const warnings=makeDom({},true);
+for(const [id,key,pattern] of sensitive){
+ const original=all.find(x=>x.id===id);
+ assert(original,'missing photo source question '+id);
+ assert.deepEqual(original.correct,key,'highlight key drifted '+id);
+ const q=warnings.GHC_PRACTICE2_QUESTIONS.find(x=>x.id===id);
+ assert(q.preAnswerWarning && pattern.test(q.preAnswerWarning));
+ assert(q.flags.includes('historical-paper-safety-not-current-field-guidance'));
+ warnings.__ghcTestPaperQuestion(id);
+ const alert=warnings.document.querySelector('.question .alert[role="note"]');
+ assert(alert && pattern.test(alert.textContent),'warning not rendered before grading '+id);
+ assert.equal(warnings.document.querySelector('#feedback').textContent.trim(),'');
+}
+warnings.close();
+console.log('Practice Test 2 smoke PASS: 125 transcriptions, yellow keys, source mode, info, part scope, grading, six-way matching, reset; 867 legacy records unaffected.');

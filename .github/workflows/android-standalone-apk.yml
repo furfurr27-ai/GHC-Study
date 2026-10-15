@@ -1,9 +1,33 @@
 name: Build standalone GHC Study APK
 on:
   push:
-    branches: [audit/v145-source-recovery]
+    branches: [audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
     paths:
       - 'app/**'
+      - 'scripts/crop_study_slide_images.py'
+      - 'scripts/overlay_protected_owl.py'
+      - 'scripts/overlay_misfire_course_schematic.py'
+      - 'scripts/overlay_shotdistance_course_schematic.py'
+      - 'scripts/overlay_abschussplan_course_schematic.py'
+      - 'scripts/qualify_question_source_caveats.py'
+      - 'scripts/check_question_source_caveats.py'
+      - 'scripts/build_question_source_audit_matrix.py'
+      - 'scripts/qualify_safety_question_batch.py'
+      - 'scripts/check_safety_question_batch.py'
+      - 'scripts/qualify_weapons_law_batch_20261015.py'
+      - 'scripts/check_weapons_law_batch_20261015.py'
+      - 'scripts/qualify_2013_legal_documents_batch.py'
+      - 'scripts/check_2013_legal_documents_batch.py'
+      - 'scripts/qualify_2013_markings_proof_ammo_batch.py'
+      - 'scripts/check_2013_markings_proof_ammo_batch.py'
+      - 'scripts/qualify_2013_us_forces_import_animal_welfare.py'
+      - 'scripts/check_2013_us_forces_import_animal_welfare.py'
+      - 'scripts/qualify_2013_austria_hunting_38_special.py'
+      - 'scripts/check_2013_austria_hunting_38_special.py'
+      - 'scripts/integrate_practice_test_2.py'
+      - 'scripts/check_study_media.py'
+      - 'scripts/check_packaged_glossary.py'
+      - 'audit/study-media-review-20261014.json'
       - '.github/workflows/android-standalone-apk.yml'
   workflow_dispatch:
 permissions:
@@ -13,6 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install picture crop dependency
+        run: python3 -m pip install --user Pillow==11.3.0
       - name: Check standalone source assets
         run: |
           test -s app/src/main/assets/index.html
@@ -38,8 +64,52 @@ jobs:
         run: python3 scripts/test_trophy_layout.py
       - name: Add vocabulary etymology understanding
         run: python3 scripts/inject_vocabulary_etymology.py
+      - name: Extract photos from the historical course pages
+        run: python3 scripts/crop_study_slide_images.py
+      - name: Reuse original classroom owl photo for protected species example
+        run: python3 scripts/overlay_protected_owl.py
+      - name: Map newly illustrated GHC misfire course safety reference
+        run: python3 scripts/overlay_misfire_course_schematic.py
+      - name: Map original 2020 class shot-distance diagram
+        run: python3 scripts/overlay_shotdistance_course_schematic.py
+      - name: Map documented 2025 Hessian roe-deer harvest planning diagram
+        run: python3 scripts/overlay_abschussplan_course_schematic.py
+      - name: Qualify three legacy quiz explanations against original course and Hessian guidance
+        run: python3 scripts/qualify_question_source_caveats.py
+      - name: Source-review six field firearm-safety questions and warn on incomplete 2013 key
+        run: python3 scripts/qualify_safety_question_batch.py
+      - name: Qualify original 2013 firearm-storage transport caliber and semiauto legal changes
+        run: python3 scripts/qualify_weapons_law_batch_20261015.py
+      - name: Audit original 2013 borrowed rifle purchase and warning-shot legal facts
+        run: python3 scripts/qualify_2013_legal_documents_batch.py
+      - name: Source-check original GHC ammunition markings and proof-law questions
+        run: python3 scripts/qualify_2013_markings_proof_ammo_batch.py
+      - name: Source-review original GHC USA Forces import and animal-welfare questions
+        run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
+      - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
+        run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Integrate Practice Test 2 from highlighted photo answers
+        run: python3 scripts/integrate_practice_test_2.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
+      - name: Audit assembled study-media coverage
+        run: python3 scripts/check_study_media.py --strict
+      - name: Verify three source-audited question caveats
+        run: python3 scripts/check_question_source_caveats.py
+      - name: Assert archive-key conflict and pre-answer notice retained
+        run: python3 scripts/check_safety_question_batch.py
+      - name: Verify five 2013 original-practice answers against current federal law
+        run: python3 scripts/check_weapons_law_batch_20261015.py
+      - name: Verify four source-checked documentary and self-defense questions
+        run: python3 scripts/check_2013_legal_documents_batch.py
+      - name: Verify four original paper cartridge and proof marks examples
+        run: python3 scripts/check_2013_markings_proof_ammo_batch.py
+      - name: Verify historical AR-import warning and dog veterinary referral
+        run: python3 scripts/check_2013_us_forces_import_animal_welfare.py
+      - name: Verify Austrian guest-license and .38 cartridge source qualifications
+        run: python3 scripts/check_2013_austria_hunting_38_special.py
+      - name: Generate all-question explicit factual source-review inventory
+        run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build separately installable APK
         run: gradle --no-daemon -PghcStandalone=true :app:assembleDebug
       - name: Validate standalone package and media
@@ -49,12 +119,40 @@ jobs:
           APK=app/build/outputs/apk/debug/app-debug.apk
           test -s "$APK"
           unzip -l "$APK" | grep -q 'assets/index.html'
+          unzip -l "$APK" | grep -q 'assets/glossary.html'
+          unzip -l "$APK" | grep -q 'assets/glossary-data.js'
           unzip -l "$APK" | grep -q 'assets/media/'
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
-          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v145.standalone'"
-          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.5-Standalone-Install.apk
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"
+          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.6-Standalone-Install.apk
+      - name: Inspect actual standalone APK glossary and offline study media
+        run: |
+          APK=app/build/outputs/apk/debug/app-debug.apk
+          python3 scripts/check_packaged_glossary.py "$APK"
+          python3 scripts/check_study_media.py --apk "$APK" --strict
+          python3 scripts/check_question_source_caveats.py --apk "$APK"
+          python3 scripts/check_safety_question_batch.py --apk "$APK"
+          python3 scripts/check_weapons_law_batch_20261015.py --apk "$APK"
+          python3 scripts/check_2013_legal_documents_batch.py --apk "$APK"
+          python3 scripts/check_2013_markings_proof_ammo_batch.py --apk "$APK"
+          python3 scripts/check_2013_us_forces_import_animal_welfare.py --apk "$APK"
+          python3 scripts/check_2013_austria_hunting_38_special.py --apk "$APK"
+          python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
+      - name: Upload 867-question source review matrix
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-standalone-question-source-audit
+          path: build/question-source-audit-matrix.json
+          if-no-files-found: warn
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ghc-standalone-packaged-glossary-audit
+          path: build/packaged-glossary-audit.json
+          if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.5-STANDALONE-APK
-          path: app/build/outputs/apk/debug/GHC-Study-v1.4.5-Standalone-Install.apk
+          name: GHC-Study-v1.4.6-STANDALONE-APK
+          path: app/build/outputs/apk/debug/GHC-Study-v1.4.6-Standalone-Install.apk
           if-no-files-found: error

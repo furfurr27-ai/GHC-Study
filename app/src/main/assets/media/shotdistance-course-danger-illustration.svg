@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Shotgun shot danger-distance rule: an approximate warning</title>
+<desc id="desc">New GHC course-text-based schematic showing shotgun pellets spreading downrange. A three millimeter pellet diameter is used to demonstrate the approximate 300 meter danger-distance rule of thumb. No safe boundary is shown.</desc>
+<rect width="960" height="540" rx="24" fill="#e9e7db"/>
+<path d="M0 416q165-26 339-10t334 0q153-21 287 3v131H0Z" fill="#bcc8ba"/>
+<path d="M0 456q228 11 445-5t515 13v76H0Z" fill="#8fa58e"/>
+<path d="M0 383q197-64 342-20t228-15q179-43 390-4" fill="none" stroke="#a9baa4" stroke-width="8"/>
+<path d="M0 368q186-74 342-42t257-20q170-52 361-15" fill="none" stroke="#c5d1c0" stroke-width="7"/>
+<path d="M214 277 Q530 125 952 68 L960 409 Q530 365 214 291 Z" fill="#ba784c" opacity=".20"/>
+<g stroke="#b66c3e" stroke-width="4" fill="none" opacity=".65">
+<path d="M223 284Q535 166 965 77" stroke-dasharray="14 16"/>
+<path d="M223 285Q546 245 965 208" stroke-dasharray="14 16"/>
+<path d="M223 286Q570 318 965 408" stroke-dasharray="14 16"/>
+</g>
+<g fill="#a65f37" stroke="#f5ede0" stroke-width="2">
+<circle cx="323" cy="246" r="5"/><circle cx="379" cy="318" r="5"/><circle cx="419" cy="233" r="6"/>
+<circle cx="456" cy="289" r="7"/><circle cx="516" cy="183" r="6"/><circle cx="563" cy="331" r="8"/>
+<circle cx="607" cy="242" r="8"/><circle cx="684" cy="137" r="8"/><circle cx="702" cy="305" r="7"/>
+<circle cx="770" cy="195" r="10"/><circle cx="812" cy="379" r="9"/><circle cx="867" cy="122" r="9"/>
+<circle cx="933" cy="322" r="11"/>
+</g>
+<path d="M16 263h212v53H16Z" fill="#2e463b"/>
+<path d="M24 259h224v12H24Z" fill="#1e322a"/>
+<path d="M22 322h95l28 23h43" fill="none" stroke="#4d3627" stroke-width="19" stroke-linejoin="round"/>
+<path d="M190 318h18l21 39" fill="none" stroke="#3b3028" stroke-width="13" stroke-linecap="round"/>
+<circle cx="242" cy="286" r="9" fill="#c99557"/>
+<path d="M52 249l68-28 18 11" fill="none" stroke="#5a4730" stroke-width="10" stroke-linejoin="round"/>
+<circle cx="408" cy="71" r="36" fill="#e8d1ad" stroke="#996d40" stroke-width="5"/>
+<circle cx="408" cy="71" r="9" fill="#b46b3d"/>
+<path d="M408 38v66M375 71h66" stroke="#b46b3d" stroke-width="3" stroke-linecap="round"/>
+<path d="M446 74h270" stroke="#45594c" stroke-width="3" stroke-dasharray="9 9"/>
+<rect x="693" y="43" width="233" height="61" rx="12" fill="#314c40"/>
+<text x="810" y="68" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700" fill="#f1eadb">SHOT PELLETS</text>
+<text x="810" y="91" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#e6d4ae">danger range varies</text>
+<rect x="222" y="382" width="521" height="95" rx="18" fill="#fcfaf3" stroke="#a9b5a6" stroke-width="3"/>
+<text x="483" y="416" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="600" fill="#405548">3 mm shot diameter × 100 m</text>
+<text x="483" y="451" text-anchor="middle" font-family="sans-serif" font-size="29" font-weight="750" fill="#935e35">≈ 300 m danger-distance example</text>
+<rect x="188" y="485" width="601" height="40" rx="15" fill="#573f30"/>
+<text x="488" y="512" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="700" fill="#fff1d3">CLASSROOM ESTIMATE · NOT A SAFE BOUNDARY</text>
+</svg>

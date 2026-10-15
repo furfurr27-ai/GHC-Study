@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Classroom misfire: downrange, time, instructor</title>
+<desc id="desc">Original schematic based on GHC Range Safety 2026 text, not a photograph from the slide. A rifle remains aimed at a downrange earth backstop, a ten-second timer is shown, and an instructor stands behind the firing line.</desc>
+<rect width="960" height="540" rx="24" fill="#e9e5d8"/>
+<path d="M0 385 Q260 370 465 390 T960 371 V540 H0Z" fill="#c4cab8"/>
+<path d="M670 320 Q737 224 819 254 Q885 274 960 191 V412 H670Z" fill="#657a64"/>
+<path d="M700 337 Q777 285 865 302 T960 258 V412 H700Z" fill="#839479"/>
+<path d="M820 290 L820 245" stroke="#304a3d" stroke-width="8" stroke-linecap="round"/>
+<rect x="802" y="202" width="36" height="44" rx="4" fill="#f8f2e2" stroke="#304a3d" stroke-width="5"/>
+<circle cx="820" cy="224" r="9" fill="none" stroke="#af7846" stroke-width="4"/>
+<path d="M815 224h10M820 219v10" stroke="#af7846" stroke-width="3"/>
+<path d="M35 432H652" stroke="#576a5a" stroke-width="7" stroke-linecap="round"/>
+<path d="M246 326 L279 268 L332 269 L352 341 L348 414 L258 414Z" fill="#4e6259"/>
+<circle cx="302" cy="235" r="37" fill="#d0ae88"/>
+<path d="M263 226Q262 174 314 180Q344 186 339 224Z" fill="#283e34"/>
+<path d="M270 292 L203 346" stroke="#d0ae88" stroke-width="20" stroke-linecap="round"/>
+<path d="M337 299 L402 325" stroke="#d0ae88" stroke-width="20" stroke-linecap="round"/>
+<path d="M258 414L244 462M338 414L350 462" stroke="#293e36" stroke-width="27" stroke-linecap="round"/>
+<path d="M195 463h68M326 463h52" stroke="#202f29" stroke-width="14" stroke-linecap="round"/>
+<path d="M164 329l145-18 44 3 33-9 25 8 36 0 17-6 203-1" fill="none" stroke="#273a32" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M393 294l8-25 33 1" fill="none" stroke="#273a32" stroke-width="8" stroke-linecap="round"/>
+<path d="M331 316l-19 54 52 0 26-52" fill="#5e4630" stroke="#273a32" stroke-width="6"/>
+<path d="M447 295L664 295" stroke="#edf1ea" stroke-width="5" stroke-dasharray="14 12" stroke-linecap="round"/>
+<path d="M667 295l-19-9v18Z" fill="#edf1ea"/>
+<path d="M410 383l16-55h42l15 55" fill="none" stroke="#5e4630" stroke-width="10" stroke-linecap="round"/>
+<path d="M438 383v74" stroke="#5e4630" stroke-width="10"/>
+<path d="M406 457h68" stroke="#5e4630" stroke-width="11" stroke-linecap="round"/>
+<circle cx="130" cy="260" r="29" fill="#d6b28b"/>
+<path d="M98 251q4-40 46-24l17 19" fill="#2d4639"/>
+<path d="M96 297l-23 110 27 0 16-44 6 44h34l-6-110" fill="#d5a34f" stroke="#334f42" stroke-width="7" stroke-linejoin="round"/>
+<path d="M99 401l-9 65M143 404l13 62" stroke="#2d4638" stroke-width="22" stroke-linecap="round"/>
+<path d="M78 467h31M138 467h31" stroke="#23352d" stroke-width="12" stroke-linecap="round"/>
+<path d="M102 318L65 368M146 316l37 21" stroke="#d6b28b" stroke-width="14" stroke-linecap="round"/>
+<rect x="89" y="331" width="29" height="20" rx="4" fill="#314639"/>
+<path d="M105 340h10" stroke="#efe4c5" stroke-width="4"/>
+<circle cx="572" cy="426" r="52" fill="#faf8f1" stroke="#354c42" stroke-width="9"/>
+<path d="M572 374v-13M572 479v13M519 426h-13M625 426h13" stroke="#354c42" stroke-width="7" stroke-linecap="round"/>
+<path d="M572 426l-1-31M572 426l23 14" stroke="#b76d3a" stroke-width="9" stroke-linecap="round"/>
+<circle cx="572" cy="426" r="7" fill="#b76d3a"/>
+<rect x="551" y="488" width="56" height="31" rx="12" fill="#354c42"/>
+<text x="579" y="510" text-anchor="middle" fill="#fffdf3" font-family="sans-serif" font-size="22" font-weight="700">10 s</text>
+<rect x="652" y="39" width="268" height="58" rx="12" fill="#314e41"/>
+<text x="786" y="76" text-anchor="middle" fill="#f7efdb" font-family="sans-serif" font-size="24" font-weight="650">DOWNRANGE</text>
+<path d="M780 98v85" stroke="#314e41" stroke-width="6" stroke-linecap="round" stroke-dasharray="9 10"/>
+<path d="M780 192l-12-18h24Z" fill="#314e41"/>
+<rect x="26" y="25" width="172" height="54" rx="12" fill="#314e41"/>
+<text x="112" y="60" text-anchor="middle" fill="#f7efdb" font-family="sans-serif" font-size="25" font-weight="650">INSTRUCTOR</text>
+<path d="M112 80v105" stroke="#314e41" stroke-width="6" stroke-linecap="round" stroke-dasharray="9 10"/>
+<rect x="34" y="490" width="355" height="34" rx="14" fill="#f7f2e6"/>
+<text x="211" y="514" text-anchor="middle" fill="#53675c" font-family="sans-serif" font-size="17">Original classroom-based schematic · 2026</text>
+</svg>

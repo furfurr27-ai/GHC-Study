@@ -1,0 +1,272 @@
+name: GHC glossary and functional regression
+on:
+  push:
+    branches: [feature/slide-audit-glossary-tests-20261012]
+    paths:
+      - 'app/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - 'audit/study-card-claim-register-20261012.json'
+      - '.github/workflows/glossary-functional.yml'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install offline image cropping dependency
+        run: python3 -m pip install --user Pillow==11.3.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install DOM test harness
+        run: npm install --no-save --ignore-scripts jsdom@24.1.3
+      - name: JavaScript syntax
+        run: |
+          node --check app/src/main/assets/glossary-data.js
+          node --check tests/functional-smoke.cjs
+          node --check tests/safety-warning-smoke.cjs
+          node --check tests/practice-test-2-smoke.cjs
+      - name: Run GHC study UI smoke tests
+        run: node tests/functional-smoke.cjs
+      - name: Check question bank integrity and answer giveaways
+        run: python3 scripts/check_question_bank_integrity.py
+      - name: Publish question-bank audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-question-bank-integrity
+          path: build/question-bank-integrity.json
+          if-no-files-found: warn
+      - name: Test Android system Back bridge
+        run: python3 scripts/test_android_back.py
+      - name: Inspect runtime and study integration
+        run: |
+          python3 scripts/inspect_runtime_surfaces.py
+          python3 scripts/inspect_study_integration.py
+      - name: Check audit register matches shipped study-card source
+        run: python3 scripts/check_claim_register_parity.py
+      - name: Assemble original trophy/vocabulary overlays for regression checks
+        run: |
+          python3 scripts/integrate_trophy_card.py
+          python3 scripts/format_trophy_details.py
+          python3 scripts/inject_vocabulary_etymology.py
+      - name: Extract standalone photos from four historical course pages
+        run: python3 scripts/crop_study_slide_images.py
+      - name: Reuse original classroom owl photo for protected species example
+        run: python3 scripts/overlay_protected_owl.py
+      - name: Map newly illustrated GHC misfire course safety reference
+        run: python3 scripts/overlay_misfire_course_schematic.py
+      - name: Map original 2020 class shot-distance diagram
+        run: python3 scripts/overlay_shotdistance_course_schematic.py
+      - name: Map documented 2025 Hessian roe-deer harvest planning diagram
+        run: python3 scripts/overlay_abschussplan_course_schematic.py
+      - name: Qualify three legacy quiz explanations against original course and Hessian guidance
+        run: python3 scripts/qualify_question_source_caveats.py
+      - name: Source-review six field firearm-safety questions and warn on incomplete 2013 key
+        run: python3 scripts/qualify_safety_question_batch.py
+      - name: Qualify original 2013 firearm-storage transport caliber and semiauto legal changes
+        run: python3 scripts/qualify_weapons_law_batch_20261015.py
+      - name: Audit original 2013 borrowed rifle purchase and warning-shot legal facts
+        run: python3 scripts/qualify_2013_legal_documents_batch.py
+      - name: Source-check original GHC ammunition markings and proof-law questions
+        run: python3 scripts/qualify_2013_markings_proof_ammo_batch.py
+      - name: Source-review original GHC USA Forces import and animal-welfare questions
+        run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
+      - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
+        run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Integrate Practice Test 2 from highlighted photo answers
+        run: python3 scripts/integrate_practice_test_2.py
+      - name: Verify assembled sections
+        run: |
+          python3 scripts/test_trophy_layout.py
+          python3 scripts/test_vocabulary_assembly.py
+      - name: Audit all study-card image links and flag visual defects
+        run: python3 scripts/check_study_media.py --strict
+      - name: Verify three source-audited question caveats
+        run: python3 scripts/check_question_source_caveats.py
+      - name: Assert archive-key conflict and pre-answer notice retained
+        run: python3 scripts/check_safety_question_batch.py
+      - name: Verify five 2013 original-practice answers against current federal law
+        run: python3 scripts/check_weapons_law_batch_20261015.py
+      - name: Verify four source-checked documentary and self-defense questions
+        run: python3 scripts/check_2013_legal_documents_batch.py
+      - name: Verify four original paper cartridge and proof marks examples
+        run: python3 scripts/check_2013_markings_proof_ammo_batch.py
+      - name: Verify historical AR-import warning and dog veterinary referral
+        run: python3 scripts/check_2013_us_forces_import_animal_welfare.py
+      - name: Verify Austrian guest-license and .38 cartridge source qualifications
+        run: python3 scripts/check_2013_austria_hunting_38_special.py
+      - name: Test Practice Test 2 scoped quiz, exam instructions and matching answer
+        run: node tests/practice-test-2-smoke.cjs
+      - name: Verify disputed-key notice actually renders in quiz UI
+        run: node tests/safety-warning-smoke.cjs
+      - name: Generate all-question explicit factual source-review inventory
+        run: python3 scripts/build_question_source_audit_matrix.py
+      - name: Publish media integrity and visual-review backlog
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-study-media-integrity
+          path: build/study-media-inventory.json
+          if-no-files-found: warn
+  android-apk:
+    runs-on: ubuntu-latest
+    needs: smoke
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install offline image cropping dependency
+        run: python3 -m pip install --user Pillow==11.3.0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: ''
+      - name: Install Android SDK 35
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Check bundled offline assets
+        run: |
+          test -s app/src/main/assets/index.html
+          test -s app/src/main/assets/glossary.html
+          test -s app/src/main/assets/glossary-data.js
+          test -d app/src/main/assets/media
+          test -s app/src/main/res/drawable/ic_launcher.png
+      - name: Apply existing verified assembly overlays
+        run: |
+          python3 scripts/integrate_trophy_card.py
+          python3 scripts/format_trophy_details.py
+          python3 scripts/inject_vocabulary_etymology.py
+      - name: Extract standalone photos from four historical course pages
+        run: python3 scripts/crop_study_slide_images.py
+      - name: Remap original classroom protected-species photo
+        run: python3 scripts/overlay_protected_owl.py
+      - name: Map original-course misfire illustration in Android build
+        run: python3 scripts/overlay_misfire_course_schematic.py
+      - name: Map original 2020 class shot-distance diagram
+        run: python3 scripts/overlay_shotdistance_course_schematic.py
+      - name: Map documented 2025 Hessian roe-deer harvest planning diagram
+        run: python3 scripts/overlay_abschussplan_course_schematic.py
+      - name: Qualify three legacy quiz explanations against original course and Hessian guidance
+        run: python3 scripts/qualify_question_source_caveats.py
+      - name: Source-review six field firearm-safety questions and warn on incomplete 2013 key
+        run: python3 scripts/qualify_safety_question_batch.py
+      - name: Qualify original 2013 firearm-storage transport caliber and semiauto legal changes
+        run: python3 scripts/qualify_weapons_law_batch_20261015.py
+      - name: Audit original 2013 borrowed rifle purchase and warning-shot legal facts
+        run: python3 scripts/qualify_2013_legal_documents_batch.py
+      - name: Source-check original GHC ammunition markings and proof-law questions
+        run: python3 scripts/qualify_2013_markings_proof_ammo_batch.py
+      - name: Source-review original GHC USA Forces import and animal-welfare questions
+        run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
+      - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
+        run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Integrate Practice Test 2 from highlighted photo answers
+        run: python3 scripts/integrate_practice_test_2.py
+      - name: Verify assembled trophy and vocabulary sections
+        run: |
+          python3 scripts/test_trophy_layout.py
+          python3 scripts/test_vocabulary_assembly.py
+      - name: Confirm assembled study image integrity
+        run: python3 scripts/check_study_media.py --strict
+      - name: Verify three source-audited question caveats
+        run: python3 scripts/check_question_source_caveats.py
+      - name: Assert archive-key conflict and pre-answer notice retained
+        run: python3 scripts/check_safety_question_batch.py
+      - name: Verify five 2013 original-practice answers against current federal law
+        run: python3 scripts/check_weapons_law_batch_20261015.py
+      - name: Verify four source-checked documentary and self-defense questions
+        run: python3 scripts/check_2013_legal_documents_batch.py
+      - name: Verify four original paper cartridge and proof marks examples
+        run: python3 scripts/check_2013_markings_proof_ammo_batch.py
+      - name: Verify historical AR-import warning and dog veterinary referral
+        run: python3 scripts/check_2013_us_forces_import_animal_welfare.py
+      - name: Verify Austrian guest-license and .38 cartridge source qualifications
+        run: python3 scripts/check_2013_austria_hunting_38_special.py
+      - name: Generate all-question explicit factual source-review inventory
+        run: python3 scripts/build_question_source_audit_matrix.py
+      - name: Build installable Android APK
+        run: gradle --no-daemon :app:assembleDebug
+      - name: Verify glossary packaged into APK
+        run: |
+          APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
+          test -n "$APK"
+          unzip -Z1 "$APK" | grep -Fx 'assets/index.html'
+          unzip -Z1 "$APK" | grep -Fx 'assets/glossary.html'
+          unzip -Z1 "$APK" | grep -Fx 'assets/glossary-data.js'
+      - name: Inspect actual APK glossary and offline card media
+        run: |
+          APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
+          test -s "$APK"
+          python3 scripts/check_packaged_glossary.py "$APK"
+          python3 scripts/check_study_media.py --apk "$APK" --strict
+          python3 scripts/check_question_source_caveats.py --apk "$APK"
+          python3 scripts/check_safety_question_batch.py --apk "$APK"
+          python3 scripts/check_weapons_law_batch_20261015.py --apk "$APK"
+          python3 scripts/check_2013_legal_documents_batch.py --apk "$APK"
+          python3 scripts/check_2013_markings_proof_ammo_batch.py --apk "$APK"
+          python3 scripts/check_2013_us_forces_import_animal_welfare.py --apk "$APK"
+          python3 scripts/check_2013_austria_hunting_38_special.py --apk "$APK"
+          python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
+      - name: Upload 867-question source review matrix
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-question-source-audit-${{ github.job }}
+          path: build/question-source-audit-matrix.json
+          if-no-files-found: warn
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ghc-packaged-glossary-verification
+          path: build/packaged-glossary-audit.json
+          if-no-files-found: warn
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GHC-Study-v1.4.6-glossary-tested-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+
+  emulator-smoke:
+    runs-on: ubuntu-latest
+    needs: android-apk
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install offline image cropping dependency
+        run: python3 -m pip install --user Pillow==11.3.0
+      - uses: actions/download-artifact@v4
+        with:
+          name: GHC-Study-v1.4.6-glossary-tested-debug-apk
+          path: downloaded-apk
+      - name: Enable KVM group permissions
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          # Android 35 google_apis image completed true Glossary-to-home Back navigation
+          # successfully in run 38464879108. AOSP 'default' rendered a blank WebView in
+          # two later CI runs. Retain ANR recovery for occasional Pixel Launcher dialogs.
+          target: google_apis
+          profile: pixel_6
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          script: bash tests/android-emulator-smoke.sh
+      - name: Upload emulator screenshots and accessibility checks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: GHC-emulator-functional-evidence
+          path: emulator-evidence/
+          if-no-files-found: warn

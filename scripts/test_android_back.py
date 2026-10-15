@@ -1,44 +1,64 @@
 #!/usr/bin/env python3
-"""Exercise the exact Java-embedded Back JavaScript in a mocked SPA context."""
+"""Exercise the Java-embedded Android Back script using only real DOM-exposed state.
+
+The quiz SPA stores view/mode inside an IIFE; those variables must NOT be
+injected into this VM or the test would miss the original Android Back bug.
+"""
 import json
 import re
 import subprocess
 from pathlib import Path
-java=Path("app/src/main/java/org/ghcstudy/offline/MainActivity.java").read_text()
-block=java.split('final String script = ',1)[1].split('        webView.evaluateJavascript',1)[0].rsplit(';',1)[0]
-fragments=re.findall(r'"(?:\\.|[^"\\])*"',block)
-script=''.join(json.loads(x) for x in fragments if x != '\"handled\"')
-cases=[
-  ("modal","study","home","handled","modal"),
-  ("study card","studymode","studycard","handled","category"),
-  ("study category","studymode","studycategory","handled","hub"),
-  ("study hub","studymode","studyhub","handled","home"),
-  ("quiz question","study","continue","handled","home"),
-  ("reference","reference","home","handled","home"),
-  ("root","study","home","root","none")
+
+java = Path("app/src/main/java/org/ghcstudy/offline/MainActivity.java").read_text()
+block = java.split("final String script = ", 1)[1].split(
+    "        webView.evaluateJavascript", 1
+)[0].rsplit(";", 1)[0]
+fragments = re.findall(r'"(?:\\.|[^"\\])*"', block)
+script = "".join(json.loads(part) for part in fragments)
+cases = [
+    ["modal", "modal", "study", "handled", "modal"],
+    ["study card", "card", "studymode", "handled", "category"],
+    ["study category", "category", "studymode", "handled", "hub"],
+    ["study hub", "hub", "studymode", "handled", "quiz"],
+    ["quiz question", "question", "study", "handled", "quiz"],
+    ["reference", "reference", "reference", "handled", "quiz"],
+    ["quiz root", "root", "study", "root", "none"],
+    ["glossary separate page", "glossary", "", "root", "none"],
 ]
-js="""
+js = r"""
 const vm=require('node:vm');
-const cases=JSON.parse(process.argv[1]), script=process.argv[2];
-for(const [name,v,m,expected,action] of cases){
- let calls=[];
- const modal={classList:{contains:()=>name!=='modal'}};
- const ctx={
-  view:v,mode:m,studyCardId:'x',
-  STUDY_CARDS:[{id:'x',category:'animals'}],
-  document:{getElementById:(id)=>id==='modal'?modal:id==='closeModal'?{click:()=>calls.push('modal')}:null},
-  renderStudyCategory:(id)=>calls.push(id==='animals'?'category':'wrong'),
-  renderStudyHub:()=>calls.push('hub'),
-  render:()=>calls.push('home')
+const cases=JSON.parse(process.argv[1]),script=process.argv[2];
+for(const [name,screen,tab,expected,action] of cases){
+ const calls=[];
+ function button(id){return {click:()=>calls.push(id)};}
+ const doc={
+  getElementById(id){
+   if(id==='modal')return {classList:{contains:()=>screen!=='modal'}};
+   if(id==='closeModal')return button('modal');
+   if(id==='studyCatBack'&&screen==='card')return button('category');
+   if(id==='studyHubBack'&&screen==='category')return button('hub');
+   return null;
+  },
+  querySelector(css){
+   if(css==='#app [data-action=home]'&&screen==='question')return button('quiz');
+   if(css==='.navbtn.active'&&tab)return {getAttribute:()=>tab};
+   if(css==='.navbtn[data-tab=study]'&&tab)return button('quiz');
+   return null;
+  }
  };
- const result=vm.runInNewContext(script,ctx);
- if(result!==expected || (action!=='none'&&!calls.includes(action)))
-   throw new Error(name+': '+result+' / '+calls.join(',')+' state '+ctx.view+'/'+ctx.mode+' script '+script);
+ // Critically, do not place "view", "mode", render() or STUDY_CARDS in
+ // the global context; the app's actual script captures them in a closure.
+ const result=vm.runInNewContext(script,{document:doc});
+ if(result!==expected||(action!=='none'&&!calls.includes(action)))
+  throw new Error(name+': '+result+' / '+calls.join(',')+' expected '+expected+' '+action);
  console.log('PASS',name);
 }
 """
-proc=subprocess.run(["node","-e",js,json.dumps(cases),script],text=True,capture_output=True)
-print(proc.stdout,end="")
-if proc.returncode:
-    print(proc.stderr,end="")
-    raise SystemExit(proc.returncode)
+run = subprocess.run(
+    ["node", "-e", js, json.dumps(cases), script],
+    text=True, capture_output=True
+)
+print(run.stdout, end="")
+if run.returncode:
+    print(run.stderr, end="")
+    raise SystemExit(run.returncode)

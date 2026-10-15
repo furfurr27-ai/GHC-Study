@@ -7,6 +7,8 @@ on:
       - 'scripts/build_practice_test2.py'
       - 'scripts/check_practice_test2.py'
       - 'scripts/practice-test2-template.html'
+      - 'scripts/practice-test2-exam-runtime.js'
+      - 'tests/practice-test2-timed-smoke.cjs'
       - 'tests/practice-test2-smoke.cjs'
       - 'scripts/crop_study_slide_images.py'
       - 'scripts/overlay_protected_owl.py'
@@ -102,6 +104,8 @@ jobs:
         run: npm install --no-save --ignore-scripts jsdom@24.1.3
       - name: Test Practice Test 2 offline browser interactions
         run: node tests/practice-test2-smoke.cjs
+      - name: Test 150-minute full exam, saved time and five passing thresholds
+        run: node tests/practice-test2-timed-smoke.cjs
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage

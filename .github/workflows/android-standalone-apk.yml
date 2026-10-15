@@ -11,6 +11,7 @@ on:
       - 'scripts/overlay_abschussplan_course_schematic.py'
       - 'scripts/qualify_question_source_caveats.py'
       - 'scripts/check_question_source_caveats.py'
+      - 'scripts/build_question_source_audit_matrix.py'
       - 'scripts/check_study_media.py'
       - 'scripts/check_packaged_glossary.py'
       - 'audit/study-media-review-20261014.json'
@@ -68,6 +69,8 @@ jobs:
         run: python3 scripts/check_study_media.py --strict
       - name: Verify three source-audited question caveats
         run: python3 scripts/check_question_source_caveats.py
+      - name: Generate all-question explicit factual source-review inventory
+        run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build separately installable APK
         run: gradle --no-daemon -PghcStandalone=true :app:assembleDebug
       - name: Validate standalone package and media
@@ -89,6 +92,14 @@ jobs:
           python3 scripts/check_packaged_glossary.py "$APK"
           python3 scripts/check_study_media.py --apk "$APK" --strict
           python3 scripts/check_question_source_caveats.py --apk "$APK"
+          python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
+      - name: Upload 867-question source review matrix
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-standalone-question-source-audit
+          path: build/question-source-audit-matrix.json
+          if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         if: always()
         with:

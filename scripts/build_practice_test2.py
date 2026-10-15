@@ -94,7 +94,7 @@ def build():
     assert page.count(runtime_marker) == 1, "Timed-exam script injection point missing"
     runtime = (ROOT / "scripts/practice-test2-exam-runtime.js").read_text(encoding="utf-8")
     assert "GHC_PT2_TIMED_EXAM_V1" in runtime
-    page = page.replace(runtime_marker, "<script>\\n" + runtime + "\\n</script>")
+    page = page.replace(runtime_marker, "<script>\n" + runtime + "\n</script>")
     PAGE.write_text(page, encoding="utf-8")
     html = INDEX.read_text(encoding="utf-8")
     if ANCHOR not in html:

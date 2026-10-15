@@ -15,10 +15,12 @@ Last updated: 2026-10-15. This checkpoint is intentionally independent of the pr
 
 The user uploaded 10 photographs into the conversation: cover `20261015_213803.jpg`; Part I Q1–6 `1000069478.jpg`; Part I Q7–12 `1000069479.jpg`; Part I Q13–19 `1000069480.jpg`; Part I Q20–25 `1000069481.jpg`; Part II Q1–5 `1000069482.jpg`; Part II Q6–11 `1000069483.jpg`; Part II Q12–18 `1000069484.jpg`; Part II Q19–24 `1000069485.jpg`; Part II Q25 `1000069486.jpg`. These are local conversation source filenames, not GitHub image assets; no scans or private personal details were committed.
 
-- Part I Game Biology, questions 1–25, complete.
-- Part II Hunting Dogs / Hunting Procedures, questions 1–25, complete.
-- Parts III, IV, V, questions 1–25 each, not yet supplied.
-- **50 of 125 questions captured. Test intake remains incomplete.**
+- Part I Game Biology, questions 1–25, complete (batch 1).
+- Part II Hunting Dogs / Hunting Procedures, questions 1–25, complete (batch 1).
+- Part III Weapons Law, Firearms and Handling, questions 1–25, complete (batch 2).
+- Part IV Nature and Animal Protection, Jagdschutz, Ethics and U.S. Forces Procedures, questions 1–25, complete (batch 2).
+- Part V Diseases, Handling of Meat, Hygiene, questions 1–5 captured and staged under `pendingSections`. Questions 6–25 remain to be uploaded.
+- **105 of 125 questions transcribed: 100 immediately playable across four complete sections, 5 retained pending Part V completion. Test intake remains incomplete.**
 - Source year (2021 or 2022) was described by the user and is not printed/verified on the available cover.
 - Cover rules: closed book; ink pen; circle one or more letter(s); 5 × 25 questions; one point per question; at least 13 correct **per part**; **150 minutes total**.
 - **Correct answer method: use ONLY YELLOW HIGHLIGHTED text on photographed paper.** Blue handwritten circles, black ticks, crossings-out or other pen marks must NEVER override the highlighted key. Preserve questionable historical answers literally, with separate legal/factual caveats rather than silently correcting the primary key.
@@ -43,3 +45,35 @@ Part I Q1–25: AC, C, A, A, B, B, AD, CD, AC, C, C, B, C, E, B, A, C, BCD, B, C
 Part II Q1–24: ABDE, B, AB, C, C, B, ACD, D, C, B, B, B, B, A, B, ACD, BD, CD, D, A, B, BC, C, C. Q25 is matching a5 b4 c6 d2 e1 f3.
 
 This is an historical-answer transcription checkpoint, **not** confirmation that the test reflects current hunting laws or species taxonomy.
+
+
+## Second photo batch (10 additional images, 2026-10-15)
+
+- `1000069487.jpg`: Part III Q1–6
+- `1000069488.jpg`: Part III Q7–12
+- `1000069489.jpg`: Part III Q13–18
+- `1000069490.jpg`: Part III Q19–24
+- `1000069491.jpg`: Part III Q25
+- `1000069492.jpg`: Part IV Q1–6
+- `1000069493.jpg`: Part IV Q7–13
+- `1000069494.jpg`: Part IV Q14–19
+- `1000069495.jpg`: Part IV Q20–25
+- `1000069496.jpg`: Part V Q1–5
+
+Exact answer letters read only from **yellow highlighting**, with blue circles and black checks ignored:
+
+- Part III Q1–25: B, D, ABD, AB, B, A, ACDE, C, B, A, A, B, C, A, C, ACE, A, C, AB, B, C, B, A, BD, ABDEF.
+- Part IV Q1–25: C, CD, B, B, B, A, B, A, AC, A, A, C, B, C, B, A, B, B, C, ABC, B, B, A, A, B.
+- Part V Q1–5 (pending): B, ABC, CDE, ABE, ACE.
+
+Key exceptions to protect from future "corrections" during transcription: Part III Q4 highlights **A+B** for universal self-defense warnings, Part III Q25 highlights **A+B+D+E+F** but not C/G, Part IV Q9 highlights **A+C** (one or three years), and Part IV Q16 highlights **A** for the injured deer outside the hunter's own hunting area. These are *historical answer-key records, not independently verified current legal advice*. The page preserves a general historical-source disclaimer. Current German law and official U.S. Forces procedures require a separate substantive audit before anyone relies on these claims.
+
+### Resume instructions for final batch
+
+1. Inspect the user's remaining photographs. The expected continuation starts **Part V Q6**. Do not assume that all photos start at the expected numbering—confirm printed question numbers.
+2. Keep existing Part V Q1–5 verbatim unless photo-level correction is warranted.
+3. Append Part V Q6–25, move the completed 25-item Part V object from `pendingSections` into `sections`, and set `pendingSections: []`.
+4. Set `receivedQuestionCount=125`, `availableQuestionCount=125`, `pendingQuestionCount=0`, `isComplete=true`, and update the intake `status`.
+5. Update `scripts/check_practice_test2.py` and `tests/practice-test2-smoke.cjs` to assert 125 captured and all five parts visible; replace the 105-item checkpoint assumptions. Run the available Android+browser regression workflows.
+6. Implement the **full five-part timed 150-minute simulation**, with 13/25 passing **per individual part**, only after the source collection is complete. The existing partial preview intentionally has no exam timer.
+

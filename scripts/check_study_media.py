@@ -137,6 +137,18 @@ def main():
                     failures.append(card["id"] + ": original classroom lesson/page provenance drifted")
                 if "originalClassroomPageRange" in drawing and info.get("originalClassroomPageRange") != drawing["originalClassroomPageRange"]:
                     failures.append(card["id"] + ": classroom slide-range source attribution drifted")
+                if drawing.get("notOfficialForm"):
+                    if not info.get("notOfficialForm") or not info.get("authoredIllustration"):
+                        failures.append(card["id"] + ": educational illustration incorrectly presented as official planning form")
+                    if info.get("referenceFormPDF") != drawing["referenceFormPDF"]:
+                        failures.append(card["id"] + ": actual Hessian planning PDF reference drifted")
+                    if info.get("officialPlanningFormsList") != drawing["officialPlanningFormsList"]:
+                        failures.append(card["id"] + ": current Hessen official form listing reference drifted")
+                    if info.get("classroomPageRange") != drawing["classroomPageRange"]:
+                        failures.append(card["id"] + ": GHC class page range drifted")
+                    if b"NOT AN OFFICIAL FORM" not in b:
+                        failures.append(card["id"] + ": image must visibly disclose it is educational, not valid official form")
+
                 expected_sha = drawing["gitBlobSha1"]
                 actual_sha = hashlib.sha1(b"blob " + str(len(b)).encode() + b"\x00" + b).hexdigest()
                 if actual_sha != expected_sha or info.get("illustrationGitBlobSHA1") != expected_sha:

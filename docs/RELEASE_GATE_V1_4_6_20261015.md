@@ -1,0 +1,38 @@
+# GHC Study v1.4.6 — finite release gate (2026-10-15)
+
+**Purpose:** Stop unbounded continuation loops. Distinguish a tested **offline study-app release** from the long-running, independent **factual/historical research audit**. This is a scoped release decision, not a claim that 992 exam questions or the entire class library have been independently fact-verified.
+
+## Authoritative state actually checked on GitHub
+
+- Current active branch `feature/slide-audit-glossary-tests-20261012` at checkpoint `949c3fd1140afbbdba42dfbe936461644f4dc321` (documentation tip when prepared); default `main` remains older; draft [PR #3](https://github.com/furfurr27-ai/GHC-Study/pull/3) targets `audit/v145-source-recovery`.
+- Actual Android version source: `app/build.gradle`, **versionName 1.4.6, versionCode 146**, min SDK24, compile/target SDK35. Primary application ID `org.ghcstudy.v141`; side-by-side standalone ID `org.ghcstudy.v146.standalone`. **No root `VERSION` file exists** on this branch; do not waste time searching for it.
+- Existing 867 exam IDs, 77 vocabulary questions, 117 study cards remain. Separate Practice Test 2 has **125/125** questions across five part JSON files, with original *yellow-highlighted* historical answer keys. The native bank is an **untimed** study drill; exam cover says **150 minutes**, **13/25 in every part**, one point each.
+- Visual style: **71/71** originally full-slide-like assets remapped; **117/117** card images resolve in strict packaged media tests; `scripts/crop_study_slide_images.py` maps the **original dogparts source** to `media/dogparts-original-course-anatomy.jpeg` from `Hunting Dogs (202609).pdf`, page 4, with source provenance. The audit is not a species-by-species or image-rights certification.
+- Glossary **162 indexed / 160 meanings defined**. Pending contextual meanings: `Jagdschütz` and `Tiroler`. **75 inherited etymology notes unverified**, individually labeled, not falsely presented as verified.
+- Original 867-question fact audit: **18 independently source-qualified explanations, 8 original archival/current-rule caveats, 841 not individually audited**. Another **125 Practice Test 2** transcriptions are not independent current-law verifications; maintain historical-quiz source distinction.
+- Android workflows: [full regression #38805095533](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38805095533) **all three jobs succeeded** (smoke, Android APK, emulator; tested code commit `66ab2971d9421bdcac7142d48308d55797938d37`); [standalone #38805028682](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38805028682) **successful** (code commit `f0c89e0aa9ce83f49aeda960188811a9a72b9d09`; artifact name `GHC-Study-v1.4.6-STANDALONE-APK`, artifact ID `12005429005` at inspection, expiry subject to GitHub retention).
+- There are later **documentation-only** commits on the active branch. A workflow that passed on an earlier code SHA does not prove a later source-code modification passed. No physical Samsung Galaxy S23 Ultra installation was performed.
+
+## FINITE release-candidate gate (no further open-ended research while closing)
+
+1. **Freeze feature scope.** The 125-question native Practice Test 2, glossary, 117 cards, imagery, ordinary Quiz Mode and backup/reset are the release candidate. The separate 150-minute prototype on `feature/practice-test-2-20261015` is OPTIONAL next-version work, **not** a blocker; do not blindly merge divergent implementations or duplicate the Quiz Mode tile.
+2. **Reconfirm final code and CI.** Run/review full GitHub Actions for the exact release candidate SHA after any last software change: scripted question-bank integrity, 117/117 offline media, 71/71 cropped/remapped media gate, glossary search/links, 125 questions / five sections with highlighted-only key, saved progress/reset, Android Back tests, Android 35 emulator smoke, real APK contents. Failure blocks release; already-passed tests need not be individually reopened absent code changes.
+3. **Targeted safety/legality source-label check.** Verify that archived claims cannot be mistaken for live field instructions, especially Practice Test 2 Part III Q4 (self-defense), Part IV Q16 (injured roe deer outside own Revier), Part V Q20 (digestive-content carcass washing), and the already flagged eight 2013 items. Historical answers must remain unchanged; current-law/food-hygiene warning should be visible when appropriate. If a misleading high-consequence assertion remains without adequate context, fix **that question only**, test and rerun CI.
+4. **Physical S23 Ultra acceptance (user action).** Validate primary-package upgrade against an existing installation **without losing progress**; if installing the standalone package, confirm the user understands its data is separate. Test airplane mode, launch/icon, glossary/search, picture rendering, nested Android system Back, Practice Test 2 all five parts/answer checking, progress and scoped reset, backup export and import/restore. Capture exact reproductions of any failures. Physical test cannot be truthfully claimed by CI.
+5. **Release decision.** Once 2–4 pass with no severe defects, freeze at v1.4.6, identify the APK artifact and code SHA, update the draft PR description/checkpoint, and ask the user before merging `main`. Do not automatically merge. A release can be explicitly labeled **historical practice study app with incomplete independent factual audit**.
+
+This is a **5-gate checklist**, not a repeated mandate to research all old questions before the user can study.
+
+## Long-term research backlog — NOT a reason to call each build unfinished
+
+- Individually compare the remaining **841/867** original exam questions with classroom sources and current authoritative law where applicable. Prioritize dangerous legal/safety/food-handling claims. Preserve original historical keys and mark disputed items prominently.
+- Resolve the **2 glossary contextual meanings** using actual classroom/worksheet evidence; investigate **75** unverified historical word origins when credible primary dictionaries or historical evidence exist. Unverified is an acceptable final status where evidence is absent; do not manufacture an origin.
+- Continue remaining detailed card-claim/classroom-source comparison where evidence genuinely missing; image rights and species-specific visual correctness remain separate review topics.
+- Optionally integrate the separate **150-minute** timed full-paper examination into the **native** UI in a later version, with data/state migration and no duplicated bank.
+- Recheck current law at the point of actual use; a historical practice key cannot authorize real hunting, weapon transport, animal dispatch, or food handling.
+
+## Stop rule for continuation chats
+
+Unless a **new failure, new image, new class source, or explicit request for historical research** is presented, do **not** open a new cycle of question-by-question research or media replacement. Prioritize the physical-device gate and **ship a usable release candidate**. Keep draft PR #3 until the user authorizes merging. Link this file at the TOP of `NEXT_ACTION.md`; its dated snapshots farther down are historic and may be stale.
+
+**Sources checked in preparing this gate:** live repository metadata/branches, actual `app/build.gradle`, `NEXT_ACTION.md`, glossary source and regression assertions, `audit/study-media-review-20261014.json`, image assembly script, review-coverage document, PR #3, exact GitHub Actions job conclusions and standalone artifact list. **No original Google Drive PDF, historical dictionary or German statute was opened during this release-scope review**.

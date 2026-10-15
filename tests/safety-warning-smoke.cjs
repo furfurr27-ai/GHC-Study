@@ -70,7 +70,9 @@ async function main() {
   // before grading while still preserving their printed historical keys.
   for (const item of [
     {id: 'P2013-S3-Q03', key: 'e', warning: /2013 transport question/},
-    {id: 'P2013-S3-Q11', key: 'c', warning: /Law changed since this 2013 paper/}
+    {id: 'P2013-S3-Q11', key: 'c', warning: /Law changed since this 2013 paper/},
+    {id: 'P2013-S3-Q09', key: 'b', warning: /Dated 2013 rifle-purchase paperwork/},
+    {id: 'P2013-S3-Q13', key: 'c', warning: /Safety-critical outdated 2013 self-defense key/}
   ]) {
     const q = w.GHC_QUESTIONS.find(x => x.id === item.id);
     assert(q, 'reviewed original-paper question missing: ' + item.id);
@@ -85,14 +87,32 @@ async function main() {
     assert(selected);
     selected.click();
     w.document.querySelector('#checkBtn').click();
-    assert.match(w.document.querySelector('#feedback').textContent, /Correct/, 'archival answer must remain usable');
+    assert.match(w.document.querySelector('#feedback').textContent, /Matched archival answer only/,
+      'dated archival law question must not receive unconditional Correct feedback');
+  }
+  for (const entry of [
+    {id: 'P2013-S3-Q05', correct: ['a', 'c', 'd']},
+    {id: 'P2013-S3-Q10', correct: ['c']}
+  ]) {
+    const q = w.GHC_QUESTIONS.find(x => x.id === entry.id);
+    assert(q);
+    assert.deepEqual(Array.from(q.correct), entry.correct);
+    assert.equal(q.sourceReview?.status, 'source_compared_explanation_qualified');
+    w.__ghcTestRenderExactQuestion(entry.id);
+    assert(!w.document.querySelector('.question .alert[role="note"]'),
+      'qualified original key should not be incorrectly flagged as law conflict');
+    for (const correct of entry.correct)
+      w.document.querySelector('.choice input[value="' + correct + '"]').click();
+    w.document.querySelector('#checkBtn').click();
+    assert.match(w.document.querySelector('#feedback').textContent, /^Correct/,
+      'source-qualified original paper item remains normally scored');
   }
   // Other questions must continue to use their original, single answer set.
   w.__ghcTestRenderExactQuestion('H2023-D17-Q018');
   assert(!w.document.querySelector('.question .alert[role="note"]'), 'non-disputed question must not receive conflict warning');
   assert.equal(errors.length, 0, 'runtime errors: ' + errors.join(' | '));
   w.close();
-  console.log('PASS: original B/C and B/C/D scoring plus 2013 transport and semiauto law-change warnings render before answers; all archived keys intact');
+  console.log('PASS: original and safety-complete Q02 scoring; four dated-law warning banners and two qualified documents questions; 867 archival keys unchanged');
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

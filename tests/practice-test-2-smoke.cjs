@@ -20,9 +20,11 @@ assert.deepEqual(quiz3.find(x=>x.number===25).correct,['a','b','d','e','f']);
 assert.deepEqual(quiz4.find(x=>x.number===20).correct,['a','b','c']);
 assert.deepEqual(quiz5.find(x=>x.number===20).correct,['c']);
 assert.deepEqual(quiz5.find(x=>x.number===25).correct,['b','c','d']);
-function makeDom(preload={}) {
+function makeDom(preload={},exposeExact=false) {
  const errors=[], vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(String(e)));
- const d=new JSDOM(html,{url:'https://ghc.local/',runScripts:'dangerously',resources:'usable',pretendToBeVisual:true,virtualConsole:vc,beforeParse(w){
+ const paperHtml=exposeExact?html.replace('function renderQuestion(){',
+ "window.__ghcTestPaperQuestion=function(id){selected={};checked=false;current=(window.GHC_PRACTICE2_QUESTIONS||[]).find(q=>q.id===id);if(!current)throw Error('paper ID missing');renderQuestion()};\nfunction renderQuestion(){"):html;
+ const d=new JSDOM(paperHtml,{url:'https://ghc.local/',runScripts:'dangerously',resources:'usable',pretendToBeVisual:true,virtualConsole:vc,beforeParse(w){
   w.scrollTo=()=>{};w.matchMedia=()=>({matches:false,addListener(){},removeListener(){}});
   w.HTMLElement.prototype.scrollIntoView=function(){};
   if(Object.keys(preload).length)w.localStorage.setItem('ghc-study-progress-v1',JSON.stringify({progress:preload,settings:{sourceMode:'practice2022',focusSupport:'Direct'}}))
@@ -66,4 +68,29 @@ click(m,'#checkBtn');
 assert.match(m.document.querySelector('#feedback').textContent,/Correct · all six matches/);
 assert.equal(inputs.every(el=>el.disabled),true);
 assert(m.document.querySelector('#nextBtn:not(.hidden)'));
+// Verify the actual native renderer presents all six safety-sensitive historical
+// source cautions BEFORE answering, never modifying yellow-only answers.
+const sensitive = [
+ ['P2022-S3-Q04',['a','b'],/Historical self-defense question/],
+ ['P2022-S4-Q16',['a'],/Historical emergency animal-dispatch question/],
+ ['P2022-S5-Q09',['b'],/Historical meat-inspection question/],
+ ['P2022-S5-Q16',['a'],/Historical botfly\/meat-inspection question/],
+ ['P2022-S5-Q19',['a'],/Historical cold-chain question/],
+ ['P2022-S5-Q20',['c'],/Historical gut-contamination question/]
+];
+assert.equal(html.split('function renderQuestion(){').length,2);
+const warnings=makeDom({},true);
+for(const [id,key,pattern] of sensitive){
+ const original=all.find(x=>x.id===id);
+ assert(original,'missing photo source question '+id);
+ assert.deepEqual(original.correct,key,'highlight key drifted '+id);
+ const q=warnings.GHC_PRACTICE2_QUESTIONS.find(x=>x.id===id);
+ assert(q.preAnswerWarning && pattern.test(q.preAnswerWarning));
+ assert(q.flags.includes('historical-paper-safety-not-current-field-guidance'));
+ warnings.__ghcTestPaperQuestion(id);
+ const alert=warnings.document.querySelector('.question .alert[role="note"]');
+ assert(alert && pattern.test(alert.textContent),'warning not rendered before grading '+id);
+ assert.equal(warnings.document.querySelector('#feedback').textContent.trim(),'');
+}
+warnings.close();
 console.log('Practice Test 2 smoke PASS: 125 transcriptions, yellow keys, source mode, info, part scope, grading, six-way matching, reset; 867 legacy records unaffected.');

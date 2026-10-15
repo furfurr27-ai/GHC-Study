@@ -66,12 +66,33 @@ async function main() {
   w.document.querySelector('#checkBtn').click();
   assert.match(w.document.querySelector('#feedback').textContent, /Matched archived 2013 key/);
   assert(w.document.querySelector('.question .alert[role="note"]'), 'warning persists after answer');
+  // Dated 2013 federal-law questions must disclose the legal change
+  // before grading while still preserving their printed historical keys.
+  for (const item of [
+    {id: 'P2013-S3-Q03', key: 'e', warning: /2013 transport question/},
+    {id: 'P2013-S3-Q11', key: 'c', warning: /Law changed since this 2013 paper/}
+  ]) {
+    const q = w.GHC_QUESTIONS.find(x => x.id === item.id);
+    assert(q, 'reviewed original-paper question missing: ' + item.id);
+    assert.deepEqual(Array.from(q.correct), [item.key], 'archival federal-law key changed');
+    assert.equal(q.sourceReview?.status, 'source_compared_key_conflict');
+    assert.equal(q.sourceReview?.originalPaperKeyVerified, true);
+    w.__ghcTestRenderExactQuestion(item.id);
+    const banner = w.document.querySelector('.question .alert[role="note"]');
+    assert(banner && item.warning.test(banner.textContent), 'current-law pre-answer warning missing');
+    assert.equal(w.document.querySelector('#feedback').textContent.trim(), '', 'law warning must predate scoring');
+    const selected = w.document.querySelector('.choice input[value="' + item.key + '"]');
+    assert(selected);
+    selected.click();
+    w.document.querySelector('#checkBtn').click();
+    assert.match(w.document.querySelector('#feedback').textContent, /Correct/, 'archival answer must remain usable');
+  }
   // Other questions must continue to use their original, single answer set.
   w.__ghcTestRenderExactQuestion('H2023-D17-Q018');
   assert(!w.document.querySelector('.question .alert[role="note"]'), 'non-disputed question must not receive conflict warning');
   assert.equal(errors.length, 0, 'runtime errors: ' + errors.join(' | '));
   w.close();
-  console.log('PASS: original B/C and safety-complete B/C/D both accepted without altering archived key; pre-answer warning shown');
+  console.log('PASS: original B/C and B/C/D scoring plus 2013 transport and semiauto law-change warnings render before answers; all archived keys intact');
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

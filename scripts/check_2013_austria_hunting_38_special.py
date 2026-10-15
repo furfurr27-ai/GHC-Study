@@ -46,7 +46,7 @@ def main():
   else:
    assert review["checkedSource"]==AUSTRIA,id
    assert "ARCHIVED checklist" in q.get("preAnswerWarning",""),id
-   assert "province" in q["preAnswerWarning"].lower(),id
+   assert "provincial" in q["preAnswerWarning"].lower(),id
    assert "Matched archival answer only" in html,id
    assert "current.preAnswerWarning?" in html,id
  print("PASS: original 2013 .38 Special/.357 and provincial Austrian hunting-card source audits; 867 question answers preserved"+(" (APK)" if args.apk else " (source)"))

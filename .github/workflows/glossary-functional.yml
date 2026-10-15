@@ -30,6 +30,7 @@ jobs:
           node --check app/src/main/assets/glossary-data.js
           node --check tests/functional-smoke.cjs
           node --check tests/safety-warning-smoke.cjs
+          node --check tests/practice-test-2-smoke.cjs
       - name: Run GHC study UI smoke tests
         run: node tests/functional-smoke.cjs
       - name: Check question bank integrity and answer giveaways
@@ -78,6 +79,8 @@ jobs:
         run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
       - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Integrate Practice Test 2 from highlighted photo answers
+        run: python3 scripts/integrate_practice_test_2.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -98,6 +101,8 @@ jobs:
         run: python3 scripts/check_2013_us_forces_import_animal_welfare.py
       - name: Verify Austrian guest-license and .38 cartridge source qualifications
         run: python3 scripts/check_2013_austria_hunting_38_special.py
+      - name: Test Practice Test 2 scoped quiz, exam instructions and matching answer
+        run: node tests/practice-test-2-smoke.cjs
       - name: Verify disputed-key notice actually renders in quiz UI
         run: node tests/safety-warning-smoke.cjs
       - name: Generate all-question explicit factual source-review inventory
@@ -164,6 +169,8 @@ jobs:
         run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
       - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Integrate Practice Test 2 from highlighted photo answers
+        run: python3 scripts/integrate_practice_test_2.py
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py

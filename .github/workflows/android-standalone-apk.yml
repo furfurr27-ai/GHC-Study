@@ -7,6 +7,7 @@ on:
       - 'scripts/build_practice_test2.py'
       - 'scripts/check_practice_test2.py'
       - 'scripts/practice-test2-template.html'
+      - 'tests/practice-test2-smoke.cjs'
       - 'scripts/crop_study_slide_images.py'
       - 'scripts/overlay_protected_owl.py'
       - 'scripts/overlay_misfire_course_schematic.py'
@@ -94,6 +95,13 @@ jobs:
         run: python3 scripts/build_practice_test2.py
       - name: Verify Practice Test 2 intake, UI and script syntax
         run: python3 scripts/check_practice_test2.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test harness
+        run: npm install --no-save --ignore-scripts jsdom@24.1.3
+      - name: Test Practice Test 2 offline browser interactions
+        run: node tests/practice-test2-smoke.cjs
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage

@@ -68,7 +68,8 @@ function stats(text){return text.replace(/\s+/g,' ').trim()}
  // 112 correct in aggregate is still NOT PASSED when Part I only has 12/25.
  const all=answersAll();
  for(const q of data.sections[0].questions.slice(12))delete all[q.id];
- s={version:1,startedAt:Date.now(),endAt:Date.now()+lengthMs,index:124,answers:all,submittedAt:null};
+ const startOfFailed=Date.now();
+ s={version:1,startedAt:startOfFailed,endAt:startOfFailed+lengthMs,index:124,answers:all,submittedAt:null};
  ({dom,w}=await page(s));
  click(w,'#examFinish');
  assert(w.document.querySelector('#examResults').hidden===false);
@@ -79,7 +80,8 @@ function stats(text){return text.replace(/\s+/g,' ').trim()}
  assert(w.document.querySelector('#examResults').textContent.includes('historical'));
  dom.window.close();
  // All 125 correct: pass only if all five individual parts pass.
- s={version:1,startedAt:Date.now(),endAt:Date.now()+lengthMs,index:124,answers:answersAll(),submittedAt:null};
+ const startOfPassed=Date.now();
+ s={version:1,startedAt:startOfPassed,endAt:startOfPassed+lengthMs,index:124,answers:answersAll(),submittedAt:null};
  ({dom,w}=await page(s));
  click(w,'#examFinish');
  assert.match(stats(w.document.querySelector('#examResults').textContent),/125\/125 correct/);

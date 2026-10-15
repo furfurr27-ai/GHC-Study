@@ -65,6 +65,8 @@ jobs:
         run: python3 scripts/overlay_abschussplan_course_schematic.py
       - name: Qualify three legacy quiz explanations against original course and Hessian guidance
         run: python3 scripts/qualify_question_source_caveats.py
+      - name: Source-review six field firearm-safety questions and warn on incomplete 2013 key
+        run: python3 scripts/qualify_safety_question_batch.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -73,6 +75,8 @@ jobs:
         run: python3 scripts/check_study_media.py --strict
       - name: Verify three source-audited question caveats
         run: python3 scripts/check_question_source_caveats.py
+      - name: Assert archive-key conflict and pre-answer notice retained
+        run: python3 scripts/check_safety_question_batch.py
       - name: Generate all-question explicit factual source-review inventory
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Publish media integrity and visual-review backlog
@@ -125,6 +129,8 @@ jobs:
         run: python3 scripts/overlay_abschussplan_course_schematic.py
       - name: Qualify three legacy quiz explanations against original course and Hessian guidance
         run: python3 scripts/qualify_question_source_caveats.py
+      - name: Source-review six field firearm-safety questions and warn on incomplete 2013 key
+        run: python3 scripts/qualify_safety_question_batch.py
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -133,6 +139,8 @@ jobs:
         run: python3 scripts/check_study_media.py --strict
       - name: Verify three source-audited question caveats
         run: python3 scripts/check_question_source_caveats.py
+      - name: Assert archive-key conflict and pre-answer notice retained
+        run: python3 scripts/check_safety_question_batch.py
       - name: Generate all-question explicit factual source-review inventory
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build installable Android APK
@@ -151,6 +159,7 @@ jobs:
           python3 scripts/check_packaged_glossary.py "$APK"
           python3 scripts/check_study_media.py --apk "$APK" --strict
           python3 scripts/check_question_source_caveats.py --apk "$APK"
+          python3 scripts/check_safety_question_batch.py --apk "$APK"
           python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
       - name: Upload 867-question source review matrix
         if: always()

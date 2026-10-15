@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="title desc">
+<title id="title">Abschussplan — visual explanation of a prospective Hessian roe-deer harvest plan</title>
+<desc id="desc">New educational illustration based on official Hessian Anlage 2b information: hunting district, planning period, past harvest figures, proposed male and female roe-deer cull and authority decision. Blank fields contain no real plan, quotas or fabricated totals. This is not a usable official form.</desc>
+<rect width="960" height="540" rx="22" fill="#ebe9df"/>
+<rect x="22" y="20" width="916" height="497" rx="16" fill="#fdfcf7" stroke="#8a988d" stroke-width="3"/>
+<path d="M22 36Q22 20 38 20h884Q938 20 938 36v84H22Z" fill="#29483a"/>
+<text x="48" y="63" fill="#e9dbc1" font-family="sans-serif" font-size="18" font-weight="700" letter-spacing="2">HESSEN · REHWILD</text>
+<text x="48" y="99" fill="#ffffff" font-family="sans-serif" font-size="33" font-weight="750">ABSCHUSSPLAN</text>
+<rect x="678" y="46" width="224" height="50" rx="9" fill="#426855"/>
+<text x="790" y="67" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="17" font-weight="700">FUTURE CULL PLAN</text>
+<text x="790" y="87" text-anchor="middle" fill="#d7e8d8" font-family="sans-serif" font-size="15">Abschussplanung</text>
+<text x="48" y="154" fill="#445b4c" font-family="sans-serif" font-size="17" font-weight="700">Jagdbezirk</text>
+<path d="M161 157h192" stroke="#b4bfb5" stroke-width="2"/>
+<text x="392" y="154" fill="#445b4c" font-family="sans-serif" font-size="17" font-weight="700">Hegegemeinschaft</text>
+<path d="M583 157h317" stroke="#b4bfb5" stroke-width="2"/>
+<text x="48" y="190" fill="#445b4c" font-family="sans-serif" font-size="17" font-weight="700">Planungszeitraum</text>
+<path d="M210 193h242" stroke="#b4bfb5" stroke-width="2"/>
+<text x="480" y="190" fill="#445b4c" font-family="sans-serif" font-size="17" font-weight="700">Jagdausübungsberechtigte/r</text>
+<path d="M738 193h162" stroke="#b4bfb5" stroke-width="2"/>
+<rect x="46" y="214" width="360" height="202" rx="12" fill="#f3f5ed" stroke="#b6c2b6" stroke-width="2"/>
+<text x="66" y="246" fill="#2f493b" font-family="sans-serif" font-size="20" font-weight="700">1 · RÜCKBLICK</text>
+<text x="66" y="275" fill="#526858" font-family="sans-serif" font-size="17">Jahresstrecke der letzten 3 Jagdjahre</text>
+<path d="M66 292h322" stroke="#b5c2b8" stroke-width="2"/>
+<g fill="#607467" font-family="sans-serif" font-size="16">
+<text x="80" y="320">Jagdjahr</text><text x="275" y="320">Strecke</text>
+<text x="80" y="349">Jahr 1</text><text x="80" y="374">Jahr 2</text><text x="80" y="399">Jahr 3</text>
+</g>
+<g stroke="#a3b1a4" stroke-width="2"><path d="M268 343h109M268 368h109M268 393h109"/></g>
+<path d="M426 314h87" stroke="#bd8354" stroke-width="10" stroke-linecap="round"/>
+<path d="M511 314l-22-17v34Z" fill="#bd8354"/>
+<rect x="535" y="214" width="380" height="202" rx="12" fill="#eef3ee" stroke="#b6c2b6" stroke-width="2"/>
+<text x="555" y="246" fill="#2f493b" font-family="sans-serif" font-size="20" font-weight="700">2 · VORSCHLAG</text>
+<text x="555" y="275" fill="#526858" font-family="sans-serif" font-size="17">Geplanter Abschuss: Rehwild</text>
+<path d="M555 292h340" stroke="#b5c2b8" stroke-width="2"/>
+<text x="569" y="318" fill="#4b6153" font-family="sans-serif" font-size="17">männlich · Böcke</text>
+<text x="752" y="318" fill="#4b6153" font-family="sans-serif" font-size="17">weiblich · Ricken</text>
+<g stroke="#91a394" fill="none" stroke-width="2"><rect x="567" y="335" width="138" height="48" rx="7"/><rect x="750" y="335" width="138" height="48" rx="7"/></g>
+<g stroke="#bcc9be" stroke-width="2"><path d="M583 367h103M766 367h103"/></g>
+<rect x="46" y="430" width="869" height="43" rx="9" fill="#dfe8df"/>
+<text x="70" y="458" fill="#2e4f3f" font-family="sans-serif" font-size="18" font-weight="700">3 · HEGEGEMEINSCHAFT / JAGDBEHÖRDE: VORSCHLAG UND FESTSETZUNG</text>
+<text x="48" y="498" fill="#5c695e" font-family="sans-serif" font-size="14" font-weight="600">EDUCATIONAL SCHEMATIC · BASED ON HESSIAN ANLAGE 2b · NOT AN OFFICIAL FORM</text>
+</svg>

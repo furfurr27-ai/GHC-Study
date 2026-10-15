@@ -24,13 +24,19 @@ pending_count = sum(len(x["questions"]) for x in data.get("pendingSections", [])
 assert published_count == data.get("availableQuestionCount", published_count)
 assert pending_count == data.get("pendingQuestionCount", 0)
 assert published_count + pending_count == data["receivedQuestionCount"]
-assert data["receivedQuestionCount"] == 105
-assert published_count == 100
-assert pending_count == 5
-assert [x["part"] for x in data["sections"]] == [1, 2, 3, 4]
-assert [x["part"] for x in data["pendingSections"]] == [5]
-if not data["isComplete"]:
-    assert data["receivedQuestionCount"] < data["expectedQuestionCount"]
+assert data["receivedQuestionCount"] == data["expectedQuestionCount"] == 125
+assert published_count == data["availableQuestionCount"] == 125
+assert pending_count == data["pendingQuestionCount"] == 0
+assert [x["part"] for x in data["sections"]] == [1, 2, 3, 4, 5]
+assert data["pendingSections"] == []
+assert data["isComplete"] is True
+assert data["instructions"]["timeLimitMinutes"] == 150
+assert data["instructions"]["minCorrectPerPart"] == 13
+assert all(len(part["questions"]) == 25 for part in data["sections"])
+assert len({q["id"] for part in data["sections"] for q in part["questions"]}) == 125
+assert 'id="examLauncher"' in page and 'id="examClock"' in page
+assert "GHC_PT2_TIMED_EXAM_V1" in page
+assert "<!-- PRACTICE_TEST_2_EXAM_RUNTIME -->" not in page
 q1 = data["sections"][0]["questions"][0]
 assert q1["correct"] == ["a", "c"]
 q18 = data["sections"][0]["questions"][17]
@@ -46,7 +52,9 @@ expected_keys = {
     4: ["c", "cd", "b", "b", "b", "a", "b", "a", "ac", "a",
         "a", "c", "b", "c", "b", "a", "b", "b", "c", "abc",
         "b", "b", "a", "a", "b"],
-    5: ["b", "abc", "cde", "abe", "ace"],
+    5: ["b", "abc", "cde", "abe", "ace", "b", "a", "ab", "b", "abd",
+        "a", "d", "abe", "bd", "a", "a", "b", "abd", "a", "c",
+        "a", "abc", "e", "cd", "bcd"],
 }
 for part_number, expected in expected_keys.items():
     part = next(x for x in data["sections"] + data["pendingSections"] if x["part"] == part_number)
@@ -59,9 +67,12 @@ assert data["sections"][2]["questions"][3]["correct"] == ["a", "b"], (
 assert data["sections"][3]["questions"][15]["correct"] == ["a"], (
     "Part IV Q16: preserve the highlighted historical animal-suffering key"
 )
-assert "105 of" not in page or "pt2-data" in page
-script = page.rsplit("<script>", 1)[1].split("</script>", 1)[0]
-result = subprocess.run(["node", "--check"], input=script, text=True, capture_output=True)
-assert result.returncode == 0, "Offline page syntax invalid: " + result.stderr
-print("PASS: verified", data["receivedQuestionCount"], "historical questions (",
-      published_count, "playable /", pending_count, "pending), 55 new yellow keys, info bubble and script syntax")
+scripts = re.findall(r"<script>(.*?)</script>", page, flags=re.DOTALL)
+assert len(scripts) == 2, "Expected section-practice and timed-exam JS scripts"
+for i, script in enumerate(scripts, 1):
+    result = subprocess.run(["node", "--check"], input=script, text=True, capture_output=True)
+    assert result.returncode == 0, f"Inline script {i} invalid: " + result.stderr
+assert all(q["sourceImage"].endswith(".jpg") for part in data["sections"] for q in part["questions"])
+assert data["sections"][4]["questions"][19]["correct"] == ["c"], "Preserve photographed Part V Q20 historical food-handling key"
+assert data["sections"][4]["questions"][24]["correct"] == ["b", "c", "d"], "Preserve photographed Part V Q25 triple selection"
+print("PASS: 125/125 historical questions, all five complete sections, yellow-highlight keys, 150-minute exam and two JS controllers")

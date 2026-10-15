@@ -135,6 +135,8 @@ def main():
                     failures.append(card["id"] + ": illustration incorrectly presented as original classroom photography")
                 if info.get("source") != drawing["source"] or info.get("page") != drawing["page"]:
                     failures.append(card["id"] + ": original classroom lesson/page provenance drifted")
+                if "originalClassroomPageRange" in drawing and info.get("originalClassroomPageRange") != drawing["originalClassroomPageRange"]:
+                    failures.append(card["id"] + ": classroom slide-range source attribution drifted")
                 expected_sha = drawing["gitBlobSha1"]
                 actual_sha = hashlib.sha1(b"blob " + str(len(b)).encode() + b"\x00" + b).hexdigest()
                 if actual_sha != expected_sha or info.get("illustrationGitBlobSHA1") != expected_sha:

@@ -54,8 +54,8 @@ def load_questions():
     ids = [q["id"] for q in out]
     if len(ids) != len(set(ids)):
         raise AssertionError("Duplicate Practice Test 2 question IDs")
-    if len(out) != 50 or [sum(q["section"] == n for q in out) for n in (1, 2)] != [25, 25]:
-        raise AssertionError("Batch 1 must contain exactly 25 questions in each of Parts I and II")
+    if len(out) != 125 or [sum(q["section"] == n for q in out) for n in range(1, 6)] != [25] * 5:
+        raise AssertionError("Final paper must contain exactly 25 questions in EACH of five parts")
     return out
 
 def main():
@@ -68,7 +68,7 @@ def main():
         "id": "SRC-PRACTICE-2021-22", "type": "course-practice-test",
         "title": "U.S. Forces Hunting Examination — Practice Test 2 (photographed copy)",
         "date": "circa 2021/22 (user estimate, unverified)",
-        "notes": "Original question wording and yellow-only highlighted answer selections; 2 of 5 sections received so far."
+        "notes": "Original question wording and yellow-only highlighted answer selections; all five 25-question sections received."
     }, ensure_ascii=False) + ');\n</script>\n'
     text = change(text, "<script>(function(){\n'use strict';\nvar Q=", insert + "<script>(function(){\n'use strict';\nvar Q=")
     text = change(text, "var Q=(window.GHC_QUESTIONS||[]).concat(window.GHC_VOCAB_QUESTIONS||[]);",
@@ -78,7 +78,7 @@ def main():
     text = change(text, " }else if(iq.sourceGroup==='vocabulary'){\n  VOCAB_QS.push(iq)",
                   " }else if(iq.sourceGroup==='practice2022'){\n  PRACTICE2_QS.push(iq);(PRACTICE2_SECTIONS[iq.section]||(PRACTICE2_SECTIONS[iq.section]=[])).push(iq)\n }else if(iq.sourceGroup==='vocabulary'){\n  VOCAB_QS.push(iq)")
     text = change(text, "var SOURCE_META={\n practice2013:",
-                  "var SOURCE_META={\n practice2022:{label:'Practice Test 2',short:'Practice 2',count:PRACTICE2_QS.length,desc:'Photo-based U.S. Forces practice paper, 50 of expected 125 questions'},\n practice2013:")
+                  "var SOURCE_META={\n practice2022:{label:'Practice Test 2',short:'Practice 2',count:PRACTICE2_QS.length,desc:'Photo-based U.S. Forces practice paper, all 125 questions'},\n practice2013:")
     text = change(text, "return v==='practice2013'||v==='classroomRelevant'||v==='vocabulary'",
                   "return v==='practice2013'||v==='practice2022'||v==='classroomRelevant'||v==='vocabulary'")
     text = change(text, "FOCUSED_QS[focusSupport()]:PRACTICE_QS)}",
@@ -88,20 +88,20 @@ def main():
     text = change(text, "var pm=sourceStats('practice2013'),cm=sourceStats('classroomRelevant'),vm=sourceStats('vocabulary'),sel=sourceMode();",
                   "var pm=sourceStats('practice2013'),p2=sourceStats('practice2022'),cm=sourceStats('classroomRelevant'),vm=sourceStats('vocabulary'),sel=sourceMode();")
     text = change(text, "+row('practice2013','Practice Test','100 questions · 5 sections',pm)+row('classroomRelevant'",
-                  "+row('practice2013','Practice Test','100 questions · 5 sections',pm)+row('practice2022','Practice Test 2',PRACTICE2_QS.length+' of 125 questions · 2 of 5 sections received',p2)+row('classroomRelevant'")
+                  "+row('practice2013','Practice Test','100 questions · 5 sections',pm)+row('practice2022','Practice Test 2',PRACTICE2_QS.length+' of 125 questions · 5 of 5 sections complete',p2)+row('classroomRelevant'")
     addon = r"""
 function renderPractice2Scope(){
  function card(id,title,list){var st=progressStats(list);return '<button class="card scope-card progress-card" data-practice2-section="'+attr(id)+'">'+progressFill(st.pct)+'<div class="source-title-row"><h3>'+esc(title)+'</h3><span class="progress-value">'+st.pct+'%</span></div><p>'+list.length+' questions · '+st.mastered+' mastered</p></button>'}
  var html=card('__all__','All available Practice Test 2 Questions',PRACTICE2_QS);
  [1,2,3,4,5].forEach(function(n){if((PRACTICE2_SECTIONS[n]||[]).length)html+=card(String(n),'Part '+n+' · '+PRACTICE2_SECTIONS[n][0].sectionTitle,PRACTICE2_SECTIONS[n])});
- return '<div class="section-title">Quiz scope <button class="btn" style="margin-left:8px;padding:5px 10px" data-practice2-info aria-label="Practice Test 2 information">ⓘ Test instructions</button></div><p class="small" style="color:#e2cda7">Photo batch 1: '+PRACTICE2_QS.length+' of 125 questions available. Remaining parts pending.</p><div class="grid scope-grid">'+html+'</div>'
+ return '<div class="section-title">Quiz scope <button class="btn" style="margin-left:8px;padding:5px 10px" data-practice2-info aria-label="Practice Test 2 information">ⓘ Test instructions</button></div><p class="small" style="color:#e2cda7">Complete paper: '+PRACTICE2_QS.length+' of 125 questions available across all five parts.</p><div class="grid scope-grid">'+html+'</div>'
 }
 function showPractice2Info(){
  openModal('<h2 id="modalTitle">Practice Test 2 · Exam cover instructions</h2>'+
   '<p><strong>U.S. Forces Hunting Examination</strong> · photocopied practice paper, reported circa 2021–2022 (exact year unverified).</p>'+
   '<p><strong>Closed-book examination.</strong> Use an ink pen to mark answers. For multiple-choice and true/false questions, circle the letter <em>or letters</em> representing your choices.</p>'+
   '<p><strong>Five parts · 25 questions each · 125 questions total.</strong> Each question is worth one point. Minimum passing score is <strong>13 correct answers in EACH part</strong>. Overall exam time limit: <strong>150 minutes</strong>.</p>'+
-  '<p><strong>App status:</strong> '+PRACTICE2_QS.length+' questions transcribed across '+Object.keys(PRACTICE2_SECTIONS).length+' parts so far. This app is an untimed study drill, not yet a full timed 125-question exam.</p>'+
+  '<p><strong>App status:</strong> '+PRACTICE2_QS.length+' questions transcribed across '+Object.keys(PRACTICE2_SECTIONS).length+' complete parts. This native quiz is an untimed study drill.</p>'+
   '<div class="note"><strong>Answer-key fidelity:</strong> only the yellow highlighted answers from the supplied photos are treated as correct. Blue pen circles and check marks are NOT the key. Historical keys are not independent confirmation of current rules or science.</div>')
 }
 function bindPractice2Scope(){
@@ -165,7 +165,7 @@ function bindPractice2Matching(){
     text = change(text, "Quiz Mode lets you work the 100-question Practice Test, 767 GHC Focused",
                   "Quiz Mode lets you work the 100-question Practice Test, '+PRACTICE2_QS.length+' Practice Test 2 questions, 767 GHC Focused")
     text = change(text, "Practice Test: 100 questions<br>GHC Focused:",
-                  "Practice Test: 100 questions<br>Practice Test 2: '+PRACTICE2_QS.length+' questions (partial photo intake)<br>GHC Focused:")
+                  "Practice Test: 100 questions<br>Practice Test 2: '+PRACTICE2_QS.length+' questions (all five parts)<br>GHC Focused:")
     HTML.write_text(text, encoding="utf-8")
     print("Practice Test 2 assembled:",len(qs),"new items;",len(text),"HTML characters; legacy 867 questions unchanged")
 

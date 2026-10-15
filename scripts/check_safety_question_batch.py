@@ -49,6 +49,12 @@ def main():
         if id == "P2013-S3-Q02":
             if review.get("sourceBankKeyDisputed") is not True:
                 raise AssertionError("Incomplete archival answer key not flagged as disputed")
+            if review.get("originalPaperKeyVerified") is not True:
+                raise AssertionError("Original 2013 source PDF printed key must be directly checked")
+            if review.get("originalPracticePaperSource") != "https://drive.google.com/file/d/1f_bWpni_W7xpReNHPHCWittNiQSBFOwX/view":
+                raise AssertionError("Checked 2013 practice-test original PDF citation missing")
+            if "actual 19 December 2013 paper Answer Key" not in q["explanation"]:
+                raise AssertionError("Original archived answer key finding absent from learner explanation")
             if "Legacy key under factual dispute" not in q.get("preAnswerWarning", ""):
                 raise AssertionError("Missing user-facing pre-answer warning")
             if "getting into a car" not in q["stem"].lower() and not any(

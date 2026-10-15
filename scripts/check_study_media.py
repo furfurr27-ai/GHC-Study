@@ -8,6 +8,7 @@ Default mode verifies asset integrity and records known visual defects; use
 """
 import argparse
 import json
+import hashlib
 import sys
 import zipfile
 from pathlib import Path
@@ -43,6 +44,8 @@ def main():
         exact_figures = review.get("originalFigureRemaps", {})
         montages = review.get("assemblyMontages", {})
         reused = review.get("classPhotoReuse", {})
+        authored = review.get("authoredCourseIllustrations", {})
+        resolved = repaired | set(exact_figures) | set(montages) | set(reused) | set(authored)
         assert repaired <= flagged and len(repaired) == review["counts"].get("assemblyCrops", 0)
         ids = {c["id"] for c in cards}
         assert len(cards) == len(ids) == review["counts"]["reviewed"], "Study-card inventory changed; refresh media audit"
@@ -59,7 +62,9 @@ def main():
         assert set(montages) <= flagged and set(montages).isdisjoint(repaired | set(exact_figures))
         assert set(reused) <= flagged and set(reused).isdisjoint(repaired | set(exact_figures) | set(montages))
         assert len(reused) == review["counts"].get("classPhotoReuse", 0)
-        assert len(flagged - repaired - set(exact_figures) - set(montages) - set(reused)) == review["counts"].get("remainingSlideOrPageLike")
+        assert set(authored) <= flagged and set(authored).isdisjoint(repaired | set(exact_figures) | set(montages) | set(reused))
+        assert len(authored) == review["counts"].get("authoredCourseIllustrations", 0)
+        assert len(flagged - resolved) == review["counts"].get("remainingSlideOrPageLike")
         results = []
         failures = []
         for card in cards:
@@ -122,6 +127,21 @@ def main():
                     if info.get("originalPdfEmbeddedImageXref") != figure["xref"] or info.get("page") != figure["page"] or info.get("source") != figure["source"]:
                         failures.append(card["id"] + ": original figure source page/xref provenance drifted")
                 kind = "direct_original_pdf_figure"
+            elif card["id"] in authored:
+                drawing = authored[card["id"]]
+                if rel != drawing["path"]:
+                    failures.append(card["id"] + ": authored classroom illustration mismatch: " + str(rel))
+                if info.get("authoredIllustration") is not True:
+                    failures.append(card["id"] + ": illustration incorrectly presented as original classroom photography")
+                if info.get("source") != drawing["source"] or info.get("page") != drawing["page"]:
+                    failures.append(card["id"] + ": original classroom lesson/page provenance drifted")
+                expected_sha = drawing["gitBlobSha1"]
+                actual_sha = hashlib.sha1(b"blob " + str(len(b)).encode() + b"\x00" + b).hexdigest()
+                if actual_sha != expected_sha or info.get("illustrationGitBlobSHA1") != expected_sha:
+                    failures.append(card["id"] + ": authored vector schematic checksum drifted")
+                if not rel.endswith(".svg") or b"<script" in b.lower() or b"<foreignObject" in b:
+                    failures.append(card["id"] + ": unsafe or invalid standalone vector asset")
+                kind = "authored_course_text_schematic_not_original_pdf_figure"
             elif card["id"] in repaired:
                 expected = "media/study-photo-" + card["id"] + ".webp"
                 if rel != expected:
@@ -134,12 +154,12 @@ def main():
         Path("build").mkdir(exist_ok=True)
         Path("build/study-media-inventory.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
         print("Study media:", len(results), "/", len(cards), "resolved;", summary["uniqueImageCount"], "unique images")
-        print("Visual review:", len(flagged), "original slide/page-like;", len(repaired), "picture crops;", len(exact_figures), "direct PDF figures;", len(montages), "source montages;", len(reused), "class-photo reuses;", len(flagged-repaired-set(exact_figures)-set(montages)-set(reused)), "remaining;", len(mismatches), "subject mismatches;", len(corrected_subjects), "corrected wrong-subject illustration")
+        print("Visual review:", len(flagged), "original slide/page-like;", len(repaired), "picture crops;", len(exact_figures), "direct PDF figures;", len(montages), "source montages;", len(reused), "class-photo reuses;", len(authored), "author-drawn course diagrams;", len(flagged-resolved), "remaining;", len(mismatches), "subject mismatches;", len(corrected_subjects), "corrected wrong-subject illustration")
         if failures:
             for failure in failures:
                 print("ERROR:", failure, file=sys.stderr)
             return 1
-        if flagged - repaired - set(exact_figures) - set(montages) - set(reused) or mismatches:
+        if flagged - resolved or mismatches:
             print("WARNING: Full-slide images and/or subject mismatch remain. See build/study-media-inventory.json")
             if a.strict:
                 return 2

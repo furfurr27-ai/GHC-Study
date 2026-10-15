@@ -8,11 +8,12 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 3,
+    "remainingSlideOrPageLike": 2,
     "correctedSemanticMismatch": 1,
     "originalFigureRemaps": 11,
     "assemblyMontages": 3,
-    "classPhotoReuse": 1
+    "classPhotoReuse": 1,
+    "authoredCourseIllustrations": 1
   },
   "slideOrPageLike": [
     "mouflon",
@@ -114,7 +115,8 @@
     "Dog Parts restored from original Hunting Dogs (202609) course page 4 ('Jäger Latein - Dog Parts'), embedded JPEG xref98. Clear self-contained German-labeled anatomy illustration (Behang, Decke, Rute, Fahne, Pfoten etc.), without lecture chrome; course page 5 separately lists meanings.",
     "Dog Diseases uses three exact originally embedded JPEGs from Hunting Dogs (202609).pdf pages 26–27, each individually SHA-256 checked and combined as picture-only examples. Image is not comprehensive nor a diagnostic key.",
     "Revier Roles is now a two-photo classroom-example montage from Revier slide page 30 (xrefs191/192), with only class labels; no implication these stock-model photos show actual holders of roles or all Revier officials.",
-    "Drivebrief now displays original Hunting Techniques 2026 p15 Drive Hunts group photograph xref83, two hunters facing a gesturing hunter. This does not confirm a formal Jagdleiter briefing or any step-by-step safety rule."
+    "Drivebrief now displays original Hunting Techniques 2026 p15 Drive Hunts group photograph xref83, two hunters facing a gesturing hunter. This does not confirm a formal Jagdleiter briefing or any step-by-step safety rule.",
+    "Misfire card replaces its full-slide image with a NEW, self-contained source-bound vector schematic showing the 2026 Range Safety lesson's downrange muzzle, 10-second class interval and instructor, not a photograph or universal handling protocol. Exact UTF-8 SVG Git blob checksum recorded and validated."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -340,6 +342,16 @@
       "path": "media/study-photo-tawnyowl.webp",
       "sourceCardId": "tawnyowl",
       "note": "Classroom Waldkauz as protected-species example; not current legal advice"
+    }
+  },
+  "authoredCourseIllustrations": {
+    "misfire": {
+      "path": "media/misfire-classroom-original-schematic.svg",
+      "source": "Firearms_Range_Saftey_Overview_11FEB26_V2.0.pdf",
+      "page": 13,
+      "gitBlobSha1": "088dce056fdde3c4eba03793a7f1d95333e9722d",
+      "type": "newly_authored_classroom_text_based_vector",
+      "note": "Original illustration authored from directly checked 2026 GHC Range Safety text; not extracted from PDF, not independent current-range SOP. Original full-slide image remains in source for traceability."
     }
   }
 }

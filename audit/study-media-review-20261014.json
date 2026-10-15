@@ -8,12 +8,12 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 2,
+    "remainingSlideOrPageLike": 1,
     "correctedSemanticMismatch": 1,
     "originalFigureRemaps": 11,
     "assemblyMontages": 3,
     "classPhotoReuse": 1,
-    "authoredCourseIllustrations": 1
+    "authoredCourseIllustrations": 2
   },
   "slideOrPageLike": [
     "mouflon",
@@ -116,7 +116,8 @@
     "Dog Diseases uses three exact originally embedded JPEGs from Hunting Dogs (202609).pdf pages 26–27, each individually SHA-256 checked and combined as picture-only examples. Image is not comprehensive nor a diagnostic key.",
     "Revier Roles is now a two-photo classroom-example montage from Revier slide page 30 (xrefs191/192), with only class labels; no implication these stock-model photos show actual holders of roles or all Revier officials.",
     "Drivebrief now displays original Hunting Techniques 2026 p15 Drive Hunts group photograph xref83, two hunters facing a gesturing hunter. This does not confirm a formal Jagdleiter briefing or any step-by-step safety rule.",
-    "Misfire card replaces its full-slide image with a NEW, self-contained source-bound vector schematic showing the 2026 Range Safety lesson's downrange muzzle, 10-second class interval and instructor, not a photograph or universal handling protocol. Exact UTF-8 SVG Git blob checksum recorded and validated."
+    "Misfire card replaces its full-slide image with a NEW, self-contained source-bound vector schematic showing the 2026 Range Safety lesson's downrange muzzle, 10-second class interval and instructor, not a photograph or universal handling protocol. Exact UTF-8 SVG Git blob checksum recorded and validated.",
+    "Shotgun Danger Distance now uses a NEW course-text-grounded original SVG pellet-dispersion illustration, not an extracted lecture PDF image. Labels the example 3mm x 100m ~300m APPROXIMATE DANGER-distance and emphatically says NOT A SAFE BOUNDARY. No numerical safe shooting range or exact hazard geometry is inferred."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -352,6 +353,15 @@
       "gitBlobSha1": "088dce056fdde3c4eba03793a7f1d95333e9722d",
       "type": "newly_authored_classroom_text_based_vector",
       "note": "Original illustration authored from directly checked 2026 GHC Range Safety text; not extracted from PDF, not independent current-range SOP. Original full-slide image remains in source for traceability."
+    },
+    "shotdistance": {
+      "path": "media/shotdistance-course-danger-illustration.svg",
+      "source": "Weapons - Overview (2020).pdf",
+      "page": null,
+      "originalClassroomPageRange": "50-51",
+      "gitBlobSha1": "85314e425b7152ba428e9be0a85cc6859ae5bc03",
+      "type": "newly_authored_course_distance_heuristic_vector",
+      "note": "Drawn interpretation of 2020 classroom 'Ammo Travel Distance' approximation; page 50-51 per existing card, exact slide number not independently resolved from text extraction. RWS manufacturer glossary separately corroborates mm*100m danger range, not safety boundary."
     }
   }
 }

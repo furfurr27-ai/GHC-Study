@@ -90,6 +90,11 @@ def build():
     # Prevent an exam question from terminating an inline script tag.
     embedded = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = template.replace(placeholder, '<script type="application/json" id="pt2-data">' + embedded + "</script>")
+    runtime_marker = "<!-- PRACTICE_TEST_2_EXAM_RUNTIME -->"
+    assert page.count(runtime_marker) == 1, "Timed-exam script injection point missing"
+    runtime = (ROOT / "scripts/practice-test2-exam-runtime.js").read_text(encoding="utf-8")
+    assert "GHC_PT2_TIMED_EXAM_V1" in runtime
+    page = page.replace(runtime_marker, "<script>\\n" + runtime + "\\n</script>")
     PAGE.write_text(page, encoding="utf-8")
     html = INDEX.read_text(encoding="utf-8")
     if ANCHOR not in html:

@@ -73,6 +73,8 @@ jobs:
         run: python3 scripts/check_study_media.py --strict
       - name: Verify three source-audited question caveats
         run: python3 scripts/check_question_source_caveats.py
+      - name: Generate all-question explicit factual source-review inventory
+        run: python3 scripts/build_question_source_audit_matrix.py
       - name: Publish media integrity and visual-review backlog
         if: always()
         uses: actions/upload-artifact@v4
@@ -131,6 +133,8 @@ jobs:
         run: python3 scripts/check_study_media.py --strict
       - name: Verify three source-audited question caveats
         run: python3 scripts/check_question_source_caveats.py
+      - name: Generate all-question explicit factual source-review inventory
+        run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify glossary packaged into APK
@@ -147,6 +151,14 @@ jobs:
           python3 scripts/check_packaged_glossary.py "$APK"
           python3 scripts/check_study_media.py --apk "$APK" --strict
           python3 scripts/check_question_source_caveats.py --apk "$APK"
+          python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
+      - name: Upload 867-question source review matrix
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-question-source-audit-${{ github.job }}
+          path: build/question-source-audit-matrix.json
+          if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -1,0 +1,1411 @@
+{
+  "id": "practice-test-2",
+  "title": "Practice Test 2",
+  "source": {
+    "description": "U.S. Forces Hunting Examination, instructor-provided historical practice paper",
+    "approximateYear": "2021 or 2022 (reported by user; not printed on these pages)",
+    "answerKeyConvention": "Only yellow-highlighted answers are treated as correct. Student circles and other pen marks are not used as an answer key.",
+    "coverImage": "20261015_213803.jpg",
+    "transcriptionNote": "Question wording follows the photographed paper, including historical terminology and possible errors. Do not treat the highlighted historical answers as current legal or biological authority."
+  },
+  "instructions": {
+    "closedBook": true,
+    "answerMethod": "Use an ink pen to circle the letter or letters representing your answer.",
+    "totalParts": 5,
+    "questionsPerPart": 25,
+    "pointsPerQuestion": 1,
+    "minCorrectPerPart": 13,
+    "timeLimitMinutes": 150
+  },
+  "expectedQuestionCount": 125,
+  "receivedQuestionCount": 50,
+  "status": "intake_in_progress",
+  "isComplete": false,
+  "sections": [
+    {
+      "part": 1,
+      "title": "Game Biology",
+      "questions": [
+        {
+          "id": "PT2-P1-Q01",
+          "number": 1,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which answers are correct?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Mufflon is a ruminant (cut eater)."
+            },
+            {
+              "id": "b",
+              "text": "Wild Boar is a ruminant."
+            },
+            {
+              "id": "c",
+              "text": "Mufflon belongs to the bovid family."
+            },
+            {
+              "id": "d",
+              "text": "Chamois belongs to the cervid family."
+            }
+          ],
+          "correct": [
+            "a",
+            "c"
+          ],
+          "sourceImage": "1000069478.jpg"
+        },
+        {
+          "id": "PT2-P1-Q02",
+          "number": 2,
+          "kind": "multiple_choice_single",
+          "stem": "How can I tell the age of a Rehbock?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "By the length of the antlers"
+            },
+            {
+              "id": "b",
+              "text": "By the diameter of the horns"
+            },
+            {
+              "id": "c",
+              "text": "By the condition of the teeth"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069478.jpg"
+        },
+        {
+          "id": "PT2-P1-Q03",
+          "number": 3,
+          "kind": "multiple_choice_single",
+          "stem": "How many Frischlinge does a Bache normally have?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "3 - 8"
+            },
+            {
+              "id": "b",
+              "text": "1 - 2"
+            },
+            {
+              "id": "c",
+              "text": "10 - 15"
+            },
+            {
+              "id": "d",
+              "text": "Older Bache have only 1 - 2 Frischlinge"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069478.jpg"
+        },
+        {
+          "id": "PT2-P1-Q04",
+          "number": 4,
+          "kind": "multiple_choice_single",
+          "stem": "Red stags shed their antlers normally in",
+          "choices": [
+            {
+              "id": "a",
+              "text": "February/March"
+            },
+            {
+              "id": "b",
+              "text": "mid summers"
+            },
+            {
+              "id": "c",
+              "text": "October"
+            },
+            {
+              "id": "d",
+              "text": "December/January"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069478.jpg"
+        },
+        {
+          "id": "PT2-P1-Q05",
+          "number": 5,
+          "kind": "multiple_choice_single",
+          "stem": "After field dressing harvested game, the hunter will…",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Use grass and leaves to wipe the inside of the carcass clean"
+            },
+            {
+              "id": "b",
+              "text": "Keep the cut of the carcass open to let it cool down"
+            },
+            {
+              "id": "c",
+              "text": "Close the cut on the carcass immediately to avoid infection"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069478.jpg"
+        },
+        {
+          "id": "PT2-P1-Q06",
+          "number": 6,
+          "kind": "multiple_choice_single",
+          "stem": "Which of the following game is not a ruminant (Wiederkäuer)?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Damwild"
+            },
+            {
+              "id": "b",
+              "text": "Schwarzwild"
+            },
+            {
+              "id": "c",
+              "text": "Rehwild"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069478.jpg"
+        },
+        {
+          "id": "PT2-P1-Q07",
+          "number": 7,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which animals love to take a mud-bath?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Red Deer"
+            },
+            {
+              "id": "b",
+              "text": "Fallow Deer"
+            },
+            {
+              "id": "c",
+              "text": "Gams"
+            },
+            {
+              "id": "d",
+              "text": "Wild Boar"
+            }
+          ],
+          "correct": [
+            "a",
+            "d"
+          ],
+          "sourceImage": "1000069479.jpg"
+        },
+        {
+          "id": "PT2-P1-Q08",
+          "number": 8,
+          "kind": "multiple_choice_multiple",
+          "stem": "The following statements are true for Rehwild…",
+          "choices": [
+            {
+              "id": "a",
+              "text": "They develop socially in a Sprung of 40 to 50."
+            },
+            {
+              "id": "b",
+              "text": "They are an endangered species throughout Germany."
+            },
+            {
+              "id": "c",
+              "text": "The Bock and Geiß have differing markings on their Spiegel."
+            },
+            {
+              "id": "d",
+              "text": "A Rehgeiß gives birth to 1, 2, or (rarely) 3 Kitze per year."
+            }
+          ],
+          "correct": [
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069479.jpg"
+        },
+        {
+          "id": "PT2-P1-Q09",
+          "number": 9,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which animals are born blind?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rabbit"
+            },
+            {
+              "id": "b",
+              "text": "Hare"
+            },
+            {
+              "id": "c",
+              "text": "Fox"
+            },
+            {
+              "id": "d",
+              "text": "Roe Deer"
+            }
+          ],
+          "correct": [
+            "a",
+            "c"
+          ],
+          "sourceImage": "1000069479.jpg"
+        },
+        {
+          "id": "PT2-P1-Q10",
+          "number": 10,
+          "kind": "multiple_choice_single",
+          "stem": "How can I tell the age of a Gamsgeiß?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "By the length of the horns"
+            },
+            {
+              "id": "b",
+              "text": "By the diameter of the horns"
+            },
+            {
+              "id": "c",
+              "text": "By counting the rings on the horns"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069479.jpg"
+        },
+        {
+          "id": "PT2-P1-Q11",
+          "number": 11,
+          "kind": "multiple_choice_single",
+          "stem": "The gray-white spot on the snout of a younger Rehbock and covering the entire face of an older Rehbock is known as the:",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Nasenfleck"
+            },
+            {
+              "id": "b",
+              "text": "Rudelfleck"
+            },
+            {
+              "id": "c",
+              "text": "Muffelfleck"
+            },
+            {
+              "id": "d",
+              "text": "Spiegelfleck"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069479.jpg"
+        },
+        {
+          "id": "PT2-P1-Q12",
+          "number": 12,
+          "kind": "multiple_choice_single",
+          "stem": "You see two Rehbock in early May, one is grey, the other one is red. Which one is older?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "the red buck"
+            },
+            {
+              "id": "b",
+              "text": "the grey buck"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069479.jpg"
+        },
+        {
+          "id": "PT2-P1-Q13",
+          "number": 13,
+          "kind": "multiple_choice_single",
+          "stem": "Which game suffers from Moderhinke?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rotwild"
+            },
+            {
+              "id": "b",
+              "text": "Rehwild"
+            },
+            {
+              "id": "c",
+              "text": "Mufflon"
+            },
+            {
+              "id": "d",
+              "text": "Damwild"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q14",
+          "number": 14,
+          "kind": "multiple_choice_single",
+          "stem": "Wild Boar eat",
+          "choices": [
+            {
+              "id": "a",
+              "text": "young hares, Rehkitz and other young animals"
+            },
+            {
+              "id": "b",
+              "text": "Eggs"
+            },
+            {
+              "id": "c",
+              "text": "Carrion"
+            },
+            {
+              "id": "d",
+              "text": "Insect Larvas"
+            },
+            {
+              "id": "e",
+              "text": "all of the above"
+            }
+          ],
+          "correct": [
+            "e"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q15",
+          "number": 15,
+          "kind": "multiple_choice_single",
+          "stem": "A 1-year-old Rehbock will always have Spiesser for antlers?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "True"
+            },
+            {
+              "id": "b",
+              "text": "False"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q16",
+          "number": 16,
+          "kind": "multiple_choice_single",
+          "stem": "Which Red Deer is called Kahlwild?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Female deer and male calves"
+            },
+            {
+              "id": "b",
+              "text": "Female deer, male calves and males after shedding antlers"
+            },
+            {
+              "id": "c",
+              "text": "Female deer"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q17",
+          "number": 17,
+          "kind": "multiple_choice_single",
+          "stem": "Which feathered game uses salt licks?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Fasan"
+            },
+            {
+              "id": "b",
+              "text": "Rebhuhn"
+            },
+            {
+              "id": "c",
+              "text": "Ringeltaube"
+            },
+            {
+              "id": "d",
+              "text": "Bussard"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q18",
+          "number": 18,
+          "kind": "multiple_choice_multiple",
+          "stem": "Roe Deer may suffer from",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Coccidiosis"
+            },
+            {
+              "id": "b",
+              "text": "Botflies"
+            },
+            {
+              "id": "c",
+              "text": "Lung worms"
+            },
+            {
+              "id": "d",
+              "text": "Rabies"
+            }
+          ],
+          "correct": [
+            "b",
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q19",
+          "number": 19,
+          "kind": "multiple_choice_single",
+          "stem": "The mating season of Rehwild is in",
+          "choices": [
+            {
+              "id": "a",
+              "text": "May/June"
+            },
+            {
+              "id": "b",
+              "text": "July/August"
+            },
+            {
+              "id": "c",
+              "text": "September/October"
+            },
+            {
+              "id": "d",
+              "text": "November/December"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069480.jpg"
+        },
+        {
+          "id": "PT2-P1-Q20",
+          "number": 20,
+          "kind": "multiple_choice_single",
+          "stem": "Old Red Stags brush their velvet off in",
+          "choices": [
+            {
+              "id": "a",
+              "text": "May"
+            },
+            {
+              "id": "b",
+              "text": "June"
+            },
+            {
+              "id": "c",
+              "text": "July"
+            },
+            {
+              "id": "d",
+              "text": "August"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069481.jpg"
+        },
+        {
+          "id": "PT2-P1-Q21",
+          "number": 21,
+          "kind": "multiple_choice_single",
+          "stem": "The gall bladder on Wild Boar is connected to",
+          "choices": [
+            {
+              "id": "a",
+              "text": "the stomach"
+            },
+            {
+              "id": "b",
+              "text": "the liver"
+            },
+            {
+              "id": "c",
+              "text": "the diaphragm"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069481.jpg"
+        },
+        {
+          "id": "PT2-P1-Q22",
+          "number": 22,
+          "kind": "multiple_choice_single",
+          "stem": "Which of the following statements are correct about Füchse?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "They eat fruits."
+            },
+            {
+              "id": "b",
+              "text": "They eat meat."
+            },
+            {
+              "id": "c",
+              "text": "They are born blind."
+            },
+            {
+              "id": "d",
+              "text": "All of the above."
+            }
+          ],
+          "correct": [
+            "d"
+          ],
+          "sourceImage": "1000069481.jpg"
+        },
+        {
+          "id": "PT2-P1-Q23",
+          "number": 23,
+          "kind": "multiple_choice_multiple",
+          "stem": "The Dachs…",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Is active at night"
+            },
+            {
+              "id": "b",
+              "text": "Feeds exclusively on Carrion"
+            },
+            {
+              "id": "c",
+              "text": "Is an omnivore"
+            },
+            {
+              "id": "d",
+              "text": "Lives alone"
+            }
+          ],
+          "correct": [
+            "a",
+            "c"
+          ],
+          "sourceImage": "1000069481.jpg"
+        },
+        {
+          "id": "PT2-P1-Q24",
+          "number": 24,
+          "kind": "multiple_choice_single",
+          "stem": "At which age are teeth of Wild Boar fully developed?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "3 month"
+            },
+            {
+              "id": "b",
+              "text": "6 month"
+            },
+            {
+              "id": "c",
+              "text": "12 month"
+            },
+            {
+              "id": "d",
+              "text": "18 month"
+            },
+            {
+              "id": "e",
+              "text": "24 month"
+            }
+          ],
+          "correct": [
+            "e"
+          ],
+          "sourceImage": "1000069481.jpg"
+        },
+        {
+          "id": "PT2-P1-Q25",
+          "number": 25,
+          "kind": "multiple_choice_single",
+          "stem": "When is the Ranzzeit of the Stein- and Baummarder?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "July/August"
+            },
+            {
+              "id": "b",
+              "text": "September/October"
+            },
+            {
+              "id": "c",
+              "text": "November/December"
+            },
+            {
+              "id": "d",
+              "text": "January/February"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069481.jpg"
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "title": "Hunting Dogs / Hunting Procedures",
+      "questions": [
+        {
+          "id": "PT2-P2-Q01",
+          "number": 1,
+          "kind": "multiple_choice_multiple",
+          "stem": "Before firing a shot at wild game in Germany, the licensed hunter must ensure:",
+          "choices": [
+            {
+              "id": "a",
+              "text": "The species, gender, and age of the game makes them “in season” and open for hunting."
+            },
+            {
+              "id": "b",
+              "text": "The game is within reasonable distance that the hunter has recently trained on."
+            },
+            {
+              "id": "c",
+              "text": "The game is sleeping and not moving."
+            },
+            {
+              "id": "d",
+              "text": "The firearm has recently been zeroed by the hunter."
+            },
+            {
+              "id": "e",
+              "text": "There is sufficient Kugelfang to stop the flight of the bullet after the shot."
+            },
+            {
+              "id": "f",
+              "text": "All of the above."
+            }
+          ],
+          "correct": [
+            "a",
+            "b",
+            "d",
+            "e"
+          ],
+          "sourceImage": "1000069482.jpg"
+        },
+        {
+          "id": "PT2-P2-Q02",
+          "number": 2,
+          "kind": "multiple_choice_single",
+          "stem": "What is frettieren?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Cooking venison"
+            },
+            {
+              "id": "b",
+              "text": "Hunting rabbits in the den"
+            },
+            {
+              "id": "c",
+              "text": "Hunting rabbits with dogs"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069482.jpg"
+        },
+        {
+          "id": "PT2-P2-Q03",
+          "number": 3,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which dogs are used to hunt fox in the den?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Dackel"
+            },
+            {
+              "id": "b",
+              "text": "Jagdterrier"
+            },
+            {
+              "id": "c",
+              "text": "Tiroler Bracke"
+            },
+            {
+              "id": "d",
+              "text": "Deutsch Kurzhaar"
+            }
+          ],
+          "correct": [
+            "a",
+            "b"
+          ],
+          "sourceImage": "1000069482.jpg"
+        },
+        {
+          "id": "PT2-P2-Q04",
+          "number": 4,
+          "kind": "multiple_choice_single",
+          "stem": "Who has to wear fluorescent colors during a drive hunt?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "The beaters"
+            },
+            {
+              "id": "b",
+              "text": "The hunters"
+            },
+            {
+              "id": "c",
+              "text": "All participants"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069482.jpg"
+        },
+        {
+          "id": "PT2-P2-Q05",
+          "number": 5,
+          "kind": "multiple_choice_single",
+          "stem": "A Stangensulze is a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Mud bath"
+            },
+            {
+              "id": "b",
+              "text": "Feeding station for partridge"
+            },
+            {
+              "id": "c",
+              "text": "Salt lick"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069482.jpg"
+        },
+        {
+          "id": "PT2-P2-Q06",
+          "number": 6,
+          "kind": "multiple_choice_single",
+          "stem": "The Deutsch Drahthaar is a",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Flusher"
+            },
+            {
+              "id": "b",
+              "text": "Pointer"
+            },
+            {
+              "id": "c",
+              "text": "Spaniel"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069483.jpg"
+        },
+        {
+          "id": "PT2-P2-Q07",
+          "number": 7,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which animals cause damage by peeling the bark off from trees?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rotwild"
+            },
+            {
+              "id": "b",
+              "text": "Rehwild"
+            },
+            {
+              "id": "c",
+              "text": "Muffelwild"
+            },
+            {
+              "id": "d",
+              "text": "Damwild"
+            }
+          ],
+          "correct": [
+            "a",
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069483.jpg"
+        },
+        {
+          "id": "PT2-P2-Q08",
+          "number": 8,
+          "kind": "multiple_choice_single",
+          "stem": "What is the German term for a trail that game travel on through the forest and across meadows?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Bahn or Wildbahn"
+            },
+            {
+              "id": "b",
+              "text": "Pfad or Forstweg"
+            },
+            {
+              "id": "c",
+              "text": "Kugelfang"
+            },
+            {
+              "id": "d",
+              "text": "Wechsel or Wildwechsel"
+            }
+          ],
+          "correct": [
+            "d"
+          ],
+          "sourceImage": "1000069483.jpg"
+        },
+        {
+          "id": "PT2-P2-Q09",
+          "number": 9,
+          "kind": "multiple_choice_single",
+          "stem": "What is Wechselwild?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "All game living in a Revier"
+            },
+            {
+              "id": "b",
+              "text": "Game changing from summer to winter coat"
+            },
+            {
+              "id": "c",
+              "text": "Game frequently passing thru the Revier"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069483.jpg"
+        },
+        {
+          "id": "PT2-P2-Q10",
+          "number": 10,
+          "kind": "multiple_choice_single",
+          "stem": "What is a Epagneul Breton?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "French hunting signal"
+            },
+            {
+              "id": "b",
+              "text": "Small, longhaired French hunting dog"
+            },
+            {
+              "id": "c",
+              "text": "French feathered game"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069483.jpg"
+        },
+        {
+          "id": "PT2-P2-Q11",
+          "number": 11,
+          "kind": "multiple_choice_single",
+          "stem": "At which age can you pick up a puppy from the breeder?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "6 month"
+            },
+            {
+              "id": "b",
+              "text": "8 weeks"
+            },
+            {
+              "id": "c",
+              "text": "12 month"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069483.jpg"
+        },
+        {
+          "id": "PT2-P2-Q12",
+          "number": 12,
+          "kind": "multiple_choice_single",
+          "stem": "Once I am a bestätigter (approved) Jagdaufseher for a Revier I can kill all cats running around w/o collars in the hunting area.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "True"
+            },
+            {
+              "id": "b",
+              "text": "False"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q13",
+          "number": 13,
+          "kind": "multiple_choice_single",
+          "stem": "What do you do with a fresh deer skin until you take it to the taxidermist?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Wrap in plastic"
+            },
+            {
+              "id": "b",
+              "text": "Put salt on the inside of the skin, then roll up with the outside out"
+            },
+            {
+              "id": "c",
+              "text": "Store in a bucket of cold water"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q14",
+          "number": 14,
+          "kind": "multiple_choice_single",
+          "stem": "Which of the following animals are not listed as “huntable game” in the German hunting law?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Lynx"
+            },
+            {
+              "id": "b",
+              "text": "Pheasant"
+            },
+            {
+              "id": "c",
+              "text": "Buzzard"
+            },
+            {
+              "id": "d",
+              "text": "Mallard"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q15",
+          "number": 15,
+          "kind": "multiple_choice_single",
+          "stem": "On which side of the hat does a hunter insert the Erleger (Schützen) bruch?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Left side"
+            },
+            {
+              "id": "b",
+              "text": "Right side"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q16",
+          "number": 16,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which game is hunted in their dens?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rabbits"
+            },
+            {
+              "id": "b",
+              "text": "Hares"
+            },
+            {
+              "id": "c",
+              "text": "Fox"
+            },
+            {
+              "id": "d",
+              "text": "Badger"
+            }
+          ],
+          "correct": [
+            "a",
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q17",
+          "number": 17,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which animals may not be hunted during night time?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Wild Boar"
+            },
+            {
+              "id": "b",
+              "text": "Red Deer"
+            },
+            {
+              "id": "c",
+              "text": "Fox"
+            },
+            {
+              "id": "d",
+              "text": "Roe Deer"
+            }
+          ],
+          "correct": [
+            "b",
+            "d"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q18",
+          "number": 18,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which of the following animals use salt licks?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Martens"
+            },
+            {
+              "id": "b",
+              "text": "Pheasants"
+            },
+            {
+              "id": "c",
+              "text": "Red Deer"
+            },
+            {
+              "id": "d",
+              "text": "Roe Deer"
+            }
+          ],
+          "correct": [
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069484.jpg"
+        },
+        {
+          "id": "PT2-P2-Q19",
+          "number": 19,
+          "kind": "multiple_choice_single",
+          "stem": "Which of the following animals may cause damage the Revier holder is liable for?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rebhuhn"
+            },
+            {
+              "id": "b",
+              "text": "Graugans"
+            },
+            {
+              "id": "c",
+              "text": "Feldhase"
+            },
+            {
+              "id": "d",
+              "text": "Kaninchen"
+            }
+          ],
+          "correct": [
+            "d"
+          ],
+          "sourceImage": "1000069485.jpg"
+        },
+        {
+          "id": "PT2-P2-Q20",
+          "number": 20,
+          "kind": "multiple_choice_single",
+          "stem": "Hunting time for all cloven-hoofed game, except Wildschwein, spans from 90 minutes before sunrise until 90 minutes after sunset, with consideration for being able to confirm the species, gender, and approximate age of the hunted game.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "True"
+            },
+            {
+              "id": "b",
+              "text": "False"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069485.jpg"
+        },
+        {
+          "id": "PT2-P2-Q21",
+          "number": 21,
+          "kind": "multiple_choice_single",
+          "stem": "The name for the skin of the Dachs is",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Pelz"
+            },
+            {
+              "id": "b",
+              "text": "Schwarte"
+            },
+            {
+              "id": "c",
+              "text": "Balg"
+            },
+            {
+              "id": "d",
+              "text": "Decke"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069485.jpg"
+        },
+        {
+          "id": "PT2-P2-Q22",
+          "number": 22,
+          "kind": "multiple_choice_multiple",
+          "stem": "Rehwild belongs to the",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Hochwild"
+            },
+            {
+              "id": "b",
+              "text": "Niederwild"
+            },
+            {
+              "id": "c",
+              "text": "cloven hoofed game"
+            },
+            {
+              "id": "d",
+              "text": "Raubwild"
+            }
+          ],
+          "correct": [
+            "b",
+            "c"
+          ],
+          "sourceImage": "1000069485.jpg"
+        },
+        {
+          "id": "PT2-P2-Q23",
+          "number": 23,
+          "kind": "multiple_choice_single",
+          "stem": "The horn signal Hahn in Ruh during a drive hunt means",
+          "choices": [
+            {
+              "id": "a",
+              "text": "all hunters proceed to the Streckeplatz"
+            },
+            {
+              "id": "b",
+              "text": "last drive for the day"
+            },
+            {
+              "id": "c",
+              "text": "unload your gun"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069485.jpg"
+        },
+        {
+          "id": "PT2-P2-Q24",
+          "number": 24,
+          "kind": "multiple_choice_single",
+          "stem": "The trophy of the Chamois is the Gamsbart. Where are the hairs for this trophy found on the chamois?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "On the lower jaw/chin"
+            },
+            {
+              "id": "b",
+              "text": "On the breast"
+            },
+            {
+              "id": "c",
+              "text": "In the middle of the back"
+            },
+            {
+              "id": "d",
+              "text": "Around the anus"
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069485.jpg"
+        },
+        {
+          "id": "PT2-P2-Q25",
+          "number": 25,
+          "kind": "matching",
+          "stem": "Match English categories to German categories:",
+          "left": [
+            {
+              "id": "a",
+              "text": "Vorstehhunde"
+            },
+            {
+              "id": "b",
+              "text": "Stöberhunde"
+            },
+            {
+              "id": "c",
+              "text": "Erdhunde"
+            },
+            {
+              "id": "d",
+              "text": "Jagende Hunde / Laufhunde"
+            },
+            {
+              "id": "e",
+              "text": "Schweißhunde"
+            },
+            {
+              "id": "f",
+              "text": "Apportierhunde"
+            }
+          ],
+          "right": [
+            {
+              "id": "1",
+              "text": "Trackers"
+            },
+            {
+              "id": "2",
+              "text": "Hounds & Beagles"
+            },
+            {
+              "id": "3",
+              "text": "Retrievers"
+            },
+            {
+              "id": "4",
+              "text": "Flushers"
+            },
+            {
+              "id": "5",
+              "text": "Pointers"
+            },
+            {
+              "id": "6",
+              "text": "Earth dogs"
+            }
+          ],
+          "correct": {
+            "a": "5",
+            "b": "4",
+            "c": "6",
+            "d": "2",
+            "e": "1",
+            "f": "3"
+          },
+          "sourceImage": "1000069486.jpg"
+        }
+      ]
+    }
+  ]
+}

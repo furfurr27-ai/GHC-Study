@@ -4,6 +4,9 @@ on:
     branches: [audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
     paths:
       - 'app/**'
+      - 'scripts/build_practice_test2.py'
+      - 'scripts/check_practice_test2.py'
+      - 'scripts/practice-test2-template.html'
       - 'scripts/crop_study_slide_images.py'
       - 'scripts/overlay_protected_owl.py'
       - 'scripts/overlay_misfire_course_schematic.py'
@@ -87,6 +90,10 @@ jobs:
         run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
       - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
+      - name: Assemble historical Practice Test 2 offline preview
+        run: python3 scripts/build_practice_test2.py
+      - name: Verify Practice Test 2 intake, UI and script syntax
+        run: python3 scripts/check_practice_test2.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage
@@ -118,6 +125,7 @@ jobs:
           unzip -l "$APK" | grep -q 'assets/index.html'
           unzip -l "$APK" | grep -q 'assets/glossary.html'
           unzip -l "$APK" | grep -q 'assets/glossary-data.js'
+          unzip -l "$APK" | grep -q 'assets/practice-test-2.html'
           unzip -l "$APK" | grep -q 'assets/media/'
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"

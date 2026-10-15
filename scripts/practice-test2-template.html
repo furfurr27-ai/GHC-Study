@@ -14,7 +14,7 @@ h1{margin:0;font-size:1.65rem;letter-spacing:-.03em}h2{font-size:1.15rem}p{margi
 .muted{color:#b5bcb2}.kicker{color:#d4cba0;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;font-weight:700}
 .sub{font-size:.93rem}.info{background:#26382e;border:1px solid #586d5d;border-radius:50%;color:#fff;font-size:1rem;min-width:42px;min-height:42px;font-weight:750;cursor:pointer}
 .panel{border:1px solid #53675a;background:#182720;border-radius:15px;padding:18px;margin-top:17px}
-.panel[hidden],#questionPanel[hidden],#resultPanel[hidden]{display:none}
+[hidden]{display:none!important}
 button,select{font:inherit}button{min-height:44px;cursor:pointer}
 .parts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:18px 0}
 .part{border:1px solid #53675a;border-radius:12px;background:#1b2b23;color:#f2eee3;padding:14px;text-align:left}
@@ -50,8 +50,28 @@ footer{margin-top:30px;font-size:.85rem;color:#aab4ac}
 <p><strong>Closed book.</strong> The original paper requires an ink pen and answers circled by letter; some items need several letters.</p>
 <p><strong>Five parts, 25 questions per part.</strong> One point per question. Pass threshold: <strong>13 out of 25 in each part</strong>. Total exam time: <strong>150 minutes</strong>.</p>
 <p class="muted">This historical practice paper was described as approximately 2021–2022; the date has not been independently verified. Only <strong>yellow-highlighted answers</strong> from the supplied photos form the answer key, not handwritten circles. Historical answers may need separate legal or factual review.</p>
-<p class="muted">Only complete photographed parts are available to practice. Questions from a partially uploaded Part V are saved but not playable until that section is complete. The 150-minute exam simulation will be enabled when all five parts are captured and checked.</p>
+<p class="muted">All five parts are transcribed. Practice sections individually with immediate feedback, or take a separate timed full exam; the 150-minute timer continues after leaving the page. Archived answers are reproduced as highlighted, including potentially outdated safety and legal claims.</p>
 </section>
+<section id="examLauncher" class="panel" hidden aria-label="Timed full examination">
+<h2>Full examination · 150 minutes</h2>
+<p>125 questions, all five parts. Every part needs 13 correct answers out of 25 to pass. <strong>No answers are shown until submission.</strong> Your timer continues if you leave the page.</p>
+<p class="muted">Practicing individual sections remains available below. The full exam uses separate saved progress.</p>
+<div class="buttons"><button id="startExam" class="btn primary" type="button">Start full exam</button></div>
+</section>
+<section id="examArea" class="panel" hidden aria-live="polite">
+<div class="questionTop"><strong id="examPosition"></strong><strong id="examClock" role="timer" class="status" aria-label="Time remaining">150:00</strong></div>
+<div class="progress"><span id="examBar"></span></div>
+<p class="muted" id="examCount"></p>
+<div class="question" id="examStem"></div>
+<div id="examChoices"></div>
+<div class="buttons">
+<button class="btn" id="examPrev" type="button">Previous</button>
+<button class="btn primary" id="examNext" type="button">Save &amp; next</button>
+<button class="btn" id="examFinish" type="button">Submit exam</button>
+</div>
+<p class="muted">Responses are saved as you navigate. Your historical key stays hidden until you submit or time expires.</p>
+</section>
+<section id="examResults" class="panel" hidden aria-live="polite"></section>
 <section id="parts" class="parts" aria-label="Choose examination part"></section>
 <section id="questionPanel" class="panel" hidden aria-live="polite">
 <div class="questionTop"><strong id="position"></strong><span id="partScore" class="status"></span></div>
@@ -146,7 +166,7 @@ $("check").onclick=()=>{
 function renderResults(){
  $("questionPanel").hidden=true;$("resultPanel").hidden=false;
  const done=attempted(part),score=correctCount(part),total=part.questions.length;
- $("resultPanel").innerHTML='<h2>Part '+part.part+" — "+escapeHtml(part.title)+'</h2><p><strong>'+score+" / "+total+'</strong> correct · '+done+" / "+total+' answered</p><p class="muted">'+(done===total?(score>=exam.instructions.minCorrectPerPart?"Reached the original per-part passing threshold.":"Below the original 13-question passing threshold."):"Complete every question to receive a full part result.")+'</p><p class="status">The whole five-part practice exam is still incomplete.</p><button type="button" id="review" class="btn primary">Review questions</button>';
+ $("resultPanel").innerHTML='<h2>Part '+part.part+" — "+escapeHtml(part.title)+'</h2><p><strong>'+score+" / "+total+'</strong> correct · '+done+" / "+total+' answered</p><p class="muted">'+(done===total?(score>=exam.instructions.minCorrectPerPart?"Reached the original per-part passing threshold.":"Below the original 13-question passing threshold."):"Complete every question to receive a full part result.")+'</p><p class="status">This section-practice result is separate from the full timed examination.</p><button type="button" id="review" class="btn primary">Review questions</button>';
  $("review").onclick=()=>{index=0;renderQuestion();};
 }
 $("infoToggle").onclick=()=>{
@@ -155,5 +175,6 @@ $("infoToggle").onclick=()=>{
 renderParts();renderQuestion();
 })();
 </script>
+<!-- PRACTICE_TEST_2_EXAM_RUNTIME -->
 </body>
 </html>

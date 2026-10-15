@@ -72,7 +72,8 @@ async function main() {
     {id: 'P2013-S3-Q03', key: 'e', warning: /2013 transport question/},
     {id: 'P2013-S3-Q11', key: 'c', warning: /Law changed since this 2013 paper/},
     {id: 'P2013-S3-Q09', key: 'b', warning: /Dated 2013 rifle-purchase paperwork/},
-    {id: 'P2013-S3-Q13', key: 'c', warning: /Safety-critical outdated 2013 self-defense key/}
+    {id: 'P2013-S3-Q13', key: 'c', warning: /Safety-critical outdated 2013 self-defense key/},
+    {id: 'P2013-S3-Q15', key: 'a', warning: /2013 blanket proof-house TRUE\/FALSE item/}
   ]) {
     const q = w.GHC_QUESTIONS.find(x => x.id === item.id);
     assert(q, 'reviewed original-paper question missing: ' + item.id);
@@ -92,7 +93,10 @@ async function main() {
   }
   for (const entry of [
     {id: 'P2013-S3-Q05', correct: ['a', 'c', 'd']},
-    {id: 'P2013-S3-Q10', correct: ['c']}
+    {id: 'P2013-S3-Q10', correct: ['c']},
+    {id: 'P2013-S3-Q07', correct: ['b']},
+    {id: 'P2013-S3-Q14', correct: ['b']},
+    {id: 'P2013-S3-Q16', correct: ['a']}
   ]) {
     const q = w.GHC_QUESTIONS.find(x => x.id === entry.id);
     assert(q);
@@ -112,7 +116,7 @@ async function main() {
   assert(!w.document.querySelector('.question .alert[role="note"]'), 'non-disputed question must not receive conflict warning');
   assert.equal(errors.length, 0, 'runtime errors: ' + errors.join(' | '));
   w.close();
-  console.log('PASS: original and safety-complete Q02 scoring; four dated-law warning banners and two qualified documents questions; 867 archival keys unchanged');
+  console.log('PASS: original/safe Q02 score plus five dated-law banners and five qualified comparison questions, 867 preserved source keys');
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

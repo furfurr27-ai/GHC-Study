@@ -57,6 +57,8 @@ jobs:
         run: python3 scripts/crop_study_slide_images.py
       - name: Reuse original classroom owl photo for protected species example
         run: python3 scripts/overlay_protected_owl.py
+      - name: Map newly illustrated GHC misfire course safety reference
+        run: python3 scripts/overlay_misfire_course_schematic.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py

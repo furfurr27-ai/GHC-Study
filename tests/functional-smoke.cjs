@@ -9,6 +9,26 @@ async function loaded(w){if(w.document.readyState==='complete')return;await new 
 const a=domFile('index.html');const w=a.dom.window;await loaded(w);
 assert.match(w.document.querySelector('h1').textContent,/Quiz Mode/);
 assert(w.document.querySelector('a[href="glossary.html"]'),'navigation link');
+// Regression: the offline Glossary link must use the SAME bottom-ribbon
+// icon-above-label layout as the three in-app navigation buttons.
+const nav=w.document.querySelector('.bottomnav');
+assert(nav,'bottom navigation missing');
+const navEntries=Array.from(nav.children);
+assert.equal(navEntries.length,4,'four balanced bottom-ribbon destinations');
+assert.deepEqual(navEntries.map(el=>el.textContent.trim()),['Quiz Mode','Study Mode','Reference','Glossary']);
+assert(navEntries.every(el=>el.classList.contains('navbtn')),'all four entries share navbtn styling');
+assert(navEntries.every(el=>!!el.querySelector('.navicon svg[aria-hidden="true"]')),'each entry has the same size icon slot');
+assert(navEntries.every(el=>el.querySelectorAll('span').length===2),'each entry has icon and label in separate spans');
+const glossaryButton=nav.querySelector('a.navbtn.glossary-nav[href="glossary.html"]');
+assert(glossaryButton,'Glossary remains an offline link rather than breaking navigation');
+assert.equal(glossaryButton.getAttribute('aria-label'),'Open Jägersprache glossary');
+const referenceButton=nav.querySelector('button.navbtn[data-tab="reference"]');
+const gs=w.getComputedStyle(glossaryButton),rs=w.getComputedStyle(referenceButton);
+for(const property of ['display','flexDirection','alignItems','justifyContent','fontSize','fontWeight','gap','color']){
+ assert.equal(gs[property],rs[property],'Glossary bottom-ribbon style mismatch: '+property);
+}
+assert.equal(gs.borderLeftWidth,rs.borderLeftWidth,'Glossary must not retain old divider border');
+assert.equal(gs.textDecorationLine||'none','none','Glossary should not look like an underlined link');
 assert.equal(w.GHC_QUESTIONS.length,867,'stable question bank');
 assert.equal(w.GHC_STUDY_CARDS.length,117,'study card count');
 assert.equal(w.GHC_VOCAB_QUESTIONS.length,77,'vocabulary count');

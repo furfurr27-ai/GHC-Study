@@ -15,6 +15,45 @@ NOTE = ("Answers follow ONLY the yellow highlights on the user's photographed "
         "This historical answer key has not been independently verified for modern "
         "German hunting law, safety rules, or biological accuracy.")
 
+# Historical paper responses are retained exactly, but field-risk statements must
+# be visibly marked BEFORE answering. These warnings do not assert that the
+# highlighted key was independently checked against current German law.
+# Source-specific modern legal/food-hygiene adjudication is a separate audit.
+SENSITIVE_PAPER_KEYS = {
+    "P2022-S3-Q04": (
+        "Historical self-defense question. The highlighted paper suggests a warning-shot "
+        "sequence as if universally required. Do NOT use this archived multiple-choice "
+        "answer as real-world firearms/self-defense instructions. Applicable legal "
+        "necessity, proportionality, and safety must be assessed for the actual event."
+    ),
+    "P2022-S4-Q16": (
+        "Historical emergency animal-dispatch question. A highlighted answer here "
+        "does NOT establish your authority to use a firearm beside a road or "
+        "outside your assigned Revier. Contact the police or responsible hunting/"
+        "veterinary authority; do not rely on this historical key for action."
+    ),
+    "P2022-S5-Q09": (
+        "Historical meat-inspection question involving a deer killed in a fence. "
+        "Veterinary and game-meat inspection requirements depend on the circumstances; "
+        "do not use the printed answer alone to decide whether meat is fit for consumption."
+    ),
+    "P2022-S5-Q19": (
+        "Historical cold-chain question. Outdoor ambient temperature alone is "
+        "not proof that carcass cooling, storage and hygiene requirements are met. "
+        "Do not treat the highlighted answer as current safe handling guidance."
+    ),
+    "P2022-S5-Q20": (
+        "Historical gut-contamination question. Washing visible digestive "
+        "contents off a carcass does not by itself establish safe meat or compliance "
+        "with present hygiene requirements. Do not rely on this highlighted answer "
+        "to decide whether contaminated meat is fit for consumption."
+    ),
+    "P2022-S5-Q16": (
+        "Historical botfly/meat-inspection question. A highlighted yes/no answer "
+        "does not substitute for examination of actual game and current food-hygiene rules."
+    ),
+}
+
 def change(html, old, new):
     count = html.count(old)
     if count != 1:
@@ -50,6 +89,12 @@ def load_questions():
                     raise AssertionError("Answer input type " + q["id"])
             q["explanation"] = NOTE
             q["learningWhy"] = NOTE
+            if q["id"] in SENSITIVE_PAPER_KEYS:
+                warning = SENSITIVE_PAPER_KEYS[q["id"]]
+                q["preAnswerWarning"] = warning
+                q["explanation"] = NOTE + " " + warning
+                q["learningWhy"] = q["explanation"]
+                q.setdefault("flags", []).append("historical-paper-safety-not-current-field-guidance")
             out.append(q)
     ids = [q["id"] for q in out]
     if len(ids) != len(set(ids)):

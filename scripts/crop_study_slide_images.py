@@ -218,6 +218,52 @@ def main():
         trees["visualId"]=None
         trees["imageKey"]=trees_key
         print("Assembled five original class tree photographs",trees_rel)
+    # Source page: Range - Revier (20260922).pdf, page 30,
+    # "Model Revier X", with labels Pächter / Ami-Jäger Team.
+    # These are classroom visual examples, NOT proof that either model
+    # photograph depicts the actual hunting lessee/team for any Revier.
+    role_sources=[
+        ("media/revier-role-paechter-class-photo.jpeg",191,
+         "853cdd232e4143d2e27ced239ad01b652d8e9cace819cbfd5a7d76f0e601415a",
+         "Pächter"),
+        ("media/revier-role-hunter-class-photo.jpeg",192,
+         "1eff4e7bb204c7cca82cc02007b5e72ddbf09e3b378c42a5384795dce8d8dccf",
+         "Ami-Jäger Team"),
+    ]
+    role=next((c for c in cards if c["id"]=="revierroles"),None)
+    if role is None:
+        raise RuntimeError("Missing Revier Roles card")
+    role_rel="media/study-revierroles-two-examples.webp"
+    role_key="study_course_example_revierroles"
+    if role.get("imageKey") != role_key or not (ROOT/role_rel).is_file():
+        import hashlib
+        from PIL import ImageDraw, ImageFont
+        collage=Image.new("RGB",(900,500),"white")
+        draw=ImageDraw.Draw(collage)
+        try:
+            font=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",26)
+        except OSError:
+            font=ImageFont.load_default()
+        for idx,(rel,xref,sha256,label) in enumerate(role_sources):
+            pic=ROOT/rel
+            if not pic.is_file() or hashlib.sha256(pic.read_bytes()).hexdigest()!=sha256:
+                raise RuntimeError("Revier role class JPEG missing/changed: "+rel)
+            with Image.open(pic) as im:
+                im=im.convert("RGB")
+                im.thumbnail((420,395),Image.Resampling.LANCZOS)
+                collage.paste(im,(idx*450+(450-im.width)//2,18+(395-im.height)//2))
+            draw.text((idx*450+225,421),label,fill="black",font=font,anchor="mt")
+        collage.save(ROOT/role_rel,"WEBP",quality=88,method=6)
+        imgs[role_key]={
+            "src":role_rel,
+            "source":"Range - Revier (20260922).pdf",
+            "page":30,
+            "pictureSourcePageXrefs":[[30,191],[30,192]],
+            "review":"Original classroom model showing Pächter and Ami-Jäger Team examples only; not an exhaustive role hierarchy or current Revier roster"
+        }
+        role["visualId"]=None
+        role["imageKey"]=role_key
+        print("Assembled original Revier model examples",role_rel)
     # A bird examination overview is not one species; use six different
     # course photographs already verified above instead of showing a
     # lecture checklist screenshot. Examples only, not the entire exam pool.

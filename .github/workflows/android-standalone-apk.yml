@@ -7,6 +7,7 @@ on:
       - 'scripts/crop_study_slide_images.py'
       - 'scripts/overlay_protected_owl.py'
       - 'scripts/check_study_media.py'
+      - 'scripts/check_packaged_glossary.py'
       - 'audit/study-media-review-20261014.json'
       - '.github/workflows/android-standalone-apk.yml'
   workflow_dispatch:
@@ -67,6 +68,17 @@ jobs:
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"
           cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.6-Standalone-Install.apk
+      - name: Inspect actual standalone APK glossary and offline study media
+        run: |
+          APK=app/build/outputs/apk/debug/app-debug.apk
+          python3 scripts/check_packaged_glossary.py "$APK"
+          python3 scripts/check_study_media.py --apk "$APK"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ghc-standalone-packaged-glossary-audit
+          path: build/packaged-glossary-audit.json
+          if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
           name: GHC-Study-v1.4.6-STANDALONE-APK

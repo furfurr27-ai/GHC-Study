@@ -115,11 +115,10 @@ CASES = {
             "lawful nonviolent options where safe."
         ),
         "warning": (
-            "Safety-critical outdated 2013 self-defense key: current "
-            "StGB §32 does NOT require a warning shot before every "
-            "defensive act. Do not treat the archived answer as an "
-            "instruction to fire a gun; see the legal distinction "
-            "in the explanation."
+            "Safety-critical outdated 2013 self-defense key: its "
+            "fixed sequence is not reliable current legal guidance. "
+            "Do not perform firearm handling based on a historical "
+            "quiz response; read the source comparison in Understand."
         ),
         "flag": "unsafe-legacy-2013-self-defense-warning-shot-mandate",
     },
@@ -182,6 +181,17 @@ def main():
     if immutable(bank) != original:
         raise AssertionError("Question answer keys, options, IDs, sections or source IDs drifted")
     html = html[:first] + json.dumps(bank, ensure_ascii=False, separators=(",", ":")) + html[last:]
+    # For a known out-of-date source-bank answer, do not say unqualified
+    # "Correct" after grading. Do not change any original letter or result.
+    old_feedback = "(extra.length?'Matched archived 2013 key — see safety notice':'Correct')"
+    new_feedback = (
+        "(extra.length?'Matched archived 2013 key — see safety notice':"
+        "((current.sourceReview&&current.sourceReview.sourceBankKeyDisputed)?"
+        "'Matched archival answer only — review current law/safety notice':'Correct'))"
+    )
+    if html.count(old_feedback) != 1:
+        raise AssertionError("Expected one exact 2013 safety feedback anchor")
+    html = html.replace(old_feedback, new_feedback, 1)
     if "current.preAnswerWarning?" not in html:
         raise AssertionError("The UI must render warnings before answers")
     INDEX.write_text(html, encoding="utf-8")

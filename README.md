@@ -1,4 +1,12 @@
-## Practice Test 2 — 2021/22 photographed paper, first batch (2026-10-15)
+## Practice Test 2 — complete five-part photographed paper (2026-10-15)
+
+**125/125 questions transcribed, five parts of 25.** The original Quiz Mode integration is used with native progress, selective reset, study scope, and ⓘ cover instructions. Only **yellow highlighted** paper answers are keyed; pen circles and ticks are ignored. Final sections added: Part III Weapons Law/Firearms, Part IV Nature/Animal Protection and U.S. Forces Procedures, and Part V Diseases/Meat Handling/Hygiene. Part II Q25 is a single one-point six-pair matching question.
+
+Tracked data: `app/src/main/assets/practice-test-2-part1.json` through `practice-test-2-part5.json`. Assembler: `scripts/integrate_practice_test_2.py`; regression: `tests/practice-test-2-smoke.cjs`; source/provenance checkpoint: `docs/PRACTICE_TEST_2_INTAKE_20261015.md`. The native Quiz Mode is an **untimed drill** (the printed paper's 150-minute limit is displayed in info). The separately tested `feature/practice-test-2-20261015` branch contains a complete standalone timed simulator but is not merged into this branch, to avoid duplicate entry points.
+
+The 2021/22 date is user-reported and unverified. These are historical test-answer transcriptions, **not** verified current law, firearm-safety or game-meat inspection instructions. The existing 867 GHC exam items and 77 Jägersprache questions remain unchanged. Current development stays off `main`; physical Samsung Galaxy S23 Ultra acceptance is still outstanding.
+
+### Archived initial 50-question intake (superseded by completed status above)
 
 Added a **separate Quiz Mode bank** for the user's more recent U.S. Forces Hunting Examination practice example. Initial intake: **50 of 125 questions**, all 25 questions in Part I (Game Biology) and all 25 in Part II (Hunting Dogs / Hunting Procedures). **Only yellow highlighted answers** are keyed; pen circles are not. Part II Q25 uses an actual six-way matching interface and counts as **one** question. A new ⓘ info modal displays cover instructions: closed book, ink pen, circle letter(s), five 25-question parts, 13 needed **in each part**, one point per question, 150-minute written exam limit. The current app drill is **not timed**.
 

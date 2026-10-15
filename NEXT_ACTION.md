@@ -1,3 +1,18 @@
+## V1.4.6 UI POLISH — BOTTOM GLOSSARY RIBBON (2026-10-15)
+
+**User-reported:** Bottom ribbon Glossary entry did not match Quiz Mode / Study Mode / Reference. **Root cause verified in live `app/src/main/assets/index.html`:** Glossary was a standalone gold text-only `a.glossary-nav` with an extra divider rather than the shared `navbtn` SVG/icon+caption structure.
+
+**Fixed in the active dev branch** (DO NOT redo):
+- `b75db674d0ba73606c45ab1b830d60c1daf05e72` changed Glossary to use the same four-slot `navbtn` appearance, added a magnifying-glass SVG above its label, removed the extra divider/always-gold styling and preserved its `href="glossary.html"` for offline page navigation.
+- `71f6cb32681ccb5db087df208be485e711f73284` restricted app JS bottom-tab listeners to `.navbtn[data-tab]` so the linked Glossary page is NOT treated as an in-app tab, and fixed its CSS style-rule delimiter.
+- `9c9ce19f426c108c75a29512ba41016e7e60be4b` and `e192f17f60528670855f2a1869cee375c58dac3e` extended `tests/functional-smoke.cjs` to check all four SVG+label items share computed styles, Glossary has no stray divider or tab-click handler, and its offline URL/accessibility label remain unchanged.
+
+**Verification:** Final functional smoke for [run 38811963944](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38811963944) PASS; Android build/emulator results must be read from the workflow before claiming completion. Side-by-side standalone [run 38811941787](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38811941787) succeeded for the **same latest app-source commit** `71f6cb32`; its APK is separate from the original installation. Source code itself remained at the same versionCode/name (146 / 1.4.6); no progress storage or question banks changed. Draft PR #3 and `main` remain unmerged.
+
+**Next action:** Check final Android/emulator and APK artifact from run 38811963944; then user can install and verify four equal bottom ribbon buttons and Glossary → Back behavior on Galaxy S23 Ultra. Do not expand this UI correction into unfinished factual-audit research.
+
+---
+
 ## RELEASE CANDIDATE UPDATE — 2026-10-15 · v1.4.6 APK BUILT; STUDY NOW
 
 **This is the active stopping point.** The previous "CURRENT ACTIONABLE RELEASE GATE" and all longer incremental history below are archived status; **do not restart** an open-ended factual/media research cycle merely to produce a study APK.

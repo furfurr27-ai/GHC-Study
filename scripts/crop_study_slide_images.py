@@ -404,6 +404,12 @@ def main():
             "cf12124d1f9d64ad7508379af8782374e479e114ebea3bd73cd275949e2a694d",
             "Original Jäger Latein dog-anatomy illustration labeling Behang, Decke, Rute, Fahne, Pfoten and other body parts; not the entire lecture slide"
         ),
+        "drivebrief":(
+            "media/drivebrief-class-hunters-discussing.jpeg",
+            "Hunting Techniques (20260216).pdf",15,83,
+            "3e0ea5c5f46a851135b57519dc514d7eb3926c25d02d7e7c32432ab9935b368d",
+            "Original classroom photo from Drive Hunts/General Equipment: a hunter gesturing while others stand nearby; illustrative group interaction, NOT proof of a formal briefing or its specific safety rules"
+        ),
     }
     for cid,(rel,source,page,xref,expected_sha,warning) in figures.items():
         blob=ROOT/rel

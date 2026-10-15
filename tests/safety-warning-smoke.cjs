@@ -14,7 +14,7 @@ async function main() {
   const anchor = 'function renderQuestion(){';
   assert.equal(originalHtml.split(anchor).length, 2, 'expected one quiz renderer');
   const html = originalHtml.replace(anchor,
-    "window.__ghcTestRenderExactQuestion=function(id){current=window.GHC_QUESTIONS.find(q=>q.id===id);if(!current)throw Error('question ID missing');renderQuestion()};\n"+anchor);
+    "window.__ghcTestRenderExactQuestion=function(id){selected={};checked=false;current=window.GHC_QUESTIONS.find(q=>q.id===id);if(!current)throw Error('question ID missing');renderQuestion()};\n"+anchor);
   const dom = new JSDOM(html, {
     url: 'https://ghc.local/', runScripts: 'dangerously', resources: 'usable',
     pretendToBeVisual: true, virtualConsole: vc,
@@ -43,11 +43,35 @@ async function main() {
   assert(!note.textContent.includes('Getting into a car'), 'do not leak the hidden keyed option');
   assert(!w.document.querySelector('#checkBtn').classList.contains('hidden'), 'normal answer control must still exist');
   assert(w.document.querySelector('#feedback').textContent.trim() === '', 'notice comes before grading');
+  assert.deepEqual(Array.from(disputed.safetyAcceptedCorrect), ['b','c','d'],
+    'alternative safety-complete set must not change archived correct');
+  // A candidate selecting the real-world safety-complete set must not receive
+  // a false negative from the original 2013 paper's known omission.
+  for (const value of ['b', 'c', 'd']) {
+    const control = w.document.querySelector('.choice input[value="' + value + '"]');
+    assert(control, 'choice ' + value + ' missing');
+    control.click();
+  }
+  w.document.querySelector('#checkBtn').click();
+  assert.match(w.document.querySelector('#feedback').textContent, /safety-complete answer/);
+  assert.equal(w.document.querySelectorAll('.choice.wrong').length, 0,
+    'vehicle option must not be styled as an incorrect choice');
+  assert(w.document.querySelector('.choice[data-choice="d"]').classList.contains('correct'));
+
+  // The original paper B/C answer remains accepted for archival fidelity.
+  w.__ghcTestRenderExactQuestion('P2013-S3-Q02');
+  for (const value of ['b', 'c']) {
+    w.document.querySelector('.choice input[value="' + value + '"]').click();
+  }
+  w.document.querySelector('#checkBtn').click();
+  assert.match(w.document.querySelector('#feedback').textContent, /Matched archived 2013 key/);
+  assert(w.document.querySelector('.question .alert[role="note"]'), 'warning persists after answer');
+  // Other questions must continue to use their original, single answer set.
   w.__ghcTestRenderExactQuestion('H2023-D17-Q018');
   assert(!w.document.querySelector('.question .alert[role="note"]'), 'non-disputed question must not receive conflict warning');
   assert.equal(errors.length, 0, 'runtime errors: ' + errors.join(' | '));
   w.close();
-  console.log('PASS: archived-key safety dispute is visibly flagged before quiz grading, without answer leakage');
+  console.log('PASS: original B/C and safety-complete B/C/D both accepted without altering archived key; pre-answer warning shown');
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

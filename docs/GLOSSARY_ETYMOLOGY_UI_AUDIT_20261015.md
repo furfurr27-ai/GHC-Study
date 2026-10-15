@@ -26,3 +26,16 @@ Two glossary meanings **remain pending**, `x118 Jagdschuetz` and `x148 Tiroler`,
 ## Release/test boundary
 
 This patch changes only offline glossary presentation and browser regression expectations. No hunting facts, Android Java bridge, card media, versionCode, application ID, or persistent storage key was modified. GitHub CI must pass on the *final* test commit before treating the change as regression-validated. It still requires physical S23 Ultra acceptance testing, complete question review, 3 pending source-faithful visual replacements, and legal-source freshness review. Keep PR #3 draft and unmerged.
+
+## 2026-10-15 addendum — two **individually corroborated** origins (supersedes initial 0/77 count)
+
+The initial source-only snapshot above had **0 independently checked word origins**. Subsequently, two original glossary entries were checked against external language references; these changes preserve the original IDs and all 160 other glossary objects unchanged:
+
+| Entry | Precisely verified claim | Evidence and boundary |
+|---|---|---|
+| `v047 Schweiß` | Everyday German `Schweiß` is sweat; its hunting meaning is blood from game or hunting dogs. Duden gives the Middle/Old High German form `sveiʒ`. A German language society article (citing Pfeifer) discusses old Germanic sweat/blood usage and taboo circumlocution. | [Duden, Schweiß](https://www.duden.de/rechtschreibung/Schweisz) **direct full entry reviewed**; [Gesellschaft für deutsche Sprache, Der Sprachdienst 1/2007](https://gfds.de/schwitzen-wie-ein-schwein/) **search-indexed article passage checked; direct page fetch timed out**. This does **not** prove that poachers invented the word as secret code. |
+| `v064 Schweißhund` | Transparent compound `Schweiß` (blood in hunting) + `Hund` (dog), designating a hunting dog trained to track wounded game by its blood trail. | [Duden, Schweißhund](https://www.duden.de/rechtschreibung/Schweiszhund) and [Duden, Schweiß](https://www.duden.de/rechtschreibung/Schweisz). Verified compound formation/current dictionary meaning, **not** a separately documented date of coinage or poacher-code theory. |
+
+Source commit `abedc01015848d15b6823a15f9e6f5fd921eeefb` adds individually attributed `originVerification: "verified"` and `originSource` to only `v047` and `v064`, with revised, evidence-limited etymology text. Regression commit `29d789f7f790ae9a366e0f6ebf3c2e6ede59cd6a` requires both verified labels, their dictionary citations, a qualified disclaimer regarding secret poacher language, and **75 unverified inherited origin notes out of the original 77**. Other 85 glossary entries have no inherited origin text. The English meanings stay **160 defined / 2 pending**; none of the 867 examination questions, study cards, Android behavior or saved-progress IDs was changed.
+
+**CI sequencing caveat:** The intermediate workflow on `abedc010` was expected to fail against the *pre-update 77-unverified test assertions*; evaluate the final regression workflow at `29d789f7` instead. New APK build and native emulator outcome must be inspected separately. No physical phone test was performed.

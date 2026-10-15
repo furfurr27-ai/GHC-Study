@@ -19,8 +19,8 @@ The user uploaded 10 photographs into the conversation: cover `20261015_213803.j
 - Part II Hunting Dogs / Hunting Procedures, questions 1–25, complete (batch 1).
 - Part III Weapons Law, Firearms and Handling, questions 1–25, complete (batch 2).
 - Part IV Nature and Animal Protection, Jagdschutz, Ethics and U.S. Forces Procedures, questions 1–25, complete (batch 2).
-- Part V Diseases, Handling of Meat, Hygiene, questions 1–5 captured and staged under `pendingSections`. Questions 6–25 remain to be uploaded.
-- **105 of 125 questions transcribed: 100 immediately playable across four complete sections, 5 retained pending Part V completion. Test intake remains incomplete.**
+- Part V Diseases, Handling of Meat, Hygiene, **questions 1–25 fully captured**: Q1–5 from batch 2; Q6–25 from final batch.
+- **125 of 125 transcribed and playable across all five complete sections. Photo intake is complete.**
 - Source year (2021 or 2022) was described by the user and is not printed/verified on the available cover.
 - Cover rules: closed book; ink pen; circle one or more letter(s); 5 × 25 questions; one point per question; at least 13 correct **per part**; **150 minutes total**.
 - **Correct answer method: use ONLY YELLOW HIGHLIGHTED text on photographed paper.** Blue handwritten circles, black ticks, crossings-out or other pen marks must NEVER override the highlighted key. Preserve questionable historical answers literally, with separate legal/factual caveats rather than silently correcting the primary key.
@@ -76,4 +76,36 @@ Key exceptions to protect from future "corrections" during transcription: Part I
 4. Set `receivedQuestionCount=125`, `availableQuestionCount=125`, `pendingQuestionCount=0`, `isComplete=true`, and update the intake `status`.
 5. Update `scripts/check_practice_test2.py` and `tests/practice-test2-smoke.cjs` to assert 125 captured and all five parts visible; replace the 105-item checkpoint assumptions. Run the available Android+browser regression workflows.
 6. Implement the **full five-part timed 150-minute simulation**, with 13/25 passing **per individual part**, only after the source collection is complete. The existing partial preview intentionally has no exam timer.
+
+
+## Final batch — all 125 received (2026-10-15)
+
+The final four source photographs complete the original U.S. Forces Hunting Examination:
+- `1000069497.jpg`: Part V Q6–11.
+- `1000069499.jpg`: Part V Q12–17.
+- `1000069500.jpg`: Part V Q18–22.
+- `1000069501.jpg`: Part V Q23–25.
+
+**Part V Q1–25 photographed yellow keys, in order:** B, ABC, CDE, ABE, ACE, B, A, AB, B, ABD, A, D, ABE, BD, A, A, B, ABD, A, C, A, ABC, E, CD, BCD.
+
+Highlighted answers are preserved even when handwritten corrections/circles disagree, including Part V Q6 **B not C**, Q9 **B not C**, Q16 **A not B**, Q18 **A+B+D not E**, Q19 **A not C**, Q20 **C not B**, Q24 **C+D**, and Q25 **B+C+D**. No unhighlighted alternatives were reclassified as correct. These are source-document transcriptions, not endorsements of historical legal or disease/hygiene accuracy.
+
+Authoritative tracked intake `app/src/main/assets/practice-test-2.json` now has five 25-question sections, `pendingSections=[]`, `receivedQuestionCount=125`, `availableQuestionCount=125`, `pendingQuestionCount=0`, `isComplete=true`. Source image files remain in the conversation, not committed to the public repository.
+
+## Finalized quiz implementation
+
+The existing Quiz Mode links to a separate offline `practice-test-2.html` page built from the JSON source. It supports individual-section practice with immediate historical highlighted-answer feedback, plus **Full examination** with a 150-minute wall-clock deadline, five parts of 25 questions, and the 13/25 per-part pass threshold. In the timed exam answers remain hidden until submission/time expiry; incomplete answers count incorrect, and all five parts must separately pass. Browser state persists across page reload and the timer continues while the page is closed. Android system Back returns to the prior page using WebView navigation; returning to the quiz should resume an unsubmitted timed exam.
+
+Separate persistence: `GHC_PT2_PARTIAL_PROGRESS_V1` for independent per-part practice; `GHC_PT2_TIMED_EXAM_V1` for the full-exam attempt. Legacy 100 Practice Test + 767 GHC Focused + 77 Jägersprache records are not altered. Match-one question Part II Q25 remains one scored question with six internally required matches.
+
+Relevant release files:
+- `scripts/practice-test2-exam-runtime.js` — full-exam controller.
+- `scripts/practice-test2-template.html` — offline HTML with full-exam UI.
+- `scripts/build_practice_test2.py` — deterministic page/Quiz Mode entry generator.
+- `scripts/check_practice_test2.py` — photo-key count and JS syntax assertions.
+- `tests/practice-test2-smoke.cjs` — per-part answer and UI navigation.
+- `tests/practice-test2-timed-smoke.cjs` — full mock-exam persistence, matching, timer expiry, per-part grading and pass/fail thresholds.
+- `.github/workflows/android-standalone-apk.yml` — build and runtime smoke jobs.
+
+**Limitations:** The year 2021–22 remains user-reported. Uploaded pages are historical paper test sources; no contemporary legal/food-safety/animal-disease audit was completed for these 125 new questions. Especially Part III Q4 (claimed universal self-defense warning shot), Part IV Q16 (dispatch injured game outside assigned territory), and Part V Q20 (contaminated carcass washing) should not be used as practical instructions based solely on the old highlighted key. A successful CI run verifies software packaging and selected browser interactions, not an actual Samsung Galaxy S23 Ultra installation. Before merging into a fast-moving primary development branch, compare commits and rerun integrated regressions.
 

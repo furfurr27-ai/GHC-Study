@@ -59,6 +59,8 @@ jobs:
         run: python3 scripts/overlay_protected_owl.py
       - name: Map newly illustrated GHC misfire course safety reference
         run: python3 scripts/overlay_misfire_course_schematic.py
+      - name: Map original 2020 class shot-distance diagram
+        run: python3 scripts/overlay_shotdistance_course_schematic.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -109,6 +111,8 @@ jobs:
         run: python3 scripts/overlay_protected_owl.py
       - name: Map original-course misfire illustration in Android build
         run: python3 scripts/overlay_misfire_course_schematic.py
+      - name: Map original 2020 class shot-distance diagram
+        run: python3 scripts/overlay_shotdistance_course_schematic.py
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py

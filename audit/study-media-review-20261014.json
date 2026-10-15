@@ -8,10 +8,10 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 5,
+    "remainingSlideOrPageLike": 4,
     "correctedSemanticMismatch": 1,
     "originalFigureRemaps": 10,
-    "assemblyMontages": 2,
+    "assemblyMontages": 3,
     "classPhotoReuse": 1
   },
   "slideOrPageLike": [
@@ -112,7 +112,8 @@
     "Protected Wildlife reuses a photo-only original Waldkauz photograph already checked on the Tawny Owl card, as one example rather than instructions or authorization. No new outside image or legal content.",
     "Transport study card uses isolated three-long-gun-case JPEG xref120 from original Law - Weapons (20260819).pdf page 23. Descriptive visual only; does not validate current German rules on unloaded, locked or cased firearms.",
     "Dog Parts restored from original Hunting Dogs (202609) course page 4 ('Jäger Latein - Dog Parts'), embedded JPEG xref98. Clear self-contained German-labeled anatomy illustration (Behang, Decke, Rute, Fahne, Pfoten etc.), without lecture chrome; course page 5 separately lists meanings.",
-    "Dog Diseases uses three exact originally embedded JPEGs from Hunting Dogs (202609).pdf pages 26–27, each individually SHA-256 checked and combined as picture-only examples. Image is not comprehensive nor a diagnostic key."
+    "Dog Diseases uses three exact originally embedded JPEGs from Hunting Dogs (202609).pdf pages 26–27, each individually SHA-256 checked and combined as picture-only examples. Image is not comprehensive nor a diagnostic key.",
+    "Revier Roles is now a two-photo classroom-example montage from Revier slide page 30 (xrefs191/192), with only class labels; no implication these stock-model photos show actual holders of roles or all Revier officials."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -299,6 +300,31 @@
         }
       ],
       "note": "Original class examples of a rabies warning sign, intestinal roundworm illustration and tick diagram; not a comprehensive disease list or diagnosis."
+    },
+    "revierroles": {
+      "path": "media/study-revierroles-two-examples.webp",
+      "source": "Range - Revier (20260922).pdf",
+      "pictureSourcePageXrefs": [
+        [
+          30,
+          191
+        ],
+        [
+          30,
+          192
+        ]
+      ],
+      "imageSources": [
+        {
+          "path": "media/revier-role-paechter-class-photo.jpeg",
+          "sha256": "853cdd232e4143d2e27ced239ad01b652d8e9cace819cbfd5a7d76f0e601415a"
+        },
+        {
+          "path": "media/revier-role-hunter-class-photo.jpeg",
+          "sha256": "1eff4e7bb204c7cca82cc02007b5e72ddbf09e3b378c42a5384795dce8d8dccf"
+        }
+      ],
+      "note": "Two original class model photographs labeled Pächter and Ami-Jäger Team; illustrates examples only, not a complete personnel hierarchy."
     }
   },
   "classPhotoReuse": {

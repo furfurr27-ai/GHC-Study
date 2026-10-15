@@ -7,6 +7,7 @@ on:
       - 'scripts/crop_study_slide_images.py'
       - 'scripts/overlay_protected_owl.py'
       - 'scripts/overlay_misfire_course_schematic.py'
+      - 'scripts/overlay_shotdistance_course_schematic.py'
       - 'scripts/check_study_media.py'
       - 'scripts/check_packaged_glossary.py'
       - 'audit/study-media-review-20261014.json'
@@ -52,6 +53,8 @@ jobs:
         run: python3 scripts/overlay_protected_owl.py
       - name: Map newly illustrated GHC misfire course safety reference
         run: python3 scripts/overlay_misfire_course_schematic.py
+      - name: Map original 2020 class shot-distance diagram
+        run: python3 scripts/overlay_shotdistance_course_schematic.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage

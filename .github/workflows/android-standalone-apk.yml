@@ -16,6 +16,8 @@ on:
       - 'scripts/check_safety_question_batch.py'
       - 'scripts/qualify_weapons_law_batch_20261015.py'
       - 'scripts/check_weapons_law_batch_20261015.py'
+      - 'scripts/qualify_2013_legal_documents_batch.py'
+      - 'scripts/check_2013_legal_documents_batch.py'
       - 'scripts/check_study_media.py'
       - 'scripts/check_packaged_glossary.py'
       - 'audit/study-media-review-20261014.json'
@@ -71,6 +73,8 @@ jobs:
         run: python3 scripts/qualify_safety_question_batch.py
       - name: Qualify original 2013 firearm-storage transport caliber and semiauto legal changes
         run: python3 scripts/qualify_weapons_law_batch_20261015.py
+      - name: Audit original 2013 borrowed rifle purchase and warning-shot legal facts
+        run: python3 scripts/qualify_2013_legal_documents_batch.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage
@@ -81,6 +85,8 @@ jobs:
         run: python3 scripts/check_safety_question_batch.py
       - name: Verify five 2013 original-practice answers against current federal law
         run: python3 scripts/check_weapons_law_batch_20261015.py
+      - name: Verify four source-checked documentary and self-defense questions
+        run: python3 scripts/check_2013_legal_documents_batch.py
       - name: Generate all-question explicit factual source-review inventory
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build separately installable APK
@@ -106,6 +112,7 @@ jobs:
           python3 scripts/check_question_source_caveats.py --apk "$APK"
           python3 scripts/check_safety_question_batch.py --apk "$APK"
           python3 scripts/check_weapons_law_batch_20261015.py --apk "$APK"
+          python3 scripts/check_2013_legal_documents_batch.py --apk "$APK"
           python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
       - name: Upload 867-question source review matrix
         if: always()

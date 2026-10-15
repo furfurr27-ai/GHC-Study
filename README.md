@@ -1,3 +1,9 @@
+## Practice Test 2 — 2021/22 photographed paper, first batch (2026-10-15)
+
+Added a **separate Quiz Mode bank** for the user's more recent U.S. Forces Hunting Examination practice example. Initial intake: **50 of 125 questions**, all 25 questions in Part I (Game Biology) and all 25 in Part II (Hunting Dogs / Hunting Procedures). **Only yellow highlighted answers** are keyed; pen circles are not. Part II Q25 uses an actual six-way matching interface and counts as **one** question. A new ⓘ info modal displays cover instructions: closed book, ink pen, circle letter(s), five 25-question parts, 13 needed **in each part**, one point per question, 150-minute written exam limit. The current app drill is **not timed**.
+
+Data: `app/src/main/assets/practice-test-2-part1.json`, `practice-test-2-part2.json`. Integration: `scripts/integrate_practice_test_2.py`, applied after source-audit overlays in full feature-branch CI; separate source selector, part drill scopes, mastery, progress/backup/reset, no edit to the historical 867-question source bank or 77 vocabulary records. Tests: `tests/practice-test-2-smoke.cjs`. Checkpoint and continuation: `docs/PRACTICE_TEST_2_INTAKE_20261015.md`. **More photo batches expected for Parts III–V.** Exam source date 2021/22 is user-estimated, not verified on paper. The original photos have **not** been committed to this public repo. Standalone APK build [#38800047487](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38800047487) and functional smoke job [#38800047286](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38800047286) succeeded. Do not merge draft PR #3 or edit main without user direction.
+
 # GHC Study Android
 
 Version **1.4.6** (versionCode 146), package `org.ghcstudy.v141`. Target: Samsung Galaxy S23 Ultra. Android minSdk 24, compile/target SDK 35.

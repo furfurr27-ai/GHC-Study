@@ -55,6 +55,8 @@ def main():
                 raise AssertionError("Checked 2013 practice-test original PDF citation missing")
             if "actual 19 December 2013 paper Answer Key" not in q["explanation"]:
                 raise AssertionError("Original archived answer key finding absent from learner explanation")
+            if q.get("safetyAcceptedCorrect") != ["b", "c", "d"]:
+                raise AssertionError("Incomplete 2013 key requires B/C/D alternative accepted score while keeping historical B/C")
             if "Legacy key under factual dispute" not in q.get("preAnswerWarning", ""):
                 raise AssertionError("Missing user-facing pre-answer warning")
             if "getting into a car" not in q["stem"].lower() and not any(
@@ -69,6 +71,12 @@ def main():
     warning_ui = "'+(current.preAnswerWarning?'<div class=\"alert\" role=\"note\"><strong>Source review notice:</strong> '+esc(current.preAnswerWarning)+'</div>':'')+"
     if html.count(warning_ui) != 1:
         raise AssertionError("Pre-answer quiz warning not rendered exactly once")
+    if html.count("safetyAnswer={},extra=current.safetyAcceptedCorrect||[];") != 1:
+        raise AssertionError("Quiz must allow safety-complete response without mutating stored historical key")
+    if html.count("acceptedSafety&&!!safetyAnswer[id]") != 1:
+        raise AssertionError("Alternative safe answer choices must be displayed correctly")
+    if "Correct — safety-complete answer" not in html or "Matched archived 2013 key" not in html:
+        raise AssertionError("Must distinguish safety and historical key in learner feedback")
     print("PASS: 6 additional class+official safety reviews, 1 archived key dispute, source warning before grading" + (" (APK)" if a.apk else " (source)"))
 
 if __name__ == "__main__":

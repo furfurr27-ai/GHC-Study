@@ -50,7 +50,7 @@ footer{margin-top:30px;font-size:.85rem;color:#aab4ac}
 <p><strong>Closed book.</strong> The original paper requires an ink pen and answers circled by letter; some items need several letters.</p>
 <p><strong>Five parts, 25 questions per part.</strong> One point per question. Pass threshold: <strong>13 out of 25 in each part</strong>. Total exam time: <strong>150 minutes</strong>.</p>
 <p class="muted">This historical practice paper was described as approximately 2021–2022; the date has not been independently verified. Only <strong>yellow-highlighted answers</strong> from the supplied photos form the answer key, not handwritten circles. Historical answers may need separate legal or factual review.</p>
-<p class="muted">Only uploaded parts are available in this preview. The complete 150-minute exam simulation will be enabled when all five parts are captured and checked.</p>
+<p class="muted">Only complete photographed parts are available to practice. Questions from a partially uploaded Part V are saved but not playable until that section is complete. The 150-minute exam simulation will be enabled when all five parts are captured and checked.</p>
 </section>
 <section id="parts" class="parts" aria-label="Choose examination part"></section>
 <section id="questionPanel" class="panel" hidden aria-live="polite">
@@ -85,8 +85,10 @@ function equals(a,b){return JSON.stringify(a)===JSON.stringify(b)}
 function correctCount(s){return s.questions.reduce((n,q)=>n+(saved[q.id]&&saved[q.id].correct?1:0),0)}
 function attempted(s){return s.questions.reduce((n,q)=>n+(saved[q.id]?1:0),0)}
 function renderParts(){
- const got=sections.reduce((n,s)=>n+s.questions.length,0);
- $("statusLine").textContent=got+" of "+exam.expectedQuestionCount+" questions captured · "+sections.length+" of "+exam.instructions.totalParts+" parts";
+ const playable=sections.reduce((n,s)=>n+s.questions.length,0);
+ const captured=exam.receivedQuestionCount||playable;
+ const pending=exam.pendingQuestionCount||0;
+ $("statusLine").textContent=captured+" of "+exam.expectedQuestionCount+" questions captured · "+playable+" available to quiz · "+sections.length+" of "+exam.instructions.totalParts+" parts complete"+(pending?" · "+pending+" pending completion":"");
  $("parts").innerHTML=sections.map(s=>'<button type="button" class="part '+(part&&part.part===s.part?"active":"")+'" data-part="'+s.part+'"><strong>Part '+s.part+": "+escapeHtml(s.title)+'</strong><small>'+attempted(s)+' / '+s.questions.length+' answered · '+correctCount(s)+' correct</small></button>').join("");
  $("parts").querySelectorAll("[data-part]").forEach(b=>b.onclick=()=>{part=sections.find(s=>String(s.part)===b.dataset.part);index=Math.max(0,part.questions.findIndex(q=>!saved[q.id]));if(index<0)index=0;renderParts();renderQuestion();});
 }

@@ -28,7 +28,7 @@ def locate(text, name):
 
 def main():
     raw = (ROOT / REL).read_bytes()
-    git_blob = b"blob " + str(len(raw)).encode() + b"\\x00" + raw
+    git_blob = b"blob " + str(len(raw)).encode() + b"\x00" + raw
     if hashlib.sha1(git_blob).hexdigest() != GIT_BLOB_SHA1:
         raise AssertionError("Misfire schematic differs from exact audited Git blob")
     image = ET.fromstring(raw)

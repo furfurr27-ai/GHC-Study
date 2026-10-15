@@ -6,7 +6,7 @@
     "approximateYear": "2021 or 2022 (reported by user; not printed on these pages)",
     "answerKeyConvention": "Only yellow-highlighted answers are treated as correct. Student circles and other pen marks are not used as an answer key.",
     "coverImage": "20261015_213803.jpg",
-    "transcriptionNote": "Question wording follows the photographed paper, including historical terminology and possible errors. Do not treat the highlighted historical answers as current legal or biological authority. Batch 2 includes PIII Q1–25, PIV Q1–25 and PV Q1–5. The partial Part V questions are retained in pendingSections and are not presented until the section is complete."
+    "transcriptionNote": "Question wording follows the photographed paper, including historical terminology and possible errors. Do not treat the highlighted historical answers as current legal or biological authority. Batch 2 includes PIII Q1–25, PIV Q1–25 and PV Q1–5. Part V Questions 6–25 were supplied in the final four photographs and all five parts are transcribed. Final batch P5 Q6–25 includes highlighted-only answer keys. Original wording may contain typos and questionable food-handling or legal claims; this dataset records the historical exam, not verified modern best practice."
   },
   "instructions": {
     "closedBook": true,
@@ -18,9 +18,9 @@
     "timeLimitMinutes": 150
   },
   "expectedQuestionCount": 125,
-  "receivedQuestionCount": 105,
-  "status": "intake_in_progress",
-  "isComplete": false,
+  "receivedQuestionCount": 125,
+  "status": "transcription_complete_pending_exam_validation",
+  "isComplete": true,
   "sections": [
     {
       "part": 1,
@@ -2664,9 +2664,7 @@
           "sourceImage": "1000069495.jpg"
         }
       ]
-    }
-  ],
-  "pendingSections": [
+    },
     {
       "part": 5,
       "title": "Diseases, Handling of Meat, Hygiene",
@@ -2826,10 +2824,564 @@
             "e"
           ],
           "sourceImage": "1000069496.jpg"
+        },
+        {
+          "id": "PT2-P5-Q06",
+          "number": 6,
+          "kind": "multiple_choice_single",
+          "stem": "Myxomatosis is a virus that infects",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Hares"
+            },
+            {
+              "id": "b",
+              "text": "Rabbits"
+            },
+            {
+              "id": "c",
+              "text": "Hares and Rabbits"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069497.jpg"
+        },
+        {
+          "id": "PT2-P5-Q07",
+          "number": 7,
+          "kind": "multiple_choice_single",
+          "stem": "When refilling a feeding station in February you see a young female Roe Deer with the Spiegel and rear legs dirty from diarrhea, the animal looks weak, and it moves slow. Do you….",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Kill it immediately"
+            },
+            {
+              "id": "b",
+              "text": "Get a permit from Untere Jagdbehörde to kill it out of season"
+            },
+            {
+              "id": "c",
+              "text": "Get a permit from the Veterinäramt to kill it out of season."
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069497.jpg"
+        },
+        {
+          "id": "PT2-P5-Q08",
+          "number": 8,
+          "kind": "multiple_choice_multiple",
+          "stem": "The disease transmitted by ticks is",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Lyme disease"
+            },
+            {
+              "id": "b",
+              "text": "FSME (Frühsommer-Meningo-Enzephalitis)"
+            },
+            {
+              "id": "c",
+              "text": "Coccidiosis"
+            }
+          ],
+          "correct": [
+            "a",
+            "b"
+          ],
+          "sourceImage": "1000069497.jpg"
+        },
+        {
+          "id": "PT2-P5-Q09",
+          "number": 9,
+          "kind": "multiple_choice_single",
+          "stem": "A fleeing Kitz breaks its neck in a fence during a drive hunt. May the hunter use it for human consumption, if there are no visible diseases or questionable characteristics?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "No"
+            },
+            {
+              "id": "b",
+              "text": "No, only after having the carcass checked by a veterinarian and then only for his personal consumption."
+            },
+            {
+              "id": "c",
+              "text": "Yes"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069497.jpg"
+        },
+        {
+          "id": "PT2-P5-Q10",
+          "number": 10,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which parasites may settle on your dog?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Fuchsbandwurm"
+            },
+            {
+              "id": "b",
+              "text": "Räudemilbe"
+            },
+            {
+              "id": "c",
+              "text": "Hirschlaus"
+            },
+            {
+              "id": "d",
+              "text": "Zecke"
+            }
+          ],
+          "correct": [
+            "a",
+            "b",
+            "d"
+          ],
+          "sourceImage": "1000069497.jpg"
+        },
+        {
+          "id": "PT2-P5-Q11",
+          "number": 11,
+          "kind": "multiple_choice_single",
+          "stem": "The German word Tollwut means",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rabies"
+            },
+            {
+              "id": "b",
+              "text": "Lyme disease"
+            },
+            {
+              "id": "c",
+              "text": "Distemper"
+            },
+            {
+              "id": "d",
+              "text": "None of the above"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069497.jpg"
+        },
+        {
+          "id": "PT2-P5-Q12",
+          "number": 12,
+          "kind": "multiple_choice_single",
+          "stem": "When do you gut a freshly shot Roe Deer?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "After the body cooled down."
+            },
+            {
+              "id": "b",
+              "text": "Before dark."
+            },
+            {
+              "id": "c",
+              "text": "Within 7 hours."
+            },
+            {
+              "id": "d",
+              "text": "Immediately"
+            }
+          ],
+          "correct": [
+            "d"
+          ],
+          "sourceImage": "1000069499.jpg"
+        },
+        {
+          "id": "PT2-P5-Q13",
+          "number": 13,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which of the listed diseases present a risk of infection for humans?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Rabies"
+            },
+            {
+              "id": "b",
+              "text": "Brucellosis"
+            },
+            {
+              "id": "c",
+              "text": "Schweinepest"
+            },
+            {
+              "id": "d",
+              "text": "Infestation with larvae"
+            },
+            {
+              "id": "e",
+              "text": "Salmonella"
+            }
+          ],
+          "correct": [
+            "a",
+            "b",
+            "e"
+          ],
+          "sourceImage": "1000069499.jpg"
+        },
+        {
+          "id": "PT2-P5-Q14",
+          "number": 14,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which animal must be checked for trichinosis before human consumption?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Roe Deer"
+            },
+            {
+              "id": "b",
+              "text": "Wild Boar"
+            },
+            {
+              "id": "c",
+              "text": "Hare"
+            },
+            {
+              "id": "d",
+              "text": "Badger"
+            },
+            {
+              "id": "e",
+              "text": "Rabbit"
+            }
+          ],
+          "correct": [
+            "b",
+            "d"
+          ],
+          "sourceImage": "1000069499.jpg"
+        },
+        {
+          "id": "PT2-P5-Q15",
+          "number": 15,
+          "kind": "multiple_choice_single",
+          "stem": "What is the temperature to cool down the carcass of cloven hoofed game after gutting?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "7° Celcius"
+            },
+            {
+              "id": "b",
+              "text": "5° Celcius"
+            },
+            {
+              "id": "c",
+              "text": "2° Celcius"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069499.jpg"
+        },
+        {
+          "id": "PT2-P5-Q16",
+          "number": 16,
+          "kind": "multiple_choice_single",
+          "stem": "Is a Rehbock with larvae of the botfly appropriate for human consumption?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Yes"
+            },
+            {
+              "id": "b",
+              "text": "No"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069499.jpg"
+        },
+        {
+          "id": "PT2-P5-Q17",
+          "number": 17,
+          "kind": "multiple_choice_single",
+          "stem": "When gutting an Überläufer you find red, bloody spots in the throat. This is a symptom of:",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Tollwut"
+            },
+            {
+              "id": "b",
+              "text": "Schweinepest"
+            },
+            {
+              "id": "c",
+              "text": "Brucellose"
+            },
+            {
+              "id": "d",
+              "text": "Räude"
+            }
+          ],
+          "correct": [
+            "b"
+          ],
+          "sourceImage": "1000069499.jpg"
+        },
+        {
+          "id": "PT2-P5-Q18",
+          "number": 18,
+          "kind": "multiple_choice_multiple",
+          "stem": "Hunter hygiene training requirements in Germany include knowledge of:",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Normal anatomy and physiology in wild game appearance and behavior"
+            },
+            {
+              "id": "b",
+              "text": "Environmental contamination, such as dioxins, pesticides, and radioactive substances"
+            },
+            {
+              "id": "c",
+              "text": "Using minimum caliber and muzzle force for legally hunting various game"
+            },
+            {
+              "id": "d",
+              "text": "Abnormal behavior and pathological concerns in wild game"
+            },
+            {
+              "id": "e",
+              "text": "All of the above."
+            }
+          ],
+          "correct": [
+            "a",
+            "b",
+            "d"
+          ],
+          "sourceImage": "1000069500.jpg"
+        },
+        {
+          "id": "PT2-P5-Q19",
+          "number": 19,
+          "kind": "multiple_choice_single",
+          "stem": "You kill a Roe Deer in December, the outside temperature is below 5 degrees Celsius. Do you have to put the carcass into a cooling room?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "No, I can store it outside in a cover keeping it clean."
+            },
+            {
+              "id": "b",
+              "text": "Yes, it has to go to the cooling room within 2 hours"
+            },
+            {
+              "id": "c",
+              "text": "Yes, it has to go to the cooling room within 5 hours"
+            },
+            {
+              "id": "d",
+              "text": "Yes, it has to cool down to a temperature below 0 degrees Celsius."
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069500.jpg"
+        },
+        {
+          "id": "PT2-P5-Q20",
+          "number": 20,
+          "kind": "multiple_choice_single",
+          "stem": "You killed a Roe Deer and your shot punctured the stomach, when gutting you find green and brown dirt inside the carcass.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "I have to take the animal to a veterinarian to have it checked prior to human consumption."
+            },
+            {
+              "id": "b",
+              "text": "The Roe is not good anymore for human consumption."
+            },
+            {
+              "id": "c",
+              "text": "I don’t have to take it to the veterinarian, if I can clean the carcass right after gutting with clean water and no dirt remains inside."
+            }
+          ],
+          "correct": [
+            "c"
+          ],
+          "sourceImage": "1000069500.jpg"
+        },
+        {
+          "id": "PT2-P5-Q21",
+          "number": 21,
+          "kind": "multiple_choice_single",
+          "stem": "You are invited to a Rehbock hunt and you manage to shoot an older buck that was stumbling around, almost like it was blind. You can see nothing unusual during the gutting and the carcass looks clean and healthy. Do you tell the Revier owner about the strange behavior of that buck?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Yes"
+            },
+            {
+              "id": "b",
+              "text": "No"
+            }
+          ],
+          "correct": [
+            "a"
+          ],
+          "sourceImage": "1000069500.jpg"
+        },
+        {
+          "id": "PT2-P5-Q22",
+          "number": 22,
+          "kind": "multiple_choice_multiple",
+          "stem": "What evidence suggests rabies?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Wandering aimlessly while grazing"
+            },
+            {
+              "id": "b",
+              "text": "Friendly or aggressive behavior"
+            },
+            {
+              "id": "c",
+              "text": "Salivation and hanging lower jaw"
+            },
+            {
+              "id": "d",
+              "text": "Diarrhea"
+            }
+          ],
+          "correct": [
+            "a",
+            "b",
+            "c"
+          ],
+          "sourceImage": "1000069500.jpg"
+        },
+        {
+          "id": "PT2-P5-Q23",
+          "number": 23,
+          "kind": "multiple_choice_single",
+          "stem": "You killed 3 Frischling on a successful hunt. You want to keep one for yourself, one you plan to give to a very good friend, and one you plan to sell to the local Gasthaus. Which one has to be checked for trichinosis?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "The one you keep"
+            },
+            {
+              "id": "b",
+              "text": "The one for your friend"
+            },
+            {
+              "id": "c",
+              "text": "The one for the Gasthaus"
+            },
+            {
+              "id": "d",
+              "text": "b. and c."
+            },
+            {
+              "id": "e",
+              "text": "All three"
+            }
+          ],
+          "correct": [
+            "e"
+          ],
+          "sourceImage": "1000069501.jpg"
+        },
+        {
+          "id": "PT2-P5-Q24",
+          "number": 24,
+          "kind": "multiple_choice_multiple",
+          "stem": "ASP (Afrikanische Schweinepest) is a disease,",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Only found on Wild Boar in Africa and Asia"
+            },
+            {
+              "id": "b",
+              "text": "Only dangerous to farm pigs"
+            },
+            {
+              "id": "c",
+              "text": "Is infectious to all pigs (Wild Boar and domestic pics)"
+            },
+            {
+              "id": "d",
+              "text": "Infected pigs have been found in Poland and the Czech Republic"
+            }
+          ],
+          "correct": [
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069501.jpg"
+        },
+        {
+          "id": "PT2-P5-Q25",
+          "number": 25,
+          "kind": "multiple_choice_multiple",
+          "stem": "Which animal may suffer from Coccidiose?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Red Deer"
+            },
+            {
+              "id": "b",
+              "text": "Hares"
+            },
+            {
+              "id": "c",
+              "text": "Pheasant"
+            },
+            {
+              "id": "d",
+              "text": "Rabbits"
+            },
+            {
+              "id": "e",
+              "text": "Roe Deer"
+            }
+          ],
+          "correct": [
+            "b",
+            "c",
+            "d"
+          ],
+          "sourceImage": "1000069501.jpg"
         }
       ]
     }
   ],
-  "availableQuestionCount": 100,
-  "pendingQuestionCount": 5
+  "pendingSections": [],
+  "availableQuestionCount": 125,
+  "pendingQuestionCount": 0
 }

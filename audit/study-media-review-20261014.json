@@ -8,12 +8,12 @@
     "semanticMismatch": 0,
     "standaloneLikely": 45,
     "assemblyCrops": 53,
-    "remainingSlideOrPageLike": 1,
+    "remainingSlideOrPageLike": 0,
     "correctedSemanticMismatch": 1,
     "originalFigureRemaps": 11,
     "assemblyMontages": 3,
     "classPhotoReuse": 1,
-    "authoredCourseIllustrations": 2
+    "authoredCourseIllustrations": 3
   },
   "slideOrPageLike": [
     "mouflon",
@@ -117,7 +117,8 @@
     "Revier Roles is now a two-photo classroom-example montage from Revier slide page 30 (xrefs191/192), with only class labels; no implication these stock-model photos show actual holders of roles or all Revier officials.",
     "Drivebrief now displays original Hunting Techniques 2026 p15 Drive Hunts group photograph xref83, two hunters facing a gesturing hunter. This does not confirm a formal Jagdleiter briefing or any step-by-step safety rule.",
     "Misfire card replaces its full-slide image with a NEW, self-contained source-bound vector schematic showing the 2026 Range Safety lesson's downrange muzzle, 10-second class interval and instructor, not a photograph or universal handling protocol. Exact UTF-8 SVG Git blob checksum recorded and validated.",
-    "Shotgun Danger Distance now uses a NEW course-text-grounded original SVG pellet-dispersion illustration, not an extracted lecture PDF image. Labels the example 3mm x 100m ~300m APPROXIMATE DANGER-distance and emphatically says NOT A SAFE BOUNDARY. No numerical safe shooting range or exact hazard geometry is inferred."
+    "Shotgun Danger Distance now uses a NEW course-text-grounded original SVG pellet-dispersion illustration, not an extracted lecture PDF image. Labels the example 3mm x 100m ~300m APPROXIMATE DANGER-distance and emphatically says NOT A SAFE BOUNDARY. No numerical safe shooting range or exact hazard geometry is inferred.",
+    "Abschussplan now displays a new standalone EDUCATIONAL SVG based on the Hessian 2025 Landkreis Main-Kinzig publicly published Anlage 2b Rehwild PDF and original class material. It is explicitly NOT an official or valid form and does not claim current 2026 Excel original format. Original official PDF text was directly inspected, but screenshot failed (cache miss) and 2026 XLSX download failed. Distinguishes three-year historic Jahresstrecke from proposed future Abschussvorschlag, without fabricated quota numbers."
   ],
   "assemblyCrops": [
     "mouflon",
@@ -362,6 +363,18 @@
       "gitBlobSha1": "85314e425b7152ba428e9be0a85cc6859ae5bc03",
       "type": "newly_authored_course_distance_heuristic_vector",
       "note": "Drawn interpretation of 2020 classroom 'Ammo Travel Distance' approximation; page 50-51 per existing card, exact slide number not independently resolved from text extraction. RWS manufacturer glossary separately corroborates mm*100m danger range, not safety boundary."
+    },
+    "abschussplan": {
+      "path": "media/abschussplan-hessen-anlage2b-educational.svg",
+      "source": "Nature and animal protection feb 2019.pdf",
+      "page": null,
+      "classroomPageRange": "20, 32",
+      "gitBlobSha1": "a333ad9456c5e065a1ed6990e37676210d36a34c",
+      "type": "newly_authored_educational_planning_process_not_official_form",
+      "notOfficialForm": true,
+      "referenceFormPDF": "https://www.mkk.de/media/resources/pdf/mkk_de_1/buergerservice_1/lebenslagen_1/sicherheit_und_ordnung_1/32_kreisordnungsamt_1/jagdbehoerde/2025_4/Abschussplanung_Rehwild.pdf",
+      "officialPlanningFormsList": "https://rp-kassel.hessen.de/forsten-und-landwirtschaft/jagd",
+      "note": "Official Hessen MKK 2025 Annex 2b Rehwild PDF *text* was checked. Educative conceptual schematic only: blank fields and no quotas, NOT official current XLSX template, NOT editable planning form. Historical Streckenliste not substituted."
     }
   }
 }

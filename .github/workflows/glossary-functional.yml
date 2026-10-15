@@ -61,12 +61,14 @@ jobs:
         run: python3 scripts/overlay_misfire_course_schematic.py
       - name: Map original 2020 class shot-distance diagram
         run: python3 scripts/overlay_shotdistance_course_schematic.py
+      - name: Map documented 2025 Hessian roe-deer harvest planning diagram
+        run: python3 scripts/overlay_abschussplan_course_schematic.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
       - name: Audit all study-card image links and flag visual defects
-        run: python3 scripts/check_study_media.py
+        run: python3 scripts/check_study_media.py --strict
       - name: Publish media integrity and visual-review backlog
         if: always()
         uses: actions/upload-artifact@v4
@@ -113,12 +115,14 @@ jobs:
         run: python3 scripts/overlay_misfire_course_schematic.py
       - name: Map original 2020 class shot-distance diagram
         run: python3 scripts/overlay_shotdistance_course_schematic.py
+      - name: Map documented 2025 Hessian roe-deer harvest planning diagram
+        run: python3 scripts/overlay_abschussplan_course_schematic.py
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
       - name: Confirm assembled study image integrity
-        run: python3 scripts/check_study_media.py
+        run: python3 scripts/check_study_media.py --strict
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify glossary packaged into APK
@@ -133,7 +137,7 @@ jobs:
           APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
           test -s "$APK"
           python3 scripts/check_packaged_glossary.py "$APK"
-          python3 scripts/check_study_media.py --apk "$APK"
+          python3 scripts/check_study_media.py --apk "$APK" --strict
       - uses: actions/upload-artifact@v4
         if: always()
         with:

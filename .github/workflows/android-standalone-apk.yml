@@ -1,7 +1,7 @@
 name: Build standalone GHC Study APK
 on:
   push:
-    branches: [audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
+    branches: [audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012, feature/practice-test-2-20261015]
     paths:
       - 'app/**'
       - 'scripts/build_practice_test2.py'

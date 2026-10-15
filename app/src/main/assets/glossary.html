@@ -25,26 +25,27 @@ a:focus,input:focus,select:focus{outline:3px solid #b29b55;outline-offset:2px}
 footer{color:var(--muted);font-size:12px;margin-top:22px}
 </style></head><body>
 <header><a href="index.html" aria-label="Back to GHC Study">← GHC Study</a><strong>Jägersprache glossary</strong></header>
-<main><h1>German hunting terminology</h1><p class="hint">Search German, English, definitions, or word origins. Select a related term to jump to it. Entries sourced only as terms from the class worksheet are clearly flagged; missing definitions are not guessed.</p>
+<main><h1>German hunting terminology</h1><p class="hint">Search German, English, explanations, or inherited word-origin notes. Select a related term to jump to it. Definitions and historical word origins have separate evidence standards; unverified origins are explicitly labeled.</p>
 <label for="search">Search terminology</label><input id="search" type="search" placeholder="e.g. Schweiß, roe deer, antler" autocomplete="off" spellcheck="false">
-<div class="filters"><div><label for="status">Verification</label><select id="status"><option value="all">All terms</option><option value="defined">Defined in GHC bank</option><option value="pending">Worksheet-only terms</option></select></div><div><label for="group">Topic</label><select id="group"><option value="">All topics</option></select></div></div>
+<div class="filters"><div><label for="status">Verification</label><select id="status"><option value="all">All terms</option><option value="defined">Meaning available (source-labeled)</option><option value="pending">Meaning pending (worksheet term only)</option></select></div><div><label for="group">Topic</label><select id="group"><option value="">All topics</option></select></div></div>
 <div id="summary" class="summary" role="status" aria-live="polite"></div><div id="results"></div>
-<footer>The original GHC bank supplies 77 meanings and etymology notes. Thirty more definitions were checked against the course PDFs; 55 worksheet-only terms await verification. Word origins are not independently certified. A dictionary entry does not certify legal status, exact etymology, or historical origin; those require separate source verification.</footer>
+<footer>Meanings draw on the original GHC bank, classroom materials, historical guides, and individually labeled external references. Inherited word-origin notes are not independently verified unless an entry explicitly identifies an origin-verification source. A definition does not establish modern German hunting law or a historical poacher-code origin.</footer>
 </main><script src="glossary-data.js"></script><script>
 (function(){
 'use strict';
 var all=window.GHC_GLOSSARY||[],q=document.getElementById('search'),stat=document.getElementById('status'),group=document.getElementById('group'),area=document.getElementById('results'),summary=document.getElementById('summary');
 var byId={};all.forEach(function(x){byId[x.id]=x});
+function originVerified(x){return x.originVerification==='verified'&&typeof x.originSource==='string'&&!!x.originSource.trim()}
 function norm(s){return String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/ß/g,'ss').replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u')}
 function el(tag,klass,txt){var e=document.createElement(tag);if(klass)e.className=klass;if(txt!==undefined)e.textContent=txt;return e}
 [...new Set(all.map(function(x){return x.group}))].sort().forEach(function(g){var op=el('option','',g);op.value=g;group.appendChild(op)});
 function draw(){
 var needle=norm(q.value.trim());var matches=all.filter(function(x){return (stat.value==='all'||x.status===stat.value)&&(!group.value||x.group===group.value)&&(!needle||norm([x.term,x.english,x.explanation,x.etymology,x.group].join(' ')).includes(needle))});
-area.replaceChildren();summary.textContent=matches.length+' of '+all.length+' terms • '+all.filter(function(x){return x.status==='defined'}).length+' with existing definitions, '+all.filter(function(x){return x.status==='pending'}).length+' worksheet-only';
+area.replaceChildren();summary.textContent=matches.length+' of '+all.length+' terms • '+all.filter(function(x){return x.status==='defined'}).length+' meanings available, '+all.filter(function(x){return x.status==='pending'}).length+' meanings pending • '+all.filter(function(x){return x.etymology&&!originVerified(x)}).length+' inherited origin notes unverified';
 matches.forEach(function(x){
 var a=el('article');a.id='term-'+x.id;var head=el('div','head'),term=el('div','term',x.term),pill=el('span','pill'+(x.status==='pending'?' pending':''),x.status==='pending'?'Definition pending':x.group);head.append(term,pill);a.append(head);
 if(x.english)a.appendChild(el('p','english',x.english));a.appendChild(el('p','details',x.explanation));
-if(x.etymology){var p=el('p','details');p.append(el('strong','label','Word origin / breakdown: '),document.createTextNode(x.etymology));a.appendChild(p);}
+if(x.etymology){var verified=originVerified(x),p=el('p','details '+(verified?'origin-verified':'origin-unverified'));p.append(el('strong','label',verified?'Verified word origin: ':'Unverified inherited word-origin note: '),document.createTextNode(x.etymology));a.appendChild(p);if(verified)a.appendChild(el('p','source','Origin source: '+x.originSource));}
 a.appendChild(el('p','source',x.source));
 var refs=(x.related||[]).map(function(id){return byId[id]}).filter(Boolean);
 if(refs.length){a.appendChild(el('strong','label','Related terms'));var wrap=el('div','related');refs.forEach(function(t){var link=el('a','',t.term);link.href='#term-'+t.id;link.addEventListener('click',function(ev){if(!document.getElementById('term-'+t.id)){q.value='';stat.value='all';group.value='';draw()}});wrap.appendChild(link)});a.appendChild(wrap);}

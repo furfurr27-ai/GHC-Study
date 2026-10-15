@@ -22,9 +22,12 @@ REVIEW = {
     "status": "source_compared_key_conflict",
     "source": OFFICIAL,
     "classroom": GHC_AMMO,
+    "originalPracticePaperSource": "https://drive.google.com/file/d/1f_bWpni_W7xpReNHPHCWittNiQSBFOwX/view",
+    "originalPaperKeyVerified": True,
     "explanation": (
       "IMPORTANT LEGACY KEY CONFLICT: the original 2013 practice-test key only "
-      "marks B (climbing the high seat) and C (crossing obstacles). D (getting "
+      "marks B (climbing the high seat) and C (crossing obstacles) in the " 
+      "actual 19 December 2013 paper Answer Key (Section 3, Question 2). D (getting "
       "into a car) ALSO requires unloading under current German hunting "
       "accident-prevention instructions. SVLFG's VSG 4.4 explanation explicitly "
       "requires unloading before entering/exiting vehicles, during travel, "
@@ -161,7 +164,9 @@ def main():
             "classroomSource": cfg["classroom"],
             "reviewed": "2026-10-15",
             "keyPreserved": True,
-            "sourceBankKeyDisputed": cfg["status"] == "source_compared_key_conflict"
+            "sourceBankKeyDisputed": cfg["status"] == "source_compared_key_conflict",
+            "originalPracticePaperSource": cfg.get("originalPracticePaperSource"),
+            "originalPaperKeyVerified": cfg.get("originalPaperKeyVerified", False)
         }
         flags = q.setdefault("flags", [])
         if cfg["flag"] not in flags:

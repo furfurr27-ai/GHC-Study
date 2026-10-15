@@ -8,7 +8,13 @@ async function main() {
   const vc = new VirtualConsole();
   vc.on('jsdomError', e => errors.push(String(e)));
   vc.on('error', e => errors.push(String(e)));
-  const html = fs.readFileSync(path.resolve('app/src/main/assets/index.html'), 'utf8');
+  // Add a test-only hook *inside* the app's existing closure. The actual
+  // production source is never edited; this avoids unpredictable quiz selection.
+  const originalHtml = fs.readFileSync(path.resolve('app/src/main/assets/index.html'), 'utf8');
+  const anchor = 'function renderQuestion(){';
+  assert.equal(originalHtml.split(anchor).length, 2, 'expected one quiz renderer');
+  const html = originalHtml.replace(anchor,
+    "window.__ghcTestRenderExactQuestion=function(id){current=window.GHC_QUESTIONS.find(q=>q.id===id);if(!current)throw Error('question ID missing');renderQuestion()};\n"+anchor);
   const dom = new JSDOM(html, {
     url: 'https://ghc.local/', runScripts: 'dangerously', resources: 'usable',
     pretendToBeVisual: true, virtualConsole: vc,
@@ -29,7 +35,7 @@ async function main() {
   assert(disputed.preAnswerWarning.includes('Legacy key under factual dispute'));
   // Force the actual app renderer to display the disputed question without
   // requiring random selection or altering the offline progress state.
-  w.eval("current=window.GHC_QUESTIONS.find(q=>q.id==='P2013-S3-Q02');renderQuestion()");
+  w.__ghcTestRenderExactQuestion('P2013-S3-Q02');
   const note = w.document.querySelector('.question .alert[role="note"]');
   assert(note, 'source-dispute alert must be visible before grading');
   assert(!note.classList.contains('hidden'));
@@ -37,7 +43,7 @@ async function main() {
   assert(!note.textContent.includes('Getting into a car'), 'do not leak the hidden keyed option');
   assert(!w.document.querySelector('#checkBtn').classList.contains('hidden'), 'normal answer control must still exist');
   assert(w.document.querySelector('#feedback').textContent.trim() === '', 'notice comes before grading');
-  w.eval("current=window.GHC_QUESTIONS.find(q=>q.id==='H2023-D17-Q018');renderQuestion()");
+  w.__ghcTestRenderExactQuestion('H2023-D17-Q018');
   assert(!w.document.querySelector('.question .alert[role="note"]'), 'non-disputed question must not receive conflict warning');
   assert.equal(errors.length, 0, 'runtime errors: ' + errors.join(' | '));
   w.close();

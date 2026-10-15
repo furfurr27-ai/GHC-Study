@@ -18,8 +18,15 @@ function click(w,selector){
  const w=dom.window;
  await new Promise(resolve=>{if(w.document.readyState==='complete')resolve();else w.addEventListener('load',resolve,{once:true})});
  assert.match(w.document.body.textContent,/Practice Test 2/);
- assert.match(w.document.querySelector('#statusLine').textContent,/50 of 125 questions/);
- assert.equal(w.document.querySelectorAll('#parts .part').length,2);
+ assert.match(w.document.querySelector('#statusLine').textContent,/105 of 125 questions captured/);
+ assert.match(w.document.querySelector('#statusLine').textContent,/100 available to quiz/);
+ assert.match(w.document.querySelector('#statusLine').textContent,/5 pending completion/);
+ assert.equal(w.document.querySelectorAll('#parts .part').length,4);
+ assert(!w.document.querySelector('[data-part="5"]'),'Do not expose incomplete part');
+ const data=JSON.parse(w.document.querySelector('#pt2-data').textContent);
+ assert.equal(data.pendingSections[0].questions.length,5);
+ assert.equal(data.sections[2].questions.length,25);
+ assert.equal(data.sections[3].questions.length,25);
  assert(w.document.querySelector('#infoPanel').hidden);
  click(w,'#infoToggle');
  assert(!w.document.querySelector('#infoPanel').hidden);
@@ -53,8 +60,30 @@ function click(w,selector){
  click(w,'#next');
  assert.match(w.document.querySelector('#resultPanel').textContent,/Part 2/);
  assert.match(w.document.querySelector('#resultPanel').textContent,/2 \/ 25/);
+ // Part III Q3 is A/B/D from yellow highlights, not handwritten corrections.
+ click(w,'#parts [data-part="3"]');
+ assert.match(w.document.querySelector('#stem').textContent,/sells his .308W rifle/);
+ click(w,'#choices input[value=b]');click(w,'#check');
+ assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
+ click(w,'#next');click(w,'#next');
+ assert.match(w.document.querySelector('#stem').textContent,/6,5x57R/);
+ for(const id of ['a','b','d'])click(w,'#choices input[value='+id+']');
+ click(w,'#check');
+ assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
+ // Part III Q4 has a historical answer key which should remain exactly A+B.
+ click(w,'#next');
+ assert.match(w.document.querySelector('#stem').textContent,/self defense/);
+ for(const id of ['a','b'])click(w,'#choices input[value='+id+']');
+ click(w,'#check');assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
+ // Part IV Q2 has two highlighted answers.
+ click(w,'#parts [data-part="4"]');
+ assert.match(w.document.querySelector('#stem').textContent,/firearm registration forms/);
+ click(w,'#next');
+ assert.match(w.document.querySelector('#stem').textContent,/hunting year/);
+ for(const id of ['c','d'])click(w,'#choices input[value='+id+']');
+ click(w,'#check');assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
  const state=JSON.parse(w.localStorage.getItem('GHC_PT2_PARTIAL_PROGRESS_V1'));
- assert.equal(Object.keys(state).length,4,'Separate progress saves four answered questions');
+ assert.equal(Object.keys(state).length,8,'Separate progress saves eight answered questions');
  dom.window.close();
  // Build-time Quiz Mode tile attaches without modifying original quiz source pool.
  const idx=fs.readFileSync(path.join(assets,'index.html'),'utf8');
@@ -66,5 +95,5 @@ function click(w,selector){
  assert.equal(menu.window.document.querySelector('#ghc-practice-test2-entry').getAttribute('href'),'practice-test-2.html');
  menu.window.close();
  assert.equal(errors.length,0,'Browser console errors: '+errors.join('; '));
- console.log('PASS: Practice Test 2 info bubble, Quiz Mode entry, 50-question sections, highlighted answer checks, matching, progress and results');
+ console.log('PASS: Practice Test 2 info bubble, Quiz Mode entry, 100-question preview with five pending, highlighted answer checks, matching, progress and results');
 })().catch(e=>{console.error(e);process.exitCode=1});

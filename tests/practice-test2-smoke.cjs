@@ -18,15 +18,16 @@ function click(w,selector){
  const w=dom.window;
  await new Promise(resolve=>{if(w.document.readyState==='complete')resolve();else w.addEventListener('load',resolve,{once:true})});
  assert.match(w.document.body.textContent,/Practice Test 2/);
- assert.match(w.document.querySelector('#statusLine').textContent,/105 of 125 questions captured/);
- assert.match(w.document.querySelector('#statusLine').textContent,/100 available to quiz/);
- assert.match(w.document.querySelector('#statusLine').textContent,/5 pending completion/);
- assert.equal(w.document.querySelectorAll('#parts .part').length,4);
- assert(!w.document.querySelector('[data-part="5"]'),'Do not expose incomplete part');
+ assert.match(w.document.querySelector('#statusLine').textContent,/125 of 125 questions captured/);
+ assert.match(w.document.querySelector('#statusLine').textContent,/125 available to quiz/);
+ assert.match(w.document.querySelector('#statusLine').textContent,/5 of 5 parts complete/);
+ assert.equal(w.document.querySelectorAll('#parts .part').length,5);
+ assert(w.document.querySelector('[data-part="5"]'),'Complete Part V visible');
  const data=JSON.parse(w.document.querySelector('#pt2-data').textContent);
- assert.equal(data.pendingSections[0].questions.length,5);
- assert.equal(data.sections[2].questions.length,25);
- assert.equal(data.sections[3].questions.length,25);
+ assert.equal(data.sections.length,5);
+ assert.equal(data.sections[4].questions.length,25);
+ assert.deepEqual(data.pendingSections,[]);
+ assert.equal(data.sections.reduce((n,s)=>n+s.questions.length,0),125);
  assert(w.document.querySelector('#infoPanel').hidden);
  click(w,'#infoToggle');
  assert(!w.document.querySelector('#infoPanel').hidden);
@@ -82,8 +83,19 @@ function click(w,selector){
  assert.match(w.document.querySelector('#stem').textContent,/hunting year/);
  for(const id of ['c','d'])click(w,'#choices input[value='+id+']');
  click(w,'#check');assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
+ // Part V Q20 must follow the historical highlighted C, not a student pen mark.
+ click(w,'#parts [data-part="5"]');
+ assert.match(w.document.querySelector('#stem').textContent,/liver is of a light yellow color/);
+ for(let n=1;n<20;n++)click(w,'#next');
+ assert.match(w.document.querySelector('#stem').textContent,/punctured the stomach/);
+ click(w,'#choices input[value=c]');click(w,'#check');
+ assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
+ for(let n=20;n<25;n++)click(w,'#next');
+ assert.match(w.document.querySelector('#stem').textContent,/Coccidiose/);
+ for(const id of ['b','c','d'])click(w,'#choices input[value='+id+']');
+ click(w,'#check');assert.match(w.document.querySelector('#feedback').textContent,/Correct/);
  const state=JSON.parse(w.localStorage.getItem('GHC_PT2_PARTIAL_PROGRESS_V1'));
- assert.equal(Object.keys(state).length,8,'Separate progress saves eight answered questions');
+ assert.equal(Object.keys(state).length,10,'Separate progress saves ten answered questions');
  dom.window.close();
  // Build-time Quiz Mode tile attaches without modifying original quiz source pool.
  const idx=fs.readFileSync(path.join(assets,'index.html'),'utf8');
@@ -95,5 +107,5 @@ function click(w,selector){
  assert.equal(menu.window.document.querySelector('#ghc-practice-test2-entry').getAttribute('href'),'practice-test-2.html');
  menu.window.close();
  assert.equal(errors.length,0,'Browser console errors: '+errors.join('; '));
- console.log('PASS: Practice Test 2 info bubble, Quiz Mode entry, 100-question preview with five pending, highlighted answer checks, matching, progress and results');
+ console.log('PASS: Practice Test 2 info bubble, Quiz Mode entry, 125 completed questions and two separate practice modes, highlighted answer checks, matching, progress and results');
 })().catch(e=>{console.error(e);process.exitCode=1});

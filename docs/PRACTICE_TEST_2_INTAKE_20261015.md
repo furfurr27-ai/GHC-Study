@@ -1,5 +1,27 @@
 # Practice Test 2 — photographed 2021/22 U.S. Forces exam intake (2026-10-15)
 
+## Final checkpoint: five of five parts received
+
+**Status:** The original 125-question photographed practice paper is fully transcribed (25 questions in each of five sections). The user supplied 24 total images: the cover plus 23 question pages, across three uploads. The final four photographs complete Part V Q6–25. All choices remain keyed solely from yellow highlights. The historical document's exact year remains unverified.
+
+Part III — Weapons Law, Firearms and Handling: `app/src/main/assets/practice-test-2-part3.json`, Q1–25; source photos `1000069487.jpg` through `1000069491.jpg`.
+
+Part IV — Nature and Animal Protection, Jagdschutz, Ethics, U.S. Forces Procedures: `practice-test-2-part4.json`, Q1–25; sources `1000069492.jpg` through `1000069495.jpg`.
+
+Part V — Diseases, Handling of Meat, Hygiene: `practice-test-2-part5.json`, Q1–25; source photos `1000069496.jpg` (Q1–5), `1000069497.jpg` (Q6–11), `1000069499.jpg` (Q12–17), `1000069500.jpg` (Q18–22), `1000069501.jpg` (Q23–25).
+
+**Part III answers Q1–25**: B, D, ABD, AB, B, A, ACDE, C, B, A, A, B, C, A, C, ACE, A, C, AB, B, C, B, A, BD, ABDEF.
+
+**Part IV answers Q1–25**: C, CD, B, B, B, A, B, A, AC, A, A, C, B, C, B, A, B, B, C, ABC, B, B, A, A, B.
+
+**Part V answers Q1–25**: B, ABC, CDE, ABE, ACE, B, A, AB, B, ABD, A, D, ABE, BD, A, A, B, ABD, A, C, A, ABC, E, CD, BCD.
+
+**Important highlighted/pen disagreements:** Part V Q6 **B** (not circled C), Q9 **B** (not circled C), Q16 **A** (not circled B), Q18 **ABD** (not E), Q19 **A** (not circled C), Q20 **C** (not circled B), Q24 **CD**, Q25 **BCD**. The highlighted historical keys for Part III Q4 and Part IV Q16 are retained as source evidence, **not current German legal instruction**. Part V Q20's printed key about washing digestive contamination from a carcass is a source transcription, **not independently validated food-safety guidance**.
+
+The active development branch `feature/slide-audit-glossary-tests-20261012` now stores five per-part JSON files, and `scripts/integrate_practice_test_2.py` assembles **125 unique Practice Test 2 records** in the native Quiz Mode source without rewriting the original 867-question exam pool. `tests/practice-test-2-smoke.cjs` checks all five-part availability, multi-select, matching and progress preservation. The native quiz has instant feedback and no 150-minute countdown yet. An isolated full-exam controller with countdown, score by part, timeout and persistence was separately developed and tested on `feature/practice-test-2-20261015`; that branch was **not merged** because concurrent development created a different native Quiz Mode architecture. Do not blindly merge branches or duplicate the Practice Test 2 selector.
+
+This appendix supersedes the initial partial-intake counts and instructions below.
+
 ## Source fidelity and paper rules
 
 - User provided ten images: one U.S. Forces Hunting Examination cover and nine subsequent question pages.
@@ -36,7 +58,7 @@ Part II (Hunting Dogs / Procedures):
 - GitHub Actions functional **smoke job** in run [#38800047286](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38800047286) succeeded with new Practice Test 2 DOM test. Whole workflow includes Android build/emulator and must be assessed separately before claiming full-device verification.
 - Physical Samsung Galaxy S23 Ultra installation/upgrade is not yet tested.
 
-## Next photo batch procedure
+## Archived next-batch instructions (superseded)
 
 1. Inspect new uploads one photographed page at a time; preserve every question, all options and all *yellow* correct selections. Validate multiple correct selections, all-of-the-above choices, and any novel response formats.
 2. Add Part III as `app/src/main/assets/practice-test-2-part3.json` with stable IDs `P2022-S3-Q01..Q25` and matching metadata and `answerBasis="yellow-highlight-only"`; subsequent batches use `part4.json` and `part5.json`.

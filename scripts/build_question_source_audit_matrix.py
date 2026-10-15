@@ -87,7 +87,7 @@ def main():
         risks[impact] += 1
         statuses[state] += 1
         preexisting_links["existing_classroom_crossrefs" if attached else "missing_classroom_crossrefs"] += 1
-    # Require exactly twenty-four source-reviewed IDs, never infer from inherited metadata.
+    # Require exactly twenty-six source-reviewed IDs, never infer from inherited metadata.
     # remain explicitly unaudited regardless of prior inherited classroom tags.
     expected_reviewed = {
         "P2013-S4-Q05", "P2013-S4-Q08", "H2023-D04-Q137",
@@ -97,23 +97,24 @@ def main():
         "P2013-S3-Q08", "P2013-S3-Q11",
         "P2013-S3-Q05", "P2013-S3-Q09", "P2013-S3-Q10", "P2013-S3-Q13",
         "P2013-S3-Q07", "P2013-S3-Q14", "P2013-S3-Q15", "P2013-S3-Q16",
-        "P2013-S3-Q18", "P2013-S3-Q19"
+        "P2013-S3-Q18", "P2013-S3-Q19",
+        "P2013-S3-Q06", "P2013-S3-Q20"
     }
     reviewed = {x["id"] for x in records if x["factualAuditStatus"] != "not_individually_factual_audited"}
     if reviewed != expected_reviewed:
         raise AssertionError("Individually reviewed IDs drifted; require source evidence for every new reviewed record")
-    if (statuses["source_compared_explanation_qualified"] != 17
-        or statuses["source_compared_key_conflict"] != 7
-        or statuses["not_individually_factual_audited"] != 843):
-        raise AssertionError("Expected 17 qualified, 7 dated-paper conflicts, 843 not audited")
+    if (statuses["source_compared_explanation_qualified"] != 18
+        or statuses["source_compared_key_conflict"] != 8
+        or statuses["not_individually_factual_audited"] != 841):
+        raise AssertionError("Expected 18 qualified, 8 dated-paper conflicts, 841 not audited")
     summary = {
         "questionCount": len(questions),
         "reviewStatuses": dict(statuses),
         "sourceGroups": dict(groups),
         "reviewPriority": dict(risks),
         "preExistingClassroomLinkAvailabilityNotProofOfAudit": dict(preexisting_links),
-        "whatCountsAsVerified": "17 individually source-compared qualified explanations; 7 historical and/or scoped-law questions NOT certified as universal current-law rules; all 867 original answer letters retained",
-        "whatRemains": "843 questions await individual source comparison. Historical S3 Q02 vehicle entry, Q03 transport, Q09 pre-purchase WBK, Q11 semi-auto capacity, Q13 mandatory warning shot, Q15 proof testing, and Q19 U.S. Forces AR-15 blanket import are explicitly flagged; original Q19 answer does not grant or categorically deny current individual import rights. All historic keys retained, seven notices before grading; physical Samsung testing outstanding.",
+        "whatCountsAsVerified": "18 individually source-compared qualified explanations; 8 original-paper key/legal-scope items are not certified as universally accurate 2026 rules; all 867 historical answer letters retained",
+        "whatRemains": "841 questions await individual source comparison. Dated 2013 S3 Q02 vehicle entry, Q03 transport, Q09 prior WBK, Q11 semi-auto, Q13 warning shot, Q15 proof, Q19 U.S. Forces AR-15 import, and Q20 Austria hunting/travel checklist are flagged; original answers preserved and not universal current legal rules. Eight notices before grading; real S23 Ultra tests outstanding.",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"summary": summary, "questions": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

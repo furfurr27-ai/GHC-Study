@@ -63,12 +63,16 @@ jobs:
         run: python3 scripts/overlay_shotdistance_course_schematic.py
       - name: Map documented 2025 Hessian roe-deer harvest planning diagram
         run: python3 scripts/overlay_abschussplan_course_schematic.py
+      - name: Qualify three legacy quiz explanations against original course and Hessian guidance
+        run: python3 scripts/qualify_question_source_caveats.py
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
       - name: Audit all study-card image links and flag visual defects
         run: python3 scripts/check_study_media.py --strict
+      - name: Verify three source-audited question caveats
+        run: python3 scripts/check_question_source_caveats.py
       - name: Publish media integrity and visual-review backlog
         if: always()
         uses: actions/upload-artifact@v4
@@ -117,12 +121,16 @@ jobs:
         run: python3 scripts/overlay_shotdistance_course_schematic.py
       - name: Map documented 2025 Hessian roe-deer harvest planning diagram
         run: python3 scripts/overlay_abschussplan_course_schematic.py
+      - name: Qualify three legacy quiz explanations against original course and Hessian guidance
+        run: python3 scripts/qualify_question_source_caveats.py
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py
           python3 scripts/test_vocabulary_assembly.py
       - name: Confirm assembled study image integrity
         run: python3 scripts/check_study_media.py --strict
+      - name: Verify three source-audited question caveats
+        run: python3 scripts/check_question_source_caveats.py
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify glossary packaged into APK
@@ -138,6 +146,7 @@ jobs:
           test -s "$APK"
           python3 scripts/check_packaged_glossary.py "$APK"
           python3 scripts/check_study_media.py --apk "$APK" --strict
+          python3 scripts/check_question_source_caveats.py --apk "$APK"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

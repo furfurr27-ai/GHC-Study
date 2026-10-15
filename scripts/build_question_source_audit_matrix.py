@@ -38,7 +38,17 @@ def main():
     preexisting_links = Counter()
     for q in questions:
         review = q.get("sourceReview") or {}
-        state = "source_compared_explanation_qualified" if review.get("status") == "qualified_after_source_comparison" else "not_individually_factual_audited"
+        declared = review.get("status")
+        if declared in {"qualified_after_source_comparison", "source_compared_explanation_qualified"}:
+            state = "source_compared_explanation_qualified"
+        elif declared == "source_compared_key_conflict":
+            state = "source_compared_key_conflict"
+        else:
+            state = "not_individually_factual_audited"
+        if state == "source_compared_key_conflict" and not (
+            review.get("sourceBankKeyDisputed") is True and q.get("preAnswerWarning")
+        ):
+            raise AssertionError("Disputed answer must have pre-answer warning: " + q["id"])
         if state != "not_individually_factual_audited" and (review.get("keyPreserved") is not True or not review.get("checkedSource")):
             raise AssertionError("Audited claim lacks checkable source/immutable key proof: " + q["id"])
         topic = " ".join(map(str, (q.get("sectionTitle", ""), q.get("topic", "")))).lower()
@@ -61,7 +71,11 @@ def main():
             "preExistingClassroomSupportLabelUnverified": q.get("classroomSupport"),
             "factualAuditStatus": state,
             "actualReviewedSource": review.get("checkedSource") if state != "not_individually_factual_audited" else None,
-            "sourceReviewType": "targeted_explanation_qualification_only" if state != "not_individually_factual_audited" else None,
+            "sourceReviewType": ("original_key_conflict_preserved_and_qualified" if state == "source_compared_key_conflict"
+                                 else "targeted_explanation_qualification_only" if state != "not_individually_factual_audited" else None),
+            "classroomSourceActuallyChecked": review.get("classroomSource") if state != "not_individually_factual_audited" else None,
+            "keyDisputeUnresolved": state == "source_compared_key_conflict",
+            "userWarnedBeforeScoring": bool(q.get("preAnswerWarning")) if state == "source_compared_key_conflict" else False,
             "reviewPriority": impact,
         }
         records.append(rec)
@@ -69,20 +83,33 @@ def main():
         risks[impact] += 1
         statuses[state] += 1
         preexisting_links["existing_classroom_crossrefs" if attached else "missing_classroom_crossrefs"] += 1
-    if statuses["source_compared_explanation_qualified"] != 3:
-        raise AssertionError("Historical source-comparison review count changed; adjust only with new evidence")
+    # Require the precise nine reviewed IDs, not just totals. The rest must
+    # remain explicitly unaudited regardless of prior inherited classroom tags.
+    expected_reviewed = {
+        "P2013-S4-Q05", "P2013-S4-Q08", "H2023-D04-Q137",
+        "P2013-S3-Q02", "H2023-D08-Q052", "H2023-D08-Q047",
+        "H2023-D17-Q008", "H2023-D17-Q018", "H2023-D08-Q024"
+    }
+    reviewed = {x["id"] for x in records if x["factualAuditStatus"] != "not_individually_factual_audited"}
+    if reviewed != expected_reviewed:
+        raise AssertionError("Individually reviewed IDs drifted; require source evidence for every new reviewed record")
+    if (statuses["source_compared_explanation_qualified"] != 8
+        or statuses["source_compared_key_conflict"] != 1
+        or statuses["not_individually_factual_audited"] != 858):
+        raise AssertionError("Expected 8 qualified, 1 disputed and 858 unaudited")
     summary = {
         "questionCount": len(questions),
         "reviewStatuses": dict(statuses),
         "sourceGroups": dict(groups),
         "reviewPriority": dict(risks),
         "preExistingClassroomLinkAvailabilityNotProofOfAudit": dict(preexisting_links),
-        "whatCountsAsVerified": "Only individually source-compared explanatory entries with original source and preserved exam keys; no bulk source or factual certification",
-        "whatRemains": "864 more individual factual checks, plus current-law checks for dated original sources and device acceptance",
+        "whatCountsAsVerified": "8 individually source-compared, qualified explanations; 1 original answer-key conflict identified but deliberately NOT treated as verified correct; all historic original keys preserved",
+        "whatRemains": "858 questions still await individual source comparison; disputed P2013-S3-Q02 requires original practice-test key adjudication and must not be used as real-world safety guidance",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"summary": summary, "questions": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Source audit:", len(questions), "question IDs;", statuses["source_compared_explanation_qualified"], "individually qualified;", statuses["not_individually_factual_audited"], "not individually audited")
+    print("Source audit:", len(questions), "question IDs;", statuses["source_compared_explanation_qualified"], "individually qualified;",
+          statuses["source_compared_key_conflict"], "legacy key conflicts;", statuses["not_individually_factual_audited"], "not individually audited")
     print("Review priority:", dict(risks), "; pre-existing classroom links (not proof):", dict(preexisting_links))
     print("PASS: generated transparent", OUTPUT)
 

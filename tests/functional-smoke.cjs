@@ -131,6 +131,17 @@ for(const [term,meaning] of [['Wechselwild','Transient game moving between hunti
 assert(g.GHC_GLOSSARY.find(x=>x.term==='Wechselwild').related.includes('x160'),'Wechselwild cross-references Wildwechsel');
 assert(g.GHC_GLOSSARY.find(x=>x.term==='Wildwechsel').related.includes('x156'),'Wildwechsel cross-references Wechselwild');
 search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
+const inheritedOrigins=Array.from(g.GHC_GLOSSARY).filter(x=>typeof x.etymology==='string'&&x.etymology.trim().length>0);
+assert.equal(inheritedOrigins.length,77,'exactly 77 inherited origin/breakdown notes must remain in data');
+assert(inheritedOrigins.every(x=>x.id.startsWith('v')&&!x.originVerification),'inherited etymologies may not be silently marked verified');
+assert.equal(g.document.querySelectorAll('article .origin-unverified').length,77,'unverified word origins must be labeled individually in the rendered glossary');
+assert.equal(g.document.querySelectorAll('article .origin-verified').length,0,'no origin is independently verified yet');
+assert.match(g.document.querySelector('#summary').textContent,/160 meanings available, 2 meanings pending.*77 inherited origin notes unverified/,'live source-status counts must not be stale');
+assert(!g.document.querySelector('footer').textContent.includes('55 worksheet-only'),'historical footer counts must not linger');
+search.value='Schweiß';search.dispatchEvent(new g.Event('input',{bubbles:true}));
+const bloodTerm=Array.from(g.document.querySelectorAll('article')).find(x=>x.querySelector('.term')?.textContent==='Schweiß');
+assert(bloodTerm&&bloodTerm.querySelector('.origin-unverified')?.textContent.includes('secret-code origin is not established'),'Schweiß etymology must remain qualified as unverified');
+search.value='';search.dispatchEvent(new g.Event('input',{bubbles:true}));
 assert(g.document.querySelectorAll('.related a').length>0,'cross-links rendered');
 assert.equal(b.errors.length,0,'glossary script errors: '+b.errors.join(' | '));b.dom.window.close();
 console.log('PASS app: quiz launch/answer, categories/cards/back, reference/reset, offline glossary search/filter/links, persistent data totals');

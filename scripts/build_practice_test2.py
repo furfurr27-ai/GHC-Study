@@ -48,9 +48,36 @@ def validate(data):
                     assert len(q["correct"]) == 1
                 else:
                     assert q["kind"] == "multiple_choice_multiple" and len(q["correct"]) >= 2
+    available = len(ids)
+    assert available == data.get("availableQuestionCount", available)
+    pending = data.get("pendingSections", [])
+    assert len(pending) <= 1, "Only one incomplete part may be staged"
+    pending_count = 0
+    if pending:
+        assert not data["isComplete"], "Completed test cannot retain pending questions"
+        next_part = len(data["sections"]) + 1
+        assert pending[0]["part"] == next_part
+        assert 0 < len(pending[0]["questions"]) < 25
+        for n, q in enumerate(pending[0]["questions"], 1):
+            assert q["number"] == n
+            assert q["id"] == f"PT2-P{next_part}-Q{n:02d}"
+            assert q["id"] not in ids
+            ids.add(q["id"])
+            assert q["stem"].strip() and q["sourceImage"].endswith(".jpg")
+            assert q["kind"] in ("multiple_choice_single", "multiple_choice_multiple")
+            options = [x["id"] for x in q["choices"]]
+            assert len(options) == len(set(options)) >= 2
+            assert q["correct"] and set(q["correct"]) <= set(options)
+            if q["kind"] == "multiple_choice_single":
+                assert len(q["correct"]) == 1
+            else:
+                assert len(q["correct"]) >= 2
+            pending_count += 1
+    assert pending_count == data.get("pendingQuestionCount", 0)
     assert len(ids) == data["receivedQuestionCount"], "Count in data is stale"
+    assert available + pending_count == data["receivedQuestionCount"]
     if data["isComplete"]:
-        assert len(ids) == data["expectedQuestionCount"]
+        assert len(data["sections"]) == 5 and len(ids) == data["expectedQuestionCount"]
     return len(ids)
 
 
@@ -75,7 +102,7 @@ def build():
 </style>
 <script>
 (function(){
-var html='<strong>Practice Test 2 →</strong><small>Historical U.S. Forces exam · QUESTION_COUNT / 125 captured · Continue studying Parts I–II</small>';
+var html='<strong>Practice Test 2 →</strong><small>Historical U.S. Forces exam · QUESTION_COUNT / 125 captured · Study available sections</small>';
 function install(){
 var root=document.querySelector('#app');
 if(!root)return;
@@ -94,8 +121,9 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 """.replace("QUESTION_COUNT", str(count))
         html = html.replace("</body>", menu + "</body>", 1)
         INDEX.write_text(html, encoding="utf-8")
-    print("PASS: Practice Test 2:", count, "questions,",
-          len(data["sections"]), "parts; packaged entry and local quiz page assembled")
+    print("PASS: Practice Test 2:", count, "transcribed,",
+          data.get("availableQuestionCount", count), "playable,", data.get("pendingQuestionCount", 0),
+          "pending; packaged entry and local quiz page assembled")
 
 
 if __name__ == "__main__":

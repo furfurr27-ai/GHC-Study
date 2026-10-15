@@ -77,6 +77,8 @@ def main():
             "keyDisputeUnresolved": state == "source_compared_key_conflict",
             "original2013PaperAnswerKeyConfirmed": review.get("originalPaperKeyVerified") is True if state == "source_compared_key_conflict" else None,
             "originalPracticePaperSource": review.get("originalPracticePaperSource") if state == "source_compared_key_conflict" else None,
+            "preservedOriginalPaperKey": q["correct"] if state == "source_compared_key_conflict" else None,
+            "separatelyAcceptedSafetyAnswer": q.get("safetyAcceptedCorrect") if state == "source_compared_key_conflict" else None,
             "userWarnedBeforeScoring": bool(q.get("preAnswerWarning")) if state == "source_compared_key_conflict" else False,
             "reviewPriority": impact,
         }
@@ -106,7 +108,7 @@ def main():
         "reviewPriority": dict(risks),
         "preExistingClassroomLinkAvailabilityNotProofOfAudit": dict(preexisting_links),
         "whatCountsAsVerified": "8 individually source-compared, qualified explanations; 1 original answer-key conflict identified but deliberately NOT treated as verified correct; all historic original keys preserved",
-        "whatRemains": "858 questions still await individual source comparison; P2013-S3-Q02 original Dec 2013 practice-test PDF key has been directly verified as B/C but omits car unloading required by SVLFG; keep original key for provenance and treat as erroneous for real-world safety",
+        "whatRemains": "858 questions await individual source comparison. P2013-S3-Q02 original 2013 source-PDF key B/C omits vehicle unloading required by SVLFG; preserve archival key while separately accepting B/C/D in quiz scoring and warning the learner before answering. Hardware testing remains pending.",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"summary": summary, "questions": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

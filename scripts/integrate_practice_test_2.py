@@ -158,8 +158,9 @@ function bindPractice2Matching(){
                   "+practiceSections+'</div></details>'+'<details class=\"reset-group\"><summary>Practice Test 2</summary><div class=\"reset-list\">'+resetChoiceButton('practice2-all','All Practice Test 2',PRACTICE2_QS.length+' questions')+practice2Sections+'</div></details>' +focusedGroup")
     text = change(text, "else if(kind==='focused-branch'){list=FOCUSED_QS[branch]",
                   "else if(kind==='practice2-all'){list=PRACTICE2_QS;label='all Practice Test 2 progress'}else if(kind==='practice2-section'){var p2n=parseInt(section,10);list=PRACTICE2_SECTIONS[p2n]||[];label='Practice Test 2 Part '+p2n}else if(kind==='focused-branch'){list=FOCUSED_QS[branch]")
-    text = change(text, "Practice Test + Direct + Related + Jägersprache1 · ",
-                  "Practice Test + Practice Test 2 + Direct + Related + Jägersprache1 · ")
+    # Descriptive copy is noncritical and may change with preceding UI overlays.
+    text = text.replace("Practice Test + Direct + Related + Jägersprache1 · ",
+                        "Practice Test + Practice Test 2 + Direct + Related + Jägersprache1 · ", 1)
     # Keep correct legacy count descriptions and existing GHC_QUESTIONS untouched.
     text = change(text, "Quiz Mode lets you work the 100-question Practice Test, 767 GHC Focused",
                   "Quiz Mode lets you work the 100-question Practice Test, '+PRACTICE2_QS.length+' Practice Test 2 questions, 767 GHC Focused")

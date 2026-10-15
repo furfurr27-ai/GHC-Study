@@ -81,8 +81,8 @@ def main():
                   "var SOURCE_META={\n practice2022:{label:'Practice Test 2',short:'Practice 2',count:PRACTICE2_QS.length,desc:'Photo-based U.S. Forces practice paper, 50 of expected 125 questions'},\n practice2013:")
     text = change(text, "return v==='practice2013'||v==='classroomRelevant'||v==='vocabulary'",
                   "return v==='practice2013'||v==='practice2022'||v==='classroomRelevant'||v==='vocabulary'")
-    text = change(text, ":FOCUSED_QS[focusSupport()]:PRACTICE_QS)}",
-                  ":FOCUSED_QS[focusSupport()]:(sourceMode()==='practice2022'?PRACTICE2_QS:PRACTICE_QS))}")
+    text = change(text, "FOCUSED_QS[focusSupport()]:PRACTICE_QS)}",
+                  "FOCUSED_QS[focusSupport()]:(sourceMode()==='practice2022'?PRACTICE2_QS:PRACTICE_QS))}")
     text = change(text, "key==='classroomRelevant'?FOCUSED_ALL_QS:PRACTICE_QS))}",
                   "key==='classroomRelevant'?FOCUSED_ALL_QS:(key==='practice2022'?PRACTICE2_QS:PRACTICE_QS)))}")
     text = change(text, "var pm=sourceStats('practice2013'),cm=sourceStats('classroomRelevant'),vm=sourceStats('vocabulary'),sel=sourceMode();",

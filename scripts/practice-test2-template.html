@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Practice Test 2 — GHC Study</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#111b18;color:#f2eee3}
+*{box-sizing:border-box}body{margin:0;background:#111b18;color:#f2eee3;min-height:100vh;line-height:1.5}
+main{max-width:770px;margin:0 auto;padding:20px 18px 100px}
+a{color:#d8d5ad}a.back{display:inline-flex;gap:8px;align-items:center;margin-bottom:16px;text-decoration:none;font-weight:650}
+header{display:flex;align-items:flex-start;gap:14px;justify-content:space-between}
+h1{margin:0;font-size:1.65rem;letter-spacing:-.03em}h2{font-size:1.15rem}p{margin:8px 0}
+.muted{color:#b5bcb2}.kicker{color:#d4cba0;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;font-weight:700}
+.sub{font-size:.93rem}.info{background:#26382e;border:1px solid #586d5d;border-radius:50%;color:#fff;font-size:1rem;min-width:42px;min-height:42px;font-weight:750;cursor:pointer}
+.panel{border:1px solid #53675a;background:#182720;border-radius:15px;padding:18px;margin-top:17px}
+.panel[hidden],#questionPanel[hidden],#resultPanel[hidden]{display:none}
+button,select{font:inherit}button{min-height:44px;cursor:pointer}
+.parts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:18px 0}
+.part{border:1px solid #53675a;border-radius:12px;background:#1b2b23;color:#f2eee3;padding:14px;text-align:left}
+.part.active{outline:2px solid #e7d6a2;background:#344638}.part small{display:block;color:#b5bcb2;margin-top:6px}
+.status{font-size:.86rem;color:#e6d4a9}
+.questionTop{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-bottom:14px}
+.progress{height:7px;border-radius:5px;background:#35483d;overflow:hidden}.progress>span{height:100%;display:block;background:#d2c397;transition:width .15s}
+.choice{display:flex;gap:12px;align-items:flex-start;background:#23332a;border:1px solid #465d4e;border-radius:11px;padding:13px;margin:9px 0;cursor:pointer}
+.choice:has(input:checked){background:#354c3b;border-color:#d2c397}
+.choice input{width:20px;height:20px;accent-color:#d2c397;flex-shrink:0;margin-top:2px}
+.question{font-size:1.12rem;font-weight:700;margin-top:14px}
+.letter{font-weight:750;color:#d5c99e}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:19px}
+.btn{border:1px solid #6c806e;background:#263a2e;color:#fff;border-radius:9px;padding:11px 15px}
+.btn.primary{background:#d5c99e;border-color:#d5c99e;color:#162019;font-weight:750}
+.btn:disabled{opacity:.42;cursor:not-allowed}
+.feedback{padding:12px;border-radius:9px;margin-top:15px;border:1px solid #768d71}
+.feedback.good{background:#244633}.feedback.bad{background:#4b3030;border-color:#a57777}
+select{background:#23332a;color:#fff;border:1px solid #789080;border-radius:8px;padding:9px;max-width:100%;min-height:44px}
+.matchRow{display:grid;grid-template-columns:minmax(130px,1fr) minmax(150px,1.2fr);gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid #334b3d}
+footer{margin-top:30px;font-size:.85rem;color:#aab4ac}
+@media (max-width:390px){.matchRow{grid-template-columns:1fr}h1{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="index.html" aria-label="Return to Quiz Mode">← Back to Quiz Mode</a>
+<header>
+<div><div class="kicker">U.S. Forces Hunting Examination</div><h1>Practice Test 2</h1><p class="muted sub" id="statusLine">Historical practice paper · Intake in progress</p></div>
+<button class="info" id="infoToggle" aria-label="Exam instructions" aria-expanded="false" type="button">i</button>
+</header>
+<section id="infoPanel" class="panel" hidden aria-label="Source paper examination information">
+<h2>Exam information</h2>
+<p><strong>Closed book.</strong> The original paper requires an ink pen and answers circled by letter; some items need several letters.</p>
+<p><strong>Five parts, 25 questions per part.</strong> One point per question. Pass threshold: <strong>13 out of 25 in each part</strong>. Total exam time: <strong>150 minutes</strong>.</p>
+<p class="muted">This historical practice paper was described as approximately 2021–2022; the date has not been independently verified. Only <strong>yellow-highlighted answers</strong> from the supplied photos form the answer key, not handwritten circles. Historical answers may need separate legal or factual review.</p>
+<p class="muted">Only uploaded parts are available in this preview. The complete 150-minute exam simulation will be enabled when all five parts are captured and checked.</p>
+</section>
+<section id="parts" class="parts" aria-label="Choose examination part"></section>
+<section id="questionPanel" class="panel" hidden aria-live="polite">
+<div class="questionTop"><strong id="position"></strong><span id="partScore" class="status"></span></div>
+<div class="progress"><span id="bar"></span></div>
+<div class="question" id="stem"></div>
+<div id="choices"></div>
+<div id="feedback" hidden></div>
+<div class="buttons">
+<button class="btn" id="prev" type="button">Previous</button>
+<button class="btn primary" id="check" type="button">Check answer</button>
+<button class="btn" id="next" type="button">Next</button>
+</div>
+</section>
+<section id="resultPanel" class="panel" hidden></section>
+<footer>GHC Study · Historical test reproduction for study. Not a representation of current German hunting legislation.</footer>
+</main>
+<!-- PRACTICE_TEST_2_DATA -->
+<script>
+(function(){
+"use strict";
+const exam=JSON.parse(document.getElementById("pt2-data").textContent);
+const $=id=>document.getElementById(id);
+const escapeHtml=text=>String(text).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sections=exam.sections||[];
+const key="GHC_PT2_PARTIAL_PROGRESS_V1";
+let saved={};
+try{const data=JSON.parse(localStorage.getItem(key)||"{}");if(data&&typeof data==="object")saved=data;}catch(_){}
+let part=sections[0]||null,index=0;
+function write(){try{localStorage.setItem(key,JSON.stringify(saved));}catch(_){}}
+function equals(a,b){return JSON.stringify(a)===JSON.stringify(b)}
+function correctCount(s){return s.questions.reduce((n,q)=>n+(saved[q.id]&&saved[q.id].correct?1:0),0)}
+function attempted(s){return s.questions.reduce((n,q)=>n+(saved[q.id]?1:0),0)}
+function renderParts(){
+ const got=sections.reduce((n,s)=>n+s.questions.length,0);
+ $("statusLine").textContent=got+" of "+exam.expectedQuestionCount+" questions captured · "+sections.length+" of "+exam.instructions.totalParts+" parts";
+ $("parts").innerHTML=sections.map(s=>'<button type="button" class="part '+(part&&part.part===s.part?"active":"")+'" data-part="'+s.part+'"><strong>Part '+s.part+": "+escapeHtml(s.title)+'</strong><small>'+attempted(s)+' / '+s.questions.length+' answered · '+correctCount(s)+' correct</small></button>').join("");
+ $("parts").querySelectorAll("[data-part]").forEach(b=>b.onclick=()=>{part=sections.find(s=>String(s.part)===b.dataset.part);index=Math.max(0,part.questions.findIndex(q=>!saved[q.id]));if(index<0)index=0;renderParts();renderQuestion();});
+}
+function selection(q){
+ if(q.kind==="matching"){const out={};for(const x of q.left){const v=$("m-"+x.id).value;if(!v)return null;out[x.id]=v}return out;}
+ const marked=[...$("choices").querySelectorAll("input:checked")].map(e=>e.value);
+ return marked.length?marked.sort():null;
+}
+function validate(q,answer){
+ if(q.kind==="matching")return Object.keys(q.correct).every(k=>answer[k]===q.correct[k]);
+ return equals(answer,[...q.correct].sort());
+}
+function fmtCorrect(q){
+ if(q.kind==="matching")return q.left.map(x=>escapeHtml(x.text)+" → "+escapeHtml(q.right.find(r=>r.id===q.correct[x.id]).text)).join("; ");
+ return q.correct.map(id=>id.toUpperCase()).join(", ");
+}
+function showFeedback(q){
+ const record=saved[q.id],el=$("feedback");
+ el.hidden=!record;
+ if(!record)return;
+ el.className="feedback "+(record.correct?"good":"bad");
+ el.innerHTML=(record.correct?"<strong>Correct.</strong>":"<strong>Not correct.</strong>")+
+ "<div>Paper answer key: "+fmtCorrect(q)+".</div>";
+}
+function renderQuestion(){
+ if(!part)return;
+ const qs=part.questions,q=qs[index],record=saved[q.id];
+ $("questionPanel").hidden=false;$("resultPanel").hidden=true;
+ $("position").textContent="Part "+part.part+" · Question "+(index+1)+" of "+qs.length;
+ $("partScore").textContent=correctCount(part)+" / "+attempted(part)+" correct";
+ $("bar").style.width=(100*(index+1)/qs.length)+"%";
+ $("stem").textContent=q.stem;
+ if(q.kind==="matching"){
+ $("choices").innerHTML='<p class="muted">Match each German category to its English meaning. All six pairs are one question.</p>'+q.left.map(x=>'<label class="matchRow" for="m-'+x.id+'"><strong>'+x.id+'. '+escapeHtml(x.text)+'</strong><select id="m-'+x.id+'"><option value="">Choose category</option>'+q.right.map(r=>'<option value="'+r.id+'">'+r.id+'. '+escapeHtml(r.text)+'</option>').join("")+'</select></label>').join("");
+ if(record)q.left.forEach(x=>{$("m-"+x.id).value=record.answer[x.id]||"";});
+ }else{
+ const kind=q.kind==="multiple_choice_multiple"?"checkbox":"radio";
+ $("choices").innerHTML='<p class="muted">'+(kind==="checkbox"?"Select every correct answer.":"Select one answer.")+'</p>'+q.choices.map(c=>'<label class="choice"><input type="'+kind+'" name="answer" value="'+c.id+'"><span><span class="letter">'+c.id.toUpperCase()+'.</span> '+escapeHtml(c.text)+'</span></label>').join("");
+ if(record){$("choices").querySelectorAll("input").forEach(el=>{el.checked=record.answer.includes(el.value)})}
+ }
+ $("choices").querySelectorAll("input,select").forEach(el=>{el.disabled=!!record});
+ $("check").disabled=!!record;
+ $("prev").disabled=index===0;
+ $("next").textContent=index===qs.length-1?"View part results":"Next";
+ showFeedback(q);
+}
+$("prev").onclick=()=>{if(index>0){index--;renderQuestion()}};
+$("next").onclick=()=>{if(index<part.questions.length-1){index++;renderQuestion()}else renderResults()};
+$("check").onclick=()=>{
+ const q=part.questions[index],answer=selection(q);
+ if(!answer){alert("Please select an answer for every required field.");return}
+ saved[q.id]={answer,correct:validate(q,answer)};
+ write();renderParts();renderQuestion();
+};
+function renderResults(){
+ $("questionPanel").hidden=true;$("resultPanel").hidden=false;
+ const done=attempted(part),score=correctCount(part),total=part.questions.length;
+ $("resultPanel").innerHTML='<h2>Part '+part.part+" — "+escapeHtml(part.title)+'</h2><p><strong>'+score+" / "+total+'</strong> correct · '+done+" / "+total+' answered</p><p class="muted">'+(done===total?(score>=exam.instructions.minCorrectPerPart?"Reached the original per-part passing threshold.":"Below the original 13-question passing threshold."):"Complete every question to receive a full part result.")+'</p><p class="status">The whole five-part practice exam is still incomplete.</p><button type="button" id="review" class="btn primary">Review questions</button>';
+ $("review").onclick=()=>{index=0;renderQuestion();};
+}
+$("infoToggle").onclick=()=>{
+ const p=$("infoPanel");p.hidden=!p.hidden;$("infoToggle").setAttribute("aria-expanded",String(!p.hidden));
+};
+renderParts();renderQuestion();
+})();
+</script>
+</body>
+</html>

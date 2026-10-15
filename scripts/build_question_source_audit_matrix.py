@@ -87,28 +87,30 @@ def main():
         risks[impact] += 1
         statuses[state] += 1
         preexisting_links["existing_classroom_crossrefs" if attached else "missing_classroom_crossrefs"] += 1
-    # Require the precise nine reviewed IDs, not just totals. The rest must
+    # Require exact fourteen source-reviewed IDs, never infer from inherited metadata.
     # remain explicitly unaudited regardless of prior inherited classroom tags.
     expected_reviewed = {
         "P2013-S4-Q05", "P2013-S4-Q08", "H2023-D04-Q137",
         "P2013-S3-Q02", "H2023-D08-Q052", "H2023-D08-Q047",
-        "H2023-D17-Q008", "H2023-D17-Q018", "H2023-D08-Q024"
+        "H2023-D17-Q008", "H2023-D17-Q018", "H2023-D08-Q024",
+        "P2013-S3-Q01", "P2013-S3-Q03", "P2013-S3-Q04",
+        "P2013-S3-Q08", "P2013-S3-Q11"
     }
     reviewed = {x["id"] for x in records if x["factualAuditStatus"] != "not_individually_factual_audited"}
     if reviewed != expected_reviewed:
         raise AssertionError("Individually reviewed IDs drifted; require source evidence for every new reviewed record")
-    if (statuses["source_compared_explanation_qualified"] != 8
-        or statuses["source_compared_key_conflict"] != 1
-        or statuses["not_individually_factual_audited"] != 858):
-        raise AssertionError("Expected 8 qualified, 1 disputed and 858 unaudited")
+    if (statuses["source_compared_explanation_qualified"] != 11
+        or statuses["source_compared_key_conflict"] != 3
+        or statuses["not_individually_factual_audited"] != 853):
+        raise AssertionError("Expected 11 qualified, 3 dated-paper conflicts, 853 not audited")
     summary = {
         "questionCount": len(questions),
         "reviewStatuses": dict(statuses),
         "sourceGroups": dict(groups),
         "reviewPriority": dict(risks),
         "preExistingClassroomLinkAvailabilityNotProofOfAudit": dict(preexisting_links),
-        "whatCountsAsVerified": "8 individually source-compared, qualified explanations; 1 original answer-key conflict identified but deliberately NOT treated as verified correct; all historic original keys preserved",
-        "whatRemains": "858 questions await individual source comparison. P2013-S3-Q02 original 2013 source-PDF key B/C omits vehicle unloading required by SVLFG; preserve archival key while separately accepting B/C/D in quiz scoring and warning the learner before answering. Hardware testing remains pending.",
+        "whatCountsAsVerified": "11 individually source-compared qualified explanations; 3 dated-paper conflicts/overbroad rules are explicitly NOT certified as current-law correct; all 867 original answer letters preserved",
+        "whatRemains": "853 questions await individual source comparison. Legacy Q02 original 2013 B/C paper key omits mandatory vehicle unloading, separately accept B/C/D. Legacy Q03 transport checklist and Q11 semiauto magazine wording do not fully describe current federal law; prominently warn before answering while retaining original paper keys. Physical device testing remains pending.",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"summary": summary, "questions": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

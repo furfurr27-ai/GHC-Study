@@ -22,6 +22,8 @@ on:
       - 'scripts/check_2013_markings_proof_ammo_batch.py'
       - 'scripts/qualify_2013_us_forces_import_animal_welfare.py'
       - 'scripts/check_2013_us_forces_import_animal_welfare.py'
+      - 'scripts/qualify_2013_austria_hunting_38_special.py'
+      - 'scripts/check_2013_austria_hunting_38_special.py'
       - 'scripts/check_study_media.py'
       - 'scripts/check_packaged_glossary.py'
       - 'audit/study-media-review-20261014.json'
@@ -83,6 +85,8 @@ jobs:
         run: python3 scripts/qualify_2013_markings_proof_ammo_batch.py
       - name: Source-review original GHC USA Forces import and animal-welfare questions
         run: python3 scripts/qualify_2013_us_forces_import_animal_welfare.py
+      - name: Compare old Austria hunt-travel answer with provincial rules and cartridge manual
+        run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Verify assembled vocabulary quiz
         run: python3 scripts/test_vocabulary_assembly.py
       - name: Audit assembled study-media coverage
@@ -99,6 +103,8 @@ jobs:
         run: python3 scripts/check_2013_markings_proof_ammo_batch.py
       - name: Verify historical AR-import warning and dog veterinary referral
         run: python3 scripts/check_2013_us_forces_import_animal_welfare.py
+      - name: Verify Austrian guest-license and .38 cartridge source qualifications
+        run: python3 scripts/check_2013_austria_hunting_38_special.py
       - name: Generate all-question explicit factual source-review inventory
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build separately installable APK
@@ -127,6 +133,7 @@ jobs:
           python3 scripts/check_2013_legal_documents_batch.py --apk "$APK"
           python3 scripts/check_2013_markings_proof_ammo_batch.py --apk "$APK"
           python3 scripts/check_2013_us_forces_import_animal_welfare.py --apk "$APK"
+          python3 scripts/check_2013_austria_hunting_38_special.py --apk "$APK"
           python3 scripts/build_question_source_audit_matrix.py --apk "$APK"
       - name: Upload 867-question source review matrix
         if: always()

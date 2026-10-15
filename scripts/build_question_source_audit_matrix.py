@@ -75,6 +75,8 @@ def main():
                                  else "targeted_explanation_qualification_only" if state != "not_individually_factual_audited" else None),
             "classroomSourceActuallyChecked": review.get("classroomSource") if state != "not_individually_factual_audited" else None,
             "keyDisputeUnresolved": state == "source_compared_key_conflict",
+            "original2013PaperAnswerKeyConfirmed": review.get("originalPaperKeyVerified") is True if state == "source_compared_key_conflict" else None,
+            "originalPracticePaperSource": review.get("originalPracticePaperSource") if state == "source_compared_key_conflict" else None,
             "userWarnedBeforeScoring": bool(q.get("preAnswerWarning")) if state == "source_compared_key_conflict" else False,
             "reviewPriority": impact,
         }
@@ -104,7 +106,7 @@ def main():
         "reviewPriority": dict(risks),
         "preExistingClassroomLinkAvailabilityNotProofOfAudit": dict(preexisting_links),
         "whatCountsAsVerified": "8 individually source-compared, qualified explanations; 1 original answer-key conflict identified but deliberately NOT treated as verified correct; all historic original keys preserved",
-        "whatRemains": "858 questions still await individual source comparison; disputed P2013-S3-Q02 requires original practice-test key adjudication and must not be used as real-world safety guidance",
+        "whatRemains": "858 questions still await individual source comparison; P2013-S3-Q02 original Dec 2013 practice-test PDF key has been directly verified as B/C but omits car unloading required by SVLFG; keep original key for provenance and treat as erroneous for real-world safety",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps({"summary": summary, "questions": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

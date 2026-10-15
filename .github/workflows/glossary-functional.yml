@@ -29,6 +29,7 @@ jobs:
         run: |
           node --check app/src/main/assets/glossary-data.js
           node --check tests/functional-smoke.cjs
+          node --check tests/safety-warning-smoke.cjs
       - name: Run GHC study UI smoke tests
         run: node tests/functional-smoke.cjs
       - name: Check question bank integrity and answer giveaways
@@ -77,6 +78,8 @@ jobs:
         run: python3 scripts/check_question_source_caveats.py
       - name: Assert archive-key conflict and pre-answer notice retained
         run: python3 scripts/check_safety_question_batch.py
+      - name: Verify disputed-key notice actually renders in quiz UI
+        run: node tests/safety-warning-smoke.cjs
       - name: Generate all-question explicit factual source-review inventory
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Publish media integrity and visual-review backlog

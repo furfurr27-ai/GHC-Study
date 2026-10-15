@@ -18,6 +18,7 @@ OFFICIAL = "https://www.svlfg.de/sichere-jagd"
 REVIEW = {
   "P2013-S3-Q02": {
     "expected": ["b", "c"],
+    "safetyAcceptedCorrect": ["b", "c", "d"],
     "stem": "When must a hunter unload their weapon",
     "status": "source_compared_key_conflict",
     "source": OFFICIAL,
@@ -177,6 +178,8 @@ def main():
                 ref.append({"label": "SVLFG — VSG 4.4 hunting accident-prevention and firearm handling", "url": cfg["source"]})
         if "warning" in cfg:
             q["preAnswerWarning"] = cfg["warning"]
+        if "safetyAcceptedCorrect" in cfg:
+            q["safetyAcceptedCorrect"] = cfg["safetyAcceptedCorrect"]
     if found != set(REVIEW):
         raise AssertionError("Target record(s) missing: " + repr(set(REVIEW)-found))
     if before != immutable(questions):
@@ -191,8 +194,32 @@ def main():
     html = html.replace(original, new, 1)
     if html.count("Source review notice:") != 1:
         raise AssertionError("Unexpected duplicate source notice")
+    # Allow the real-world safety-complete B/C/D selection to score correctly
+    # in this ONE verified original-paper-defect question. Historical q.correct
+    # B/C stays unmodified and still scores as its archived-source answer.
+    original_grading = "var correct=answerObj(current),ok=equalSets(selected,correct);applyResult(current,ok);"
+    dual_grading = (
+        "var correct=answerObj(current),safetyAnswer={},extra=current.safetyAcceptedCorrect||[];"
+        "extra.forEach(function(id){safetyAnswer[id]=true});"
+        "var acceptedSafety=extra.length>0&&equalSets(selected,safetyAnswer),"
+        "ok=equalSets(selected,correct)||acceptedSafety;"
+        "applyResult(current,ok);"
+    )
+    if original_grading not in html:
+        raise AssertionError("Quiz scoring function moved; inspect safety dual-answer rules before continuing")
+    html = html.replace(original_grading, dual_grading, 1)
+    original_feedback = "(ok?'Correct':'Incorrect')"
+    new_feedback = "(ok?(acceptedSafety?'Correct — safety-complete answer (2013 paper key omitted vehicle choice)':(extra.length?'Matched archived 2013 key — see safety notice':'Correct')):'Incorrect')"
+    if original_feedback not in html:
+        raise AssertionError("Answer feedback changed unexpectedly")
+    html = html.replace(original_feedback, new_feedback, 1)
+    original_styling = "sel=!!selected[id],cor=!!correct[id];"
+    new_styling = "sel=!!selected[id],cor=!!correct[id]||(acceptedSafety&&!!safetyAnswer[id]);"
+    if original_styling not in html:
+        raise AssertionError("Answer choice styling changed unexpectedly")
+    html = html.replace(original_styling, new_styling, 1)
     INDEX.write_text(html, encoding="utf-8")
-    print("PASS: six source-checked safety items (1 legacy-key dispute, 5 qualified) and pre-answer notice; 867 IDs/answers unchanged")
+    print("PASS: six source-checked items, original-paper warning, and safe dual-set grading without altering 867 original question keys")
 
 if __name__ == "__main__":
     main()

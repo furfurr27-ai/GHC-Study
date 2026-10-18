@@ -35,6 +35,16 @@ jobs:
           test -f app/src/main/res/drawable/ic_launcher.png
           echo "Recovered $(find app/src/main/assets/media -type f | wc -l) media files"
           echo "index.html bytes: $(wc -c < app/src/main/assets/index.html)"
+      - name: Add Schalenwild WaidMatrix study comparison
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
+          test -f app/src/main/assets/schalenwild-matrix.js
+          test -f app/src/main/assets/schalenwild-matrix.css
+          grep -q 'data-ghc-matrix="1"' app/src/main/assets/index.html
+      - name: Validate matrix JavaScript
+        run: node --check app/src/main/assets/schalenwild-matrix.js
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -51,7 +61,7 @@ jobs:
           gradle-version: '8.9'
       - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug
-      - name: Verify packaged v1.4.5 assets
+      - name: Verify packaged v1.4.6 assets
         shell: bash
         run: |
           set -euo pipefail
@@ -59,6 +69,8 @@ jobs:
           test -n "$APK"
           unzip -l "$APK" | grep -q 'assets/index.html'
           unzip -l "$APK" | grep -q 'assets/media/'
+          unzip -l "$APK" | grep -q 'assets/schalenwild-matrix.js'
+          unzip -l "$APK" | grep -q 'assets/schalenwild-matrix.css'
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
           if unzip -l "$APK" | grep -q 'GHC_Study_v1.4.5_FULL_Standalone_Consolidated_Study_Cards.apk'; then
             echo "Source APK was incorrectly nested in output" >&2
@@ -67,6 +79,6 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.5-debug-apk
+          name: GHC-Study-v1.4.6-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error

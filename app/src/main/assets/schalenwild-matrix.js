@@ -10,7 +10,7 @@
     { de:'Schwarzwild', en:'wild boar', rut:[12,1], young:[3,4], gest:'3 m · 3 w · 3 d' },
     { de:'Damwild', en:'fallow deer', rut:[10,11], young:[6], gest:'30–34 wk', note:'Rut begins late October.' },
     { de:'Sikawild', en:'sika deer', rut:[10,11], young:[6], gest:'30–34 wk' },
-    { de:'Gamswild', en:'chamois', rut:[11], young:[5], gest:'20–21 wk' },
+    { de:'Gamswild', en:'chamois', rut:[11], young:[5], gest:'20–21 wk*', note:'The class slide timing (November rut, May births) does not line up with its 20–21 week gestation figure.' },
     { de:'Muffelwild', en:'mouflon', rut:[10,11,12], young:[3,4,5,6], gest:'≈22 wk' }
   ];
   var filter = 'both', isOpen = true;
@@ -61,7 +61,8 @@
             '<li><b>Antlers versus horns:</b> Reh/Rot/Dam/Sika shed antlers. Gams/Muffel retain permanent horns. Schwarzwild has tusks, not antlers.</li>'+
           '</ul>'+
         '</div>'+
-        '<p class="ghc-matrix-caveat">Month blocks are study approximations, not exact start/end dates. Use the class slides for exam answers; especially check species-specific ranges and gestation. R = rut, Y = young.</p>'+
+        '<p class="ghc-matrix-caveat">Month blocks are study approximations, not exact start/end dates. R = rut, Y = young. <b>Schwarzwild:</b> births may also occur outside the highlighted months.</p>'+
+        '<p class="ghc-matrix-caveat"><b>* Gamswild slide inconsistency:</b> November rut, 20–21 weeks gestation and May births do not line up cleanly. Those are the course slide figures; confirm with your instructor.</p>'+
         '<div class="ghc-matrix-source">Figures: GHC Section 1 course study deck, Question 4. Visualization inspired by <a href="https://youtu.be/bZSqIRW5zTQ" target="_blank" rel="noopener noreferrer">Waidwissen WaidMatrix ↗</a>; Waidwissen values were not substituted.</div>'+
       '</div></details>';
   }

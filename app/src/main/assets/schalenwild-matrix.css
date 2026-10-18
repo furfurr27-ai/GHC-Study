@@ -1,0 +1,47 @@
+/* Original offline Schalenwild study comparison; scoped to study-card category. */
+.ghc-matrix{margin:5px 0 13px;max-width:100%;font-family:inherit}
+.ghc-matrix *{box-sizing:border-box}
+.ghc-matrix-details{background:#e6ddca;border:1px solid #9a8664;border-radius:14px;overflow:hidden;box-shadow:0 2px 7px rgba(0,0,0,.17)}
+.ghc-matrix-details>summary{cursor:pointer;list-style:none;position:relative;padding:12px 38px 11px 13px;background:#314335;color:#f5e9d0}
+.ghc-matrix-details>summary::-webkit-details-marker{display:none}
+.ghc-matrix-details>summary:after{content:'⌄';position:absolute;right:15px;top:13px;font-size:20px;line-height:1}
+.ghc-matrix-details:not([open])>summary:after{content:'›'}
+.ghc-matrix-heading{display:block;font-size:15px;font-weight:850;letter-spacing:.01em;line-height:1.2}
+.ghc-matrix-subheading{display:block;margin-top:3px;font-size:11px;color:#d6cfb8}
+.ghc-matrix-body{padding:10px 10px 11px;color:#3d352a}
+.ghc-matrix-intro{font-size:12px;line-height:1.45;margin:0 0 9px}
+.ghc-matrix-controls{display:flex;gap:5px;margin:8px 0;max-width:100%}
+.ghc-matrix-controls button{appearance:none;flex:1;min-height:36px;border:1px solid #9c8b70;background:#f2e9d9;color:#55452f;font-size:12px;font-weight:750;border-radius:9px;cursor:pointer}
+.ghc-matrix-controls button[aria-pressed="true"]{background:#314335;color:#f5e9d0;border-color:#314335}
+.ghc-matrix-controls button:focus-visible,.ghc-matrix-details>summary:focus-visible,.ghc-matrix-scroll:focus-visible{outline:3px solid #a06c2f;outline-offset:2px}
+.ghc-matrix-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11px;font-weight:750;color:#504a40;margin:9px 0 3px}
+.ghc-matrix-legend>span{display:inline-flex;align-items:center;gap:5px}
+.ghc-matrix-key{display:inline-block;width:12px;height:12px;border-radius:3px}
+.ghc-matrix-rut{background:#a35a1e;color:#fff}
+.ghc-matrix-young{background:#30775b;color:#fff}
+.ghc-matrix-swipe{font-size:10.5px;color:#625744;margin:7px 0 5px}
+.ghc-matrix-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid #b6a88d;border-radius:9px;background:#f0e8d9;-webkit-overflow-scrolling:touch}
+.ghc-matrix-table{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%;font-size:10px;table-layout:fixed}
+.ghc-matrix-table th,.ghc-matrix-table td{text-align:center;padding:7px 2px;border-bottom:1px solid #d5c8b5;border-right:1px solid #e1d7c8;white-space:nowrap;color:#40382e}
+.ghc-matrix-table thead th{background:#d8cbb5;font-size:10px;font-weight:850}
+.ghc-matrix-table th.ghc-matrix-species{position:sticky;left:0;z-index:2;min-width:102px;width:102px;max-width:102px;text-align:left;padding-left:6px;background:#e4d7c1;font-size:11px;white-space:normal}
+.ghc-matrix-table thead th.ghc-matrix-species{z-index:3;background:#cbb99d}
+.ghc-matrix-table th.ghc-matrix-species span,.ghc-matrix-table th.ghc-matrix-gestation span{display:block;font-size:9px;font-weight:500;color:#6b5b43}
+.ghc-matrix-table thead th:not(.ghc-matrix-species):not(.ghc-matrix-gestation){width:30px;min-width:30px}
+.ghc-matrix-table td{min-width:30px;width:30px;height:36px;padding:4px 2px}
+.ghc-matrix-table td.ghc-matrix-gestation{width:104px;min-width:104px;padding:4px 7px;text-align:left;font-weight:750;font-size:10px;white-space:normal}
+.ghc-matrix-table tbody tr:last-child td,.ghc-matrix-table tbody tr:last-child th{border-bottom:none}
+.ghc-matrix-cell{display:flex;align-items:center;justify-content:center;border-radius:4px;min-height:25px;min-width:24px;font-size:9px;font-weight:900}
+.ghc-matrix-cell.ghc-matrix-rut{background:#a35a1e;color:#fff5e7}
+.ghc-matrix-cell.ghc-matrix-young{background:#30775b;color:#f4fffa}
+.ghc-matrix-cell.ghc-matrix-both{background:linear-gradient(135deg,#a35a1e 50%,#30775b 50%);color:#fff}
+.ghc-matrix-cell.ghc-matrix-none{color:#c4b8a5}
+.ghc-matrix-notes{margin-top:12px;border:1px solid #c3b290;background:#f2eada;border-radius:10px;padding:10px 11px;font-size:11.7px;line-height:1.45}
+.ghc-matrix-notes>strong{display:block;margin-bottom:5px;font-size:13px;color:#3f372b}
+.ghc-matrix-notes ul{margin:0;padding-left:17px}
+.ghc-matrix-notes li{margin:5px 0;color:#483e31}
+.ghc-matrix-caveat,.ghc-matrix-source{font-size:10.5px;line-height:1.45;color:#685d4b;margin:10px 0 0}
+.ghc-matrix-source{padding-top:8px;border-top:1px solid #c3b69e}
+.ghc-matrix-source a{color:#5e4729;text-decoration:underline}
+@media (max-width:370px){.ghc-matrix-table th.ghc-matrix-species{min-width:92px;width:92px;max-width:92px}.ghc-matrix-table td{width:28px;min-width:28px}}
+@media print{.ghc-matrix-scroll{overflow:visible}.ghc-matrix-details{break-inside:avoid}}

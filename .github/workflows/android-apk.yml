@@ -45,6 +45,8 @@ jobs:
           grep -q 'data-ghc-matrix="1"' app/src/main/assets/index.html
       - name: Validate matrix JavaScript
         run: node --check app/src/main/assets/schalenwild-matrix.js
+      - name: Run Schalenwild matrix regression tests
+        run: node tools/test_schalenwild_matrix.js
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -61,7 +63,7 @@ jobs:
           gradle-version: '8.9'
       - name: Build debug APK
         run: gradle --no-daemon :app:assembleDebug
-      - name: Verify packaged v1.4.6 assets
+      - name: Verify packaged v1.4.7 assets
         shell: bash
         run: |
           set -euo pipefail
@@ -79,6 +81,6 @@ jobs:
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.6-debug-apk
+          name: GHC-Study-v1.4.7-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error

@@ -13,7 +13,7 @@
     { de:'Gamswild', en:'chamois', rut:[11], young:[5], gest:'20–21 wk*', note:'The class slide timing (November rut, May births) does not line up with its 20–21 week gestation figure.' },
     { de:'Muffelwild', en:'mouflon', rut:[10,11,12], young:[3,4,5,6], gest:'≈22 wk' }
   ];
-  var filter = 'both', isOpen = true;
+  var filter = 'both', isOpen = true, activeView = 'reproduction';
   var ID = 'ghc-schalenwild-matrix';
 
   function escapeHtml(value) {
@@ -41,7 +41,7 @@
   }
   function markup() {
     return '<details class="ghc-matrix-details"'+(isOpen?' open':'')+'>'+
-      '<summary><span class="ghc-matrix-heading">Schalenwild · Jahresmatrix</span><span class="ghc-matrix-subheading">Compare the seasons across 7 species</span></summary>'+
+      '<summary><span class="ghc-matrix-heading">Schalenwild · Vergleichsmatrizen</span><span class="ghc-matrix-subheading">7 species · patterns and exceptions</span></summary>'+
       '<div class="ghc-matrix-body">'+
         '<p class="ghc-matrix-intro">Spot the patterns at a glance. Colored months show <strong>Brunftzeit</strong> (rut) and <strong>Setzzeit</strong> (young born).</p>'+
         '<div class="ghc-matrix-controls" role="group" aria-label="Seasons to display">'+
@@ -66,6 +66,120 @@
         '<div class="ghc-matrix-source">Figures: GHC Section 1 course study deck, Question 4. Visualization inspired by <a href="https://youtu.be/bZSqIRW5zTQ" target="_blank" rel="noopener noreferrer">Waidwissen WaidMatrix ↗</a>; Waidwissen values were not substituted.</div>'+
       '</div></details>';
   }
+
+  // Original comparison tables use only the linked GHC animal slides.
+  // Months intentionally omitted where no general adult cycle was established.
+  var CYCLE_DATA = [
+    {de:'Rehwild',en:'roe deer',kind:'Gehörn (antlers)',shed:'Nov–Dec (older bucks)',growth:'Jan–Mar (older bucks)',rub:'Mar–Apr'},
+    {de:'Rotwild',en:'red deer',kind:'Geweih (antlers)',shed:'Spring (first head)',growth:'—',rub:'Sep (first head)'},
+    {de:'Schwarzwild',en:'wild boar',kind:'Waffen (tusks)',shed:'Never',growth:'—',rub:'—'},
+    {de:'Damwild',en:'fallow deer',kind:'Geweih (antlers)',shed:'Annually; older first',growth:'Bast: Apr/May–Aug',rub:'—'},
+    {de:'Sikawild',en:'sika deer',kind:'Geweih (antlers)',shed:'Annually; older first',growth:'Bast: May–Aug',rub:'—'},
+    {de:'Gamswild',en:'chamois',kind:'Krucken (horns)',shed:'Never',growth:'Throughout life',rub:'—'},
+    {de:'Muffelwild',en:'mouflon',kind:'Schnecken (horns)',shed:'Never',growth:'Throughout life',rub:'—'}
+  ];
+  var IDENT_DATA = [
+    {de:'Rehwild',en:'roe deer',kind:'Antlers',teeth:'32',digest:'Ruminant',className:'Niederwild'},
+    {de:'Rotwild',en:'red deer',kind:'Antlers',teeth:'34',digest:'Ruminant',className:'Hochwild'},
+    {de:'Schwarzwild',en:'wild boar',kind:'Tusks',teeth:'44',digest:'Non-ruminant',className:'Hochwild'},
+    {de:'Damwild',en:'fallow deer',kind:'Antlers',teeth:'32',digest:'Ruminant',className:'Hochwild'},
+    {de:'Sikawild',en:'sika deer',kind:'Antlers',teeth:'34',digest:'Ruminant',className:'Hochwild'},
+    {de:'Gamswild',en:'chamois',kind:'Horns',teeth:'32',digest:'Ruminant',className:'Hochwild'},
+    {de:'Muffelwild',en:'mouflon',kind:'Horns',teeth:'32',digest:'Ruminant',className:'Hochwild'}
+  ];
+  function compareTable(columns, items) {
+    var html='<div class="ghc-matrix-scroll" role="region" tabindex="0" aria-label="Scrollable wildlife comparison table"><table class="ghc-matrix-table ghc-matrix-compare"><thead><tr>'+
+      '<th scope="col" class="ghc-matrix-species">Wildart<span>Species</span></th>';
+    columns.forEach(function(c){html+='<th scope="col">'+escapeHtml(c.label)+'</th>';});
+    html+='</tr></thead><tbody>';
+    items.forEach(function(item){
+      html+='<tr><th scope="row" class="ghc-matrix-species">'+escapeHtml(item.de)+'<span>'+escapeHtml(item.en)+'</span></th>';
+      columns.forEach(function(c){html+='<td>'+escapeHtml(item[c.key])+'</td>';});
+      html+='</tr>';
+    });
+    return html+'</tbody></table></div>';
+  }
+  function comparisonMarkup(view) {
+    if(view === 'antlers') {
+      return '<p class="ghc-matrix-intro">Compare <b>Geweih/Gehörn</b> (antlers), <b>Horn</b> (horns), and <b>Waffen</b> (tusks). For antlers: <b>Abwerfen</b> (shed) → <b>Schieben</b> (grow in Bast/velvet) → <b>Fegen</b> (rub off velvet).</p>'+
+        '<p class="ghc-matrix-swipe">Swipe sideways for shedding, velvet and rubbing details →</p>'+
+        compareTable([{label:'Structure',key:'kind'},{label:'Abwerfen · Shed',key:'shed'},{label:'Schieben · Grow',key:'growth'},{label:'Fegen · Rub',key:'rub'}],CYCLE_DATA)+
+        '<div class="ghc-matrix-notes"><strong>Prüfungsmerker · Standouts</strong><ul>'+
+        '<li><b>Rehwild:</b> mature bucks shed in late autumn; rub the new antlers in early spring.</li>'+
+        '<li><b>Gamswild and Muffelwild:</b> horns are permanent, so antler-cycle months do not apply.</li>'+
+        '<li><b>Rotwild:</b> the spring shedding and September rubbing above apply to the <i>first head</i> specifically, not all ages.</li>'+
+        '</ul></div>'+
+        '<p class="ghc-matrix-caveat">— = no comparable month given in the reviewed source. No general adult month has been inferred. “Bast” is velvet.</p>'+
+        '<div class="ghc-matrix-source">Source: GHC Rehwild, Rotwild, Damwild, Sikawild, Gamswild, Muffelwild and Schwarzwild species decks. Outside-video content is not used for exam figures.</div>';
+    }
+    return '<p class="ghc-matrix-intro">Compare the high-yield identification exceptions across all seven Schalenwild. <b>Gebiss</b> = teeth; <b>Wiederkäuer</b> = ruminant.</p>'+
+      '<p class="ghc-matrix-swipe">Swipe sideways to see all comparison columns →</p>'+
+      compareTable([{label:'Trophy',key:'kind'},{label:'Adult teeth',key:'teeth'},{label:'Digestion',key:'digest'},{label:'Game class',key:'className'}],IDENT_DATA)+
+      '<div class="ghc-matrix-notes"><strong>Prüfungsmerker · Standouts</strong><ul>'+
+      '<li><b>32 teeth:</b> Reh, Dam, Gams, Muffel. <b>34:</b> Rot, Sika. <b>44:</b> Schwarzwild.</li>'+
+      '<li><b>Schwarzwild:</b> only non-ruminant in this comparison.</li>'+
+      '<li><b>Rehwild:</b> only Niederwild in this comparison; the other six are Hochwild.</li>'+
+      '<li><b>Grandeln</b> (upper canine “eyeteeth”): Rotwild and Sikawild; absent in Damwild.</li>'+
+      '</ul></div>'+
+      '<div class="ghc-matrix-source">Source: GHC Section 1, Questions 1, 2 and 6, verified against the seven original species decks.</div>';
+  }
+  function switchView(root, next) {
+    if(['reproduction','antlers','identification'].indexOf(next)<0)return;
+    activeView=next;
+    root.querySelectorAll('[data-matrix-view]').forEach(function(button){
+      var chosen=button.getAttribute('data-matrix-view')===next;
+      button.setAttribute('aria-selected',chosen?'true':'false');
+      button.tabIndex=chosen?0:-1;
+    });
+    root.querySelectorAll('[data-matrix-panel]').forEach(function(panel){
+      var chosen=panel.getAttribute('data-matrix-panel')===next;
+      panel.hidden=!chosen;
+      panel.setAttribute('aria-hidden',chosen?'false':'true');
+    });
+  }
+  function addComparisonViews(root){
+    var body=root.querySelector('.ghc-matrix-body');
+    if(!body || body.querySelector('[data-matrix-view]'))return;
+    var reproduction=document.createElement('div');
+    reproduction.id='ghc-matrix-panel-reproduction';
+    reproduction.className='ghc-matrix-panel';
+    reproduction.setAttribute('role','tabpanel');
+    reproduction.setAttribute('aria-labelledby','ghc-matrix-tab-reproduction');
+    reproduction.setAttribute('data-matrix-panel','reproduction');
+    while(body.firstChild)reproduction.appendChild(body.firstChild);
+    var tabs=document.createElement('div');
+    tabs.className='ghc-matrix-view-tabs';
+    tabs.setAttribute('role','tablist');
+    tabs.setAttribute('aria-label','Schalenwild comparisons');
+    [
+      {key:'reproduction',label:'Fortpflanzung',sub:'Reproduction'},
+      {key:'antlers',label:'Geweih & Horn',sub:'Antlers / Horns'},
+      {key:'identification',label:'Erkennung',sub:'Identification'}
+    ].forEach(function(v){
+      var btn=document.createElement('button');
+      btn.type='button';
+      btn.id='ghc-matrix-tab-'+v.key;
+      btn.setAttribute('role','tab');
+      btn.setAttribute('data-matrix-view',v.key);
+      btn.setAttribute('aria-controls','ghc-matrix-panel-'+v.key);
+      btn.setAttribute('aria-label',v.label+', '+v.sub);
+      btn.innerHTML='<span>'+escapeHtml(v.label)+'</span><small>'+escapeHtml(v.sub)+'</small>';
+      tabs.appendChild(btn);
+    });
+    body.appendChild(tabs);
+    body.appendChild(reproduction);
+    ['antlers','identification'].forEach(function(view){
+      var panel=document.createElement('div');
+      panel.id='ghc-matrix-panel-'+view;
+      panel.className='ghc-matrix-panel';
+      panel.setAttribute('role','tabpanel');
+      panel.setAttribute('aria-labelledby','ghc-matrix-tab-'+view);
+      panel.setAttribute('data-matrix-panel',view);
+      panel.innerHTML=comparisonMarkup(view);
+      body.appendChild(panel);
+    });
+    switchView(root,activeView);
+  }
   function setFilter(root, next) {
     filter = next;
     var scroll = root.querySelector('.ghc-matrix-scroll');
@@ -88,14 +202,27 @@
     var wrapper = document.createElement('section');
     wrapper.id = ID;
     wrapper.className = 'ghc-matrix';
-    wrapper.setAttribute('aria-label', 'Schalenwild calendar and memory tips');
+    wrapper.setAttribute('aria-label', 'Schalenwild comparison matrices and memory tips');
     wrapper.innerHTML = markup();
     app.insertBefore(wrapper, search);
     var details = wrapper.querySelector('details');
     details.addEventListener('toggle',function(){isOpen = details.open;});
+    addComparisonViews(wrapper);
     wrapper.addEventListener('click',function(e){
+      var t = e.target.closest('[data-matrix-view]');
+      if(t && wrapper.contains(t)){switchView(wrapper,t.getAttribute('data-matrix-view'));return;}
       var b = e.target.closest('[data-matrix-filter]');
       if(b && wrapper.contains(b)) setFilter(wrapper, b.getAttribute('data-matrix-filter'));
+    });
+    wrapper.addEventListener('keydown',function(e){
+      var t=e.target.closest('[data-matrix-view]');
+      if(!t || !wrapper.contains(t) || ['ArrowLeft','ArrowRight','Home','End'].indexOf(e.key)<0)return;
+      var keys=['reproduction','antlers','identification'],idx=keys.indexOf(t.getAttribute('data-matrix-view'));
+      var n=e.key==='Home'?0:e.key==='End'?keys.length-1:(idx+(e.key==='ArrowRight'?1:-1)+keys.length)%keys.length;
+      switchView(wrapper,keys[n]);
+      var target=wrapper.querySelector('[data-matrix-view="'+keys[n]+'"]');
+      if(target)target.focus();
+      e.preventDefault();
     });
     setFilter(wrapper,filter);
   }

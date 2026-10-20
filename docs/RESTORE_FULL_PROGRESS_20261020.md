@@ -23,4 +23,11 @@ Original package ID `org.ghcstudy.v141` retained. Android code 148/name 1.4.8. O
 
 Historical photographed keys and dated legal/safety/animal-product practices remain explicitly marked as historical source evidence, not modern professional guidance. The 2013 safety-question contested answer remains flagged.
 
-**CI verdict**: consult actual recovery workflow run and artifact for this commit. This note does not claim tests passed before results are returned.
+## Verified recovery outcome — 2026-10-20
+- **Full source and regression smoke:** PASS.
+- **Android APK assembly and package audit:** PASS — all 125 native Practice Test 2 records, five parts of 25, glossary HTML/data, Schalenwild matrix CSS/JS, media and launcher icon present.
+- **Android 35 emulator:** PASS — launcher, Glossary and Back navigation, Quiz/Reference/Study Mode and Schalenwild/Rehwild card route. Initial failed run was traced to the automated tap selecting a Rehwild matrix row instead of the study card; the test was made matrix-aware, then all three jobs passed.
+- **Successful recovery workflow:** https://github.com/furfurr27-ai/GHC-Study/actions/runs/39385566955 — artifact `GHC-Study-v1.4.8-RESTORED-full-debug-apk` ID 12247741147 (non-expired at verification).
+- **Merged into main:** PR #4 https://github.com/furfurr27-ai/GHC-Study/pull/4 — merge commit `e2e3c3eb8e43581c2d491bb34d43c9dc64fe1f03`.
+- **Not yet verified:** physical Galaxy S23 Ultra upgrade compatibility, saved local progress retention, and ergonomic testing on the user's handset. A debug signing-key mismatch may prevent over-installation; export progress before any uninstall.
+

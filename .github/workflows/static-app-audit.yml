@@ -1,0 +1,54 @@
+name: Static app and repository audit
+on:
+  push:
+    branches: [audit/v145-source-recovery]
+    paths:
+      - 'scripts/audit_app_static.py'
+      - '.github/workflows/static-app-audit.yml'
+      - 'app/src/main/assets/**'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect media references, duplicates, file sizes, offline dependencies
+        run: python3 scripts/audit_app_static.py
+      - name: Check embedded JavaScript syntax
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class Scripts(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.inside=False; self.scripts=[]; self.buffer=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag=="script" and not dict(attrs).get("src"):
+                      self.inside=True; self.buffer=[]
+              def handle_data(self,data):
+                  if self.inside: self.buffer.append(data)
+              def handle_endtag(self,tag):
+                  if tag=="script" and self.inside:
+                      self.scripts.append("".join(self.buffer)); self.inside=False
+          p=Scripts(); p.feed(Path("app/src/main/assets/index.html").read_text())
+          Path("build").mkdir(exist_ok=True)
+          for i,s in enumerate(p.scripts):
+              Path(f"build/inline-{i}.js").write_text(s)
+          print(f"Extracted {len(p.scripts)} inline scripts")
+          PY
+          for f in build/inline-*.js; do
+            test -f "$f" || continue
+            node --check "$f"
+          done
+      - name: Upload static audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ghc-v145-static-audit
+          path: build/app-static-audit.json
+          if-no-files-found: warn

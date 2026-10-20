@@ -1,0 +1,380 @@
+{
+  "date": "2026-10-14",
+  "version": "1.4.6",
+  "scope": "All 117 study-card image thumbnails rendered from v1.4.6 standalone APK, visually reviewed in five contact sheets; provisional category risk assessment, not species-specific authentication",
+  "counts": {
+    "reviewed": 117,
+    "slideOrPageLike": 71,
+    "semanticMismatch": 0,
+    "standaloneLikely": 45,
+    "assemblyCrops": 53,
+    "remainingSlideOrPageLike": 0,
+    "correctedSemanticMismatch": 1,
+    "originalFigureRemaps": 11,
+    "assemblyMontages": 3,
+    "classPhotoReuse": 1,
+    "authoredCourseIllustrations": 3
+  },
+  "slideOrPageLike": [
+    "mouflon",
+    "marmot",
+    "seal",
+    "bear",
+    "curlew",
+    "beangoose",
+    "whitefrontedgoose",
+    "brantgoose",
+    "canadagoose",
+    "merganser",
+    "muteswan",
+    "greatcrestedgrebe",
+    "coot",
+    "capercaillie",
+    "blackgrouse",
+    "tawnyowl",
+    "goldeneagle",
+    "osprey",
+    "seaeagle",
+    "sparrowhawk",
+    "blackkite",
+    "harriers",
+    "kestrel",
+    "eagleowl",
+    "carrioncrow",
+    "rook",
+    "raven",
+    "magpie",
+    "jays",
+    "doggroups",
+    "dogparts",
+    "kennel",
+    "waidgerechtigkeit",
+    "hornsignals",
+    "branchsigns",
+    "lastbite",
+    "methods",
+    "drivebrief",
+    "followup",
+    "firearmactions",
+    "combinationguns",
+    "rangesafety",
+    "misfire",
+    "transport",
+    "diseasenames",
+    "kundigeperson",
+    "trichinella",
+    "asf",
+    "rabies",
+    "footmouth",
+    "parasites",
+    "revierrules",
+    "protectedwildlife",
+    "abschussplan",
+    "wildschaden",
+    "trees",
+    "coldweapons",
+    "shotgunshell",
+    "gunmarkings",
+    "stecher",
+    "gunstorage",
+    "handgunquota",
+    "ammotypes",
+    "shotdistance",
+    "scopebasics",
+    "labrador",
+    "dogdiseases",
+    "dogcert",
+    "birdanatomy",
+    "birdchecklist",
+    "revierroles"
+  ],
+  "semanticMismatch": {},
+  "notes": [
+    "The 71 flagged assets visibly include full slide/page layouts, classroom text, multi-photo collage panels, or slide chrome; they violate 'standalone image, never whole slide' intent and require individual replacements.",
+    "No asset is missing: all 117 card image paths exist in the Android package, corresponding to 110 unique files.",
+    "The other 45 card images appear photo/illustration-backed in this size-limited review; not all animals, annotations or source page references have been authenticated.",
+    "The antler-anatomy diagram is retained as a standalone labeled illustration, not a full slide.",
+    "Marking a slide screenshot does not imply the underlying class text is incorrect.",
+    "Four historical wildlife page images are cropped to isolated photos during APK assembly only; source assets remain unmodified. CI verifies each generated media/study-photo-ID.webp. The 71 visual flags describe the original source state; 67 remain in assembled output after this batch.",
+    "Five additional standalone bird photographs cropped from original classroom slide composites after direct image inspection: Bean Goose, Merganser, Mute Swan, Great Crested Grebe and Coot; no slide text preserved in crop.",
+    "Seven additional course bird/raptor images now cropped to clean photos (Curlew, White-fronted Goose, Tawny Owl, Osprey, Sea Eagle, Eagle Owl and Kestrel). Other candidate photos were rejected if cropping would retain annotations or clip identifying anatomy.",
+    "Six additional individually checked course photos were cropped for harriers, carrion crow, rook, raven, magpie, and jays, without captions or slide layout.",
+    "The original Shot Placement Hochsitz subject mismatch is corrected at APK assembly using the isolated original slide-23 roe deer heart/lung target diagram, with SHA-256 integrity check.",
+    "Additional five bird/corvid cards cropped after checking the original classroom image panels: Auerwild, Birkwild, Black Kite, Brent Goose, Canada Goose. Source crops avoid red numbered badges and slide text, sometimes omitting feet or outer wing edges.",
+    "Four original class photographs isolated from larger slides: Drilling three-barrel muzzle, shooting-rule rifle handling, four hunting dogs, and a dog kennel; direct photo cropping only.",
+    "Firearm Action Names replaced with an unlabeled four-photo montage from the same original course slide (lever, pump, semi-auto, combination gun); no slide typography retained.",
+    "Six dog and disease illustrations cropped to class photographs/microscope imagery. Rabies/ASF/wildlife depictions are illustrative only; visual presentation is not an independently verified disease diagnosis.",
+    "Thirteen more original-course image replacements: Golden Eagle, two hunting-horn/tradition pictures, branch-sign hunter, final-bite engraving, hunting-methods photo collage, scent-tracking dog, four standalone firearms/scope technical figures, and a five-tree photograph montage. Technical labels *inside* authentic diagrams are retained, but slide headers/external text removed.",
+    "Two original technical visuals isolated: six German-labeled beak-type anatomy drawings for birdanatomy, and one revolver photo from the handgun legal-topic slide. The handgun picture is merely illustrative, and the slide's obsolete/unchecked legal quota is entirely excluded.",
+    "Three further exact embedded JPEG figures extracted from 2026 course PDFs and hash verified: a gun-safe cabinet (not certification), a historical example proof-mark chart (not current-law clearance), and a panel of common external parasites. PDFs themselves are not copied to repo or APK.",
+    "Three source PDF image additions are a historical Erbenheim Revier map, roe-deer anatomy and an illustrative abnormal-lung class image. Separate birdchecklist image is a six-source-bird-photo montage, not a comprehensive list. Legal and disease diagnoses are not inferred from imagery.",
+    "Original September 2026 Predatory Birds page-10 image xref87, identified by the class as Sperber/Sparrowhawk, directly extracted. Unlike the prior full-slide photo, the bird's entire head and body are unobstructed.",
+    "Original August 2026 Hunting Law, page 47, illustrates Wildschaden with an actual crop-damage photograph (embedded image xref241). Replaces slide text, but does not validate dated hunting compensation claims.",
+    "Protected Wildlife reuses a photo-only original Waldkauz photograph already checked on the Tawny Owl card, as one example rather than instructions or authorization. No new outside image or legal content.",
+    "Transport study card uses isolated three-long-gun-case JPEG xref120 from original Law - Weapons (20260819).pdf page 23. Descriptive visual only; does not validate current German rules on unloaded, locked or cased firearms.",
+    "Dog Parts restored from original Hunting Dogs (202609) course page 4 ('Jäger Latein - Dog Parts'), embedded JPEG xref98. Clear self-contained German-labeled anatomy illustration (Behang, Decke, Rute, Fahne, Pfoten etc.), without lecture chrome; course page 5 separately lists meanings.",
+    "Dog Diseases uses three exact originally embedded JPEGs from Hunting Dogs (202609).pdf pages 26–27, each individually SHA-256 checked and combined as picture-only examples. Image is not comprehensive nor a diagnostic key.",
+    "Revier Roles is now a two-photo classroom-example montage from Revier slide page 30 (xrefs191/192), with only class labels; no implication these stock-model photos show actual holders of roles or all Revier officials.",
+    "Drivebrief now displays original Hunting Techniques 2026 p15 Drive Hunts group photograph xref83, two hunters facing a gesturing hunter. This does not confirm a formal Jagdleiter briefing or any step-by-step safety rule.",
+    "Misfire card replaces its full-slide image with a NEW, self-contained source-bound vector schematic showing the 2026 Range Safety lesson's downrange muzzle, 10-second class interval and instructor, not a photograph or universal handling protocol. Exact UTF-8 SVG Git blob checksum recorded and validated.",
+    "Shotgun Danger Distance now uses a NEW course-text-grounded original SVG pellet-dispersion illustration, not an extracted lecture PDF image. Labels the example 3mm x 100m ~300m APPROXIMATE DANGER-distance and emphatically says NOT A SAFE BOUNDARY. No numerical safe shooting range or exact hazard geometry is inferred.",
+    "Abschussplan now displays a new standalone EDUCATIONAL SVG based on the Hessian 2025 Landkreis Main-Kinzig publicly published Anlage 2b Rehwild PDF and original class material. It is explicitly NOT an official or valid form and does not claim current 2026 Excel original format. Original official PDF text was directly inspected, but screenshot failed (cache miss) and 2026 XLSX download failed. Distinguishes three-year historic Jahresstrecke from proposed future Abschussvorschlag, without fabricated quota numbers."
+  ],
+  "assemblyCrops": [
+    "mouflon",
+    "marmot",
+    "seal",
+    "bear",
+    "beangoose",
+    "merganser",
+    "muteswan",
+    "greatcrestedgrebe",
+    "coot",
+    "curlew",
+    "whitefrontedgoose",
+    "tawnyowl",
+    "osprey",
+    "seaeagle",
+    "eagleowl",
+    "kestrel",
+    "harriers",
+    "carrioncrow",
+    "rook",
+    "raven",
+    "magpie",
+    "jays",
+    "capercaillie",
+    "blackgrouse",
+    "blackkite",
+    "brantgoose",
+    "canadagoose",
+    "combinationguns",
+    "rangesafety",
+    "doggroups",
+    "kennel",
+    "firearmactions",
+    "labrador",
+    "dogcert",
+    "trichinella",
+    "rabies",
+    "asf",
+    "footmouth",
+    "goldeneagle",
+    "hornsignals",
+    "waidgerechtigkeit",
+    "branchsigns",
+    "lastbite",
+    "methods",
+    "followup",
+    "coldweapons",
+    "shotgunshell",
+    "ammotypes",
+    "stecher",
+    "scopebasics",
+    "trees",
+    "birdanatomy",
+    "handgunquota"
+  ],
+  "originalSemanticMismatch": {
+    "shotplacement": "Card is labeled Shot Placement but currently shows a Hochsitz/high-seat tower photo. Replace with a shot-placement-specific diagram or photograph."
+  },
+  "correctedSemanticMismatch": {
+    "shotplacement": {
+      "image": "media/shotplacement-class-diagram.png",
+      "source": "Hunting_Techniques_V3.1_16FEB26.pdf",
+      "page": 23,
+      "embeddedXref": 149,
+      "integritySha256": "c00ab76a236fc161b4594dbcd93182a4ed2b4324d5ae7ee52f0916cf6d60cb0f",
+      "note": "Roe deer broadside heart-lung target illustration from class slide; replacement for unrelated high-seat photo."
+    }
+  },
+  "originalFigureRemaps": {
+    "gunstorage": {
+      "path": "media/gunstorage-sourced-safe.jpeg",
+      "sha256": "a5acf0509eadbd289789dd39a244bd7f6497f78a8c99840bd2d7fd8fa1637d90",
+      "source": "Law - Weapons (20260819).pdf",
+      "page": 21,
+      "xref": 115
+    },
+    "gunmarkings": {
+      "path": "media/gunmarkings-proof-chart.jpeg",
+      "sha256": "69e7e941fb9be6d1f236040a2921bbddf8f1621c3be4082fd2b1eba751ec9382",
+      "source": "Law - Weapons (20260819).pdf",
+      "page": 8,
+      "xref": 62
+    },
+    "parasites": {
+      "path": "media/parasites-class-insects.jpeg",
+      "sha256": "0bda4651c8d9aa98870c8719385f3d3011cf845d46e7fa20636c02b87d2aaa72",
+      "source": "Disease - Parasites.pdf",
+      "page": 3,
+      "xref": 33
+    },
+    "revierrules": {
+      "path": "media/revierrules-erbenheim-course-map.jpeg",
+      "sha256": "e97ef9d4dc1d344bad285184988341f66d7090daef9b4abf51486305629e4d47",
+      "source": "Range - Revier (20260922).pdf",
+      "page": 20,
+      "xref": 126
+    },
+    "kundigeperson": {
+      "path": "media/kundigeperson-class-game-anatomy.jpeg",
+      "sha256": "d6f9888b8dbee450b06ceb9ce0917125eb5eba0ec116892fbc4f200a7693d7e8",
+      "source": "Disease - Kundige Person.pdf",
+      "page": 5,
+      "xref": 50
+    },
+    "diseasenames": {
+      "path": "media/diseasenames-class-lung-example.jpeg",
+      "sha256": "cd473a2bbfb11fb8cdfd05bf3d99c4036feec348a709b64cf385b2d21d887b8e",
+      "source": "Disease - Kundige Person.pdf",
+      "page": 6,
+      "xref": 53
+    },
+    "sparrowhawk": {
+      "path": "media/sparrowhawk-class-original.jpeg",
+      "sha256": "ec0bbb3daf029c50d78f3ca3c4be2c28c3772bf80c96d626f5bd718e6969a088",
+      "source": "Game - Predatory Birds (202609).pdf",
+      "page": 10,
+      "xref": 87
+    },
+    "wildschaden": {
+      "path": "media/wildschaden-class-crop-damage.jpeg",
+      "sha256": "1fe0bb80deb5b83598a7bdbb858a1792fdd45c3e5a92d1190a85bbfa69ca3220",
+      "source": "Law - Hunting (202608).pdf",
+      "page": 47,
+      "xref": 241
+    },
+    "transport": {
+      "path": "media/transport-original-hunting-cases.jpeg",
+      "sha256": "434832c3a8490570733b563bfce5aa7b0c4b4bdd0ffe230f01f7490745803e20",
+      "source": "Law - Weapons (20260819).pdf",
+      "page": 23,
+      "xref": 120
+    },
+    "dogparts": {
+      "path": "media/dogparts-original-course-anatomy.jpeg",
+      "sha256": "cf12124d1f9d64ad7508379af8782374e479e114ebea3bd73cd275949e2a694d",
+      "source": "Hunting Dogs (202609).pdf",
+      "page": 4,
+      "xref": 98
+    },
+    "drivebrief": {
+      "path": "media/drivebrief-class-hunters-discussing.jpeg",
+      "sha256": "3e0ea5c5f46a851135b57519dc514d7eb3926c25d02d7e7c32432ab9935b368d",
+      "source": "Hunting Techniques (20260216).pdf",
+      "page": 15,
+      "xref": 83
+    }
+  },
+  "assemblyMontages": {
+    "birdchecklist": {
+      "path": "media/study-birdchecklist-examples.webp",
+      "exampleCardIds": [
+        "beangoose",
+        "muteswan",
+        "curlew",
+        "tawnyowl",
+        "capercaillie",
+        "kestrel"
+      ],
+      "note": "Six original classroom bird examples, explicitly nonexhaustive identification practice"
+    },
+    "dogdiseases": {
+      "path": "media/study-dogdiseases-examples.webp",
+      "source": "Hunting Dogs (202609).pdf",
+      "pictureSourcePageXrefs": [
+        [
+          26,
+          457
+        ],
+        [
+          27,
+          464
+        ],
+        [
+          27,
+          465
+        ]
+      ],
+      "imageSources": [
+        {
+          "path": "media/dogdiseases-class-rabies-warning.jpeg",
+          "sha256": "04b2030e8e4b02b5d043d0a660a96b7af507b3001cec3d69876ed0595dbfa9c7"
+        },
+        {
+          "path": "media/dogdiseases-class-worms-example.jpeg",
+          "sha256": "b98b1105633d60bb4759f9756f1deca35738d23525dc9e48774b1f97a0d9c744"
+        },
+        {
+          "path": "media/dogdiseases-class-tick-diagram.jpeg",
+          "sha256": "c8d67c9732912d21ac4da7a506416c5706d8f9e83158fb44af2bbebd98cf2931"
+        }
+      ],
+      "note": "Original class examples of a rabies warning sign, intestinal roundworm illustration and tick diagram; not a comprehensive disease list or diagnosis."
+    },
+    "revierroles": {
+      "path": "media/study-revierroles-two-examples.webp",
+      "source": "Range - Revier (20260922).pdf",
+      "pictureSourcePageXrefs": [
+        [
+          30,
+          191
+        ],
+        [
+          30,
+          192
+        ]
+      ],
+      "imageSources": [
+        {
+          "path": "media/revier-role-paechter-class-photo.jpeg",
+          "sha256": "853cdd232e4143d2e27ced239ad01b652d8e9cace819cbfd5a7d76f0e601415a"
+        },
+        {
+          "path": "media/revier-role-hunter-class-photo.jpeg",
+          "sha256": "1eff4e7bb204c7cca82cc02007b5e72ddbf09e3b378c42a5384795dce8d8dccf"
+        }
+      ],
+      "note": "Two original class model photographs labeled Pächter and Ami-Jäger Team; illustrates examples only, not a complete personnel hierarchy."
+    }
+  },
+  "classPhotoReuse": {
+    "protectedwildlife": {
+      "path": "media/study-photo-tawnyowl.webp",
+      "sourceCardId": "tawnyowl",
+      "note": "Classroom Waldkauz as protected-species example; not current legal advice"
+    }
+  },
+  "authoredCourseIllustrations": {
+    "misfire": {
+      "path": "media/misfire-classroom-original-schematic.svg",
+      "source": "Firearms_Range_Saftey_Overview_11FEB26_V2.0.pdf",
+      "page": 13,
+      "gitBlobSha1": "088dce056fdde3c4eba03793a7f1d95333e9722d",
+      "type": "newly_authored_classroom_text_based_vector",
+      "note": "Original illustration authored from directly checked 2026 GHC Range Safety text; not extracted from PDF, not independent current-range SOP. Original full-slide image remains in source for traceability."
+    },
+    "shotdistance": {
+      "path": "media/shotdistance-course-danger-illustration.svg",
+      "source": "Weapons - Overview (2020).pdf",
+      "page": null,
+      "originalClassroomPageRange": "50-51",
+      "gitBlobSha1": "85314e425b7152ba428e9be0a85cc6859ae5bc03",
+      "type": "newly_authored_course_distance_heuristic_vector",
+      "note": "Drawn interpretation of 2020 classroom 'Ammo Travel Distance' approximation; page 50-51 per existing card, exact slide number not independently resolved from text extraction. RWS manufacturer glossary separately corroborates mm*100m danger range, not safety boundary."
+    },
+    "abschussplan": {
+      "path": "media/abschussplan-hessen-anlage2b-educational.svg",
+      "source": "Nature and animal protection feb 2019.pdf",
+      "page": null,
+      "classroomPageRange": "20, 32",
+      "gitBlobSha1": "a333ad9456c5e065a1ed6990e37676210d36a34c",
+      "type": "newly_authored_educational_planning_process_not_official_form",
+      "notOfficialForm": true,
+      "referenceFormPDF": "https://www.mkk.de/media/resources/pdf/mkk_de_1/buergerservice_1/lebenslagen_1/sicherheit_und_ordnung_1/32_kreisordnungsamt_1/jagdbehoerde/2025_4/Abschussplanung_Rehwild.pdf",
+      "officialPlanningFormsList": "https://rp-kassel.hessen.de/forsten-und-landwirtschaft/jagd",
+      "note": "Official Hessen MKK 2025 Annex 2b Rehwild PDF *text* was checked. Educative conceptual schematic only: blank fields and no quotas, NOT official current XLSX template, NOT editable planning form. Historical Streckenliste not substituted."
+    }
+  }
+}

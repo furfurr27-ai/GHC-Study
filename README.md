@@ -1,26 +1,76 @@
-# GHC Study
+# GHC Study — restored full release v1.4.8 (2026-10-20)
 
-Offline Android study app for the German Hunting Course.
+**Important recovery:** v1.4.7 incorrectly built from an obsolete v1.4.5 APK, omitting completed development. This release uses the **latest 2026-10-15 tracked source** (branch `feature/slide-audit-glossary-tests-20261012`) as its base and layers the three Schalenwild matrices on top.
 
-Current source version: **v1.4.7** (built from the audited v1.4.5 baseline APK, with modular Schalenwild matrix overlays). Original study-card Details and Other Facts remain based exclusively on GHC class slides.
+- **Practice Test 2:** 125 photographed paper questions in native Quiz Mode (five groups of 25), yellow-highlight answers preserved, matching question, source-selection, warning labels, progress/reset.
+- Other preserved work: 867 legacy exam questions + 77 vocabulary questions, 117 study cards, all 71 reviewed thumbnail replacements, 162 searchable glossary entries, etymology notes, historical-source cautions, stable icons, Android Back behavior.
+- **Schalenwild:** reproduction calendar + antler/horn comparison + identification matrix, separately packaged.
+- Application ID unchanged: `org.ghcstudy.v141`; versionCode 148. If the Android signing key differs between previous installs, **export progress before making any uninstall decision**.
+- **Source-driven build:** no legacy APK extraction. Required release checks: `tests/practice-test-2-smoke.cjs`, glossary/quiz/Back/media audits, `tools/test_schalenwild_matrix.js`, APK inspection of all 125 records and offline assets, emulator smoke.
+- **Separate timed exam prototype:** preserved on `feature/practice-test-2-20261015`, **not** merged; native quiz remains the agreed untimed study drill. No duplication of Practice Test 2 entry.
+- This is a software restoration, not certification of historical 2021/22 paper answers or current law.
 
-### Schalenwild comparison matrices
+See `docs/RESTORE_FULL_PROGRESS_20261020.md` for source history, tests and acceptance.
 
-**Study Cards → Schalenwild** contains **one expandable comparison panel immediately above the existing search and study-card grid**, with three switchable views:
+---
 
-1. **Fortpflanzung (Reproduction):** existing horizontally scrollable 12-month rut/birth chart for seven species, with gestation and emphasis on Eiruhe, boar's 3+3+3 gestation and the unresolved Gamswild course discrepancy. Use Both / Rut / Births to filter.
-2. **Geweih & Horn (Antlers / Horns):** antlers versus permanent horns versus tusks; course-qualified shedding, velvet-growth and rubbing details. Missing cross-species month data is deliberately marked — rather than invented.
-3. **Erkennung (Identification):** trophy type, adult tooth count (32/34/44), ruminant status and Niederwild/Hochwild classification, including memory cues for the exceptions.
+## Archived development notes (2026-10-15; prior to v1.4.8)
 
-All three views are offline and share one panel. Switching views does not clone or overwrite existing study-card facts. German hunting vocabulary is paired with English wording. Tabs support touch and arrow-key operation; tables scroll horizontally with a sticky species column. A live phone-layout check remains necessary.
+## Practice Test 2 — complete five-part photographed paper (2026-10-15)
 
-Implementation: app/src/main/assets/schalenwild-matrix.js, schalenwild-matrix.css, and tools/inject_schalenwild_matrix.py. The GitHub Actions build recovers the existing audited app assets and launcher icon from the checked-in v1.4.5 APK, then injects these modules. tools/test_schalenwild_matrix.js validates original course facts, seven species, the three comparison views, tab state and scoped stylesheet with built-in Node tools.
+**125/125 questions transcribed, five parts of 25.** The original Quiz Mode integration is used with native progress, selective reset, study scope, and ⓘ cover instructions. Only **yellow highlighted** paper answers are keyed; pen circles and ticks are ignored. Final sections added: Part III Weapons Law/Firearms, Part IV Nature/Animal Protection and U.S. Forces Procedures, and Part V Diseases/Meat Handling/Hygiene. Part II Q25 is a single one-point six-pair matching question.
 
-### Build, source review and limitations
+Tracked data: `app/src/main/assets/practice-test-2-part1.json` through `practice-test-2-part5.json`. Assembler: `scripts/integrate_practice_test_2.py`; regression: `tests/practice-test-2-smoke.cjs`; source/provenance checkpoint: `docs/PRACTICE_TEST_2_INTAKE_20261015.md`. The native Quiz Mode is an **untimed drill** (the printed paper's 150-minute limit is displayed in info). The separately tested `feature/practice-test-2-20261015` branch contains a complete standalone timed simulator but is not merged into this branch, to avoid duplicate entry points.
 
-Build on GitHub Actions → **Build Android APK**. The expected artifact name is **GHC-Study-v1.4.7-debug-apk**. Check the latest GitHub Actions run and install the APK on a Galaxy S23 Ultra before considering v1.4.7 device-verified.
+The 2021/22 date is user-reported and unverified. These are historical test-answer transcriptions, **not** verified current law, firearm-safety or game-meat inspection instructions. The existing 867 GHC exam items and 77 Jägersprache questions remain unchanged. Current development stays off `main`; physical Samsung Galaxy S23 Ultra acceptance is still outstanding.
 
-The figures come from the connected GHC Section 1 study deck and the seven original species slide PDFs. The **idea** of a comparison layout was inspired by [Waidwissen WaidMatrix](https://youtu.be/bZSqIRW5zTQ), not the copied graphics or an imported transcript. Course disagreements are explicitly flagged instead of silently resolved.
+### Archived initial 50-question intake (superseded by completed status above)
 
-- Source audit: research/waidwissen-schalenwild-intake.md
-- Matrix roadmap and acceptance checks: research/waidwissen-comparison-matrix-roadmap.md
+Added a **separate Quiz Mode bank** for the user's more recent U.S. Forces Hunting Examination practice example. Initial intake: **50 of 125 questions**, all 25 questions in Part I (Game Biology) and all 25 in Part II (Hunting Dogs / Hunting Procedures). **Only yellow highlighted answers** are keyed; pen circles are not. Part II Q25 uses an actual six-way matching interface and counts as **one** question. A new ⓘ info modal displays cover instructions: closed book, ink pen, circle letter(s), five 25-question parts, 13 needed **in each part**, one point per question, 150-minute written exam limit. The current app drill is **not timed**.
+
+Data: `app/src/main/assets/practice-test-2-part1.json`, `practice-test-2-part2.json`. Integration: `scripts/integrate_practice_test_2.py`, applied after source-audit overlays in full feature-branch CI; separate source selector, part drill scopes, mastery, progress/backup/reset, no edit to the historical 867-question source bank or 77 vocabulary records. Tests: `tests/practice-test-2-smoke.cjs`. Checkpoint and continuation: `docs/PRACTICE_TEST_2_INTAKE_20261015.md`. **More photo batches expected for Parts III–V.** Exam source date 2021/22 is user-estimated, not verified on paper. The original photos have **not** been committed to this public repo. Standalone APK build [#38800047487](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38800047487) and functional smoke job [#38800047286](https://github.com/furfurr27-ai/GHC-Study/actions/runs/38800047286) succeeded. Do not merge draft PR #3 or edit main without user direction.
+
+# GHC Study Android
+
+Version **1.4.6** (versionCode 146), package `org.ghcstudy.v141`. Target: Samsung Galaxy S23 Ultra. Android minSdk 24, compile/target SDK 35.
+
+The project is currently **public on GitHub**. Do not commit private class slides, copyrighted PDFs, credentials, or personal data.
+
+## Build
+GitHub Actions: **Build Android APK from tracked source** (`.github/workflows/android-apk.yml`). The build uses `app/src/main/assets/index.html`, tracked `assets/media/`, and `res/drawable/ic_launcher.png`. It must not extract or embed the historical APK.
+
+## Audit and provenance
+- `Audit recovered v1.4.5 against historical APK` compares tracked source files with the original v1.4.5 APK stored in commit `9ce4b3037af3b1a9af5f88ef645265bb06d6f245`.
+- `Static app and repository audit` scans asset sizes, media references, duplicate files, external dependencies, and inline JavaScript syntax. Its reports are diagnostic; unreferenced assets are not automatically deleted.
+- `docs/SOURCE_INVENTORY.md` maps course sources; `docs/AUDIT_V145.md` records original app parity constraints.
+
+## Quiz and Study Mode additions
+- **Jägersprache1** is the third native Quiz Mode bank with 77 German-to-English vocabulary questions in five topic groups. It shares the existing mastery-progress, backup, and reset machinery.
+- **Trophy Anatomy** is the English-only Study Mode title. The card retains the class-based deer and horn facts, and uses the original labeled Rotwild antler image from *Game - Rotwild.pdf*, page 14.
+
+## Non-negotiable regression requirements
+- Android system Back returns to the previous app screen; root exits only intentionally.
+- Quizzes, direct/related pools, study cards, references, and progress/reset scope retain behavior.
+- Existing saved progress and offline images remain usable after updates.
+- Study card Details and Other Facts are sourced only from class slides. Photos are individual images, not slide screenshots.
+
+## Change policy
+Do not bulk-minify or remove assets without measured savings, an explicit source diff, a successful parity/build audit, and behavior regression evidence. A successful build is not proof of runtime correctness.
+
+## October 2026 glossary and verification work
+
+The v1.4.6 development branch includes **162 offline searchable Jägersprache entries: 160 meanings available and 2 pending** (`Jagdschuetz`, `Tiroler`). Entries distinguish class-PDF text, worksheet-to-class contextual matches, historical course guides, and explicitly labeled external authorities. Of the original 77 word-origin/breakdown notes, **2 now have individually cited historical or word-formation support** (`Schweiß`, `Schweißhund`) and **75 remain unverified**; each status is labeled individually and the summary counts are dynamically derived. Do not interpret a compositional mnemonic as verified historical word origin or poacher camouflage. See `docs/GLOSSARY_ETYMOLOGY_UI_AUDIT_20261015.md`. The glossary remains searchable and cross-referenced, with its offline Android link and all original IDs preserved.
+
+**Audit status (2026-10-13):** All 38 listed class PDF texts were retrieved. The app currently has **803 class-PDF-text-checked fact blocks of 814**, leaving **11 pending classroom-slide verification**. The remaining 11 are the historical 2013 course-guide Murmeltier and Seehund/Robbe facts, separately checked against that guide but not misrepresented as 2026 slide evidence. Five unsupported/editorial blocks were removed from the original 819. Checked means fidelity to PDF text, **not** independent biological/legal correctness, verified slide illustration/page location or a complete audit of individual exam explanations. See `audit/study-card-claim-register-20261012.json`, `docs/SLIDE_AUDIT_PROGRESS_20261013.md` and `docs/CURRENT_LAW_SOURCE_WARNINGS_20261013.md`.
+
+GitHub Actions regression covers quiz/navigation/glossary, the Android Back bridge, APK packaging, and Android emulator smoke checks. Installation/upgrade retention on the actual Galaxy S23 Ultra remains to be checked.
+
+## Exam-question integrity audit (2026-10-13)
+
+`scripts/check_question_bank_integrity.py` now verifies all 867 shipped exam records (100 Practice Test + 767 GHC Focused), answer IDs, options, explanations, and mechanical parenthetical answer giveaways. The source question `H2023-D19-Q042` was corrected to remove a direct parenthetical answer clue without changing the original answer key, and four duplicated malformed question stems were smoothed. The scanner flags 18 same-stem pairs and 491 questions without explicit visual-ref fields for further human review, but does not remove questions or claim those 491 are missing animal pictures. See `docs/QUESTION_BANK_INTEGRITY_20261013.md` and `docs/QUESTION_DUPLICATE_REVIEW_20261013.md`. A green mechanical scan is not a factual or current-law audit.
+
+## Current media release gate (2026-10-15)
+
+The tracked assembly overlay now repairs **71 of 71** originally slide-style study thumbnails into standalone class-photo crops, direct original embedded PDF figures, photo montages, a verified classroom image reuse or **three explicitly NEW course/official-text-grounded educational SVG illustrations** (`misfire`, `shotdistance`, `abschussplan`). The two safety-topic drawings do not claim universal operating procedures or guaranteed safe distances. The Abschussplan illustration differentiates prospective planned culls from historical Streckenliste and visibly says **NOT AN OFFICIAL FORM**; it was drawn using text from the publicly posted 2025 Hessian Anlage 2b Rehwild PDF, not an inaccessible current 2026 XLSX workbook. Both build workflows now require strict 71/71 media source and **APK-packaged** integrity checks. The unrelated wrong-subject Shot Placement picture was corrected previously. These checks do not replace the 867-question factual audit, glossary historical source verification, legal review, independent photo rights checks, or physical Samsung device validation. See `audit/study-media-review-20261014.json`, `docs/STUDY_MEDIA_ABSCHUSSPLAN_SOURCE_20261015.md`, `docs/STUDY_MEDIA_MISFIRE_SOURCE_SCHEMATIC_20261015.md`, and `docs/STUDY_MEDIA_SHOT_DISTANCE_SCHEMATIC_20261015.md`.
+
+The **867-question source audit** now distinguishes **18 individually source-qualified explanations**, **8 historical 2013 answer-key limitations or legal-scope warnings** (Q02 vehicle unloading, Q03 transport checklist, Q09 prior WBK, Q11 semiautomatic capacity, Q13 warning shots, Q15 proof-house claim, Q19 military firearm import, Q20 Austria hunting/travel checklist), and **841 not yet individually fact-audited** questions. The disputed `P2013-S3-Q02` question **really does omit car entry/unloading from B/C in both inspected copies of the original 19 December 2013 paper answer key** (not an app transcription mistake), despite SVLFG's current VSG 4.4 safety rule. The quiz displays a neutral warning **before grading** and its explanation describes the missing option; the historical `correct=[b,c]` key remains preserved but is **not certified complete** for safety. The quiz now also accepts **B/C/D** as a safety-complete response without marking vehicle unloading wrong, clearly distinguishing the archived and safety-complete responses after grading; a runtime JSDOM regression checks both. Five additional GHC classroom and SVLFG firearm-safety comparisons cover safe muzzle direction, climbing, vehicle unloading and driven-hunt leader loading instructions. Five more 2013 practice questions about firearms storage, transport, minimum caliber/energy and semiautomatic hunting have been individually compared with the **original December 2013 PDF**, the connected 2026 GHC Weapons/Ammo lesson, and current **WaffG §12, AWaffV §13, BJagdG §19**. Two new pre-answer notices explain current legal differences while original exam keys are kept; `docs/QUESTION_FACT_AUDIT_WEAPONS_LAW_20261015.md` records each source and caveat. **Four further original 2013 paperwork/self-defense questions** were checked against WaffG §§10, 12, 13 and 38 and StGB §32: borrowed long-gun paperwork and handgun authorization (qualified), and two flagged historical errors regarding long-gun prior WBK and universal self-defense warning-shot sequence. The latter warnings appear before grading, with the printed historical answers marked archival-only after checking rather than simply 'Correct'. See `docs/QUESTION_FACT_AUDIT_2013_DOCUMENTS_SELF_DEFENSE_20261015.md`. Four further 2013 questions (`P2013-S3-Q07/Q14/Q15/Q16`) were checked directly against the 2026 GHC ammunition/markings class deck and German WaffG §24/BeschG §§3–6; rimfire vs rimmed, shotgun gauge and proof/marking distinctions are source-qualified, while the paper's unconditional German proof-house test claim gets a pre-answer warning and archival-only grading. Sources: `docs/QUESTION_FACT_AUDIT_2013_MARKINGS_PROOF_AMMO_20261015.md`. Source-check of original 2013 `P2013-S3-Q18/Q19`: the sick-domestic-dog answer refers to a veterinarian (TierSchG §§4,17); the categorical 2013 `NO` answer for U.S. Forces AR-15 import is specifically flagged as historical, **not** a current permit ruling. USAREUR-AF's March 2026 customs pamphlet requires German import permission and U.S. Forces registration; WaffG §29 and technical classification also apply. See `docs/QUESTION_FACT_AUDIT_US_FORCES_IMPORT_ANIMAL_20261015.md`. No blanket import permission or ban is asserted. Another two 2013 original-paper questions were checked: `P2013-S3-Q06` .38 Special ammunition in a properly marked .357 Magnum revolver was verified by a directly viewed **Ruger manufacturer manual**; `P2013-S3-Q20` Austrian hunting-travel documents are marked **historical only** because Austrian provincial `Jagdkarte/Jagdgastkarte`, actual hunting permission, European Firearms Pass and firearm-category requirements vary. Its archive key is not unconditional permission to hunt or carry. See `docs/QUESTION_FACT_AUDIT_2013_AUSTRIA_38_SPECIAL_20261015.md`. Both workflows test these caveats, verify stable 867 original IDs/answers and emit `build/question-source-audit-matrix.json` from assembled source and actual APK; pre-existing classroom links are not proof of audited sources. Original evidence and unresolved conflict: `docs/QUESTION_FACT_AUDIT_HESSEN_MISFIRE_PLANNING_20261015.md`, `docs/QUESTION_FACT_AUDIT_FIREARM_SAFETY_BATCH_20261015.md`, `docs/QUESTION_REVIEW_COVERAGE_20261015.md`. Physical Samsung S23 Ultra acceptance, physical acceptance of the narrowly scoped dual-accepted scoring for the faulty 2013 paper answer, remaining etymologies and current-law reviews are outstanding.

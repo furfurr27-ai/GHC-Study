@@ -1,0 +1,884 @@
+{
+  "part": 3,
+  "title": "Weapons Law, Firearms and Handling",
+  "questions": [
+    {
+      "id": "P2022-S3-Q01",
+      "section": 3,
+      "number": 1,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "A US hunter in Germany sells his .308W rifle to another US hunter in Germany with a valid German hunting license. The seller must:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Send the deregistration documents to USAREUR Registry within one month"
+        },
+        {
+          "id": "b",
+          "text": "Send the deregistration documents to USAREUR Registry within two weeks"
+        },
+        {
+          "id": "c",
+          "text": "Do nothing, the buyer has to do the registration and deregistration"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069487.jpg"
+    },
+    {
+      "id": "P2022-S3-Q02",
+      "section": 3,
+      "number": 2,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "Where are the proof markings normally found on an over/under shotgun?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "On the left side of the barrel"
+        },
+        {
+          "id": "b",
+          "text": "On the right side of the barrel"
+        },
+        {
+          "id": "c",
+          "text": "On top of the barrel"
+        },
+        {
+          "id": "d",
+          "text": "On the bottom of the barrel, under the chamber, covered by the front stock"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069487.jpg"
+    },
+    {
+      "id": "P2022-S3-Q03",
+      "section": 3,
+      "number": 3,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "What does 6,5x57R on a cartridge stand for?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "6,5 is the caliber"
+        },
+        {
+          "id": "b",
+          "text": "57 is the case length"
+        },
+        {
+          "id": "c",
+          "text": "R means smokeless powder"
+        },
+        {
+          "id": "d",
+          "text": "R stands for rimmed"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069487.jpg"
+    },
+    {
+      "id": "P2022-S3-Q04",
+      "section": 3,
+      "number": 4,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "When using a firearm in self defense, German law requires to?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Warn the attacker verbally"
+        },
+        {
+          "id": "b",
+          "text": "Fire a warning shot"
+        },
+        {
+          "id": "c",
+          "text": "Use non-lethal ammo only"
+        }
+      ],
+      "correct": [
+        "a",
+        "b"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069487.jpg"
+    },
+    {
+      "id": "P2022-S3-Q05",
+      "section": 3,
+      "number": 5,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "Which is the correct statement?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A Bockflinte has two side-by-side shotgun barrels."
+        },
+        {
+          "id": "b",
+          "text": "A Bockflinte has two over-under shotgun barrels."
+        },
+        {
+          "id": "c",
+          "text": "A Bockflinte has a rifled barrel on top of a shotgun barrel."
+        },
+        {
+          "id": "d",
+          "text": "A Bockflinte has two rifled barrels side-by-side."
+        },
+        {
+          "id": "e",
+          "text": "WBK"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069487.jpg"
+    },
+    {
+      "id": "P2022-S3-Q06",
+      "section": 3,
+      "number": 6,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "Is it legal to load a semi-automatic rifle with two rounds in the magazine and a third round in the chamber while on a hunt?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069487.jpg"
+    },
+    {
+      "id": "P2022-S3-Q07",
+      "section": 3,
+      "number": 7,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "The required legal markings on a firearm in GE are:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "proof mark"
+        },
+        {
+          "id": "b",
+          "text": "barrel length"
+        },
+        {
+          "id": "c",
+          "text": "manufacturer"
+        },
+        {
+          "id": "d",
+          "text": "type of ammo (caliber)"
+        },
+        {
+          "id": "e",
+          "text": "serial number"
+        },
+        {
+          "id": "f",
+          "text": "max powder pressure"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "d",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069488.jpg"
+    },
+    {
+      "id": "P2022-S3-Q08",
+      "section": 3,
+      "number": 8,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "What does 8x56 on a scope stand for?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "56 power magnification, 8 inch front lens"
+        },
+        {
+          "id": "b",
+          "text": "8 power magnification, 56 inch front lens"
+        },
+        {
+          "id": "c",
+          "text": "8 power magnification, 56mm front lens"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069488.jpg"
+    },
+    {
+      "id": "P2022-S3-Q09",
+      "section": 3,
+      "number": 9,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "Which ammo is legal to hunt Schwarzwild?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "5.6x50 Magnum — 55gr bullet — E/100 1,285 Joule"
+        },
+        {
+          "id": "b",
+          "text": "7x57 — 170 gr bullet — E/100 2,020 Joule"
+        },
+        {
+          "id": "c",
+          "text": "9.3x72R — 190 gr bullet — E/100 1,413 Joule"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069488.jpg"
+    },
+    {
+      "id": "P2022-S3-Q10",
+      "section": 3,
+      "number": 10,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "A hunter with a valid Jagdschein has one shotgun registered onto the Waffenbesitzkarte, in 16/70 gauge. May that hunter legally purchase other long gun ammo?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "Yes, but only shotgun ammo in 16 gauge and 20 gauge"
+        },
+        {
+          "id": "c",
+          "text": "No, only ammo for the registered shotgun"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069488.jpg"
+    },
+    {
+      "id": "P2022-S3-Q11",
+      "section": 3,
+      "number": 11,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "What is a “Deutscher Stecher”?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "A double trigger, the rear trigger is used to “set” the front trigger"
+        },
+        {
+          "id": "b",
+          "text": "A double trigger, the front trigger is used to “set” the rear trigger"
+        },
+        {
+          "id": "c",
+          "text": "A single trigger, it is “set” by pushing the trigger forward"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069488.jpg"
+    },
+    {
+      "id": "P2022-S3-Q12",
+      "section": 3,
+      "number": 12,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "German hunting law requires for the finishing shot fired from a handgun on a wounded Wild Boar a minimum energy (E100) of 2000 Joule.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069488.jpg"
+    },
+    {
+      "id": "P2022-S3-Q13",
+      "section": 3,
+      "number": 13,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "To purchase a .357 Magnum revolver the hunter has to present",
+      "choices": [
+        {
+          "id": "a",
+          "text": "ID-card or passport, valid hunting license"
+        },
+        {
+          "id": "b",
+          "text": "ID-card or passport, valid hunting license, WBK"
+        },
+        {
+          "id": "c",
+          "text": "ID-card or passport, WBK with valid entry for this gun"
+        },
+        {
+          "id": "d",
+          "text": "ID-card or passport, Europäischen Feuerwaffenpass"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069489.jpg"
+    },
+    {
+      "id": "P2022-S3-Q14",
+      "section": 3,
+      "number": 14,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "It is important to know the chamber length of a shotgun, because shotgun shells come in different lengths.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069489.jpg"
+    },
+    {
+      "id": "P2022-S3-Q15",
+      "section": 3,
+      "number": 15,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "The down-range danger zone for a rifle fired at 30° above the horizon with over 2,000 Joules firing power extends to:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "1,000 meters"
+        },
+        {
+          "id": "b",
+          "text": "3,000 meters"
+        },
+        {
+          "id": "c",
+          "text": "5,000 meters"
+        },
+        {
+          "id": "d",
+          "text": "7,000 meters"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069489.jpg"
+    },
+    {
+      "id": "P2022-S3-Q16",
+      "section": 3,
+      "number": 16,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "A hunter transporting his/her gun to the hunting area in GE must carry the following documents:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hunting license"
+        },
+        {
+          "id": "b",
+          "text": "concealed firearms permit"
+        },
+        {
+          "id": "c",
+          "text": "WBK"
+        },
+        {
+          "id": "d",
+          "text": "European Weapons pass"
+        },
+        {
+          "id": "e",
+          "text": "ID card"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069489.jpg"
+    },
+    {
+      "id": "P2022-S3-Q17",
+      "section": 3,
+      "number": 17,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "May a hunter legally shoot a fox with a .17HMR caliber rifle?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069489.jpg"
+    },
+    {
+      "id": "P2022-S3-Q18",
+      "section": 3,
+      "number": 18,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "E100 on an ammo box stands for:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "bullet speed at 100 meters"
+        },
+        {
+          "id": "b",
+          "text": "range of the bullet"
+        },
+        {
+          "id": "c",
+          "text": "energy of the bullet at 100 meters"
+        },
+        {
+          "id": "d",
+          "text": "danger range 100 meters"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069489.jpg"
+    },
+    {
+      "id": "P2022-S3-Q19",
+      "section": 3,
+      "number": 19,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "For new gun owners in Germany (after 06 July 2017), the requirement for a gun safe will be",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Type 0 safe"
+        },
+        {
+          "id": "b",
+          "text": "Type 1 safe"
+        },
+        {
+          "id": "c",
+          "text": "Type A safe"
+        },
+        {
+          "id": "d",
+          "text": "Type A safe with separate Type B compartment inside"
+        }
+      ],
+      "correct": [
+        "a",
+        "b"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069490.jpg"
+    },
+    {
+      "id": "P2022-S3-Q20",
+      "section": 3,
+      "number": 20,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "On a regular side by side shotgun w/o selector and double trigger the front trigger will fire the",
+      "choices": [
+        {
+          "id": "a",
+          "text": "left barrel"
+        },
+        {
+          "id": "b",
+          "text": "right barrel"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069490.jpg"
+    },
+    {
+      "id": "P2022-S3-Q21",
+      "section": 3,
+      "number": 21,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "What is a HPBT bullet?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hard Point Ballistic Tip"
+        },
+        {
+          "id": "b",
+          "text": "Hollow Point Ballistic Tip"
+        },
+        {
+          "id": "c",
+          "text": "Hollow Point Boat Tail"
+        },
+        {
+          "id": "d",
+          "text": "High Power Bullet tracer"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069490.jpg"
+    },
+    {
+      "id": "P2022-S3-Q22",
+      "section": 3,
+      "number": 22,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "Which gun has the chamber separate from the barrel?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "single shot rifle"
+        },
+        {
+          "id": "b",
+          "text": "Revolver"
+        },
+        {
+          "id": "c",
+          "text": "Pistol"
+        },
+        {
+          "id": "d",
+          "text": "semiautomatic shotgun"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069490.jpg"
+    },
+    {
+      "id": "P2022-S3-Q23",
+      "section": 3,
+      "number": 23,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "What is the German word for the crosshairs in a scope?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Absehen"
+        },
+        {
+          "id": "b",
+          "text": "Okular"
+        },
+        {
+          "id": "c",
+          "text": "Visier"
+        },
+        {
+          "id": "d",
+          "text": "Objektiv"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069490.jpg"
+    },
+    {
+      "id": "P2022-S3-Q24",
+      "section": 3,
+      "number": 24,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "Which of the following is handgun ammunition?",
+      "choices": [
+        {
+          "id": "a",
+          "text": ".308 Win"
+        },
+        {
+          "id": "b",
+          "text": ".357 Mag."
+        },
+        {
+          "id": "c",
+          "text": ".243 Win"
+        },
+        {
+          "id": "d",
+          "text": ".45ACP"
+        }
+      ],
+      "correct": [
+        "b",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069490.jpg"
+    },
+    {
+      "id": "P2022-S3-Q25",
+      "section": 3,
+      "number": 25,
+      "sectionTitle": "Weapons Law, Firearms and Handling",
+      "stem": "To legally possess a hand gun in Germany, a licensed hunter must:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Have a bill of sale that proves ownership."
+        },
+        {
+          "id": "b",
+          "text": "Have a valid German hunting license."
+        },
+        {
+          "id": "c",
+          "text": "Initiate their request for USAREUR registration within six months of purchasing the firearm."
+        },
+        {
+          "id": "d",
+          "text": "Submit their request for USAREUR registration and ensure their most recent FBI background check is not more than 6 months old."
+        },
+        {
+          "id": "e",
+          "text": "Receive their updated Waffenbesitzkarte that includes a complete entry for the hand gun."
+        },
+        {
+          "id": "f",
+          "text": "Have a weapons storage safe that meets the security level “0”, or “1” within Germany."
+        },
+        {
+          "id": "g",
+          "text": "All of the above"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "d",
+        "e",
+        "f"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Weapons Law, Firearms and Handling",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069491.jpg"
+    }
+  ]
+}

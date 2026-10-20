@@ -3,11 +3,12 @@ android {
  namespace 'org.ghcstudy.offline'
  compileSdk 35
  defaultConfig {
-  applicationId 'org.ghcstudy.v141'
+  applicationId project.hasProperty('ghcStandalone') ? 'org.ghcstudy.v146.standalone' : 'org.ghcstudy.v141'
+  manifestPlaceholders = [ghcAppLabel: project.hasProperty('ghcStandalone') ? 'GHC Study Standalone' : 'GHC Study']
   minSdk 24
   targetSdk 35
-  versionCode 147
-  versionName '1.4.7'
+  versionCode 148
+  versionName '1.4.8'
  }
  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }

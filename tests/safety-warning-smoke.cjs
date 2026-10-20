@@ -1,7 +1,18 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const {JSDOM, VirtualConsole} = require('jsdom');
+const {JSDOM, VirtualConsole, ResourceLoader} = require('jsdom');
+// CI runs fully offline. Serve only the application's tracked WebView assets
+// from disk; never try to fetch placeholder ghc.local over the network.
+class GHCOfflineAssets extends ResourceLoader {
+  fetch(url) {
+    const u = new URL(url);
+    if (u.hostname === 'ghc.local' && /^\/(schalenwild-matrix\.(css|js))$/.test(u.pathname)) {
+      return Promise.resolve(fs.readFileSync(path.resolve('app/src/main/assets', u.pathname.slice(1))));
+    }
+    return null;
+  }
+}
 
 async function main() {
   const errors = [];
@@ -16,7 +27,7 @@ async function main() {
   const html = originalHtml.replace(anchor,
     "window.__ghcTestRenderExactQuestion=function(id){selected={};checked=false;current=window.GHC_QUESTIONS.find(q=>q.id===id);if(!current)throw Error('question ID missing');renderQuestion()};\n"+anchor);
   const dom = new JSDOM(html, {
-    url: 'https://ghc.local/', runScripts: 'dangerously', resources: 'usable',
+    url: 'https://ghc.local/', runScripts: 'dangerously', resources: new GHCOfflineAssets(),
     pretendToBeVisual: true, virtualConsole: vc,
     beforeParse(win) {
       win.scrollTo = () => {};

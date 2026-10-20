@@ -1,0 +1,915 @@
+{
+  "part": 5,
+  "title": "Diseases, Handling of Meat, Hygiene",
+  "questions": [
+    {
+      "id": "P2022-S5-Q01",
+      "section": 5,
+      "number": 1,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "While gutting a Roe Deer you notice that the liver is of a light yellow color. Do you take the carcass to the vet for further examination?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, a healthy liver is of yellowish color"
+        },
+        {
+          "id": "b",
+          "text": "Yes"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069496.jpg"
+    },
+    {
+      "id": "P2022-S5-Q02",
+      "section": 5,
+      "number": 2,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which animals suffer from Räude (mange)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fox"
+        },
+        {
+          "id": "b",
+          "text": "Chamois"
+        },
+        {
+          "id": "c",
+          "text": "dogs"
+        },
+        {
+          "id": "d",
+          "text": "hares"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069496.jpg"
+    },
+    {
+      "id": "P2022-S5-Q03",
+      "section": 5,
+      "number": 3,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Game suffering from the following diseases is never good for human consumption.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Leberegel"
+        },
+        {
+          "id": "b",
+          "text": "lung worms"
+        },
+        {
+          "id": "c",
+          "text": "Schweinepest"
+        },
+        {
+          "id": "d",
+          "text": "Rabies"
+        },
+        {
+          "id": "e",
+          "text": "Myxomatosis"
+        },
+        {
+          "id": "f",
+          "text": "All of the above"
+        }
+      ],
+      "correct": [
+        "c",
+        "d",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069496.jpg"
+    },
+    {
+      "id": "P2022-S5-Q04",
+      "section": 5,
+      "number": 4,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which of the following diseases my infect human beings?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Trichinosis"
+        },
+        {
+          "id": "b",
+          "text": "Rabies"
+        },
+        {
+          "id": "c",
+          "text": "Myxomatosis"
+        },
+        {
+          "id": "d",
+          "text": "Schweinepest"
+        },
+        {
+          "id": "e",
+          "text": "Salmonella"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069496.jpg"
+    },
+    {
+      "id": "P2022-S5-Q05",
+      "section": 5,
+      "number": 5,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which statements will be considered questionable characteristics?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Many tumors"
+        },
+        {
+          "id": "b",
+          "text": "Occasional sneezing"
+        },
+        {
+          "id": "c",
+          "text": "Swelling of the joints"
+        },
+        {
+          "id": "d",
+          "text": "Rubbing on Malbaum"
+        },
+        {
+          "id": "e",
+          "text": "Discoloration of the internal organs"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069496.jpg"
+    },
+    {
+      "id": "P2022-S5-Q06",
+      "section": 5,
+      "number": 6,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Myxomatosis is a virus that infects",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hares"
+        },
+        {
+          "id": "b",
+          "text": "Rabbits"
+        },
+        {
+          "id": "c",
+          "text": "Hares and Rabbits"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069497.jpg"
+    },
+    {
+      "id": "P2022-S5-Q07",
+      "section": 5,
+      "number": 7,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "When refilling a feeding station in February you see a young female Roe Deer with the Spiegel and rear legs dirty from diarrhea, the animal looks weak, and it moves slow. Do you….",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kill it immediately"
+        },
+        {
+          "id": "b",
+          "text": "Get a permit from Untere Jagdbehörde to kill it out of season"
+        },
+        {
+          "id": "c",
+          "text": "Get a permit from the Veterinäramt to kill it out of season."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069497.jpg"
+    },
+    {
+      "id": "P2022-S5-Q08",
+      "section": 5,
+      "number": 8,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "The disease transmitted by ticks is",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lyme disease"
+        },
+        {
+          "id": "b",
+          "text": "FSME (Frühsommer-Meningo-Enzephalitis)"
+        },
+        {
+          "id": "c",
+          "text": "Coccidiosis"
+        }
+      ],
+      "correct": [
+        "a",
+        "b"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069497.jpg"
+    },
+    {
+      "id": "P2022-S5-Q09",
+      "section": 5,
+      "number": 9,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "A fleeing Kitz breaks its neck in a fence during a drive hunt. May the hunter use it for human consumption, if there are no visible diseases or questionable characteristics?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No"
+        },
+        {
+          "id": "b",
+          "text": "No, only after having the carcass checked by a veterinarian and then only for his personal consumption."
+        },
+        {
+          "id": "c",
+          "text": "Yes"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069497.jpg"
+    },
+    {
+      "id": "P2022-S5-Q10",
+      "section": 5,
+      "number": 10,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which parasites may settle on your dog?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fuchsbandwurm"
+        },
+        {
+          "id": "b",
+          "text": "Räudemilbe"
+        },
+        {
+          "id": "c",
+          "text": "Hirschlaus"
+        },
+        {
+          "id": "d",
+          "text": "Zecke"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069497.jpg"
+    },
+    {
+      "id": "P2022-S5-Q11",
+      "section": 5,
+      "number": 11,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "The German word Tollwut means",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rabies"
+        },
+        {
+          "id": "b",
+          "text": "Lyme disease"
+        },
+        {
+          "id": "c",
+          "text": "Distemper"
+        },
+        {
+          "id": "d",
+          "text": "None of the above"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069497.jpg"
+    },
+    {
+      "id": "P2022-S5-Q12",
+      "section": 5,
+      "number": 12,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "When do you gut a freshly shot Roe Deer?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "After the body cooled down."
+        },
+        {
+          "id": "b",
+          "text": "Before dark."
+        },
+        {
+          "id": "c",
+          "text": "Within 7 hours."
+        },
+        {
+          "id": "d",
+          "text": "Immediately"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069499.jpg"
+    },
+    {
+      "id": "P2022-S5-Q13",
+      "section": 5,
+      "number": 13,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which of the listed diseases present a risk of infection for humans?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rabies"
+        },
+        {
+          "id": "b",
+          "text": "Brucellosis"
+        },
+        {
+          "id": "c",
+          "text": "Schweinepest"
+        },
+        {
+          "id": "d",
+          "text": "Infestation with larvae"
+        },
+        {
+          "id": "e",
+          "text": "Salmonella"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069499.jpg"
+    },
+    {
+      "id": "P2022-S5-Q14",
+      "section": 5,
+      "number": 14,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which animal must be checked for trichinosis before human consumption?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Roe Deer"
+        },
+        {
+          "id": "b",
+          "text": "Wild Boar"
+        },
+        {
+          "id": "c",
+          "text": "Hare"
+        },
+        {
+          "id": "d",
+          "text": "Badger"
+        },
+        {
+          "id": "e",
+          "text": "Rabbit"
+        }
+      ],
+      "correct": [
+        "b",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069499.jpg"
+    },
+    {
+      "id": "P2022-S5-Q15",
+      "section": 5,
+      "number": 15,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "What is the temperature to cool down the carcass of cloven hoofed game after gutting?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "7° Celcius"
+        },
+        {
+          "id": "b",
+          "text": "5° Celcius"
+        },
+        {
+          "id": "c",
+          "text": "2° Celcius"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069499.jpg"
+    },
+    {
+      "id": "P2022-S5-Q16",
+      "section": 5,
+      "number": 16,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Is a Rehbock with larvae of the botfly appropriate for human consumption?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069499.jpg"
+    },
+    {
+      "id": "P2022-S5-Q17",
+      "section": 5,
+      "number": 17,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "When gutting an Überläufer you find red, bloody spots in the throat. This is a symptom of:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Tollwut"
+        },
+        {
+          "id": "b",
+          "text": "Schweinepest"
+        },
+        {
+          "id": "c",
+          "text": "Brucellose"
+        },
+        {
+          "id": "d",
+          "text": "Räude"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069499.jpg"
+    },
+    {
+      "id": "P2022-S5-Q18",
+      "section": 5,
+      "number": 18,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Hunter hygiene training requirements in Germany include knowledge of:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Normal anatomy and physiology in wild game appearance and behavior"
+        },
+        {
+          "id": "b",
+          "text": "Environmental contamination, such as dioxins, pesticides, and radioactive substances"
+        },
+        {
+          "id": "c",
+          "text": "Using minimum caliber and muzzle force for legally hunting various game"
+        },
+        {
+          "id": "d",
+          "text": "Abnormal behavior and pathological concerns in wild game"
+        },
+        {
+          "id": "e",
+          "text": "All of the above."
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069500.jpg"
+    },
+    {
+      "id": "P2022-S5-Q19",
+      "section": 5,
+      "number": 19,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "You kill a Roe Deer in December, the outside temperature is below 5 degrees Celsius. Do you have to put the carcass into a cooling room?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, I can store it outside in a cover keeping it clean."
+        },
+        {
+          "id": "b",
+          "text": "Yes, it has to go to the cooling room within 2 hours"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it has to go to the cooling room within 5 hours"
+        },
+        {
+          "id": "d",
+          "text": "Yes, it has to cool down to a temperature below 0 degrees Celsius."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069500.jpg"
+    },
+    {
+      "id": "P2022-S5-Q20",
+      "section": 5,
+      "number": 20,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "You killed a Roe Deer and your shot punctured the stomach, when gutting you find green and brown dirt inside the carcass.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "I have to take the animal to a veterinarian to have it checked prior to human consumption."
+        },
+        {
+          "id": "b",
+          "text": "The Roe is not good anymore for human consumption."
+        },
+        {
+          "id": "c",
+          "text": "I don’t have to take it to the veterinarian, if I can clean the carcass right after gutting with clean water and no dirt remains inside."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069500.jpg"
+    },
+    {
+      "id": "P2022-S5-Q21",
+      "section": 5,
+      "number": 21,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "You are invited to a Rehbock hunt and you manage to shoot an older buck that was stumbling around, almost like it was blind. You can see nothing unusual during the gutting and the carcass looks clean and healthy. Do you tell the Revier owner about the strange behavior of that buck?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069500.jpg"
+    },
+    {
+      "id": "P2022-S5-Q22",
+      "section": 5,
+      "number": 22,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "What evidence suggests rabies?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wandering aimlessly while grazing"
+        },
+        {
+          "id": "b",
+          "text": "Friendly or aggressive behavior"
+        },
+        {
+          "id": "c",
+          "text": "Salivation and hanging lower jaw"
+        },
+        {
+          "id": "d",
+          "text": "Diarrhea"
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069500.jpg"
+    },
+    {
+      "id": "P2022-S5-Q23",
+      "section": 5,
+      "number": 23,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "You killed 3 Frischling on a successful hunt. You want to keep one for yourself, one you plan to give to a very good friend, and one you plan to sell to the local Gasthaus. Which one has to be checked for trichinosis?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The one you keep"
+        },
+        {
+          "id": "b",
+          "text": "The one for your friend"
+        },
+        {
+          "id": "c",
+          "text": "The one for the Gasthaus"
+        },
+        {
+          "id": "d",
+          "text": "b. and c."
+        },
+        {
+          "id": "e",
+          "text": "All three"
+        }
+      ],
+      "correct": [
+        "e"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069501.jpg"
+    },
+    {
+      "id": "P2022-S5-Q24",
+      "section": 5,
+      "number": 24,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "ASP (Afrikanische Schweinepest) is a disease,",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Only found on Wild Boar in Africa and Asia"
+        },
+        {
+          "id": "b",
+          "text": "Only dangerous to farm pigs"
+        },
+        {
+          "id": "c",
+          "text": "Is infectious to all pigs (Wild Boar and domestic pics)"
+        },
+        {
+          "id": "d",
+          "text": "Infected pigs have been found in Poland and the Czech Republic"
+        }
+      ],
+      "correct": [
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069501.jpg"
+    },
+    {
+      "id": "P2022-S5-Q25",
+      "section": 5,
+      "number": 25,
+      "sectionTitle": "Diseases, Handling of Meat, Hygiene",
+      "stem": "Which animal may suffer from Coccidiose?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Red Deer"
+        },
+        {
+          "id": "b",
+          "text": "Hares"
+        },
+        {
+          "id": "c",
+          "text": "Pheasant"
+        },
+        {
+          "id": "d",
+          "text": "Rabbits"
+        },
+        {
+          "id": "e",
+          "text": "Roe Deer"
+        }
+      ],
+      "correct": [
+        "b",
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Diseases, Handling of Meat, Hygiene",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069501.jpg"
+    }
+  ]
+}

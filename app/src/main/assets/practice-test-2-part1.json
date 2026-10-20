@@ -1,0 +1,881 @@
+{
+  "part": 1,
+  "title": "Game Biology",
+  "questions": [
+    {
+      "id": "P2022-S1-Q01",
+      "section": 1,
+      "number": 1,
+      "sectionTitle": "Game Biology",
+      "stem": "Which answers are correct?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mufflon is a ruminant (cut eater)."
+        },
+        {
+          "id": "b",
+          "text": "Wild Boar is a ruminant."
+        },
+        {
+          "id": "c",
+          "text": "Mufflon belongs to the bovid family"
+        },
+        {
+          "id": "d",
+          "text": "Chamois belongs to the cervid family"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069478.jpg"
+    },
+    {
+      "id": "P2022-S1-Q02",
+      "section": 1,
+      "number": 2,
+      "sectionTitle": "Game Biology",
+      "stem": "How can I tell the age of a Rehbock?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "By the length of the antlers"
+        },
+        {
+          "id": "b",
+          "text": "By the diameter of the horns"
+        },
+        {
+          "id": "c",
+          "text": "By the condition of the teeth"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069478.jpg"
+    },
+    {
+      "id": "P2022-S1-Q03",
+      "section": 1,
+      "number": 3,
+      "sectionTitle": "Game Biology",
+      "stem": "How many Frischlinge does a Bache normally have?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 - 8"
+        },
+        {
+          "id": "b",
+          "text": "1 - 2"
+        },
+        {
+          "id": "c",
+          "text": "10 - 15"
+        },
+        {
+          "id": "d",
+          "text": "Older Bache have only 1 - 2 Frischlinge"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069478.jpg"
+    },
+    {
+      "id": "P2022-S1-Q04",
+      "section": 1,
+      "number": 4,
+      "sectionTitle": "Game Biology",
+      "stem": "Red stags shed their antlers normally in",
+      "choices": [
+        {
+          "id": "a",
+          "text": "February/March"
+        },
+        {
+          "id": "b",
+          "text": "mid summers"
+        },
+        {
+          "id": "c",
+          "text": "October"
+        },
+        {
+          "id": "d",
+          "text": "December/January"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069478.jpg"
+    },
+    {
+      "id": "P2022-S1-Q05",
+      "section": 1,
+      "number": 5,
+      "sectionTitle": "Game Biology",
+      "stem": "After field dressing harvested game, the hunter will…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Use grass and leaves to wipe the inside of the carcass clean"
+        },
+        {
+          "id": "b",
+          "text": "Keep the cut of the carcass open to let it cool down"
+        },
+        {
+          "id": "c",
+          "text": "Close the cut on the carcass immediately to avoid infection"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069478.jpg"
+    },
+    {
+      "id": "P2022-S1-Q06",
+      "section": 1,
+      "number": 6,
+      "sectionTitle": "Game Biology",
+      "stem": "Which of the following game is not a ruminant (Wiederkäuer)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Damwild"
+        },
+        {
+          "id": "b",
+          "text": "Schwarzwild"
+        },
+        {
+          "id": "c",
+          "text": "Rehwild"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069478.jpg"
+    },
+    {
+      "id": "P2022-S1-Q07",
+      "section": 1,
+      "number": 7,
+      "sectionTitle": "Game Biology",
+      "stem": "Which animals love to take a mud-bath?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Red Deer"
+        },
+        {
+          "id": "b",
+          "text": "Fallow Deer"
+        },
+        {
+          "id": "c",
+          "text": "Gams"
+        },
+        {
+          "id": "d",
+          "text": "Wild Boar"
+        }
+      ],
+      "correct": [
+        "a",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069479.jpg"
+    },
+    {
+      "id": "P2022-S1-Q08",
+      "section": 1,
+      "number": 8,
+      "sectionTitle": "Game Biology",
+      "stem": "The following statements are true for Rehwild…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "They develop socially in a Sprung of 40 to 50."
+        },
+        {
+          "id": "b",
+          "text": "They are an endangered species throughout Germany."
+        },
+        {
+          "id": "c",
+          "text": "The Bock and Geiß have differing markings on their Spiegel."
+        },
+        {
+          "id": "d",
+          "text": "A Rehgeiß gives birth to 1, 2, or (rarely) 3 Kitze per year."
+        }
+      ],
+      "correct": [
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069479.jpg"
+    },
+    {
+      "id": "P2022-S1-Q09",
+      "section": 1,
+      "number": 9,
+      "sectionTitle": "Game Biology",
+      "stem": "Which animals are born blind?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rabbit"
+        },
+        {
+          "id": "b",
+          "text": "Hare"
+        },
+        {
+          "id": "c",
+          "text": "Fox"
+        },
+        {
+          "id": "d",
+          "text": "Roe Deer"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069479.jpg"
+    },
+    {
+      "id": "P2022-S1-Q10",
+      "section": 1,
+      "number": 10,
+      "sectionTitle": "Game Biology",
+      "stem": "How can I tell the age of a Gamsgeiß?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "By the length of the horns"
+        },
+        {
+          "id": "b",
+          "text": "By the diameter of the horns"
+        },
+        {
+          "id": "c",
+          "text": "By counting the rings on the horns"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069479.jpg"
+    },
+    {
+      "id": "P2022-S1-Q11",
+      "section": 1,
+      "number": 11,
+      "sectionTitle": "Game Biology",
+      "stem": "The gray-white spot on the snout of a younger Rehbock and covering the entire face of an older Rehbock is known as the:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Nasenfleck"
+        },
+        {
+          "id": "b",
+          "text": "Rudelfleck"
+        },
+        {
+          "id": "c",
+          "text": "Muffelfleck"
+        },
+        {
+          "id": "d",
+          "text": "Spiegelfleck"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069479.jpg"
+    },
+    {
+      "id": "P2022-S1-Q12",
+      "section": 1,
+      "number": 12,
+      "sectionTitle": "Game Biology",
+      "stem": "You see two Rehbock in early May, one is grey, the other one is red. Which one is older?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "the red buck"
+        },
+        {
+          "id": "b",
+          "text": "the grey buck"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069479.jpg"
+    },
+    {
+      "id": "P2022-S1-Q13",
+      "section": 1,
+      "number": 13,
+      "sectionTitle": "Game Biology",
+      "stem": "Which game suffers from Moderhinke?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rotwild"
+        },
+        {
+          "id": "b",
+          "text": "Rehwild"
+        },
+        {
+          "id": "c",
+          "text": "Mufflon"
+        },
+        {
+          "id": "d",
+          "text": "Damwild"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q14",
+      "section": 1,
+      "number": 14,
+      "sectionTitle": "Game Biology",
+      "stem": "Wild Boar eat",
+      "choices": [
+        {
+          "id": "a",
+          "text": "young hares, Rehkitz and other young animals"
+        },
+        {
+          "id": "b",
+          "text": "Eggs"
+        },
+        {
+          "id": "c",
+          "text": "Carrion"
+        },
+        {
+          "id": "d",
+          "text": "Insect Larvas"
+        },
+        {
+          "id": "e",
+          "text": "all of the above"
+        }
+      ],
+      "correct": [
+        "e"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q15",
+      "section": 1,
+      "number": 15,
+      "sectionTitle": "Game Biology",
+      "stem": "A 1-year-old Rehbock will always have Spiesser for antlers?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q16",
+      "section": 1,
+      "number": 16,
+      "sectionTitle": "Game Biology",
+      "stem": "Which Red Deer is called Kahlwild?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Female deer and male calves"
+        },
+        {
+          "id": "b",
+          "text": "Female deer, male calves and males after shedding antlers"
+        },
+        {
+          "id": "c",
+          "text": "Female deer"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q17",
+      "section": 1,
+      "number": 17,
+      "sectionTitle": "Game Biology",
+      "stem": "Which feathered game uses salt licks?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Fasan"
+        },
+        {
+          "id": "b",
+          "text": "Rebhuhn"
+        },
+        {
+          "id": "c",
+          "text": "Ringeltaube"
+        },
+        {
+          "id": "d",
+          "text": "Bussard"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q18",
+      "section": 1,
+      "number": 18,
+      "sectionTitle": "Game Biology",
+      "stem": "Roe Deer may suffer from",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Coccidiosis"
+        },
+        {
+          "id": "b",
+          "text": "Botflies"
+        },
+        {
+          "id": "c",
+          "text": "Lung worms"
+        },
+        {
+          "id": "d",
+          "text": "Rabies"
+        }
+      ],
+      "correct": [
+        "b",
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q19",
+      "section": 1,
+      "number": 19,
+      "sectionTitle": "Game Biology",
+      "stem": "The mating season of Rehwild is in",
+      "choices": [
+        {
+          "id": "a",
+          "text": "May/June"
+        },
+        {
+          "id": "b",
+          "text": "July/August"
+        },
+        {
+          "id": "c",
+          "text": "September/October"
+        },
+        {
+          "id": "d",
+          "text": "November/December"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069480.jpg"
+    },
+    {
+      "id": "P2022-S1-Q20",
+      "section": 1,
+      "number": 20,
+      "sectionTitle": "Game Biology",
+      "stem": "Old Red Stags brush their velvet off in",
+      "choices": [
+        {
+          "id": "a",
+          "text": "May"
+        },
+        {
+          "id": "b",
+          "text": "June"
+        },
+        {
+          "id": "c",
+          "text": "July"
+        },
+        {
+          "id": "d",
+          "text": "August"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069481.jpg"
+    },
+    {
+      "id": "P2022-S1-Q21",
+      "section": 1,
+      "number": 21,
+      "sectionTitle": "Game Biology",
+      "stem": "The gall bladder on Wild Boar is connected to",
+      "choices": [
+        {
+          "id": "a",
+          "text": "the stomach"
+        },
+        {
+          "id": "b",
+          "text": "the liver"
+        },
+        {
+          "id": "c",
+          "text": "the diaphragm"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069481.jpg"
+    },
+    {
+      "id": "P2022-S1-Q22",
+      "section": 1,
+      "number": 22,
+      "sectionTitle": "Game Biology",
+      "stem": "Which of the following statements are correct about Füchse?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "They eat fruits."
+        },
+        {
+          "id": "b",
+          "text": "They eat meat."
+        },
+        {
+          "id": "c",
+          "text": "They are born blind."
+        },
+        {
+          "id": "d",
+          "text": "All of the above."
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069481.jpg"
+    },
+    {
+      "id": "P2022-S1-Q23",
+      "section": 1,
+      "number": 23,
+      "sectionTitle": "Game Biology",
+      "stem": "The Dachs…",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Is active at night"
+        },
+        {
+          "id": "b",
+          "text": "Feeds exclusively on Carrion"
+        },
+        {
+          "id": "c",
+          "text": "Is an omnivore"
+        },
+        {
+          "id": "d",
+          "text": "Lives alone"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069481.jpg"
+    },
+    {
+      "id": "P2022-S1-Q24",
+      "section": 1,
+      "number": 24,
+      "sectionTitle": "Game Biology",
+      "stem": "At which age are teeth of Wild Boar fully developed ?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "3 month"
+        },
+        {
+          "id": "b",
+          "text": "6 month"
+        },
+        {
+          "id": "c",
+          "text": "12month"
+        },
+        {
+          "id": "d",
+          "text": "18 month"
+        },
+        {
+          "id": "e",
+          "text": "24 month"
+        }
+      ],
+      "correct": [
+        "e"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069481.jpg"
+    },
+    {
+      "id": "P2022-S1-Q25",
+      "section": 1,
+      "number": 25,
+      "sectionTitle": "Game Biology",
+      "stem": "When is the Ranzzeit of the Stein- and Baummarder?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "July/August"
+        },
+        {
+          "id": "b",
+          "text": "September/October"
+        },
+        {
+          "id": "c",
+          "text": "November/December"
+        },
+        {
+          "id": "d",
+          "text": "January/February"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Game Biology",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069481.jpg"
+    }
+  ]
+}

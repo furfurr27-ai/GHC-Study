@@ -1,0 +1,904 @@
+{
+  "part": 2,
+  "title": "Hunting Dogs / Hunting Procedures",
+  "questions": [
+    {
+      "id": "P2022-S2-Q01",
+      "section": 2,
+      "number": 1,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Before firing a shot at wild game in Germany, the licensed hunter must ensure:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The species, gender, and age of the game makes them “in season” and open for hunting."
+        },
+        {
+          "id": "b",
+          "text": "The game is within reasonable distance that the hunter has recently trained on."
+        },
+        {
+          "id": "c",
+          "text": "The game is sleeping and not moving."
+        },
+        {
+          "id": "d",
+          "text": "The firearm has recently been zeroed by the hunter."
+        },
+        {
+          "id": "e",
+          "text": "There is sufficient Kugelfang to stop the flight of the bullet after the shot."
+        },
+        {
+          "id": "f",
+          "text": "All of the above."
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "d",
+        "e"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069482.jpg"
+    },
+    {
+      "id": "P2022-S2-Q02",
+      "section": 2,
+      "number": 2,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "What is frettieren?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Cooking venisson"
+        },
+        {
+          "id": "b",
+          "text": "Hunting rabbits in the den"
+        },
+        {
+          "id": "c",
+          "text": "Hunting rabbits with dogs"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069482.jpg"
+    },
+    {
+      "id": "P2022-S2-Q03",
+      "section": 2,
+      "number": 3,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which dogs are used to hunt fox in the den?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Dackel"
+        },
+        {
+          "id": "b",
+          "text": "Jagdterrier"
+        },
+        {
+          "id": "c",
+          "text": "Tiroler Bracke"
+        },
+        {
+          "id": "d",
+          "text": "Deutsch Kurzhaar"
+        }
+      ],
+      "correct": [
+        "a",
+        "b"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069482.jpg"
+    },
+    {
+      "id": "P2022-S2-Q04",
+      "section": 2,
+      "number": 4,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Who has to wear fluorescent colors during a drive hunt?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The beaters"
+        },
+        {
+          "id": "b",
+          "text": "The hunters"
+        },
+        {
+          "id": "c",
+          "text": "All participants"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069482.jpg"
+    },
+    {
+      "id": "P2022-S2-Q05",
+      "section": 2,
+      "number": 5,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "A Stangensulze is a",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Mud bath"
+        },
+        {
+          "id": "b",
+          "text": "Feeding station for partridge"
+        },
+        {
+          "id": "c",
+          "text": "Salt lick"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069482.jpg"
+    },
+    {
+      "id": "P2022-S2-Q06",
+      "section": 2,
+      "number": 6,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "The Deutsch Drahthaar is a",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Flusher"
+        },
+        {
+          "id": "b",
+          "text": "Pointer"
+        },
+        {
+          "id": "c",
+          "text": "Spaniel"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069483.jpg"
+    },
+    {
+      "id": "P2022-S2-Q07",
+      "section": 2,
+      "number": 7,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which animals cause damage by peeling the bark off from trees?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rotwild"
+        },
+        {
+          "id": "b",
+          "text": "Rehwild"
+        },
+        {
+          "id": "c",
+          "text": "Muffelwild"
+        },
+        {
+          "id": "d",
+          "text": "Damwild"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069483.jpg"
+    },
+    {
+      "id": "P2022-S2-Q08",
+      "section": 2,
+      "number": 8,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "What is the German term for a trail that game travel on through the forest and across meadows?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Bahn or Wildbahn"
+        },
+        {
+          "id": "b",
+          "text": "Pfad or Forstweg"
+        },
+        {
+          "id": "c",
+          "text": "Kugelfang"
+        },
+        {
+          "id": "d",
+          "text": "Wechsel or Wildwechsel"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069483.jpg"
+    },
+    {
+      "id": "P2022-S2-Q09",
+      "section": 2,
+      "number": 9,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "What is Wechselwild?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "All game living in a Revier"
+        },
+        {
+          "id": "b",
+          "text": "Game changing from summer to winter coat"
+        },
+        {
+          "id": "c",
+          "text": "Game frequently passing thru the Revier"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069483.jpg"
+    },
+    {
+      "id": "P2022-S2-Q10",
+      "section": 2,
+      "number": 10,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "What is a Epagneul Breton?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "French hunting signal"
+        },
+        {
+          "id": "b",
+          "text": "Small, longhaired French hunting dog"
+        },
+        {
+          "id": "c",
+          "text": "French feathered game"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069483.jpg"
+    },
+    {
+      "id": "P2022-S2-Q11",
+      "section": 2,
+      "number": 11,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "At which age can you pick up a puppy from the breeder?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "6 month"
+        },
+        {
+          "id": "b",
+          "text": "8 weeks"
+        },
+        {
+          "id": "c",
+          "text": "12 month"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069483.jpg"
+    },
+    {
+      "id": "P2022-S2-Q12",
+      "section": 2,
+      "number": 12,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Once I am a bestätigter (approved) Jagdaufseher for a Revier I can kill all cats running around w/o collars in the hunting area.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q13",
+      "section": 2,
+      "number": 13,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "What do you do with a fresh deer skin until you take it to the taxidermist?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wrap in plastic"
+        },
+        {
+          "id": "b",
+          "text": "Put salt on the inside of the skin, then roll up with the outside out"
+        },
+        {
+          "id": "c",
+          "text": "Store in a bucket of cold water"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q14",
+      "section": 2,
+      "number": 14,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which of the following animals are not listed as “huntable game” in the German hunting law?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Lynx"
+        },
+        {
+          "id": "b",
+          "text": "Pheasant"
+        },
+        {
+          "id": "c",
+          "text": "Buzzard"
+        },
+        {
+          "id": "d",
+          "text": "Mallard"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q15",
+      "section": 2,
+      "number": 15,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "On which side of the hat does a hunter insert the Erleger (Schützen) bruch?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Left side"
+        },
+        {
+          "id": "b",
+          "text": "Right side"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q16",
+      "section": 2,
+      "number": 16,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which game is hunted in their dens?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rabbits"
+        },
+        {
+          "id": "b",
+          "text": "Hares"
+        },
+        {
+          "id": "c",
+          "text": "Fox"
+        },
+        {
+          "id": "d",
+          "text": "Badger"
+        }
+      ],
+      "correct": [
+        "a",
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q17",
+      "section": 2,
+      "number": 17,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which animals may not be hunted during night time?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Wild Boar"
+        },
+        {
+          "id": "b",
+          "text": "Red Deer"
+        },
+        {
+          "id": "c",
+          "text": "Fox"
+        },
+        {
+          "id": "d",
+          "text": "Roe Deer"
+        }
+      ],
+      "correct": [
+        "b",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q18",
+      "section": 2,
+      "number": 18,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which of the following animals use salt licks?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Martens"
+        },
+        {
+          "id": "b",
+          "text": "Pheasants"
+        },
+        {
+          "id": "c",
+          "text": "Red Deer"
+        },
+        {
+          "id": "d",
+          "text": "Roe Deer"
+        }
+      ],
+      "correct": [
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069484.jpg"
+    },
+    {
+      "id": "P2022-S2-Q19",
+      "section": 2,
+      "number": 19,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Which of the following animals may cause damage the Revier holder is liable for?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Rebhuhn"
+        },
+        {
+          "id": "b",
+          "text": "Graugans"
+        },
+        {
+          "id": "c",
+          "text": "Feldhase"
+        },
+        {
+          "id": "d",
+          "text": "Kaninchen"
+        }
+      ],
+      "correct": [
+        "d"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069485.jpg"
+    },
+    {
+      "id": "P2022-S2-Q20",
+      "section": 2,
+      "number": 20,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Hunting time for all cloven-hoofed game, except Wildschwein, spans from 90 minutes before sunrise until 90 minutes after sunset, with consideration for being able to confirm the species, gender, and approximate age of the hunted game.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069485.jpg"
+    },
+    {
+      "id": "P2022-S2-Q21",
+      "section": 2,
+      "number": 21,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "The name for the skin of the Dachs is",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Pelz"
+        },
+        {
+          "id": "b",
+          "text": "Schwarte"
+        },
+        {
+          "id": "c",
+          "text": "Balg"
+        },
+        {
+          "id": "d",
+          "text": "Decke"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069485.jpg"
+    },
+    {
+      "id": "P2022-S2-Q22",
+      "section": 2,
+      "number": 22,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Rehwild belongs to the",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Hochwild"
+        },
+        {
+          "id": "b",
+          "text": "Niederwild"
+        },
+        {
+          "id": "c",
+          "text": "cloven hoofed game"
+        },
+        {
+          "id": "d",
+          "text": "Raubwild"
+        }
+      ],
+      "correct": [
+        "b",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069485.jpg"
+    },
+    {
+      "id": "P2022-S2-Q23",
+      "section": 2,
+      "number": 23,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "The horn signal Hahn in Ruh during a drive hunt means",
+      "choices": [
+        {
+          "id": "a",
+          "text": "all hunters proceed to the Streckeplatz"
+        },
+        {
+          "id": "b",
+          "text": "last drive for the day"
+        },
+        {
+          "id": "c",
+          "text": "unload your gun"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069485.jpg"
+    },
+    {
+      "id": "P2022-S2-Q24",
+      "section": 2,
+      "number": 24,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "The trophy of the Chamois is the Gamsbart. Where are the hairs for this trophy found on the chamois?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "On the lower jaw/chin"
+        },
+        {
+          "id": "b",
+          "text": "On the breast"
+        },
+        {
+          "id": "c",
+          "text": "In the middle of the back"
+        },
+        {
+          "id": "d",
+          "text": "Around the anus"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069485.jpg"
+    },
+    {
+      "id": "P2022-S2-Q25",
+      "section": 2,
+      "number": 25,
+      "sectionTitle": "Hunting Dogs / Hunting Procedures",
+      "stem": "Match English categories to German categories:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Vorstehhunde"
+        },
+        {
+          "id": "b",
+          "text": "Stöberhunde"
+        },
+        {
+          "id": "c",
+          "text": "Erdhunde"
+        },
+        {
+          "id": "d",
+          "text": "Jagende Hunde / Laufhunde"
+        },
+        {
+          "id": "e",
+          "text": "Schweißhunde"
+        },
+        {
+          "id": "f",
+          "text": "Apportierhunde"
+        }
+      ],
+      "matchChoices": [
+        {
+          "id": "1",
+          "text": "Trackers"
+        },
+        {
+          "id": "2",
+          "text": "Hounds & Beagles"
+        },
+        {
+          "id": "3",
+          "text": "Retrievers"
+        },
+        {
+          "id": "4",
+          "text": "Flushers"
+        },
+        {
+          "id": "5",
+          "text": "Pointers"
+        },
+        {
+          "id": "6",
+          "text": "Earth dogs"
+        }
+      ],
+      "correct": [
+        "a:5",
+        "b:4",
+        "c:6",
+        "d:2",
+        "e:1",
+        "f:3"
+      ],
+      "answerType": "matching",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Hunting Dogs / Hunting Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069486.jpg"
+    }
+  ]
+}

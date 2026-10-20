@@ -1,0 +1,774 @@
+{
+  "part": 4,
+  "title": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+  "questions": [
+    {
+      "id": "P2022-S4-Q01",
+      "section": 4,
+      "number": 1,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Where does a hunter send their completed firearm registration forms?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "U.S. Forces Hunting & Fishing Office"
+        },
+        {
+          "id": "b",
+          "text": "Directly to the Bundesverwaltungsamt (BVA)"
+        },
+        {
+          "id": "c",
+          "text": "To the USAREUR Registry in Sembach, who will forward to the BVA"
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069492.jpg"
+    },
+    {
+      "id": "P2022-S4-Q02",
+      "section": 4,
+      "number": 2,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "The hunting year in Germany",
+      "choices": [
+        {
+          "id": "a",
+          "text": "starts on 01-May"
+        },
+        {
+          "id": "b",
+          "text": "ends on 31-December"
+        },
+        {
+          "id": "c",
+          "text": "starts on 01-April"
+        },
+        {
+          "id": "d",
+          "text": "ends on 31-March"
+        }
+      ],
+      "correct": [
+        "c",
+        "d"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069492.jpg"
+    },
+    {
+      "id": "P2022-S4-Q03",
+      "section": 4,
+      "number": 3,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Who has to sign a U.S. Forces Jagdschein application (AE Form 215-145A)?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "The applicant, the chief instructor from their hunting course, an O5 or above or an equivalent-rank civilian supervisor in the applicant’s chain of command."
+        },
+        {
+          "id": "b",
+          "text": "The applicant, an O5 or above or an equivalent-rank civilian supervisor in the applicant’s chain of command, and the U.S. Forces Hunting and Fishing Office at Sembach"
+        },
+        {
+          "id": "c",
+          "text": "The applicant, and the U.S. Forces Hunting and Fishing Office at Sembach"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069492.jpg"
+    },
+    {
+      "id": "P2022-S4-Q04",
+      "section": 4,
+      "number": 4,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "The Jagdschutz sign in the windshield of your hunting vehicle allows you to drive on forest trails closed for public traffic.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069492.jpg"
+    },
+    {
+      "id": "P2022-S4-Q05",
+      "section": 4,
+      "number": 5,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "German Animal Protection Act prohibits",
+      "choices": [
+        {
+          "id": "a",
+          "text": "the killing of animals"
+        },
+        {
+          "id": "b",
+          "text": "to do unnecessary harm to any vertebrate"
+        },
+        {
+          "id": "c",
+          "text": "hunting roe deer with ammunition of less than 1,00 Joules E100"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069492.jpg"
+    },
+    {
+      "id": "P2022-S4-Q06",
+      "section": 4,
+      "number": 6,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Is it legal for a hunter to take their 11 year old son or daughter along, when going to the Ansitz in the hunter’s hunting area?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069492.jpg"
+    },
+    {
+      "id": "P2022-S4-Q07",
+      "section": 4,
+      "number": 7,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Why don’t hunters shoot any foxes during March, April and May?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "They are hard to get, because they stay in their dens."
+        },
+        {
+          "id": "b",
+          "text": "They are feeding their young."
+        },
+        {
+          "id": "c",
+          "text": "They already have the summer fur, which is worthless."
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q08",
+      "section": 4,
+      "number": 8,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "To protect against unnecessary pain and suffering, wounded animals must be killed immediately. The same protection applies to seriously diseased game, unless the animal can be humanely captured and the disease is curable.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q09",
+      "section": 4,
+      "number": 9,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "The German Jagdschein is issued for",
+      "choices": [
+        {
+          "id": "a",
+          "text": "one year"
+        },
+        {
+          "id": "b",
+          "text": "two years"
+        },
+        {
+          "id": "c",
+          "text": "three years"
+        },
+        {
+          "id": "d",
+          "text": "five years"
+        }
+      ],
+      "correct": [
+        "a",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q10",
+      "section": 4,
+      "number": 10,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Which of the following is not a domestic snake?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Blindschleiche"
+        },
+        {
+          "id": "b",
+          "text": "Kreuzotter"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q11",
+      "section": 4,
+      "number": 11,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "When hunters see snakes in the hunting area, they will kill them immediately to avoid danger to other people.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "No, domestic snakes are all protected."
+        },
+        {
+          "id": "b",
+          "text": "Yes, snakes are dangerous."
+        },
+        {
+          "id": "c",
+          "text": "Only if the snake is close to roads or public places."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q12",
+      "section": 4,
+      "number": 12,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Which animals a protected by the Animal Protection Act?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Only domesticated animals."
+        },
+        {
+          "id": "b",
+          "text": "Only domestic cattle"
+        },
+        {
+          "id": "c",
+          "text": "All animals."
+        },
+        {
+          "id": "d",
+          "text": "All animals not covered by the hunting law."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q13",
+      "section": 4,
+      "number": 13,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Does the Abschussgebühr for capital game include the venison?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069493.jpg"
+    },
+    {
+      "id": "P2022-S4-Q14",
+      "section": 4,
+      "number": 14,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "What should a hunter do if he/she suddenly sees a big Lynx in their hunting area?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Kill it, because it is a danger for the local Rehwild population."
+        },
+        {
+          "id": "b",
+          "text": "Do nothing."
+        },
+        {
+          "id": "c",
+          "text": "Don’t shoot, but report to the Untere Jagdbehörde."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069494.jpg"
+    },
+    {
+      "id": "P2022-S4-Q15",
+      "section": 4,
+      "number": 15,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "The only document required for a hunter to bring a rifle from the US to Germany is the valid Jagdschein.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069494.jpg"
+    },
+    {
+      "id": "P2022-S4-Q16",
+      "section": 4,
+      "number": 16,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "If a hunter is arriving at the site of a traffic accident and there is a badly injured Roe Deer with broken legs on the side of the road, may the hunter kill the animal even if this is not in the hunting area?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes, Animal Protection Act allows me to keep this animal from suffering."
+        },
+        {
+          "id": "b",
+          "text": "No, only the hunter responsible for this area or the police may kill this animal."
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069494.jpg"
+    },
+    {
+      "id": "P2022-S4-Q17",
+      "section": 4,
+      "number": 17,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "A Begehungsschein for a Revier entitles the hunter to search rucksacks of hikers in the area for shed antlers.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069494.jpg"
+    },
+    {
+      "id": "P2022-S4-Q18",
+      "section": 4,
+      "number": 18,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "A cites document is",
+      "choices": [
+        {
+          "id": "a",
+          "text": "a permit for full auto firearms"
+        },
+        {
+          "id": "b",
+          "text": "a permit to buy and sell protected animals and plants"
+        },
+        {
+          "id": "c",
+          "text": "a permit to hunt in cities and parks"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069494.jpg"
+    },
+    {
+      "id": "P2022-S4-Q19",
+      "section": 4,
+      "number": 19,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "A hunter has booked a Class I Hirsch in the Hohenfels Training Area. At the time of the hunt, the hunter must deploy to the Far East. Based on this late change, the hunter must:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Announce the now open slot for this hunt at the local Rod & Gun Club."
+        },
+        {
+          "id": "b",
+          "text": "Send a letter to the Forstamt in Hohenfels."
+        },
+        {
+          "id": "c",
+          "text": "Immediately phone or email the Hunting & Fishing Office and the Forstamt in Hohenfels."
+        }
+      ],
+      "correct": [
+        "c"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069494.jpg"
+    },
+    {
+      "id": "P2022-S4-Q20",
+      "section": 4,
+      "number": 20,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "The German Federal Nature Protection Law includes:",
+      "choices": [
+        {
+          "id": "a",
+          "text": "maintenance of rare and endangered plant species."
+        },
+        {
+          "id": "b",
+          "text": "protection of animals that may not be hunted."
+        },
+        {
+          "id": "c",
+          "text": "prevention of improper use and abuse of plants, parts of plants, and animals."
+        }
+      ],
+      "correct": [
+        "a",
+        "b",
+        "c"
+      ],
+      "answerType": "multi",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069495.jpg"
+    },
+    {
+      "id": "P2022-S4-Q21",
+      "section": 4,
+      "number": 21,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "Is bow hunting legal in Germany?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        },
+        {
+          "id": "c",
+          "text": "in some special areas"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069495.jpg"
+    },
+    {
+      "id": "P2022-S4-Q22",
+      "section": 4,
+      "number": 22,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "I find a dead Uhu next to the Autobahn, probably a roadkill. It still looks pretty intact and clean. May I take it to the taxidermist to have it stuffed for my trophy wall?",
+      "choices": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069495.jpg"
+    },
+    {
+      "id": "P2022-S4-Q23",
+      "section": 4,
+      "number": 23,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "DUI may result in revocation of a hunter’s hunting license.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069495.jpg"
+    },
+    {
+      "id": "P2022-S4-Q24",
+      "section": 4,
+      "number": 24,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "The WBK is an official German document just valid in Germany. A U.S. Forces hunter must return it to the USAREUR Registry and on to BVA authorities in Cologne when PCS’ing away from Germany.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "a"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069495.jpg"
+    },
+    {
+      "id": "P2022-S4-Q25",
+      "section": 4,
+      "number": 25,
+      "sectionTitle": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "stem": "A U.S. Forces hunter’s German hunting license allows them to shoot rabbits inside a U.S. Forces installation in Germany, because this is not German property.",
+      "choices": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct": [
+        "b"
+      ],
+      "answerType": "single",
+      "sourceGroup": "practice2022",
+      "sourceRefs": [
+        "SRC-PRACTICE-2021-22"
+      ],
+      "topic": "Nature and Animal Protection, Jagdschutz, Ethics, and U.S. Forces Procedures",
+      "answerBasis": "yellow-highlight-only",
+      "photo": "1000069495.jpg"
+    }
+  ]
+}

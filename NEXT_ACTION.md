@@ -4,7 +4,7 @@
 
 **Release source:** `app/src/main/assets/index.html` ~2.8MB plus tracked `media/`, five JSON parts of Practice Test 2, glossary files, 117 original slide-source study cards, overlays and audit scripts. The APK build must run the entire `.github/workflows/android-apk.yml` three-job workflow, **not** extract historical v1.4.5 APK.
 
-**Required release acceptance:** GitHub Actions full smoke + Android APK + emulator all PASS. Inspect actual APK for 125 native Practice Test 2 questions, 5 x 25 sections, 162 searchable glossary entries, packaged Schalenwild matrix files, original study images and icon; physical S23 Ultra upgrade/layout/progress check remains unverified until user performs it.
+**Release ACCEPTED by automated tests (2026-10-20):** GitHub Actions https://github.com/furfurr27-ai/GHC-Study/actions/runs/39385566955 passed full smoke, Android APK packaged-content validation (125 Practice Test 2 records / 5 x 25, glossary, matrix, images and icon), and Android 35 emulator navigation. Recovery PR #4 merged into main as e2e3c3eb8e43581c2d491bb34d43c9dc64fe1f03. Installable artifact: GHC-Study-v1.4.8-RESTORED-full-debug-apk. Only real Galaxy S23 Ultra installation/signing, progress backup/retention and layout acceptance remain outstanding.
 
 **Do NOT:** rebuild from v1.4.5, erase old studies, substitute the separate timed-exam branch without integration review, change original answer keys, change app ID, or treat archival "main unchanged" notes below as current.
 

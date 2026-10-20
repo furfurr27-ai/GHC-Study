@@ -314,6 +314,11 @@ assert_visible_text "Quiz Mode" back-from-reference
 tap_visible_label "Study Mode" study-tab
 assert_visible_text "Schalenwild" study-hub
 tap_visible_label "Schalenwild" hoofed-category
+# The expanded comparison matrix also includes a non-clickable "Rehwild" row.
+# Verify the new panel is present, collapse it, then tap the actual study card.
+# This avoids selecting a table row instead of a Rehwild study-card tile.
+assert_visible_text "Schalenwild · Vergleichsmatrizen" hoofed-matrix
+tap_visible_label "Schalenwild · Vergleichsmatrizen" collapse-hoofed-matrix
 assert_visible_text "Rehwild" hoofed-list
 tap_visible_label "Rehwild" roe-study-card
 assert_visible_text "Details" roe-card-detail

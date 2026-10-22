@@ -311,6 +311,18 @@ adb shell input keyevent KEYCODE_BACK
 sleep 3
 assert_ghc_foreground back-from-reference
 assert_visible_text "Quiz Mode" back-from-reference
+# Verify Trophy Test's real native Quiz Mode entry opens the packaged offline
+# baseball cards, supports the identification tab, and system Back works.
+tap_visible_label "Trophy Test" trophy-test-entry
+assert_ghc_foreground trophy-test-page
+assert_visible_text "Trophy Test" trophy-test-heading
+assert_visible_text "Cards" trophy-test-cards
+tap_visible_label "Identify" trophy-identify-mode
+assert_visible_text "Which animal is shown in this exam-room mount?" trophy-identify-question
+adb shell input keyevent KEYCODE_BACK
+sleep 3
+assert_ghc_foreground back-from-trophy-test
+assert_visible_text "Quiz Mode" back-from-trophy-test
 tap_visible_label "Study Mode" study-tab
 assert_visible_text "Schalenwild" study-hub
 tap_visible_label "Schalenwild" hoofed-category

@@ -1,3 +1,17 @@
+# GHC Study v1.4.10 — completed Trophy Test animal fact cards (2026-10-22)
+
+The v1.4.9 release introduced **29 individual room-photo cards**, using source-cropped photographs of actual mounts in the exam room. This v1.4.10 enhancement adds a **source-labelled compact animal fact sheet to each card**, including German/English hunting terms, key biology, identification, comparison notes and memory cues where supported. Facts are revealed **only after a flashcard answer or graded identification response** and are visible during normal Cards browsing. An external fact is labelled as *Supplemental animal facts*, never mixed into the GHC-course-labelled *Details · Other Facts*. Uncertain mounts remain excluded from scored recognition.
+
+Of the 29 summaries, 13 reuse the existing slide-based Study Mode material, 11 describe class-slide comparison groups, and 5 use separately identified German nature/animal reference material (NABU or Bundesinformationszentrum Landwirtschaft). The 10 visually uncertain mounts are **not** upgraded to definite species answers without a better specimen photograph or instructor confirmation.
+
+**Release source and app identity:** Android `versionName=1.4.10`, `versionCode=150`, original application ID `org.ghcstudy.v141`, preserving the existing app's on-device progress namespace. No exam questions or older card datasets were replaced. Practice Test 2 still contains all 125 items across five 25-question parts. Glossary, source audits, historical-source warning text, Schalenwild comparison views, offline media, and Android Back are preserved.
+
+**Build assurance:** Primary GitHub Actions run [39839330448](https://github.com/furfurr27-ai/GHC-Study/actions/runs/39839330448) and alternate glossary build [39839330484](https://github.com/furfurr27-ai/GHC-Study/actions/runs/39839330484) each passed Android APK packaging and emulator checks for the v1.4.10 source. Primary source smoke individual steps all completed successfully; consult its workflow job's final conclusion if necessary. Primary APK artifact: `GHC-Study-v1.4.10-TROPHY-TEST-full-debug-apk`. Final Samsung Galaxy S23 Ultra installation and progress-backup verification must still be done on device.
+
+**Sources/limits:** [Trophy Test source audit](docs/TROPHY_TEST_SOURCE_AUDIT_20261022.md) and [reviewed source notes](docs/TROPHY_TEST_FACT_SOURCE_REVIEW_20261022.md). Do not treat an external nature reference as a hunting-course answer or an uncertain photograph as an identified animal.
+
+---
+
 # GHC Study v1.4.9 — Trophy Test (2026-10-22)
 
 The user supplied 33 Drive files under `German Hunting/Trophy Test`: 13 repeated WhatsApp phone-photo pairs (26 files total) plus seven original phone panoramas. The new Quiz Mode Trophy Test uses 13 unique WhatsApp room views (cropped to individual specimens, with originals kept outside Android assets) to provide **29 specimen baseball cards**. Nineteen have enough photo evidence for scored name identification; ten are explicitly `review` because exact species cannot be established confidently, and are excluded from graded questions.

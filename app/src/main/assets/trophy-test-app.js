@@ -18,7 +18,8 @@ function informationMarkup(c){
  var extra=(item.more||[]).length?'<div class="trophy-more"><h4>Other facts / Merkhilfen</h4><ul>'+item.more.map(function(t){return '<li>'+clean(t)+'</li>'}).join('')+'</ul></div>':'';
  var notice=item.notes?'<p class="trophy-source-note">'+clean(item.notes)+'</p>':'';
  var uri=(item.sourceUrl&&/^https:\/\//.test(item.sourceUrl))?'<a href="'+clean(item.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Open supporting reference ↗</a>':'';
- return '<details class="trophy-knowledge" open><summary><strong>Animal facts · Details and Other Facts</strong><span>'+clean(text)+'</span></summary>'+
+ var heading=item.sourceType==='web'?'Supplemental animal facts':'Details · Other Facts (GHC course)';
+ return '<details class="trophy-knowledge" open><summary><strong>'+heading+'</strong><span>'+clean(text)+'</span></summary>'+
  '<div class="trophy-knowledge-body">'+(c.certainty==='review'?'<p class="review">Exact specimen not yet verified. The facts below compare possible groups or species; they do not establish this trophy\'s identity.</p>':'')+
  '<dl class="trophy-fact-grid">'+tr+'</dl>'+extra+
  '<div class="trophy-source"><span>Source</span><strong>'+clean(item.title)+'</strong>'+

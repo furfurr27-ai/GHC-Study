@@ -21,4 +21,5 @@ with ZipFile(sys.argv[1]) as z:
     assert b'GHC_PRACTICE2_QUESTIONS' in z.read('assets/index.html'),'Practice Test 2 missing'
     assert 'assets/glossary-data.js' in names,'Glossary missing'
     assert 'assets/schalenwild-matrix.js' in names,'Schalenwild comparison missing'
+    assert 'data-ghc-matrix="1"' in html,'Schalenwild UI not actually integrated'
 print('PASS: APK includes 29 photo cards, 19 verified-name drills; prior quiz, glossary and matrices intact')

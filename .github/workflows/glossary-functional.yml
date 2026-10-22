@@ -81,6 +81,10 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Inject and verify Schalenwild comparison matrices
+        run: |
+          python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
+          node tools/test_schalenwild_matrix.js
       - name: Assemble Trophy Test photo cards in glossary regression build
         run: |
           python3 scripts/build_trophy_test.py
@@ -179,6 +183,10 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Inject and verify Schalenwild comparison matrices
+        run: |
+          python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
+          node tools/test_schalenwild_matrix.js
       - name: Assemble Trophy Test photo cards in glossary regression build
         run: |
           python3 scripts/build_trophy_test.py

@@ -1,3 +1,15 @@
+# GHC Study v1.4.9 — Trophy Test (2026-10-22)
+
+The user supplied 33 Drive files under `German Hunting/Trophy Test`: 13 repeated WhatsApp phone-photo pairs (26 files total) plus seven original phone panoramas. The new Quiz Mode Trophy Test uses 13 unique WhatsApp room views (cropped to individual specimens, with originals kept outside Android assets) to provide **29 specimen baseball cards**. Nineteen have enough photo evidence for scored name identification; ten are explicitly `review` because exact species cannot be established confidently, and are excluded from graded questions.
+
+Modes: Cards (Mammals/Birds filters, individual English/German label, exact room crop, photo-observed ID cues), Flashcards (photo before revealing name; self-assessment), Identify (four-choice photo questions with feedback). Progress stored in `ghc-trophy-test-progress-v1`, independent of the existing exam-question bank. Build automatically crops 29 offline JPEGs with EXIF stripped. Existing 867 exams + 125 Practice Test 2 + 77 vocabulary, glossary, study media, Schalenwild matrices and package ID are unchanged.
+
+**Source:** `https://drive.google.com/drive/folders/1PRbQppS10WBEigmrXka_urSrEGh8YY1L` (33 images examined as room overview, including duplicates), tracked images `research/trophy-test/photos/` and photo/crop manifest `app/src/main/assets/trophy-test-data.js`. Species labels are practical visual study identifications, not externally taxonomically verified; review-only entries must be checked with close-ups.
+
+**Build checks:** `scripts/check_trophy_test.py`, `tests/trophy-test-smoke.cjs`, and `scripts/check_packaged_trophy_test.py` assert all 29 crops and preserve Practice Test 2, glossary, and matrices in packaged APK. Follow current CI results before claiming the release validated. Device acceptance on the Samsung S23 Ultra remains outstanding.
+
+---
+
 # GHC Study — restored full release v1.4.8 (2026-10-20)
 
 **Important recovery:** v1.4.7 incorrectly built from an obsolete v1.4.5 APK, omitting completed development. This release uses the **latest 2026-10-15 tracked source** (branch `feature/slide-audit-glossary-tests-20261012`) as its base and layers the three Schalenwild matrices on top.

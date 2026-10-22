@@ -81,6 +81,16 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Inject and verify Schalenwild comparison matrices
+        run: |
+          python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
+          node tools/test_schalenwild_matrix.js
+      - name: Assemble Trophy Test photo cards in glossary regression build
+        run: |
+          python3 scripts/build_trophy_test.py
+          python3 scripts/integrate_trophy_test.py
+          python3 scripts/check_trophy_test.py
+          node --check app/src/main/assets/trophy-test-app.js
       - name: Verify assembled sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -103,6 +113,8 @@ jobs:
         run: python3 scripts/check_2013_austria_hunting_38_special.py
       - name: Test Practice Test 2 scoped quiz, exam instructions and matching answer
         run: node tests/practice-test-2-smoke.cjs
+      - name: Test independent Trophy Test cards and photo identification
+        run: node tests/trophy-test-smoke.cjs
       - name: Verify disputed-key notice actually renders in quiz UI
         run: node tests/safety-warning-smoke.cjs
       - name: Generate all-question explicit factual source-review inventory
@@ -171,6 +183,16 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Inject and verify Schalenwild comparison matrices
+        run: |
+          python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
+          node tools/test_schalenwild_matrix.js
+      - name: Assemble Trophy Test photo cards in glossary regression build
+        run: |
+          python3 scripts/build_trophy_test.py
+          python3 scripts/integrate_trophy_test.py
+          python3 scripts/check_trophy_test.py
+          node --check app/src/main/assets/trophy-test-app.js
       - name: Verify assembled trophy and vocabulary sections
         run: |
           python3 scripts/test_trophy_layout.py
@@ -202,6 +224,8 @@ jobs:
           unzip -Z1 "$APK" | grep -Fx 'assets/index.html'
           unzip -Z1 "$APK" | grep -Fx 'assets/glossary.html'
           unzip -Z1 "$APK" | grep -Fx 'assets/glossary-data.js'
+      - name: Confirm Trophy Test and prior banks packaged in this alternate APK
+        run: python3 scripts/check_packaged_trophy_test.py app/build/outputs/apk/debug/app-debug.apk
       - name: Inspect actual APK glossary and offline card media
         run: |
           APK="$(find app/build/outputs/apk/debug -name '*.apk' -print -quit)"
@@ -231,7 +255,7 @@ jobs:
           if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.6-glossary-tested-debug-apk
+          name: GHC-Study-v1.4.9-glossary-and-trophy-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
@@ -244,7 +268,7 @@ jobs:
         run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/download-artifact@v4
         with:
-          name: GHC-Study-v1.4.6-glossary-tested-debug-apk
+          name: GHC-Study-v1.4.9-glossary-and-trophy-debug-apk
           path: downloaded-apk
       - name: Enable KVM group permissions
         run: |

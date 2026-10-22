@@ -5,6 +5,10 @@ on:
     paths:
       - 'app/**'
       - 'tools/**'
+      - 'research/trophy-test/**'
+      - 'scripts/build_trophy_test.py'
+      - 'scripts/integrate_trophy_test.py'
+      - 'scripts/check_trophy_test.py'
       - 'scripts/crop_study_slide_images.py'
       - 'scripts/overlay_protected_owl.py'
       - 'scripts/overlay_misfire_course_schematic.py'
@@ -91,6 +95,15 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Build offline cropped Trophy Test photographs and integrate Quiz Mode entry
+        run: |
+          python3 scripts/build_trophy_test.py
+          python3 scripts/integrate_trophy_test.py
+          python3 scripts/check_trophy_test.py
+          node --check app/src/main/assets/trophy-test-app.js
+          node --check app/src/main/assets/trophy-test-data.js
+          node --check app/src/main/assets/trophy-test-launcher.js
+
       - name: Preserve Schalenwild matrices in standalone build
         run: |
           python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
@@ -128,14 +141,16 @@ jobs:
           unzip -l "$APK" | grep -q 'assets/glossary.html'
           unzip -l "$APK" | grep -q 'assets/glossary-data.js'
           unzip -l "$APK" | grep -q 'assets/schalenwild-matrix.js'
+          unzip -l "$APK" | grep -q 'assets/trophy-test.html'
           unzip -l "$APK" | grep -q 'assets/media/'
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"
-          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.8-Standalone-Install.apk
+          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.9-Standalone-Install.apk
       - name: Inspect actual standalone APK glossary and offline study media
         run: |
           APK=app/build/outputs/apk/debug/app-debug.apk
           python3 scripts/check_packaged_glossary.py "$APK"
+          python3 scripts/check_packaged_trophy_test.py "$APK"
           python3 scripts/check_study_media.py --apk "$APK" --strict
           python3 scripts/check_question_source_caveats.py --apk "$APK"
           python3 scripts/check_safety_question_batch.py --apk "$APK"
@@ -160,6 +175,6 @@ jobs:
           if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.8-STANDALONE-APK
-          path: app/build/outputs/apk/debug/GHC-Study-v1.4.8-Standalone-Install.apk
+          name: GHC-Study-v1.4.9-STANDALONE-APK
+          path: app/build/outputs/apk/debug/GHC-Study-v1.4.9-Standalone-Install.apk
           if-no-files-found: error

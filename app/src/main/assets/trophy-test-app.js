@@ -1,6 +1,7 @@
 (function(){
 'use strict';
 var data=window.GHC_TROPHY_CARDS||[];
+var info=window.GHC_TROPHY_INFO||{};
 var known=data.filter(function(c){return c.certainty==='identified'});
 var mode='cards',filter='All',selected=data[0]||null,shown=false,queue=[],current=null,answers=[],answered=false,round={tried:0,right:0};
 var key='ghc-trophy-test-progress-v1',progress={};
@@ -9,11 +10,27 @@ var root=document.getElementById('content'),stats=document.getElementById('stats
 function clean(s){return String(s==null?'':s).replace(/[&<>"']/g,function(x){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]})}
 function save(){try{localStorage.setItem(key,JSON.stringify(progress))}catch(e){}}
 function touch(id,ok){var p=progress[id]||{tries:0,right:0,streak:0};p.tries++;if(ok){p.right++;p.streak++}else p.streak=0;progress[id]=p;save()}
+function informationMarkup(c){
+ var item=info[c.id];
+ if(!item)return '<p class="review">Additional source information is not available for this specimen.</p>';
+ var text=item.sourceType==='study'?'From your Study Mode card':item.sourceType==='slides'?'From your GHC class slides':'German wildlife reference';
+ var tr=(item.rows||[]).map(function(row){return '<div class="trophy-fact-row"><dt>'+clean(row[0])+'</dt><dd>'+clean(row[1])+'</dd></div>'}).join('');
+ var extra=(item.more||[]).length?'<div class="trophy-more"><h4>Other facts / Merkhilfen</h4><ul>'+item.more.map(function(t){return '<li>'+clean(t)+'</li>'}).join('')+'</ul></div>':'';
+ var notice=item.notes?'<p class="trophy-source-note">'+clean(item.notes)+'</p>':'';
+ var uri=(item.sourceUrl&&/^https:\/\//.test(item.sourceUrl))?'<a href="'+clean(item.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Open supporting reference ↗</a>':'';
+ var heading=item.sourceType==='web'?'Supplemental animal facts':'Details · Other Facts (GHC course)';
+ return '<details class="trophy-knowledge" open><summary><strong>'+heading+'</strong><span>'+clean(text)+'</span></summary>'+
+ '<div class="trophy-knowledge-body">'+(c.certainty==='review'?'<p class="review">Exact specimen not yet verified. The facts below compare possible groups or species; they do not establish this trophy\'s identity.</p>':'')+
+ '<dl class="trophy-fact-grid">'+tr+'</dl>'+extra+
+ '<div class="trophy-source"><span>Source</span><strong>'+clean(item.title)+'</strong>'+
+ (item.reference?'<small>'+clean(item.reference)+'</small>':'')+
+ (uri?'<p>'+uri+'</p>':'')+'</div>'+notice+'</div></details>';
+}
 function cardMarkup(c,hidden){if(!c)return '<p class="empty">No specimens available.</p>';
 var heading=hidden?'Identify this mounted specimen':clean(c.de),en=hidden?'Reveal its identity when ready':clean(c.en);
 return '<article class="card" data-card="'+clean(c.id)+'"><div class="heading"><span class="kicker">'+clean(c.group)+' · Exam-room trophy photo</span><h2>'+heading+'</h2><div class="en">'+en+'</div></div>'+
 '<figure><img src="trophy-test-media/'+clean(c.id)+'.jpg" alt="Actual mounted animal from the German Hunting Course examination room" loading="eager"><figcaption>Exam-room photo · source '+clean(c.photo)+' · cropped to the mount</figcaption></figure>'+
-(hidden?'':'<div class="facts"><span class="key">Spot it in the room</span><p>'+clean(c.cue)+'</p><span class="key">Avoid confusion</span><p>'+clean(c.contrast)+'</p>'+(c.certainty==='review'?'<div class="review">Exact species is not confirmed from this photograph. Browse for recognition, but this mount is excluded from scored identification questions.</div>':'')+'</div>')+'</article>'}
+(hidden?'':'<div class="facts"><span class="key">Spot it in the room</span><p>'+clean(c.cue)+'</p><span class="key">Avoid confusion</span><p>'+clean(c.contrast)+'</p>'+(c.certainty==='review'?'<div class="review">Exact species is not confirmed from this photograph. Browse for recognition, but this mount is excluded from scored identification questions.</div>':'')+informationMarkup(c)+'</div>')+'</article>'}
 function stat(){var mastered=known.filter(function(c){return (progress[c.id]||{}).streak>=2}).length;stats.textContent=data.length+' mounted-specimen cards · '+known.length+' identified for scoring · '+(data.length-known.length)+' still need species verification · '+mastered+' with 2+ correct in a row'}
 function tabs(){document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.mode===mode))})}
 function browse(){var subset=data.filter(function(c){return filter==='All'||c.group===filter});
@@ -29,7 +46,7 @@ root.querySelectorAll('[data-score]').forEach(function(b){b.onclick=function(){t
 function options(c){var peers=known.filter(function(x){return x.id!==c.id&&x.group===c.group});peers.sort(function(){return Math.random()-.5});var a=[c].concat(peers.slice(0,3));return a.sort(function(){return Math.random()-.5})}
 function quiz(){if(!current)next();if(!answers.length)answers=options(current);
 root.innerHTML='<p class="question">Which animal is shown in this exam-room mount?</p>'+cardMarkup(current,true)+'<div class="actions choices" role="group" aria-label="Choose animal">'+answers.map(function(c){return '<button class="choice '+(answered?(c.id===current.id?'correct':c.id===window.__ghcTrophyChoice?'wrong':''):'')+'" data-answer="'+clean(c.id)+'" '+(answered?'disabled':'')+'>'+clean(c.de)+' — '+clean(c.en)+'</button>'}).join('')+'</div>'+
-(answered?'<div class="feedback" role="status">'+(window.__ghcTrophyChoice===current.id?'Correct. ':'Not quite. ')+'This is <strong>'+clean(current.de)+' — '+clean(current.en)+'</strong>. '+clean(current.cue)+'</div><div class="actions"><button class="primary" id="nextQuestion">Next specimen</button></div>':'<p class="hint">Names are not revealed until you select an answer.</p>')+
+(answered?'<div class="feedback" role="status">'+(window.__ghcTrophyChoice===current.id?'Correct. ':'Not quite. ')+'This is <strong>'+clean(current.de)+' — '+clean(current.en)+'</strong>. '+clean(current.cue)+'</div>'+informationMarkup(current)+'<div class="actions"><button class="primary" id="nextQuestion">Next specimen</button></div>':'<p class="hint">Names are not revealed until you select an answer.</p>')+
 '<p class="hint">This round: '+round.right+' correct / '+round.tried+' attempted</p>';
 if(!answered)root.querySelectorAll('[data-answer]').forEach(function(b){b.onclick=function(){window.__ghcTrophyChoice=b.dataset.answer;answered=true;round.tried++;if(b.dataset.answer===current.id)round.right++;touch(current.id,b.dataset.answer===current.id);stat();quiz()}});
 else document.getElementById('nextQuestion').onclick=function(){answers=[];window.__ghcTrophyChoice=null;next();quiz()}}

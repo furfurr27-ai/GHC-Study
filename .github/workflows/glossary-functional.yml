@@ -255,7 +255,7 @@ jobs:
           if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.9-glossary-and-trophy-debug-apk
+          name: GHC-Study-v1.4.10-glossary-and-trophy-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
@@ -268,7 +268,7 @@ jobs:
         run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/download-artifact@v4
         with:
-          name: GHC-Study-v1.4.9-glossary-and-trophy-debug-apk
+          name: GHC-Study-v1.4.10-glossary-and-trophy-debug-apk
           path: downloaded-apk
       - name: Enable KVM group permissions
         run: |

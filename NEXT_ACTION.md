@@ -1,3 +1,17 @@
+# LATEST CHECKPOINT — GHC Study v1.4.10 Trophy Test facts (2026-10-22)
+
+**Completed and merged into main:** PR #5, merge commit `4cc626ad819454d97186c4852aca0ed90c6bb788`. Builds use tracked current v1.4.10 app source, **not** a historical APK. Original application ID `org.ghcstudy.v141`; `versionCode=150`.
+
+**Change delivered:** 29 unique exam-room mount photo crops with baseball-card facts from class Study Mode notes (13), direct slide comparisons (11), or separately flagged German nature references (5). Preserve 19 scored named photo IDs and 10 review-only uncertain specimens. Normal Cards browsing shows sourced details; Flashcards reveal them only after the answer; Identify mode shows facts after grading. External facts visibly marked supplemental, not class-only. Progress remains `ghc-trophy-test-progress-v1`, separate from established question progress.
+
+**Automated validation:** `https://github.com/furfurr27-ai/GHC-Study/actions/runs/39839330448` passed APK packaging and Android 35 emulator navigation; all primary smoke steps passed. Alternative `https://github.com/furfurr27-ai/GHC-Study/actions/runs/39839330484` passed full smoke, Android APK and emulator. Real packaged APK checked for all 29 images/fact sheets, all 125 Practice Test 2 native questions in 5 groups, glossary, Schalenwild UI, and launcher. Artifact: `GHC-Study-v1.4.10-TROPHY-TEST-full-debug-apk`, ID `12451917899`, from run 39839330448.
+
+**NEXT ACTION ONLY:** Ask user to install v1.4.10 on Samsung Galaxy S23 Ultra after backing up their saved study progress; inspect all three Trophy Test modes, category navigation, image cropping, 19 scored question choices, ten review-only labels, and Android system Back; confirm progress retained. Record any actual failures and fix only those. Do not invent further pre-release blockers or revert to v1.4.9/1.4.5 source.
+
+**Remaining source caveat:** Ten uncertain mounts cannot be settled from current room photos. The richer source summaries are NOT the same as positive trophy identification. Directly rechecked four representative class PDFs, separate German external references and original room photo folder; this is not a line-by-line re-audit of every claim across all 29. See `docs/TROPHY_TEST_FACT_SOURCE_REVIEW_20261022.md`.
+
+---
+
 # NEXT ACTION — Trophy Test v1.4.9 (2026-10-22)
 
 **Immediate scope:** Test and release Trophy Test from actual German Hunting/Trophy Test room photographs. 33 Drive entries = 13 identical WhatsApp pairs plus 7 panoramas. 13 unique WhatsApp photos support 29 tightly cropped mount cards; 19 identification names marked scoreable, 10 kept review-only, no fabricated species certainty. Implemented Cards, Flashcards, Identify modes. Original banks and progress keys untouched. Release versionCode=149 / versionName=1.4.9, packageId org.ghcstudy.v141.

@@ -76,6 +76,15 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Build offline cropped Trophy Test photographs and integrate Quiz Mode entry
+        run: |
+          python3 scripts/build_trophy_test.py
+          python3 scripts/integrate_trophy_test.py
+          python3 scripts/check_trophy_test.py
+          node --check app/src/main/assets/trophy-test-app.js
+          node --check app/src/main/assets/trophy-test-data.js
+          node --check app/src/main/assets/trophy-test-launcher.js
+
       - name: Inject and validate Schalenwild comparison matrices
         run: |
           python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
@@ -101,6 +110,8 @@ jobs:
         run: python3 scripts/check_2013_us_forces_import_animal_welfare.py
       - name: Verify Austrian guest-license and .38 cartridge source qualifications
         run: python3 scripts/check_2013_austria_hunting_38_special.py
+      - name: Test Trophy Test baseball cards, photo recognition and isolated progress
+        run: node tests/trophy-test-smoke.cjs
       - name: Test Practice Test 2 scoped quiz, exam instructions and matching answer
         run: node tests/practice-test-2-smoke.cjs
       - name: Verify disputed-key notice actually renders in quiz UI
@@ -171,6 +182,15 @@ jobs:
         run: python3 scripts/qualify_2013_austria_hunting_38_special.py
       - name: Integrate Practice Test 2 from highlighted photo answers
         run: python3 scripts/integrate_practice_test_2.py
+      - name: Build offline cropped Trophy Test photographs and integrate Quiz Mode entry
+        run: |
+          python3 scripts/build_trophy_test.py
+          python3 scripts/integrate_trophy_test.py
+          python3 scripts/check_trophy_test.py
+          node --check app/src/main/assets/trophy-test-app.js
+          node --check app/src/main/assets/trophy-test-data.js
+          node --check app/src/main/assets/trophy-test-launcher.js
+
       - name: Inject and validate Schalenwild comparison matrices
         run: |
           python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
@@ -200,6 +220,8 @@ jobs:
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
+      - name: Verify Trophy Test crops in actual APK without losing existing features
+        run: python3 scripts/check_packaged_trophy_test.py app/build/outputs/apk/debug/app-debug.apk
       - name: Verify all 125 Practice Test 2 questions and matrices inside release APK
         run: |
           python3 - <<'PY'
@@ -258,7 +280,7 @@ jobs:
           if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.8-RESTORED-full-debug-apk
+          name: GHC-Study-v1.4.9-TROPHY-TEST-full-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
@@ -271,7 +293,7 @@ jobs:
         run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/download-artifact@v4
         with:
-          name: GHC-Study-v1.4.8-RESTORED-full-debug-apk
+          name: GHC-Study-v1.4.9-TROPHY-TEST-full-debug-apk
           path: downloaded-apk
       - name: Enable KVM group permissions
         run: |

@@ -1,3 +1,11 @@
+# NEXT ACTION — Trophy Test v1.4.9 (2026-10-22)
+
+**Immediate scope:** Test and release Trophy Test from actual German Hunting/Trophy Test room photographs. 33 Drive entries = 13 identical WhatsApp pairs plus 7 panoramas. 13 unique WhatsApp photos support 29 tightly cropped mount cards; 19 identification names marked scoreable, 10 kept review-only, no fabricated species certainty. Implemented Cards, Flashcards, Identify modes. Original banks and progress keys untouched. Release versionCode=149 / versionName=1.4.9, packageId org.ghcstudy.v141.
+
+**Before merge:** All three GitHub Actions jobs source/Android APK/emulator must pass. Verify APK includes 29 individual images, all 125 Practice Test 2 questions, glossary, Schalenwild matrices and launcher icon. The final true handset install, visual recognition and backup/retention still require Galaxy S23 Ultra acceptance. Do not restart factual-audit backlog for this scoped feature.
+
+---
+
 # NEXT ACTION — restored full app v1.4.8 (2026-10-20)
 
 **Latest actionable checkpoint superseding archival material below.** The full development source from branch `feature/slide-audit-glossary-tests-20261012` has been reconstructed on main with the separate v1.4.7 Schalenwild modules. This fixes the regression where v1.4.7 was rebuilt from a v1.4.5 APK.

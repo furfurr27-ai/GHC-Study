@@ -285,24 +285,34 @@ PY
   return 1
 }
 assert_visible_text() {
-  local label="$1" stage="$2"
-  dump_ui /sdcard/ghc-verify.xml emulator-evidence/verify-"$stage".xml
-  GHC_NAV_LABEL="$label" GHC_NAV_XML="emulator-evidence/verify-$stage.xml" python3 - <<'PY'
+  local label="$1" stage="$2" attempt
+  # WebView page navigation may expose the new title before the next document
+  # finishes painting its buttons. Poll the real accessibility tree rather than
+  # marking a slow but valid page as a failed app navigation.
+  for attempt in 1 2 3 4 5 6; do
+    dump_ui /sdcard/ghc-verify.xml "emulator-evidence/verify-$stage.xml"
+    if GHC_NAV_LABEL="$label" GHC_NAV_XML="emulator-evidence/verify-$stage.xml" python3 - <<'PY'
 import os,re,xml.etree.ElementTree as ET
 root=ET.parse(os.environ["GHC_NAV_XML"]).getroot()
 needle=os.environ["GHC_NAV_LABEL"]
 for n in root.iter("node"):
     value=n.attrib.get("text","").strip()
-    if value!=needle and not value.startswith(needle+" "): continue
+    if value!=needle and not value.startswith(needle+" "):continue
     m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
-    if not m: continue
+    if not m:continue
     x1,y1,x2,y2=map(int,m.groups())
     if x2>x1 and y2>y1 and y1<2150:
         print("PASS: visible",needle)
         break
 else:
-    raise SystemExit("Expected visible content not found: "+needle)
+    raise SystemExit("Not yet visible: "+needle)
 PY
+    then return 0; fi
+    echo "Waiting for '$label' to render ($stage, attempt $attempt/6)"
+    sleep 2
+  done
+  echo "Expected visible content not found after six UI snapshots: $label ($stage)" >&2
+  return 1
 }
 tap_visible_label "Reference" reference-tab
 assert_ghc_foreground reference-tab

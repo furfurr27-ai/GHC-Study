@@ -1,3 +1,15 @@
+# Jäger Field Guide v1.5.0 — offline field reference (2026-10-25)
+
+The hunting course is completed. **The Android app now opens directly to the Jäger Field Guide**, a searchable offline animal reference with 19 bilingual baseball-style cards, locally saved favorites and Revier notes, identification traits, seasonal biology, signs and disease cautions. The original Quiz/Study application, old progress storage keys, Trophy Test, source-audited glossary, and its Android package identity are preserved at **Study archive**.
+
+**Legal caution:** Animal pages are not current hunting authorization; the app deliberately does not display static "legal to hunt now" badges. Hessen revised its hunting ordinance effective April 1, 2026. Always verify local current seasons/orders, dependent-young protections, game management plans and ASP controls with the responsible authorities.
+
+**Picture status:** 11/19 cards use already packaged course or exam-trophy images; eight explicitly show no-photo placeholders. Mounted photographs are labelled as such, not mistaken for live-animal field photographs.
+
+Source review, provenance, test instructions, limitations and finite next steps: [Field Guide v1.5.0 checkpoint](docs/FIELD_GUIDE_V150_20261025.md). Test the field guide via \`node tests/field-guide-smoke.cjs\` and \`node tests/field-guide-functional.cjs\` (with jsdom); source/APK image audits via \`python3 scripts/check_field_guide.py\`. Real Galaxy S23 Ultra APK upgrade acceptance is still outstanding.
+
+---
+
 # GHC Study v1.4.10 — completed Trophy Test animal fact cards (2026-10-22)
 
 The v1.4.9 release introduced **29 individual room-photo cards**, using source-cropped photographs of actual mounts in the exam room. This v1.4.10 enhancement adds a **source-labelled compact animal fact sheet to each card**, including German/English hunting terms, key biology, identification, comparison notes and memory cues where supported. Facts are revealed **only after a flashcard answer or graded identification response** and are visible during normal Cards browsing. An external fact is labelled as *Supplemental animal facts*, never mixed into the GHC-course-labelled *Details · Other Facts*. Uncertain mounts remain excluded from scored recognition.

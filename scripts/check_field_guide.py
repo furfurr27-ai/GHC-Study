@@ -13,7 +13,7 @@ assert m,"Field cards must be a literal JSON array embedded in the JS data file"
 cards=json.loads(m.group(1))
 assert len(cards)>=19
 assert len({c["id"] for c in cards})==len(cards)
-assert sum(bool(c.get("photo")) for c in cards)>=11
+assert sum(bool(c.get("photo")) for c in cards)==len(cards),"All field cards must have bundled animal pictures"
 for item in cards:
   for key in ("id","de","en","latin","group","quick","idmarks","lookalike","habitat","cycle","social","sign","terms","caution","source","course"):
     assert isinstance(item.get(key),str) and item[key].strip(),(item["id"],key)

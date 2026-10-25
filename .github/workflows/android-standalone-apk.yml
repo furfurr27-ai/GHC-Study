@@ -1,7 +1,7 @@
 name: Build standalone GHC Study APK
 on:
   push:
-    branches: [main, audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
+    branches: [main, audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012, feature/offline-jaeger-field-guide-20261025]
     paths:
       - 'app/**'
       - 'tools/**'

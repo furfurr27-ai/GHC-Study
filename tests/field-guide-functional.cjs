@@ -10,6 +10,8 @@ w.eval(fs.readFileSync(path.join(base,'field-guide-data.js'),'utf8'));
 w.eval(fs.readFileSync(path.join(base,'field-guide.js'),'utf8'));
 const doc=w.document;
 assert.equal(w.GHC_FIELD_GUIDE.count,19);
+assert(doc.querySelector('header').outerHTML.includes('Study archive'));
+assert(/max\(36px, env\(safe-area-inset-top\)\)/.test(doc.querySelector('style').textContent),'Android status-bar safe header padding');
 assert.equal(doc.querySelectorAll('.tile').length,19,'All animals should render');
 const query=doc.querySelector('#query');query.value='Frischling';query.dispatchEvent(new w.Event('input',{bubbles:true}));
 assert.equal(doc.querySelectorAll('.tile').length,1,'Search should match boar terms');

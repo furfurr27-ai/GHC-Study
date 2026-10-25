@@ -9,6 +9,7 @@ const context={window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(assets,'field-guide-data.js'),'utf8'),context);
 const cards=context.window.GHC_FIELD_SPECIES;
 assert(Array.isArray(cards)&&cards.length>=19,'Expected 19+ offline field animal cards');
+assert(cards.every(c=>!!c.photo),"Every field card must have a vetted offline photo");
 assert.equal(new Set(cards.map(x=>x.id)).size,cards.length,'Duplicate species id');
 for(const card of cards){
   for(const key of ['id','de','en','latin','group','quick','idmarks','lookalike','habitat','cycle','social','sign','terms','caution','course','source','photoLabel']){

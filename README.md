@@ -4,7 +4,7 @@ The hunting course is completed. **The Android app now opens directly to the Jä
 
 **Legal caution:** Animal pages are not current hunting authorization; the app deliberately does not display static "legal to hunt now" badges. Hessen revised its hunting ordinance effective April 1, 2026. Always verify local current seasons/orders, dependent-young protections, game management plans and ASP controls with the responsible authorities.
 
-**Picture status:** 11/19 cards use already packaged course or exam-trophy images; eight explicitly show no-photo placeholders. Mounted photographs are labelled as such, not mistaken for live-animal field photographs.
+**Picture status:** All 19 animal cards have visually reviewed images from previously bundled course/trophy assets. Eighteen are living-animal photographs and the Graureiher image remains a clearly labelled exam-room mount. No network image fetch is required.
 
 Source review, provenance, test instructions, limitations and finite next steps: [Field Guide v1.5.0 checkpoint](docs/FIELD_GUIDE_V150_20261025.md). Test the field guide via \`node tests/field-guide-smoke.cjs\` and \`node tests/field-guide-functional.cjs\` (with jsdom); source/APK image audits via \`python3 scripts/check_field_guide.py\`. Real Galaxy S23 Ultra APK upgrade acceptance is still outstanding.
 

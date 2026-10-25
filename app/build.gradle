@@ -4,7 +4,7 @@ android {
  compileSdk 35
  defaultConfig {
   applicationId project.hasProperty('ghcStandalone') ? 'org.ghcstudy.v146.standalone' : 'org.ghcstudy.v141'
-  manifestPlaceholders = [ghcAppLabel: project.hasProperty('ghcStandalone') ? 'GHC Study Standalone' : 'GHC Study']
+  manifestPlaceholders = [ghcAppLabel: project.hasProperty('ghcStandalone') ? 'Jäger Field Guide Standalone' : 'Jäger Field Guide']
   minSdk 24
   targetSdk 35
   versionCode 151

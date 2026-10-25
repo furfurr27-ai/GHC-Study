@@ -1,3 +1,13 @@
+# CURRENT CHECKPOINT — Jäger Field Guide v1.5.0 (2026-10-25)
+
+**Priority changed after graduating the course.** The app is now a field-first offline Jäger reference, not principally an exam-study app. This branch: `feature/offline-jaeger-field-guide-20261025`. It starts at `field-guide.html`, retains `index.html` as Study archive, and keeps package ID `org.ghcstudy.v141`, all existing questions/progress and media. 19 species cards, 11 source-identifiable local images, eight explicit placeholders, search, filters, favorites, notes and field safety. It does NOT present cached hunting seasons as authorizations.
+
+**Immediate finite release gate:** Run both field-guide Node tests, Python source + APK image assertions, complete current legacy regressions and Android 35 emulator start/Back test. Inspect live GitHub CI results and fix only actual failures. Build artifact is not user-tested until installation/upgrade on Samsung Galaxy S23 Ultra; never assert phone testing or signing compatibility without evidence. See `docs/FIELD_GUIDE_V150_20261025.md` for source-by-source evidence and unfinished picture slots. No further exam features required for this field-first change.
+
+**Historical below:** Older Trophy Test checkpoints are preserved for provenance. They do not supersede this field-guide checkpoint.
+
+---
+
 # LATEST CHECKPOINT — GHC Study v1.4.10 Trophy Test facts (2026-10-22)
 
 **Completed and merged into main:** PR #5, merge commit `4cc626ad819454d97186c4852aca0ed90c6bb788`. Builds use tracked current v1.4.10 app source, **not** a historical APK. Original application ID `org.ghcstudy.v141`; `versionCode=150`.

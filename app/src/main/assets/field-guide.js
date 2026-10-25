@@ -42,7 +42,7 @@ function openCard(id){
  var s=species.find(function(x){return x.id===id});if(!s)return;
  state.selected=id;
  var src=s.source&&/^https:\/\//.test(s.source)?'<a href="'+esc(s.source)+'" target="_blank" rel="noopener noreferrer">Current DJV species page (online)</a>':'';
- var content='<article class="sheet"><div class="sheetHead"><div class="eyebrow">'+esc(s.group)+' · Field reference</div><h1>'+esc(s.de)+'</h1><p>'+esc(s.en)+' · <i>'+esc(s.latin)+'</i></p></div>'+media(s,true)+'<div class="photoCredit">'+esc(s.photoLabel)+(s.photo?' · mounted/course photo; field appearance may differ':'')+'</div>'+
+ var content='<article class="sheet"><div class="sheetHead"><div class="eyebrow">'+esc(s.group)+' · Field reference</div><h1>'+esc(s.de)+'</h1><p>'+esc(s.en)+' · <i>'+esc(s.latin)+'</i></p></div>'+media(s,true)+'<div class="photoCredit">'+esc(s.photoLabel)+(s.photo?' · visual reference, not sole identification evidence':'')+'</div>'+
  '<div class="fact"><button type="button" class="star" id="favorite" aria-pressed="'+(favorites[id]?'true':'false')+'">'+(favorites[id]?'★ Saved':'☆ Save')+'</button>'+
  '<p class="factIntro">'+esc(s.quick)+'</p><dl class="dl">'+
  row('Spotting ID',s.idmarks)+row('Confusion check',s.lookalike)+row('Habitat & food',s.habitat)+row('Annual cycle',s.cycle)+row('Group behavior',s.social)+row('Tracks & signs',s.sign)+row('Jägersprache',s.terms)+'</dl>'+
@@ -51,7 +51,7 @@ function openCard(id){
  '<div class="noteWrap"><strong>My Revier notes (saved on this device)</strong><p style="font-size:12px">Personal observations only. Local notes are not official rules and may be lost on uninstall/data clearing.</p><label for="animalNotes" class="eyebrow">Field notes</label><textarea id="animalNotes" placeholder="e.g. tracks, habitat, repeated sightings"></textarea><button id="saveNote" class="save" type="button">Save note offline</button><div id="saveStatus" class="status" role="status"></div></div></div></article>';
  el('animalContent').innerHTML=content;
  el('animalNotes').value=notes[id]||'';
- el('favorite').onclick=function(){if(favorites[id])delete favorites[id];else favorites[id]=true;store(favKey,favorites);openCard(id)};
+ el('favorite').onclick=function(){if(favorites[id])delete favorites[id];else favorites[id]=true;if(!store(favKey,favorites))el('saveStatus').textContent='Favorite could not be saved.';this.setAttribute('aria-pressed',favorites[id]?'true':'false');this.textContent=favorites[id]?'★ Saved':'☆ Save'};
  el('saveNote').onclick=function(){notes[id]=el('animalNotes').value;if(store(notesKey,notes))el('saveStatus').textContent='Saved locally on this device.';else el('saveStatus').textContent='Unable to save. Check device storage.'};
  showPane('detail');
 }

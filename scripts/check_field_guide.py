@@ -12,7 +12,7 @@ m=re.fullmatch(r"(?s).*?window\.GHC_FIELD_SPECIES=(\[.*\]);\s*",data)
 assert m,"Field cards must be a literal JSON array embedded in the JS data file"
 cards=json.loads(m.group(1))
 handbook_text=(ASSETS/"jungjaeger-data.js").read_text(encoding="utf8")
-hm=re.fullmatch(r"(?s).*?window\\.GHC_JUNGJAEGER_CARDS=(\\[.*\\]);\\s*",handbook_text)
+hm=re.fullmatch(r"(?s).*?window\.GHC_JUNGJAEGER_CARDS=(\[.*\]);\s*",handbook_text)
 assert hm,"Jungjäger cards must be a literal JSON array embedded in local JS"
 handbook=json.loads(hm.group(1))
 assert len(handbook)>=40,"Missing offline customs and rule cards"

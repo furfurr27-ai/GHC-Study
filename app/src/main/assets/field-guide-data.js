@@ -104,7 +104,7 @@ window.GHC_FIELD_SPECIES=[
     "id": "mouflon",
     "de": "Muffelwild",
     "en": "Mouflon",
-    "latin": "Ovis gmelini musimon",
+    "latin": "Ovis ammon musimon",
     "group": "Schalenwild",
     "photo": "media/study-photo-mouflon.webp",
     "photoLabel": "Individual class-slide crop",

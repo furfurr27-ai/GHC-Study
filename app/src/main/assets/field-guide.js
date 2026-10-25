@@ -1,6 +1,8 @@
 (function(){
 'use strict';
 var species=window.GHC_FIELD_SPECIES||[];
+var handbook=window.GHC_JUNGJAEGER_CARDS||[];
+var handbookState={filter:'All',query:'',selected:null};
 var state={filter:'All',query:'',selected:null,page:'browse'};
 var favKey='ghc-field-favorites-v1',notesKey='ghc-field-notes-v1';
 function read(key){try{var val=JSON.parse(localStorage.getItem(key)||'{}');return val&&typeof val==='object'&&!Array.isArray(val)?val:{}}catch(e){return {}}}
@@ -26,6 +28,11 @@ function showPane(page){
  el('browse').classList.toggle('hidden',page!=='browse');
  el('detail').classList.toggle('hidden',page!=='detail');
  el('safety').classList.toggle('hidden',page!=='safety');
+ el('handbookBrowse').classList.toggle('hidden',page!=='handbook');
+ el('handbookDetail').classList.toggle('hidden',page!=='handbookDetail');
+ el('homeTabs').classList.toggle('hidden',page!=='browse'&&page!=='handbook');
+ el('animalsTab').setAttribute('aria-selected',page==='browse'?'true':'false');
+ el('handbookTab').setAttribute('aria-selected',page==='handbook'?'true':'false');
  window.scrollTo(0,0);
 }
 function paint(){
@@ -57,8 +64,43 @@ function openCard(id){
 }
 function back(){
  if(state.page==='browse')return false;
+ if(state.page==='handbookDetail'){showPane('handbook');handbookPaint();return true}
+ if(state.page==='handbook'){showPane('browse');return true}
  showPane('browse');paint();el('query').focus({preventScroll:true});return true;
 }
+
+function handbookMatches(c){
+ if(handbookState.filter!=='All'&&c.group!==handbookState.filter)return false;
+ var q=handbookState.query.trim().toLocaleLowerCase();if(!q)return true;
+ return [c.de,c.en,c.group,c.kind,c.summary,c.note,c.steps.join(' ')].join(' ').toLocaleLowerCase().indexOf(q)>-1;
+}
+function handbookPaint(){
+ var cats=['All','Brauchtum','Jagdhorn','Jagdarten','Sicherheit','Recht & Wild','Nach dem Schuss'];
+ el('handbookFilters').innerHTML=cats.map(function(v){return '<button type="button" class="chip" data-topic="'+esc(v)+'" aria-pressed="'+(handbookState.filter===v?'true':'false')+'">'+esc(v)+'</button>'}).join('');
+ var items=handbook.filter(handbookMatches);
+ el('handbookCount').textContent=items.length+' of '+handbook.length+' offline Jungjäger cards · Last reference review 25 October 2026';
+ el('handbookCards').innerHTML=items.length?items.map(function(c){return '<button type="button" class="chapterTile" data-guide-open="'+esc(c.id)+'" aria-label="Open '+esc(c.de)+' reference"><small>'+esc(c.group)+' · '+esc(c.kind)+'</small><b>'+esc(c.de)+'</b><span>'+esc(c.en)+'</span></button>'}).join(''):'<p>No matching German or English reference card.</p>';
+ el('handbookFilters').querySelectorAll('[data-topic]').forEach(function(b){b.onclick=function(){handbookState.filter=b.getAttribute('data-topic');handbookPaint()}});
+ el('handbookCards').querySelectorAll('[data-guide-open]').forEach(function(b){b.onclick=function(){handbookOpen(b.getAttribute('data-guide-open'))}});
+}
+function handbookOpen(id){
+ var c=handbook.find(function(x){return x.id===id});if(!c)return;
+ handbookState.selected=id;
+ var link=c.source&&/^https:\/\//.test(c.source)?'<a href="'+esc(c.source)+'" target="_blank" rel="noopener noreferrer">Read related official or association source online</a>':'';
+ el('handbookContent').innerHTML='<article class="sheet"><div class="sheetHead"><div class="eyebrow">'+esc(c.group)+' · Jungjäger field reference</div><h1>'+esc(c.de)+'</h1><p>'+esc(c.en)+'</p></div>'+
+ '<div class="fact"><span class="chapterType">'+esc(c.kind)+'</span><p class="factIntro">'+esc(c.summary)+'</p>'+
+ '<ol class="chapterSteps">'+c.steps.map(function(item){return '<li>'+esc(item)+'</li>'}).join('')+'</ol>'+
+ '<div class="notice"><b>Important.</b> '+esc(c.note)+'</div>'+
+ '<div class="source"><b>Reference and scope</b><p>Offline summary checked/assembled 25 October 2026. Class sources explain customs; official sources determine current regulations. Traditions vary by region and hunt.</p>'+
+ '<p>Course baseline: '+esc(c.course)+'</p>'+link+
+ '<p>Before relying on rules in the field: verify the date, Bundesland, Revier, Jagdleiter orders, disease restrictions and applicable legal text.</p></div></div></article>';
+ showPane('handbookDetail');
+}
+el('animalsTab').addEventListener('click',function(){showPane('browse');paint()});
+el('handbookTab').addEventListener('click',function(){showPane('handbook');handbookPaint()});
+el('handbookQuery').addEventListener('input',function(){handbookState.query=this.value;handbookPaint()});
+el('backFromHandbook').addEventListener('click',back);
+
 window.fieldGuideHandleBack=back;
 el('query').addEventListener('input',function(){state.query=this.value;paint()});
 el('backToList').addEventListener('click',back);
@@ -67,6 +109,7 @@ el('showSafety').addEventListener('click',function(){showPane('safety')});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&state.page!=='browse'){e.preventDefault();back()}});
 // Missing or failed files never silently display a wrong animal.
 document.addEventListener('error',function(e){var img=e.target;if(img&&img.tagName==='IMG'&&img.closest('.tile, .sheet')){var replacement=document.createElement('div');replacement.className='image-placeholder '+(img.classList.contains('heroPhoto')?'large':'');replacement.setAttribute('role','img');replacement.setAttribute('aria-label','Offline image unavailable');replacement.textContent='Offline image unavailable — verify species from the text';img.replaceWith(replacement)}},true);
-window.GHC_FIELD_GUIDE={count:species.length,ids:species.map(function(s){return s.id}),openCard:openCard,back:back};
+window.GHC_FIELD_GUIDE={count:species.length,ids:species.map(function(s){return s.id}),handbookCount:handbook.length,handbookOpen:handbookOpen,openCard:openCard,back:back};
 paint();
+handbookPaint();
 })();

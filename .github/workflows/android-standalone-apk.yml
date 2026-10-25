@@ -107,6 +107,7 @@ jobs:
       - name: Verify field guide and locally packaged image dependencies
         run: |
           node --check app/src/main/assets/field-guide-data.js
+          node --check app/src/main/assets/jungjaeger-data.js
           node --check app/src/main/assets/field-guide.js
           python3 scripts/check_field_guide.py
       - name: Preserve Schalenwild matrices in standalone build

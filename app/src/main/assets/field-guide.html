@@ -36,13 +36,29 @@ main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;
 .safety h2{font-size:20px;margin:19px 0 7px}.safety p{color:#e2e4d9}.safety article{background:#24382a;border:1px solid #62785c;border-radius:12px;padding:13px;margin:10px 0}
 .bottom{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;font-size:13px}.bottom a{border:1px solid #71896b;padding:9px 11px;border-radius:9px;color:#eee7d7}
 @media(min-width:620px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.tile .photo{aspect-ratio:1.6}.fact{padding:22px 26px}}@media(max-width:360px){.cards{gap:7px}.tile b{font-size:14px}.tile .txt{padding:8px}.dl{grid-template-columns:minmax(84px,31%) 1fr;gap:7px}}
+.homeTabs{max-width:980px;margin:0 auto 0;display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:13px 14px 0}
+.homeTab{padding:12px 9px;border:1px solid #788c75;border-radius:12px;background:#273e2d;color:#f1e6d2;font-weight:760;min-width:0}
+.homeTab[aria-selected=true]{background:var(--gold);color:#14231a;border-color:var(--gold)}
+.chapterGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.chapterTile{border:1px solid #829578;background:#243a2b;border-radius:13px;color:#f6edde;text-align:left;padding:14px;min-height:135px}
+.chapterTile small{color:#e1c48e;display:block;font-size:11px;margin-bottom:8px}.chapterTile b{font-size:17px;display:block;line-height:1.24}.chapterTile span{font-size:12px;color:#cad8c8;display:block;margin-top:8px}.chapterTile:focus-visible,.homeTab:focus-visible{outline:3px solid #eac47d}
+.chapterType{font-size:12px;background:#dfbd81;color:#20301f;display:inline-block;border-radius:30px;padding:5px 9px;font-weight:750;margin-bottom:8px}
+.chapterSteps{padding-left:24px;margin:12px 0}.chapterSteps li{padding:4px 0}.chapterSource{margin-top:15px;font-size:12px;color:#56624e}.chapterSource a{color:#285d42}
+@media(min-width:620px){.chapterGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style></head>
 <body><header><div class="head"><div><span class="brand">Jäger Field Guide</span><span class="sub">GHC · Offline animal reference · Hessen-focused</span></div><a class="toplink" href="index.html" id="archiveLink">Study archive</a></div></header>
-<main><div id="browse"><p class="intro">Fast, searchable animal cards with identification clues, signs, seasonal biology and German hunting terms.</p>
+<main><nav id="homeTabs" class="homeTabs" role="tablist" aria-label="Reference sections"><button type="button" class="homeTab" id="animalsTab" role="tab" aria-selected="true" aria-controls="browse">Tiere · Animals</button><button type="button" class="homeTab" id="handbookTab" role="tab" aria-selected="false" aria-controls="handbookBrowse">Jungjäger-Wissen</button></nav><div id="browse" role="tabpanel" aria-labelledby="animalsTab"><p class="intro">Fast, searchable animal cards with identification clues, signs, seasonal biology and German hunting terms.</p>
 <div class="alert"><strong>Offline-ready biological reference.</strong> Updated source review: 25 October 2026. Hunting seasons, restrictions, disease zones and permissions change. Verify current rules for your exact Revier before acting. Links to source websites require a connection.</div>
 <label for="query" class="eyebrow">Search species, terms or signs</label><input id="query" class="search" type="search" autocomplete="off" placeholder="Rehwild, tracks, Spiegel, boar…">
 <div id="filters" class="filters" role="group" aria-label="Filter animals"></div><div id="count" class="counter" aria-live="polite"></div><div id="cards" class="cards"></div>
 <div class="bottom"><button class="chip" id="showSafety">Field safety &amp; current-law cautions</button><a href="glossary.html">Jägersprache glossary</a><a href="index.html">Original quiz and study cards</a></div></div>
+<section id="handbookBrowse" class="hidden" role="tabpanel" aria-labelledby="handbookTab">
+<p class="intro"><strong>Jungjäger-Wissen</strong> · Traditions, Jagdhorn, common hunt formats and practical German hunting rules. In German and English, usable without signal.</p>
+<div class="alert"><strong>Important distinction:</strong> Traditions and ceremony are not statutory duties. Safety instructions, hunt-leader orders and the current federal, state and local rules take precedence. Signal melodies must be confirmed during the hunt briefing.</div>
+<label for="handbookQuery" class="eyebrow">Search terms, signals or rules</label><input id="handbookQuery" class="search" type="search" autocomplete="off" placeholder="Strecke legen, Hahn in Ruh, Nachsuche…">
+<div id="handbookFilters" class="filters" role="group" aria-label="Filter Jungjäger reference"></div>
+<div id="handbookCount" class="counter" aria-live="polite"></div><div id="handbookCards" class="chapterGrid"></div>
+</section>
+<section id="handbookDetail" class="hidden" aria-label="Jungjäger reference card"><button class="back" id="backFromHandbook">← Jungjäger cards</button><div id="handbookContent"></div></section>
 <section id="detail" class="hidden" aria-label="Animal field card"><button class="back" id="backToList">← All animals</button><div id="animalContent"></div></section>
 <section id="safety" class="safety hidden" aria-label="Field safety"><button class="back" id="backFromSafety">← All animals</button><h1>Field safety &amp; legal cautions</h1>
 <article><h2>Seasons are NOT shown as clearance</h2><p>Germany’s Bundesjagdgesetz § 22 protects animals outside permitted seasons and includes protection for adults needed to rear dependent young. Hessen revised hunting regulations from 1 April 2026. Before hunting, confirm the actual species, state, Revier, applicable orders, disease controls and any Abschussplan with authoritative local sources.</p></article>
@@ -50,4 +66,4 @@ main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;
 <article><h2>African swine fever (ASP)</h2><p>Restrictions and reporting requirements can change by district. The Friedrich-Loeffler-Institut publishes maps, but warns that its own maps are not necessarily updated daily. Check the competent veterinary authority and current local ASP rules. Do not move or handle suspicious carcasses contrary to official instructions.</p></article>
 <article><h2>Source hierarchy</h2><p>Animal descriptions: current DJV species profiles where individually checked; otherwise explicitly named GHC course slide baseline. Legal matters: current federal and Hessian official publications, not historical course handouts. Geographic and temporal details must be rechecked when online.</p></article>
 <div class="bottom"><a href="https://landwirtschaft.hessen.de/wald/jagd">Official Hessen hunting law page (online)</a><a href="https://www.gesetze-im-internet.de/bjagdg/__22.html">BJagdG § 22 (online)</a><a href="https://www.gesetze-im-internet.de/tier-lmhv/__2b.html">Tier-LMHV § 2b (online)</a><a href="https://www.fli.de/de/aktuelles/tierseuchengeschehen/afrikanische-schweinepest/">FLI ASP updates (online)</a></div></section>
-</main><script src="field-guide-data.js"></script><script src="field-guide.js"></script></body></html>
+</main><script src="field-guide-data.js"></script><script src="jungjaeger-data.js"></script><script src="field-guide.js"></script></body></html>

@@ -25,9 +25,17 @@ jobs:
           node --check tests/functional-smoke.cjs
           node --check tests/safety-warning-smoke.cjs
           node --check tests/practice-test-2-smoke.cjs
+          node --check app/src/main/assets/field-guide-data.js
+          node --check app/src/main/assets/field-guide.js
+          node --check tests/field-guide-smoke.cjs
+          node --check tests/field-guide-functional.cjs
           node --check tools/test_schalenwild_matrix.js
       - name: Run GHC study UI smoke tests
         run: node tests/functional-smoke.cjs
+      - name: Test offline Jäger Field Guide source and actual DOM interaction
+        run: |
+          node tests/field-guide-smoke.cjs
+          node tests/field-guide-functional.cjs
       - name: Check question bank integrity and answer giveaways
         run: python3 scripts/check_question_bank_integrity.py
       - name: Publish question-bank audit evidence
@@ -85,6 +93,8 @@ jobs:
           node --check app/src/main/assets/trophy-test-data.js
           node --check app/src/main/assets/trophy-test-launcher.js
 
+      - name: Verify offline field reference image availability
+        run: python3 scripts/check_field_guide.py
       - name: Inject and validate Schalenwild comparison matrices
         run: |
           python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
@@ -191,6 +201,8 @@ jobs:
           node --check app/src/main/assets/trophy-test-data.js
           node --check app/src/main/assets/trophy-test-launcher.js
 
+      - name: Verify offline field reference image availability
+        run: python3 scripts/check_field_guide.py
       - name: Inject and validate Schalenwild comparison matrices
         run: |
           python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
@@ -220,6 +232,8 @@ jobs:
         run: python3 scripts/build_question_source_audit_matrix.py
       - name: Build installable Android APK
         run: gradle --no-daemon :app:assembleDebug
+      - name: Verify offline field-guide images and data inside APK
+        run: python3 scripts/check_field_guide.py --apk app/build/outputs/apk/debug/app-debug.apk
       - name: Verify Trophy Test crops in actual APK without losing existing features
         run: python3 scripts/check_packaged_trophy_test.py app/build/outputs/apk/debug/app-debug.apk
       - name: Verify all 125 Practice Test 2 questions and matrices inside release APK
@@ -280,7 +294,7 @@ jobs:
           if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.10-TROPHY-TEST-full-debug-apk
+          name: GHC-Field-Guide-v1.5.0-full-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
@@ -293,7 +307,7 @@ jobs:
         run: python3 -m pip install --user Pillow==11.3.0
       - uses: actions/download-artifact@v4
         with:
-          name: GHC-Study-v1.4.10-TROPHY-TEST-full-debug-apk
+          name: GHC-Field-Guide-v1.5.0-full-debug-apk
           path: downloaded-apk
       - name: Enable KVM group permissions
         run: |

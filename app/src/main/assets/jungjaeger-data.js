@@ -14,7 +14,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Never let a ceremony delay needed meat cooling, veterinary measures or a wound search."
     ],
     "note": "Etiquette, not a universal legal sorting code. Copy the local Jagdherr's arrangement and do not invent fixed row-order laws.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagd-fischerei-museum.de/streckelegen",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -30,7 +30,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "The group may finish with Jagd vorbei and/or Halali under its local custom."
     ],
     "note": "The musical performance is ceremonial. It does not substitute for the Jagdleiter's safety announcements.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagd-fischerei-museum.de/streckelegen",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -46,7 +46,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Respond to congratulations with Waidmannsdank."
     ],
     "note": "Branch species and handover details vary by region. Do not treat the branch as a mandatory legal form.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://kjs-rbk.de/jagdliches-brauchtum-wissenswertes/",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -62,7 +62,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Keep food-hygiene work and animal-welfare duties first."
     ],
     "note": "A tradition rather than a substitute for lawful identification, documentation or hygienic handling.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://kjs-rbk.de/jagdliches-brauchtum-wissenswertes/",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -78,7 +78,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Document coordinates, landmarks and shot details as well; modern search teams may use tape or GPS."
     ],
     "note": "Do not rely on a guessed branch-arrow code on an unfamiliar hunt. Preserve actual signs at the Anschuss.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://kjs-rbk.de/jagdliches-brauchtum-wissenswertes/",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -158,7 +158,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Listen for the hunt leader's announcements after the music."
     ],
     "note": "Not an operational permission or shooting signal.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -236,7 +236,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Do not assume movement is safe until the Jagdleiter authorizes it."
     ],
     "note": "Distinct in purpose from a command about an individual drive.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -251,7 +251,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Stand respectfully and observe the host's local ceremony."
     ],
     "note": "Ceremonial, not a safety signal that supersedes operational commands.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -266,7 +266,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Recognize the name and context; no copyrighted audio is bundled."
     ],
     "note": "A Totsignal records respect, not permission to take that species.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -281,7 +281,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Identify it by the programme/name; actual melody recognition needs verified audio."
     ],
     "note": "Follow the local Jagdhornbläser's sequence.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -296,7 +296,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Pause conversation during the honour."
     ],
     "note": "Customs can differ by club and game present.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {
@@ -311,7 +311,7 @@ window.GHC_JUNGJAEGER_CARDS=[
       "Follow local ceremony; placement of foxes on the Strecke varies."
     ],
     "note": "Not every hunting party performs every Totsignal.",
-    "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
+    "source": "https://www.jagdverband.de/sites/default/files/DJV-Vorschrift%20B-Horn.pdf",
     "course": "Copy of Jagdliches_Brauchtum_und_Jaegersprache_Study_Guide_v2.pdf (2026-08-09)"
   },
   {

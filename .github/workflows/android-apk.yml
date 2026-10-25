@@ -26,6 +26,7 @@ jobs:
           node --check tests/safety-warning-smoke.cjs
           node --check tests/practice-test-2-smoke.cjs
           node --check app/src/main/assets/field-guide-data.js
+          node --check app/src/main/assets/jungjaeger-data.js
           node --check app/src/main/assets/field-guide.js
           node --check tests/field-guide-smoke.cjs
           node --check tests/field-guide-functional.cjs

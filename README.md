@@ -1,3 +1,11 @@
+# Jäger Field Guide v1.5.1 — Jungjäger-Wissen (2026-10-25)
+
+After the 19 pictured offline animal cards, the app now includes a separate **Jungjäger-Wissen** tab with **41 German/English quick-reference cards** in six chapters: Brauchtum (including Strecke legen), Jagdhorn, Jagdarten, Sicherheit, Recht & Wild, and Nach dem Schuss. Each card has a practical meaning, concise procedure, caution and source label. Search and topic filters work offline; Android Back returns to the section. No horn recordings or music notation were invented. **Tradition is expressly distinguished from binding current law and the Jagdleiter's instructions.**
+
+Normal app versionCode **152**, versionName **1.5.1**; original package ID and study archive unchanged. A separately installable standalone APK uses `org.ghcstudy.v146.standalone`; use this to trial the guide without replacing old study-app data. Full evidence and limitations: [Jungjäger card sources](docs/JUNGJAEGER_V151_20261025.md). CI is authoritative for build and emulator results. On-phone user acceptance has not been performed.
+
+---
+
 # Jäger Field Guide v1.5.0 — offline field reference (2026-10-25)
 
 The hunting course is completed. **The Android app now opens directly to the Jäger Field Guide**, a searchable offline animal reference with 19 bilingual baseball-style cards, locally saved favorites and Revier notes, identification traits, seasonal biology, signs and disease cautions. The original Quiz/Study application, old progress storage keys, Trophy Test, source-audited glossary, and its Android package identity are preserved at **Study archive**.

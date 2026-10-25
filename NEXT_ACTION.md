@@ -1,3 +1,11 @@
+# CURRENT CHECKPOINT — Jäger Field Guide v1.5.1 (2026-10-25)
+
+**Shipped on this development branch:** Android defaults to searchable offline field guide with 19 animal images and a new **Jungjäger-Wissen** tab of **41** cards in six categories: Brauchtum, Jagdhorn, Jagdarten, Sicherheit, Recht & Wild, Nach dem Schuss. Preserve all existing GHC study archive, Trophy Test, glossary, and stored progress. Commit sources and legal qualifications are at `docs/JUNGJAEGER_V151_20261025.md`. Version code 152 / name 1.5.1; usual app ID `org.ghcstudy.v141`; standalone side-by-side package `org.ghcstudy.v146.standalone`. Do not present dynamic seasons or online-only audio as an offline feature.
+
+**Finite next action:** Verify current PR #7 CI `smoke`, `android-apk`, Android 35 `emulator-smoke`, and standalone release artifact. Fix actual failures; then distribute v1.5.1 standalone APK for S23 Ultra user acceptance (airplane mode, 41 cards, horn signal titles, hunt-type filters, hardware Back, old app unchanged). Old v1.5.0 APK **does not contain** these new 41 cards. Do not assert physical installation, signature compatibility or local rules without verification.
+
+---
+
 # CURRENT CHECKPOINT — Jäger Field Guide v1.5.0 (2026-10-25)
 
 **Priority changed after graduating the course.** The app is now a field-first offline Jäger reference, not principally an exam-study app. This branch: `feature/offline-jaeger-field-guide-20261025`. It starts at `field-guide.html`, retains `index.html` as Study archive, and keeps package ID `org.ghcstudy.v141`, all existing questions/progress and media. 19 species cards, 19 visually reviewed locally packaged images (18 living-animal examples, one labelled trophy mount), search, filters, favorites, notes and field safety. It does NOT present cached hunting seasons as authorizations.

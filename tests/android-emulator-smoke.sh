@@ -138,6 +138,32 @@ assert_ghc_foreground() {
 adb shell pidof org.ghcstudy.v141
 wait_for_rendered_app home emulator-evidence/quiz-home.png
 assert_ghc_foreground home
+# The new app opens its offline field reference first. Verify that screen, then
+# enter the preserved Study archive before running legacy quiz/glossary checks.
+dismiss_launcher_dialog "field-guide-entry"
+dump_ui /sdcard/ghc-field-home.xml emulator-evidence/field-guide-home.xml
+if ! grep -Eq 'Jäger Field Guide|Jäger Field|Field Guide' emulator-evidence/field-guide-home.xml; then
+  echo "New offline field-guide landing screen not visible" >&2; exit 1
+fi
+FIELD_ARCHIVE_TAP="$(python3 - <<'PY'
+import re,xml.etree.ElementTree as ET
+root=ET.parse("emulator-evidence/field-guide-home.xml").getroot()
+for n in root.iter("node"):
+  t=n.attrib.get("text","").strip()
+  if t=="Study archive":
+    m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
+    if m:
+      x1,y1,x2,y2=map(int,m.groups())
+      print((x1+x2)//2,(y1+y2)//2)
+      break
+PY
+)"
+if [[ -z "$FIELD_ARCHIVE_TAP" ]]; then echo "Study archive link missing" >&2; exit 1; fi
+read -r FIELD_X FIELD_Y <<< "$FIELD_ARCHIVE_TAP"
+adb shell input tap "$FIELD_X" "$FIELD_Y"
+sleep 4
+wait_for_rendered_app archive emulator-evidence/study-archive.png
+assert_ghc_foreground archive
 # Pixel Launcher ANRs can appear between the initial render and a second
 # UIAutomator call. Never parse a system dialog as an application's UI.
 for attempt in $(seq 1 8); do

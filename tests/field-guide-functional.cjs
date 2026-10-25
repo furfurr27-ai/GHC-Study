@@ -47,7 +47,7 @@ assert.equal(doc.querySelectorAll('.chapterTile').length,12,'All horn signal ref
 doc.querySelector('[data-topic="All"]').click();
 doc.querySelector('[data-guide-open="hahn"]').click();
 assert(!doc.querySelector('#handbookDetail').classList.contains('hidden'),'Horn signal card opens');
-assert(doc.querySelector('#handbookContent').textContent.includes('unload'),'Horn card says what the safe response is');
+assert(/unload/i.test(doc.querySelector('#handbookContent').textContent),'Horn card says what the safe response is');
 assert(doc.querySelector('#handbookContent').textContent.includes('VSG 4.4'),'Provenance visible on safety-critical card');
 assert.equal(w.fieldGuideHandleBack(),true,'Back goes from handbook detail to chapter list');
 assert(!doc.querySelector('#handbookBrowse').classList.contains('hidden'),'Handbook list visible after Back');

@@ -76,7 +76,7 @@ public final class MainActivity extends Activity {
         // Use the existing visible controls: their click handlers *do* have
         // access to the closure, preserving the app's own state transitions.
         final String script = "(function(){try{"
-                + "if(window.fieldGuideHandleBack&&window.fieldGuideHandleBack())return 'handled';"
+                + "if(typeof window!=='undefined'&&window.fieldGuideHandleBack&&window.fieldGuideHandleBack())return 'handled';"
                 + "var m=document.getElementById('modal');"
                 + "if(m&&!m.classList.contains('hidden')){"
                 + "var c=document.getElementById('closeModal');"

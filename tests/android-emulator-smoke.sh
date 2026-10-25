@@ -50,7 +50,7 @@ dismiss_launcher_dialog() {
   local stage="$1" pos attempt
   for attempt in 1 2 3; do
     dump_ui /sdcard/ghc-check.xml emulator-evidence/system-check.xml
-    if grep -q "GHC Study isn't responding" emulator-evidence/system-check.xml; then
+    if grep -Eq "(GHC Study|Jäger Field Guide) isn.t responding" emulator-evidence/system-check.xml; then
       echo "GHC app ANR at $stage" >&2; return 1
     fi
     if ! grep -q "Pixel Launcher isn't responding" emulator-evidence/system-check.xml; then

@@ -361,7 +361,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "Never shoot into a line of beaters or hunters; prioritize a definite Kugelfang.",
     "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "treib",
@@ -442,7 +442,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "If anything is unclear, do not shoot; resolve it with the Jagdleiter.",
     "source": "https://www.svlfg.de/vsg4-4-jagd.pdf",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "stand",
@@ -458,7 +458,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "A released species outside your safe Schussbereich is still not a valid shot.",
     "source": "https://www.svlfg.de/vsg4-4-jagd.pdf",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "kugelfang",
@@ -474,7 +474,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "An animal's body or thin vegetation is not a reliable Kugelfang.",
     "source": "https://www.svlfg.de/vsg4-4-jagd.pdf",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "warn",
@@ -490,7 +490,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "Camouflage does not replace the high-visibility requirement on a group hunt.",
     "source": "https://www.svlfg.de/pm-signalkleidung-jagd-vsg",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "weapon",
@@ -506,7 +506,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "Do not mistake an engaged safety mechanism for an unloaded firearm.",
     "source": "https://www.svlfg.de/vsg4-4-jagd.pdf",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "permission",
@@ -538,7 +538,7 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "The most restrictive relevant instruction or law controls; the host cannot legalize a prohibited shot.",
     "source": "https://landwirtschaft.hessen.de/wald/jagd",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   },
   {
     "id": "parent",
@@ -650,6 +650,6 @@ window.GHC_JUNGJAEGER_CARDS=[
     ],
     "note": "Ceremonial counting and official harvest reporting are different obligations.",
     "source": "https://www.jagdverband.de/rund-um-die-jagd/was-draussen-passiert/bewegungsjagd/drueckjagd",
-    "course": "Drive Hunts / Jagdarten class slides (GHC baseline)"
+    "course": "Hunting Techniques.pdf (GHC class slides; historical baseline)"
   }
 ];

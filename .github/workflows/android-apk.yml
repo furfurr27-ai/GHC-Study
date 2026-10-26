@@ -28,6 +28,11 @@ jobs:
           node --check app/src/main/assets/field-guide-data.js
           node --check app/src/main/assets/jungjaeger-data.js
           node --check app/src/main/assets/field-guide.js
+          node --check app/src/main/assets/germany-map-data.js
+          node --check app/src/main/assets/state-season-data.js
+          node --check app/src/main/assets/season-engine.js
+          node --check app/src/main/assets/state-map-controller.js
+          node --check tests/state-season-smoke.cjs
           node --check tests/field-guide-smoke.cjs
           node --check tests/field-guide-functional.cjs
           node --check tools/test_schalenwild_matrix.js
@@ -37,6 +42,7 @@ jobs:
         run: |
           node tests/field-guide-smoke.cjs
           node tests/field-guide-functional.cjs
+          node tests/state-season-smoke.cjs
       - name: Check question bank integrity and answer giveaways
         run: python3 scripts/check_question_bank_integrity.py
       - name: Publish question-bank audit evidence
@@ -235,6 +241,8 @@ jobs:
         run: gradle --no-daemon :app:assembleDebug
       - name: Verify offline field-guide images and data inside APK
         run: python3 scripts/check_field_guide.py --apk app/build/outputs/apk/debug/app-debug.apk
+      - name: Verify 16-state map and seasonal source assets packed in standard APK
+        run: python3 scripts/check_state_map_apk.py app/build/outputs/apk/debug/app-debug.apk
       - name: Verify Trophy Test crops in actual APK without losing existing features
         run: python3 scripts/check_packaged_trophy_test.py app/build/outputs/apk/debug/app-debug.apk
       - name: Verify all 125 Practice Test 2 questions and matrices inside release APK

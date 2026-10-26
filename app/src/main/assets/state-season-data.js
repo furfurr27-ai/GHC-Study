@@ -108,9 +108,9 @@ window.GHC_SEASON_DATA={
   "sources": [
    {
     "id": "HJagdV-2",
-    "title": "Hessische Jagdverordnung § 2 (amended from 1 April 2026)",
-    "kind": "binding law",
-    "url": "https://www.rv.hessenrecht.hessen.de/bshe/document/jlr-JagdVHE2022V4P2"
+    "title": "Official Hessian Gazette 2026 No. 14: March 3 amendment to HJagdV §2 (effective April 1)",
+    "kind": "binding official amendment; not a full consolidation",
+    "url": "https://rp-kassel.hessen.de/sites/rp-kassel.hessen.de/files/2026-03/gvbl_2026_nr_14_aendvo_hjagdvo_regelungstext.pdf"
    },
    {
     "id": "HMLU-202604",
@@ -123,6 +123,12 @@ window.GHC_SEASON_DATA={
     "title": "LJV Hessen Jagd- und Schonzeiten, corrected 18 May 2026",
     "kind": "association consolidated calendar, cross-checked to official amendments",
     "url": "https://ljv-hessen.de/download/jagd-und-schonzeiten-bund-land-hessen/"
+   },
+   {
+    "id": "HESSEN-20260528",
+    "title": "Hessian Gazette 2026 No. 32: May 20 changes effective May 28 (wolves/wolf hybrids; no changes to these 19 classes)",
+    "kind": "later binding amendment checked for supersession",
+    "url": "https://www.umwelt-online.de/regelwerk/natursch/laender/he/z26_0032.htm"
    },
    {
     "id": "BJagdG-22",

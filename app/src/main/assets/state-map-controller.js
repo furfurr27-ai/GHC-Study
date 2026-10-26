@@ -86,7 +86,7 @@ var animal=species().find(function(s){return s.id===node.getAttribute('data-open
 var r=get(animal);node.className='tile '+css(r);
 node.setAttribute('aria-label','Open '+animal.de+' · '+label(r));
 var badgeNode=node.querySelector('.seasonBadge');
-if(badgeNode)badgeNode.outerHTML=badge(r,false);
+if(badgeNode&&badgeNode.outerHTML!==badge(r,false))badgeNode.outerHTML=badge(r,false);
 else node.insertAdjacentHTML('beforeend',badge(r,false));
 });
 }

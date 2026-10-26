@@ -1,3 +1,23 @@
+# Current active handoff — Jäger Field Guide v1.6.0 state-map / Hessen (2026-10-26)
+
+**Active branch:** `feature/offline-jaeger-field-guide-20261025`; **draft PR #7**, unmerged. Do not restart or overwrite retained v1.5.1 species, Jungjäger reference, trophy room photos, the full Study archive, original question/progress, or original app package. Standard build `org.ghcstudy.v141`; side-by-side build `org.ghcstudy.v146.standalone`; both now 1.6.0 / code 160.
+
+**What was committed:** 16 bundled CC BY 4.0 state SVG paths and accessible list, persisted state selector; state dashboard with eight categories; Hessen legal evidence/caveated 19 species records (16 have calendar data with classification/management controls, 3 remain unknown); deterministic Europe/Berlin date season engine with green/gray/amber/red legend; state-tailored badges on 19 species tiles and opened cards; class selection with legal source/review/date/exception strip; source inventory & map-license credits. All other states deliberately unknown for seasons. Existing favorites/note keys preserved.
+
+**Automated test additions:** `tests/state-season-smoke.cjs` using real state/legal data plus clearly synthetic calendar-edge fixtures. `scripts/check_state_map_apk.py` ensures original study and new offline assets packed in both APK flavors. Updated standard workflow to run new tests and package audit, standalone workflow to run new package audit. Continue to inspect GitHub Actions run conclusions, logs, uploaded APKs and physical acceptance separately.
+
+**Finite remaining gates (no additional feature backlog):**
+1. Check newly running GitHub Actions on the **final SHA**: exact `smoke`, `android-apk`, Android 35 emulator, and standalone APK. Correct any failures. Do not infer success from older v1.5.1 runs.
+2. Android emulator must demonstrate home map→select Hessen→Wildarten→animal details→Back plus archive regression. If this path is not exercised by the current script, mark as pending until enhanced test runs.
+3. Check source-evidence limitations: official HJagdV full legal text and local restrictions, map boundary-vs-BKG comparison, three Hessen species still unknown. Never promote unknown to open/closed without actual documented verification.
+4. Physical Galaxy S23 Ultra acceptance **not done**: side-by-side standalone APK install, airplane-mode map/animal, Hessen contrast/cautions, non-Hessen UNKNOWN, original GHC archive and local progress unchanged; standard APK upgrade only after progress backup/signature check.
+5. Keep PR #7 draft and unmerged until required CI AND phone acceptance. No speculative completion or endless roadmap.
+
+**Source of truth for this checkpoint:** `docs/GERMANY_STATE_MAP_SEASON_SPEC_20261025.md`, `docs/GERMANY_MAP_HESSEN_EVIDENCE_20261026.md`, `docs/SOURCE_INVENTORY.md`, GitHub workflows and artifact metadata. No claimed S23 Ultra physical result.
+
+
+---
+
 # CURRENT CHECKPOINT — Jäger Field Guide v1.5.1 (2026-10-25)
 
 **Shipped on this development branch:** Android defaults to searchable offline field guide with 19 animal images and a new **Jungjäger-Wissen** tab of **41** cards in six categories: Brauchtum, Jagdhorn, Jagdarten, Sicherheit, Recht & Wild, Nach dem Schuss. Preserve all existing GHC study archive, Trophy Test, glossary, and stored progress. Commit sources and legal qualifications are at `docs/JUNGJAEGER_V151_20261025.md`. Version code 152 / name 1.5.1; usual app ID `org.ghcstudy.v141`; standalone side-by-side package `org.ghcstudy.v146.standalone`. Do not present dynamic seasons or online-only audio as an offline feature.

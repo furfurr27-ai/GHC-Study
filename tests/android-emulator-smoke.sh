@@ -157,7 +157,7 @@ import os,re,xml.etree.ElementTree as ET
 wanted=os.environ['GHC_TEXT']
 root=ET.parse(os.environ['GHC_XML']).getroot()
 for n in root.iter('node'):
-  if n.attrib.get('text','').strip()!=wanted and n.attrib.get('content-desc','').strip()!=wanted: continue
+  if wanted not in n.attrib.get('text','') and wanted not in n.attrib.get('content-desc',''): continue
   m=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n.attrib.get('bounds',''))
   if not m: continue
   x1,y1,x2,y2=map(int,m.groups())

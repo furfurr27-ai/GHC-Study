@@ -75,6 +75,11 @@ main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;
 .seasonEntry{border-radius:11px;border:1px solid #b6bcad;padding:10px;text-align:left;color:#fff}
 .seasonEntry strong,.seasonEntry small{display:block}
 @media(min-width:620px){.mapPanel{grid-template-columns:minmax(240px,1fr) minmax(260px,1fr)}.stateList{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sheet.season-general-window-open .fact,.sheet.season-general-window-closed .fact,.sheet.season-conditional .fact,.sheet.season-unknown-or-stale .fact,.sheet.season-protected-or-no-general-season .fact{color:#fff;background:transparent}
+.sheet[class*="season-"] .dl dt{color:#ffe0a0}
+.sheet[class*="season-"] .dl dt,.sheet[class*="season-"] .dl dd{border-bottom-color:#b3bca9}
+.sheet[class*="season-"] .source,.sheet[class*="season-"] .notice{color:#20301f}
+.sheet[class*="season-"] .noteWrap{color:#fff}
 </style></head>
 <body><header><div class="head"><div><span class="brand">Jäger Field Guide</span><span class="sub">GHC · Offline Jagd- und Bundesländer-Nachschlagewerk</span></div><a class="toplink" href="index.html" id="archiveLink">Study archive</a></div></header>
 <main><section id="stateMapHome" aria-label="Bundesland auswählen">
@@ -125,4 +130,4 @@ main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;
 <article><h2>African swine fever (ASP)</h2><p>Restrictions and reporting requirements can change by district. The Friedrich-Loeffler-Institut publishes maps, but warns that its own maps are not necessarily updated daily. Check the competent veterinary authority and current local ASP rules. Do not move or handle suspicious carcasses contrary to official instructions.</p></article>
 <article><h2>Source hierarchy</h2><p>Animal descriptions: current DJV species profiles where individually checked; otherwise explicitly named GHC course slide baseline. Legal matters: current federal and Hessian official publications, not historical course handouts. Geographic and temporal details must be rechecked when online.</p></article>
 <div class="bottom"><a href="https://landwirtschaft.hessen.de/wald/jagd">Official Hessen hunting law page (online)</a><a href="https://www.gesetze-im-internet.de/bjagdg/__22.html">BJagdG § 22 (online)</a><a href="https://www.gesetze-im-internet.de/tier-lmhv/__2b.html">Tier-LMHV § 2b (online)</a><a href="https://www.fli.de/de/aktuelles/tierseuchengeschehen/afrikanische-schweinepest/">FLI ASP updates (online)</a></div></section>
-</main><script src="field-guide-data.js"></script><script src="jungjaeger-data.js"></script><script src="germany-map-data.js"></script><script src="state-season-data.js"></script><script src="season-engine.js"></script><script src="field-guide.js"></script></body></html>
+</main><script src="field-guide-data.js"></script><script src="jungjaeger-data.js"></script><script src="germany-map-data.js"></script><script src="state-season-data.js"></script><script src="season-engine.js"></script><script src="field-guide.js"></script><script src="state-map-controller.js"></script></body></html>

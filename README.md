@@ -1,3 +1,23 @@
+# Jäger Field Guide v1.6.0 — offline Bundesländer map and Hessen seasons (2026-10-26)
+
+**Current development:** draft PR #7 on `feature/offline-jaeger-field-guide-20261025`. The app launches to a German map with 16 offline, tappable Länder SVG shapes plus a keyboard-accessible list (particularly for Berlin, Hamburg and Bremen). Selecting a state opens eight categories: Wildarten, Jagd- & Schonzeiten, Jungjäger-Wissen, Jagdarten, Sicherheit, Jagdrecht, Nach dem Schuss, Landesbesonderheiten. Selection is stored separately in `ghc-selected-bundesland-v1`; return to the map any time. Previously saved state has a Continue action but the map remains the launch screen.
+
+Hessen: source-backed, **age/sex classification-sensitive general hunting-calendar windows**, effective 1 April 2026 and checked against the corrected 18 May 2026 LJV Hessen table and the official ministry amendment synopsis. Sixteen existing animal species have calendar records with source citations; three (Graureiher, Auerwild, Wildkatze) deliberately remain unknown pending legal verification. The other 15 states remain selectable with shared original content but **UNVERIFIED seasons, never falsely green/closed**. No Revier-level authorizations or local disease-zone orders are inferred. Green means a verified general **window**, gray a verified closed **window**, amber conditional or unknown, red a verified class with no general season. The animal list tile and full opened baseball card both display color **and text**, review date, relevant calendar or conditions, legal source and not-authorization warning. **Never interpret any color as legal clearance or Freigabe.**
+
+The original 19 photographs, 41 practical cards, quiz/study archive, favorites, local notes, question progress, glossary and Trophy Test remain in place. Original Android app ID: `org.ghcstudy.v141`, new versionName 1.6.0 / versionCode 160. Separately installable `org.ghcstudy.v146.standalone` retains its distinct data.
+
+**Validation commands** (run from repository root after installing `jsdom@24.1.3`):
+```sh
+node tests/field-guide-functional.cjs
+node tests/state-season-smoke.cjs
+python3 scripts/check_state_map_apk.py app/build/outputs/apk/debug/app-debug.apk
+```
+The CI workflows create two distinct debug APK artifacts and run earlier archive-regression tests; the standard APK workflow runs Android 35 emulator Back/navigation checks. GitHub CI and physical Galaxy S23 Ultra airplane-mode acceptance must be separately confirmed; no new build is considered released merely because code was committed.
+
+**Primary legal sources actually checked, full 16-state coverage inventory, exact exceptions, cartographic attribution and release stop conditions:** [Germany map & Hessen evidence 2026-10-26](docs/GERMANY_MAP_HESSEN_EVIDENCE_20261026.md). Map outlines adapted from @svg-maps/germany/MapSVG under CC BY 4.0, an attributed third-party alternative to the preferred BKG/geoBoundaries layer. SVG and season source files are bundled locally, without runtime tile fetch or geolocation.
+
+---
+
 # Jäger Field Guide v1.5.1 — Jungjäger-Wissen (2026-10-25)
 
 After the 19 pictured offline animal cards, the app now includes a separate **Jungjäger-Wissen** tab with **41 German/English quick-reference cards** in six chapters: Brauchtum (including Strecke legen), Jagdhorn, Jagdarten, Sicherheit, Recht & Wild, and Nach dem Schuss. Each card has a practical meaning, concise procedure, caution and source label. Search and topic filters work offline; Android Back returns to the section. No horn recordings or music notation were invented. **Tradition is expressly distinguished from binding current law and the Jagdleiter's instructions.**

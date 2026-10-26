@@ -153,6 +153,8 @@ jobs:
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"
           cp "$APK" app/build/outputs/apk/debug/GHC-Field-Guide-v1.5.1-Standalone-Install.apk
+      - name: Verify 16-state offline map and seasons in standalone APK
+        run: python3 scripts/check_state_map_apk.py app/build/outputs/apk/debug/app-debug.apk
       - name: Verify field-guide cards and images inside standalone APK
         run: python3 scripts/check_field_guide.py --apk app/build/outputs/apk/debug/app-debug.apk
       - name: Inspect actual standalone APK glossary and offline study media

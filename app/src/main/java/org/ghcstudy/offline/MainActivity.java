@@ -18,7 +18,7 @@ import android.window.OnBackInvokedDispatcher;
  * hardware/system Back, WebView history fallback and activity lifecycle.
  */
 public final class MainActivity extends Activity {
-    private static final String START_URL = "file:///android_asset/index.html";
+    private static final String START_URL = "file:///android_asset/field-guide.html";
     private static final String LOG_TAG = "GHCWebView";
     private WebView webView;
     private boolean backPending;
@@ -76,6 +76,7 @@ public final class MainActivity extends Activity {
         // Use the existing visible controls: their click handlers *do* have
         // access to the closure, preserving the app's own state transitions.
         final String script = "(function(){try{"
+                + "if(typeof window!=='undefined'&&window.fieldGuideHandleBack&&window.fieldGuideHandleBack())return 'handled';"
                 + "var m=document.getElementById('modal');"
                 + "if(m&&!m.classList.contains('hidden')){"
                 + "var c=document.getElementById('closeModal');"

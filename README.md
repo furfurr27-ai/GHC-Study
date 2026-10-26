@@ -1,3 +1,43 @@
+# Jäger Field Guide v1.6.0 — offline Bundesländer map and Hessen seasons (2026-10-26)
+
+**Current development:** draft PR #7 on `feature/offline-jaeger-field-guide-20261025`. The app launches to a German map with 16 offline, tappable Länder SVG shapes plus a keyboard-accessible list (particularly for Berlin, Hamburg and Bremen). Selecting a state opens eight categories: Wildarten, Jagd- & Schonzeiten, Jungjäger-Wissen, Jagdarten, Sicherheit, Jagdrecht, Nach dem Schuss, Landesbesonderheiten. Selection is stored separately in `ghc-selected-bundesland-v1`; return to the map any time. Previously saved state has a Continue action but the map remains the launch screen.
+
+Hessen: source-backed, **age/sex classification-sensitive general hunting-calendar windows**, effective 1 April 2026 and checked against the corrected 18 May 2026 LJV Hessen table and the official ministry amendment synopsis. Sixteen existing animal species have calendar records with source citations; three (Graureiher, Auerwild, Wildkatze) deliberately remain unknown pending legal verification. The other 15 states remain selectable with shared original content but **UNVERIFIED seasons, never falsely green/closed**. No Revier-level authorizations or local disease-zone orders are inferred. Green means a verified general **window**, gray a verified closed **window**, amber conditional or unknown, red a verified class with no general season. The animal list tile and full opened baseball card both display color **and text**, review date, relevant calendar or conditions, legal source and not-authorization warning. **Never interpret any color as legal clearance or Freigabe.**
+
+The original 19 photographs, 41 practical cards, quiz/study archive, favorites, local notes, question progress, glossary and Trophy Test remain in place. Original Android app ID: `org.ghcstudy.v141`, new versionName 1.6.0 / versionCode 160. Separately installable `org.ghcstudy.v146.standalone` retains its distinct data.
+
+**Validation commands** (run from repository root after installing `jsdom@24.1.3`):
+```sh
+node tests/field-guide-functional.cjs
+node tests/state-season-smoke.cjs
+python3 scripts/check_state_map_apk.py app/build/outputs/apk/debug/app-debug.apk
+```
+The CI workflows create two distinct debug APK artifacts and run earlier archive-regression tests; the standard APK workflow runs Android 35 emulator Back/navigation checks. GitHub CI and physical Galaxy S23 Ultra airplane-mode acceptance must be separately confirmed; no new build is considered released merely because code was committed.
+
+**Primary legal sources actually checked, full 16-state coverage inventory, exact exceptions, cartographic attribution and release stop conditions:** [Germany map & Hessen evidence 2026-10-26](docs/GERMANY_MAP_HESSEN_EVIDENCE_20261026.md). Map outlines adapted from @svg-maps/germany/MapSVG under CC BY 4.0, an attributed third-party alternative to the preferred BKG/geoBoundaries layer. SVG and season source files are bundled locally, without runtime tile fetch or geolocation.
+
+---
+
+# Jäger Field Guide v1.5.1 — Jungjäger-Wissen (2026-10-25)
+
+After the 19 pictured offline animal cards, the app now includes a separate **Jungjäger-Wissen** tab with **41 German/English quick-reference cards** in six chapters: Brauchtum (including Strecke legen), Jagdhorn, Jagdarten, Sicherheit, Recht & Wild, and Nach dem Schuss. Each card has a practical meaning, concise procedure, caution and source label. Search and topic filters work offline; Android Back returns to the section. No horn recordings or music notation were invented. **Tradition is expressly distinguished from binding current law and the Jagdleiter's instructions.**
+
+Normal app versionCode **152**, versionName **1.5.1**; original package ID and study archive unchanged. A separately installable standalone APK uses `org.ghcstudy.v146.standalone`; use this to trial the guide without replacing old study-app data. Full evidence and limitations: [Jungjäger card sources](docs/JUNGJAEGER_V151_20261025.md). CI is authoritative for build and emulator results. On-phone user acceptance has not been performed.
+
+---
+
+# Jäger Field Guide v1.5.0 — offline field reference (2026-10-25)
+
+The hunting course is completed. **The Android app now opens directly to the Jäger Field Guide**, a searchable offline animal reference with 19 bilingual baseball-style cards, locally saved favorites and Revier notes, identification traits, seasonal biology, signs and disease cautions. The original Quiz/Study application, old progress storage keys, Trophy Test, source-audited glossary, and its Android package identity are preserved at **Study archive**.
+
+**Legal caution:** Animal pages are not current hunting authorization; the app deliberately does not display static "legal to hunt now" badges. Hessen revised its hunting ordinance effective April 1, 2026. Always verify local current seasons/orders, dependent-young protections, game management plans and ASP controls with the responsible authorities.
+
+**Picture status:** All 19 animal cards have visually reviewed images from previously bundled course/trophy assets. Eighteen are living-animal photographs and the Graureiher image remains a clearly labelled exam-room mount. No network image fetch is required.
+
+Source review, provenance, test instructions, limitations and finite next steps: [Field Guide v1.5.0 checkpoint](docs/FIELD_GUIDE_V150_20261025.md). Test the field guide via \`node tests/field-guide-smoke.cjs\` and \`node tests/field-guide-functional.cjs\` (with jsdom); source/APK image audits via \`python3 scripts/check_field_guide.py\`. Real Galaxy S23 Ultra APK upgrade acceptance is still outstanding.
+
+---
+
 # GHC Study v1.4.10 — completed Trophy Test animal fact cards (2026-10-22)
 
 The v1.4.9 release introduced **29 individual room-photo cards**, using source-cropped photographs of actual mounts in the exam room. This v1.4.10 enhancement adds a **source-labelled compact animal fact sheet to each card**, including German/English hunting terms, key biology, identification, comparison notes and memory cues where supported. Facts are revealed **only after a flashcard answer or graded identification response** and are visible during normal Cards browsing. An external fact is labelled as *Supplemental animal facts*, never mixed into the GHC-course-labelled *Details · Other Facts*. Uncertain mounts remain excluded from scored recognition.

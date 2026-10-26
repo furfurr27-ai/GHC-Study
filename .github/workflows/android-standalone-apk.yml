@@ -1,7 +1,7 @@
 name: Build standalone GHC Study APK
 on:
   push:
-    branches: [main, audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012]
+    branches: [main, audit/v145-source-recovery, feature/slide-audit-glossary-tests-20261012, feature/offline-jaeger-field-guide-20261025]
     paths:
       - 'app/**'
       - 'tools/**'
@@ -104,6 +104,12 @@ jobs:
           node --check app/src/main/assets/trophy-test-data.js
           node --check app/src/main/assets/trophy-test-launcher.js
 
+      - name: Verify field guide and locally packaged image dependencies
+        run: |
+          node --check app/src/main/assets/field-guide-data.js
+          node --check app/src/main/assets/jungjaeger-data.js
+          node --check app/src/main/assets/field-guide.js
+          python3 scripts/check_field_guide.py
       - name: Preserve Schalenwild matrices in standalone build
         run: |
           python3 tools/inject_schalenwild_matrix.py app/src/main/assets/index.html
@@ -142,10 +148,15 @@ jobs:
           unzip -l "$APK" | grep -q 'assets/glossary-data.js'
           unzip -l "$APK" | grep -q 'assets/schalenwild-matrix.js'
           unzip -l "$APK" | grep -q 'assets/trophy-test.html'
+          unzip -l "$APK" | grep -q 'assets/field-guide.html'
           unzip -l "$APK" | grep -q 'assets/media/'
           unzip -l "$APK" | grep -q 'res/drawable/ic_launcher.png'
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -q "package: name='org.ghcstudy.v146.standalone'"
-          cp "$APK" app/build/outputs/apk/debug/GHC-Study-v1.4.10-Standalone-Install.apk
+          cp "$APK" app/build/outputs/apk/debug/GHC-Field-Guide-v1.5.1-Standalone-Install.apk
+      - name: Verify 16-state offline map and seasons in standalone APK
+        run: python3 scripts/check_state_map_apk.py app/build/outputs/apk/debug/app-debug.apk
+      - name: Verify field-guide cards and images inside standalone APK
+        run: python3 scripts/check_field_guide.py --apk app/build/outputs/apk/debug/app-debug.apk
       - name: Inspect actual standalone APK glossary and offline study media
         run: |
           APK=app/build/outputs/apk/debug/app-debug.apk
@@ -175,6 +186,6 @@ jobs:
           if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         with:
-          name: GHC-Study-v1.4.10-STANDALONE-APK
-          path: app/build/outputs/apk/debug/GHC-Study-v1.4.10-Standalone-Install.apk
+          name: GHC-Field-Guide-v1.5.1-STANDALONE-APK
+          path: app/build/outputs/apk/debug/GHC-Field-Guide-v1.5.1-Standalone-Install.apk
           if-no-files-found: error

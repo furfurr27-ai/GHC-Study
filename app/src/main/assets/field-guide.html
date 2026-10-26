@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17251b"><title>Jäger Field Guide · Offline</title>
+<style>
+:root{--bg:#14221a;--panel:#203529;--line:#63745d;--gold:#dfb66d;--paper:#eee5d3;--ink:#202820;--muted:#bfd0bf}*{box-sizing:border-box}
+body{background:var(--bg);color:#f3ebde;font:15px/1.48 system-ui,-apple-system,sans-serif;margin:0}button,input,textarea{font:inherit}button{cursor:pointer}
+header{position:sticky;top:0;background:#14221af2;z-index:10;border-bottom:1px solid #566b54;padding:max(36px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 10px max(14px, env(safe-area-inset-left));}
+.head{max-width:980px;margin:auto;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.brand{display:block;font-size:19px;font-weight:850;letter-spacing:.015em}.sub{display:block;font-size:11px;color:#cad6bf}a{color:#d9b875}
+.toplink,.return{border:1px solid #799077;padding:8px 10px;border-radius:9px;color:#f8e9cc;text-decoration:none;display:inline-block;background:#233b2b}
+main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:#d8be8f}
+.intro{margin:0 0 10px;color:#dde1d4}.alert{padding:11px 13px;border-left:4px solid var(--gold);background:#2c3729;border-radius:7px;color:#e9e5d8;font-size:12px;margin:10px 0 16px}
+.search{display:block;width:100%;background:#faf4e8;color:#19281b;border:0;border-radius:12px;padding:13px 14px;font-size:16px;margin:10px 0 12px}
+.filters{display:flex;gap:7px;overflow:auto;padding:0 0 10px;scrollbar-width:thin}.chip{white-space:nowrap;background:#283d2d;color:#f3ead7;border:1px solid #71826b;border-radius:100px;padding:9px 13px}
+.chip[aria-pressed=true]{background:var(--gold);color:#172318;border-color:var(--gold);font-weight:750}.counter{font-size:12px;color:#bed0bd;margin:4px 0 12px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tile{border:1px solid #8a987d;background:#24392c;color:#f6eddb;text-align:left;border-radius:13px;padding:0;overflow:hidden;min-width:0}
+.tile .photo{width:100%;aspect-ratio:1.33;object-fit:cover;background:#3b513f;display:block}.tile .txt{padding:11px}
+.tile b{display:block;font-size:16px}.tile small{color:#c9d3c4;display:block}.tile .tag{font-size:11px;color:#e7c78c;margin-top:5px;display:block}
+.tile:focus-visible,.chip:focus-visible,.back:focus-visible{outline:3px solid #f9d58a}
+.image-placeholder{min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:repeating-linear-gradient(125deg,#344a39,#344a39 12px,#3e5342 12px,#3e5342 24px);color:#e0dbca;text-align:center;padding:12px}
+.image-placeholder span{font-size:34px;font-weight:750}.image-placeholder small{font-size:11px}.image-placeholder.large{min-height:230px}
+.back{background:transparent;border:1px solid #93a38b;color:#fff6e6;border-radius:10px;padding:10px 13px;margin-bottom:12px}
+.sheet{background:var(--paper);color:var(--ink);border:1px solid #d4ae76;border-radius:18px;overflow:hidden}
+.sheetHead{background:#31503a;color:#f7ecd8;padding:15px}.sheetHead h1{margin:2px 0;font-size:27px;line-height:1.1}
+.sheetHead p{margin:5px 0 0;color:#dce9d6}.heroPhoto{width:100%;max-height:390px;object-fit:contain;background:#304034;display:block}
+.photoCredit{background:#364436;color:#dedfce;text-align:center;font-size:11px;padding:5px 10px}
+.fact{padding:15px 17px}.factIntro{font-size:17px;font-weight:750;line-height:1.32;margin:0 0 10px}
+.dl{display:grid;grid-template-columns:minmax(95px,28%) 1fr;column-gap:12px;border-top:1px solid #d3c8b2}
+.dl dt,.dl dd{padding:11px 0;border-bottom:1px solid #d3c8b2;margin:0}.dl dt{font-size:12px;font-weight:800;color:#725c36}.dl dd{font-size:14px}
+.notice{margin:12px 0;background:#efe0c7;border-left:4px solid #bd8340;padding:11px;font-size:13px}
+.source{font-size:12px;background:#e1d4bd;padding:13px;border-radius:10px;margin:16px 0}.source a{overflow-wrap:anywhere;color:#194b3a}
+.noteWrap{border-top:1px solid #c8bca4;padding-top:14px}textarea{width:100%;min-height:90px;resize:vertical;border:1px solid #a5a08d;border-radius:10px;background:#fffdf7;color:#242d23;padding:10px}
+.save{border:0;background:#31523d;color:#fff9e9;padding:10px 15px;border-radius:10px;font-weight:750;margin:7px 0}
+.star{border:1px solid #9e824a;color:#1a2b20;background:#efd39a;padding:8px 12px;border-radius:10px;float:right}
+.status{font-size:12px;color:#3a6944;min-height:20px}.hidden{display:none!important}
+.safety h2{font-size:20px;margin:19px 0 7px}.safety p{color:#e2e4d9}.safety article{background:#24382a;border:1px solid #62785c;border-radius:12px;padding:13px;margin:10px 0}
+.bottom{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;font-size:13px}.bottom a{border:1px solid #71896b;padding:9px 11px;border-radius:9px;color:#eee7d7}
+@media(min-width:620px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.tile .photo{aspect-ratio:1.6}.fact{padding:22px 26px}}@media(max-width:360px){.cards{gap:7px}.tile b{font-size:14px}.tile .txt{padding:8px}.dl{grid-template-columns:minmax(84px,31%) 1fr;gap:7px}}
+.homeTabs{max-width:980px;margin:0 auto 0;display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:13px 14px 0}
+.homeTab{padding:12px 9px;border:1px solid #788c75;border-radius:12px;background:#273e2d;color:#f1e6d2;font-weight:760;min-width:0}
+.homeTab[aria-selected=true]{background:var(--gold);color:#14231a;border-color:var(--gold)}
+.chapterGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.chapterTile{border:1px solid #829578;background:#243a2b;border-radius:13px;color:#f6edde;text-align:left;padding:14px;min-height:135px}
+.chapterTile small{color:#e1c48e;display:block;font-size:11px;margin-bottom:8px}.chapterTile b{font-size:17px;display:block;line-height:1.24}.chapterTile span{font-size:12px;color:#cad8c8;display:block;margin-top:8px}.chapterTile:focus-visible,.homeTab:focus-visible{outline:3px solid #eac47d}
+.chapterType{font-size:12px;background:#dfbd81;color:#20301f;display:inline-block;border-radius:30px;padding:5px 9px;font-weight:750;margin-bottom:8px}
+.chapterSteps{padding-left:24px;margin:12px 0}.chapterSteps li{padding:4px 0}.chapterSource{margin-top:15px;font-size:12px;color:#56624e}.chapterSource a{color:#285d42}
+@media(min-width:620px){.chapterGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* State map + season legend: colors supplement explicit text, not permission. */
+.mapIntro{margin-bottom:12px}.mapPanel{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.stateMapSvg{width:100%;max-height:65vh;display:block;margin:auto;background:#1d3024;border:1px solid #768775;border-radius:16px;padding:12px}
+.statePath{fill:#3d5a46;stroke:#f1ddbb;stroke-width:1.4;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .12s}
+.statePath:hover,.statePath:focus{fill:#b68d4b;outline:none;stroke:#fff6e4;stroke-width:3}
+.statePath.isSelected{fill:#966a35;stroke:#fff0cb;stroke-width:2.6}
+.stateList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.stateChoice,.navTile{background:#294232;border:1px solid #8fa28b;border-radius:11px;color:#fff5e7;padding:11px;text-align:left;min-height:45px}
+.stateChoice[aria-pressed=true]{background:#a37438;color:#fff;border:2px solid #ffe0a1}
+.stateChoice:focus-visible,.navTile:focus-visible,.statePath:focus-visible{outline:3px solid #ffe8a4;outline-offset:2px}
+.mapCredit{font-size:11px;color:#e2d1b2;margin:9px 0}
+.stateHeader{border-bottom:1px solid #a3b39a;margin-bottom:18px;padding:10px 0}
+.stateHeader h1{font-size:28px;margin:4px 0}
+.navGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.navTile{min-height:98px;font-size:16px;font-weight:780}.navTile small{display:block;color:#d4ddcd;font-size:12px;font-weight:400;margin-top:8px}
+.jurisdiction{border-left:4px solid #dbb372;background:#2b3f30;padding:11px;border-radius:6px;margin:0 0 13px;font-size:13px}
+.jurisdiction button{margin-left:7px}
+.season-general-window-open{background:#204c35!important;border-color:#87b59a!important;color:#fff!important}
+.season-general-window-closed{background:#35414a!important;border-color:#a5b5c2!important;color:#fff!important}
+.season-conditional,.season-unknown-or-stale{background:#644d20!important;border-color:#f5d289!important;color:#fff!important}
+.season-protected-or-no-general-season{background:#50363a!important;border:3px solid #f0aeb5!important;color:#fff!important}
+.seasonBadge{display:block;font-size:12px;line-height:1.4;margin-top:9px;padding:6px 8px;background:#111d16c9;color:#fff;border-radius:7px}
+.seasonBadge b{display:block}.seasonStrip{padding:12px 14px;color:#fff!important}
+.seasonStrip a{color:#fff0bb}
+.seasonStrip p{margin:5px 0;font-size:12px}
+.seasonStrip select{width:100%;font-size:16px;background:#fffaf0;color:#20291f;border:2px solid #766d53;border-radius:8px;padding:8px;margin:8px 0}
+.seasonGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.seasonEntry{border-radius:11px;border:1px solid #b6bcad;padding:10px;text-align:left;color:#fff}
+.seasonEntry strong,.seasonEntry small{display:block}
+@media(min-width:620px){.mapPanel{grid-template-columns:minmax(240px,1fr) minmax(260px,1fr)}.stateList{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sheet.season-general-window-open .fact,.sheet.season-general-window-closed .fact,.sheet.season-conditional .fact,.sheet.season-unknown-or-stale .fact,.sheet.season-protected-or-no-general-season .fact{color:#fff;background:transparent}
+.sheet[class*="season-"] .dl dt{color:#ffe0a0}
+.sheet[class*="season-"] .dl dt,.sheet[class*="season-"] .dl dd{border-bottom-color:#b3bca9}
+.sheet[class*="season-"] .source,.sheet[class*="season-"] .notice{color:#20301f}
+.sheet[class*="season-"] .noteWrap{color:#fff}
+</style></head>
+<body><header><div class="head"><div><span class="brand">Jäger Field Guide</span><span class="sub">GHC · Offline Jagd- und Bundesländer-Nachschlagewerk</span></div><a class="toplink" href="index.html" id="archiveLink">Study archive</a></div></header>
+<main><section id="stateMapHome" aria-label="Bundesland auswählen">
+<h1>Bundesland auswählen <small>· Select a state</small></h1>
+<p class="intro mapIntro">Wähle zuerst dein Bundesland. Die Karte und alle 16 Listeneinträge funktionieren ohne Netz.</p>
+<button type="button" class="save hidden" id="continueState">Continue with last selected state</button>
+<div class="mapPanel"><div><div id="germanyMap" aria-label="Offline map of German federal states"></div>
+<p class="mapCredit">Map geometry © MapSVG, adapted by Victor Cazanave / @svg-maps/germany, CC BY 4.0; ISO state codes and accessible controls added for GHC.</p></div>
+<div><h2>Bundesländer · Accessible state list</h2><div id="stateChoices" class="stateList" role="group" aria-label="Choose one of 16 Bundesländer"></div></div></div></section>
+<section id="stateHome" class="hidden" aria-label="Selected Bundesland">
+<div class="stateHeader"><p class="eyebrow">Dein Bundesland · Your jurisdiction</p><h1 id="stateTitle"></h1>
+<div id="stateReview" class="alert"></div><button id="stateChange" class="chip" type="button">← Bundesland wechseln · Change state</button></div>
+<div class="navGrid" id="stateSections">
+<button class="navTile" data-section="animals" type="button">Wildarten <small>19 species cards</small></button>
+<button class="navTile" data-section="seasons" type="button">Jagd- &amp; Schonzeiten <small>Current verified general windows, conditional status and unknowns</small></button>
+<button class="navTile" data-section="knowledge" type="button">Jungjäger-Wissen <small>Brauchtum, horn signals and shared practical references</small></button>
+<button class="navTile" data-section="methods" type="button">Jagdarten <small>Types of hunts</small></button>
+<button class="navTile" data-section="safety" type="button">Sicherheit <small>Safety rules and field cautions</small></button>
+<button class="navTile" data-section="law" type="button">Jagdrecht <small>Federal rules and Hessen-specific review</small></button>
+<button class="navTile" data-section="after" type="button">Nach dem Schuss <small>Follow-up, recovery and game handling</small></button>
+<button class="navTile" data-section="state" type="button">Landesbesonderheiten <small>Verified state provisions and official links</small></button>
+</div></section>
+<div id="currentStateBar" class="jurisdiction hidden" aria-live="polite"></div>
+<section id="seasonsPage" class="hidden" aria-label="Jagdzeiten">
+<button class="back" id="backFromSeasons" type="button">← Bundesland</button>
+<h1>Jagd- &amp; Schonzeiten</h1><p class="intro">General season windows only; never legal authorization. Amber means conditional, missing or stale evidence. Select a species to see its classified source and exceptions.</p>
+<div id="seasonList" class="seasonGrid"></div></section>
+<section id="stateRulesPage" class="hidden" aria-label="Landesbesonderheiten">
+<button class="back" id="backFromStateRules" type="button">← Bundesland</button>
+<h1>Landesbesonderheiten</h1><div id="stateRulesContent"></div></section>
+<nav id="homeTabs" class="homeTabs" role="tablist" aria-label="Reference sections"><button type="button" class="homeTab" id="animalsTab" role="tab" aria-selected="true" aria-controls="browse">Tiere · Animals</button><button type="button" class="homeTab" id="handbookTab" role="tab" aria-selected="false" aria-controls="handbookBrowse">Jungjäger-Wissen</button></nav><div id="browse" role="tabpanel" aria-labelledby="animalsTab"><p class="intro">Fast, searchable animal cards with identification clues, signs, seasonal biology and German hunting terms.</p>
+<div class="alert"><strong>Offline-ready biological reference.</strong> Updated source review: 25 October 2026. Hunting seasons, restrictions, disease zones and permissions change. Verify current rules for your exact Revier before acting. Links to source websites require a connection.</div>
+<label for="query" class="eyebrow">Search species, terms or signs</label><input id="query" class="search" type="search" autocomplete="off" placeholder="Rehwild, tracks, Spiegel, boar…">
+<div id="filters" class="filters" role="group" aria-label="Filter animals"></div><div id="count" class="counter" aria-live="polite"></div><div id="cards" class="cards"></div>
+<div class="bottom"><button class="chip" id="showSafety">Field safety &amp; current-law cautions</button><a href="glossary.html">Jägersprache glossary</a><a href="index.html">Original quiz and study cards</a></div></div>
+<section id="handbookBrowse" class="hidden" role="tabpanel" aria-labelledby="handbookTab">
+<p class="intro"><strong>Jungjäger-Wissen</strong> · Traditions, Jagdhorn, common hunt formats and practical German hunting rules. In German and English, usable without signal.</p>
+<div class="alert"><strong>Important distinction:</strong> Traditions and ceremony are not statutory duties. Safety instructions, hunt-leader orders and the current federal, state and local rules take precedence. Signal melodies must be confirmed during the hunt briefing.</div>
+<label for="handbookQuery" class="eyebrow">Search terms, signals or rules</label><input id="handbookQuery" class="search" type="search" autocomplete="off" placeholder="Strecke legen, Hahn in Ruh, Nachsuche…">
+<div id="handbookFilters" class="filters" role="group" aria-label="Filter Jungjäger reference"></div>
+<div id="handbookCount" class="counter" aria-live="polite"></div><div id="handbookCards" class="chapterGrid"></div>
+</section>
+<section id="handbookDetail" class="hidden" aria-label="Jungjäger reference card"><button class="back" id="backFromHandbook">← Jungjäger cards</button><div id="handbookContent"></div></section>
+<section id="detail" class="hidden" aria-label="Animal field card"><button class="back" id="backToList">← All animals</button><div id="animalContent"></div></section>
+<section id="safety" class="safety hidden" aria-label="Field safety"><button class="back" id="backFromSafety">← All animals</button><h1>Field safety &amp; legal cautions</h1>
+<article><h2>Seasons are NOT shown as clearance</h2><p>Germany’s Bundesjagdgesetz § 22 protects animals outside permitted seasons and includes protection for adults needed to rear dependent young. Hessen revised hunting regulations from 1 April 2026. Before hunting, confirm the actual species, state, Revier, applicable orders, disease controls and any Abschussplan with authoritative local sources.</p></article>
+<article><h2>Wild meat and abnormalities</h2><p>Do not use suspect wild meat as food until officially assessed. The current Tier-LMHV § 2b requires Trichinella testing for wild boar and other susceptible animals in the circumstances covered by the law. Observe current veterinary and food-inspection procedures; a card cannot replace a kundige Person assessment or the competent authority.</p></article>
+<article><h2>African swine fever (ASP)</h2><p>Restrictions and reporting requirements can change by district. The Friedrich-Loeffler-Institut publishes maps, but warns that its own maps are not necessarily updated daily. Check the competent veterinary authority and current local ASP rules. Do not move or handle suspicious carcasses contrary to official instructions.</p></article>
+<article><h2>Source hierarchy</h2><p>Animal descriptions: current DJV species profiles where individually checked; otherwise explicitly named GHC course slide baseline. Legal matters: current federal and Hessian official publications, not historical course handouts. Geographic and temporal details must be rechecked when online.</p></article>
+<div class="bottom"><a href="https://landwirtschaft.hessen.de/wald/jagd">Official Hessen hunting law page (online)</a><a href="https://www.gesetze-im-internet.de/bjagdg/__22.html">BJagdG § 22 (online)</a><a href="https://www.gesetze-im-internet.de/tier-lmhv/__2b.html">Tier-LMHV § 2b (online)</a><a href="https://www.fli.de/de/aktuelles/tierseuchengeschehen/afrikanische-schweinepest/">FLI ASP updates (online)</a></div></section>
+</main><script src="field-guide-data.js"></script><script src="jungjaeger-data.js"></script><script src="germany-map-data.js"></script><script src="state-season-data.js"></script><script src="season-engine.js"></script><script src="field-guide.js"></script><script src="state-map-controller.js"></script></body></html>

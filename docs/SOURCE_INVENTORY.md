@@ -1,3 +1,19 @@
+## 2026-10-26: Germany Bundesländer and Hessen season sources
+
+Full source audit/review: [`docs/GERMANY_MAP_HESSEN_EVIDENCE_20261026.md`](GERMANY_MAP_HESSEN_EVIDENCE_20261026.md), with its 16-row coverage matrix and limitations.
+
+- **Live repository primary spec**: `docs/GERMANY_STATE_MAP_SEASON_SPEC_20261025.md`; release v1.6 map/season acceptance and user constraints. Not a law.
+- **Original app primary source**: `app/src/main/assets/field-guide-data.js` (19 animal IDs/media references), `jungjaeger-data.js` (41 cards), `field-guide.js` (notes/favorites and native navigation), `app/src/main/java/org/ghcstudy/offline/MainActivity.java` (Android Back), and CI workflows. The rest of old study materials remain untouched; no claim of complete new fact audit for old quiz banks.
+- **Hessisches Ministerium, Synopse der HJagdV**: March 2026, effective April 1; government comparison table; relevant pp.1–3 §1/§2 and §2(4) conditions. `https://landwirtschaft.hessen.de/sites/landwirtschaft.hessen.de/files/2026-03/synopse_hjagdvo_maerz_2026.pdf`.
+- **LJV Hessen, Jagd- und Schonzeiten**: 2-page consolidated corrected calendar dated May 18, 2026, effective April 1, pp.1–2 species/class matrices and footnotes; association summary checked alongside ministry amendment. `https://ljv-hessen.de/download/jagd-und-schonzeiten-bund-land-hessen/`.
+- **Bundesjagdgesetz §22**: parental protection, current official statute online at `https://www.gesetze-im-internet.de/bjagdg/__22.html`.
+- **MapSVG / Victor Cazanave @svg-maps/germany**: third-party Länder SVG, 16 named path IDs; source project README credits MapSVG and CC BY 4.0. Adapted bundled offline map `germany-map-data.js`; must retain attribution. Not independently cadastral-grade verified, and not one of the specification's preferred BKG/geoBoundaries assets.
+- **Derived files (not new external authority)**: `state-season-data.js`, `season-engine.js`, `state-map-controller.js`, `tests/state-season-smoke.cjs`, `scripts/check_state_map_apk.py`. 15 states deliberately unsourced; Hessen 3 species pending individually checked legal/protection status.
+
+Sources were reviewed directly in this development; older GHC course slides and original historical quiz are not re-audited in this change.
+
+---
+
 # GHC Study — source inventory (2026-10-08)
 
 This is a **locator inventory**, not proof of a completed content audit. Metadata was directly retrieved from Google Drive. Do not mistake Drive file names or dates for factual validation of their contents.

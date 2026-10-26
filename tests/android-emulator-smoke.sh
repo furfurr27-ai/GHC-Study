@@ -50,7 +50,7 @@ dismiss_launcher_dialog() {
   local stage="$1" pos attempt
   for attempt in 1 2 3; do
     dump_ui /sdcard/ghc-check.xml emulator-evidence/system-check.xml
-    if grep -q "GHC Study isn't responding" emulator-evidence/system-check.xml; then
+    if grep -Eq "(GHC Study|Jäger Field Guide) isn.t responding" emulator-evidence/system-check.xml; then
       echo "GHC app ANR at $stage" >&2; return 1
     fi
     if ! grep -q "Pixel Launcher isn't responding" emulator-evidence/system-check.xml; then
@@ -138,6 +138,94 @@ assert_ghc_foreground() {
 adb shell pidof org.ghcstudy.v141
 wait_for_rendered_app home emulator-evidence/quiz-home.png
 assert_ghc_foreground home
+# The new app opens its offline field reference first. Verify that screen, then
+# enter the preserved Study archive before running legacy quiz/glossary checks.
+dismiss_launcher_dialog "field-guide-entry"
+dump_ui /sdcard/ghc-field-home.xml emulator-evidence/field-guide-home.xml
+if ! grep -Eq 'Jäger Field Guide|Jäger Field|Field Guide' emulator-evidence/field-guide-home.xml; then
+  echo "New offline field-guide landing screen not visible" >&2; exit 1
+fi
+# v1.6: Exercise the new state-first flow BEFORE entering the legacy archive.
+# Scroll to the accessible state list (city-states have tiny map polygons).
+tap_accessible_text() {
+  local wanted="$1" stage="$2" found attempt
+  for attempt in $(seq 1 14); do
+    dismiss_launcher_dialog "state-map-$stage-$attempt"
+    dump_ui /sdcard/ghc-state.xml "emulator-evidence/$stage-$attempt.xml"
+    found="$(GHC_TEXT="$wanted" GHC_XML="emulator-evidence/$stage-$attempt.xml" python3 - <<'PY'
+import os,re,xml.etree.ElementTree as ET
+wanted=os.environ['GHC_TEXT']
+root=ET.parse(os.environ['GHC_XML']).getroot()
+for n in root.iter('node'):
+  if wanted not in n.attrib.get('text','') and wanted not in n.attrib.get('content-desc',''): continue
+  m=re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]',n.attrib.get('bounds',''))
+  if not m: continue
+  x1,y1,x2,y2=map(int,m.groups())
+  if x2>x1 and y2>y1:
+    print((x1+x2)//2,(y1+y2)//2)
+    break
+PY
+)"
+    if [[ -n "$found" ]]; then
+      read -r gx gy <<< "$found"
+      adb shell input tap "$gx" "$gy"
+      sleep 2
+      return 0
+    fi
+    local dims sw sh
+    dims="$(adb shell wm size | grep -oE '[0-9]+x[0-9]+' | tail -n 1 | tr -d '\r')"
+    sw="${dims%x*}"; sh="${dims#*x}"
+    adb shell input swipe "$((sw/2))" "$((sh*80/100))" "$((sw/2))" "$((sh*28/100))" 375
+    sleep 1
+  done
+  echo "Accessibility control '$wanted' not found after bounded scrolling during $stage" >&2
+  return 1
+}
+tap_accessible_text "Hessen" "select-hessen"
+wait_for_rendered_app hessen emulator-evidence/hessen-home.png
+tap_accessible_text "Wildarten" "wildarten"
+wait_for_rendered_app animals emulator-evidence/state-animals.png
+tap_accessible_text "Rehwild" "rehwild-card"
+wait_for_rendered_app animal-detail emulator-evidence/rehwild-state-detail.png
+# The current selected-state strip and explicit non-authorization label must be readable.
+dump_ui /sdcard/ghc-rehwild-detail.xml emulator-evidence/rehwild-state-detail.xml
+if ! grep -q "Not authorization" emulator-evidence/rehwild-state-detail.xml; then
+  echo "Selected-state animal card lacks visible non-authorization caution" >&2; exit 1
+fi
+adb shell input keyevent 4
+sleep 3
+wait_for_rendered_app animals-back emulator-evidence/state-animals-after-back.png
+adb shell input keyevent 4
+sleep 3
+wait_for_rendered_app state-back emulator-evidence/hessen-home-after-back.png
+adb shell input keyevent 4
+sleep 3
+wait_for_rendered_app map-back emulator-evidence/germany-map-after-back.png
+dump_ui /sdcard/ghc-map-back.xml emulator-evidence/germany-map-after-back.xml
+if ! grep -q 'Select a state\|Bundesland auswählen' emulator-evidence/germany-map-after-back.xml; then
+  echo "Android Back did not return to Germany state map" >&2; exit 1
+fi
+# Capture the archive target again after scrolling and Back navigation.
+dump_ui /sdcard/ghc-field-home.xml emulator-evidence/field-guide-home.xml
+FIELD_ARCHIVE_TAP="$(python3 - <<'PY'
+import re,xml.etree.ElementTree as ET
+root=ET.parse("emulator-evidence/field-guide-home.xml").getroot()
+for n in root.iter("node"):
+  t=n.attrib.get("text","").strip()
+  if t=="Study archive":
+    m=re.fullmatch(r"\[(\d+),(\d+)\]\[(\d+),(\d+)\]",n.attrib.get("bounds",""))
+    if m:
+      x1,y1,x2,y2=map(int,m.groups())
+      print((x1+x2)//2,(y1+y2)//2)
+      break
+PY
+)"
+if [[ -z "$FIELD_ARCHIVE_TAP" ]]; then echo "Study archive link missing" >&2; exit 1; fi
+read -r FIELD_X FIELD_Y <<< "$FIELD_ARCHIVE_TAP"
+adb shell input tap "$FIELD_X" "$FIELD_Y"
+sleep 4
+wait_for_rendered_app archive emulator-evidence/study-archive.png
+assert_ghc_foreground archive
 # Pixel Launcher ANRs can appear between the initial render and a second
 # UIAutomator call. Never parse a system dialog as an application's UI.
 for attempt in $(seq 1 8); do

@@ -73,7 +73,7 @@ el('seasonList').innerHTML=species().map(function(s){
 var r=get(s);return '<button type="button" class="seasonEntry '+css(r)+'" data-season-id="'+esc(s.id)+'"><strong>'+esc(s.de)+'</strong><small>'+esc(label(r))+'</small><small>'+esc(r.reviewed||'unverified')+'</small></button>'
 }).join('');
 el('seasonList').querySelectorAll('[data-season-id]').forEach(function(n){n.onclick=function(){
-showNative('browse');window.GHC_FIELD_GUIDE.openCard(n.getAttribute('data-season-id'));setMode('detail');decorateDetail();
+showNative('browse');window.GHC_FIELD_GUIDE_ACTIVE_ID=n.getAttribute('data-season-id');window.GHC_FIELD_GUIDE.openCard(window.GHC_FIELD_GUIDE_ACTIVE_ID);setMode('detail');decorateDetail();
 }});
 }
 function renderRules(){

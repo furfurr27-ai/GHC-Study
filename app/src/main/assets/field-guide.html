@@ -44,9 +44,68 @@ main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;
 .chapterType{font-size:12px;background:#dfbd81;color:#20301f;display:inline-block;border-radius:30px;padding:5px 9px;font-weight:750;margin-bottom:8px}
 .chapterSteps{padding-left:24px;margin:12px 0}.chapterSteps li{padding:4px 0}.chapterSource{margin-top:15px;font-size:12px;color:#56624e}.chapterSource a{color:#285d42}
 @media(min-width:620px){.chapterGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* State map + season legend: colors supplement explicit text, not permission. */
+.mapIntro{margin-bottom:12px}.mapPanel{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.stateMapSvg{width:100%;max-height:65vh;display:block;margin:auto;background:#1d3024;border:1px solid #768775;border-radius:16px;padding:12px}
+.statePath{fill:#3d5a46;stroke:#f1ddbb;stroke-width:1.4;vector-effect:non-scaling-stroke;cursor:pointer;transition:fill .12s}
+.statePath:hover,.statePath:focus{fill:#b68d4b;outline:none;stroke:#fff6e4;stroke-width:3}
+.statePath.isSelected{fill:#966a35;stroke:#fff0cb;stroke-width:2.6}
+.stateList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.stateChoice,.navTile{background:#294232;border:1px solid #8fa28b;border-radius:11px;color:#fff5e7;padding:11px;text-align:left;min-height:45px}
+.stateChoice[aria-pressed=true]{background:#a37438;color:#fff;border:2px solid #ffe0a1}
+.stateChoice:focus-visible,.navTile:focus-visible,.statePath:focus-visible{outline:3px solid #ffe8a4;outline-offset:2px}
+.mapCredit{font-size:11px;color:#e2d1b2;margin:9px 0}
+.stateHeader{border-bottom:1px solid #a3b39a;margin-bottom:18px;padding:10px 0}
+.stateHeader h1{font-size:28px;margin:4px 0}
+.navGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.navTile{min-height:98px;font-size:16px;font-weight:780}.navTile small{display:block;color:#d4ddcd;font-size:12px;font-weight:400;margin-top:8px}
+.jurisdiction{border-left:4px solid #dbb372;background:#2b3f30;padding:11px;border-radius:6px;margin:0 0 13px;font-size:13px}
+.jurisdiction button{margin-left:7px}
+.season-general-window-open{background:#204c35!important;border-color:#87b59a!important;color:#fff!important}
+.season-general-window-closed{background:#35414a!important;border-color:#a5b5c2!important;color:#fff!important}
+.season-conditional,.season-unknown-or-stale{background:#644d20!important;border-color:#f5d289!important;color:#fff!important}
+.season-protected-or-no-general-season{background:#50363a!important;border:3px solid #f0aeb5!important;color:#fff!important}
+.seasonBadge{display:block;font-size:12px;line-height:1.4;margin-top:9px;padding:6px 8px;background:#111d16c9;color:#fff;border-radius:7px}
+.seasonBadge b{display:block}.seasonStrip{padding:12px 14px;color:#fff!important}
+.seasonStrip a{color:#fff0bb}
+.seasonStrip p{margin:5px 0;font-size:12px}
+.seasonStrip select{width:100%;font-size:16px;background:#fffaf0;color:#20291f;border:2px solid #766d53;border-radius:8px;padding:8px;margin:8px 0}
+.seasonGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.seasonEntry{border-radius:11px;border:1px solid #b6bcad;padding:10px;text-align:left;color:#fff}
+.seasonEntry strong,.seasonEntry small{display:block}
+@media(min-width:620px){.mapPanel{grid-template-columns:minmax(240px,1fr) minmax(260px,1fr)}.stateList{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style></head>
-<body><header><div class="head"><div><span class="brand">Jäger Field Guide</span><span class="sub">GHC · Offline animal reference · Hessen-focused</span></div><a class="toplink" href="index.html" id="archiveLink">Study archive</a></div></header>
-<main><nav id="homeTabs" class="homeTabs" role="tablist" aria-label="Reference sections"><button type="button" class="homeTab" id="animalsTab" role="tab" aria-selected="true" aria-controls="browse">Tiere · Animals</button><button type="button" class="homeTab" id="handbookTab" role="tab" aria-selected="false" aria-controls="handbookBrowse">Jungjäger-Wissen</button></nav><div id="browse" role="tabpanel" aria-labelledby="animalsTab"><p class="intro">Fast, searchable animal cards with identification clues, signs, seasonal biology and German hunting terms.</p>
+<body><header><div class="head"><div><span class="brand">Jäger Field Guide</span><span class="sub">GHC · Offline Jagd- und Bundesländer-Nachschlagewerk</span></div><a class="toplink" href="index.html" id="archiveLink">Study archive</a></div></header>
+<main><section id="stateMapHome" aria-label="Bundesland auswählen">
+<h1>Bundesland auswählen <small>· Select a state</small></h1>
+<p class="intro mapIntro">Wähle zuerst dein Bundesland. Die Karte und alle 16 Listeneinträge funktionieren ohne Netz.</p>
+<button type="button" class="save hidden" id="continueState">Continue with last selected state</button>
+<div class="mapPanel"><div><div id="germanyMap" aria-label="Offline map of German federal states"></div>
+<p class="mapCredit">Map geometry © MapSVG, adapted by Victor Cazanave / @svg-maps/germany, CC BY 4.0; ISO state codes and accessible controls added for GHC.</p></div>
+<div><h2>Bundesländer · Accessible state list</h2><div id="stateChoices" class="stateList" role="group" aria-label="Choose one of 16 Bundesländer"></div></div></div></section>
+<section id="stateHome" class="hidden" aria-label="Selected Bundesland">
+<div class="stateHeader"><p class="eyebrow">Dein Bundesland · Your jurisdiction</p><h1 id="stateTitle"></h1>
+<div id="stateReview" class="alert"></div><button id="stateChange" class="chip" type="button">← Bundesland wechseln · Change state</button></div>
+<div class="navGrid" id="stateSections">
+<button class="navTile" data-section="animals" type="button">Wildarten <small>19 species cards</small></button>
+<button class="navTile" data-section="seasons" type="button">Jagd- &amp; Schonzeiten <small>Current verified general windows, conditional status and unknowns</small></button>
+<button class="navTile" data-section="knowledge" type="button">Jungjäger-Wissen <small>Brauchtum, horn signals and shared practical references</small></button>
+<button class="navTile" data-section="methods" type="button">Jagdarten <small>Types of hunts</small></button>
+<button class="navTile" data-section="safety" type="button">Sicherheit <small>Safety rules and field cautions</small></button>
+<button class="navTile" data-section="law" type="button">Jagdrecht <small>Federal rules and Hessen-specific review</small></button>
+<button class="navTile" data-section="after" type="button">Nach dem Schuss <small>Follow-up, recovery and game handling</small></button>
+<button class="navTile" data-section="state" type="button">Landesbesonderheiten <small>Verified state provisions and official links</small></button>
+</div></section>
+<div id="currentStateBar" class="jurisdiction hidden" aria-live="polite"></div>
+<section id="seasonsPage" class="hidden" aria-label="Jagdzeiten">
+<button class="back" id="backFromSeasons" type="button">← Bundesland</button>
+<h1>Jagd- &amp; Schonzeiten</h1><p class="intro">General season windows only; never legal authorization. Amber means conditional, missing or stale evidence. Select a species to see its classified source and exceptions.</p>
+<div id="seasonList" class="seasonGrid"></div></section>
+<section id="stateRulesPage" class="hidden" aria-label="Landesbesonderheiten">
+<button class="back" id="backFromStateRules" type="button">← Bundesland</button>
+<h1>Landesbesonderheiten</h1><div id="stateRulesContent"></div></section>
+<nav id="homeTabs" class="homeTabs" role="tablist" aria-label="Reference sections"><button type="button" class="homeTab" id="animalsTab" role="tab" aria-selected="true" aria-controls="browse">Tiere · Animals</button><button type="button" class="homeTab" id="handbookTab" role="tab" aria-selected="false" aria-controls="handbookBrowse">Jungjäger-Wissen</button></nav><div id="browse" role="tabpanel" aria-labelledby="animalsTab"><p class="intro">Fast, searchable animal cards with identification clues, signs, seasonal biology and German hunting terms.</p>
 <div class="alert"><strong>Offline-ready biological reference.</strong> Updated source review: 25 October 2026. Hunting seasons, restrictions, disease zones and permissions change. Verify current rules for your exact Revier before acting. Links to source websites require a connection.</div>
 <label for="query" class="eyebrow">Search species, terms or signs</label><input id="query" class="search" type="search" autocomplete="off" placeholder="Rehwild, tracks, Spiegel, boar…">
 <div id="filters" class="filters" role="group" aria-label="Filter animals"></div><div id="count" class="counter" aria-live="polite"></div><div id="cards" class="cards"></div>
@@ -66,4 +125,4 @@ main{max-width:980px;padding:15px 14px 70px;margin:auto}.eyebrow{font-size:11px;
 <article><h2>African swine fever (ASP)</h2><p>Restrictions and reporting requirements can change by district. The Friedrich-Loeffler-Institut publishes maps, but warns that its own maps are not necessarily updated daily. Check the competent veterinary authority and current local ASP rules. Do not move or handle suspicious carcasses contrary to official instructions.</p></article>
 <article><h2>Source hierarchy</h2><p>Animal descriptions: current DJV species profiles where individually checked; otherwise explicitly named GHC course slide baseline. Legal matters: current federal and Hessian official publications, not historical course handouts. Geographic and temporal details must be rechecked when online.</p></article>
 <div class="bottom"><a href="https://landwirtschaft.hessen.de/wald/jagd">Official Hessen hunting law page (online)</a><a href="https://www.gesetze-im-internet.de/bjagdg/__22.html">BJagdG § 22 (online)</a><a href="https://www.gesetze-im-internet.de/tier-lmhv/__2b.html">Tier-LMHV § 2b (online)</a><a href="https://www.fli.de/de/aktuelles/tierseuchengeschehen/afrikanische-schweinepest/">FLI ASP updates (online)</a></div></section>
-</main><script src="field-guide-data.js"></script><script src="jungjaeger-data.js"></script><script src="field-guide.js"></script></body></html>
+</main><script src="field-guide-data.js"></script><script src="jungjaeger-data.js"></script><script src="germany-map-data.js"></script><script src="state-season-data.js"></script><script src="season-engine.js"></script><script src="field-guide.js"></script></body></html>
